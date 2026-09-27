@@ -1,7 +1,8 @@
 /*-- scss:defaults --*/
 
-$navbar-bg: #167aa6;
+$navbar-bg: #409c3a;
 $navbar-color: #FFFFFF;
+$link-color: #5388f2;
 
 /*-- scss:rules --*/
 
@@ -37,4 +38,12 @@ $navbar-color: #FFFFFF;
 // Override any potential inline styles
 .navbar [style*="color"] {
   color: $navbar-color !important;
+}
+
+
+/* Shaded divider rows between weeks (rows where every cell is empty) */
+.schedule tbody tr:not(:has(td:not(:empty))) td {
+  background-color: $navbar-bg !important;
+  --bs-table-accent-bg: #{$navbar-bg};
+  padding: 0.2rem;
 }

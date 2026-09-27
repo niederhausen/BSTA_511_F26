@@ -82,7 +82,7 @@ During class you will be working in groups discussing the following:
     -   Example 2.6 parts (5)-(7) on pg 9 of slides
     -   From HW 1
         -   Book problems: 2.6,2.14
--   [Answers to Examples 2.3 & 2.6](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/Day04_bsta511_notes_examples_answers.pdf) (added after class; link to file on Sakai)
+-   [Answers to Examples 2.3 & 2.6](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/Day04_bsta511_notes_examples_answers.pdf) (added after class; link to file on )
 
 ## Homework
 

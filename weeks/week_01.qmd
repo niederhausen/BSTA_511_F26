@@ -15,8 +15,8 @@ editor_options:
 
 ## General info
 
--   [Syllabus](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/page/d587d48e-3615-48b2-a07c-eeaf1bca897d) on Sakai
--   [Week 1 info](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=226698&postedComment=false&addBefore=&itemId=5465465&path=push&reviewAssessment=false&topicId=&addTool=-1&recheck=&id=&forumId=) on Sakai
+-   [Syllabus](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/page/d587d48e-3615-48b2-a07c-eeaf1bca897d) on 
+-   [Week 1 info](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=226698&postedComment=false&addBefore=&itemId=5465465&path=push&reviewAssessment=false&topicId=&addTool=-1&recheck=&id=&forumId=) on 
     -   Includes links to background survey and BSAT 511/611 Slack group
 
 ## Overview of Week 1
@@ -58,4 +58,4 @@ editor_options:
 * There are no pre-recorded lessons for Week 1. Starting Week 2, you will be accessing pre-recorded lessons on the [EchoVideo site for BSTA 511/611](https://echo360.org/section/af47457c-bed2-48d7-84ae-eaa2d44f9add/home). Make sure you can log into this site and view the recordings. 
 
 
-* __In-class__ recording links are on [Sakai](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=226697&postedComment=false&addBefore=&itemId=5465463&path=push&reviewAssessment=false&topicId=&addTool=-1&recheck=&id=&forumId=). Navigate to _Course Materials_ -> _Schedule with links to in-class recordings_. Note that the password to the recordings is at the top of the page.
+* __In-class__ recording links are on [](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=226697&postedComment=false&addBefore=&itemId=5465463&path=push&reviewAssessment=false&topicId=&addTool=-1&recheck=&id=&forumId=). Navigate to _Course Materials_ -> _Schedule with links to in-class recordings_. Note that the password to the recordings is at the top of the page.

@@ -42,11 +42,11 @@ The exercises listed below will be graded for this assignment. You are strongly 
 
 ::: callout-important
 -   `*` Starred exercises in the section `Book exercises` may be completed by hand (such as on paper or using a tablet) instead of using Quarto. 
--   If you complete this part of the assignment *not* using Quarto, you will be uploading 3 files on Sakai for this HW: qmd & html files for your R work, and a pdf with your written work.
+-   If you complete this part of the assignment *not* using Quarto, you will be uploading 3 files on  for this HW: qmd & html files for your R work, and a pdf with your written work.
 -   If you are completing the homework on paper, you can use a scanning app, such as Adobe Scan, to create a pdf of your assignment.
 :::
 
--   Please upload your homework to [Sakai](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/094ccc0a-8f85-4069-af5b-e035ef8b79e2). **Upload both your .qmd code file and the rendered .html file**.
+-   Please upload your homework to [](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/094ccc0a-8f85-4069-af5b-e035ef8b79e2). **Upload both your .qmd code file and the rendered .html file**.
     -   Use the assignment .qmd file linked to above as a template for your own assignment.
 -   For each question, make sure to **show all of your work**. This includes all code and resulting output in the html file to support your answers for exercises requiring work done in R (including any arithmetic calculations).
 - For each question, include a **sentence summarizing the answer** for that question in the context of the research question. 
@@ -59,9 +59,9 @@ It is a good idea to try rendering your document from time to time as you go alo
 
 ## NBE 1
 
-### a) Upload a photo using Sakai submission
+### a) Upload a photo using  submission
 
-To help me learn your names and faces, please upload a photo of yourself on Sakai. You will find the Upload Photo "assignment" in the [Assignments section of Sakai](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/094ccc0a-8f85-4069-af5b-e035ef8b79e2). These photos will only be seen by me and the TA.
+To help me learn your names and faces, please upload a photo of yourself on . You will find the Upload Photo "assignment" in the [Assignments section of ](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/094ccc0a-8f85-4069-af5b-e035ef8b79e2). These photos will only be seen by me and the TA.
 
 ### b) Background survey
 

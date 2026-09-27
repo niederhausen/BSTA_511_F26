@@ -6,7 +6,7 @@ page-layout: full
 link-external-newwindow: true
 ---
 
-::: {style="background-color: #167aa6"}
+::: {style="background-color: #409c3a"}
 ::: {style="color: #FFFFFF"}
 ::: {.grid .align-items-center}
 
@@ -14,7 +14,7 @@ link-external-newwindow: true
 
 &nbsp;
 
-![](images/IMG_9812_med.png){fig-align="center" width="210"}
+![](images/IMG_9388_med.png){fig-align="center" width="210"}
 
 :::
 

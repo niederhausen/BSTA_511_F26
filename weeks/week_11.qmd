@@ -43,7 +43,7 @@ editor_options:
 ## Exam 4 {#sec-Exam4}
 
 * Exam 4 is due on **12/11/25 at 11:50 pm**
-* Exam is posted in the [Assignments](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/094ccc0a-8f85-4069-af5b-e035ef8b79e2) section of Sakai.
+* Exam is posted in the [Assignments](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/094ccc0a-8f85-4069-af5b-e035ef8b79e2) section of .
     * Note that the attachments of the assignment include both the qmd and html files for the exam, as well as the dataset.
 
 

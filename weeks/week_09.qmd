@@ -72,7 +72,7 @@ During class you will be working in groups discussing the following:
 ## Exam 3 information {#sec-Exam3info}
 
 -   Exam 3 will be on Mon, Nov. 24th
--   Samples of [past exam questions](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_3_samples_4.3_5.1-5.4_8.1-8.4.pdf) and [answers](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_3_samples_4.3_5.1-5.4_8.1-8.4_answers.pdf) (on Sakai)
+-   Samples of [past exam questions](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_3_samples_4.3_5.1-5.4_8.1-8.4.pdf) and [answers](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_3_samples_4.3_5.1-5.4_8.1-8.4_answers.pdf) (on )
     -   *Note: I still need to add the answers for the Fall 2024 exam.*
 -   Material will cover **Days 10-13**,
     -   which is approximately **Sections 4.3, 5.1-5.4, and 8.1-8.4** from the textbook, plus supplementary material.

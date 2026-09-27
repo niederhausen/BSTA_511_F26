@@ -83,7 +83,7 @@ During class you will be working in groups discussing the following:
 ## Exam 2 information {#sec-Exam2info}
 
 -   Exam 2 will be on Wed, Nov. 5th
--   Samples of [past exam questions](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_2_samples_Ch3.1-3.4_4.1-4.2.pdf) and [answers](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_2_samples_Ch3.1-3.4_4.1-4.2_answers.pdf) (on Sakai)
+-   Samples of [past exam questions](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_2_samples_Ch3.1-3.4_4.1-4.2.pdf) and [answers](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_2_samples_Ch3.1-3.4_4.1-4.2_answers.pdf) (on )
 -   Material will cover **Days 6-9**,
     -   which is approximately **Sections 3.1-3.4, 4.1-4.2** from the textbook.
 -   The exam will be in-class and handwritten. *Bring a calculator.*

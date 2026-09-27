@@ -8,7 +8,7 @@ website:
   navbar:
     background: primary
     search: true
-    logo: "images/IMG_9812_med.png"
+    logo: "images/IMG_9388_med.png"
     foreground: "#fff"
     collapse-below: sm
     right:
