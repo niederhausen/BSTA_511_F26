@@ -1,0 +1,165 @@
+---
+title: "HW 2: BSTA 511/611 F25"
+pagetitle: "HW 2 BSTA 511/611"
+author: "Your name here - update this!!!!"
+date: "Due 10/18/25"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    toc_float:
+      collapsed: false
+    number-sections: false
+    number-depth: 3
+    theme: lumen
+    self-contained: true
+    html-math-method: mathjax
+---
+
+```{r}
+#| label: "setup"
+#| include: false
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Due 10/18/25**
+
+Download the .qmd file for this assignment from <https://github.com/niederhausen/BSTA_511_F25/blob/main/homework/HW_2_F25_bsta511.qmd>
+
+## Graded exercises
+
+The exercises listed below will be graded for this assignment. You are **strongly** encouraged to complete the entire assignment. You will receive feedback on exercises you turn in that are not being graded.
+
+-   **Book exercises**
+    -   2.24
+-   **Non-book exercise**
+-   **R exercises**
+    -   R1: NHANES - part 1
+    -   R2: NHANES - part 2
+
+## Directions
+
+::: callout-important
+-   `*` Starred exercises in the section `Book exercises` may be completed by hand (such as on paper or using a tablet) instead of using Quarto.
+-   If you complete part of the assignment not using Quarto, you will be uploading 3 files on Sakai for this HW: qmd & html files for your R work, and a pdf with your written work.
+-   If you are completing the homework on paper, you can use a scanning app, such as Adobe Scan, to create a pdf of your assignment.
+-   If you decided to type the solutions to these exercises in this Quarto file, I highly recommend using LaTeX to format the equations.
+    -   For instructions on creating equations in the Visual editor, check out <https://quarto.org/docs/get-started/authoring/rstudio.html#equations>.
+    -   You can see examples of LaTeX formatting in the solutions to HW 1.
+    -   Also check out examples of [LaTeX formatting for statistics](https://nwakim.github.io/S2024_BSTA_513/extra_resources/Latex_qmd_formatting.html) created by recent biostats alumn Ariel Weingarten.
+    -   If you have difficulty rendering the LaTeX equations, I recommend installing and running the R package `tinytex`. See this [website](https://evalsp20.classes.andrewheiss.com/reference/install/#install-tinytex-1) for instructions.
+:::
+
+-   Please upload your homework to [Sakai](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/094ccc0a-8f85-4069-af5b-e035ef8b79e2). **Upload both your .qmd code file and the rendered .html file**.
+    -   Use the assignment .qmd file linked to above as a template for your own assignment.
+-   Please always use the following naming convention for submitting your files:
+    -   **Lastname_Firstname_HWx.qmd**, such as Niederhausen_Meike_HW2.qmd
+    -   **Lastname_Firstname_HWx.html**, such as Niederhausen_Meike_HW2.html
+-   For each question, make sure to **show all of your work**. This includes all code and resulting output in the html file to support your answers for exercises requiring work done in R (including any arithmetic calculations).
+-   For each question, include a **sentence summarizing the answer** for that question in the context of the research question.
+
+::: callout-tip
+It is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly.
+:::
+
+
+# \* Non-book exercise
+
+**Suppose a patient has abdominal pain and their clinician suspects that they either have disease 1, disease 2, or no disease, where the probability of having abdominal pain if they have disease 1 is 0.80, the probability of having abdominal pain if they have disease 2 is 0.90, and the probability of having abdominal pain if they have no disease is 0.01. Based on the patient’s medical history, the probability of having disease 1 is 0.009, having disease 2 is 0.001, and having no disease is 0.99. What is the probability the patient has disease 2 given that they have abdominal pain?**
+
+
+
+# Book exercises
+
+## 1.24 Income and education in US counties
+
+
+## \* 2.24 Breast cancer and age
+
+
+# R exercises
+
+## !!! Load all the packages you need below here.
+
+# R1: NHANES - part 1
+
+-   Below you will be using the dataset called NHANES from the `NHANES` R package.
+-   Install and load the NHANES package using the code below.
+    -   This loads the dataset also called NHANES that is within the NHANES package.
+
+```{r eval=FALSE}
+install.packages("NHANES")
+```
+
+```{r}
+library(NHANES)
+data("NHANES")
+```
+
+> The National Health and Nutrition Examination Survey (NHANES) is a survey conducted annually by the US National Center for Health Statistics (NCHS). While the original data uses a survey design that oversamples certain subpopulations, the data have been reweighted to undo oversampling effects and can be treated as if it were a simple random sample from the American population.
+
+-   To view the complete list of study variables and their descriptions, access the NHANES documentation page with `?NHANES`.
+    -   You must first install the `NHANES` package to see the help files.
+
+## a) Dimensions and columns
+
+**What are the dimensions and column names of the dataset?**
+
+## b) Unique ID identifiers
+
+**How many unique ID identifiers are in the dataset? Compare this to the number of rows in the dataset. What is the explanation for these two different numbers?**
+
+## c) Age distributions
+
+**Using numerical and graphical summaries, describe the distribution of ages among study participants.**
+
+## d) Height distributions
+
+**Using numerical and graphical summaries, describe the distribution of heights among study participants.**
+
+## e) Adult height age
+
+**Investigate at which age people generally reach their adult height. Is it possible to do the same for weight; why or why not?**
+
+***Use whatever EDA tools you think are appropriate to answer this question.***
+
+## f) Poverty variable
+
+**Calculate the median and interquartile range of the distribution of the variable `Poverty`. Write a sentence explaining the median and IQR in the context of these data.**
+
+# R2: NHANES - part 2
+
+Continue using the same NHANES data as for the previous problem.
+
+::: callout-warning
+-   For most of the summary statistic base R commands (such as `mean()`, `sd()`, `median()`, etc.), you will get `NA` as the result if there are missing values.
+-   In order for R to compute the statistic using the values in the data set, you need to tell R to remove the missing values using the `na.rm = TRUE` option within the parentheses of the command: `mean(dataset$variablename, na.rm = TRUE)`.
+:::
+
+## a) Heights in inches
+
+**Use the `mutate()` command explained on Slide 23 (pdf pg 22) of the Day 3 Part 3 notes to create a new column (variable) in the NHANES dataset for the heights in inches. Then find the mean and standard deviation of the heights in inches. Note that 1 centimeter is approximately 0.3937 inches.**
+
+::: callout-tip
+## Tips
+
+-   Column names cannot start with a number or symbol
+-   Names are case sensitive
+-   It's easier to work with column names that don't have spaces in them. I usually use \_ or . instead of spaces.
+:::
+
+## b) **College graduates**
+
+**What proportion of Americans at least 25 years of age are college graduates? *Hint: First create a new dataset that is restricted to Americans at least 25 years old.***
+
+## c) **College graduates v2**
+
+**What proportion of Americans at least 25 years of age with a high school degree are college graduates?**
+
+## d) Two-way table
+
+**Construct a two-way table (contingency table), with `PhysActive` as the row variable and `Diabetes` as the column variable. Among participants who are not physically active, what proportion have diabetes? What proportion of physically active participants have diabetes?**
+
+## e) Relative Risk
+
+**In this context, relative risk is the ratio of the proportion of participants who have diabetes among those who are not physically active to the proportion of participants with diabetes among those physically active. Relative risks greater than 1 indicate that people who are not physically active seem to be at a higher risk for diabetes than physically active people. Calculate the relative risk of diabetes for the participants. From these calculations, is it possible to conclude that being physically active reduces one's chance of becoming diabetic?**

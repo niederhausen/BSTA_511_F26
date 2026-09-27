@@ -1,0 +1,159 @@
+---
+title: "Week 3"
+description: "Bayes' Rule & EDA"
+pagetitle: "Week 3 BSTA 511/611"
+date: "10/13/2025"
+date-modified: "today"
+categories: [""]
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Overview of Week 3
+
+::::: grid
+::: g-col-6
+### Day 4
+
+-   Bayes' Rule (**Fall 2023: Day 5**)
+    -   Section 2.2.5
+-   R Packages (**Fall 2023: Day 2**)
+-   [**Day 4 Practice Problems**]{style="color:darkorange"}
+    -   Textbook: 2.18 *Predisposition for thrombosis*
+-   RStudio & Quarto: 
+    -   [Preview in Viewer Pane](https://docs.posit.co/ide/user/2023.03.1/ide/guide/documents/quarto-project.html#render-and-preview)
+    -   Insert images
+    -   LaTeX
+        -   [Equations](https://quarto.org/docs/get-started/authoring/rstudio.html#equations)
+        -   Visual editor: *[Insert anything](https://quarto.org/docs/visual-editor/#insert-anything)*
+        -   [LaTeX guide](https://nwakim.github.io/S2024_BSTA_513/extra_resources/Latex_qmd_formatting.html)
+ 
+
+:::
+
+::: g-col-6
+### Day 5
+
+-   (**Fall 2023: Day 3**)
+-   Data visualization, exploratory data analysis (EDA), and summarizing categorical data
+    -   Sections 1.5-1.7 & supplementary material
+    -   Bonus:
+        -   [Examples](https://berd-r-intro2024.netlify.app/slides_r_berd_2024#/barplots) on dealing with overlapping labels in figures (Slides 65, 66, & 68 from BERD R intro workshop)
+        -   Check out Ted Laderas's [Better Plots](https://better-plots.netlify.app/) presentation
+-   [**Day 5 Practice Problems**]{style="color:darkorange"}
+    -   Textbook:
+        -   1.28 *Mix-and-match*
+        -   1.36 *Associations*
+:::
+:::::
+
+::: callout-note
+As I mentioned in the recording, the various options in more complex figures I usually look up how to implement when I need them. I show them so that you are aware of some of the functionality and options one has in creating figures using the ggplot2 package. At the end of the slides, we cover how to create tables summarizing data, especially categorical data. This part has some very useful code and data wrangling in it.
+:::
+
+## Slides & Recordings
+
+-   **Pre-recorded** lessons are on [Echo Video](https://echo360.org/section/af47457c-bed2-48d7-84ae-eaa2d44f9add/home).
+
+| Day | Topic | Slides (F23): html | Slides: pdf | Slides: web-page | Slides with notes | Recording Link (F23) | Duration | Code: qmd | Code: html |
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| 4 | Bayes' Rule (Book section 2.2.5) | [Day 5: slides 1-2](../slides/Day05_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../LaTeX_slides/Day05_bsta511.pdf) |  | [{{< iconify pepicons-pop pen-circle-filled size=20px >}}](../slides_notes/Day05_bsta511_notes.pdf) | [Day 5 Part 1](https://echo360.org/lesson/4dd3a9b8-33be-4eda-a704-262bdcf473c4/classroom) | 22 min |  |  |
+|  | Bayes' Rule (Book section 2.2.5) | [Day 5: slides 3-6](../slides/Day05_bsta511.qmd) | same |  | same | [Day 5 Part 2](https://echo360.org/lesson/ff6bb379-f025-43eb-b3b7-0a3d884635ee/classroom) | 22 min |  |  |
+|  | R packages | [Day 2: slides 47-54](https://niederhausen.github.io/BSTA_511_F25/slides/Day02_bsta511.html#/r-packages---day-4-in-f25) | same | [{{< iconify streamline web size=20px >}}](../slides_md/Day02_bsta511_md.qmd#r-packages---day-4-in-f25) |  | [Day 2 Part 4](https://echo360.org/lesson/ceb44e22-dde1-472b-b8a9-6dfd93212054/classroom) | 30 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day02_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day02_bsta511_code.qmd#r-packages---day-4-in-f25) |
+| 5 | Exploratory Data Analysis | [Day 3: slides 1-59](../slides/Day03_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day03_bsta511_md.qmd) |  | [Day 3](https://echo360.org/lesson/05b9c600-887b-41a3-9fb0-3eecfc6de8eb/classroom) | 1 hr 18 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day03_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code.qmd) |
+|  | Extra EDA slides | [Day 3 Part 2 slides](../slides/Day03_bsta511_part2.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511_part2.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day03_bsta511_md_part2.qmd) |  |  |  | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day03_bsta511_code_part2.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code.qmd) |
+|  | \*Extra data wrangling code |  | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511_part3_data_wrangling.pdf) |  |  |  |  | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) |
+
+: {.striped .hover tbl-colwidths="\[3, 10, 8, 5, 5, 5, 6, 6, 5, 5\]"}
+
+
+
+\* These are slides with extra data wrangling code, and I refer to some of the slides in the homework assignment. You are welcome to go through all of the slides to learn some data wrangling techniques, *but are not required to do so*. We will be covering topics from these slides as needed throughout the quarter.
+
+## Class discussion
+
+During class you will be working in groups discussing the following:
+
+### Day 04
+
+-   **Practice Problems**
+    -   Textbook: 2.18 *Predisposition for thrombosis*
+        - Solution typed up using LaTeX: [qmd](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/PP_Day4.qmd), [html](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/PP_Day4.html)
+-   R Packages (**Fall 2023: Day 2**)
+    -   R packages: *Please let me know if you had any difficulty installing packages.*
+-   Bayes' Rule (**Fall 2023: Day 5**)
+    -   Example 2.10 on pg 6 of slides
+        - [Solution to Ex 2.10](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/Day05_Ex2.10_bsta511-notes.pdf) 
+-   From HW 2
+    -   Non-book exercise (*this is an old exam question*)
+    -   Book exercises
+        -   2.24
+
+### Day 05
+
+-   **Practice Problems**
+    -   Textbook:
+        -   1.28 *Mix-and-match*
+        -   1.36 *Associations*
+-   [Slide 30](../slides/Day03_bsta511.html#/side-by-side-boxplots-with-data-points): Can distribution shape and sample size be determined from a boxplot?
+-   [Slide 58](../slides/Day03_bsta511.html#/case-study-discrimination-in-developmental-disability-support-1.7.1): Is there evidence of ethnicity (Hispanic vs. White non-Hispanic) discrimination in DDS expenditures? Why or why not?
+-   From HW 2
+    -   R1 & R2: NHANES - parts 1 & 2
+
+<!-- -   See Slides table above for Day 3 Part 2 slide deck (and code) that I presented in class -->
+
+<!-- ### Part 2 slides -->
+
+<!-- The Day 3 Part 2 slides include extra EDA to examine further the question of whether there is evidence of ethnicity (Hispanic vs. White non-Hispanic) discrimination in DDS expenditures based on the data. -->
+
+<!-- * [html](../slides/Day03_bsta511_part2.qmd) -->
+
+<!-- * [pdf](https://drive.google.com/file/d/1IofJF8cXrEyfVokBOw0WOcQGuGfETvsu/view?usp=sharing) -->
+
+<!-- * [webpage](../slides_md/Day03_bsta511_md_part2.qmd) -->
+
+<!-- * Code file: [qmd](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day03_bsta511_code_part2.qmd), [html](../slides_code/Day03_bsta511_code_part2.qmd) -->
+
+<!-- ### Part 3 slides: Data Wrangling -->
+
+<!-- The Day 3 Part 3 slides provide more data wrangling examples. Some of the functions covered were used in the Day 3 Part 2 slides.  -->
+
+<!-- _HW 2 makes reference to some of the functions in these slides._ -->
+
+<!-- * [pdf](https://drive.google.com/file/d/1IfubP0ei-5jTIVs33dyoEqjMIY-Q8qBe/view?usp=sharing) -->
+
+<!-- * Code file: [qmd](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day03_bsta511_code_part3_data_wrangling.qmd), [html](../slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) -->
+
+## Homework
+
+-   [HW 2](../homework/HW_2_F25_bsta511.qmd) due on Sat, 10/18
+    -   See [extra data wrangling code](../slides_pdf/Day03_bsta511_part3_data_wrangling.pdf) (both pdf and code) in table above with slides & recording links.
+
+
+## Exam 1 information {#sec-Exam1info}
+
+-   Exam 1 will be on Wed, Oct. 22nd
+-   Samples of [past exam questions](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_1_samples_Ch1-2.pdf) and [answers](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_1_samples_Ch1-2%20answers.pdf) (on Sakai)
+-   Material will cover **Days 1-5**,
+    -   which is approximately **Chapters 1 & 2** from the textbook.
+-   The exam will be in-class and handwritten. *Bring a calculator.*
+-   You may bring one page of notes on an 8.5” x 11” sheet of paper.
+    -   You may use both sides.
+    -   You may type your notes.
+    -   You may **not** use screenshots of the notes or textbook
+    -   You will be turning in the page of notes with the exam, so please add your name to the sheet.
+
+
+
+
+## International Day of Women in Statistics and Data Science
+
+-   Join the virtual & free conference for the [International Day of Women in Statistics and Data Science](http://www.idwsds.org/)
+-   Tuesday, October 14, 2025
+    -   12 am - 11:59 pm UTC (5pm 10/13 to 4:59 pm 10/14 here)
+
+![](/img_slides/IDWSDS-logo-large.png){fig-align="center" height="150"}

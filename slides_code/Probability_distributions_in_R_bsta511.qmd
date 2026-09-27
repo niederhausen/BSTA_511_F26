@@ -1,0 +1,423 @@
+---
+title: "Probability distributions in R for BSTA 511/611"
+author: "Meike Niederhausen"
+date: 'today'
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    toc_float:
+      collapsed: false
+    number-sections: true
+    number-depth: 3
+    theme: lumen
+    self-contained: true
+    html-math-method: mathjax
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+```
+
+* I recommend installing the `tinytex` R package to help with rendering LaTeX equations if you do not have a LaTeX program installed on your computer. 
+
+# Binomial distribution
+
+## Probability calculations: $P(X=x)$
+
+### Using formula
+
+Calculate $P(X=4)$ for a Bin(n=10, p=0.25) distribution. 
+
+In general, for a binomial random variable, 
+$$P(X=x) = \binom{n}{x}p^x q^{n-x}$$
+Thus $P(X=4)$ for a Bin(n=10, p=0.25) random variable, 
+$$P(X=4) = \binom{10}{4}0.25^4 0.75^{10-4} = \frac{10!}{4!(10-4)!}0.25^4 0.75^{10-4}$$
+Calculate "directly" in R:
+```{r}
+choose(10,4) * 0.25^4 * 0.75^6
+
+# using factorials instead of the choose function:
+factorial(10)/(factorial(4)*factorial(6)) * 0.25^4 * 0.75^6
+```
+
+
+### Using `dbinom()`
+
+Calculate $P(X=4)$ for a Bin(n=10, p=0.25) distribution. 
+
+```{r}
+# P(X = 4) for Bin(n=10, p=0.25) random variable
+dbinom(x = 4, size = 10, prob = 0.25) 
+```
+
+Calculate $P(X=x)$ for all possible values $x$ for a Bin(n=10, p=0.25) distribution. 
+
+```{r}
+# Entire probability distribution:
+# P(X = x) for all x=0,1,2,...,10 for Bin(n=10, p=0.25) random variable
+dbinom(x = 0:10, size = 10, prob = 0.25) 
+```
+
+In the next section we visualize these probability distribution values.
+
+## Histogram of probability distribution
+
+* First, create a data frame of the distribution's possible x values and their respective probabilities:
+
+```{r}
+# Bin(n=10, p=0.25) random variable
+
+binom_probs <- data.frame(x_values = 0:10, 
+                          px = dbinom(x = 0:10, size = 10, prob = 0.25)) 
+binom_probs
+```
+
+### Histogram 
+
+The histogram below is actually created as a bar plot in ggplot:
+
+```{r}
+#| fig.height: 3
+#| fig.width: 5
+
+ggplot(binom_probs, 
+       aes(x = x_values, y = px))  + 
+  geom_col(fill ="cornflowerblue") +
+  labs(x = "x, number of successes",
+       y = "P(X=x)") +
+  scale_x_continuous(breaks=0:10) +
+  labs(title = "Bin(n = 10, p = 0.25) distribution")
+```
+
+## Probability calculations: $P(X \leq x)$
+
+$$P(X\leq k) = \sum_{x=0}^{k}\binom{n}{x}p^xq^{n-x}$$
+
+### Using formula
+
+Calculate $P(X \leq 3)$ for a Bin(n=10, p=0.25) distribution: 
+
+$$P(X\leq 3) = \sum_{x=0}^{3}\binom{10}{x}0.2.5^x 0.75^{10-x}$$
+Calculate "directly" in R:
+```{r}
+# vector of x values whose probabilities need to be added
+x <- 0:3  
+# vector of respective binomial prob's of x values
+(binom_prob_0_3 <- choose(10,x) * 0.25^x * 0.75^(10-x))
+# add up the probabilities
+sum(binom_prob_0_3)
+```
+
+
+### Using `pbinom()`
+
+* $P(X\leq k)$ = `pbinom(q = k, size = n, prob = p, lower.tail = TRUE)`
+
+Calculate $P(X \leq 3)$ for a Bin(n=10, p=0.25) distribution. 
+
+```{r}
+# P(X <= 3) for Bin(n=10, p=0.25) random variable
+pbinom(q = 3, size = 10, prob = 0.25, lower.tail = TRUE)
+
+# Note: setting TRUE for the lower.tail option is the default value
+# This means that if we do not specify this option, 
+# it will give the same result as above:
+pbinom(q = 3, size = 10, prob = 0.25) 
+```
+
+
+## Probability calculations: $P(X \geq x)$
+
+$$P(X\geq k) = \sum_{x=k}^{n}\binom{n}{x}p^xq^{n-x}$$
+
+### Using formula
+
+Calculate $P(X \geq 5)$ for a Bin(n=10, p=0.25) distribution: 
+
+$$P(X \geq 5) = \sum_{x=5}^{10}\binom{10}{x}0.2.5^x 0.75^{10-x}$$
+Calculate "directly" in R:
+```{r}
+# vector of x values whose probabilities need to be added
+x <- 5:10  
+# vector of respective binomial prob's of x values
+(binom_prob_5_10 <- choose(10,x) * 0.25^x * 0.75^(10-x))
+# add up the probabilities
+sum(binom_prob_5_10)
+```
+
+
+### Using `pbinom()` with `lower.tail = TRUE`
+
+Calculate $P(X \geq 5)$ for a Bin(n=10, p=0.25) distribution. 
+
+$$P(X \geq 5) = 1 - P(X \leq 4) =1 - \sum_{x=0}^{4}\binom{10}{x}0.2.5^x 0.75^{10-x}$$
+
+```{r}
+# P(X >= 5) for Bin(n=10, p=0.25) random variable
+# P(X >= 5) = 1 - P(X <= 4)
+1 - pbinom(q = 4, size = 10, prob = 0.25, lower.tail = TRUE)
+```
+
+
+
+### Using `pbinom()` with `lower.tail = FALSE`
+
+* $P(X \geq k) = P(X > k)$ = `pbinom(q = k, size = n, prob = p, lower.tail = FALSE)`
+
+Calculate $P(X \geq 5)$ for a Bin(n=10, p=0.25) distribution. 
+
+$$P(X \geq 5) = P(X > 4)$$
+
+```{r}
+# P(X >= 5) for Bin(n=10, p=0.25) random variable
+# P(X >= 5) = P(X > 4)
+pbinom(q = 4, size = 10, prob = 0.25, lower.tail = FALSE)
+```
+
+
+# Normal distribution
+
+## Probability calculations: $P(X < x)$
+
+$$
+P(X < x) = P\Big(Z < \frac{x-\mu}{\sigma}\Big)
+$$
+Calculate $P(X < 10)$, for $X \sim N(\mu = 8, \sigma = 2)$.
+
+$$
+P(X < 10) = P\Big(Z < \frac{10-8}{2}\Big) = P\Big(Z < 1\Big)
+$$
+
+```{r}
+# P(X < 10) without using z-scores
+pnorm(q = 10, mean = 8, sd = 2, lower.tail = TRUE)
+
+# P(X < 10) = P(Z < 1) using z-scores
+pnorm(q = 1, mean = 0, sd = 1, lower.tail = TRUE)
+# this works too for a standard normal distribution:
+pnorm(1)
+```
+
+
+## Probability calculations: $P(X > x)$
+
+$$
+P(X > x) = P\Big(Z > \frac{x-\mu}{\sigma}\Big) = 1-P\Big(Z \leq  \frac{x-\mu}{\sigma}\Big)
+$$
+Calculate $P(X > 10)$, for $X \sim N(\mu = 8, \sigma = 2)$.
+
+$$
+P(X > 10) = P\Big(Z > \frac{10-8}{2}\Big) = 1 - P\Big(Z \leq 1\Big)
+$$
+
+```{r}
+# P(X > 10) without using z-scores
+1 - pnorm(q = 10, mean = 8, sd = 2, lower.tail = TRUE)
+# using lower.tail = FALSE:
+pnorm(q = 10, mean = 8, sd = 2, lower.tail = FALSE)
+
+# P(X > 10) = P(Z > 1) using z-scores
+1 - pnorm(q = 1, mean = 0, sd = 1, lower.tail = TRUE)
+# using lower.tail = FALSE:
+pnorm(q = 1, mean = 0, sd = 1, lower.tail = FALSE)
+# this works too for a standard normal distribution:
+pnorm(1, lower.tail = FALSE)
+```
+
+
+## Normal curve figure with region shaded in
+
+* R code to create a figure of the normal distribution curve with the probability region of interest shaded in. 
+
+Shade in the region representing $P(X>10)$, for $X \sim N(\mu = 8, \sigma = 2)$.
+
+```{r}
+#| fig.height: 3
+#| fig.width: 5
+
+# This code shades in the probability P(X > 10) 
+# for X ~ N(mu = 8, sigma = 2)
+# Note that I set the upper and lower bounds of the normal curve to be from mu - 4*sigma to mu + 4*sigma since these bounds include almost 100% of the area under the normal curve
+
+mu <- 8   # specify the mean of the normal distribution
+std <- 2  # specify the standard deviation of the normal distribution
+
+# specify upper and lower bounds of shaded region below
+ggplot(data.frame(x = c(mu-4*std, mu+4*std)), aes(x = x)) + 
+  stat_function(fun = dnorm, 
+                args = list(mean = mu, sd = std)) + 
+  stat_function(fun = dnorm, 
+                args = list(mean = mu, sd = std), 
+          # specify the upper and lower bounds of the shaded region:
+                xlim = c(10, mu+4*std),             
+                geom = "area", fill = "darkblue") +
+  # the breaks values below might need to be adjusted 
+  # if there are too many values showing on the x-axis
+  scale_x_continuous(breaks= seq(from = mu-4*std, to = mu+4*std, by= std)) +
+  labs(y = "") +
+  labs(title = "P(X >10) for a N(mu=8, sigma=2) distribution")
+```
+
+
+
+# Poisson distribution
+
+## Probability calculations: $P(X=x)$
+
+### Using formula
+
+Calculate $P(X=3)$ for a $Pois(\lambda = 5)$ distribution. 
+
+
+In general, for a Poisson random variable, 
+$$P(X=x) = \frac{e^{-\lambda}\lambda^x}{x!}$$
+Thus the $P(X=3)$ for a $Pois(\lambda = 5)$ random variable is 
+$$P(X=3) = \frac{e^{-5}5^3}{3!}$$
+Calculate "directly" in R:
+```{r}
+exp(-5)*(5^3)/factorial(3)
+```
+
+
+### Using `dpois()`
+
+Calculate $P(X=3)$ for a $Pois(\lambda = 5)$ distribution. 
+
+```{r}
+# P(X = 3) for Pois(lambda = 5) random variable
+dpois(x = 3, lambda = 5) 
+```
+
+* Calculate $P(X=x)$ for many possible values $x$ for a $Pois(\lambda = 5)$ distribution. 
+* The possible values of $x$ for a Poisson distribution are $x=0, 1, 2, \ldots$, i.e., $x$ can be infinitely large.
+* Below we look at probabilities just for $x=0, 1, 2, \ldots, 20$.
+
+```{r}
+# P(X = x) for x=0,1,2,...,100 for Pois(\lambda = 5) random variable
+dpois(x = 0:20, lambda = 5) 
+
+# although we didn't calculate the probabilities for all possible values of x, 
+# below we see that the probabilities for the first 21 values almost add up to 1
+sum(dpois(x = 0:20, lambda = 5) )
+```
+
+In the next section we visualize these probability distribution values.
+
+## Histogram of probability distribution
+
+* First, create a data frame of the distribution's possible x values and their respective probabilities:
+
+```{r}
+# Pois(lambda = 5) random variable
+
+Poisson_probs <- data.frame(x_values = 0:20, 
+                          px = dpois(x = 0:20, lambda = 5)) 
+Poisson_probs
+```
+
+### Histogram 
+
+The histogram below is actually created as a bar plot in ggplot:
+
+```{r}
+#| fig.height: 3
+#| fig.width: 5
+
+ggplot(Poisson_probs, 
+       aes(x = x_values, y = px))  + 
+  geom_col(fill ="cornflowerblue") +
+  labs(x = "x, number of successes",
+       y = "P(X=x)") +
+  scale_x_continuous(breaks=0:20) +  # chose 20 since prob's are already tiny for this distribution
+  labs(title = "Pois(lambda = 5) distribution")
+```
+
+## Probability calculations: $P(X \leq x)$
+
+$$P(X\leq k) = \sum_{x=0}^{k}\frac{e^{-\lambda}\lambda^x}{x!}$$
+
+### Using formula
+
+Calculate $P(X \leq 12)$ for a $Pois(\lambda = 5)$ distribution: 
+
+$$P(X\leq 12) = \sum_{x=0}^{12} \frac{e^{-5}5^x}{x!}$$
+
+Calculate "directly" in R:
+```{r}
+# vector of x values whose probabilities need to be added
+x <- 0:12  
+# vector of respective Poisson prob's of x values
+(Poisson_prob_0_12 <- exp(-5)*(5^x)/factorial(x))
+# add up the probabilities
+sum(Poisson_prob_0_12)
+```
+
+
+### Using `ppois()`
+
+* $P(X\leq k)$ = `ppois(q = k, lambda = , lower.tail = TRUE)`
+
+Calculate $P(X \leq 12)$ for a $Pois(\lambda = 5)$ distribution. 
+
+```{r}
+# P(X <= 3) for Pois(lambda = 5) random variable
+ppois(q = 12, lambda = 5, lower.tail = TRUE)
+
+# Note: setting TRUE for the lower.tail option is the default value
+# This means that if we do not specify this option, 
+# it will give the same result as above:
+ppois(q = 12, lambda = 5) 
+```
+
+
+## Probability calculations: $P(X \geq x)$
+
+$$P(X\geq k) = \sum_{x=k}^{\infty} \frac{e^{-\lambda}\lambda^x}{x!}$$
+
+### Using formula
+
+Calculate $P(X \geq 13)$ for a $Pois(\lambda = 5)$ distribution: 
+
+$$P(X \geq 13) = \sum_{x=13}^{\infty} \frac{e^{-5}5^x}{x!}$$
+Calculate "directly" in R:
+```{r}
+# vector of x values whose probabilities need to be added
+x <- 13:100 # choose a big number; big enough so that the probabilities for the high x values below are tiny
+# vector of respective Poisson prob's of x values
+(Poisson_prob_13_100 <- exp(-5)*(5^x)/factorial(x))
+# add up the probabilities
+sum(Poisson_prob_13_100)
+```
+
+
+### Using `ppois()` with `lower.tail = TRUE`
+
+Calculate $P(X \geq 13)$ for a $Pois(\lambda = 5)$ distribution. 
+
+$$P(X \geq 13) = 1 - P(X \leq 12) =1 - \sum_{x=0}^{12} \frac{e^{-5}5^x}{x!}$$
+
+```{r}
+# P(X >= 13) for Pois(lambda = 5) random variable
+# P(X >= 13) = 1 - P(X <= 12)
+1 - ppois(q = 12, lambda = 5, lower.tail = TRUE)
+```
+
+
+
+### Using `ppois()` with `lower.tail = FALSE`
+
+* $P(X \geq k) = P(X > k)$ = `ppois(q = k, size = n, prob = p, lower.tail = FALSE)`
+
+Calculate $P(X \geq 13)$ for a $Pois(\lambda = 5)$ distribution. 
+
+$$P(X \geq 13) = P(X > 12)$$
+
+```{r}
+# P(X >= 13) for Pois(lambda = 5) random variable
+# P(X >= 13) = P(X > 12)
+ppois(q = 12, lambda = 5, lower.tail = FALSE)
+```
+

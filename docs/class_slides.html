@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.361">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>BSTA 511/611 Fall 2025 - Class Slides</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/IMG_9812_med.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">BSTA 511/611 Fall 2025</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./schedule.html" rel="" target="">
+ <span class="menu-text">Schedule</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Class Slides</li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Weekly pages</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./weeks/week_01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./weeks/week_02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./weeks/week_03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./weeks/week_04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./weeks/week_05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./weeks/week_06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./weeks/week_07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./weeks/week_08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./weeks/week_09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 9</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./weeks/week_10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 10</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./weeks/week_11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 11</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Homework</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./homework.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homework</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./homework_solutions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Homework solutions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./rubric.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Grading rubric</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(19)</span></div><div class="category" data-category="Week 1">Week 1 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Week 10">Week 10 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Week 2">Week 2 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Week 3">Week 3 <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Week 4">Week 4 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Week 5">Week 5 <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Week 6">Week 6 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Week 7">Week 7 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Week 8">Week 8 <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Week 9">Week 9 <span class="quarto-category-count">(1)</span></div></div></div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Class Slides</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+
+<table class="quarto-listing-table table table-hover">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+<th>
+Categories
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="Week 1" data-listing-date-sort="1759302000000" data-listing-file-modified-sort="1759451016078" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="22" data-listing-title-sort="Day 1: Intro to R &amp; Rstudio" data-listing-filename-sort="Day01_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">10/1/25</span>
+</td>
+<td>
+<a href="./slides/Day01_bsta511.html" class="title listing-title">Day 1: Intro to R &amp; Rstudio</a>
+</td>
+<td>
+<span class="listing-categories">Week 1</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="Week 2" data-listing-date-sort="1759734000000" data-listing-file-modified-sort="1759451065114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-title-sort="Day 2: Data collection &amp; numerical summaries" data-listing-filename-sort="Day02_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">10/6/25</span>
+</td>
+<td>
+<a href="./slides/Day02_bsta511.html" class="title listing-title">Day 2: Data collection &amp; numerical summaries</a>
+</td>
+<td>
+<span class="listing-categories">Week 2</span>
+</td>
+</tr>
+<tr data-index="2" data-categories="Week 2" data-listing-date-sort="1759906800000" data-listing-file-modified-sort="1759451878831" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Day 3 (F23 Day 4): Probability Part 1" data-listing-filename-sort="Day04_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">10/8/25</span>
+</td>
+<td>
+<a href="./slides/Day04_bsta511.html" class="title listing-title">Day 3 (F23 Day 4): Probability Part 1</a>
+</td>
+<td>
+<span class="listing-categories">Week 2</span>
+</td>
+</tr>
+<tr data-index="3" data-categories="Week 3" data-listing-date-sort="1760338800000" data-listing-file-modified-sort="1759451960914" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Day 4 (F23 Day 5): Probability Part 2 - Bayes' Rule" data-listing-filename-sort="Day05_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">10/13/25</span>
+</td>
+<td>
+<a href="./slides/Day05_bsta511.html" class="title listing-title">Day 4 (F23 Day 5): Probability Part 2 - Bayes’ Rule</a>
+</td>
+<td>
+<span class="listing-categories">Week 3</span>
+</td>
+</tr>
+<tr data-index="4" data-categories="Week 3" data-listing-date-sort="1760511600000" data-listing-file-modified-sort="1759451216101" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-title-sort="Day 3: Data visualization - Part 2" data-listing-filename-sort="Day03_bsta511_part2.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">10/15/25</span>
+</td>
+<td>
+<a href="./slides/Day03_bsta511_part2.html" class="title listing-title">Day 3: Data visualization - Part 2</a>
+</td>
+<td>
+<span class="listing-categories">Week 3</span>
+</td>
+</tr>
+<tr data-index="5" data-categories="Week 3" data-listing-date-sort="1760511600000" data-listing-file-modified-sort="1759451387484" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="16" data-listing-title-sort="Day 3: Data visualization" data-listing-filename-sort="Day03_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">10/15/25</span>
+</td>
+<td>
+<a href="./slides/Day03_bsta511.html" class="title listing-title">Day 3: Data visualization</a>
+</td>
+<td>
+<span class="listing-categories">Week 3</span>
+</td>
+</tr>
+<tr data-index="6" data-categories="Week 4" data-listing-date-sort="1760943600000" data-listing-file-modified-sort="1759451997681" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Day 6: Random variables and Binomial distribution" data-listing-filename-sort="Day06_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">10/20/25</span>
+</td>
+<td>
+<a href="./slides/Day06_bsta511.html" class="title listing-title">Day 6: Random variables and Binomial distribution</a>
+</td>
+<td>
+<span class="listing-categories">Week 4</span>
+</td>
+</tr>
+<tr data-index="7" data-categories="Week 5" data-listing-date-sort="1761548400000" data-listing-file-modified-sort="1760572156160" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Day 7: Normal and Poisson distributions" data-listing-filename-sort="Day07_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">10/27/25</span>
+</td>
+<td>
+<a href="./slides/Day07_bsta511.html" class="title listing-title">Day 7: Normal and Poisson distributions</a>
+</td>
+<td>
+<span class="listing-categories">Week 5</span>
+</td>
+</tr>
+<tr data-index="8" data-categories="Week 5" data-listing-date-sort="1761721200000" data-listing-file-modified-sort="1760572938180" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13" data-listing-title-sort="Day 8: Variability in estimates" data-listing-filename-sort="Day08_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">10/29/25</span>
+</td>
+<td>
+<a href="./slides/Day08_bsta511.html" class="title listing-title">Day 8: Variability in estimates</a>
+</td>
+<td>
+<span class="listing-categories">Week 5</span>
+</td>
+</tr>
+<tr data-index="9" data-categories="Week 5" data-listing-date-sort="1761721200000" data-listing-file-modified-sort="1760572971410" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-title-sort="Day 9: Confidence intervals (4.2)" data-listing-filename-sort="Day09_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">10/29/25</span>
+</td>
+<td>
+<a href="./slides/Day09_bsta511.html" class="title listing-title">Day 9: Confidence intervals (4.2)</a>
+</td>
+<td>
+<span class="listing-categories">Week 5</span>
+</td>
+</tr>
+<tr data-index="10" data-categories="Week 6" data-listing-date-sort="1762156800000" data-listing-file-modified-sort="1761791894466" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21" data-listing-title-sort="Day 10 Part 1: Hypothesis testing for mean from one-sample (Sections 4.3, 5.1)" data-listing-filename-sort="Day10_part1_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">11/3/25</span>
+</td>
+<td>
+<a href="./slides/Day10_part1_bsta511.html" class="title listing-title">Day 10 Part 1: Hypothesis testing for mean from one-sample (Sections 4.3, 5.1)</a>
+</td>
+<td>
+<span class="listing-categories">Week 6</span>
+</td>
+</tr>
+<tr data-index="11" data-categories="Week 6" data-listing-date-sort="1762156800000" data-listing-file-modified-sort="1761791917812" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-title-sort="Day 10 Part 2: Inference for mean difference from two-sample dependent/paired data  (Section 5.2)" data-listing-filename-sort="Day10_part2_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">11/3/25</span>
+</td>
+<td>
+<a href="./slides/Day10_part2_bsta511.html" class="title listing-title">Day 10 Part 2: Inference for mean difference from two-sample dependent/paired data (Section 5.2)</a>
+</td>
+<td>
+<span class="listing-categories">Week 6</span>
+</td>
+</tr>
+<tr data-index="12" data-categories="Week 7" data-listing-date-sort="1762761600000" data-listing-file-modified-sort="1762453100424" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="28" data-listing-title-sort="Day 11: Inference for difference in means from two independent samples and Power (Sections 5.3, 5.4)" data-listing-filename-sort="Day11_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">11/10/25</span>
+</td>
+<td>
+<a href="./slides/Day11_bsta511.html" class="title listing-title">Day 11: Inference for difference in means from two independent samples and Power (Sections 5.3, 5.4)</a>
+</td>
+<td>
+<span class="listing-categories">Week 7</span>
+</td>
+</tr>
+<tr data-index="13" data-categories="Week 7" data-listing-date-sort="1762934400000" data-listing-file-modified-sort="1762453175540" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="28" data-listing-title-sort="Day 12: Inference for a single proportion or difference of two (independent) proportions (Sections 8.1-8.2)" data-listing-filename-sort="Day12_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">11/12/25</span>
+</td>
+<td>
+<a href="./slides/Day12_bsta511.html" class="title listing-title">Day 12: Inference for a single proportion or difference of two (independent) proportions (Sections 8.1-8.2)</a>
+</td>
+<td>
+<span class="listing-categories">Week 7</span>
+</td>
+</tr>
+<tr data-index="14" data-categories="Week 8" data-listing-date-sort="1763366400000" data-listing-file-modified-sort="1763058074150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-title-sort="Day 13: Chi-squared tests (Sections 8.3-8.4)" data-listing-filename-sort="Day13_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">11/17/25</span>
+</td>
+<td>
+<a href="./slides/Day13_bsta511.html" class="title listing-title">Day 13: Chi-squared tests (Sections 8.3-8.4)</a>
+</td>
+<td>
+<span class="listing-categories">Week 8</span>
+</td>
+</tr>
+<tr data-index="15" data-categories="Week 8" data-listing-date-sort="1763539200000" data-listing-file-modified-sort="1763058169462" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="22" data-listing-title-sort="Day 14: Comparing Means with ANOVA (Section 5.5)" data-listing-filename-sort="Day14_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">11/19/25</span>
+</td>
+<td>
+<a href="./slides/Day14_bsta511.html" class="title listing-title">Day 14: Comparing Means with ANOVA (Section 5.5)</a>
+</td>
+<td>
+<span class="listing-categories">Week 8</span>
+</td>
+</tr>
+<tr data-index="16" data-categories="Week 9" data-listing-date-sort="1764144000000" data-listing-file-modified-sort="1764202819909" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Day 15: Simple Linear Regression (Sections 6.1-6.2)" data-listing-filename-sort="Day15_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">11/26/25</span>
+</td>
+<td>
+<a href="./slides/Day15_bsta511.html" class="title listing-title">Day 15: Simple Linear Regression (Sections 6.1-6.2)</a>
+</td>
+<td>
+<span class="listing-categories">Week 9</span>
+</td>
+</tr>
+<tr data-index="17" data-categories="Week 10" data-listing-date-sort="1764576000000" data-listing-file-modified-sort="1764202987951" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="25" data-listing-title-sort="Day 16: Simple Linear Regression Part 2 (Sections 6.3-6.4)" data-listing-filename-sort="Day16_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">12/1/25</span>
+</td>
+<td>
+<a href="./slides/Day16_bsta511.html" class="title listing-title">Day 16: Simple Linear Regression Part 2 (Sections 6.3-6.4)</a>
+</td>
+<td>
+<span class="listing-categories">Week 10</span>
+</td>
+</tr>
+<tr data-index="18" data-categories="Week 10" data-listing-date-sort="1764748800000" data-listing-file-modified-sort="1764203226851" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Day 17: Nonparametric tests - Supplemental material" data-listing-filename-sort="Day17_bsta511.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-date">12/3/25</span>
+</td>
+<td>
+<a href="./slides/Day17_bsta511.html" class="title listing-title">Day 17: Nonparametric tests - Supplemental material</a>
+</td>
+<td>
+<span class="listing-categories">Week 10</span>
+</td>
+</tr>
+</tbody>
+
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

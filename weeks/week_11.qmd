@@ -1,0 +1,86 @@
+---
+title: "Week 11"
+description: "Finals week"
+pagetitle: "Week 11 BSTA 511/611"
+date: "12/8/2025"
+date-modified: "today"
+categories: [""]
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Overview of Week 11
+
+::::: grid
+::: g-col-4
+### Mon 
+
+-   [Exam 3 corrections](#sec-ExamCorrections) due
+-   Open office hours during class
+    -   Online: [Webex link](#sec-Wk11Webex)  
+-   Usual office hour 3-4 pm
+:::
+
+::: g-col-4
+### Wed
+
+-   Open office hours during class
+    -   Online: [Webex link](#sec-Wk11Webex)  
+:::
+
+::: g-col-4
+### Thurs
+-   [Exam 4](#sec-Exam4) due
+-   Office hour 4-5 pm
+:::
+:::::
+
+
+## Exam 4 {#sec-Exam4}
+
+* Exam 4 is due on **12/11/25 at 11:50 pm**
+* Exam is posted in the [Assignments](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/094ccc0a-8f85-4069-af5b-e035ef8b79e2) section of Sakai.
+    * Note that the attachments of the assignment include both the qmd and html files for the exam, as well as the dataset.
+
+
+## Exam Corrections {#sec-ExamCorrections}
+
+-   Please *email* me a link to your video by the due date. 
+    -   *Please do not attach the video to the email*.
+-   Exam corrections will be video recordings of you explaining what the error was on the problem, why it was incorrect, and the correct solution.
+    -   Recordings do not need to include video of yourself.
+-   I strongly recommend reviewing the class notes and homework solutions for examples of the level of detail and correct notation to use in your work. 
+-   You may not ask anyone for help (including AI) other than the instructor for doing your exam corrections. 
+
+
+### Exam 3 Corrections
+
+-   Due **Monday 12/8** at 11 pm
+-   You may do corrections for all questions.
+-   For 10 parts to questions, you can earn back all of the points missed.
+    -   For example, maybe you decide to choose parts 1b, 1c, 1d, 2c, 3a, 3d, 3f, 4b, 4d, and 4f as the 10 "parts of questions" that you want to be considered for getting full points back for. 
+    -   *When emailing me a link to your video, please clearly state which parts of questions you chose as the 10 to get full points back. *
+-   For the remaining parts to questions, you can earn back up to half of the missed points. 
+
+
+
+
+## Webex link for Week 11 {#sec-Wk11Webex}
+
+When it's time, join your Webex meeting here.
+Join Meeting: [https://ohsu.webex.com/ohsu/j.php?MTID=mcb0085909236e17a2edc1ca819f98129](https://ohsu.webex.com/ohsu/j.php?MTID=mcb0085909236e17a2edc1ca819f98129)
+Meeting password: mH82JvpWZQ2
+
+Phone (audio only):
+1-503-388-9555 Portland, OR
+1-206-207-1700 Seattle, WA
+Meeting number (access code): 2634 963 8854
+Additional call-in numbers: [https://ohsu.webex.com/ohsu/globalcallin.php](https://ohsu.webex.com/ohsu/globalcallin.php)
+
+Mobile phone (one-touch):
+206-207-1700,,26349638854##
+

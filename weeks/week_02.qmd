@@ -1,0 +1,90 @@
+---
+title: "Week 2"
+description: "Data collection & Probability"
+pagetitle: "Week 2 BSTA 511/611"
+date: "10/6/2025"
+date-modified: "today"
+categories: [""]
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Overview of Week 2
+
+::::: grid
+::: g-col-6
+### Day 2
+
+-   Data Collection Principles & Intro to Data (**Fall 2023: Day 2**)
+    -   Book sections 1.1-1.3
+-   **Practice Problems**
+    -   Textbook: 1.8 (p. 77), 1.20 (p. 80)
+:::
+
+::: g-col-6
+### Day 3
+
+-   Summarizing Numerical Data (**Fall 2023: Day 2**)
+    -   Book section 1.4
+-   Probability (**Fall 2023: Day 4**)
+    -   Sections 2.1 - 2.2.4
+-   **Practice Problems**
+    - Fill in [robust estimate table](https://niederhausen.github.io/BSTA_511_F25/slides/Day02_bsta511.html#/robust-estimates) on slide 46 of Summarizing Numerical Data (Fall 2023: Day 2 slides)
+    - Do Example 2.6 parts (1)-(4) on pg 8 of [Probability](https://niederhausen.github.io/BSTA_511_F25/LaTeX_slides/Day04_bsta511.pdf) (**Fall 2023: Day 4**) slides
+:::
+:::::
+
+## Slides & Recordings
+
+-   **Pre-recorded** lessons are on [Echo Video](https://echo360.org/section/af47457c-bed2-48d7-84ae-eaa2d44f9add/home).
+
+| Day | Topic | Slides (F23): html | Slides: pdf | Slides: web-page | Slides with notes | Recording Link (F23) | Duration | Code: qmd | Code: html |
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| 2 | Data Collection Principles (Book section 1.3) | [Day 2: slides 1-17](../slides/Day02_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day02_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day02_bsta511_md.qmd) |  | [Day 2 Part 1](https://echo360.org/lesson/c92b254b-5d8f-4916-bda6-9b77dffe876f/classroom) | 33 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day02_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day02_bsta511_code.qmd) |
+|  | Intro to Data (Book section 1.2) | [Day 2: slides 18-32](../slides/Day02_bsta511.qmd#/intro-to-data---day-2-in-f25) | same | [{{< iconify streamline web size=20px >}}](../slides_md/Day02_bsta511_md.qmd#intro-to-data---day-2-in-f25) |  | [Day 2 Part 2](https://echo360.org/lesson/a7f05012-8288-4c60-9123-367b17953829/classroom) | 42 min | same | same |
+| 3 | Summarizing Numerical Data (Book section 1.4) | [Day 2: slides 33-46](../slides/Day02_bsta511.qmd#/summarizing-numerical-data---day-3-in-f25) | same | [{{< iconify streamline web size=20px >}}](../slides_md/Day02_bsta511_md.qmd#summarizing-numerical-data---day-3-in-f25) |  | [Day 2 Part 3](https://echo360.org/lesson/0712fe86-1f10-4cc8-a275-9bb318f97f43/classroom) | 37 min | same | same |
+|  | Probability (Book sections 2.1.1-2.1.6) | [Day 4: slides 1-4](../slides/Day04_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../LaTeX_slides/Day04_bsta511.pdf) |  | [{{< iconify pepicons-pop pen-circle-filled size=20px >}}](../slides_notes/Day04_bsta511_notes.pdf) | [Day 4 Part 1](https://echo360.org/lesson/a9ea3c03-7ac8-4657-b432-d61271bcbb54/classroom) | 23 min |  |  |
+|  | Probability (Book sections 2.1.7-2.2.4) | [Day 4: slides 5-9](../slides/Day04_bsta511.qmd) | same |  | same | [Day 4 Part 2](https://echo360.org/lesson/17d47138-7bfd-4868-ac49-a53d8b910f3d/classroom) | 24 min |  |  |
+
+: {.striped .hover tbl-colwidths="\[3, 10, 8, 5, 5, 5, 6, 6, 5, 5\]"}
+
+
+## Class discussion
+
+### Day02
+
+During class you will be working in groups discussing the following:
+
+-   Practice Problems
+    -   Textbook: 1.8 (p. 77), 1.20 (p. 80)
+-   From HW 1
+    -   Non-book exercise NBE 2: Tylenol during pregnancy?
+    -   Textbook: 1.12
+    -   R2: BRFSS - parts a)-b)
+
+### Day03
+
+-   Practice Problems
+    - Summarizing Numerical Data (**Fall 2023: Day 2 slides**)
+        - Fill in [robust estimate table](https://niederhausen.github.io/BSTA_511_F25/slides/Day02_bsta511.html#/robust-estimates) on slide 46 
+    - [Probability](https://niederhausen.github.io/BSTA_511_F25/LaTeX_slides/Day04_bsta511.pdf) (**Fall 2023: Day 4**)
+        - Example 2.6 parts (1)-(4) on pg 8 of slides
+-   Summarizing Numerical Data (**Fall 2023: Day 2**)
+    -   From HW 1
+        -   Book problem: 1.31
+        -   R2: BRFSS - parts c)-f)
+-   Probability (**Fall 2023: Day 4**)
+    -   Example 2.3 on pg 4 of slides
+    -   Example 2.6 parts (5)-(7) on pg 9 of slides
+    -   From HW 1
+        -   Book problems: 2.6,2.14
+-   [Answers to Examples 2.3 & 2.6](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/Day04_bsta511_notes_examples_answers.pdf) (added after class; link to file on Sakai)
+
+## Homework
+
+-   [HW 1](../homework/HW_1_F25_bsta511.qmd) due on Sat, 10/11
+    -   Covers Days 1-3

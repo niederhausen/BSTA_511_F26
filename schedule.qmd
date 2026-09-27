@@ -1,0 +1,47 @@
+---
+title: "Schedule"
+pagetitle: "Schedule BSTA 511/611"
+date: "9/30/24"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    # toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+
+| Week | Dates | Day | Topics | Chapter sections |
+|:------------:|:------------:|:------------:|:-----------------|:-------------|
+| [1](weeks/week_01.qmd) | M 9/30 |  | No class: <br> OHSU New Student Orientation |  |
+|  | W 10/1 | **1** | Introduction to R & RStudio |  |
+| [2](weeks/week_02.qmd) | M 10/6 | **2** | Intro to Data, Data collection | 1.1-1.3 |
+|  | W 10/8 | **3** | Summarizing numerical data, <br> Probability | 1.4, 2.1-2.2.4 |
+|  | Sa 10/11 |  | [*HW 1*](homework/HW_1_F25_bsta511.qmd) *Due (Days 1 - 3)* |  |
+| [3](weeks/week_03.qmd) | M 10/13 | **4** | Bayes' Theorem, R Packages | 2.2.5, extra |
+|  | W 10/15 | **5** | Data visualization, <br> exploratory data analysis (EDA), <br> and summarizing categorical data | 1.5-1.7, extra |
+|  | Sa 10/18 |  | [*HW 2*](homework/HW_2_F25_bsta511.qmd) *Due (Days 4 - 5)* |  |
+| [4](weeks/week_04.qmd) | M 10/20 | **6** | Random variables, <br> Binomial distribution | 3.1-3.2 |
+|  | W 10/22 |  | [**Exam 1: Days 1-5**]{style="color:green"} | **Ch 1, 2** |
+|  | Sa 10/25 |  | *No HW due -\> see HW 3 due 11/1* |  |
+| [5](weeks/week_05.qmd) | M 10/27 | **7** | Normal and Poisson distributions | 3.3-3.4 |
+|  | W 10/29 | **8 & 9** | Variability in estimates & Confidence Intervals | 4.1-4.2 |
+|  | Sa 11/1 |  | [*HW 3*](homework/HW_3_F25_bsta511_v2.qmd) *Due (Days 6 - 9)* |  |
+| [6](weeks/week_06.qmd) | M 11/3 | **10** | Hypothesis Testing: <br> Single-sample with *t*-distribution <br> & Two-sample paired data | 4.3, 5.1, 5.2 |
+|  | W 11/5 |  | [**Exam 2: Days 6-9**]{style="color:green"} | **3.1-3.4, 4.1-4.2** |
+| [7](weeks/week_07.qmd) | M 11/10 | **11** | Hypothesis Testing: <br> Two-sample independent data; <br> Power | 5.3-5.4, extra |
+|  | W 11/12 | **12** | Inference for a single proportion <br> or difference in proportions | 8.1-8.2 |
+|  | Sa 11/15 |  | [*HW 4*](homework/HW_4_F25_bsta511.qmd) *Due (Days 10 - 12)* |  |
+| [8](weeks/week_08.qmd) | M 11/17 | **13** | Chi-squared tests, <br> Fishers exact test | 8.3-8.4 |
+|  | W 11/19 | **14** | Comparing Means with ANOVA. | 5.5, extra |
+|  | **Thurs 11/20** |  | [*HW 5*](homework/HW_5_F25_bsta511.qmd) *Due (Day 13)* <br> [*Due Thursday!!*]{style="color:darkorange"} |  |
+| [9](weeks/week_09.qmd) | M 11/24 |  | [**Exam 3: Days 10-13**]{style="color:green"} | **4.3, 5.1-5.4;** <br> extra, 8.1-8.4 |
+|  | W 11/26 | **15** | Simple Linear Regression | 6.1-6.2 |
+|  | Sa 11/29 |  | [*HW 6*](homework/HW_6_F25_bsta511.qmd) *Due (Days 14 - 15)* |  |
+| [10](weeks/week_10.qmd) | M 12/1 | **16** | Simple Linear Regression | 6.3-6.4 |
+|  | W 12/3 | **17** | Non-parametric tests <br> (sign, signed-rank, rank-sum, <br> Kruskal-Wallis) | Extra |
+|  | Th 12/4 |  | [Exam 2 corrections due](weeks/week_10.qmd#sec-Exam2Corrections) |  |
+|  | Sa 12/6 |  | [*HW 7*](homework/HW_7_F25_bsta511.qmd) *(Days 16 - 17)* |  |
+| [11](weeks/week_11.qmd) | M 12/8 |  | Review - catch up <br> [Exam 3 corrections due](weeks/week_10.qmd#sec-Exam3Corrections)|  |
+|  | Th 12/11 |  | [**Exam 4 due (take home)**]{style="color:green"}**:** <br> Cumulative with a focus on Days 14-17 | **Ch 5.5, 6,** <br> non-parametric |

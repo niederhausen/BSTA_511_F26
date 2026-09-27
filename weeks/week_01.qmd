@@ -1,0 +1,61 @@
+---
+title: "Week 1"
+description: "Intro to R & RStudio"
+pagetitle: "Week 1 BSTA 511/611"
+date: "9/29/2025"
+date-modified: "today"
+categories: [""]
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## General info
+
+-   [Syllabus](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/page/d587d48e-3615-48b2-a07c-eeaf1bca897d) on Sakai
+-   [Week 1 info](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=226698&postedComment=false&addBefore=&itemId=5465465&path=push&reviewAssessment=false&topicId=&addTool=-1&recheck=&id=&forumId=) on Sakai
+    -   Includes links to background survey and BSAT 511/611 Slack group
+
+## Overview of Week 1
+
+::::: grid
+::: g-col-6
+### Mon
+
+-   No class. OHSU New Student Orientation
+-   [Handout](../resources/BSTA%20511%20text%20R%20info%20F25.pdf) with directions on installing R & RStudio
+
+:::
+
+::: g-col-6
+### Wed - Day 1
+
+-   Intro to R & RStudio
+-   Please have R & RStudio installed for class
+
+:::
+:::::
+
+
+## Slides 
+
+| Day | Topic | Slides (F23): html | Slides: pdf | Slides: web-page | Code: qmd |
+|--------|--------|--------|--------|--------|--------|
+| 1 | Intro to R & RStudio | [Day 1](../slides/Day01_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day01_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day01_bsta511_md.qmd) | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_md/Day01_bsta511_md.qmd) |
+
+: {.striped .hover tbl-colwidths="\[3, 10, 8, 5, 5, 5\]"}
+
+## Homework
+
+-   [HW 1](../homework/HW_1_F25_bsta511.qmd) due on Sat, 10/11
+    -   Covers Days 1-3
+
+## Recordings
+
+* There are no pre-recorded lessons for Week 1. Starting Week 2, you will be accessing pre-recorded lessons on the [EchoVideo site for BSTA 511/611](https://echo360.org/section/af47457c-bed2-48d7-84ae-eaa2d44f9add/home). Make sure you can log into this site and view the recordings. 
+
+
+* __In-class__ recording links are on [Sakai](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=226697&postedComment=false&addBefore=&itemId=5465463&path=push&reviewAssessment=false&topicId=&addTool=-1&recheck=&id=&forumId=). Navigate to _Course Materials_ -> _Schedule with links to in-class recordings_. Note that the password to the recordings is at the top of the page.

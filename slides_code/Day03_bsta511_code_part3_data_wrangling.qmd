@@ -1,0 +1,561 @@
+---
+title: "Data wrangling - extra code"
+subtitle: "BSTA 511/611 Fall 2025 Day 5, OHSU"
+author: "Meike Niederhausen, PhD"
+date: "10/15/2025"
+output:
+  html_document:
+    number_sections: yes
+    toc: yes
+    toc_float:
+      collapsed: yes
+      smooth_scroll: no
+    theme: cerulean
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| label: "setup"
+#| include: FALSE
+knitr::opts_chunk$set(echo = TRUE, fig.height=3, fig.width=5, message = F)
+```
+
+
+```{r}
+library(tidyverse)
+library(janitor)
+```
+
+# Slides pdf
+
+[Link](../slides_pdf/Day03_bsta511_part3_data_wrangling.pdf) to pdf of slides
+
+
+# Goals for today
+
+More data wrangling examples and tools
+
+
+* Subsetting data
+  * `filter`ing rows
+  * `select`ing columns
+
+* More wrangling for columns:
+  * `relocate` columns
+  * `rename` columns
+
+
+
+* Creating new variables
+  * `mutate`
+
+* Reshaping data
+  * wide vs long data
+      * make wide data long
+      * make long data wide
+
+
+Check out the [data transformation cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf) for many more data wrangling commands!
+
+
+
+# Case study: discrimination in developmental disability support (1.7.1)
+
+* In the US, individuals with developmental disabilities typically receive services and support from state governments. 
+  * California allocates funds to developmentally disabled residents through the Department of Developmental Services (DDS)
+  * Recipients of DDS funds are referred to as "consumers." 
+* Dataset `dds.discr` 
+  * sample of 1,000 DDS consumers (out of a total of ~ 250,000)
+  * <span style="color:green">age, gender, race/ethnicity, and DDS annual financial support per consumer</span>
+* __Previous research__
+  * Researchers examined expenditures on consumers by ethnicity
+  * Found that the mean annual expenditures on Hispanics was less than that on White non-Hispanics. 
+* Result: an allegation of ethnic discrimination was brought against the California DDS.
+* __Question: Are the data sufficient evidence of ethnic discrimination?__
+
+* See Section 1.7.1 for more details
+
+
+## Load dataset `dds.discr` from package `oibiostat`
+
+* The textbook's datasets are in the R package `oibiostat`
+* If you haven't already installed the package `oibiostat`, then first do so using directions in previous slide.
+
+* Load the `oibiostat` package and the dataset `dds.discr`
+  * <span style="color:darkorange">the code below needs to be run _every time_ you restart R or knit an Rmd file</span>
+```{r}
+library(oibiostat)
+data("dds.discr")
+```
+
+* After loading the dataset `dds.discr` using `data("dds.discr")`, you will see `dds.discr` in the Data list of the Environment window.
+
+
+
+## Getting to know the dataset
+
+```{r}
+dim(dds.discr)
+names(dds.discr)
+length(unique(dds.discr$id)) # How many unique id's are there?
+```
+
+
+
+# Subsetting data
+
+## `filter()` rows that satisfy specified conditions
+
+### `filter()` to select rows
+
+filter data based on rows
+
+- math: `>`,  `<`,  `>=`,  `<=`
+-  double = for "is equal to":  `==`
+- != (not equal)
+-  `&` (and) 
+-  `|` (or)
+
+
+- `is.na()` to filter based on missing values
+- `%in%` to filter based on group membership
+- `!` in front negates the statement, as in 
+    + `!is.na(age)` 
+    + `!(ethnicity %in% c("Asian","Black"))`
+
+
+
+```{r}
+# Note: the output from the command below is not being saved 
+# since it's not being assigned to a variable using <-
+dds.discr %>% filter(age > 90)   
+```
+
+
+### `filter()` practice
+
+What do these commands do? Try them out:
+
+```{r}
+#| eval: false
+dds.discr %>% filter(age < 5)
+dds.discr %>% filter(age/expenditures < 0.5)    # can do math within filter command
+dds.discr %>% filter((age < 15) | (age > 50))
+
+# simultaneously filter on multiple variables
+dds.discr %>% filter(age < 20, expenditures > 1000, gender == "Male") 
+
+dds.discr %>% filter(id == 10210) # note the use of == instead of just =
+dds.discr %>% filter(gender == "Female")
+dds.discr %>% filter(!(age.cohort == "51+"))
+dds.discr %>% filter(age.cohort %in% c("0-5", "6-12"))
+
+dds.discr %>% filter(is.na(age))
+dds.discr %>% filter(!is.na(age))
+```
+
+
+
+
+## Subset by columns
+
+### `select()` to choose columns
+
+- select columns (variables)
+- no quotes needed around variable names
+- can be used to rearrange columns
+- uses special syntax that is flexible and has many options
+
+```{r}
+dds.discr %>% select(id, expenditures, ethnicity)
+```
+
+### Column selection syntax options
+
+There are many ways to select a set of variable names (columns):
+
+- `var1:var20`: all columns from `var1` to `var20`
+- `one_of(c("a", "b", "c"))`: all columns with names in the specified character vector of names
+
+- __Removing columns__
+    + `-var1`: remove the column`var1`
+    + `-(var1:var20)`: remove all columns from `var1` to `var20`
+
+- __Select by specifying text within column names__
+    + `contains("date")`, `contains("_")`: all variable names that contain the specified string of characters
+    + `starts_with("a")` or `ends_with("last")`: all variable names that start or end with the specified string
+
+See other examples in the [data transformation cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf).
+
+
+
+### `select()` practice
+
+Which columns are selected & in what order using these commands?  
+First guess and then try them out.
+
+```{r}
+#| eval: false
+dds.discr %>% select(id:gender)
+dds.discr %>% select(one_of(c("age","expenditures", "notindata")))
+
+dds.discr %>% select(-age.cohort,-gender)
+dds.discr %>% select(-(id:gender))
+
+dds.discr %>% select(contains("age"))
+dds.discr %>% select(starts_with("a"))
+dds.discr %>% select(-contains("a"))
+```
+
+
+
+
+
+# `relocate()` columns to move them around
+
+## `relocate()` to change order of columns
+
+- change the order of columns in dataset
+- specified column names get put first, 
+  - and unspecified column names after that in original order
+- no quotes needed around variable names
+- similar options as with `select()`, 
+  - plus special ones such as `.before` and `.after`
+
+```{r}
+dds.discr %>% relocate(age.cohort, ethnicity)
+```
+
+
+
+## `relocate()` practice
+
+What order are the columns in using these commands?  
+First guess and then try them out.
+
+```{r}
+#| eval: false
+dds.discr %>% relocate(age:ethnicity)
+
+dds.discr %>% relocate(where(is.numeric))
+dds.discr %>% relocate(where(is.factor))
+# note: the next command doesn't do anything 
+# since there are no character type variables in the dataset
+dds.discr %>% relocate(where(is.character))
+
+dds.discr %>% relocate(age,.before = ethnicity)
+dds.discr %>% relocate(ethnicity, .after = age.cohort)
+dds.discr %>% relocate(age, .after = last_col())
+```
+
+
+
+
+# `rename()` columns
+
+- renames column variables
+
+```{r}
+dds.discr %>% rename(IDnumber = id)   # order: new_name = old_name
+```
+
+
+
+
+
+# Make new variables
+
+## `mutate()`
+
+Use `mutate()` to add new columns to a tibble
+* Many options in how to define new column of data
+
+
+```{r}
+# use = to define new a variable within mutate (not <- or ==) 
+newdata <- dds.discr %>% 
+  mutate(
+    log_expenditures = log(expenditures),
+    expend_per_yearage = expenditures / age)   
+
+
+newdata %>% select(id, age, expenditures, log_expenditures, expend_per_yearage)
+```
+
+
+### `mutate()` practice 
+
+What do the following commands do?  
+First guess and then try them out.
+
+```{r}
+#| eval: false
+dds.discr %>% mutate(age_young = (age < 18))
+
+dds.discr %>% mutate(male = (gender == "Male"))
+dds.discr %>% mutate(male = 1 * (gender == "Male"))
+```
+
+
+
+## `case_when()` to create multi-valued variables
+
+- Example: create age groups based off of the `age` variable
+```{r}
+dds.discr2 <- dds.discr %>%
+  mutate(
+    age_group = case_when(
+      age < 6 ~ "0 to 5",               # condition ~ new_value
+      age >= 6 & age < 13 ~ "6 to 12",
+      age >= 13 & age < 18 ~ "13 to 17",
+      age >= 18 & age < 22 ~ "18 to 21",
+      age >= 22 & age < 51 ~ "22 to 50",
+      age >= 51 ~ "51 plus")
+    )
+
+dds.discr2 %>% select(age, age_group) %>% head()
+dds.discr2 %>% tabyl(age.cohort, age_group)
+```
+
+
+
+
+# `arrange()` to order rows
+
+* Use `arrange()` to order the rows by the values in specified columns
+  
+
+```{r}
+dds.discr %>% arrange(age, expenditures) %>% head(n=3)
+
+dds.discr %>% arrange(desc(age), expenditures) %>% head(n=3)
+```
+
+
+
+
+# Reshaping data 
+
+
+## Wide vs. long data
+
+- __Wide__ data has one row per individual, 
+  - with multiple columns for their repeated measurements
+- __Long__ data has multiple rows per individual, 
+  - with one column for the measurement variable and 
+  - another indicating from when/where the repeated measures are from
+
+
+## DDS example
+
+Mean expenditures by ethnicity and age cohort (from Day 3 slides)
+
+
+## Example wide toy dataset
+
+Copy and paste the code below into R to create this example dataset
+
+```{r}
+SBP_wide <- tibble(id = letters[1:4],
+                     sex = c("F", "M", "M", "F"),
+                     SBP_v1 = c(130, 120, 130, 119),
+                     SBP_v2 = c(110, 116, 136, 106),
+                     SBP_v3 = c(112, 122, 138, 118))
+SBP_wide
+```
+
+- What do you think the data in the table are measures of?
+- How can we tell the data are wide?
+
+
+## Wide to long: `pivot_longer()`
+
+```{r}
+SBP_wide
+```
+
+For `pivot_longer` we need to __specify__:
+- __cols__: which columns to make long
+- __names_to__: the name of the variable that will be created from the data stored in the _column names_ 
+- __values_to__: the name of the variable that will be created from the data stored in the _cell values_
+
+
+
+```{r}
+SBP_long <- SBP_wide %>% 
+  pivot_longer(
+    cols=c(SBP_v1,SBP_v2,SBP_v3), 
+    names_to = "visit", 
+    values_to = "SBP")
+SBP_long
+```
+
+
+
+## Long to wide: `pivot_wider()`
+
+```{r}
+SBP_long
+```
+
+
+
+For `pivot_wider` we need to __specify__:
+- __names_from__: which column contains the names for the *new columns* 
+- __values_from__: which column contains the values that will fill in the _cell values_
+    
+```{r}
+SBP_wide2 <- SBP_long %>% 
+  pivot_wider(names_from = "visit", 
+              values_from = "SBP")
+SBP_wide2
+```
+
+
+
+### Clean up `visit` column in the long data (1/3)
+
+
+```{r}
+SBP_long
+```
+
+
+
+*Goal*: remove the string "`SBP_`" from the `visit` variable's values.
+
+
+**Method #1:** tidy the `visit` column *after* making the data long
+
+**Method #2:** tidy the `visit` column *while* making the data long
+
+
+
+### Clean up `visit` column in the long data (2/3)
+
+
+**Method #1:** tidy the `visit` column *after* making the data long
+
+```{r}
+SBP_long2 <- SBP_long %>% 
+  mutate(
+    visit = str_replace(
+      visit,
+      pattern = "SBP_",
+      replacement = "")
+    ) 
+SBP_long2
+```
+
+
+
+
+<!-- Remarks: -->
+
+1. Note that `mutate` is replacing the existing `visit` column with new values
+1. If I wanted to keep the original `visit` column instead of overwriting it, I would call the new column something else, such as `visit_clean`
+1. Within `str_replace()`, double quotes need to be used around the characters specifying 1) the string of text to replace (`"SBP_"`) and 2) what to replace the text with, where `""` is used for *no text*
+1. Could instead use `str_remove()`:
+`mutate(visit = str_remove(visit,"SBP_"))` 
+
+
+
+
+
+
+
+### Clean up `visit` column in the long data (3/3)
+
+
+**Method #2:** tidy the `visit` column *while* making the data long
+
+```{r}
+SBP_long3 <- SBP_wide %>% 
+ pivot_longer(cols = c(SBP_v1, SBP_v2,SBP_v3), 
+              names_to = "visit", 
+              names_prefix = "SBP_", #<<
+              values_to = "SBP")
+SBP_long3
+```
+
+
+
+
+Remarks:
+
+1. Note the new parameter `names_prefix` specifying what the prefix is that *needs to be stripped*.
+1. More complex `pivot_longer()` examples are shown at
+https://tidyr.tidyverse.org/articles/pivot.html  
+*(the end of the url is articles/pivot.html)*
+
+
+
+
+
+
+## Specifying `cols` in `pivot_longer`
+
+
+In the example creating `SBP_long`, the columns to make the tibble longer by were explicitly listed using `cols=c(SBP_v1,SBP_v2,SBP_v3)`.
+
+```{r}
+SBP_long <- SBP_wide %>% 
+ pivot_longer(cols = c(SBP_v1, SBP_v2,SBP_v3), #<<
+              names_to = "visit", 
+              values_to = "SBP")
+SBP_long
+```
+
+
+
+
+
+
+However, we can specify the columns in many different ways, just like with `select()`:
+
+* `cols = c(SBP_v1:SBP_v3)`
+* `cols = c(-id, -sex)`
+* `cols = starts_wth("SBP")`
+* `cols = contains("SBP")`
+
+
+
+
+
+## Notes on `pivot_*()` commands
+
+* `pivot_longer()` and `pivot_wider()` are relatively new commands
+* previously we used `gather()` and `spread()`, 
+  - which have different function parameters and are less intuitive to use
+* if you search for help making data longer or wider, 
+  - you might still see references for `gather()` and `spread()`
+* see my [workshop slides](https://jminnier-berd-r-courses.netlify.com/02-data-wrangling-tidyverse/02_data_wrangling_slides_part2.html#26) for `gather()` and `spread()` usage
+
+
+* see https://tidyr.tidyverse.org/articles/pivot.html for more `pivot` examples
+
+
+
+
+
+# Summary of data wrangling commands
+
+command | purpose
+--|-
+ `%>%` | join (pipe) together commands
+`filter()` | subset rows
+`arrange()` | sort rows
+`select()` | select or rearrange columns
+`rename()` | columns
+`mutate()` | create new columns
+`tabyl()` | summarize categorical data
+`summarize()` | summarize data; for both categorical and numerical data
+`group_by()` | group data by a categorical variable
+`pivot_longer` | make a wide dataset long; 
+`pivot_wider` | to make a long dataset wide
+
+<!-- `bind_rows` | merge rows from different datasets -->
+<!-- `left_join()` | merge different datasets; also `full_join()`, `inner_join()`, etc. -->
+
+

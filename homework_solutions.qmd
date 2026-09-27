@@ -1,0 +1,19 @@
+---
+title: "Homework Solutions"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    # toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+::: callout-note
+* Accessing solutions will require signing into Sakai. 
+* **[Solutions will not be accessible until after their due date and after you turn in the assignment.]{style="color:darkorange"}** 
+
+:::
+
+[LINK](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=226699&postedComment=false&addBefore=&itemId=5465467&path=push&reviewAssessment=false&topicId=&addTool=-1&recheck=&id=&forumId=) to homework solutions page on Sakai.
+

@@ -1,0 +1,84 @@
+---
+title: "Week 9"
+description: "Exam 3 & Simple Linear Regression"
+pagetitle: "Week 9 BSTA 511/611"
+date: "11/24/2025"
+date-modified: "today"
+categories: [""]
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Overview of Week 9
+
+::::: grid
+::: g-col-6
+### Mon: Exam 3
+
+-   See the [Exam 3 information](#sec-Exam3info) section below for more information
+:::
+
+::: g-col-6
+### Wed: Day 15
+
+-   Simple Linear Regression (part 1)
+-   Sections 6.1, 6.2
+:::
+:::::
+
+## Slides & Recordings
+
+-   **Pre-recorded** lessons are on [Echo Video](https://echo360.org/section/af47457c-bed2-48d7-84ae-eaa2d44f9add/home).
+
+| Day | Topic | Slides: html | Slides: pdf | Slides: web-page | Slides with notes | Recording Link | Duration | Code: qmd | Code: html |
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| 15 | Simple linear regression: 6.1-6.2 |  | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day15_bsta511.pdf) |  | [{{< iconify pepicons-pop pen-circle-filled size=20px >}}](../slides_notes/Day15_bsta511_notes.pdf) | [Day 15](https://echo360.org/lesson/d450afbd-c74a-41e9-a6f3-1aa887ec0259/classroom) | 46 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day15_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day15_bsta511_code.qmd) |
+
+: {.striped .hover tbl-colwidths="\[3, 10, 8, 5, 5, 5, 6, 6, 5, 5\]"}
+
+## Datasets
+
+All datasets can be found on [GitHub](https://github.com/niederhausen/BSTA_511_F25/tree/main/data)
+
+-   Day 15: [lifeexp_femlit_water_2011.csv](/data/lifeexp_femlit_water_2011.csv)
+
+## Practice Problems
+
+### [Day 15 PP]{style="color:darkorange"}
+
+-   Book exercises:
+    -   6.2, 6.6
+
+## Class discussion
+
+During class you will be working in groups discussing the following:
+
+### Day 15
+
+-   Practice Problems listed above
+-   Questions from HW 6
+    -   Book 6.10
+-   R2: Palmer Penguins SLR
+
+## Homework
+
+-   [HW 6](../homework/HW_6_F25_bsta511.qmd) covers Days 14-15 and is due on Sat, 11/29
+-   Check out this [spreadsheet](https://docs.google.com/spreadsheets/d/1k_NivXZftdlRgRyTT3fUZCndW4eoXCzAs-DEIml6K3Y/edit?gid=0#gid=0) for typos in book.
+
+## Exam 3 information {#sec-Exam3info}
+
+-   Exam 3 will be on Mon, Nov. 24th
+-   Samples of [past exam questions](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_3_samples_4.3_5.1-5.4_8.1-8.4.pdf) and [answers](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_3_samples_4.3_5.1-5.4_8.1-8.4_answers.pdf) (on Sakai)
+    -   *Note: I still need to add the answers for the Fall 2024 exam.*
+-   Material will cover **Days 10-13**,
+    -   which is approximately **Sections 4.3, 5.1-5.4, and 8.1-8.4** from the textbook, plus supplementary material.
+-   The exam will be in-class and handwritten. *Bring a calculator.*
+-   You may bring one page of notes on an 8.5” x 11” sheet of paper.
+    -   You may use both sides.
+    -   You may type your notes.
+    -   You may **not** use screenshots of the notes or textbook
+    -   You will be turning in the page of notes with the exam, so please add your name to the sheet.

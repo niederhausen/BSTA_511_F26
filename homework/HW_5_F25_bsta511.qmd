@@ -1,0 +1,124 @@
+---
+title: "HW 5: BSTA 511/611 F25"
+pagetitle: "HW 5"
+author: "Your name here - update this!!!!"
+date: "Due THURSDAY 11/20/25"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    toc_float:
+      collapsed: false
+    number-sections: false
+    number-depth: 4
+    theme: lumen
+    self-contained: true
+    html-math-method: mathjax
+---
+
+```{r}
+#| label: "setup"
+#| include: false
+knitr::opts_chunk$set(echo = TRUE, fig.height = 2, fig.width = 4)
+```
+
+**Due THURSDAY 11/20/25**
+
+Download the .qmd file for this assignment from <https://github.com/niederhausen/BSTA_511_F25/blob/main/homework/HW_5_F25_bsta511.qmd>
+
+## Graded exercises
+
+The exercises listed below will be graded for this assignment. You are **strongly** encouraged to complete the entire assignment. You will receive feedback on exercises you turn in that are not being graded.
+
+-   **Book exercises**
+    -   8.32, 8.34, 8.38
+
+
+## Directions
+
+::: callout-important
+-   Complete ALL exercises in this assignment using Quarto.
+-   I highly recommend using LaTeX to format equations.
+    -   See the .qmd files from class notes for LaTeX code to make it easier to show your work in computations.
+    -   For instructions on creating equations in the Visual editor, check out <https://quarto.org/docs/get-started/authoring/rstudio.html#equations>. [html](../slides_code/Probability_distributions_in_R_bsta511.qmd)
+    -   Also check out examples of [LaTeX formatting for statistics](https://nwakim.github.io/S2024_BSTA_513/extra_resources/Latex_qmd_formatting.html) created by recent biostats alum Ariel Weingarten.
+    -   If you have difficulty rendering the LaTeX equations, I recommend installing and running the R package `tinytex`. See this [website](https://evalsp20.classes.andrewheiss.com/reference/install/#install-tinytex-1) for instructions.
+:::
+
+**Hypothesis test instructions**
+
+::: callout-important
+-   For book exercises, make sure to include all steps in a hypothesis test (where applicable) as outlined in the class notes.
+
+-   Do not forget to include a discussion on whether you think the test (or CI) assumptions have been satisfied. Are there assumptions you need to make in order for them to be satisfied? Whether you believe they are satisfied or not, continue to run the hypothesis test (or CI) as instructed.
+:::
+
+-   Please upload your homework to [Sakai](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/094ccc0a-8f85-4069-af5b-e035ef8b79e2). **Upload both your .qmd code file and the rendered .html file** (or just your pdf if completing the assignment by hand).
+    -   Use the assignment .qmd file linked to above as a template for your own assignment.
+-   Please always use the following naming convention for submitting your files:
+    -   **Lastname_Firstname_HWx.qmd**, such as Niederhausen_Meike_HW2.qmd
+    -   **Lastname_Firstname_HWx.html**, such as Niederhausen_Meike_HW2.html
+-   For each question, make sure to **show all of your work**.
+    -   This includes all code and resulting output in the html file to support your answers for exercises requiring work done in R (including any arithmetic calculations).
+    -   For non-calculation questions, this includes an explanation of your answer (*why did you choose your answer?*).
+-   For each question, include a **sentence summarizing the answer** for that question in the context of the research question.
+
+::: callout-tip
+It is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly.
+:::
+
+
+
+# Book exercises
+
+## 8.32 Diabetes and unemployment
+
+### (a)
+
+### (b)
+
+### (c)
+
+[**In addition to answering the question in (c), run the 2 proportions test in R and calculated the "z" test statistic and p-value using the normal distribution based on the** $\chi^2$ **output in R's test.**]{style="color:green"}
+
+### (d) extra part
+
+[**Run the test as a** $\chi^2$ as well, and compare your results to those in (c).]{style="color:green"}
+
+## 8.34 Coffee and Depression
+
+-   [**Do not create a dataset and run the test in R. Use just the information given in the problem.**]{style="color:green"}
+-   [**For (e), calculate the p-value "directly" (not using** $\chi^2$ test command in R). Also comment on whether you think the sample size condition would be met without computing the expected cell counts.]{style="color:green"}
+
+### (a)
+
+### (b)
+
+### (c)
+
+### (d)
+
+### (e)
+
+[**For (e), calculate the p-value "directly" (not using** $\chi^2$ test command in R). Also comment on whether you think the sample size condition would be met without computing the expected cell counts.]{style="color:green"}
+
+
+### (f)
+
+
+### (g)
+
+
+
+## 8.38 (a) & (extra) Salt intake and CVD
+
+Do not do parts (b)-(c) in the book
+
+### (a)
+
+-   [**You can use the expected cell counts from R's chi-squared test (you do not need to compute them using the formula).**]{style="color:green"}
+-   [**Comment on whether the sample size condition is met or not for these data.**]{style="color:green"}
+
+### (extra)
+
+[**Run a Fisher's Exact test. Include the hypotheses and a conclusion in the context of the problem.**]{style="color:green"}

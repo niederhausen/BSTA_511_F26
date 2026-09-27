@@ -1,0 +1,199 @@
+---
+title: "HW 1: BSTA 511/611 F25"
+pagetitle: "HW 1 BSTA 511/611"
+author: "Your name here - update this!!!!"
+date: "Due 10/11/25"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    toc_float:
+      collapsed: false
+    number-sections: false
+    number-depth: 4
+    theme: lumen
+    self-contained: true
+    html-math-method: mathjax
+---
+
+```{r}
+#| label: "setup"
+#| include: false
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Due 10/11/25 at 11 pm**
+
+Download the .qmd file for this assignment from [https://github.com/niederhausen/BSTA_511_F25/blob/main/homework/HW_1_F25_bsta511.qmd](https://github.com/niederhausen/BSTA_511_F25/blob/main/homework/HW_1_F25_bsta511.qmd)
+
+## Graded exercises
+
+The exercises listed below will be graded for this assignment. You are strongly encouraged to complete the entire assignment. You will receive feedback on exercises you turn in that are not being graded. 
+
+* **Non-Book exercises**
+    *   NBE 2: Tylenol during pregnancy?
+* **Book exercises**
+    *   1.12, 1.31, 2.6, 2.14
+* **R exercises**
+    *   R2: BRFSS
+
+
+## Directions
+
+::: callout-important
+-   `*` Starred exercises in the section `Book exercises` may be completed by hand (such as on paper or using a tablet) instead of using Quarto. 
+-   If you complete this part of the assignment *not* using Quarto, you will be uploading 3 files on Sakai for this HW: qmd & html files for your R work, and a pdf with your written work.
+-   If you are completing the homework on paper, you can use a scanning app, such as Adobe Scan, to create a pdf of your assignment.
+:::
+
+-   Please upload your homework to [Sakai](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/094ccc0a-8f85-4069-af5b-e035ef8b79e2). **Upload both your .qmd code file and the rendered .html file**.
+    -   Use the assignment .qmd file linked to above as a template for your own assignment.
+-   For each question, make sure to **show all of your work**. This includes all code and resulting output in the html file to support your answers for exercises requiring work done in R (including any arithmetic calculations).
+- For each question, include a **sentence summarizing the answer** for that question in the context of the research question. 
+
+::: callout-tip
+It is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly.
+:::
+
+# Non-book exercises
+
+## NBE 1
+
+### a) Upload a photo using Sakai submission
+
+To help me learn your names and faces, please upload a photo of yourself on Sakai. You will find the Upload Photo "assignment" in the [Assignments section of Sakai](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/094ccc0a-8f85-4069-af5b-e035ef8b79e2). These photos will only be seen by me and the TA.
+
+### b) Background survey
+
+-   Please fill out the background survey at <https://docs.google.com/forms/d/e/1FAIpQLSdwgcVn9ocS8iIo18wVVONAlRk6T7qZvtodg-Tyjg-3HE7OXA/viewform>.\
+-   No work to be shown here.
+
+### c) Slack post
+
+-   Introduce yourself to the class by posting a message in the #random channel on the BSTA 511/611 Slack group.\
+-   Slack invite link: <https://join.slack.com/t/bsta511611f25/shared_invite/zt-3eo7ujghu-rfm36Cpydo~crHXVx4rY5g>
+-   No work to be shown here.
+
+
+## NBE 2: Tylenol during pregnancy?
+
+On Monday, September 22, 2025, President Trump and Health Secretary Robert F. Kennedy Jr. claimed that taking acetaminophen (the active ingredient in the pain reliever Tylenol) during pregnancy was a cause autism in the child. This led to an extensive debate on the topic, much of which has focused on a systemic review of observational studies researching the association between prenatal acetaminophen use and autism spectrum disorder ([Evaluation of the evidence on acetaminophen use and neurodevelopmental disorders using the Navigation Guide methodology](https://ehjournal.biomedcentral.com/articles/10.1186/s12940-025-01208-0#Sec10)). There are many news reports that discussed this issue, one of which is from the New York Times, *"[Debate Flares Over an Unproven Link Between Tylenol and Autism](https://www.nytimes.com/2025/09/05/health/autism-acetaminophen-tylenol.html?unlocked_article_code=1.qk8.PYCn.m1qkOsxrK1TI&smid=url-share)"*
+
+### a) Causation?
+
+**Can causation be deduced based on the observational studies in the systemic review linked to above? Explain why or why not.**
+
+### b) Experiment?
+
+**Would it be ethical to conduct an experiment to study the effects of prenatal acetaminophen use on the development of autism spectrum disorder**
+
+### c) Sampling: stratified
+
+**Describe a stratified sampling method that could be used to study this topic in a hypothetical study.**
+
+### d) Sampling: cluster
+
+**Describe a cluster sampling method that could be used to study this topic in a hypothetical study.**
+
+### e) Sampling: Multistage sample
+
+**Describe a multistage sample sampling method that could be used to study this topic in a hypothetical study.**
+
+### f) Sampling method type?
+
+**One of the studies included in the systematic review included "All Singleton live born children in Sweden with linkable personal identifiers with follow-up until Dec 31,2021." What type of sampling method did they use?**
+
+
+
+# Book exercises
+
+-   Exercises are in the last section of the chapter.
+-   Exercises are numbered as chapter#.exercise#. For example, exercise 1.2 is Chapter 1 #2, which is on pg. 75.
+
+## 1.2 Sinusitis and antibiotics, Part I.
+
+-   Show the work of your calculations **using R code within a code chunk**. Make sure that both your code and output are visible in the rendered html file.
+-   Write your answers in complete sentences as if communicating the results to a collaborator.
+-   If you are having difficulty with exercise 1.2, take a look at exercise 1.1, whose answers are at the back of the book.
+
+## 1.4 Buteyko method, study components
+
+## 1.12 Herbal remedies
+
+## 1.31 Income at the coffee shop
+
+## 1.32 Midrange
+
+## 1.38 Smoking and stenosis
+
+*See Section 1.6.2 for more on how the relative risk is calculated.*
+
+## * 2.6 Poverty and language
+
+*Part (b) asks you to create a Venn Diagram. If you are submitting this question in R, you do not need to turn this part in. If you want an R challenge though, you can use the `VennDiagram` or other package to create one. See <https://www.geeksforgeeks.org/how-to-create-a-venn-diagram-in-r/> for some examples.*
+
+## * 2.8 School absences
+
+*Part (b) asks you to create a Venn Diagram. If you are submitting this question in R, you do not need to turn this part in. If you want an R challenge though, you can use the `VennDiagram` or other package to create one. See <https://www.geeksforgeeks.org/how-to-create-a-venn-diagram-in-r/> for some examples.*
+
+## * 2.10 Health coverage, frequencies
+
+## * 2.14 Health coverage, relative frequencies
+
+# R exercises
+
+## R1: Formatting text practice
+
+**Write a sentence (or a few) using all the different types of formatting text shown in slide 29 of the Day 1 slides. Your choice of text does not matter or even need to make sense. Although the TA will appreciate it if you make them laugh.**
+
+## R2: BRFSS
+
+> The Behavioral Risk Factor Surveillance System (BRFSS) is an annual telephone survey of 350,000 people in the United States. The BRFSS is designed to identify risk factors in the adult population and report emerging health trends. For example, respondents are asked about their diet, weekly exercise, possible tobacco use, and health care coverage.
+
+> The dataset `cdc` is a sample of 20,000 people from the survey conducted in 2000, and contains responses from a subset of the questions asked on the survey.
+
+> Load the `cdc` dataset from the web using the `source()` command below:
+
+```{r}
+source("http://www.openintro.org/stat/data/cdc.R")
+```
+
+-   Answer the questions below about the `cdc` dataset.
+-   Please do not delete the statements of the questions so that they remained numbered in the correct order.
+-   Show the work of your calculations using R code within a code chunk. Make sure that both your code and output are visible in the knitted html file.
+-   Write your answers in complete sentences as if communicating the results to a collaborator.
+
+## a) How many rows and columns are in the dataset?
+
+## b) Variable types
+
+**For each variable, what identify both its "statistical" variable type (numerical (discrete, continuous) or categorical (nominal, ordinal) and its R variable type.**\
+*Fill in your answers in the table I created below. I recommend using the Visual editor in RStudio for filling in the table. *
+
+| variable name | R type  | variable type |
+|---------------|---------|---------------|
+| genhlth       | fill in | fill in       |
+| exerany       | etc.    |               |
+| hlthplan      |         |               |
+| smoke100      |         |               |
+| height        |         |               |
+| weight        |         |               |
+| wtdesire      |         |               |
+| age           |         |               |
+| gender        |         |               |
+
+## c) Average weight vs. desired weight
+
+**What is the difference between the average weight and the average desired weight?**
+
+## d) Compare variability
+
+**Which of the height, weight, and desired weight variables has the most variability? Which has the least variability?**
+
+## e) Coefficient of variation
+
+**The coefficient of variation (CV) divides the standard deviation by the mean so that we have a measure of variation relative to the mean. This makes it easier to compare variability of measures that are on very different scales or even units since the CV is unitless. Calculate the CV for the height, weight, and desired weight variables. Which has the most and which has the least variability? Are these answers consistent with part d)?**
+
+## f) Mean of the `hlthplan`
+
+**Calculate the mean of the `hlthplan` variable. How do we interpret this mean? In other words, what does this mean measure?**

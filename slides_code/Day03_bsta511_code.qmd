@@ -1,0 +1,581 @@
+---
+title: "Day 3 code: Data visualization"
+subtitle: "BSTA 511/611 Fall 2024 Day 5, OHSU"
+author: "Meike Niederhausen, PhD"
+date: "10/16/2024"
+categories: ["Week 3"]
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+execute:
+  echo: true
+# editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+#| label: "setup"
+#| include: false
+knitr::opts_chunk$set(echo = TRUE, fig.height=3, fig.width=5, message = F)
+```
+
+
+
+## Load packages
+
+* Packages need to be loaded _every time_ you restart R or render an Qmd file
+
+```{r}
+# run these every time you open Rstudio
+library(tidyverse)    
+library(oibiostat)
+library(ggridges)
+library(janitor)
+library(rstatix)
+library(knitr)
+library(gtsummary) # NEW!!
+```
+
+
+- You can check whether a package has been loaded or not 
+  - by looking at the Packages tab and 
+  - seeing whether it has been checked off or not
+
+
+# Case study: discrimination in developmental disability support (1.7.1)
+
+* In the US, individuals with developmental disabilities typically receive services and support from state governments. 
+  * California allocates funds to developmentally disabled residents through the _Department of Developmental Services (DDS)_
+  * Recipients of DDS funds are referred to as "consumers." 
+* Dataset `dds.discr` 
+  * sample of 1,000 DDS consumers (out of a total of ~ 250,000)
+  * data include __[age, gender, race/ethnicity, and annual DDS financial support per consumer]{style="color:green"}__
+* __Previous research__
+  * Researchers examined expenditures on consumers by ethnicity
+  * Found that the mean annual expenditure on Hispanics was less than that on White non-Hispanics. 
+* Result: an allegation of ethnic discrimination was brought against the California DDS.
+* __Question: Are the data sufficient evidence of ethnic discrimination?__
+
+* See Section 1.7.1 for more details
+
+
+## Load `dds.discr` dataset from `oibiostat` package
+
+* The textbook's datasets are in the R package `oibiostat`
+* Make sure the `oibiostat` package is installed before running the code below.
+
+* Load the `oibiostat` package and the dataset `dds.discr`
+
+__[the code below needs to be run _every time_ you restart R or render a Qmd file]{style="color:darkorange"}__
+```{r}
+library(oibiostat)
+data("dds.discr")
+```
+
+* After loading the dataset `dds.discr` using `data("dds.discr")`, you will see `dds.discr` in the Data list of the Environment window.
+
+
+
+## Getting to know the dataset
+
+```{r}
+dim(dds.discr)
+names(dds.discr)
+length(unique(dds.discr$id)) # How many unique id's are there?
+```
+
+### `str()`
+
+* We previously used the base R structure command `str()` to get information about variable types in a dataset. 
+* Note this dataset is a `tibble` instead of a `data.frame`
+
+```{r}
+str(dds.discr)      # base R
+```
+
+
+### `glimpse()`
+
+__New: `glimpse()`__
+
+* Use `glimpse()` from the `tidyverse` package (technically it's from the `dplyr` package) to get information about variable types. 
+* `glimpse()` tends to have nicer output for `tibbles` than `str()`
+
+```{r}
+library(tidyverse)
+glimpse(dds.discr)  # from tidyverse package (dplyr)
+```
+
+
+### `summary()`
+
+* We previously used the base R structure command `summary()` to get summary information about variables
+
+```{r}
+summary(dds.discr)      # base R
+```
+
+
+## Getting to know the dataset: `tbl_summary()`
+
+* __New:__ Use `tbl_summary()` from the `gtsummary` package to get summary information
+
+```{r}
+# library(gtsummary)
+tbl_summary(dds.discr)  # from package gtsummary
+```
+
+
+# Visualize numerical variables with `ggplot`
+
+## Histograms
+
+What is being measured on the vertical axes?
+
+```{r}
+ggplot(data = dds.discr, aes(x = age)) +
+  geom_histogram() 
+```
+
+```{r}
+ggplot(data = dds.discr, aes(x = expenditures)) +
+  geom_histogram() 
+```
+
+
+## Histograms showing proportions
+
+```{r}
+ggplot(data = dds.discr, aes(x = age)) +
+  geom_histogram(aes(y = stat(density)))  
+```
+
+```{r}
+ggplot(data = dds.discr, aes(x = age)) +
+  geom_histogram(aes(y = stat(density))) +  
+  scale_y_continuous(labels = scales::percent_format())  
+```
+
+
+## Density plots
+What is being measured on the vertical axes?
+
+```{r}
+ggplot(data = dds.discr, aes(x = age)) +
+  geom_density() 
+```
+
+```{r}
+ggplot(data = dds.discr, aes(x = age)) +
+  geom_histogram() 
+```
+
+
+
+## Dot plots (better for smaller samples)
+What is being measured on the vertical axes?
+
+```{r}
+ggplot(data = dds.discr, aes(x = age)) +
+  geom_dotplot(binwidth =1) 
+```
+
+
+```{r}
+ggplot(data = dds.discr, aes(x = age)) +
+  geom_histogram(binwidth =1) 
+```
+
+
+## Boxplots
+
+
+```{r}
+ggplot(data = dds.discr, aes(x = age)) + 
+  geom_boxplot() 
+```
+
+
+```{r}
+ggplot(data = dds.discr, aes(y = age)) + 
+  geom_boxplot() 
+```
+
+
+
+# Visualizing relationships between numerical and categorical variables (1.6.3)
+
+## Side-by-side boxplots 
+
+```{r}
+#| fig.height: 5
+#| fig.width: 8
+ggplot(data = dds.discr, 
+       aes(x = expenditures, y = ethnicity)) + 
+  geom_boxplot() + 
+  labs(x = "Annual Expenditures ($)", 
+       y = "Race and ethnicity")  
+```
+
+Can you determine the following using boxplots?
+
+* distribution shape
+* sample size
+
+
+## Side-by-side boxplots with data points
+
+
+```{r}
+#| fig.height: 5
+#| fig.width: 8
+ggplot(data = dds.discr, 
+       aes(x = expenditures, y = ethnicity)) + 
+  geom_boxplot(color="darkgrey") + 
+  labs(x = "Annual Expenditures ($)",
+       y = "Race and ethnicity") +
+  geom_jitter(aes(color = ethnicity),
+              alpha = 0.3,
+              show.legend = FALSE,
+              position = position_jitter(height = 0.4)
+              )      
+```
+
+Can you determine the following using boxplots?
+
+* distribution shape
+* sample size
+
+
+
+
+## Density plots by group
+
+
+```{r}
+#| fig.width: 10
+ggplot(data = dds.discr, 
+       aes(x = expenditures,
+           color = ethnicity)) + 
+  geom_density() + 
+  labs(x = "Annual Expenditures ($)")  
+```
+
+
+
+
+## Ridgeline plot 
+
+
+```{r}
+#| fig.height: 5
+#| fig.width: 8
+# library(ggridges)
+ggplot(data = dds.discr,
+       aes(x = expenditures, y = ethnicity,      
+           fill = ethnicity)) + 
+  geom_density_ridges(
+    alpha = 0.3,      
+    show.legend = FALSE) +
+  labs(x = "Annual Expenditures ($)",
+       y = "Race and ethnicity",
+       title = "Expenditures by race and ethnicity")       
+```
+
+
+
+
+## Transforming data (1.4.5)
+
+* We sometimes apply a transformation to highly skewed data to make it more symmetric
+* Log transformations are often used for skewed right data
+
+`x = expenditures`
+```{r}
+#| fig.height: 3.5
+ggplot(data = dds.discr, 
+       aes(x = expenditures)) +  
+  geom_density() 
+```
+
+`x = log(expenditures)`
+```{r}
+#| fig.height: 3.5
+ggplot(data = dds.discr, 
+       aes(x = log(expenditures))) +  
+  geom_density() 
+```
+
+
+# Relationships between two numerical variables (1.6.1)
+
+## Scatterplots
+
+```{r}
+#| fig.height: 4
+ggplot(data = dds.discr, 
+       aes(x = age, y = expenditures)) + 
+  geom_point() +       
+  labs(x = "Age",
+       y = "Annual Expenditures ($)") 
+```
+
+Response vs. explanatory variables (Section 1.2.3)
+- A **response variable** measures the outcome of interest in a study
+- A study will typically examine whether the values of a response variable differ as values of an **explanatory variable** change
+
+Describe the association between the variables
+
+
+## (Pearson) Correlation coefficient $r$
+
+The (Peasron) correlation coefficient of variables $x$ and $y$ can be computed using the formula
+$$r = \frac{1}{n-1}\sum_{i=1}^{n}\Big(\frac{x_i - \bar{x}}{s_x}\Big)\Big(\frac{y_i - \bar{y}}{s_y}\Big)$$
+where 
+* $(x_1,y_1),(x_2,y_2),...,(x_n,y_n)$ are the $n$ paired values of the variables $x$ and $y$ 
+* $s_x$ and $s_y$ are the sample standard deviations of the variables $x$ and $y$, respectively
+
+```{r}
+cor(dds.discr$age, dds.discr$expenditures)
+```
+
+## Scatterplots with color-coded dots
+
+
+```{r}
+#| fig.height: 5
+#| fig.width: 7
+ggplot(data = dds.discr, 
+       aes(x = age, y = expenditures,
+           color = ethnicity)) +   
+  geom_point(alpha = .5) +       
+  labs(x = "Age",
+       y = "Annual Expenditures ($)") 
+```
+
+
+# Categorical data (1.5) and Relationships between two categorical variables (1.6.2)
+
+## Barplots
+
+Counts 
+
+```{r}
+#| fig.width: 8
+ggplot(data = dds.discr, 
+       aes(x = ethnicity)) +
+  geom_bar() 
+```
+
+
+percentages
+```{r}
+#| fig.width: 8
+ggplot(data = dds.discr, 
+       aes(x = ethnicity)) +
+  geom_bar(aes(y = stat(prop), group = 1)) + 
+  scale_y_continuous(labels = scales::percent_format())  
+```
+
+
+## Barplots with 2 variables: segmented bar plots
+
+
+```{r}
+#| fig.width: 8
+#| fig.height: 4
+ggplot(data = dds.discr, 
+       aes(x = ethnicity,
+           fill = age.cohort)) + 
+  geom_bar() 
+```
+
+
+
+```{r}
+#| fig.width: 8
+#| fig.height: 4
+ggplot(data = dds.discr, 
+       aes(x = ethnicity,
+           fill = age.cohort)) + 
+  geom_bar(position = "fill")  
+```
+
+
+
+## Barplots with 2 variables: side-by-side bar plots
+
+Side-by-side bar plot
+```{r}
+#| fig.height: 5
+#| fig.width: 12
+ggplot(data = dds.discr, 
+       aes(x = ethnicity,
+           fill = age.cohort)) + 
+  geom_bar(position = "dodge") 
+```
+
+
+# Summarizing categorical data and some data wrangling
+
+## Frequency tables: `count()`
+
+* `count` is from the `dplyr` package
+* the output is a long tibble, and not a "nice" table
+```{r}
+dds.discr %>% count(ethnicity)
+```
+
+
+```{r}
+dds.discr %>% 
+  count(ethnicity, age.cohort)
+```
+
+
+## How to use the pipe `%>%`
+
+The pipe operator `%>%` strings together commands to be performed sequentially
+
+```{r}
+dds.discr %>% head(n=3)      # pronounce %>% as "then"
+```
+
+- Always _first list the tibble_ that the commands are being applied to
+- Can use __multiple pipes__ to run multiple commands in sequence
+    + What does the following code do?
+
+```{r}
+dds.discr %>% head(n=3) %>% summary()
+```
+
+
+## Frequency tables: `janitor` package's `tabyl` function 
+
+```{r}
+# default table
+dds.discr %>% 
+  tabyl(ethnicity)  
+```
+
+
+`adorn_` your table!
+```{r}
+dds.discr %>% 
+  tabyl(ethnicity) %>%
+  adorn_totals("row") %>% 
+  adorn_pct_formatting(digits=2)  
+```
+
+
+### Relative frequency table
+
+* A __relative frequency__ table shows __proportions (or percentages)__ instead of counts
+
+* Below I removed (deselected) the counts column (`n`) to create a relative frequency table 
+
+```{r}
+dds.discr %>% 
+  tabyl(ethnicity) %>%
+  adorn_totals("row") %>% 
+  adorn_pct_formatting(digits=2) %>%   
+  select(-n) # remove column with variable name n
+```
+
+
+## Contingency tables (two-way tables)
+
+* **Contingency tables** summarize data for two categorical variables
+  * with each value in the table representing the number of times  
+  a particular combination of outcomes occurs
+
+* **Row & column totals**   
+are sometimes called **marginal totals** 
+
+```{r}
+dds.discr %>% 
+  tabyl(ethnicity, gender) %>%    
+  adorn_totals(c("row", "col"))    
+```
+
+### Contingency tables with percentages
+
+```{r}
+dds.discr %>% 
+  tabyl(ethnicity, age.cohort) %>%
+  adorn_totals(c("row")) %>%
+  adorn_percentages("row") %>%   
+  adorn_pct_formatting(digits=0) %>%    
+  adorn_ns()    
+```
+
+
+
+# Summarizing numeric data
+
+
+## Mean annual DDS expenditures by race/ethnicity
+
+```{r}
+mean(dds.discr$expenditures)
+
+dds.discr %>% 
+  summarize(
+    ave = mean(expenditures),
+    SD = sd(expenditures),
+    med = median(expenditures))
+```
+
+```{r}
+dds.discr %>% 
+  group_by(ethnicity) %>% 
+  summarize(
+    ave = mean(expenditures),
+    SD = sd(expenditures),
+    med = median(expenditures))
+```
+
+
+## `get_summary_stats()` from `rstatix` package
+
+```{r}
+dds.discr %>% get_summary_stats()
+
+dds.discr %>% 
+  group_by(ethnicity) %>%
+  get_summary_stats(expenditures, type = "common")
+```
+
+## How to force all output to be shown? 
+
+Use `kable()` from the `knitr` package.
+
+```{r}
+dds.discr %>% get_summary_stats() %>% kable()
+```
+
+```{r}
+dds.discr %>% 
+  group_by(ethnicity) %>%
+  get_summary_stats(expenditures, type = "common") %>% 
+  kable()
+```
+
+
+
+# Back to research question
+
+Case study: discrimination in developmental disability support (1.7.1)
+
+* __Previous research__
+  * Researchers examined DDS expenditures for developmentally disabled residents by ethnicity
+  * Found that the mean annual expenditures on Hispanics was less than that on White non-Hispanics. 
+* __Result__: an allegation of ethnic discrimination was brought against the California DDS.
+* __Question: Are the data sufficient evidence of ethnic discrimination?__
+
+
+
+

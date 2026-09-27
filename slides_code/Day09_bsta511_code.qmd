@@ -1,0 +1,331 @@
+---
+title: "Day 9: Confidence intervals (4.2)"
+subtitle: "BSTA 511/611"
+pagetitle: "Day 9 BSTA 511/611"
+author: "Meike Niederhausen, PhD"
+institute: "OHSU-PSU School of Public Health"
+date: "10/29/2025"
+categories: ["Week 5"]
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+execute:
+  echo: true
+# editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| label: "setup"
+#| include: false
+knitr::opts_chunk$set(echo = TRUE, fig.height=3, fig.width=5, message = F)
+```
+
+## Load packages
+
+* Packages need to be loaded _every time_ you restart R or render an Qmd file
+
+```{r}
+# run these every time you open Rstudio
+library(tidyverse)    
+library(oibiostat)
+library(ggridges)
+library(janitor)
+library(rstatix)
+library(knitr)
+library(gtsummary)
+library(moderndive) # NEW!!
+
+set.seed(456)
+```
+
+
+- You can check whether a package has been loaded or not 
+  - by looking at the Packages tab and 
+  - seeing whether it has been checked off or not
+  
+  
+# Last time -> Goals for today
+
+## Day 8: Section 4.1
+* Sampling from a population
+  * population __parameters__ vs. __point estimates__
+  * sampling variation
+
+<br>
+
+* __Sampling distribution__ of a mean
+* __Central Limit Theorem__
+
+## Day 9: Section 4.2
+
+What are __Confidence Intervals__?
+
+* How to __calculate__ CI's?
+* How to __interpret__ & __NOT__ interpret CI's?
+
+<br>
+
+* What if we don't know $\sigma$?
+* Student's __t-distribution__
+
+
+# Our hypothetical population: YRBSS
+
+__Youth Risk Behavior Surveillance System (YRBSS)__
+
+* Yearly survey conducted by the US Centers for Disease Control (CDC) 
+* Measures health-related activity in high-school aged youth
+* `yrbss` contains responses from _n_ = 13,583 participants in 2013 for a subset of the variables included in the complete survey data
+
+```{r}
+library(oibiostat)
+data("yrbss")  #load the data
+# ?yrbss
+```
+
+```{r}
+dim(yrbss)
+```
+
+```{r}
+names(yrbss)
+```
+
+
+## Transform height & weight from metric to to standard
+
+Also, drop missing values and add a column of id values
+```{r}
+yrbss2 <- yrbss %>%                 # save new dataset with new name
+  mutate(                           # add variables for 
+    height.ft = 3.28084*height,     #     height in feet
+    weight.lb = 2.20462*weight      #     weight in pounds
+  ) %>% 
+  drop_na(height.ft, weight.lb) %>% # drop rows w/ missing height/weight values
+  mutate(id = 1:nrow(.)) %>%        # add id column
+  select(id, height.ft, weight.lb)  # restrict dataset to columns of interest
+
+head(yrbss2)  
+dim(yrbss2)
+# number of rows deleted that had missing values for height and/or weight:
+nrow(yrbss) - nrow(yrbss2) 
+```
+
+## `yrbss2`: stats for height in feet 
+
+```{r}
+summary(yrbss2)
+(mean_height.ft <- mean(yrbss2$height.ft))
+(sd_height.ft <- sd(yrbss2$height.ft))
+```
+
+## Take 10,000 samples of size n = 30 from `yrbss2`
+
+```{r}
+samp_n30_rep10000 <- yrbss2 %>%
+  rep_sample_n(size = 30, 
+               reps = 10000,
+               replace = FALSE)
+samp_n30_rep10000
+```
+
+```{r}
+means_hght_samp_n30_rep10000 <- 
+  samp_n30_rep10000 %>% 
+  group_by(replicate) %>% 
+  summarise(mean_height = 
+            mean(height.ft))
+
+means_hght_samp_n30_rep10000
+```
+
+
+## Simulated sampling distribution for n = 30 using 10,000 sample mean heights
+
+```{r}
+ggplot(
+  means_hght_samp_n30_rep10000, 
+  aes(x = mean_height)) + 
+  geom_histogram()
+```
+
+CLT tells us that we can model the sampling distribution of mean heights using a normal distribution.
+
+```{r}
+#| fig.height: 3
+#| fig.width: 6
+mu <- 5.55
+SE <- 0.34/sqrt(30)
+sig <- round(SE, 2)
+
+ggplot(data.frame(x = c(mu-4*sig, mu+4*sig)), aes(x = x)) + 
+  stat_function(fun = dnorm, 
+                args = list(mean = mu, sd = sig)) + 
+  stat_function(fun = dnorm, 
+                args = list(mean = mu, sd = sig), 
+                xlim = c(mu-4*sig, mu-2*sig), 
+                geom = "area", fill = "darkblue") +
+  stat_function(fun = dnorm, 
+                args = list(mean = mu, sd = sig), 
+                xlim = c(mu+2*sig, mu+4*sig), 
+                geom = "area", fill = "darkblue") +
+  stat_function(fun = dnorm, 
+                args = list(mean = mu, sd = sig), 
+                xlim = c(mu-2*sig, mu-1*sig), 
+                geom = "area", fill = "darkgreen") +
+  stat_function(fun = dnorm, 
+                args = list(mean = mu, sd = sig), 
+                xlim = c(mu+1*sig, mu+2*sig), 
+                geom = "area", fill = "darkgreen")+
+  stat_function(fun = dnorm, 
+                args = list(mean = mu, sd = sig), 
+                xlim = c(mu-1*sig, mu+1*sig), 
+                geom = "area", fill = "orange") +
+  scale_x_continuous(name ="mean height (ft)", 
+                    breaks=c(mu-2*sig,mu-1*sig,mu, mu+1*sig, mu+2*sig))  +
+  labs(title = "Sampling distribution", y = "") +
+  scale_y_continuous(labels = NULL, breaks = NULL)
+```
+
+
+# Confidence interval (CI) for the mean $\mu$
+
+$$\overline{x}\ \pm\ z^*\times \text{SE}$$
+
+where 
+
+* $SE = \frac{\sigma}{\sqrt{n}}$
+* $z^*$ depends on the confidence level
+  * For a 95% CI, $z^*$ is chosen such that 95% of the standard normal curve is between $-z^*$ and $z^*$
+
+```{r}
+qnorm(.975)
+qnorm(.995)
+```
+
+[When can this be applied?]{style="color:green"}
+
+
+## Example: CI for mean height
+
+* A random sample of 30 high schoolers has mean height 5.6 ft. 
+* Find the 95% confidence interval for the population mean, assuming that the population standard deviation is 0.34 ft. 
+
+
+
+
+
+## How to interpret a CI?
+
+Simulating Confidence Intervals: http://www.rossmanchance.com/applets/ConfSim.html
+
+[Actual interpretation:]{style="color:darkorange"}
+
+* If we were to 
+    * __repeatedly take random samples__ from a population and
+    * calculate a 95% CI for each random sample,
+* then we would __expect 95% of our CI's to contain the true population parameter__ $\mu$.
+
+[What we typically write as "shorthand":]{style="color:darkorange"}
+
+* We are 95% _confident_  that (the 95% confidence interval) captures the value of the population parameter.
+
+[WRONG interpretation:]{style="color:red"}
+
+* There is a 95% _chance_  that (the 95% confidence interval) captures the value of the population parameter.
+    * For one CI on its own, it either does or doesn't contain the population parameter with probability 0 or 1. We just don't know which!
+
+
+## Interpretation of our heights CI
+
+Correct interpretation:
+
+* We are 95% _confident_ that the mean height for high schoolers is between 5.43 and 5.67 feet.
+
+[*WRONG:*]{style="color:red"}
+
+* There is a 95% _chance_ that the mean height for high schoolers is between 5.43 and 5.67 feet.
+
+
+# What if we don't know $\sigma$ ? 
+
+* In real life, we don't know what the population sd is ( $\sigma$ )
+
+* If we replace $\sigma$ with $s$ in the SE formula, we add in additional variability to the SE!
+$$\frac{\sigma}{\sqrt{n}} ~~~~\textrm{vs.} ~~~~ \frac{s}{\sqrt{n}}$$
+
+* Thus when using $s$ instead of $\sigma$ when calculating the SE, we __need a different probability distribution__ with thicker tails than the normal distribution.
+
+    * [In practice this will mean using a different value than 1.96 when calculating the CI.]{style="color:green"}
+
+
+## Student’s t-distribution
+
+The __Student’s t-distribution__:
+
+* Is bell shaped and symmetric with mean = 0.
+* Its tails are a thicker than that of a normal distribution
+    * The "thickness" depends on its __degrees of freedom__: $df = n–1$ , where n = sample size.
+* As the degrees of freedom (sample size) increase, 
+    * the tails are less thick, and 
+    * the t-distribution is more like a normal distribution
+    * in theory, with an infinite sample size the _t_-distribution is a normal distribution.
+
+
+## Calculating the CI for the population mean using $s$
+
+CI for $\mu$:
+
+$$\bar{x} \pm t^*\cdot\frac{s}{\sqrt{n}}$$
+
+where $t^*$ is determined by the t-distribution and dependent on the  
+__df =__ $n-1$ and the confidence level
+
+* `qt` gives the quartiles for a t-distribution. Need to specify 
+    * the percent under the curve to the left of the quartile 
+    * the degrees of freedom = n-1
+
+* Note in the R output to the right that $t^*$ gets closer to 1.96 as the sample size increases.
+
+```{r}
+qt(.975, df=9)  # df = n-1
+qt(.975, df=49)
+qt(.975, df=99)
+qt(.975, df=999)
+```
+
+
+
+## Example: CI for mean height (revisited)
+
+* A random sample of 30 high schoolers has mean height 5.6 ft and standard deviation 0.34 ft. 
+* Find the 95% confidence interval for the population mean. 
+
+# $z$ vs $t$?? <br> ([& important comment about Chapter 4 of textbook]{style="color:green"})
+
+
+## Textbook's rule of thumb
+
+* (Ch 4) If $n \geq 30$ and population distribution not strongly skewed:
+    * __Use normal distribution__
+    * __No matter if using $\sigma$ or $s$ for the $SE$__
+    * If there is skew or some large outliers, then need  $n \geq 50$
+* (Ch 5) If $n < 30$ and data approximately symmetric with no large outliers:
+    * Use Student's t-distribution
+
+## BSTA 511 rule of thumb
+
+* Use [normal distribution ONLY if know $\sigma$]{style="color:darkorange"}
+    * If [using $s$ for the $SE$, then use the Student's t-distribution]{style="color:purple"}
+
+For either case, can apply if either
+
+* $n \geq 30$ and population distribution not strongly skewed
+    * If there is skew or some large outliers, then $n \geq 50$ gives better estimates
+* $n < 30$ and data approximately symmetric with no large outliers
+
+_If do not know population distribution, then check the distribution of the data._
+

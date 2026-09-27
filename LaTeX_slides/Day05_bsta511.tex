@@ -1,0 +1,366 @@
+%\documentclass[12pt,letterpaper]{article}
+\documentclass[12pt]{amsart}
+
+\usepackage[left=1in, right=1in, top=.5in, bottom=.5in]{geometry}
+\usepackage{latexsym,amssymb,amsmath,amsthm,amsopn,verbatim, mathpazo, graphicx, lmodern, hyperref}
+%\usepackage{latexsym,amssymb,amsmath,amsthm,amsopn,verbatim, mathpazo, graphicx}
+\newcommand{\vs}{\vskip.5cm}
+\newcommand{\hs}{\hskip1cm}
+\newcommand{\ds}{\displaystyle}
+\setlength{\parindent}{0pt}
+
+
+\usepackage[T1]{fontenc}
+\usepackage{libertine}
+\renewcommand*\familydefault{\sfdefault}  %% Only if the base font of the document is to be sans serif
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\newcommand\indep{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+
+\begin{document}
+
+
+%----------------------------------------------------------------------------
+\setcounter{section}{2}
+\setcounter{subsection}{4}
+\setcounter{theorem}{6}
+Day 5 BSTA 511/611
+{\huge  
+\section*{Chapter 2: Probability (Part 2)}
+}
+
+%----------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------
+%{\large 
+%----------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------
+%\begin{example}  \textbf{text.} \newline
+%
+%\begin{enumerate}
+%\item 
+%
+%\textbf{Solution:} \newline
+%\vspace{2cm}
+%
+%\item 
+%
+%\textbf{Solution:} \newline
+%
+%\vspace{2cm}
+%
+%\item 
+%
+%\textbf{Solution:} \newline
+%
+%
+%\vspace{2cm}
+%
+%
+%\item 
+%
+%\textbf{Solution:} \newline
+%
+%\end{enumerate}
+%\end{example} 
+%\newpage
+
+
+%\newpage
+%----------------------------------------------------------------------------
+
+\begin{example}  {\large \textbf{How accurate is rapid testing for COVID-19?} }
+
+{\large From the iHealth® website  \newline}
+{\tiny\url{https://ihealthlabs.com/pages/ihealth-covid-19-antigen-rapid-test-details}}: \newline
+{\large "Based on the results of a clinical study where the iHealth® COVID-19 Antigen Rapid Test was compared to an FDA authorized molecular SARS-CoV-2 test, iHealth® COVID-19 Antigen Rapid Test correctly identified 94.3\% of positive specimens and 98.1\% of negative specimens."  \newline
+
+
+
+
+%Questions:\newline
+Suppose you take the iHealth® rapid test. 
+\begin{enumerate}
+	\item What is the probability of a positive test result?
+	\item What is the probability of having COVID-19 if you get a positive test result?
+	\item What is the probability of not having COVID-19 if you get a negative test result?
+
+\end{enumerate}
+\vspace{0.5cm}
+\textbf{What information were we given?}%\newline
+%\vspace{0.5cm}
+
+First, let's define our events of interest: 
+\begin{itemize}
+	\item $D$ = event one has disease (COVID-19)
+	\item $D^c$ = event one does not have disease
+	\item $T^+$ = event one tests positive for disease
+	\item $T^-$ = event one tests negative for disease
+\end{itemize}
+\vspace{0.5cm}
+Translate given information into mathematical notation:
+\begin{itemize}
+	\item Test correctly gives a positive result 94.3\% of the time:\newline
+%	hide
+%	Sensitivity  = $\mathbb{P}(T^+|D) = .943$
+%	\newline (aka PPA = positive percent agreement)
+\vspace{1cm}
+	\item Test correctly gives a negative result 98.1\% of the time: \newline 
+%	hide
+%	Specificity = $\mathbb{P}(T^-|D^c) = 0.981$ 
+%	\newline (aka NPA = negative percent agreement)
+\vspace{1cm}
+	\item What are all the possible scenarios of test results?
+%	hide
+%	Make 2-way table of test results (rows) vs. disease status (columns)
+
+%\begin{tabular}{| c| l| c | c | c |}
+%  \hline
+%             & $D$               & $D^c$           & Total\\                         
+%  \hline
+%  $T^+$ & sensitivity      & false positive & $\neq 1$ \\
+%  $T^-$ & false negative & specificity & $\neq 1$ \\
+%    \hline
+%   Total  & 1              & 1           & \\                         
+%  \hline  
+%\end{tabular}
+
+
+\end{itemize}
+
+\newpage
+Given: $\mathbb{P}(T^+|D) = 0.943$, $\ \ \mathbb{P}(T^-|D^c) = 0.981$ %\newline
+
+\vspace{0.5cm}
+\textbf{Solutions to questions} %\newline
+\begin{enumerate}
+\item What is the probability of a positive test result?
+
+%\textbf{Solution:} \newline
+\vspace{2cm}
+%% hide
+%\begin{itemize}
+%	\item Sample space with $D$ vs. $D^c$ and blob for $T^c$
+%	\item Law of Total Probability
+%	\item Need to know prevalence, $\mathbb{P}(D)$ \newline
+%	Assume $\mathbb{P}(D) = 0.000838\ \  (0.0838\%)$
+%	\item Tree Diagram for calculating total probability
+%	\item Answer: 0.01977431
+%\end{itemize}
+
+\newpage
+Given: $\mathbb{P}(T^+|D) = 0.943$, $\ \ \mathbb{P}(T^-|D^c) = 0.981$ %\newline
+
+\vspace{0.5cm}
+\item What is the probability of having COVID-19 if you get a positive test result?
+
+%\textbf{Solution:} \newline
+
+
+\vspace{2cm}
+%% hide
+%\begin{itemize}
+%	\item $PPV = \mathbb{P}(D | T^+)$
+%	\item conditional probability
+%	\item Assume $\mathbb{P}(D) = 0.000838\ \  (0.0838\%)$ (Multnomah Co on 10/12/2022)
+%	\item Bayes' rule
+%	\item Answer: 0.03996265
+%	$$\frac{0.943*0.000838}{0.943*0.000838 + (1-0.981)*(1-0.000838)}= 0.03996265$$
+%	\item If $\mathbb{P}(D) = 0.01\ \  (1\%)$, then answer = 0.3339235
+%	\item If $\mathbb{P}(D) = 0.1\ \  (10\%)$, then answer = 0.8464991
+%\end{itemize}
+
+\newpage
+Given: $\mathbb{P}(T^+|D) = 0.943$, $\ \ \mathbb{P}(T^-|D^c) = 0.981$ %\newline
+
+\vspace{0.5cm}
+\item What is the probability of not having COVID-19 if you get a negative test result?
+
+%\textbf{Solution:} \newline
+
+
+\vspace{2cm}
+%% hide
+%\begin{itemize}
+%	\item $NPV = \mathbb{P}(D^c | T^-)$
+%	\item conditional probability
+%	\item Assume $\mathbb{P}(D) = 0.000838\ \  (0.0838\%)$
+%	\item Bayes' rule
+%	\item Answer: 0.9999513
+%%	$$\frac{0.943*0.000838}{0.943*0.000838 + (1-0.981)*(1-0.000838)}= 0.9999513$$
+%	$$\frac{0.981*0.999162}{0.981*0.999162 + (1-0.943)*0.000838}= 0.9999513$$
+%	\item If $\mathbb{P}(D) = 0.01\ \  (1\%)$, then answer = 0.9994134
+%	\item If $\mathbb{P}(D) = 0.1\ \  (10\%)$, then answer = 0.9935854
+%\end{itemize}
+
+\end{enumerate}
+}
+\end{example} 
+{\large
+
+\newpage
+%----------------------------------------------------------------------------
+\textbf{Bayes' Theorem (Section 2.2.5)}
+
+\vspace{0.5cm}
+In the previous examples we derived the formula for Bayes' Theorem.
+\vspace{0.5cm}
+
+
+\begin{theorem}[Bayes' Theorem]  
+
+If the sample space $S$ can be split into disjoint events $A_1, A_2, ..., A_k$ that make up all possible outcomes in $S$, and if  $\mathbb{P}(A_i)>0$ for $i=1,\ldots, k$ and $\mathbb{P}(B)>0$, then
+
+
+$$
+\mathbb{P}(A_1 | B) = 
+\frac{\mathbb{P}(B|A_1) \cdot \mathbb{P}(A_1)}
+{\mathbb{P}(B|A_1) \cdot \mathbb{P}(A_1) + \mathbb{P}(B|A_2) \cdot \mathbb{P}(A_2) + ... + 
+\mathbb{P}(B|A_k) \cdot \mathbb{P}(A_k)}
+$$
+
+\vspace{0.5cm}
+
+\end{theorem}
+
+\vspace{0.8cm}
+
+Special case of Bayes' Theorem for sample space being split into $A$ and $A^c$: 
+
+$$
+\mathbb{P}(A | B) = 
+\frac{\mathbb{P}(B|A) \cdot \mathbb{P}(A)}
+{\mathbb{P}(B|A) \cdot \mathbb{P}(A) + \mathbb{P}(B|A^c) \cdot \mathbb{P}(A^c) }
+$$
+
+\vspace{1cm}
+\begin{theorem}[Law of Total Probability] (denominator of Bayes' Theorem)\newline  
+
+If the sample space $S$ can be split into disjoint events $A_1, A_2, ..., A_k$ that make up all possible outcomes in $S$, and if  $\mathbb{P}(A_i)>0$ for $i=1,\ldots, k$ and $\mathbb{P}(B)>0$, then
+
+
+\[
+%\left(
+\begin{array}{ccl}
+\mathbb{P}(B)&=& \mathbb{P}(B\ \textrm{and}\ A_1) + \mathbb{P}(B\ \textrm{and}\ A_2) + \ldots + \mathbb{P}(B\ \textrm{and}\ A_k)\\
+		   &=& \mathbb{P}(B|A_1) \cdot \mathbb{P}(A_1) + \mathbb{P}(B|A_2) \cdot \mathbb{P}(A_2) + \ldots + \mathbb{P}(B|A_k) \cdot \mathbb{P}(A_k)
+\end{array}
+%\right)
+\]
+
+\vspace{0.5cm}
+
+\end{theorem}
+
+
+Special case of Law of Total Probability for sample space being split into $A$ and $A^c$: 
+
+\[
+%\left(
+\begin{array}{ccl}
+\mathbb{P}(B)&=&\mathbb{P}(B\ \textrm{and}\ A) + \mathbb{P}(B\ \textrm{and}\ A^C)\\
+		   &=& \mathbb{P}(B|A) \cdot \mathbb{P}(A)+ \mathbb{P}(B | A^C)\cdot \mathbb{P}(A^C)
+\end{array}
+%\right)
+\]
+
+
+\newpage
+%----------------------------------------------------------------------------
+
+
+\begin{example} \textbf{Antibody test for COVID-19} 
+
+According to the \href{https://www.fda.gov/medical-devices/coronavirus-disease-2019-covid-19-emergency-use-authorizations-medical-devices/eua-authorized-serology-test-performance}{FDA's EUA Authorized Serology Test Performance website}, %\newline
+the Abbott AdviseDx SARS-CoV-2 IgG II (Alinity) antibody test for COVID-19 has sensitivity 98.1\% and PPV 98.4\% when the prevalence is 20\%. \newline
+
+%Questions:\newline
+Question: What is the specificity of the antibody test?
+
+\vspace{0.5cm}
+\textbf{What information were we given?}%\newline
+%\vspace{0.5cm}
+
+First, let's define our events of interest: 
+\begin{itemize}
+	\item $A$ = event one has antibodies for COVID-19
+	\item $A^c$ = event one does not have antibodies
+	\item $T^+$ = event one tests positive for antibodies
+	\item $T^-$ = event one tests negative for antibodies
+\end{itemize}
+\vspace{0.5cm}
+Translate given information into mathematical notation:
+\begin{itemize}
+	\item Sensitivity is 98.1\%:\newline
+%%	hide
+%	Sensitivity  = $\mathbb{P}(T^+|A) = 0.981$
+
+\vspace{1cm}
+	\item PPV is 98.4\%: \newline 
+%%	hide
+%	PPV = $\mathbb{P}(A|T^+) = 0.984$ 
+	
+\vspace{1cm}
+	\item Prevalence is 20\%:\newline 
+%%	hide
+%	$\mathbb{P}(A) = 0.20$ 
+
+\end{itemize}
+
+\vspace{0.5cm}
+\textbf{Solution:} %\newline
+%%	hide
+%Want specificity  = $\mathbb{P}(T^-|A^c) = 1 - \mathbb{P}(T^+|A^c)$
+%
+%\vspace{0.5cm}
+%$$
+%\mathbb{P}(A | T^+) = 
+%\frac{\mathbb{P}(T^+|A) \cdot \mathbb{P}(A)}
+%{\mathbb{P}(T^+|A) \cdot \mathbb{P}(A) + \mathbb{P}(T^+|A^c) \cdot \mathbb{P}(A^c) }
+%$$
+%
+%$$
+%0.984 = 
+%\frac{0.981 \cdot  0.20}
+%{0.981 \cdot  0.20 + \mathbb{P}(T^+|A^c) \cdot (1- 0.20) }
+%$$
+%
+%$$
+%0.984 = 
+%\frac{0.1962}
+%{0.1962 + \mathbb{P}(T^+|A^c) \cdot 0.80 }
+%$$
+%
+%$$
+%0.1962 = 0.984 \cdot(0.1962 + 0.80\mathbb{P}(T^+|A^c))
+%$$
+%$$
+%0.1962 = 0.1931 + 0.7872\cdot\mathbb{P}(T^+|A^c) 
+%$$
+%$$
+%\mathbb{P}(T^+|A^c)  = \frac{0.1962 - 0.1931}{  0.7872} = 0.0039
+%$$
+%$$
+%\mathbb{P}(T^+|A^c)  = \frac{0.1962 - 0.1931}{  0.7872} = 0.0039
+%$$
+%specificity  = $\mathbb{P}(T^-|A^c) = 1 - \mathbb{P}(T^+|A^c)$ = 1 - 0.0039 = 0.9961
+
+\end{example}
+%----------------------------------------------------------------------------
+}  % end large font
+%----------------------------------------------------------------------------
+
+
+
+\end{document}
+

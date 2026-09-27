@@ -1,0 +1,178 @@
+---
+title: "Day 3 code - Part 2: Data visualization"
+subtitle: "BSTA 511/611 Fall 2024 Day 5, OHSU"
+author: "Meike Niederhausen, PhD"
+date: "10/16/2024"
+categories: ["Week 3"]
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+execute:
+  echo: true
+# editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+#| label: "setup"
+#| include: false
+knitr::opts_chunk$set(echo = TRUE, fig.height=3, fig.width=5, message = F)
+
+# run these every time you open Rstudio
+library(tidyverse)    
+library(oibiostat)
+library(ggridges)
+library(janitor)
+library(rstatix)
+library(knitr)
+library(gtsummary) # NEW!!
+```
+
+
+# Back to research question
+
+## Case study: discrimination in developmental disability support (1.7.1)
+
+* __Previous research__
+  * Researchers examined DDS expenditures for developmentally disabled residents by ethnicity
+  * Found that the mean annual expenditures on Hispanics was less than that on White non-Hispanics. 
+* __Result__: an allegation of ethnic discrimination was brought against the California DDS.
+* __Question: Are the data sufficient evidence of ethnic discrimination?__
+
+
+## Load `dds.discr` dataset from `oibiostat` package
+
+* The textbook's datasets are in the R package `oibiostat`
+* Make sure the `oibiostat` package is installed before running the code below.
+
+* Load the `oibiostat` package and the dataset `dds.discr`
+
+__[the code below needs to be run _every time_ you restart R or render a Qmd file]{style="color:darkorange"}__
+```{r}
+library(oibiostat)
+data("dds.discr")
+```
+
+* After loading the dataset `dds.discr` using `data("dds.discr")`, you will see `dds.discr` in the Data list of the Environment window.
+
+
+### `glimpse()`
+
+__New: `glimpse()`__
+
+* Use `glimpse()` from the `tidyverse` package (technically it's from the `dplyr` package) to get information about variable types. 
+* `glimpse()` tends to have nicer output for `tibbles` than `str()`
+
+```{r}
+library(tidyverse)
+glimpse(dds.discr)  # from tidyverse package (dplyr)
+```
+
+## Recall previous data viz
+
+```{r}
+#| fig.height: 5
+#| fig.width: 8
+ggplot(data = dds.discr, 
+       aes(x = expenditures,
+           y = ethnicity)) + 
+  geom_boxplot(color="darkgrey") + 
+  labs(x = "Annual Expenditures ($)",
+       y = "Race and ethnicity") +
+  geom_jitter(     
+    aes(color = ethnicity),      
+    alpha = 0.3,      
+    show.legend = FALSE,      
+    position = position_jitter(height = 0.4))      
+```
+
+```{r}
+#| fig.height: 4
+ggplot(data = dds.discr, 
+       aes(x = age,
+           y = expenditures)) + 
+  geom_point() +       
+  labs(x = "Age",
+       y = "Annual Expenditures ($)") 
+```
+
+
+## Visualize in more detail: ethnicity, age, and expenditures
+
+```{r}
+#| fig.height: 8
+#| fig.width: 10
+dds.discr_Hips_WhnH <- dds.discr %>%  
+  filter(ethnicity == "White not Hispanic" | ethnicity == "Hispanic" ) %>% 
+  droplevels()   # remove empty factor levels
+  
+
+ggplot(data = dds.discr_Hips_WhnH,   
+       aes(x = expenditures,
+           y = age.cohort)) + 
+  geom_boxplot(color="darkgrey") + 
+  facet_grid(rows = "ethnicity") +   
+  labs(x = "Annual Expenditures ($)",
+       y = "Race and ethnicity") +
+  geom_jitter(     
+    aes(color = ethnicity),      
+    alpha = 0.3,      
+    show.legend = FALSE,      
+    position = position_jitter(     
+      height = 0.4))      
+```
+
+
+## Mean annual DDS expenditures by race/ethnicity
+
+### default long format
+
+```{r}
+mean_expend <- dds.discr_Hips_WhnH %>% 
+  group_by(ethnicity, age.cohort)%>% 
+  summarize(ave = mean(expenditures))
+
+mean_expend
+```
+
+### wide format
+
+```{r}
+mean_expend_wide <- mean_expend %>% 
+  pivot_wider(names_from = ethnicity,
+              values_from = ave)
+
+mean_expend_wide
+```
+
+
+## Differences in mean annual DDS expenditures by age cohort and race/ethnicity
+
+```{r}
+mean_expend_wide <- mean_expend_wide %>% 
+  mutate(diff_mean = `White not Hispanic` - Hispanic)
+
+mean_expend_wide
+```
+
+__Question__: Are the data sufficient evidence of ethnic discrimination in DDS expenditures when comparing Hispanics with White non-Hispanics?
+
+
+# Summary of data wrangling so far
+
+* The pipe `%>%` to string together commands in sequence
+* `mutate()` to add a new variable to a dataset
+* `select()` to select columns (or deselect columns with -variable)
+* `filter()` to select specific rows
+* `pivot_wider()` to reshape a dataset from a long to a wide format
+
+__Summarizing data__
+
+* `tabyl()` from `janitor` package to make frequency tables of categorical variables
+* `summarize()` to get summary statistics of variables
+* `group_by()` to group data by categorical variables before finding summaries
+
+
