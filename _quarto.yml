@@ -4,7 +4,7 @@ project:
   output-dir: docs
 
 website:
-  title: "BSTA 511/611 Fall 2025"
+  title: "BSTA 511/611 Fall 2026"
   navbar:
     background: primary
     search: true

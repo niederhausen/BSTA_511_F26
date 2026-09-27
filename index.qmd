@@ -30,7 +30,7 @@ Estimation and Hypothesis Testing
 Applied Biostatistics I
 :::
 
-Fall 2025
+Fall 2026
 :::
 
 :::
@@ -50,9 +50,9 @@ Fall 2025
 
 ### TA
 
-{{< iconify fluent person-24-filled size=20px >}} Madi Pombo
-
-{{< iconify tabler mail-filled size=20px >}} [pombo\@ohsu.edu](mailto:pombo@ohsu.edu)
+{{< iconify fluent person-24-filled size=20px >}} Senta Wiederholt
+ 
+{{< iconify tabler mail-filled size=20px >}} [wiederholt\@ohsu.edu](mailto:wiederholt@ohsu.edu)
 :::
 
 ::: g-col-4
@@ -61,7 +61,7 @@ Fall 2025
 {{< iconify fa6-solid calendar-days size=20px >}} Mon, Wed   
 {{< iconify icon-park-solid time size=20px >}} 1:00 - 2:50 PM  
 {{< iconify fa6-solid person-chalkboard size=20px >}} VPT 264  
-{{< iconify fa6-solid calendar size=20px >}} 9/30 - 12/12  
+{{< iconify fa6-solid calendar size=20px >}} 9/28 - 12/11  
 
 :::
 
@@ -71,18 +71,18 @@ Fall 2025
 {{< iconify fa6-solid calendar-days size=20px >}} __Mondays 3-4 pm__ (Meike)  
 {{< iconify fa6-solid person-chalkboard size=20px >}} VPT 660E
 
-{{< iconify fa6-solid calendar-days size=20px >}} __Wednesdays 12-1 pm__ (Madi)    
+{{< iconify fa6-solid calendar-days size=20px >}} __TBD__ (Senta)    
 <!-- <i class="fa-solid fa-globe"></i> -->
-{{< fa globe >}} Zoom (link on [Sakai](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25))
+{{< fa globe >}} TBD
 
 
-{{< iconify fa6-solid calendar-days size=20px >}} __Thursdays 4-5 pm__ (Meike)    
+{{< iconify fa6-solid calendar-days size=20px >}} __TBDm__ (Meike)    
 <!-- <i class="fa-solid fa-globe"></i> -->
-{{< fa globe >}} Webex (link on [Sakai](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25))
+{{< fa globe >}} TBD
 
-{{< iconify fa6-solid calendar-days size=20px >}} __Fridays 12-1 pm__ (Madi)    
+{{< iconify fa6-solid calendar-days size=20px >}} __TBD__ (Senta)    
 <!-- <i class="fa-solid fa-globe"></i> -->
-{{< fa globe >}} Zoom (link on [Sakai](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25))
+{{< fa globe >}} TBD
 :::
 
 <!-- {{< iconify fa6-solid fluent-mdl2:join-online-meeting size=20px >}}  -->
@@ -94,7 +94,7 @@ Fall 2025
 
 ### Contacting me
 
-E-mail or Slack is the best way to get in contact with me. I will try to respond to all course-related e-mails within 24 hours Monday-Friday.
+E-mail is the best way to get in contact with me. I will try to respond to all course-related e-mails within 24 hours Monday-Friday.
 
 
 ------------------------------------------------------------------------
@@ -110,6 +110,6 @@ This is the course webpage for BSTA 511/611 at the [OHSU-PSU School of Public He
 :::
 
 ::: g-col-4
-[{{< iconify icomoon-free github size=20px >}} View the source on GitHub](https://github.com/niederhausen/BSTA_511_F25)
+[{{< iconify icomoon-free github size=20px >}} View the source on GitHub](https://github.com/niederhausen/BSTA_511_F26)
 :::
 :::
