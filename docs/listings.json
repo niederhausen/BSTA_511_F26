@@ -2,7 +2,6 @@
   {
     "listing": "/class_slides.html",
     "items": [
-      "/slides/Day01_bsta511.html",
       "/slides/Day02_bsta511.html",
       "/slides/Day04_bsta511.html",
       "/slides/Day05_bsta511.html",
@@ -20,7 +19,8 @@
       "/slides/Day14_bsta511.html",
       "/slides/Day15_bsta511.html",
       "/slides/Day16_bsta511.html",
-      "/slides/Day17_bsta511.html"
+      "/slides/Day17_bsta511.html",
+      "/slides/Day01_bsta511.html"
     ]
   },
   {
