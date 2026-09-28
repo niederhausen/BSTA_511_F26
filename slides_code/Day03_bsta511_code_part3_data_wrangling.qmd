@@ -1,8 +1,8 @@
 ---
 title: "Data wrangling - extra code"
-subtitle: "BSTA 511/611 Fall 2025 Day 5, OHSU"
+subtitle: "BSTA 511/611 Fall 2026 Day 5, OHSU"
 author: "Meike Niederhausen, PhD"
-date: "10/15/2025"
+date: "10/14/2026"
 output:
   html_document:
     number_sections: yes

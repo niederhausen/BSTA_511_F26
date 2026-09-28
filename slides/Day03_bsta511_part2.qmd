@@ -1,9 +1,9 @@
 ---
 title: "Day 3: Data visualization - Part 2"
-subtitle: "BSTA 511/611 Fall 2025 Day 5, OHSU"
+subtitle: "BSTA 511/611 Fall 2026 Day 5, OHSU"
 pagetitle: "Day 3 Part 2 BSTA 511/611"
 author: "Meike Niederhausen, PhD"
-date: "10/15/2025"
+date: "10/14/2026"
 categories: ["Week 3"]
 format: 
   revealjs:

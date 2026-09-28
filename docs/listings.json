@@ -2,11 +2,6 @@
   {
     "listing": "/class_slides.html",
     "items": [
-      "/slides/Day02_bsta511.html",
-      "/slides/Day04_bsta511.html",
-      "/slides/Day05_bsta511.html",
-      "/slides/Day03_bsta511_part2.html",
-      "/slides/Day03_bsta511.html",
       "/slides/Day06_bsta511.html",
       "/slides/Day07_bsta511.html",
       "/slides/Day08_bsta511.html",
@@ -20,7 +15,12 @@
       "/slides/Day15_bsta511.html",
       "/slides/Day16_bsta511.html",
       "/slides/Day17_bsta511.html",
-      "/slides/Day01_bsta511.html"
+      "/slides/Day01_bsta511.html",
+      "/slides/Day02_bsta511.html",
+      "/slides/Day04_bsta511.html",
+      "/slides/Day05_bsta511.html",
+      "/slides/Day03_bsta511_part2.html",
+      "/slides/Day03_bsta511.html"
     ]
   },
   {

@@ -3,7 +3,7 @@ title: "Day 3 (F23 Day 4): Probability Part 1"
 subtitle: "BSTA 511/611, OHSU"
 pagetitle: "Day 3 BSTA 511/611"
 author: "Meike Niederhausen, PhD"
-date: "10/08/2025"
+date: "10/07/2026"
 categories: ["Week 2"]
 format: 
   # revealjs:
