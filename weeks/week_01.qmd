@@ -17,9 +17,9 @@ editor_options:
 
 ## General info
 
--   [Syllabus](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/page/d587d48e-3615-48b2-a07c-eeaf1bca897d) on Brightspace
--   [Week 1 info](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=226698&postedComment=false&addBefore=&itemId=5465465&path=push&reviewAssessment=false&topicId=&addTool=-1&recheck=&id=&forumId=) on Brightspace
-    -   Includes links to background survey
+-   [Syllabus](https://brightspace.ohsu.edu/d2l/common/dialogs/quickLink/quickLink.d2l?ou=16063&type=lti&rcode=A51C7398-E4FD-4C12-844F-190DA44C898D-677&srcou=6606&launchFramed=1&framedName=Syllabus) on Brightspace
+-   [Week 1 info](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/358889) on Brightspace
+    -   Includes link to background survey
 
 ## Overview of Week 1
 
@@ -42,7 +42,8 @@ editor_options:
     -   Lesson 3: Download + Intro to R & RStudio
     -   Lesson 4: Basics
     -   Lesson 6: Quarto and .qmd’s
-    -   *If the links for the slides are broken, see the [Summer class website](https://nwakim.github.io/PUBH_523_26Su/schedule.html). Note that the topics are in a different order though.*
+
+    <!-- -   *If the links for the slides are broken, see the [Summer class website](https://nwakim.github.io/PUBH_523_26Su/schedule.html). Note that the topics are in a different order though.* -->
 
 :::
 :::::
@@ -66,4 +67,4 @@ editor_options:
 * There are no pre-recorded lessons for Week 1. Starting Week 2, you will be accessing pre-recorded lessons on the [EchoVideo site for BSTA 511/611](https://echo360.org/section/af47457c-bed2-48d7-84ae-eaa2d44f9add/home). Make sure you can log into this site and view the recordings. 
 
 
-* __In-class__ recording links are on [Brightspace](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=226697&postedComment=false&addBefore=&itemId=5465463&path=push&reviewAssessment=false&topicId=&addTool=-1&recheck=&id=&forumId=). Navigate to _Course Materials_ -> _Schedule with links to in-class recordings_. Note that the password to the recordings is at the top of the page.
+* __In-class__ recording links are on [Brightspace](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/358888). Navigate to _Course Materials_ -> _In-class recordings links_. Note that the password to the recordings is at the top of the page.
