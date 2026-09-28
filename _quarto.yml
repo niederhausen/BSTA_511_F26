@@ -16,66 +16,47 @@ website:
         text: Home
       - href: schedule.qmd
         text: Schedule
+      - text: "Weekly pages"
+        menu:
+          - href: weeks/week_01.qmd
+            text: Week 1
+          - href: weeks/week_02.qmd
+            text: Week 2
+          - href: weeks/week_03.qmd
+            text: Week 3
+          - href: weeks/week_04.qmd
+            text: Week 4
+          - href: weeks/week_05.qmd
+            text: Week 5
+          - href: weeks/week_06.qmd
+            text: Week 6
+          - href: weeks/week_07.qmd
+            text: Week 7
+          - href: weeks/week_08.qmd
+            text: Week 8
+          - href: weeks/week_09.qmd
+            text: Week 9
+          - href: weeks/week_10.qmd
+            text: Week 10
+          - href: weeks/week_11.qmd
+            text: Week 11
+      - text: "Homework"
+        menu:
+          - href: homework.qmd
+            text: Homework
+          - href: homework_solutions.qmd
+            text: Homework solutions
+          # - href: rubric.qmd
+          #   text: Grading rubric
       # - href: instructors.qmd
       #   text: Instructors
       # - href: weeks.qmd
       #   text: Weeks
       # - href: class_slides.qmd
       #   text: Slides
-      # - href: homework.qmd
-      #   text: Homework
-      # - href: homework_solutions.qmd
-      #   text: Homework solutions
       # - href: about.qmd
       #   text: About
-  sidebar:
-    style: "docked"
-    search: true
-    collapse-level: 4
-    contents:
-      - href: index.qmd
-        text: Home
-      # - href: instructors.qmd
-      #   text: Instructors   
-      - href: schedule.qmd
-        text: Schedule
-      - section: "Weekly pages"
-        contents: 
-          - href: weeks/week_01.qmd
-            text: Week 1
-          - href: weeks/week_02.qmd
-            text: Week 2
-          - href: weeks/week_03.qmd
-            text: Week 3            
-          - href: weeks/week_04.qmd
-            text: Week 4  
-          - href: weeks/week_05.qmd
-            text: Week 5  
-          - href: weeks/week_06.qmd
-            text: Week 6 
-          - href: weeks/week_07.qmd
-            text: Week 7 
-          - href: weeks/week_08.qmd
-            text: Week 8 
-          - href: weeks/week_09.qmd
-            text: Week 9 
-          - href: weeks/week_10.qmd
-            text: Week 10 
-          - href: weeks/week_11.qmd
-            text: Week 11 
-      # - href: weeks.qmd
-      #   text: Weeks
-      # - href: class_slides.qmd
-      #   text: Slides
-      - section: "Homework"
-        contents: 
-        - href: homework.qmd
-          text: Homework
-        - href: homework_solutions.qmd
-          text: Homework solutions
-        - href: rubric.qmd
-          text: Grading rubric
-            
+
 format:
   html:
     theme:
@@ -83,5 +64,3 @@ format:
       - custom.scss
     css: styles.css
     toc: true
-
-

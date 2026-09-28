@@ -2,7 +2,7 @@
 title: "Week 11"
 description: "Finals week"
 pagetitle: "Week 11 BSTA 511/611"
-date: "12/8/2025"
+date: "12/7/2026"
 date-modified: "today"
 categories: [""]
 format: 
@@ -13,39 +13,35 @@ editor_options:
   chunk_output_type: console
 ---
 
+## [Page not yet updated]{style="color:darkorange"}
+
 ## Overview of Week 11
 
 ::::: grid
-::: g-col-4
+::: g-col-6
 ### Mon 
 
--   [Exam 3 corrections](#sec-ExamCorrections) due
--   Open office hours during class
-    -   Online: [Webex link](#sec-Wk11Webex)  
+-   Review - catch up
 -   Usual office hour 3-4 pm
 :::
 
-::: g-col-4
+::: g-col-6
 ### Wed
 
--   Open office hours during class
-    -   Online: [Webex link](#sec-Wk11Webex)  
-:::
-
-::: g-col-4
-### Thurs
--   [Exam 4](#sec-Exam4) due
--   Office hour 4-5 pm
+-   [Exam 3](#sec-Exam3) due
 :::
 :::::
 
 
-## Exam 4 {#sec-Exam4}
+## Exam 3 {#sec-Exam3}
 
-* Exam 4 is due on **12/11/25 at 11:50 pm**
-* Exam is posted in the [Assignments](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/094ccc0a-8f85-4069-af5b-e035ef8b79e2) section of .
+* Exam 3 is a take-home exam and is due on **Wed, 12/9/26 at 11:50 pm**
+* The exam is cumulative, with a focus on Days 14-17.
+* Exam is posted in the [Assignments](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/094ccc0a-8f85-4069-af5b-e035ef8b79e2) section of Brightspace.
     * Note that the attachments of the assignment include both the qmd and html files for the exam, as well as the dataset.
 
+
+<!-- Exam corrections and Webex office hours were not used in F26. Uncomment to restore.
 
 ## Exam Corrections {#sec-ExamCorrections}
 
@@ -64,9 +60,7 @@ editor_options:
 -   For 10 parts to questions, you can earn back all of the points missed.
     -   For example, maybe you decide to choose parts 1b, 1c, 1d, 2c, 3a, 3d, 3f, 4b, 4d, and 4f as the 10 "parts of questions" that you want to be considered for getting full points back for. 
     -   *When emailing me a link to your video, please clearly state which parts of questions you chose as the 10 to get full points back. *
--   For the remaining parts to questions, you can earn back up to half of the missed points. 
-
-
+-   For the remaining parts to questions, you can earn back up to half of the missed points.
 
 
 ## Webex link for Week 11 {#sec-Wk11Webex}
@@ -84,3 +78,4 @@ Additional call-in numbers: [https://ohsu.webex.com/ohsu/globalcallin.php](https
 Mobile phone (one-touch):
 206-207-1700,,26349638854##
 
+-->

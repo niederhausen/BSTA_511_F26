@@ -2,7 +2,7 @@
 title: "Week 1"
 description: "Intro to R & RStudio"
 pagetitle: "Week 1 BSTA 511/611"
-date: "9/29/2025"
+date: "9/28/2026"
 date-modified: "today"
 categories: [""]
 format: 
@@ -13,11 +13,13 @@ editor_options:
   chunk_output_type: console
 ---
 
+## [Page not yet updated]{style="color:darkorange"}
+
 ## General info
 
--   [Syllabus](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/page/d587d48e-3615-48b2-a07c-eeaf1bca897d) on 
--   [Week 1 info](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=226698&postedComment=false&addBefore=&itemId=5465465&path=push&reviewAssessment=false&topicId=&addTool=-1&recheck=&id=&forumId=) on 
-    -   Includes links to background survey and BSAT 511/611 Slack group
+-   [Syllabus](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/page/d587d48e-3615-48b2-a07c-eeaf1bca897d) on Brightspace
+-   [Week 1 info](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=226698&postedComment=false&addBefore=&itemId=5465465&path=push&reviewAssessment=false&topicId=&addTool=-1&recheck=&id=&forumId=) on Brightspace
+    -   Includes links to background survey
 
 ## Overview of Week 1
 
@@ -26,7 +28,7 @@ editor_options:
 ### Mon
 
 -   No class. OHSU New Student Orientation
--   [Handout](../resources/BSTA%20511%20text%20R%20info%20F25.pdf) with directions on installing R & RStudio
+-   [Handout](../resources/BSTA_511_text_R_info_F26_v2.pdf){target="_blank"} with directions on installing R & RStudio and PUBH 523 Lessons to complete for Wednesday
 
 :::
 
@@ -35,6 +37,12 @@ editor_options:
 
 -   Intro to R & RStudio
 -   Please have R & RStudio installed for class
+-   Complete [Intro to R (PUBH 523) lessons](https://nwakim.github.io/PUBH_523_26F/schedule.html) below before class:
+    -   Lesson 1: Welcome
+    -   Lesson 3: Download + Intro to R & RStudio
+    -   Lesson 4: Basics
+    -   Lesson 6: Quarto and .qmd’s
+    -   *If the links for the slides are broken, see the [Summer class website](https://nwakim.github.io/PUBH_523_26Su/schedule.html). Note that the topics are in a different order though.*
 
 :::
 :::::
@@ -44,13 +52,13 @@ editor_options:
 
 | Day | Topic | Slides (F23): html | Slides: pdf | Slides: web-page | Code: qmd |
 |--------|--------|--------|--------|--------|--------|
-| 1 | Intro to R & RStudio | [Day 1](../slides/Day01_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day01_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day01_bsta511_md.qmd) | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_md/Day01_bsta511_md.qmd) |
+| 1 | Intro to R & RStudio | [Day 1](../slides/Day01_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day01_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day01_bsta511_md.qmd) | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_md/Day01_bsta511_md.qmd) |
 
 : {.striped .hover tbl-colwidths="\[3, 10, 8, 5, 5, 5\]"}
 
 ## Homework
 
--   [HW 1](../homework/HW_1_F25_bsta511.qmd) due on Sat, 10/11
+-   [HW 1](../homework/HW_1_F26_bsta511_v2.qmd) due on Sat, 10/10
     -   Covers Days 1-3
 
 ## Recordings
@@ -58,4 +66,4 @@ editor_options:
 * There are no pre-recorded lessons for Week 1. Starting Week 2, you will be accessing pre-recorded lessons on the [EchoVideo site for BSTA 511/611](https://echo360.org/section/af47457c-bed2-48d7-84ae-eaa2d44f9add/home). Make sure you can log into this site and view the recordings. 
 
 
-* __In-class__ recording links are on [](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=226697&postedComment=false&addBefore=&itemId=5465463&path=push&reviewAssessment=false&topicId=&addTool=-1&recheck=&id=&forumId=). Navigate to _Course Materials_ -> _Schedule with links to in-class recordings_. Note that the password to the recordings is at the top of the page.
+* __In-class__ recording links are on [Brightspace](https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&studentItemId=0&backPath=&bltiAppStores=false&errorMessage=&clearAttr=&messageId=&source=&title=&newTopLevel=false&sendingPage=226697&postedComment=false&addBefore=&itemId=5465463&path=push&reviewAssessment=false&topicId=&addTool=-1&recheck=&id=&forumId=). Navigate to _Course Materials_ -> _Schedule with links to in-class recordings_. Note that the password to the recordings is at the top of the page.

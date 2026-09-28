@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-09-29">
+<meta name="dcterms.date" content="2026-09-28">
 <meta name="description" content="Intro to R &amp; RStudio">
 
 <title>Week 1 BSTA 511/611 – BSTA 511/611 Fall 2026</title>
@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e883691f278e3f67687c0553891b7fb6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-36c23491430ca13b544e4ac8ff24fd85.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -103,173 +103,97 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-weekly-pages" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Weekly pages</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-weekly-pages">    
+        <li>
+    <a class="dropdown-item" href="../weeks/week_01.html">
+ <span class="dropdown-text">Week 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_02.html">
+ <span class="dropdown-text">Week 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_03.html">
+ <span class="dropdown-text">Week 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_04.html">
+ <span class="dropdown-text">Week 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_05.html">
+ <span class="dropdown-text">Week 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_06.html">
+ <span class="dropdown-text">Week 6</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_07.html">
+ <span class="dropdown-text">Week 7</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_08.html">
+ <span class="dropdown-text">Week 8</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_09.html">
+ <span class="dropdown-text">Week 9</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_10.html">
+ <span class="dropdown-text">Week 10</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_11.html">
+ <span class="dropdown-text">Week 11</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-homework" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Homework</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-homework">    
+        <li>
+    <a class="dropdown-item" href="../homework.html">
+ <span class="dropdown-text">Homework</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../homework_solutions.html">
+ <span class="dropdown-text">Homework solutions</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/week_01.html">Weekly pages</a></li><li class="breadcrumb-item"><a href="../weeks/week_01.html">Week 1</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Home</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Weekly pages</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_01.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Week 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 2</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 3</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 4</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 5</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 6</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 7</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 8</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 9</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 10</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 11</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Homework</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../homework.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Homework</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../homework_solutions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Homework solutions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../rubric.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Grading rubric</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#general-info" id="toc-general-info" class="nav-link active" data-scroll-target="#general-info">General info</a></li>
+  <li><a href="#page-not-yet-updated" id="toc-page-not-yet-updated" class="nav-link active" data-scroll-target="#page-not-yet-updated"><span style="color:darkorange">Page not yet updated</span></a></li>
+  <li><a href="#general-info" id="toc-general-info" class="nav-link" data-scroll-target="#general-info">General info</a></li>
   <li><a href="#overview-of-week-1" id="toc-overview-of-week-1" class="nav-link" data-scroll-target="#overview-of-week-1">Overview of Week 1</a></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
@@ -280,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/week_01.html">Weekly pages</a></li><li class="breadcrumb-item"><a href="../weeks/week_01.html">Week 1</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Week 1</h1>
 </div>
@@ -298,14 +222,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 29, 2025</p>
+      <p class="date">September 28, 2026</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">September 26, 2026</p>
+      <p class="date-modified">September 27, 2026</p>
     </div>
   </div>
     
@@ -316,13 +240,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="page-not-yet-updated" class="level2">
+<h2 class="anchored" data-anchor-id="page-not-yet-updated"><span style="color:darkorange">Page not yet updated</span></h2>
+</section>
 <section id="general-info" class="level2">
 <h2 class="anchored" data-anchor-id="general-info">General info</h2>
 <ul>
-<li><a href="https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/page/d587d48e-3615-48b2-a07c-eeaf1bca897d">Syllabus</a> on</li>
-<li><a href="https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&amp;studentItemId=0&amp;backPath=&amp;bltiAppStores=false&amp;errorMessage=&amp;clearAttr=&amp;messageId=&amp;source=&amp;title=&amp;newTopLevel=false&amp;sendingPage=226698&amp;postedComment=false&amp;addBefore=&amp;itemId=5465465&amp;path=push&amp;reviewAssessment=false&amp;topicId=&amp;addTool=-1&amp;recheck=&amp;id=&amp;forumId=">Week 1 info</a> on
+<li><a href="https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/page/d587d48e-3615-48b2-a07c-eeaf1bca897d">Syllabus</a> on Brightspace</li>
+<li><a href="https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&amp;studentItemId=0&amp;backPath=&amp;bltiAppStores=false&amp;errorMessage=&amp;clearAttr=&amp;messageId=&amp;source=&amp;title=&amp;newTopLevel=false&amp;sendingPage=226698&amp;postedComment=false&amp;addBefore=&amp;itemId=5465465&amp;path=push&amp;reviewAssessment=false&amp;topicId=&amp;addTool=-1&amp;recheck=&amp;id=&amp;forumId=">Week 1 info</a> on Brightspace
 <ul>
-<li>Includes links to background survey and BSAT 511/611 Slack group</li>
+<li>Includes links to background survey</li>
 </ul></li>
 </ul>
 </section>
@@ -333,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="mon">Mon</h3>
 <ul>
 <li>No class. OHSU New Student Orientation</li>
-<li><a href="../resources/BSTA 511 text R info F25.pdf">Handout</a> with directions on installing R &amp; RStudio</li>
+<li><a href="../resources/BSTA_511_text_R_info_F26_v2.pdf" target="_blank">Handout</a> with directions on installing R &amp; RStudio and PUBH 523 Lessons to complete for Wednesday</li>
 </ul>
 </section>
 <section id="wed---day-1" class="level3 g-col-6">
@@ -341,6 +268,14 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Intro to R &amp; RStudio</li>
 <li>Please have R &amp; RStudio installed for class</li>
+<li>Complete <a href="https://nwakim.github.io/PUBH_523_26F/schedule.html">Intro to R (PUBH 523) lessons</a> below before class:
+<ul>
+<li>Lesson 1: Welcome</li>
+<li>Lesson 3: Download + Intro to R &amp; RStudio</li>
+<li>Lesson 4: Basics</li>
+<li>Lesson 6: Quarto and .qmd’s</li>
+<li><em>If the links for the slides are broken, see the <a href="https://nwakim.github.io/PUBH_523_26Su/schedule.html">Summer class website</a>. Note that the topics are in a different order though.</em></li>
+</ul></li>
 </ul>
 </section>
 </div>
@@ -373,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
 <td><a href="../slides/Day01_bsta511.html">Day 1</a></td>
 <td><a href="../slides_pdf/Day01_bsta511.pdf"><iconify-icon role="img" inline="" icon="bi:file-earmark-pdf-fill" style="font-size: 20px;" aria-label="Icon file-earmark-pdf-fill from bi Iconify.design set." title="Icon file-earmark-pdf-fill from bi Iconify.design set."></iconify-icon></a></td>
 <td><a href="../slides_md/Day01_bsta511_md.html"><iconify-icon role="img" inline="" icon="streamline:web" style="font-size: 20px;" aria-label="Icon web from streamline Iconify.design set." title="Icon web from streamline Iconify.design set."></iconify-icon></a></td>
-<td><a href="https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_md/Day01_bsta511_md.qmd"><iconify-icon role="img" inline="" icon="simple-icons:quarto" aria-label="Icon quarto from simple-icons Iconify.design set." title="Icon quarto from simple-icons Iconify.design set."></iconify-icon></a></td>
+<td><a href="https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_md/Day01_bsta511_md.qmd"><iconify-icon role="img" inline="" icon="simple-icons:quarto" aria-label="Icon quarto from simple-icons Iconify.design set." title="Icon quarto from simple-icons Iconify.design set."></iconify-icon></a></td>
 </tr>
 </tbody>
 </table>
@@ -381,7 +316,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="homework" class="level2">
 <h2 class="anchored" data-anchor-id="homework">Homework</h2>
 <ul>
-<li><a href="../homework/HW_1_F25_bsta511.html">HW 1</a> due on Sat, 10/11
+<li><a href="../homework/HW_1_F26_bsta511_v2.qmd">HW 1</a> due on Sat, 10/10
 <ul>
 <li>Covers Days 1-3</li>
 </ul></li>
@@ -391,7 +326,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="recordings">Recordings</h2>
 <ul>
 <li><p>There are no pre-recorded lessons for Week 1. Starting Week 2, you will be accessing pre-recorded lessons on the <a href="https://echo360.org/section/af47457c-bed2-48d7-84ae-eaa2d44f9add/home">EchoVideo site for BSTA 511/611</a>. Make sure you can log into this site and view the recordings.</p></li>
-<li><p><strong>In-class</strong> recording links are on <a href="https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&amp;studentItemId=0&amp;backPath=&amp;bltiAppStores=false&amp;errorMessage=&amp;clearAttr=&amp;messageId=&amp;source=&amp;title=&amp;newTopLevel=false&amp;sendingPage=226697&amp;postedComment=false&amp;addBefore=&amp;itemId=5465463&amp;path=push&amp;reviewAssessment=false&amp;topicId=&amp;addTool=-1&amp;recheck=&amp;id=&amp;forumId="></a>. Navigate to <em>Course Materials</em> -&gt; <em>Schedule with links to in-class recordings</em>. Note that the password to the recordings is at the top of the page.</p></li>
+<li><p><strong>In-class</strong> recording links are on <a href="https://sakai.ohsu.edu/portal/site/BSTA-511-1-AA-F25/tool/7f531e0a-800c-40eb-bebb-029a60c5df15/ShowPage?returnView=&amp;studentItemId=0&amp;backPath=&amp;bltiAppStores=false&amp;errorMessage=&amp;clearAttr=&amp;messageId=&amp;source=&amp;title=&amp;newTopLevel=false&amp;sendingPage=226697&amp;postedComment=false&amp;addBefore=&amp;itemId=5465463&amp;path=push&amp;reviewAssessment=false&amp;topicId=&amp;addTool=-1&amp;recheck=&amp;id=&amp;forumId=">Brightspace</a>. Navigate to <em>Course Materials</em> -&gt; <em>Schedule with links to in-class recordings</em>. Note that the password to the recordings is at the top of the page.</p></li>
 </ul>
 
 

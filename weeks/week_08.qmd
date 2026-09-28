@@ -2,7 +2,7 @@
 title: "Week 8"
 description: "Chi-squared tests and ANOVA"
 pagetitle: "Week 8 BSTA 511/611"
-date: "11/17/2025"
+date: "11/16/2026"
 date-modified: "today"
 categories: [""]
 format: 
@@ -13,10 +13,12 @@ editor_options:
   chunk_output_type: console
 ---
 
+## [Page not yet updated]{style="color:darkorange"}
+
 
 ## Overview of Week 8
 
-[HW 5](../homework/HW_5_F25_bsta511.qmd) covers Day 13 and is due on [***THURSDAY***]{style="color:darkorange"}, 11/20
+[HW 6](../homework/HW_6_F26_bsta511_v2.qmd) covers Day 13 and is due on [***THURSDAY***]{style="color:darkorange"}, 11/19
 
 ::::: grid
 ::: g-col-6
@@ -42,18 +44,19 @@ editor_options:
 
 | Day | Topic | Slides: html | Slides: pdf | Slides: web-page | Slides with notes | Recording Link | Duration | Code: qmd | Code: html |
 |--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
-| 13 | Chi-sqr intro | [Day 13: slides 1-10](../slides/Day13_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day13_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day13_bsta511_md.qmd) | [{{< iconify pepicons-pop pen-circle-filled size=20px >}}](../slides_notes/Day13_bsta511_notes.pdf) | [Day 13 Part 1](https://echo360.org/lesson/8a0a395a-333b-4b98-b2d3-9a859dfc351f/classroom) | 18 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day13_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day13_bsta511_code.qmd) |
-|  | Chi-sqr test: 8.3.1 - 8.3.4 | [Day 13: slides 11-17](../slides/Day13_bsta511.qmd#/expected-counts-if-variables-are-independent) | same | [{{< iconify streamline web size=20px >}}](../slides_md/Day13_bsta511_md.qmd#expected-counts-if-variables-are-independent) | same | [Day 13 Part 2](https://echo360.org/lesson/f4e9b8ce-775d-430d-a76c-7cfd35415a94/classroom) | 23 min | same | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day13_bsta511_code.qmd#expected-counts-if-variables-are-independent) |
-|  | Chi-sqr in R, Fisher's Exact Test, Chi-sqr vs. prop's | [Day 13: R tip, slides 18-33](../slides/Day13_bsta511.qmd#/depression-vs.-physical-activity-dataset) | same | [{{< iconify streamline web size=20px >}}](../slides_md/Day13_bsta511_md.qmd#depression-vs.-physical-activity-dataset) | same | [Day 13 Part 3](https://echo360.org/lesson/4af8426e-e5e0-4c63-b738-ddb752390361/classroom) | 57 min | same | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day13_bsta511_code.qmd#depression-vs.-physical-activity-dataset) |
-| 14 | ANOVA intro | [Day 14: slides 1-15](../slides/Day14_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day14_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day14_bsta511_md.qmd) | [{{< iconify pepicons-pop pen-circle-filled size=20px >}}](../slides_notes/Day14_bsta511_notes.pdf) | [Day 14 Part 1](https://echo360.org/lesson/d3799237-4858-4cb2-b3a5-7a8330e7162c/classroom) | 29 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day14_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day14_bsta511_code.qmd) |
-|  | ANOVA table | [Day 14: slides 16-28](../slides/Day14_bsta511.qmd#/anova-analysis-of-variance) | same | [{{< iconify streamline web size=20px >}}](../slides_md/Day14_bsta511_md.qmd#anova-analysis-of-variance) | same | [Day 14 Part 2](https://echo360.org/lesson/110feccc-e22f-4ac4-ac69-464a129ddfc2/classroom) | 27 min | same | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day14_bsta511_code.qmd#anova-analysis-of-variance) |
-|  | ANOVA in R, conditions, post-hoc testing | [Day 14: slides 29-47](../slides/Day14_bsta511.qmd#/thinking-about-the-f-statistic) | same | [{{< iconify streamline web size=20px >}}](../slides_md/Day14_bsta511_md.qmd#thinking-about-the-f-statistic) | same | [Day 14 Part 3](https://echo360.org/lesson/34bc26f8-1724-4de1-9623-d7d22d0fdc53/classroom) | 39 min | same | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day14_bsta511_code.qmd#thinking-about-the-f-statistic) |
+| 13 | Chi-sqr intro | [Day 13: slides 1-10](../slides/Day13_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day13_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day13_bsta511_md.qmd) | [{{< iconify pepicons-pop pen-circle-filled size=20px >}}](../slides_notes/Day13_bsta511_notes.pdf) | [Day 13 Part 1](https://echo360.org/lesson/8a0a395a-333b-4b98-b2d3-9a859dfc351f/classroom) | 18 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day13_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day13_bsta511_code.qmd) |
+|  | Chi-sqr test: 8.3.1 - 8.3.4 | [Day 13: slides 11-17](../slides/Day13_bsta511.qmd#/expected-counts-if-variables-are-independent) |  | [{{< iconify streamline web size=20px >}}](../slides_md/Day13_bsta511_md.qmd#expected-counts-if-variables-are-independent) |  | [Day 13 Part 2](https://echo360.org/lesson/f4e9b8ce-775d-430d-a76c-7cfd35415a94/classroom) | 23 min |  | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day13_bsta511_code.qmd#expected-counts-if-variables-are-independent) |
+|  | Chi-sqr in R, Fisher's Exact Test, Chi-sqr vs. prop's | [Day 13: R tip, slides 18-33](../slides/Day13_bsta511.qmd#/depression-vs.-physical-activity-dataset) |  | [{{< iconify streamline web size=20px >}}](../slides_md/Day13_bsta511_md.qmd#depression-vs.-physical-activity-dataset) |  | [Day 13 Part 3](https://echo360.org/lesson/4af8426e-e5e0-4c63-b738-ddb752390361/classroom) | 57 min |  | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day13_bsta511_code.qmd#depression-vs.-physical-activity-dataset) |
+| []{.day-divider} |  |  |  |  |  |  |  |  |  |
+| 14 | ANOVA intro | [Day 14: slides 1-15](../slides/Day14_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day14_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day14_bsta511_md.qmd) | [{{< iconify pepicons-pop pen-circle-filled size=20px >}}](../slides_notes/Day14_bsta511_notes.pdf) | [Day 14 Part 1](https://echo360.org/lesson/d3799237-4858-4cb2-b3a5-7a8330e7162c/classroom) | 29 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day14_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day14_bsta511_code.qmd) |
+|  | ANOVA table | [Day 14: slides 16-28](../slides/Day14_bsta511.qmd#/anova-analysis-of-variance) |  | [{{< iconify streamline web size=20px >}}](../slides_md/Day14_bsta511_md.qmd#anova-analysis-of-variance) |  | [Day 14 Part 2](https://echo360.org/lesson/110feccc-e22f-4ac4-ac69-464a129ddfc2/classroom) | 27 min |  | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day14_bsta511_code.qmd#anova-analysis-of-variance) |
+|  | ANOVA in R, conditions, post-hoc testing | [Day 14: slides 29-47](../slides/Day14_bsta511.qmd#/thinking-about-the-f-statistic) |  | [{{< iconify streamline web size=20px >}}](../slides_md/Day14_bsta511_md.qmd#thinking-about-the-f-statistic) |  | [Day 14 Part 3](https://echo360.org/lesson/34bc26f8-1724-4de1-9623-d7d22d0fdc53/classroom) | 39 min |  | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day14_bsta511_code.qmd#thinking-about-the-f-statistic) |
 
 : {.striped .hover tbl-colwidths="\[3, 10, 8, 5, 5, 5, 6, 6, 5, 5\]"}
 
 ## Datasets
 
-All datasets can be found on [GitHub](https://github.com/niederhausen/BSTA_511_F25/tree/main/data)
+All datasets can be found on [GitHub](https://github.com/niederhausen/BSTA_511_F26/tree/main/data)
 
 -   Day 14: [DisabilityEmployment.txt](/data/DisabilityEmployment.txt)
 
@@ -63,7 +66,7 @@ All datasets can be found on [GitHub](https://github.com/niederhausen/BSTA_511_F
 
 -   Book exercises: 
     -   8.28
-    -   8.24 (a) & (b) as a test of independence (*for HW 4 I had you test the difference in proportions*)
+    -   8.24 (a) & (b) as a test of independence (*for HW 5 I had you test the difference in proportions*)
 
 ### [Day 14 PP]{style="color:darkorange"}
 
@@ -78,30 +81,31 @@ During class you will be working in groups discussing the following:
 ### Day 13
 
 -   Practice Problems listed above
--   Questions from HW 5 (due THURSDAY)
+-   Questions from HW 6 (due THURSDAY)
     -   Book: 8.32, 8.34, 8.38 (all have special instructions; see assignment)
 
 ### Day 14
 
 -   Practice Problems listed above
--   Questions from HW 6
+-   Questions from HW 7
     -   Book 5.44 
     -   R1: Palmer Penguins ANOVA
 
 ## Homework
 
--   [HW 5](../homework/HW_5_F25_bsta511.qmd) covers Day 13 and is due on [***THURSDAY***]{style="color:darkorange"}, 11/20
--   [HW 6](../homework/HW_6_F25_bsta511.qmd) covers Days 14-15 and is due on Sat, 11/29
+-   [HW 6](../homework/HW_6_F26_bsta511_v2.qmd) covers Day 13 and is due on [***THURSDAY***]{style="color:darkorange"}, 11/19
+-   [HW 7](../homework/HW_7_F26_bsta511_v2.qmd) covers Day 14 and is due on Sun, 11/29
 -   Check out this [spreadsheet](https://docs.google.com/spreadsheets/d/1k_NivXZftdlRgRyTT3fUZCndW4eoXCzAs-DEIml6K3Y/edit?gid=0#gid=0) for typos in book.
 
 
-## Exam 3 information {#sec-Exam3info}
+## Exam 2 information {#sec-Exam2info}
 
--   Exam 3 will be on Mon, Nov. 24th
--   Samples of [past exam questions](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_3_samples_4.3_5.1-5.4_8.1-8.4.pdf) and [answers](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_3_samples_4.3_5.1-5.4_8.1-8.4_answers.pdf) (on )
+-   Exam 2 will be on Mon, Nov. 23rd
+-   *Sections 4.1-4.2:* samples of [past exam questions](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_2_samples_Ch3.1-3.4_4.1-4.2.pdf) and [answers](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_2_samples_Ch3.1-3.4_4.1-4.2_answers.pdf) (on Brightspace)
+-   *Sections 4.3, 5.1-5.4, 8.1-8.4:* samples of [past exam questions](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_3_samples_4.3_5.1-5.4_8.1-8.4.pdf) and [answers](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_3_samples_4.3_5.1-5.4_8.1-8.4_answers.pdf) (on Brightspace)
     - *Note: I still need to add the answers for the Fall 2024 exam.*
--   Material will cover **Days 10-13**,
-    -   which is approximately **Sections 4.3, 5.1-5.4, and 8.1-8.4** from the textbook, plus supplementary material.
+-   Material will cover **Days 8-13**,
+    -   which is approximately **Sections 4.1-4.3, 5.1-5.4, and 8.1-8.4** from the textbook, plus supplementary material.
 -   The exam will be in-class and handwritten. *Bring a calculator.*
 -   You may bring one page of notes on an 8.5” x 11” sheet of paper.
     -   You may use both sides.

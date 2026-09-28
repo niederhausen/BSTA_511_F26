@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-12-01">
+<meta name="dcterms.date" content="2026-11-30">
 <meta name="description" content="Simple Linear Regression (cont’d) and Nonparametric Tests">
 
 <title>Week 10 BSTA 511/611 – BSTA 511/611 Fall 2026</title>
@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8c9b64f95462c7bb49d3a63cc34b225c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-36c23491430ca13b544e4ac8ff24fd85.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -89,8 +89,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/IMG_9812_med.png" alt="" class="navbar-logo light-content">
-    <img src="../images/IMG_9812_med.png" alt="" class="navbar-logo dark-content">
+    <img src="../images/IMG_9388_med.png" alt="" class="navbar-logo light-content">
+    <img src="../images/IMG_9388_med.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">BSTA 511/611 Fall 2026</span>
@@ -103,173 +103,97 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-weekly-pages" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Weekly pages</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-weekly-pages">    
+        <li>
+    <a class="dropdown-item" href="../weeks/week_01.html">
+ <span class="dropdown-text">Week 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_02.html">
+ <span class="dropdown-text">Week 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_03.html">
+ <span class="dropdown-text">Week 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_04.html">
+ <span class="dropdown-text">Week 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_05.html">
+ <span class="dropdown-text">Week 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_06.html">
+ <span class="dropdown-text">Week 6</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_07.html">
+ <span class="dropdown-text">Week 7</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_08.html">
+ <span class="dropdown-text">Week 8</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_09.html">
+ <span class="dropdown-text">Week 9</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_10.html">
+ <span class="dropdown-text">Week 10</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_11.html">
+ <span class="dropdown-text">Week 11</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-homework" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Homework</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-homework">    
+        <li>
+    <a class="dropdown-item" href="../homework.html">
+ <span class="dropdown-text">Homework</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../homework_solutions.html">
+ <span class="dropdown-text">Homework solutions</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/week_01.html">Weekly pages</a></li><li class="breadcrumb-item"><a href="../weeks/week_10.html">Week 10</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Home</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Weekly pages</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 2</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 3</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 4</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 5</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 6</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 7</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 8</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 9</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_10.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Week 10</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 11</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Homework</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../homework.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Homework</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../homework_solutions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Homework solutions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../rubric.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Grading rubric</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview-of-week-10" id="toc-overview-of-week-10" class="nav-link active" data-scroll-target="#overview-of-week-10">Overview of Week 10</a></li>
+  <li><a href="#page-not-yet-updated" id="toc-page-not-yet-updated" class="nav-link active" data-scroll-target="#page-not-yet-updated"><span style="color:darkorange">Page not yet updated</span></a></li>
+  <li><a href="#overview-of-week-10" id="toc-overview-of-week-10" class="nav-link" data-scroll-target="#overview-of-week-10">Overview of Week 10</a></li>
   <li><a href="#slides-recordings" id="toc-slides-recordings" class="nav-link" data-scroll-target="#slides-recordings">Slides &amp; Recordings</a></li>
   <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">Datasets</a></li>
   <li><a href="#practice-problems" id="toc-practice-problems" class="nav-link" data-scroll-target="#practice-problems">Practice Problems</a>
@@ -283,18 +207,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#day-17" id="toc-day-17" class="nav-link" data-scroll-target="#day-17">Day 17</a></li>
   </ul></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
-  <li><a href="#sec-ExamCorrections" id="toc-sec-ExamCorrections" class="nav-link" data-scroll-target="#sec-ExamCorrections">Exam Corrections</a>
-  <ul class="collapse">
-  <li><a href="#sec-Exam2Corrections" id="toc-sec-Exam2Corrections" class="nav-link" data-scroll-target="#sec-Exam2Corrections">Exam 2 Corrections</a></li>
-  <li><a href="#sec-Exam3Corrections" id="toc-sec-Exam3Corrections" class="nav-link" data-scroll-target="#sec-Exam3Corrections">Exam 3 Corrections</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/week_01.html">Weekly pages</a></li><li class="breadcrumb-item"><a href="../weeks/week_10.html">Week 10</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Week 10</h1>
 </div>
@@ -312,14 +231,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 1, 2025</p>
+      <p class="date">November 30, 2026</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">September 26, 2026</p>
+      <p class="date-modified">September 27, 2026</p>
     </div>
   </div>
     
@@ -330,10 +249,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="page-not-yet-updated" class="level2">
+<h2 class="anchored" data-anchor-id="page-not-yet-updated"><span style="color:darkorange">Page not yet updated</span></h2>
+</section>
 <section id="overview-of-week-10" class="level2">
 <h2 class="anchored" data-anchor-id="overview-of-week-10">Overview of Week 10</h2>
 <ul>
-<li><a href="#sec-ExamCorrections">Exams 2 &amp; 3 corrections information</a> is below.</li>
+<li><a href="../weeks/week_11.html#sec-Exam3">Exam 3</a> (take home) is due on Wed, 12/9. See the Week 11 page for more information.</li>
 </ul>
 <div class="grid">
 <section id="mon-day-16" class="level3 g-col-6">
@@ -397,10 +319,22 @@ ul.task-list li input[type="checkbox"] {
 <td></td>
 <td><a href="https://echo360.org/lesson/2dc60cec-bd00-4eae-abb3-ba70d9cd6923/classroom">Day 16</a> <span style="color:darkorange">*</span></td>
 <td>1 hr 26 min</td>
-<td><a href="https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day16_bsta511_code.qmd"><iconify-icon role="img" inline="" icon="simple-icons:quarto" aria-label="Icon quarto from simple-icons Iconify.design set." title="Icon quarto from simple-icons Iconify.design set."></iconify-icon></a></td>
+<td><a href="https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day16_bsta511_code.qmd"><iconify-icon role="img" inline="" icon="simple-icons:quarto" aria-label="Icon quarto from simple-icons Iconify.design set." title="Icon quarto from simple-icons Iconify.design set."></iconify-icon></a></td>
 <td><a href="../slides_code/Day16_bsta511_code.html"><iconify-icon role="img" inline="" icon="ph:file-html-light" style="font-size: 25px;" aria-label="Icon file-html-light from ph Iconify.design set." title="Icon file-html-light from ph Iconify.design set."></iconify-icon></a></td>
 </tr>
 <tr class="even">
+<td><span class="day-divider"></span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
 <td>17</td>
 <td>Sign test &amp; Sign-rank test: Slides 1-31</td>
 <td></td>
@@ -409,19 +343,19 @@ ul.task-list li input[type="checkbox"] {
 <td><a href="../slides_notes/Day17_bsta511_notes.pdf"><iconify-icon role="img" inline="" icon="pepicons-pop:pen-circle-filled" style="font-size: 20px;" aria-label="Icon pen-circle-filled from pepicons-pop Iconify.design set." title="Icon pen-circle-filled from pepicons-pop Iconify.design set."></iconify-icon></a></td>
 <td><a href="https://echo360.org/lesson/5c806486-fec8-45c8-9857-042abcba1f14/classroom">Day 17 Part 1</a></td>
 <td>56 min</td>
-<td><a href="https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day17_bsta511_code.qmd"><iconify-icon role="img" inline="" icon="simple-icons:quarto" aria-label="Icon quarto from simple-icons Iconify.design set." title="Icon quarto from simple-icons Iconify.design set."></iconify-icon></a></td>
+<td><a href="https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day17_bsta511_code.qmd"><iconify-icon role="img" inline="" icon="simple-icons:quarto" aria-label="Icon quarto from simple-icons Iconify.design set." title="Icon quarto from simple-icons Iconify.design set."></iconify-icon></a></td>
 <td><a href="../slides_code/Day17_bsta511_code.html"><iconify-icon role="img" inline="" icon="ph:file-html-light" style="font-size: 25px;" aria-label="Icon file-html-light from ph Iconify.design set." title="Icon file-html-light from ph Iconify.design set."></iconify-icon></a></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td></td>
 <td>Wilcoxon rank-sum test, Kruskal-Wallis test: Slides 32-53</td>
 <td></td>
-<td>same</td>
 <td></td>
-<td>same</td>
+<td></td>
+<td></td>
 <td><a href="https://echo360.org/lesson/38c21b3d-88af-4a63-8c4b-5aeb7d19207b/classroom">Day 17 Part 2</a></td>
 <td>41 min</td>
-<td>same</td>
+<td></td>
 <td><a href="../slides_code/Day17_bsta511_code.html#wilcoxon-rank-sum-test-1"><iconify-icon role="img" inline="" icon="ph:file-html-light" style="font-size: 25px;" aria-label="Icon file-html-light from ph Iconify.design set." title="Icon file-html-light from ph Iconify.design set."></iconify-icon></a></td>
 </tr>
 </tbody>
@@ -430,10 +364,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="datasets" class="level2">
 <h2 class="anchored" data-anchor-id="datasets">Datasets</h2>
-<p>All datasets can be found on <a href="https://github.com/niederhausen/BSTA_511_F25/tree/main/data">GitHub</a></p>
+<p>All datasets can be found on <a href="https://github.com/niederhausen/BSTA_511_F26/tree/main/data">GitHub</a></p>
 <ul>
 <li>Day 16: <a href="../data/lifeexp_femlit_water_2011.csv">lifeexp_femlit_water_2011.csv</a></li>
-<li>HW 7: <a href="../data/Gapminder_2011_LifeExp_CO2.csv">Gapminder_2011_LifeExp_CO2.csv</a></li>
+<li>HW 8: <a href="../data/Gapminder_2011_LifeExp_CO2.csv">Gapminder_2011_LifeExp_CO2.csv</a></li>
 </ul>
 </section>
 <section id="practice-problems" class="level2">
@@ -457,7 +391,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="day-16" class="level3">
 <h3 class="anchored" data-anchor-id="day-16">Day 16</h3>
 <ul>
-<li>Questions from HW 7
+<li>Questions from HW 8
 <ul>
 <li>Book
 <ul>
@@ -470,7 +404,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="day-17" class="level3">
 <h3 class="anchored" data-anchor-id="day-17">Day 17</h3>
 <ul>
-<li>Questions from HW 7
+<li>Questions from HW 8
 <ul>
 <li>Nonparametric Tests: NPT 1-3</li>
 </ul></li>
@@ -480,54 +414,43 @@ ul.task-list li input[type="checkbox"] {
 <section id="homework" class="level2">
 <h2 class="anchored" data-anchor-id="homework">Homework</h2>
 <ul>
-<li><a href="../homework/HW_7_F25_bsta511.qmd">HW 7</a> covers Days 16 -17 and is due on Sat, 12/6
+<li><a href="../homework/HW_8_F26_bsta511_v2.qmd">HW 8</a> covers Days 15-17 and is due on Sat, 12/5
 <ul>
 <li>Dataset for question R1: <a href="../data/Gapminder_2011_LifeExp_CO2.csv">Gapminder_2011_LifeExp_CO2.csv</a></li>
 </ul></li>
 <li>Check out this <a href="https://docs.google.com/spreadsheets/d/1k_NivXZftdlRgRyTT3fUZCndW4eoXCzAs-DEIml6K3Y/edit?gid=0#gid=0">spreadsheet</a> for typos in book.</li>
 </ul>
-</section>
-<section id="sec-ExamCorrections" class="level2">
-<h2 class="anchored" data-anchor-id="sec-ExamCorrections">Exam Corrections</h2>
-<ul>
-<li>Please <em>email</em> me a link to your video by the due date.
-<ul>
-<li><em>Please do not attach the video to the email</em>.</li>
-</ul></li>
-<li>Exam corrections will be video recordings of you explaining what the error was on the problem, why it was incorrect, and the correct solution.
-<ul>
-<li>Recordings do not need to include video of yourself.</li>
-</ul></li>
-<li>I strongly recommend reviewing the class notes and homework solutions for examples of the level of detail and correct notation to use in your work.</li>
-<li>You may not ask anyone for help (including AI) other than the instructor for doing your exam corrections.</li>
-</ul>
-<section id="sec-Exam2Corrections" class="level3">
-<h3 class="anchored" data-anchor-id="sec-Exam2Corrections">Exam 2 Corrections</h3>
-<ul>
-<li>Due on <strong>Thursday 12/4</strong> at 11 pm.</li>
-<li>You are allowed exam corrections for two questions.</li>
-<li>For <strong>question 3</strong>, you can earn back <strong>all</strong> of the points missed.</li>
-<li>For <strong>questions 1, 2, and 4</strong>, you can earn back up to <strong>half</strong> of the missed points.
-<ul>
-<li>For example, if on question 2 you scored 5 out of 10 points, you can increase your score up to 7.5 out of 10 points</li>
-</ul></li>
-</ul>
-</section>
-<section id="sec-Exam3Corrections" class="level3">
-<h3 class="anchored" data-anchor-id="sec-Exam3Corrections">Exam 3 Corrections</h3>
-<ul>
-<li>Due <strong>Monday 12/8</strong> at 11 pm</li>
-<li>You may do corrections for all questions.</li>
-<li>For 10 parts to questions, you can earn back all of the points missed.
-<ul>
-<li>For example, maybe you decide to choose parts 1b, 1c, 1d, 2c, 3a, 3d, 3f, 4b, 4d, and 4f as the 10 “parts of questions” that you want to be considered for getting full points back for.</li>
-<li><em>When emailing me a link to your video, please clearly state which parts of questions you chose as the 10 to get full points back.</em></li>
-</ul></li>
-<li>For the remaining parts to questions, you can earn back up to half of the missed points.</li>
-</ul>
+<!-- Exam corrections were not used in F26. Uncomment to restore.
+
+## Exam Corrections {#sec-ExamCorrections}
+
+-   Please *email* me a link to your video by the due date.
+    -   *Please do not attach the video to the email*.
+-   Exam corrections will be video recordings of you explaining what the error was on the problem, why it was incorrect, and the correct solution.
+    -   Recordings do not need to include video of yourself.
+-   I strongly recommend reviewing the class notes and homework solutions for examples of the level of detail and correct notation to use in your work.
+-   You may not ask anyone for help (including AI) other than the instructor for doing your exam corrections.
+
+### Exam 2 Corrections {#sec-Exam2Corrections}
+
+-   Due on **Thursday 12/4** at 11 pm.
+-   You are allowed exam corrections for two questions.
+-   For **question 3**, you can earn back **all** of the points missed.
+-   For **questions 1, 2, and 4**, you can earn back up to **half** of the missed points.
+    -   For example, if on question 2 you scored 5 out of 10 points, you can increase your score up to 7.5 out of 10 points
+
+### Exam 3 Corrections {#sec-Exam3Corrections}
+
+-   Due **Monday 12/8** at 11 pm
+-   You may do corrections for all questions.
+-   For 10 parts to questions, you can earn back all of the points missed.
+    -   For example, maybe you decide to choose parts 1b, 1c, 1d, 2c, 3a, 3d, 3f, 4b, 4d, and 4f as the 10 "parts of questions" that you want to be considered for getting full points back for.
+    -   *When emailing me a link to your video, please clearly state which parts of questions you chose as the 10 to get full points back.*
+-   For the remaining parts to questions, you can earn back up to half of the missed points.
+
+-->
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

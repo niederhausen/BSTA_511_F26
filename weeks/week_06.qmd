@@ -1,8 +1,8 @@
 ---
 title: "Week 6"
-description: "Hypothesis Testing & Exam 2"
+description: "Confidence intervals & Hypothesis testing"
 pagetitle: "Week 6 BSTA 511/611"
-date: "11/3/2025"
+date: "11/2/2026"
 date-modified: "today"
 categories: [""]
 format: 
@@ -13,12 +13,23 @@ editor_options:
   chunk_output_type: console
 ---
 
+## [Page not yet updated]{style="color:darkorange"}
+
+
 
 ## Overview of Week 6
 
 ::::: grid
 ::: g-col-6
-### Mon: Day 10
+### Mon: Day 9
+
+-   Confidence intervals for one mean (single-sample):
+    -   Sections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)
+-   Student’s t-distribution
+:::
+
+::: g-col-6
+### Wed: Day 10
 
 -   Hypothesis testing for one mean (single-sample): Section 4.3, 5.1
 -   CIs vs. hypothesis tests
@@ -26,12 +37,6 @@ editor_options:
 -   **R projects**, `here::here()`, and loading data into R from a file
     -   **See [Projects in RStudio](../resources/Projects_in_R.qmd) file for more information**
 -   Running a `t.test` in R
-:::
-
-::: g-col-6
-### Wed: Exam 2
-
--   See the [Exam 2 information](#sec-Exam2info) section below for more information
 :::
 :::::
 
@@ -41,21 +46,31 @@ editor_options:
 
 | Day | Topic | Slides: html | Slides: pdf | Slides: web-page | Slides with notes | Recording Link | Duration | Code: qmd | Code: html |
 |--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
-| 10 part 1 | Hyp test 1 mean intro | [Day 10 Part 1: slides 1-13](../slides/Day10_part1_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day10_part1_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day10_part1_bsta511_md.qmd) | [{{< iconify pepicons-pop pen-circle-filled size=20px >}}](../slides_notes/Day10_part1_bsta511_notes.pdf) | [Day 10 Part 1](https://echo360.org/lesson/1dbcbc29-00bf-4a70-99da-27612ba23ceb/classroom) | 26 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day10_part1_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day10_part1_bsta511_code.qmd) |
-|  | Hyp test steps: 4.3, 5.1 | [Day 10 Part 1: slides 14-25](../slides/Day10_part1_bsta511.qmd#/steps-in-a-hypothesis-test) | same | [{{< iconify streamline web size=20px >}}](../slides_md/Day10_part1_bsta511_md.qmd#steps-in-a-hypothesis-test) | same | [Day 10 Part 2](https://echo360.org/lesson/68bc9694-df17-4a8e-b885-7dfa01f92269/classroom) | 36 min | same | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day10_part1_bsta511_code.qmd#steps-in-a-hypothesis-test) |
-|  | R demo | [Day 10 Part 1: slides 26-34](../slides/Day10_part1_bsta511.qmd#/running-a-t-test-in-r) | same | [{{< iconify streamline web size=20px >}}](../slides_md/Day10_part1_bsta511_md.qmd#running-a-t-test-in-r) | same | [Day 10 Part 3](https://echo360.org/lesson/fe665410-4c6f-448e-b362-2d4186fd7e09/classroom) | 25 min | same | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day10_part1_bsta511_code.qmd#running-a-t-test-in-r) |
-| 10 part 2 |  | [Day 10 Part 2](../slides/Day10_part2_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day10_part2_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day10_part2_bsta511_md.qmd) |  | No recording |  | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day10_part2_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day10_part2_bsta511_code.qmd) |
+| 9 | CI's for 1 mean: 4.2 | [Day 9: slides 1-12](../slides/Day09_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day09_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day09_bsta511_md.qmd) | [{{< iconify pepicons-pop pen-circle-filled size=20px >}}](../slides_notes/Day09_bsta511_notes.pdf) | [Day 9 Part 1](https://echo360.org/lesson/12a76ee1-6ecd-415f-b0c8-c4fa40d9b687/classroom) | 17 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day09_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day09_bsta511_code.qmd) |
+|  | 4.2 con'td | [Day 9: slides 13-19](../slides/Day09_bsta511.qmd#/how-to-interpret-a-c-i-12) |  | [{{< iconify streamline web size=20px >}}](../slides_md/Day09_bsta511_md.qmd#how-to-interpret-a-c-i-12) |  | [Day 9 Part 2](https://echo360.org/lesson/f591aa8b-b8ad-479e-91f0-d170b53b66f8/classroom) | 17 min |  |  |
+|  | 4.2 con'td, 5.1.1, 5.1.2 (pgs. 238-242) | [Day 9: slides 20-23](../slides/Day09_bsta511.qmd#/calculating-the-c-i-for-the-population-mean-using-s) |  | [{{< iconify streamline web size=20px >}}](../slides_md/Day09_bsta511_md.qmd#calculating-the-c-i-for-the-population-mean-using-s) |  | [Day 9 Part 3](https://echo360.org/lesson/7940464f-f788-4438-bc28-0859225d57fa/classroom) | 14 min |  |  |
+| []{.day-divider} |  |  |  |  |  |  |  |  |  |
+| 10 part 1 | Hyp test 1 mean intro | [Day 10 Part 1: slides 1-13](../slides/Day10_part1_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day10_part1_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day10_part1_bsta511_md.qmd) | [{{< iconify pepicons-pop pen-circle-filled size=20px >}}](../slides_notes/Day10_part1_bsta511_notes.pdf) | [Day 10 Part 1](https://echo360.org/lesson/1dbcbc29-00bf-4a70-99da-27612ba23ceb/classroom) | 26 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day10_part1_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day10_part1_bsta511_code.qmd) |
+|  | Hyp test steps: 4.3, 5.1 | [Day 10 Part 1: slides 14-25](../slides/Day10_part1_bsta511.qmd#/steps-in-a-hypothesis-test) |  | [{{< iconify streamline web size=20px >}}](../slides_md/Day10_part1_bsta511_md.qmd#steps-in-a-hypothesis-test) |  | [Day 10 Part 2](https://echo360.org/lesson/68bc9694-df17-4a8e-b885-7dfa01f92269/classroom) | 36 min |  | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day10_part1_bsta511_code.qmd#steps-in-a-hypothesis-test) |
+|  | R demo | [Day 10 Part 1: slides 26-34](../slides/Day10_part1_bsta511.qmd#/running-a-t-test-in-r) |  | [{{< iconify streamline web size=20px >}}](../slides_md/Day10_part1_bsta511_md.qmd#running-a-t-test-in-r) |  | [Day 10 Part 3](https://echo360.org/lesson/fe665410-4c6f-448e-b362-2d4186fd7e09/classroom) | 25 min |  | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day10_part1_bsta511_code.qmd#running-a-t-test-in-r) |
+| 10 part 2 |  | [Day 10 Part 2](../slides/Day10_part2_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day10_part2_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day10_part2_bsta511_md.qmd) |  | No recording |  | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day10_part2_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day10_part2_bsta511_code.qmd) |
 
 : {.striped .hover tbl-colwidths="\[3, 10, 8, 5, 5, 5, 6, 6, 5, 5\]"}
 
 ## Datasets
 
-All datasets can be found on [GitHub](https://github.com/niederhausen/BSTA_511_F25/tree/main/data)
+All datasets can be found on [GitHub](https://github.com/niederhausen/BSTA_511_F26/tree/main/data)
 
 -   [BodyTemperatures.csv](/data/BodyTemperatures.csv)
 -   [chol213.csv](/data/chol213.csv)
 
 ## Practice Problems
+
+### [Day 9 PP]{style="color:darkorange"}
+
+-   From Day 9 slides: 
+    -   Slide 15: What percent CI was being simulated in this figure?
+    -   Slide 22: Calculate CI
 
 ### [Day 10 PP]{style="color:darkorange"}
 
@@ -64,6 +79,15 @@ All datasets can be found on [GitHub](https://github.com/niederhausen/BSTA_511_F
 ## Class discussion
 
 During class you will be working in groups discussing the following:
+
+### Day 9
+
+-   Practice Problems listed above
+-   From HW 4:
+    -   Book exercises:
+        -   warm-up: 4.4, 4.6, 5.10
+        -   5.6
+    -   R2: Youth weights Part 2 (YRBSS)
 
 ### Day 10
 
@@ -77,18 +101,5 @@ During class you will be working in groups discussing the following:
 
 ## Homework
 
--   [HW 4](../homework/HW_4_F25_bsta511.qmd) covers Days 10-12 and is due on Sat, 11/15
+-   [HW 4](../homework/HW_4_F26_bsta511_v2.qmd) covers Days 8-10 and is due on Sat, 11/7
 -   Check out this [spreadsheet](https://docs.google.com/spreadsheets/d/1k_NivXZftdlRgRyTT3fUZCndW4eoXCzAs-DEIml6K3Y/edit?gid=0#gid=0) for typos in book.
-
-## Exam 2 information {#sec-Exam2info}
-
--   Exam 2 will be on Wed, Nov. 5th
--   Samples of [past exam questions](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_2_samples_Ch3.1-3.4_4.1-4.2.pdf) and [answers](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_2_samples_Ch3.1-3.4_4.1-4.2_answers.pdf) (on )
--   Material will cover **Days 6-9**,
-    -   which is approximately **Sections 3.1-3.4, 4.1-4.2** from the textbook.
--   The exam will be in-class and handwritten. *Bring a calculator.*
--   You may bring one page of notes on an 8.5” x 11” sheet of paper.
-    -   You may use both sides.
-    -   You may type your notes.
-    -   You may **not** use screenshots of the notes or textbook
-    -   You will be turning in the page of notes with the exam, so please add your name to the sheet.

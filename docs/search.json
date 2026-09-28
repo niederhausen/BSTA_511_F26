@@ -4,11 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Week\nDates\nDay\nTopics\nChapter sections\n\n\n\n\n1\nM 9/28\n\nNo class:  OHSU New Student Orientation\n\n\n\n\nW 9/30\n1\nIntroduction to R & RStudio\n\n\n\n\n\n\n\n\n\n\n2\nM 10/5\n2\nIntro to Data, Data collection\n1.1-1.3\n\n\n\nW 10/7\n3\nSummarizing numerical data,  Probability\n1.4, 2.1-2.2.4\n\n\n\nSa 10/10\n\nHW 1 Due (Days 1 - 3)\n\n\n\n\n\n\n\n\n\n\n3\nM 10/12\n4\nBayes’ Theorem, R Packages\n2.2.5, extra\n\n\n\nW 10/14\n5\nData visualization,  exploratory data analysis (EDA),  and summarizing categorical data\n1.5-1.7, extra\n\n\n\nSa 10/17\n\nHW 2 Due (Days 4 - 5)\n\n\n\n\n\n\n\n\n\n\n4\nM 10/19\n6\nRandom variables,  Binomial distribution\n3.1-3.2\n\n\n\nW 10/21\n7\nNormal and Poisson distributions\n3.3-3.4\n\n\n\nSa 10/24\n\nHW 3 Due (Days 6 - 7)\n\n\n\n\n\n\n\n\n\n\n5\nM 10/26\n8\nVariability in estimates\n4.1\n\n\n\nW 10/28\n\nExam 1: Days 1-7\nCh 1, 2, 3.1-3.4\n\n\n\n\n\n\n\n\n\n6\nM 11/2\n9\nConfidence Intervals\n4.2\n\n\n\nW 11/4\n10\nHypothesis Testing:  Single-sample with t-distribution  & Two-sample paired data\n4.3, 5.1, 5.2\n\n\n\nSa 11/7\n\nHW 4 Due (Days 8 - 10)\n\n\n\n\n\n\n\n\n\n\n7\nM 11/9\n11\nHypothesis Testing:  Two-sample independent data;  Power\n5.3-5.4, extra\n\n\n\nW 11/11\n12\nInference for a single proportion  or difference in proportions\n8.1-8.2\n\n\n\nSa 11/14\n\nHW 5 Due (Days 11 - 12)\n\n\n\n\n\n\n\n\n\n\n8\nM 11/16\n13\nChi-squared tests,  Fishers exact test\n8.3-8.4\n\n\n\nW 11/18\n14\nComparing Means with ANOVA.\n5.5, extra\n\n\n\nThurs 11/19\n\nHW 6 Due (Day 13)  Due Thursday!!\n\n\n\n\n\n\n\n\n\n\n9\nM 11/23\n\nExam 2: Days 8-13\nCh 4, 5.1-5.4;  extra, 8.1-8.4\n\n\n\nW 11/25\n15\nSimple Linear Regression\n6.1-6.2\n\n\n\nSu 11/29\n\nHW 7 Due (Day 14)\n\n\n\n\n\n\n\n\n\n\n10\nM 11/30\n16\nSimple Linear Regression\n6.3-6.4\n\n\n\nW 12/2\n17\nNon-parametric tests  (sign, signed-rank, rank-sum,  Kruskal-Wallis)\nExtra\n\n\n\nSa 12/5\n\nHW 8 Due (Days 15 - 17)\n\n\n\n\n\n\n\n\n\n\n11\nM 12/7\n\nReview - catch up\n\n\n\n\nW 12/9\n\nExam 3 due (take home):  Cumulative with a focus on Days 14-17\nCh 5.5, 6,  non-parametric",
-    "crumbs": [
-      "Home",
-      "Schedule"
-    ]
+    "text": "Week\nDates\nDay\nTopics\nChapter sections\n\n\n\n\n1\nM 9/28\n\nNo class:  OHSU New Student Orientation\n\n\n\n\nW 9/30\n1\nIntroduction to R & RStudio\n\n\n\n\n\n\n\n\n\n\n2\nM 10/5\n2\nIntro to Data, Data collection\n1.1-1.3\n\n\n\nW 10/7\n3\nSummarizing numerical data,  Probability\n1.4, 2.1-2.2.4\n\n\n\nSa 10/10\n\nHW 1 Due (Days 1 - 3)\n\n\n\n\n\n\n\n\n\n\n3\nM 10/12\n4\nBayes’ Theorem, R Packages\n2.2.5, extra\n\n\n\nW 10/14\n5\nData visualization,  exploratory data analysis (EDA),  and summarizing categorical data\n1.5-1.7, extra\n\n\n\nSa 10/17\n\nHW 2 Due (Days 4 - 5)\n\n\n\n\n\n\n\n\n\n\n4\nM 10/19\n6\nRandom variables,  Binomial distribution\n3.1-3.2\n\n\n\nW 10/21\n7\nNormal and Poisson distributions\n3.3-3.4\n\n\n\nSa 10/24\n\nHW 3 Due (Days 6 - 7)\n\n\n\n\n\n\n\n\n\n\n5\nM 10/26\n8\nVariability in estimates\n4.1\n\n\n\nW 10/28\n\nExam 1: Days 1-7\nCh 1, 2, 3.1-3.4\n\n\n\n\n\n\n\n\n\n6\nM 11/2\n9\nConfidence Intervals\n4.2\n\n\n\nW 11/4\n10\nHypothesis Testing:  Single-sample with t-distribution  & Two-sample paired data\n4.3, 5.1, 5.2\n\n\n\nSa 11/7\n\nHW 4 Due (Days 8 - 10)\n\n\n\n\n\n\n\n\n\n\n7\nM 11/9\n11\nHypothesis Testing:  Two-sample independent data;  Power\n5.3-5.4, extra\n\n\n\nW 11/11\n12\nInference for a single proportion  or difference in proportions\n8.1-8.2\n\n\n\nSa 11/14\n\nHW 5 Due (Days 11 - 12)\n\n\n\n\n\n\n\n\n\n\n8\nM 11/16\n13\nChi-squared tests,  Fishers exact test\n8.3-8.4\n\n\n\nW 11/18\n14\nComparing Means with ANOVA.\n5.5, extra\n\n\n\nThurs 11/19\n\nHW 6 Due (Day 13)  Due Thursday!!\n\n\n\n\n\n\n\n\n\n\n9\nM 11/23\n\nExam 2: Days 8-13\nCh 4, 5.1-5.4;  extra, 8.1-8.4\n\n\n\nW 11/25\n15\nSimple Linear Regression\n6.1-6.2\n\n\n\nSu 11/29\n\nHW 7 Due (Day 14)\n\n\n\n\n\n\n\n\n\n\n10\nM 11/30\n16\nSimple Linear Regression\n6.3-6.4\n\n\n\nW 12/2\n17\nNon-parametric tests  (sign, signed-rank, rank-sum,  Kruskal-Wallis)\nExtra\n\n\n\nSa 12/5\n\nHW 8 Due (Days 15 - 17)\n\n\n\n\n\n\n\n\n\n\n11\nM 12/7\n\nReview - catch up\n\n\n\n\nW 12/9\n\nExam 3 due (take home):  Cumulative with a focus on Days 14-17\nCh 5.5, 6,  non-parametric"
   },
   {
     "objectID": "slides_code/Day10_part1_bsta511_code.html",
@@ -1338,12 +1334,7 @@
     "href": "rubric.html",
     "title": "Grading rubric",
     "section": "",
-    "text": "Grading Rubric (10 pts max):\nThe following rubric will be used to grade homework assignments.\n\nAnswers: 5 pts\nDemonstrating process: 3 pts\nProviding context and relevance: 2 pts\n\nAnswers: 5 pts\n\n\n\n\n\n\n\n\n\n\n\n5 points\n4 points\n3 points\n2 points\n1 point\n0 points\n\n\nAnswers are correct with only a few minor errors\nAnswers are correct at least 90% of the time\nAnswers are usually correct (80-90%)\nAnswers are sometimes correct (60-80%)\nAnswers are generally incorrect (&lt;60%)\nAnswers are incorrect and no work was shown (demonstrating process has 0 pts)\n\n\n\nDemonstrating process: 3 pts\n\n\n\n\n\n\n\n\n\n3 points\n2 points\n1 point\n0 points\n\n\nAll relevant work is shown, including all steps for figuring out answers.\nR code and output are provided for every question for which R was used.\nRelevant work and steps for figuring out answers are generally provided but incomplete.\nR code and output are generally provided but incomplete for questions that use R.\nRelevant work and steps for figuring out answers are generally missing.\nR code and output are generally missing for questions that use R.\nNo relevant work is shown, including steps for figuring out answers.\nR code and output are not provided for questions for which R was used.\n\n\n\nProviding context and relevance: 2 pts\n\n\n\n\n\n\n\n\n2 points\n1 point\n0 points\n\n\nAnswers are given in complete sentences with all relevant information for the question as appropriate (context of research question, units, descriptive statistics, explanation of what data visualization is showing, confidence intervals, p-values, test- statistics, etc.), and interpretation of results.\nAnswers are given in complete sentences. Some relevant information may be provided, but much is missing. Context of research question only sometimes provided.\nAnswers are rarely given in complete sentences. Relevant information is not provided. Little to no context is provided.",
-    "crumbs": [
-      "Home",
-      "Homework",
-      "Grading rubric"
-    ]
+    "text": "Grading Rubric (10 pts max):\nThe following rubric will be used to grade homework assignments.\n\nAnswers: 5 pts\nDemonstrating process: 3 pts\nProviding context and relevance: 2 pts\n\nAnswers: 5 pts\n\n\n\n\n\n\n\n\n\n\n\n5 points\n4 points\n3 points\n2 points\n1 point\n0 points\n\n\nAnswers are correct with only a few minor errors\nAnswers are correct at least 90% of the time\nAnswers are usually correct (80-90%)\nAnswers are sometimes correct (60-80%)\nAnswers are generally incorrect (&lt;60%)\nAnswers are incorrect and no work was shown (demonstrating process has 0 pts)\n\n\n\nDemonstrating process: 3 pts\n\n\n\n\n\n\n\n\n\n3 points\n2 points\n1 point\n0 points\n\n\nAll relevant work is shown, including all steps for figuring out answers.\nR code and output are provided for every question for which R was used.\nRelevant work and steps for figuring out answers are generally provided but incomplete.\nR code and output are generally provided but incomplete for questions that use R.\nRelevant work and steps for figuring out answers are generally missing.\nR code and output are generally missing for questions that use R.\nNo relevant work is shown, including steps for figuring out answers.\nR code and output are not provided for questions for which R was used.\n\n\n\nProviding context and relevance: 2 pts\n\n\n\n\n\n\n\n\n2 points\n1 point\n0 points\n\n\nAnswers are given in complete sentences with all relevant information for the question as appropriate (context of research question, units, descriptive statistics, explanation of what data visualization is showing, confidence intervals, p-values, test- statistics, etc.), and interpretation of results.\nAnswers are given in complete sentences. Some relevant information may be provided, but much is missing. Context of research question only sometimes provided.\nAnswers are rarely given in complete sentences. Relevant information is not provided. Little to no context is provided."
   },
   {
     "objectID": "slides_md/Day03_bsta511_md_part2.html",
@@ -5028,950 +5019,445 @@
     "text": "TA: Katie Hand\n\nEmail: handka@ohsu.edu\n\n\nOffice Hours: TBD"
   },
   {
-    "objectID": "weeks/week_08.html",
-    "href": "weeks/week_08.html",
-    "title": "Week 8",
-    "section": "",
-    "text": "HW 5 covers Day 13 and is due on THURSDAY, 11/20\n\n\n\n\nChi-squared tests of association and homogeneity\nFisher’s exact test\nSections 8.3-8.4\n\n\n\n\n\nANOVA = Analysis of Variance\nComparing more than 2 means\nSection 5.5",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 8"
-    ]
-  },
-  {
     "objectID": "weeks/week_08.html#overview-of-week-8",
     "href": "weeks/week_08.html#overview-of-week-8",
     "title": "Week 8",
-    "section": "",
-    "text": "HW 5 covers Day 13 and is due on THURSDAY, 11/20\n\n\n\n\nChi-squared tests of association and homogeneity\nFisher’s exact test\nSections 8.3-8.4\n\n\n\n\n\nANOVA = Analysis of Variance\nComparing more than 2 means\nSection 5.5",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 8"
-    ]
+    "section": "Overview of Week 8",
+    "text": "Overview of Week 8\nHW 6 covers Day 13 and is due on THURSDAY, 11/19\n\n\nMon: Day 13\n\nChi-squared tests of association and homogeneity\nFisher’s exact test\nSections 8.3-8.4\n\n\n\nWed: Day 14\n\nANOVA = Analysis of Variance\nComparing more than 2 means\nSection 5.5"
   },
   {
     "objectID": "weeks/week_08.html#slides-recordings",
     "href": "weeks/week_08.html#slides-recordings",
     "title": "Week 8",
     "section": "Slides & Recordings",
-    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n13\nChi-sqr intro\nDay 13: slides 1-10\n\n\n\nDay 13 Part 1\n18 min\n\n\n\n\n\nChi-sqr test: 8.3.1 - 8.3.4\nDay 13: slides 11-17\nsame\n\nsame\nDay 13 Part 2\n23 min\nsame\n\n\n\n\nChi-sqr in R, Fisher’s Exact Test, Chi-sqr vs. prop’s\nDay 13: R tip, slides 18-33\nsame\n\nsame\nDay 13 Part 3\n57 min\nsame\n\n\n\n14\nANOVA intro\nDay 14: slides 1-15\n\n\n\nDay 14 Part 1\n29 min\n\n\n\n\n\nANOVA table\nDay 14: slides 16-28\nsame\n\nsame\nDay 14 Part 2\n27 min\nsame\n\n\n\n\nANOVA in R, conditions, post-hoc testing\nDay 14: slides 29-47\nsame\n\nsame\nDay 14 Part 3\n39 min\nsame",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 8"
-    ]
+    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n13\nChi-sqr intro\nDay 13: slides 1-10\n\n\n\nDay 13 Part 1\n18 min\n\n\n\n\n\nChi-sqr test: 8.3.1 - 8.3.4\nDay 13: slides 11-17\n\n\n\nDay 13 Part 2\n23 min\n\n\n\n\n\nChi-sqr in R, Fisher’s Exact Test, Chi-sqr vs. prop’s\nDay 13: R tip, slides 18-33\n\n\n\nDay 13 Part 3\n57 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n14\nANOVA intro\nDay 14: slides 1-15\n\n\n\nDay 14 Part 1\n29 min\n\n\n\n\n\nANOVA table\nDay 14: slides 16-28\n\n\n\nDay 14 Part 2\n27 min\n\n\n\n\n\nANOVA in R, conditions, post-hoc testing\nDay 14: slides 29-47\n\n\n\nDay 14 Part 3\n39 min"
   },
   {
     "objectID": "weeks/week_08.html#datasets",
     "href": "weeks/week_08.html#datasets",
     "title": "Week 8",
     "section": "Datasets",
-    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 14: DisabilityEmployment.txt",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 8"
-    ]
+    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 14: DisabilityEmployment.txt"
   },
   {
     "objectID": "weeks/week_08.html#practice-problems",
     "href": "weeks/week_08.html#practice-problems",
     "title": "Week 8",
     "section": "Practice Problems",
-    "text": "Practice Problems\n\nDay 13 PP\n\nBook exercises:\n\n8.28\n8.24 (a) & (b) as a test of independence (for HW 4 I had you test the difference in proportions)\n\n\n\n\nDay 14 PP\n\nSlide 12: “Hypothetical examples” question\nSlide 29 questions\nBook exercise: 5.48",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 8"
-    ]
+    "text": "Practice Problems\n\nDay 13 PP\n\nBook exercises:\n\n8.28\n8.24 (a) & (b) as a test of independence (for HW 5 I had you test the difference in proportions)\n\n\n\n\nDay 14 PP\n\nSlide 12: “Hypothetical examples” question\nSlide 29 questions\nBook exercise: 5.48"
   },
   {
     "objectID": "weeks/week_08.html#class-discussion",
     "href": "weeks/week_08.html#class-discussion",
     "title": "Week 8",
     "section": "Class discussion",
-    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 13\n\nPractice Problems listed above\nQuestions from HW 5 (due THURSDAY)\n\nBook: 8.32, 8.34, 8.38 (all have special instructions; see assignment)\n\n\n\n\nDay 14\n\nPractice Problems listed above\nQuestions from HW 6\n\nBook 5.44\nR1: Palmer Penguins ANOVA",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 8"
-    ]
+    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 13\n\nPractice Problems listed above\nQuestions from HW 6 (due THURSDAY)\n\nBook: 8.32, 8.34, 8.38 (all have special instructions; see assignment)\n\n\n\n\nDay 14\n\nPractice Problems listed above\nQuestions from HW 7\n\nBook 5.44\nR1: Palmer Penguins ANOVA"
   },
   {
     "objectID": "weeks/week_08.html#homework",
     "href": "weeks/week_08.html#homework",
     "title": "Week 8",
     "section": "Homework",
-    "text": "Homework\n\nHW 5 covers Day 13 and is due on THURSDAY, 11/20\nHW 6 covers Days 14-15 and is due on Sat, 11/29\nCheck out this spreadsheet for typos in book.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 8"
-    ]
+    "text": "Homework\n\nHW 6 covers Day 13 and is due on THURSDAY, 11/19\nHW 7 covers Day 14 and is due on Sun, 11/29\nCheck out this spreadsheet for typos in book."
   },
   {
-    "objectID": "weeks/week_08.html#sec-Exam3info",
-    "href": "weeks/week_08.html#sec-Exam3info",
+    "objectID": "weeks/week_08.html#sec-Exam2info",
+    "href": "weeks/week_08.html#sec-Exam2info",
     "title": "Week 8",
-    "section": "Exam 3 information",
-    "text": "Exam 3 information\n\nExam 3 will be on Mon, Nov. 24th\nSamples of past exam questions and answers (on )\n\nNote: I still need to add the answers for the Fall 2024 exam.\n\nMaterial will cover Days 10-13,\n\nwhich is approximately Sections 4.3, 5.1-5.4, and 8.1-8.4 from the textbook, plus supplementary material.\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 8"
-    ]
-  },
-  {
-    "objectID": "weeks/week_05.html",
-    "href": "weeks/week_05.html",
-    "title": "Week 5",
-    "section": "",
-    "text": "Normal distribution: Section 3.3\nPoisson distribution: Section 3.4\n\n\n\n\n\nDay 8 topics: Variability in estimates: Section 4.1\nDay 9 topics:\n\nConfidence intervals for one mean (single-sample):\n\nSections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)\n\nStudent’s t-distribution\n\n\n\n\n\nDays 7-9 Practice Problems\n\nSee new PP section below",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 5"
-    ]
+    "section": "Exam 2 information",
+    "text": "Exam 2 information\n\nExam 2 will be on Mon, Nov. 23rd\nSections 4.1-4.2: samples of past exam questions and answers (on Brightspace)\nSections 4.3, 5.1-5.4, 8.1-8.4: samples of past exam questions and answers (on Brightspace)\n\nNote: I still need to add the answers for the Fall 2024 exam.\n\nMaterial will cover Days 8-13,\n\nwhich is approximately Sections 4.1-4.3, 5.1-5.4, and 8.1-8.4 from the textbook, plus supplementary material.\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet."
   },
   {
     "objectID": "weeks/week_05.html#overview-of-week-5",
     "href": "weeks/week_05.html#overview-of-week-5",
     "title": "Week 5",
-    "section": "",
-    "text": "Normal distribution: Section 3.3\nPoisson distribution: Section 3.4\n\n\n\n\n\nDay 8 topics: Variability in estimates: Section 4.1\nDay 9 topics:\n\nConfidence intervals for one mean (single-sample):\n\nSections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)\n\nStudent’s t-distribution\n\n\n\n\n\nDays 7-9 Practice Problems\n\nSee new PP section below",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 5"
-    ]
+    "section": "Overview of Week 5",
+    "text": "Overview of Week 5\n\n\nMon: Day 8\n\nVariability in estimates: Section 4.1\nDay 8 Practice Problems\n\nSee PP section below\n\n\n\n\nWed: Exam 1\n\nSee the Exam 1 information section below for more information"
   },
   {
     "objectID": "weeks/week_05.html#slides-recordings",
     "href": "weeks/week_05.html#slides-recordings",
     "title": "Week 5",
     "section": "Slides & Recordings",
-    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n\nCalculating probabilities in R\n\n\n\n\n\n\n\n\n\n\n7\nNormal dist and prob’s for standard normal (3.3.1, 3.3.3)\nDay 7: slides 1-5\n\n\n\nDay 7 Part 1\n27 min\n\n\n\n\n7\nNormal prob’s using z-scores (3.3.2, 3.3.4)\nDay 7: slides 6-7\nsame\n\nsame\nDay 7 Part 2\n15 min\n\n\n\n\n7\nNormal approx of binomial dist (3.3.6)\nDay 7: slides 8-9\nsame\n\nsame\nDay 7 Part 3\n14 min\n\n\n\n\n7\nPoisson dist (3.4)\nDay 7: slides 10-12\nsame\n\nsame\nDay 7 Part 4\n15 min\n\n\n\n\n8\nVariability in estimates: Section 4.1\nDay 8: slides 1-13\n\n\n\nDay 8 Part 1\n26 min\n\n\n\n\n8\n4.1 con’td\nDay 8: slides 14-29\nsame\n\nsame\nDay 8 Part 2\n37 min\nsame\n\n\n\n8\nR code demo\n\n\n\n\nDay 8 Part 3\n11 min\nsame\n\n\n\n9\nCI’s for 1 mean: 4.2\nDay 9: slides 1-12\n\n\n\nDay 9 Part 1\n17 min\n\n\n\n\n9\n4.2 con’td\nDay 9: slides 13-19\nsame\n\nsame\nDay 9 Part 2\n17 min\nsame\nsame\n\n\n9\n4.2 con’td, 5.1.1, 5.1.2 (pgs. 238-242)\nDay 9: slides 20-23\nsame\n\nsame\nDay 9 Part 3\n14 min\nsame\nsame",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 5"
-    ]
+    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n8\nVariability in estimates: Section 4.1\nDay 8: slides 1-13\n\n\n\nDay 8 Part 1\n26 min\n\n\n\n\n\n4.1 con’td\nDay 8: slides 14-29\n\n\n\nDay 8 Part 2\n37 min\n\n\n\n\n\nR code demo\n\n\n\n\nDay 8 Part 3\n11 min"
   },
   {
     "objectID": "weeks/week_05.html#practice-problems",
     "href": "weeks/week_05.html#practice-problems",
     "title": "Week 5",
     "section": "Practice Problems",
-    "text": "Practice Problems\n\nDay 7 PP\n\nFrom Day 7 slides:\n\nExample 3.3 parts (1) and (3) on pg 7 of slides\nExample 3.8 parts (2) and (3) on pg 11 of slides\n\n\n\n\nDay 8 & 9 PP\n\nFrom Day 8 slides:\n\nSlide 21: match figures to distribution (Sampling high schoolers’ weights)\nBook exercise: 4.2\n\nFrom Day 9 slides:\n\nSlide 15: What percent CI was being simulated in this figure?\nSlide 22: Calculate CI",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 5"
-    ]
+    "text": "Practice Problems\n\nDay 8 PP\n\nFrom Day 8 slides:\n\nSlide 21: match figures to distribution (Sampling high schoolers’ weights)\nBook exercise: 4.2"
   },
   {
     "objectID": "weeks/week_05.html#class-discussion",
     "href": "weeks/week_05.html#class-discussion",
     "title": "Week 5",
     "section": "Class discussion",
-    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 7\n\nPractice Problems listed above\nFrom (updated) HW 3:\n\nBook exercises\n\n3.22, 3.32, 3.40\n\n\n\n\n\nDay 8 & 9\n\nPractice Problems listed above\nFrom (updated) HW 3:\n\nDay 8\n\nR1: Youth weights Part 1 (YRBSS)\nNon-book exercise: Ethan Allen\n\nDay 9\n\nBook exercises:\n\nwarm-up: 4.4, 4.6, 5.10\n5.6\n\nR2: Youth weights Part 2 (YRBSS)",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 5"
-    ]
+    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 8\n\nPractice Problems listed above\nFrom HW 4:\n\nR1: Youth weights Part 1 (YRBSS)\nNon-book exercise: Ethan Allen"
   },
   {
     "objectID": "weeks/week_05.html#homework",
     "href": "weeks/week_05.html#homework",
     "title": "Week 5",
     "section": "Homework",
-    "text": "Homework\n\nHW 3 v2 covers Days 6 - 9 and is due on Sat, 11/1\nMake sure to check out the calculating probabilities in R code file: qmd, html\nNote: the answer to exercise 3.31(b) in the textbook (not assigned) is incorrect.\n\nCheck out this spreadsheet for more typos in book.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 5"
-    ]
+    "text": "Homework\n\nHW 4 covers Days 8-10 and is due on Sat, 11/7\nCheck out this spreadsheet for typos in book."
   },
   {
-    "objectID": "weeks/week_05.html#sec-Exam2info",
-    "href": "weeks/week_05.html#sec-Exam2info",
+    "objectID": "weeks/week_05.html#sec-Exam1info",
+    "href": "weeks/week_05.html#sec-Exam1info",
     "title": "Week 5",
-    "section": "Exam 2 information",
-    "text": "Exam 2 information\n\nExam 2 will be on Wed, Nov. 5th\nSamples of past exam questions and answers (on )\nMaterial will cover Days 6-9,\n\nwhich is approximately Sections 3.1-3.4, 4.1-4.2 from the textbook.\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 5"
-    ]
-  },
-  {
-    "objectID": "weeks/week_10.html",
-    "href": "weeks/week_10.html",
-    "title": "Week 10",
-    "section": "",
-    "text": "Exams 2 & 3 corrections information is below.\n\n\n\n\n\nSimple Linear Regression Part 2\nSections 6.3-6.4\n\n\n\n\n\nNonparametric tests\nThis material is not in our textbook. Please see Chapter 13: Nonparametric tests of Pagano’s Principles of Biostatistics, 2022 edition as a supplementary resource.\n\nThis chapter can be downloaded from the OHSU library’s eBook at https://ebookcentral.proquest.com/lib/ohsu/detail.action?docID=6950388&pq-origsite=primo",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 10"
-    ]
+    "section": "Exam 1 information",
+    "text": "Exam 1 information\n\nExam 1 will be on Wed, Oct. 28th\nChapters 1-2: samples of past exam questions and answers (on Brightspace)\nSections 3.1-3.4: samples of past exam questions and answers (on Brightspace)\n\nQuestions on Sections 4.1-4.2 in this file are not on Exam 1.\n\nMaterial will cover Days 1-7,\n\nwhich is approximately Chapters 1, 2, and Sections 3.1-3.4 from the textbook.\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet."
   },
   {
     "objectID": "weeks/week_10.html#overview-of-week-10",
     "href": "weeks/week_10.html#overview-of-week-10",
     "title": "Week 10",
-    "section": "",
-    "text": "Exams 2 & 3 corrections information is below.\n\n\n\n\n\nSimple Linear Regression Part 2\nSections 6.3-6.4\n\n\n\n\n\nNonparametric tests\nThis material is not in our textbook. Please see Chapter 13: Nonparametric tests of Pagano’s Principles of Biostatistics, 2022 edition as a supplementary resource.\n\nThis chapter can be downloaded from the OHSU library’s eBook at https://ebookcentral.proquest.com/lib/ohsu/detail.action?docID=6950388&pq-origsite=primo",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 10"
-    ]
+    "section": "Overview of Week 10",
+    "text": "Overview of Week 10\n\nExam 3 (take home) is due on Wed, 12/9. See the Week 11 page for more information.\n\n\n\nMon: Day 16\n\nSimple Linear Regression Part 2\nSections 6.3-6.4\n\n\n\nWed: Day 17\n\nNonparametric tests\nThis material is not in our textbook. Please see Chapter 13: Nonparametric tests of Pagano’s Principles of Biostatistics, 2022 edition as a supplementary resource.\n\nThis chapter can be downloaded from the OHSU library’s eBook at https://ebookcentral.proquest.com/lib/ohsu/detail.action?docID=6950388&pq-origsite=primo"
   },
   {
     "objectID": "weeks/week_10.html#slides-recordings",
     "href": "weeks/week_10.html#slides-recordings",
     "title": "Week 10",
     "section": "Slides & Recordings",
-    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n16\nSimple Linear Regression cont’d: 6.3-6.4\nDay 16\n\n\n\nDay 16 *\n1 hr 26 min\n\n\n\n\n17\nSign test & Sign-rank test: Slides 1-31\n\n\n\n\nDay 17 Part 1\n56 min\n\n\n\n\n\nWilcoxon rank-sum test, Kruskal-Wallis test: Slides 32-53\n\nsame\n\nsame\nDay 17 Part 2\n41 min\nsame\n\n\n\n\n*Edited live recording from F23 class",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 10"
-    ]
+    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n16\nSimple Linear Regression cont’d: 6.3-6.4\nDay 16\n\n\n\nDay 16 *\n1 hr 26 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n17\nSign test & Sign-rank test: Slides 1-31\n\n\n\n\nDay 17 Part 1\n56 min\n\n\n\n\n\nWilcoxon rank-sum test, Kruskal-Wallis test: Slides 32-53\n\n\n\n\nDay 17 Part 2\n41 min\n\n\n\n\n\n*Edited live recording from F23 class"
   },
   {
     "objectID": "weeks/week_10.html#datasets",
     "href": "weeks/week_10.html#datasets",
     "title": "Week 10",
     "section": "Datasets",
-    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 16: lifeexp_femlit_water_2011.csv\nHW 7: Gapminder_2011_LifeExp_CO2.csv",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 10"
-    ]
+    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 16: lifeexp_femlit_water_2011.csv\nHW 8: Gapminder_2011_LifeExp_CO2.csv"
   },
   {
     "objectID": "weeks/week_10.html#practice-problems",
     "href": "weeks/week_10.html#practice-problems",
     "title": "Week 10",
     "section": "Practice Problems",
-    "text": "Practice Problems\n\nDay 16 PP\n\nBook exercises: 6.12, 6.20\n\n\n\nDay 17 PP\n\nNone. Start working on the homework questions.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 10"
-    ]
+    "text": "Practice Problems\n\nDay 16 PP\n\nBook exercises: 6.12, 6.20\n\n\n\nDay 17 PP\n\nNone. Start working on the homework questions."
   },
   {
     "objectID": "weeks/week_10.html#class-discussion",
     "href": "weeks/week_10.html#class-discussion",
     "title": "Week 10",
     "section": "Class discussion",
-    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 16\n\nQuestions from HW 7\n\nBook\n\n6.28, 6.32\n\nR1 (a) - (j): Life expectancy vs. CO2 emissions\n\n\n\n\nDay 17\n\nQuestions from HW 7\n\nNonparametric Tests: NPT 1-3",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 10"
-    ]
+    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 16\n\nQuestions from HW 8\n\nBook\n\n6.28, 6.32\n\nR1 (a) - (j): Life expectancy vs. CO2 emissions\n\n\n\n\nDay 17\n\nQuestions from HW 8\n\nNonparametric Tests: NPT 1-3"
   },
   {
     "objectID": "weeks/week_10.html#homework",
     "href": "weeks/week_10.html#homework",
     "title": "Week 10",
     "section": "Homework",
-    "text": "Homework\n\nHW 7 covers Days 16 -17 and is due on Sat, 12/6\n\nDataset for question R1: Gapminder_2011_LifeExp_CO2.csv\n\nCheck out this spreadsheet for typos in book.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 10"
-    ]
-  },
-  {
-    "objectID": "weeks/week_10.html#sec-ExamCorrections",
-    "href": "weeks/week_10.html#sec-ExamCorrections",
-    "title": "Week 10",
-    "section": "Exam Corrections",
-    "text": "Exam Corrections\n\nPlease email me a link to your video by the due date.\n\nPlease do not attach the video to the email.\n\nExam corrections will be video recordings of you explaining what the error was on the problem, why it was incorrect, and the correct solution.\n\nRecordings do not need to include video of yourself.\n\nI strongly recommend reviewing the class notes and homework solutions for examples of the level of detail and correct notation to use in your work.\nYou may not ask anyone for help (including AI) other than the instructor for doing your exam corrections.\n\n\nExam 2 Corrections\n\nDue on Thursday 12/4 at 11 pm.\nYou are allowed exam corrections for two questions.\nFor question 3, you can earn back all of the points missed.\nFor questions 1, 2, and 4, you can earn back up to half of the missed points.\n\nFor example, if on question 2 you scored 5 out of 10 points, you can increase your score up to 7.5 out of 10 points\n\n\n\n\nExam 3 Corrections\n\nDue Monday 12/8 at 11 pm\nYou may do corrections for all questions.\nFor 10 parts to questions, you can earn back all of the points missed.\n\nFor example, maybe you decide to choose parts 1b, 1c, 1d, 2c, 3a, 3d, 3f, 4b, 4d, and 4f as the 10 “parts of questions” that you want to be considered for getting full points back for.\nWhen emailing me a link to your video, please clearly state which parts of questions you chose as the 10 to get full points back.\n\nFor the remaining parts to questions, you can earn back up to half of the missed points.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 10"
-    ]
-  },
-  {
-    "objectID": "weeks/week_07.html",
-    "href": "weeks/week_07.html",
-    "title": "Week 7",
-    "section": "",
-    "text": "Inference for difference in means from two independent sample (2-sample t-test)\nPower and sample size calculations\n\n\n\n\n\nInference for proportions\n\nCIs vs. hypothesis tests\nOne proportion from one sample\nDifference in proportions from two independent samples",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 7"
-    ]
+    "text": "Homework\n\nHW 8 covers Days 15-17 and is due on Sat, 12/5\n\nDataset for question R1: Gapminder_2011_LifeExp_CO2.csv\n\nCheck out this spreadsheet for typos in book."
   },
   {
     "objectID": "weeks/week_07.html#overview-of-week-7",
     "href": "weeks/week_07.html#overview-of-week-7",
     "title": "Week 7",
-    "section": "",
-    "text": "Inference for difference in means from two independent sample (2-sample t-test)\nPower and sample size calculations\n\n\n\n\n\nInference for proportions\n\nCIs vs. hypothesis tests\nOne proportion from one sample\nDifference in proportions from two independent samples",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 7"
-    ]
+    "section": "Overview of Week 7",
+    "text": "Overview of Week 7\n\n\nMon: Day 11\n\nInference for difference in means from two independent sample (2-sample t-test)\nPower and sample size calculations\n\n\n\nWed: Day 12\n\nInference for proportions\n\nCIs vs. hypothesis tests\nOne proportion from one sample\nDifference in proportions from two independent samples"
   },
   {
     "objectID": "weeks/week_07.html#slides-recordings",
     "href": "weeks/week_07.html#slides-recordings",
     "title": "Week 7",
     "section": "Slides & Recordings",
-    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n11\n2-sample means test: 5.3.2\nDay 11: slides 1-17\n\n\n\nDay 11 Part 1\n36 min\n\n\n\n\n\n2-sample means CI; R; pooled SD: 5.3.1, 5.3.5\nDay 11: slides 18-26\nsame\n\nsame\nDay 11 Part 2\n26 min\nsame\nsame\n\n\n\nPower & sample size: 1 or 2 means: 5.4 & extra\nDay 11: slides 27-45\nsame\n\nsame\nDay 11 Part 3\n57 min\nsame\nsame\n\n\n12\n1 & 2 proportions test & CI: 8.1.1, 8.2\nDay 12: slides 1-23\n *\n\n *\nDay 12 Part 1\n48 min\n\n\n\n\n\nR: 1 & 2 proportions test & CI\nDay 12: slides 24-34\nsame\n\nsame\nDay 12 Part 2\n26 min\nsame\n\n\n\n\nPower for 1- and 2- proportions\nDay 12: slides 35-43\nsame\n\nsame\nDay 12 Part 3\n25 min\nsame\n\n\n\n\n*Note: page numbers in pdf files do not always align with those in the original html slides",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 7"
-    ]
+    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n11\n2-sample means test: 5.3.2\nDay 11: slides 1-17\n\n\n\nDay 11 Part 1\n36 min\n\n\n\n\n\n2-sample means CI; R; pooled SD: 5.3.1, 5.3.5\nDay 11: slides 18-26\n\n\n\nDay 11 Part 2\n26 min\n\n\n\n\n\nPower & sample size: 1 or 2 means: 5.4 & extra\nDay 11: slides 27-45\n\n\n\nDay 11 Part 3\n57 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n1 & 2 proportions test & CI: 8.1.1, 8.2\nDay 12: slides 1-23\n *\n\n *\nDay 12 Part 1\n48 min\n\n\n\n\n\nR: 1 & 2 proportions test & CI\nDay 12: slides 24-34\n\n\n\nDay 12 Part 2\n26 min\n\n\n\n\n\nPower for 1- and 2- proportions\nDay 12: slides 35-43\n\n\n\nDay 12 Part 3\n25 min\n\n\n\n\n\n*Note: page numbers in pdf files do not always align with those in the original html slides"
   },
   {
     "objectID": "weeks/week_07.html#datasets",
     "href": "weeks/week_07.html#datasets",
     "title": "Week 7",
     "section": "Datasets",
-    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 11: CaffeineTaps.csv",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 7"
-    ]
+    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 11: CaffeineTaps.csv"
   },
   {
     "objectID": "weeks/week_07.html#practice-problems",
     "href": "weeks/week_07.html#practice-problems",
     "title": "Week 7",
     "section": "Practice Problems",
-    "text": "Practice Problems\n\nDay 11 PP\n\nBook exercises: 5.34, 4.22\n\n\n\nDay 12 PP\n\nBook exercise: 8.2",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 7"
-    ]
+    "text": "Practice Problems\n\nDay 11 PP\n\nBook exercises: 5.34, 4.22\n\n\n\nDay 12 PP\n\nBook exercise: 8.2"
   },
   {
     "objectID": "weeks/week_07.html#class-discussion",
     "href": "weeks/week_07.html#class-discussion",
     "title": "Week 7",
     "section": "Class discussion",
-    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 11\n\nPractice Problems listed above\nBook 5.26 a-b\nR2: DDS expenditures by ethnicity (parts A-L)\nPSS1: Book 4.24 - Power & sample size T/F questions\nPSS2: Power & sample size calculations\n\n\n\nDay 12\nComing soon!\n\nPractice Problems listed above\nBook\n\n8.8 (see instructions in HW),\n8.24 (see instructions in HW)",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 7"
-    ]
+    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 11\n\nPractice Problems listed above\nBook 5.26 a-b\nR2: DDS expenditures by ethnicity (parts A-L)\nPSS1: Book 4.24 - Power & sample size T/F questions\nPSS2: Power & sample size calculations\n\n\n\nDay 12\nComing soon!\n\nPractice Problems listed above\nBook\n\n8.8 (see instructions in HW),\n8.24 (see instructions in HW)"
   },
   {
     "objectID": "weeks/week_07.html#homework",
     "href": "weeks/week_07.html#homework",
     "title": "Week 7",
     "section": "Homework",
-    "text": "Homework\n\nHW 4 covers Days 10-12 and is due on Sat, 11/15\nCheck out this spreadsheet for typos in book.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 7"
-    ]
-  },
-  {
-    "objectID": "weeks/week_02.html",
-    "href": "weeks/week_02.html",
-    "title": "Week 2",
-    "section": "",
-    "text": "Data Collection Principles & Intro to Data (Fall 2023: Day 2)\n\nBook sections 1.1-1.3\n\nPractice Problems\n\nTextbook: 1.8 (p. 77), 1.20 (p. 80)\n\n\n\n\n\n\nSummarizing Numerical Data (Fall 2023: Day 2)\n\nBook section 1.4\n\nProbability (Fall 2023: Day 4)\n\nSections 2.1 - 2.2.4\n\nPractice Problems\n\nFill in robust estimate table on slide 46 of Summarizing Numerical Data (Fall 2023: Day 2 slides)\nDo Example 2.6 parts (1)-(4) on pg 8 of Probability (Fall 2023: Day 4) slides",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 2"
-    ]
+    "text": "Homework\n\nHW 5 covers Days 11-12 and is due on Sat, 11/14\nCheck out this spreadsheet for typos in book."
   },
   {
     "objectID": "weeks/week_02.html#overview-of-week-2",
     "href": "weeks/week_02.html#overview-of-week-2",
     "title": "Week 2",
-    "section": "",
-    "text": "Data Collection Principles & Intro to Data (Fall 2023: Day 2)\n\nBook sections 1.1-1.3\n\nPractice Problems\n\nTextbook: 1.8 (p. 77), 1.20 (p. 80)\n\n\n\n\n\n\nSummarizing Numerical Data (Fall 2023: Day 2)\n\nBook section 1.4\n\nProbability (Fall 2023: Day 4)\n\nSections 2.1 - 2.2.4\n\nPractice Problems\n\nFill in robust estimate table on slide 46 of Summarizing Numerical Data (Fall 2023: Day 2 slides)\nDo Example 2.6 parts (1)-(4) on pg 8 of Probability (Fall 2023: Day 4) slides",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 2"
-    ]
+    "section": "Overview of Week 2",
+    "text": "Overview of Week 2\n\n\nDay 2\n\nData Collection Principles & Intro to Data (Fall 2023: Day 2)\n\nBook sections 1.1-1.3\n\nPractice Problems\n\nTextbook: 1.8 (p. 77), 1.20 (p. 80)\n\n\n\n\nDay 3\n\nSummarizing Numerical Data (Fall 2023: Day 2)\n\nBook section 1.4\n\nProbability (Fall 2023: Day 4)\n\nSections 2.1 - 2.2.4\n\nPractice Problems\n\nFill in robust estimate table on slide 46 of Summarizing Numerical Data (Fall 2023: Day 2 slides)\nDo Example 2.6 parts (1)-(4) on pg 8 of Probability (Fall 2023: Day 4) slides"
   },
   {
     "objectID": "weeks/week_02.html#slides-recordings",
     "href": "weeks/week_02.html#slides-recordings",
     "title": "Week 2",
     "section": "Slides & Recordings",
-    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides (F23): html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link (F23)\nDuration\nCode: qmd\nCode: html\n\n\n\n\n2\nData Collection Principles (Book section 1.3)\nDay 2: slides 1-17\n\n\n\nDay 2 Part 1\n33 min\n\n\n\n\n\nIntro to Data (Book section 1.2)\nDay 2: slides 18-32\nsame\n\n\nDay 2 Part 2\n42 min\nsame\nsame\n\n\n3\nSummarizing Numerical Data (Book section 1.4)\nDay 2: slides 33-46\nsame\n\n\nDay 2 Part 3\n37 min\nsame\nsame\n\n\n\nProbability (Book sections 2.1.1-2.1.6)\nDay 4: slides 1-4\n\n\n\nDay 4 Part 1\n23 min\n\n\n\n\n\nProbability (Book sections 2.1.7-2.2.4)\nDay 4: slides 5-9\nsame\n\nsame\nDay 4 Part 2\n24 min",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 2"
-    ]
+    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides (F23): html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link (F23)\nDuration\nCode: qmd\nCode: html\n\n\n\n\n2\nData Collection Principles (Book section 1.3)\nDay 2: slides 1-17\n\n\n\nDay 2 Part 1\n33 min\n\n\n\n\n\nIntro to Data (Book section 1.2)\nDay 2: slides 18-32\n\n\n\nDay 2 Part 2\n42 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\nSummarizing Numerical Data (Book section 1.4)\nDay 2: slides 33-46\n\n\n\nDay 2 Part 3\n37 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProbability (Book sections 2.1.1-2.1.6)\nDay 4: slides 1-4\n\n\n\nDay 4 Part 1\n23 min\n\n\n\n\n\nProbability (Book sections 2.1.7-2.2.4)\nDay 4: slides 5-9\n\n\n\nDay 4 Part 2\n24 min"
   },
   {
     "objectID": "weeks/week_02.html#class-discussion",
     "href": "weeks/week_02.html#class-discussion",
     "title": "Week 2",
     "section": "Class discussion",
-    "text": "Class discussion\n\nDay02\nDuring class you will be working in groups discussing the following:\n\nPractice Problems\n\nTextbook: 1.8 (p. 77), 1.20 (p. 80)\n\nFrom HW 1\n\nNon-book exercise NBE 2: Tylenol during pregnancy?\nTextbook: 1.12\nR2: BRFSS - parts a)-b)\n\n\n\n\nDay03\n\nPractice Problems\n\nSummarizing Numerical Data (Fall 2023: Day 2 slides)\n\nFill in robust estimate table on slide 46\n\nProbability (Fall 2023: Day 4)\n\nExample 2.6 parts (1)-(4) on pg 8 of slides\n\n\nSummarizing Numerical Data (Fall 2023: Day 2)\n\nFrom HW 1\n\nBook problem: 1.31\nR2: BRFSS - parts c)-f)\n\n\nProbability (Fall 2023: Day 4)\n\nExample 2.3 on pg 4 of slides\nExample 2.6 parts (5)-(7) on pg 9 of slides\nFrom HW 1\n\nBook problems: 2.6,2.14\n\n\nAnswers to Examples 2.3 & 2.6 (added after class; link to file on )",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 2"
-    ]
+    "text": "Class discussion\n\nDay02\nDuring class you will be working in groups discussing the following:\n\nPractice Problems\n\nTextbook: 1.8 (p. 77), 1.20 (p. 80)\n\nFrom HW 1\n\nNon-book exercise NBE 2: Tylenol during pregnancy?\nTextbook: 1.12\nR2: BRFSS - parts a)-b)\n\n\n\n\nDay03\n\nPractice Problems\n\nSummarizing Numerical Data (Fall 2023: Day 2 slides)\n\nFill in robust estimate table on slide 46\n\nProbability (Fall 2023: Day 4)\n\nExample 2.6 parts (1)-(4) on pg 8 of slides\n\n\nSummarizing Numerical Data (Fall 2023: Day 2)\n\nFrom HW 1\n\nBook problem: 1.31\nR2: BRFSS - parts c)-f)\n\n\nProbability (Fall 2023: Day 4)\n\nExample 2.3 on pg 4 of slides\nExample 2.6 parts (5)-(7) on pg 9 of slides\nFrom HW 1\n\nBook problems: 2.6,2.14\n\n\nAnswers to Examples 2.3 & 2.6 (added after class; link to file on Brightspace)"
   },
   {
     "objectID": "weeks/week_02.html#homework",
     "href": "weeks/week_02.html#homework",
     "title": "Week 2",
     "section": "Homework",
-    "text": "Homework\n\nHW 1 due on Sat, 10/11\n\nCovers Days 1-3",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 2"
-    ]
+    "text": "Homework\n\nHW 1 due on Sat, 10/10\n\nCovers Days 1-3"
   },
   {
     "objectID": "homework_solutions.html",
     "href": "homework_solutions.html",
     "title": "Homework Solutions",
     "section": "",
-    "text": "Note\n\n\n\n\nAccessing solutions will require signing into Brightspace.\nSolutions will not be accessible until after their due date and after you turn in the assignment.\n\n\n\nLink coming soon!",
-    "crumbs": [
-      "Home",
-      "Homework",
-      "Homework solutions"
-    ]
-  },
-  {
-    "objectID": "weeks/week_01.html",
-    "href": "weeks/week_01.html",
-    "title": "Week 1",
-    "section": "",
-    "text": "Syllabus on\nWeek 1 info on\n\nIncludes links to background survey and BSAT 511/611 Slack group",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 1"
-    ]
+    "text": "Note\n\n\n\n\nAccessing solutions will require signing into Brightspace.\nSolutions will not be accessible until after their due date and after you turn in the assignment.\n\n\n\nLink coming soon!"
   },
   {
     "objectID": "weeks/week_01.html#general-info",
     "href": "weeks/week_01.html#general-info",
     "title": "Week 1",
-    "section": "",
-    "text": "Syllabus on\nWeek 1 info on\n\nIncludes links to background survey and BSAT 511/611 Slack group",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 1"
-    ]
+    "section": "General info",
+    "text": "General info\n\nSyllabus on Brightspace\nWeek 1 info on Brightspace\n\nIncludes links to background survey"
   },
   {
     "objectID": "weeks/week_01.html#overview-of-week-1",
     "href": "weeks/week_01.html#overview-of-week-1",
     "title": "Week 1",
     "section": "Overview of Week 1",
-    "text": "Overview of Week 1\n\n\nMon\n\nNo class. OHSU New Student Orientation\nHandout with directions on installing R & RStudio\n\n\n\nWed - Day 1\n\nIntro to R & RStudio\nPlease have R & RStudio installed for class",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 1"
-    ]
+    "text": "Overview of Week 1\n\n\nMon\n\nNo class. OHSU New Student Orientation\nHandout with directions on installing R & RStudio and PUBH 523 Lessons to complete for Wednesday\n\n\n\nWed - Day 1\n\nIntro to R & RStudio\nPlease have R & RStudio installed for class\nComplete Intro to R (PUBH 523) lessons below before class:\n\nLesson 1: Welcome\nLesson 3: Download + Intro to R & RStudio\nLesson 4: Basics\nLesson 6: Quarto and .qmd’s\nIf the links for the slides are broken, see the Summer class website. Note that the topics are in a different order though."
   },
   {
     "objectID": "weeks/week_01.html#slides",
     "href": "weeks/week_01.html#slides",
     "title": "Week 1",
     "section": "Slides",
-    "text": "Slides\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides (F23): html\nSlides: pdf\nSlides: web-page\nCode: qmd\n\n\n\n\n1\nIntro to R & RStudio\nDay 1",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 1"
-    ]
+    "text": "Slides\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides (F23): html\nSlides: pdf\nSlides: web-page\nCode: qmd\n\n\n\n\n1\nIntro to R & RStudio\nDay 1"
   },
   {
     "objectID": "weeks/week_01.html#homework",
     "href": "weeks/week_01.html#homework",
     "title": "Week 1",
     "section": "Homework",
-    "text": "Homework\n\nHW 1 due on Sat, 10/11\n\nCovers Days 1-3",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 1"
-    ]
+    "text": "Homework\n\nHW 1 due on Sat, 10/10\n\nCovers Days 1-3"
   },
   {
     "objectID": "weeks/week_01.html#recordings",
     "href": "weeks/week_01.html#recordings",
     "title": "Week 1",
     "section": "Recordings",
-    "text": "Recordings\n\nThere are no pre-recorded lessons for Week 1. Starting Week 2, you will be accessing pre-recorded lessons on the EchoVideo site for BSTA 511/611. Make sure you can log into this site and view the recordings.\nIn-class recording links are on . Navigate to Course Materials -&gt; Schedule with links to in-class recordings. Note that the password to the recordings is at the top of the page.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 1"
-    ]
-  },
-  {
-    "objectID": "weeks/week_03.html",
-    "href": "weeks/week_03.html",
-    "title": "Week 3",
-    "section": "",
-    "text": "Bayes’ Rule (Fall 2023: Day 5)\n\nSection 2.2.5\n\nR Packages (Fall 2023: Day 2)\nDay 4 Practice Problems\n\nTextbook: 2.18 Predisposition for thrombosis\n\nRStudio & Quarto:\n\nPreview in Viewer Pane\nInsert images\nLaTeX\n\nEquations\nVisual editor: Insert anything\nLaTeX guide\n\n\n\n\n\n\n\n(Fall 2023: Day 3)\nData visualization, exploratory data analysis (EDA), and summarizing categorical data\n\nSections 1.5-1.7 & supplementary material\nBonus:\n\nExamples on dealing with overlapping labels in figures (Slides 65, 66, & 68 from BERD R intro workshop)\nCheck out Ted Laderas’s Better Plots presentation\n\n\nDay 5 Practice Problems\n\nTextbook:\n\n1.28 Mix-and-match\n1.36 Associations\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nAs I mentioned in the recording, the various options in more complex figures I usually look up how to implement when I need them. I show them so that you are aware of some of the functionality and options one has in creating figures using the ggplot2 package. At the end of the slides, we cover how to create tables summarizing data, especially categorical data. This part has some very useful code and data wrangling in it.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 3"
-    ]
+    "text": "Recordings\n\nThere are no pre-recorded lessons for Week 1. Starting Week 2, you will be accessing pre-recorded lessons on the EchoVideo site for BSTA 511/611. Make sure you can log into this site and view the recordings.\nIn-class recording links are on Brightspace. Navigate to Course Materials -&gt; Schedule with links to in-class recordings. Note that the password to the recordings is at the top of the page."
   },
   {
     "objectID": "weeks/week_03.html#overview-of-week-3",
     "href": "weeks/week_03.html#overview-of-week-3",
     "title": "Week 3",
-    "section": "",
-    "text": "Bayes’ Rule (Fall 2023: Day 5)\n\nSection 2.2.5\n\nR Packages (Fall 2023: Day 2)\nDay 4 Practice Problems\n\nTextbook: 2.18 Predisposition for thrombosis\n\nRStudio & Quarto:\n\nPreview in Viewer Pane\nInsert images\nLaTeX\n\nEquations\nVisual editor: Insert anything\nLaTeX guide\n\n\n\n\n\n\n\n(Fall 2023: Day 3)\nData visualization, exploratory data analysis (EDA), and summarizing categorical data\n\nSections 1.5-1.7 & supplementary material\nBonus:\n\nExamples on dealing with overlapping labels in figures (Slides 65, 66, & 68 from BERD R intro workshop)\nCheck out Ted Laderas’s Better Plots presentation\n\n\nDay 5 Practice Problems\n\nTextbook:\n\n1.28 Mix-and-match\n1.36 Associations\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nAs I mentioned in the recording, the various options in more complex figures I usually look up how to implement when I need them. I show them so that you are aware of some of the functionality and options one has in creating figures using the ggplot2 package. At the end of the slides, we cover how to create tables summarizing data, especially categorical data. This part has some very useful code and data wrangling in it.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 3"
-    ]
+    "section": "Overview of Week 3",
+    "text": "Overview of Week 3\n\n\nDay 4\n\nBayes’ Rule (Fall 2023: Day 5)\n\nSection 2.2.5\n\nR Packages (Fall 2023: Day 2)\nDay 4 Practice Problems\n\nTextbook: 2.18 Predisposition for thrombosis\n\nRStudio & Quarto:\n\nPreview in Viewer Pane\nInsert images\nLaTeX\n\nEquations\nVisual editor: Insert anything\nLaTeX guide\n\n\n\n\n\nDay 5\n\n(Fall 2023: Day 3)\nData visualization, exploratory data analysis (EDA), and summarizing categorical data\n\nSections 1.5-1.7 & supplementary material\nBonus:\n\nExamples on dealing with overlapping labels in figures (Slides 65, 66, & 68 from BERD R intro workshop)\nCheck out Ted Laderas’s Better Plots presentation\n\n\nDay 5 Practice Problems\n\nTextbook:\n\n1.28 Mix-and-match\n1.36 Associations\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nAs I mentioned in the recording, the various options in more complex figures I usually look up how to implement when I need them. I show them so that you are aware of some of the functionality and options one has in creating figures using the ggplot2 package. At the end of the slides, we cover how to create tables summarizing data, especially categorical data. This part has some very useful code and data wrangling in it."
   },
   {
     "objectID": "weeks/week_03.html#slides-recordings",
     "href": "weeks/week_03.html#slides-recordings",
     "title": "Week 3",
     "section": "Slides & Recordings",
-    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides (F23): html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link (F23)\nDuration\nCode: qmd\nCode: html\n\n\n\n\n4\nBayes’ Rule (Book section 2.2.5)\nDay 5: slides 1-2\n\n\n\nDay 5 Part 1\n22 min\n\n\n\n\n\nBayes’ Rule (Book section 2.2.5)\nDay 5: slides 3-6\nsame\n\nsame\nDay 5 Part 2\n22 min\n\n\n\n\n\nR packages\nDay 2: slides 47-54\nsame\n\n\nDay 2 Part 4\n30 min\n\n\n\n\n5\nExploratory Data Analysis\nDay 3: slides 1-59\n\n\n\nDay 3\n1 hr 18 min\n\n\n\n\n\nExtra EDA slides\nDay 3 Part 2 slides\n\n\n\n\n\n\n\n\n\n\n*Extra data wrangling code\n\n\n\n\n\n\n\n\n\n\n\n* These are slides with extra data wrangling code, and I refer to some of the slides in the homework assignment. You are welcome to go through all of the slides to learn some data wrangling techniques, but are not required to do so. We will be covering topics from these slides as needed throughout the quarter.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 3"
-    ]
+    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides (F23): html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link (F23)\nDuration\nCode: qmd\nCode: html\n\n\n\n\n4\nBayes’ Rule (Book section 2.2.5)\nDay 5: slides 1-2\n\n\n\nDay 5 Part 1\n22 min\n\n\n\n\n\nBayes’ Rule (Book section 2.2.5)\nDay 5: slides 3-6\n\n\n\nDay 5 Part 2\n22 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR packages\nDay 2: slides 47-54\n\n\n\nDay 2 Part 4\n30 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\nExploratory Data Analysis\nDay 3: slides 1-59\n\n\n\nDay 3\n1 hr 18 min\n\n\n\n\n\nExtra EDA slides\nDay 3 Part 2 slides\n\n\n\n\n\n\n\n\n\n\n*Extra data wrangling code\n\n\n\n\n\n\n\n\n\n\n\n* These are slides with extra data wrangling code, and I refer to some of the slides in the homework assignment. You are welcome to go through all of the slides to learn some data wrangling techniques, but are not required to do so. We will be covering topics from these slides as needed throughout the quarter."
   },
   {
     "objectID": "weeks/week_03.html#class-discussion",
     "href": "weeks/week_03.html#class-discussion",
     "title": "Week 3",
     "section": "Class discussion",
-    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 04\n\nPractice Problems\n\nTextbook: 2.18 Predisposition for thrombosis\n\nSolution typed up using LaTeX: qmd, html\n\n\nR Packages (Fall 2023: Day 2)\n\nR packages: Please let me know if you had any difficulty installing packages.\n\nBayes’ Rule (Fall 2023: Day 5)\n\nExample 2.10 on pg 6 of slides\n\nSolution to Ex 2.10\n\n\nFrom HW 2\n\nNon-book exercise (this is an old exam question)\nBook exercises\n\n2.24\n\n\n\n\n\nDay 05\n\nPractice Problems\n\nTextbook:\n\n1.28 Mix-and-match\n1.36 Associations\n\n\nSlide 30: Can distribution shape and sample size be determined from a boxplot?\nSlide 58: Is there evidence of ethnicity (Hispanic vs. White non-Hispanic) discrimination in DDS expenditures? Why or why not?\nFrom HW 2\n\nR1 & R2: NHANES - parts 1 & 2",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 3"
-    ]
+    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 04\n\nPractice Problems\n\nTextbook: 2.18 Predisposition for thrombosis\n\nSolution typed up using LaTeX: qmd, html\n\n\nR Packages (Fall 2023: Day 2)\n\nR packages: Please let me know if you had any difficulty installing packages.\n\nBayes’ Rule (Fall 2023: Day 5)\n\nExample 2.10 on pg 6 of slides\n\nSolution to Ex 2.10\n\n\nFrom HW 2\n\nNon-book exercise (this is an old exam question)\nBook exercises\n\n2.24\n\n\n\n\n\nDay 05\n\nPractice Problems\n\nTextbook:\n\n1.28 Mix-and-match\n1.36 Associations\n\n\nSlide 30: Can distribution shape and sample size be determined from a boxplot?\nSlide 58: Is there evidence of ethnicity (Hispanic vs. White non-Hispanic) discrimination in DDS expenditures? Why or why not?\nFrom HW 2\n\nR1 & R2: NHANES - parts 1 & 2"
   },
   {
     "objectID": "weeks/week_03.html#homework",
     "href": "weeks/week_03.html#homework",
     "title": "Week 3",
     "section": "Homework",
-    "text": "Homework\n\nHW 2 due on Sat, 10/18\n\nSee extra data wrangling code (both pdf and code) in table above with slides & recording links.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 3"
-    ]
-  },
-  {
-    "objectID": "weeks/week_03.html#sec-Exam1info",
-    "href": "weeks/week_03.html#sec-Exam1info",
-    "title": "Week 3",
-    "section": "Exam 1 information",
-    "text": "Exam 1 information\n\nExam 1 will be on Wed, Oct. 22nd\nSamples of past exam questions and answers (on )\nMaterial will cover Days 1-5,\n\nwhich is approximately Chapters 1 & 2 from the textbook.\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 3"
-    ]
+    "text": "Homework\n\nHW 2 covers Days 4-5 and is due on Sat, 10/17\n\nSee extra data wrangling code (both pdf and code) in table above with slides & recording links."
   },
   {
     "objectID": "weeks/week_03.html#international-day-of-women-in-statistics-and-data-science",
     "href": "weeks/week_03.html#international-day-of-women-in-statistics-and-data-science",
     "title": "Week 3",
     "section": "International Day of Women in Statistics and Data Science",
-    "text": "International Day of Women in Statistics and Data Science\n\nJoin the virtual & free conference for the International Day of Women in Statistics and Data Science\nTuesday, October 14, 2025\n\n12 am - 11:59 pm UTC (5pm 10/13 to 4:59 pm 10/14 here)",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 3"
-    ]
-  },
-  {
-    "objectID": "weeks/week_06.html",
-    "href": "weeks/week_06.html",
-    "title": "Week 6",
-    "section": "",
-    "text": "Hypothesis testing for one mean (single-sample): Section 4.3, 5.1\nCIs vs. hypothesis tests\nInference for two-sample paired data: Section 5.2\nR projects, here::here(), and loading data into R from a file\n\nSee Projects in RStudio file for more information\n\nRunning a t.test in R\n\n\n\n\n\nSee the Exam 2 information section below for more information",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 6"
-    ]
+    "text": "International Day of Women in Statistics and Data Science\n\nJoin the virtual & free conference for the International Day of Women in Statistics and Data Science\nTuesday, October 13, 2026\n\n12 am - 11:59 pm UTC (5pm 10/12 to 4:59 pm 10/13 here)"
   },
   {
     "objectID": "weeks/week_06.html#overview-of-week-6",
     "href": "weeks/week_06.html#overview-of-week-6",
     "title": "Week 6",
-    "section": "",
-    "text": "Hypothesis testing for one mean (single-sample): Section 4.3, 5.1\nCIs vs. hypothesis tests\nInference for two-sample paired data: Section 5.2\nR projects, here::here(), and loading data into R from a file\n\nSee Projects in RStudio file for more information\n\nRunning a t.test in R\n\n\n\n\n\nSee the Exam 2 information section below for more information",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 6"
-    ]
+    "section": "Overview of Week 6",
+    "text": "Overview of Week 6\n\n\nMon: Day 9\n\nConfidence intervals for one mean (single-sample):\n\nSections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)\n\nStudent’s t-distribution\n\n\n\nWed: Day 10\n\nHypothesis testing for one mean (single-sample): Section 4.3, 5.1\nCIs vs. hypothesis tests\nInference for two-sample paired data: Section 5.2\nR projects, here::here(), and loading data into R from a file\n\nSee Projects in RStudio file for more information\n\nRunning a t.test in R"
   },
   {
     "objectID": "weeks/week_06.html#slides-recordings",
     "href": "weeks/week_06.html#slides-recordings",
     "title": "Week 6",
     "section": "Slides & Recordings",
-    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n10 part 1\nHyp test 1 mean intro\nDay 10 Part 1: slides 1-13\n\n\n\nDay 10 Part 1\n26 min\n\n\n\n\n\nHyp test steps: 4.3, 5.1\nDay 10 Part 1: slides 14-25\nsame\n\nsame\nDay 10 Part 2\n36 min\nsame\n\n\n\n\nR demo\nDay 10 Part 1: slides 26-34\nsame\n\nsame\nDay 10 Part 3\n25 min\nsame\n\n\n\n10 part 2\n\nDay 10 Part 2\n\n\n\nNo recording",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 6"
-    ]
+    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n9\nCI’s for 1 mean: 4.2\nDay 9: slides 1-12\n\n\n\nDay 9 Part 1\n17 min\n\n\n\n\n\n4.2 con’td\nDay 9: slides 13-19\n\n\n\nDay 9 Part 2\n17 min\n\n\n\n\n\n4.2 con’td, 5.1.1, 5.1.2 (pgs. 238-242)\nDay 9: slides 20-23\n\n\n\nDay 9 Part 3\n14 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10 part 1\nHyp test 1 mean intro\nDay 10 Part 1: slides 1-13\n\n\n\nDay 10 Part 1\n26 min\n\n\n\n\n\nHyp test steps: 4.3, 5.1\nDay 10 Part 1: slides 14-25\n\n\n\nDay 10 Part 2\n36 min\n\n\n\n\n\nR demo\nDay 10 Part 1: slides 26-34\n\n\n\nDay 10 Part 3\n25 min\n\n\n\n\n10 part 2\n\nDay 10 Part 2\n\n\n\nNo recording"
   },
   {
     "objectID": "weeks/week_06.html#datasets",
     "href": "weeks/week_06.html#datasets",
     "title": "Week 6",
     "section": "Datasets",
-    "text": "Datasets\nAll datasets can be found on GitHub\n\nBodyTemperatures.csv\nchol213.csv",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 6"
-    ]
+    "text": "Datasets\nAll datasets can be found on GitHub\n\nBodyTemperatures.csv\nchol213.csv"
   },
   {
     "objectID": "weeks/week_06.html#practice-problems",
     "href": "weeks/week_06.html#practice-problems",
     "title": "Week 6",
     "section": "Practice Problems",
-    "text": "Practice Problems\n\nDay 10 PP\n\nBook exercise: 5.12",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 6"
-    ]
+    "text": "Practice Problems\n\nDay 9 PP\n\nFrom Day 9 slides:\n\nSlide 15: What percent CI was being simulated in this figure?\nSlide 22: Calculate CI\n\n\n\n\nDay 10 PP\n\nBook exercise: 5.12"
   },
   {
     "objectID": "weeks/week_06.html#class-discussion",
     "href": "weeks/week_06.html#class-discussion",
     "title": "Week 6",
     "section": "Class discussion",
-    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 10\n\nPractice Problems listed above\nWork through Day 10 Part 2 slides\n\nThere are specific questions in orange on (most) slides.\n\nProblems from Homework 4:\n\nBook exercises:\n\n5.16\n\nR1: Swim times",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 6"
-    ]
+    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 9\n\nPractice Problems listed above\nFrom HW 4:\n\nBook exercises:\n\nwarm-up: 4.4, 4.6, 5.10\n5.6\n\nR2: Youth weights Part 2 (YRBSS)\n\n\n\n\nDay 10\n\nPractice Problems listed above\nWork through Day 10 Part 2 slides\n\nThere are specific questions in orange on (most) slides.\n\nProblems from Homework 4:\n\nBook exercises:\n\n5.16\n\nR1: Swim times"
   },
   {
     "objectID": "weeks/week_06.html#homework",
     "href": "weeks/week_06.html#homework",
     "title": "Week 6",
     "section": "Homework",
-    "text": "Homework\n\nHW 4 covers Days 10-12 and is due on Sat, 11/15\nCheck out this spreadsheet for typos in book.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 6"
-    ]
-  },
-  {
-    "objectID": "weeks/week_06.html#sec-Exam2info",
-    "href": "weeks/week_06.html#sec-Exam2info",
-    "title": "Week 6",
-    "section": "Exam 2 information",
-    "text": "Exam 2 information\n\nExam 2 will be on Wed, Nov. 5th\nSamples of past exam questions and answers (on )\nMaterial will cover Days 6-9,\n\nwhich is approximately Sections 3.1-3.4, 4.1-4.2 from the textbook.\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 6"
-    ]
-  },
-  {
-    "objectID": "weeks/week_04.html",
-    "href": "weeks/week_04.html",
-    "title": "Week 4",
-    "section": "",
-    "text": "Random variables: Section 3.1\nBinomial distribution: Section 3.2\nDay 6 Practice Problems\n\nSee new PP section below\n\n\n\n\n\n\nSee the Exam 1 information section below for more information",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 4"
-    ]
+    "text": "Homework\n\nHW 4 covers Days 8-10 and is due on Sat, 11/7\nCheck out this spreadsheet for typos in book."
   },
   {
     "objectID": "weeks/week_04.html#overview-of-week-4",
     "href": "weeks/week_04.html#overview-of-week-4",
     "title": "Week 4",
-    "section": "",
-    "text": "Random variables: Section 3.1\nBinomial distribution: Section 3.2\nDay 6 Practice Problems\n\nSee new PP section below\n\n\n\n\n\n\nSee the Exam 1 information section below for more information",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 4"
-    ]
+    "section": "Overview of Week 4",
+    "text": "Overview of Week 4\n\n\nMon: Day 6\n\nRandom variables: Section 3.1\nBinomial distribution: Section 3.2\nDay 6 Practice Problems\n\nSee PP section below\n\n\n\n\nWed: Day 7\n\nNormal distribution: Section 3.3\nPoisson distribution: Section 3.4\nDay 7 Practice Problems\n\nSee PP section below\n\n\n\n\n\nSee the Exam 1 information section below for information about next week’s exam."
   },
   {
     "objectID": "weeks/week_04.html#slides-recordings",
     "href": "weeks/week_04.html#slides-recordings",
     "title": "Week 4",
     "section": "Slides & Recordings",
-    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n\nCalculating probabilities in R\n\n\n\n\n\n\n\n\n\n\n6\nRandom Variables (3.1.1-3.1.3)\nDay 6: slides 1-6\n\n\n\nDay 6 Part 1\n24 min\n\n\n\n\n\nLinear combinations of RV’s (3.1.4)\nDay 6: slides 7-10\nsame\n\nsame\nDay 6 Part 2\n14 min\n\n\n\n\n\nBinomial dist (3.2)\nDay 6: slides 11-15\nsame\n\nsame\nDay 6 Part 3\n27 min",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 4"
-    ]
+    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n\nCalculating probabilities in R\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\nRandom Variables (3.1.1-3.1.3)\nDay 6: slides 1-6\n\n\n\nDay 6 Part 1\n24 min\n\n\n\n\n\nLinear combinations of RV’s (3.1.4)\nDay 6: slides 7-10\n\n\n\nDay 6 Part 2\n14 min\n\n\n\n\n\nBinomial dist (3.2)\nDay 6: slides 11-15\n\n\n\nDay 6 Part 3\n27 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\nNormal dist and prob’s for standard normal (3.3.1, 3.3.3)\nDay 7: slides 1-5\n\n\n\nDay 7 Part 1\n27 min\n\n\n\n\n\nNormal prob’s using z-scores (3.3.2, 3.3.4)\nDay 7: slides 6-7\n\n\n\nDay 7 Part 2\n15 min\n\n\n\n\n\nNormal approx of binomial dist (3.3.6)\nDay 7: slides 8-9\n\n\n\nDay 7 Part 3\n14 min\n\n\n\n\n\nPoisson dist (3.4)\nDay 7: slides 10-12\n\n\n\nDay 7 Part 4\n15 min"
   },
   {
     "objectID": "weeks/week_04.html#practice-problems",
     "href": "weeks/week_04.html#practice-problems",
     "title": "Week 4",
     "section": "Practice Problems",
-    "text": "Practice Problems\n\nDay 6\n\nDay 6 Practice Problems\n\nFrom slides:\n\nExample 3.11 on pg 6 of slides\nExample 3.17 parts (1) - (3) on pg 10 of slides\n\nHint: If you are unsure how to define the random variable T, take a look at how we defined the random variable M in example 3.16 for the amount of money one gets from 3 rolls of a die.\n\nExample 3.22 parts (1) and (2) on pg 14 of slides",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 4"
-    ]
+    "text": "Practice Problems\n\nDay 6 PP\n\nFrom Day 6 slides:\n\nExample 3.11 on pg 6 of slides\nExample 3.17 parts (1) - (3) on pg 10 of slides\n\nHint: If you are unsure how to define the random variable T, take a look at how we defined the random variable M in example 3.16 for the amount of money one gets from 3 rolls of a die.\n\nExample 3.22 parts (1) and (2) on pg 14 of slides\n\n\n\n\nDay 7 PP\n\nFrom Day 7 slides:\n\nExample 3.3 parts (1) and (3) on pg 7 of slides\nExample 3.8 parts (2) and (3) on pg 11 of slides"
   },
   {
     "objectID": "weeks/week_04.html#class-discussion",
     "href": "weeks/week_04.html#class-discussion",
     "title": "Week 4",
     "section": "Class discussion",
-    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay06\n\nPractice Problems listed above\nPart (4) of Example 3.17 on pg 10 of slides\nFrom HW 3\n\nBook exercises\n\n3.4, 3.8\n\nNon-book exercise\n\nNB 1\n\n\nIf you want some R practice, try the following:\n\nExample 3.3 on pg 2 of slides\n\nWrite R code to calculate the expected value by defining vectors in R with the relevant values and then doing the appropriate calculations with the vectors.\nHint: start with x &lt;- 1:6.\n\nExample 3.10 on pg 5 of slides\n\nWrite R code to calculate the variance and standard deviation by defining vectors in R with the relevant values and then doing the appropriate calculations with the vectors.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 4"
-    ]
+    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay06\n\nPractice Problems listed above\nPart (4) of Example 3.17 on pg 10 of slides\nFrom HW 3\n\nBook exercises\n\n3.4, 3.8\n\nNon-book exercise\n\nNB 1\n\n\nIf you want some R practice, try the following:\n\nExample 3.3 on pg 2 of slides\n\nWrite R code to calculate the expected value by defining vectors in R with the relevant values and then doing the appropriate calculations with the vectors.\nHint: start with x &lt;- 1:6.\n\nExample 3.10 on pg 5 of slides\n\nWrite R code to calculate the variance and standard deviation by defining vectors in R with the relevant values and then doing the appropriate calculations with the vectors.\n\n\n\n\n\nDay 7\n\nPractice Problems listed above\nFrom HW 3:\n\nBook exercises\n\n3.22, 3.32, 3.40"
   },
   {
     "objectID": "weeks/week_04.html#homework",
     "href": "weeks/week_04.html#homework",
     "title": "Week 4",
     "section": "Homework",
-    "text": "Homework\n\nHW 3 v2 covers Days 6 - 9 and is due on Sat, 11/1\nMake sure to check out the calculating probabilities in R code file: qmd, html\nNote: the answer to exercise 3.31(b) in the textbook (not assigned) is incorrect.\n\nCheck out this spreadsheet for more typos in book.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 4"
-    ]
+    "text": "Homework\n\nHW 3 covers Days 6-7 and is due on Sat, 10/24\nMake sure to check out the calculating probabilities in R code file: qmd, html\nNote: the answer to exercise 3.31(b) in the textbook (not assigned) is incorrect.\n\nCheck out this spreadsheet for more typos in book."
   },
   {
     "objectID": "weeks/week_04.html#sec-Exam1info",
     "href": "weeks/week_04.html#sec-Exam1info",
     "title": "Week 4",
     "section": "Exam 1 information",
-    "text": "Exam 1 information\n\nExam 1 will be on Wed, Oct. 22nd\nSamples of past exam questions and answers (on )\nMaterial will cover Days 1-5,\n\nwhich is approximately Chapters 1 & 2 from the textbook.\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 4"
-    ]
-  },
-  {
-    "objectID": "weeks/week_11.html",
-    "href": "weeks/week_11.html",
-    "title": "Week 11",
-    "section": "",
-    "text": "Exam 3 corrections due\nOpen office hours during class\n\nOnline: Webex link\n\n\nUsual office hour 3-4 pm\n\n\n\n\n\nOpen office hours during class\n\nOnline: Webex link\n\n\n\n\n\n\n\nExam 4 due\nOffice hour 4-5 pm",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 11"
-    ]
+    "text": "Exam 1 information\n\nExam 1 will be on Wed, Oct. 28th\nChapters 1-2: samples of past exam questions and answers (on Brightspace)\nSections 3.1-3.4: samples of past exam questions and answers (on Brightspace)\n\nQuestions on Sections 4.1-4.2 in this file are not on Exam 1.\n\nMaterial will cover Days 1-7,\n\nwhich is approximately Chapters 1, 2, and Sections 3.1-3.4 from the textbook.\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet."
   },
   {
     "objectID": "weeks/week_11.html#overview-of-week-11",
     "href": "weeks/week_11.html#overview-of-week-11",
     "title": "Week 11",
-    "section": "",
-    "text": "Exam 3 corrections due\nOpen office hours during class\n\nOnline: Webex link\n\n\nUsual office hour 3-4 pm\n\n\n\n\n\nOpen office hours during class\n\nOnline: Webex link\n\n\n\n\n\n\n\nExam 4 due\nOffice hour 4-5 pm",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 11"
-    ]
+    "section": "Overview of Week 11",
+    "text": "Overview of Week 11\n\n\nMon\n\nReview - catch up\nUsual office hour 3-4 pm\n\n\n\nWed\n\nExam 3 due"
   },
   {
-    "objectID": "weeks/week_11.html#sec-Exam4",
-    "href": "weeks/week_11.html#sec-Exam4",
+    "objectID": "weeks/week_11.html#sec-Exam3",
+    "href": "weeks/week_11.html#sec-Exam3",
     "title": "Week 11",
-    "section": "Exam 4",
-    "text": "Exam 4\n\nExam 4 is due on 12/11/25 at 11:50 pm\nExam is posted in the Assignments section of .\n\nNote that the attachments of the assignment include both the qmd and html files for the exam, as well as the dataset.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 11"
-    ]
-  },
-  {
-    "objectID": "weeks/week_11.html#sec-ExamCorrections",
-    "href": "weeks/week_11.html#sec-ExamCorrections",
-    "title": "Week 11",
-    "section": "Exam Corrections",
-    "text": "Exam Corrections\n\nPlease email me a link to your video by the due date.\n\nPlease do not attach the video to the email.\n\nExam corrections will be video recordings of you explaining what the error was on the problem, why it was incorrect, and the correct solution.\n\nRecordings do not need to include video of yourself.\n\nI strongly recommend reviewing the class notes and homework solutions for examples of the level of detail and correct notation to use in your work.\nYou may not ask anyone for help (including AI) other than the instructor for doing your exam corrections.\n\n\nExam 3 Corrections\n\nDue Monday 12/8 at 11 pm\nYou may do corrections for all questions.\nFor 10 parts to questions, you can earn back all of the points missed.\n\nFor example, maybe you decide to choose parts 1b, 1c, 1d, 2c, 3a, 3d, 3f, 4b, 4d, and 4f as the 10 “parts of questions” that you want to be considered for getting full points back for.\nWhen emailing me a link to your video, please clearly state which parts of questions you chose as the 10 to get full points back. \n\nFor the remaining parts to questions, you can earn back up to half of the missed points.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 11"
-    ]
-  },
-  {
-    "objectID": "weeks/week_11.html#sec-Wk11Webex",
-    "href": "weeks/week_11.html#sec-Wk11Webex",
-    "title": "Week 11",
-    "section": "Webex link for Week 11",
-    "text": "Webex link for Week 11\nWhen it’s time, join your Webex meeting here. Join Meeting: https://ohsu.webex.com/ohsu/j.php?MTID=mcb0085909236e17a2edc1ca819f98129 Meeting password: mH82JvpWZQ2\nPhone (audio only): 1-503-388-9555 Portland, OR 1-206-207-1700 Seattle, WA Meeting number (access code): 2634 963 8854 Additional call-in numbers: https://ohsu.webex.com/ohsu/globalcallin.php\nMobile phone (one-touch): 206-207-1700,,26349638854##",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 11"
-    ]
-  },
-  {
-    "objectID": "weeks/week_09.html",
-    "href": "weeks/week_09.html",
-    "title": "Week 9",
-    "section": "",
-    "text": "See the Exam 3 information section below for more information\n\n\n\n\n\nSimple Linear Regression (part 1)\nSections 6.1, 6.2",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 9"
-    ]
+    "section": "Exam 3",
+    "text": "Exam 3\n\nExam 3 is a take-home exam and is due on Wed, 12/9/26 at 11:50 pm\nThe exam is cumulative, with a focus on Days 14-17.\nExam is posted in the Assignments section of Brightspace.\n\nNote that the attachments of the assignment include both the qmd and html files for the exam, as well as the dataset."
   },
   {
     "objectID": "weeks/week_09.html#overview-of-week-9",
     "href": "weeks/week_09.html#overview-of-week-9",
     "title": "Week 9",
-    "section": "",
-    "text": "See the Exam 3 information section below for more information\n\n\n\n\n\nSimple Linear Regression (part 1)\nSections 6.1, 6.2",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 9"
-    ]
+    "section": "Overview of Week 9",
+    "text": "Overview of Week 9\n\n\nMon: Exam 2\n\nSee the Exam 2 information section below for more information\n\n\n\nWed: Day 15\n\nSimple Linear Regression (part 1)\nSections 6.1, 6.2"
   },
   {
     "objectID": "weeks/week_09.html#slides-recordings",
     "href": "weeks/week_09.html#slides-recordings",
     "title": "Week 9",
     "section": "Slides & Recordings",
-    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n15\nSimple linear regression: 6.1-6.2\n\n\n\n\nDay 15\n46 min",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 9"
-    ]
+    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n15\nSimple linear regression: 6.1-6.2\n\n\n\n\nDay 15\n46 min"
   },
   {
     "objectID": "weeks/week_09.html#datasets",
     "href": "weeks/week_09.html#datasets",
     "title": "Week 9",
     "section": "Datasets",
-    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 15: lifeexp_femlit_water_2011.csv",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 9"
-    ]
+    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 15: lifeexp_femlit_water_2011.csv"
   },
   {
     "objectID": "weeks/week_09.html#practice-problems",
     "href": "weeks/week_09.html#practice-problems",
     "title": "Week 9",
     "section": "Practice Problems",
-    "text": "Practice Problems\n\nDay 15 PP\n\nBook exercises:\n\n6.2, 6.6",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 9"
-    ]
+    "text": "Practice Problems\n\nDay 15 PP\n\nBook exercises:\n\n6.2, 6.6"
   },
   {
     "objectID": "weeks/week_09.html#class-discussion",
     "href": "weeks/week_09.html#class-discussion",
     "title": "Week 9",
     "section": "Class discussion",
-    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 15\n\nPractice Problems listed above\nQuestions from HW 6\n\nBook 6.10\n\nR2: Palmer Penguins SLR",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 9"
-    ]
+    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 15\n\nPractice Problems listed above\nQuestions from HW 8\n\nBook 6.10\n\nR2: Palmer Penguins SLR"
   },
   {
     "objectID": "weeks/week_09.html#homework",
     "href": "weeks/week_09.html#homework",
     "title": "Week 9",
     "section": "Homework",
-    "text": "Homework\n\nHW 6 covers Days 14-15 and is due on Sat, 11/29\nCheck out this spreadsheet for typos in book.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 9"
-    ]
+    "text": "Homework\n\nHW 7 covers Day 14 and is due on Sun, 11/29\nHW 8 covers Days 15-17 and is due on Sat, 12/5\nCheck out this spreadsheet for typos in book."
   },
   {
-    "objectID": "weeks/week_09.html#sec-Exam3info",
-    "href": "weeks/week_09.html#sec-Exam3info",
+    "objectID": "weeks/week_09.html#sec-Exam2info",
+    "href": "weeks/week_09.html#sec-Exam2info",
     "title": "Week 9",
-    "section": "Exam 3 information",
-    "text": "Exam 3 information\n\nExam 3 will be on Mon, Nov. 24th\nSamples of past exam questions and answers (on )\n\nNote: I still need to add the answers for the Fall 2024 exam.\n\nMaterial will cover Days 10-13,\n\nwhich is approximately Sections 4.3, 5.1-5.4, and 8.1-8.4 from the textbook, plus supplementary material.\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet.",
-    "crumbs": [
-      "Home",
-      "Weekly pages",
-      "Week 9"
-    ]
+    "section": "Exam 2 information",
+    "text": "Exam 2 information\n\nExam 2 will be on Mon, Nov. 23rd\nSections 4.1-4.2: samples of past exam questions and answers (on Brightspace)\nSections 4.3, 5.1-5.4, 8.1-8.4: samples of past exam questions and answers (on Brightspace)\n\nNote: I still need to add the answers for the Fall 2024 exam.\n\nMaterial will cover Days 8-13,\n\nwhich is approximately Sections 4.1-4.3, 5.1-5.4, and 8.1-8.4 from the textbook, plus supplementary material.\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet."
   },
   {
     "objectID": "homework.html",
     "href": "homework.html",
     "title": "Assignments",
     "section": "",
-    "text": "Note\n\n\n\n\nBelow are links to homework assignments.\nThe dates in the Date column are due dates.\nSee the Grading rubric tab to the left for a description of how assignments will be graded.\n\n\n\n\nCheck out this spreadsheet for textbook typos.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n10/11/25\n\n\nHW 1: BSTA 511/611 F25\n\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Home",
-      "Homework",
-      "Homework"
-    ]
+    "text": "Note\n\n\n\n\nBelow are links to homework assignments.\nThe dates in the Date column are due dates.\nSee the Grading rubric tab to the left for a description of how assignments will be graded.\n\n\n\n\nCheck out this spreadsheet for textbook typos.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n10/11/25\n\n\nHW 1: BSTA 511/611 F25\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "BSTA 511/611 Fall 2026",
     "section": "",
-    "text": "Welcome to BSTA 511/611!\n\n\nEstimation and Hypothesis Testing\nApplied Biostatistics I\n\nFall 2026\n\n\n\n\n\n\n\nInstructor\n Meike Niederhausen, PhD\n VPT 660E\n niederha@ohsu.edu\n\n\nTA\n Senta Wiederholt\n wiederholt@ohsu.edu\n\n\n\nCourse details\n Mon, Wed\n 1:00 - 2:50 PM\n VPT 264\n 9/28 - 12/11\n\n\nOffice Hours\n Mondays 3-4 pm (Meike)\n VPT 660E\n TBD (Senta)\n  TBD\n TBDm (Meike)\n  TBD\n TBD (Senta)\n  TBD\n\n\n\n\n\nContacting me\nE-mail is the best way to get in contact with me. I will try to respond to all course-related e-mails within 24 hours Monday-Friday.\n\n\n\nThis is the course webpage for BSTA 511/611 at the OHSU-PSU School of Public Health.\n\n\n\n\n\n View the source on GitHub",
-    "crumbs": [
-      "Home"
-    ]
+    "text": "Welcome to BSTA 511/611!\n\n\nEstimation and Hypothesis Testing\nApplied Biostatistics I\n\nFall 2026\n\n\n\n\n\n\n\nInstructor\n Meike Niederhausen, PhD\n VPT 660E\n niederha@ohsu.edu\n\n\nTA\n Senta Wiederholt\n wiederholt@ohsu.edu\n\n\n\nCourse details\n Mon, Wed\n 1:00 - 2:50 PM\n VPT 264\n 9/28 - 12/11\n\n\nOffice Hours\n Mondays 3-4 pm (Meike)\n VPT 660E\n TBD (Senta)\n  TBD\n TBDm (Meike)\n  TBD\n TBD (Senta)\n  TBD\n\n\n\n\n\nContacting me\nE-mail is the best way to get in contact with me. I will try to respond to all course-related e-mails within 24 hours Monday-Friday.\n\n\n\nThis is the course webpage for BSTA 511/611 at the OHSU-PSU School of Public Health.\n\n\n\n\n\n View the source on GitHub"
   },
   {
     "objectID": "slides/Day08_bsta511.html#where-are-we",
@@ -7154,7 +6640,7 @@
     "href": "weeks.html",
     "title": "Weekly Pages",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\n9/29/25\n\n\nWeek 1\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n10/6/25\n\n\nWeek 2\n\n\nData collection & Probability\n\n\n\n\n\n\n10/13/25\n\n\nWeek 3\n\n\nBayes’ Rule & EDA\n\n\n\n\n\n\n10/20/25\n\n\nWeek 4\n\n\nRandom variables & binomial distribution and Exam 1\n\n\n\n\n\n\n10/27/25\n\n\nWeek 5\n\n\nNormal & Poisson distributions; Variability in estimates & CI’s\n\n\n\n\n\n\n11/3/25\n\n\nWeek 6\n\n\nHypothesis Testing & Exam 2\n\n\n\n\n\n\n11/10/25\n\n\nWeek 7\n\n\nInference for difference in means, one proportion, and difference in proportions, and power\n\n\n\n\n\n\n11/17/25\n\n\nWeek 8\n\n\nChi-squared tests and ANOVA\n\n\n\n\n\n\n11/24/25\n\n\nWeek 9\n\n\nExam 3 & Simple Linear Regression\n\n\n\n\n\n\n12/1/25\n\n\nWeek 10\n\n\nSimple Linear Regression (cont’d) and Nonparametric Tests\n\n\n\n\n\n\n12/8/25\n\n\nWeek 11\n\n\nFinals week\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\n9/28/26\n\n\nWeek 1\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n10/5/26\n\n\nWeek 2\n\n\nData collection & Probability\n\n\n\n\n\n\n10/12/26\n\n\nWeek 3\n\n\nBayes’ Rule & EDA\n\n\n\n\n\n\n10/19/26\n\n\nWeek 4\n\n\nRandom variables; Binomial, Normal & Poisson distributions\n\n\n\n\n\n\n10/26/26\n\n\nWeek 5\n\n\nVariability in estimates & Exam 1\n\n\n\n\n\n\n11/2/26\n\n\nWeek 6\n\n\nConfidence intervals & Hypothesis testing\n\n\n\n\n\n\n11/9/26\n\n\nWeek 7\n\n\nInference for difference in means, one proportion, and difference in proportions, and power\n\n\n\n\n\n\n11/16/26\n\n\nWeek 8\n\n\nChi-squared tests and ANOVA\n\n\n\n\n\n\n11/23/26\n\n\nWeek 9\n\n\nExam 2 & Simple Linear Regression\n\n\n\n\n\n\n11/30/26\n\n\nWeek 10\n\n\nSimple Linear Regression (cont’d) and Nonparametric Tests\n\n\n\n\n\n\n12/7/26\n\n\nWeek 11\n\n\nFinals week\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides_md/Day10_part1_bsta511_md.html#where-are-we-continuous-outcome-zoomed-in",

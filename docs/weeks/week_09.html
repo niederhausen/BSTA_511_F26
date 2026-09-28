@@ -6,8 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-24">
-<meta name="description" content="Exam 3 &amp; Simple Linear Regression">
+<meta name="dcterms.date" content="2026-11-23">
+<meta name="description" content="Exam 2 &amp; Simple Linear Regression">
 
 <title>Week 9 BSTA 511/611 – BSTA 511/611 Fall 2026</title>
 <style>
@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8c9b64f95462c7bb49d3a63cc34b225c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-36c23491430ca13b544e4ac8ff24fd85.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/iconify-2.1.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -89,8 +89,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/IMG_9812_med.png" alt="" class="navbar-logo light-content">
-    <img src="../images/IMG_9812_med.png" alt="" class="navbar-logo dark-content">
+    <img src="../images/IMG_9388_med.png" alt="" class="navbar-logo light-content">
+    <img src="../images/IMG_9388_med.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">BSTA 511/611 Fall 2026</span>
@@ -103,173 +103,97 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-weekly-pages" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Weekly pages</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-weekly-pages">    
+        <li>
+    <a class="dropdown-item" href="../weeks/week_01.html">
+ <span class="dropdown-text">Week 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_02.html">
+ <span class="dropdown-text">Week 2</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_03.html">
+ <span class="dropdown-text">Week 3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_04.html">
+ <span class="dropdown-text">Week 4</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_05.html">
+ <span class="dropdown-text">Week 5</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_06.html">
+ <span class="dropdown-text">Week 6</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_07.html">
+ <span class="dropdown-text">Week 7</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_08.html">
+ <span class="dropdown-text">Week 8</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_09.html">
+ <span class="dropdown-text">Week 9</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_10.html">
+ <span class="dropdown-text">Week 10</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../weeks/week_11.html">
+ <span class="dropdown-text">Week 11</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-homework" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Homework</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-homework">    
+        <li>
+    <a class="dropdown-item" href="../homework.html">
+ <span class="dropdown-text">Homework</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../homework_solutions.html">
+ <span class="dropdown-text">Homework solutions</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/week_01.html">Weekly pages</a></li><li class="breadcrumb-item"><a href="../weeks/week_09.html">Week 9</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Home</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Weekly pages</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 2</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 3</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 4</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 5</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 6</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 7</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 8</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_09.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Week 9</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 10</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../weeks/week_11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 11</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Homework</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../homework.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Homework</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../homework_solutions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Homework solutions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../rubric.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Grading rubric</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview-of-week-9" id="toc-overview-of-week-9" class="nav-link active" data-scroll-target="#overview-of-week-9">Overview of Week 9</a></li>
+  <li><a href="#page-not-yet-updated" id="toc-page-not-yet-updated" class="nav-link active" data-scroll-target="#page-not-yet-updated"><span style="color:darkorange">Page not yet updated</span></a></li>
+  <li><a href="#overview-of-week-9" id="toc-overview-of-week-9" class="nav-link" data-scroll-target="#overview-of-week-9">Overview of Week 9</a></li>
   <li><a href="#slides-recordings" id="toc-slides-recordings" class="nav-link" data-scroll-target="#slides-recordings">Slides &amp; Recordings</a></li>
   <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">Datasets</a></li>
   <li><a href="#practice-problems" id="toc-practice-problems" class="nav-link" data-scroll-target="#practice-problems">Practice Problems</a>
@@ -281,21 +205,21 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#day-15" id="toc-day-15" class="nav-link" data-scroll-target="#day-15">Day 15</a></li>
   </ul></li>
   <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
-  <li><a href="#sec-Exam3info" id="toc-sec-Exam3info" class="nav-link" data-scroll-target="#sec-Exam3info">Exam 3 information</a></li>
+  <li><a href="#sec-Exam2info" id="toc-sec-Exam2info" class="nav-link" data-scroll-target="#sec-Exam2info">Exam 2 information</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../weeks/week_01.html">Weekly pages</a></li><li class="breadcrumb-item"><a href="../weeks/week_09.html">Week 9</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Week 9</h1>
 </div>
 
 <div>
   <div class="description">
-    Exam 3 &amp; Simple Linear Regression
+    Exam 2 &amp; Simple Linear Regression
   </div>
 </div>
 
@@ -306,14 +230,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 24, 2025</p>
+      <p class="date">November 23, 2026</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">September 26, 2026</p>
+      <p class="date-modified">September 27, 2026</p>
     </div>
   </div>
     
@@ -324,13 +248,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="page-not-yet-updated" class="level2">
+<h2 class="anchored" data-anchor-id="page-not-yet-updated"><span style="color:darkorange">Page not yet updated</span></h2>
+</section>
 <section id="overview-of-week-9" class="level2">
 <h2 class="anchored" data-anchor-id="overview-of-week-9">Overview of Week 9</h2>
 <div class="grid">
-<section id="mon-exam-3" class="level3 g-col-6">
-<h3 class="anchored" data-anchor-id="mon-exam-3">Mon: Exam 3</h3>
+<section id="mon-exam-2" class="level3 g-col-6">
+<h3 class="anchored" data-anchor-id="mon-exam-2">Mon: Exam 2</h3>
 <ul>
-<li>See the <a href="#sec-Exam3info">Exam 3 information</a> section below for more information</li>
+<li>See the <a href="#sec-Exam2info">Exam 2 information</a> section below for more information</li>
 </ul>
 </section>
 <section id="wed-day-15" class="level3 g-col-6">
@@ -384,7 +311,7 @@ ul.task-list li input[type="checkbox"] {
 <td><a href="../slides_notes/Day15_bsta511_notes.pdf"><iconify-icon role="img" inline="" icon="pepicons-pop:pen-circle-filled" style="font-size: 20px;" aria-label="Icon pen-circle-filled from pepicons-pop Iconify.design set." title="Icon pen-circle-filled from pepicons-pop Iconify.design set."></iconify-icon></a></td>
 <td><a href="https://echo360.org/lesson/d450afbd-c74a-41e9-a6f3-1aa887ec0259/classroom">Day 15</a></td>
 <td>46 min</td>
-<td><a href="https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day15_bsta511_code.qmd"><iconify-icon role="img" inline="" icon="simple-icons:quarto" aria-label="Icon quarto from simple-icons Iconify.design set." title="Icon quarto from simple-icons Iconify.design set."></iconify-icon></a></td>
+<td><a href="https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day15_bsta511_code.qmd"><iconify-icon role="img" inline="" icon="simple-icons:quarto" aria-label="Icon quarto from simple-icons Iconify.design set." title="Icon quarto from simple-icons Iconify.design set."></iconify-icon></a></td>
 <td><a href="../slides_code/Day15_bsta511_code.html"><iconify-icon role="img" inline="" icon="ph:file-html-light" style="font-size: 25px;" aria-label="Icon file-html-light from ph Iconify.design set." title="Icon file-html-light from ph Iconify.design set."></iconify-icon></a></td>
 </tr>
 </tbody>
@@ -392,7 +319,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="datasets" class="level2">
 <h2 class="anchored" data-anchor-id="datasets">Datasets</h2>
-<p>All datasets can be found on <a href="https://github.com/niederhausen/BSTA_511_F25/tree/main/data">GitHub</a></p>
+<p>All datasets can be found on <a href="https://github.com/niederhausen/BSTA_511_F26/tree/main/data">GitHub</a></p>
 <ul>
 <li>Day 15: <a href="../data/lifeexp_femlit_water_2011.csv">lifeexp_femlit_water_2011.csv</a></li>
 </ul>
@@ -416,7 +343,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="day-15">Day 15</h3>
 <ul>
 <li>Practice Problems listed above</li>
-<li>Questions from HW 6
+<li>Questions from HW 8
 <ul>
 <li>Book 6.10</li>
 </ul></li>
@@ -427,21 +354,23 @@ ul.task-list li input[type="checkbox"] {
 <section id="homework" class="level2">
 <h2 class="anchored" data-anchor-id="homework">Homework</h2>
 <ul>
-<li><a href="../homework/HW_6_F25_bsta511.qmd">HW 6</a> covers Days 14-15 and is due on Sat, 11/29</li>
+<li><a href="../homework/HW_7_F26_bsta511_v2.qmd">HW 7</a> covers Day 14 and is due on Sun, 11/29</li>
+<li><a href="../homework/HW_8_F26_bsta511_v2.qmd">HW 8</a> covers Days 15-17 and is due on Sat, 12/5</li>
 <li>Check out this <a href="https://docs.google.com/spreadsheets/d/1k_NivXZftdlRgRyTT3fUZCndW4eoXCzAs-DEIml6K3Y/edit?gid=0#gid=0">spreadsheet</a> for typos in book.</li>
 </ul>
 </section>
-<section id="sec-Exam3info" class="level2">
-<h2 class="anchored" data-anchor-id="sec-Exam3info">Exam 3 information</h2>
+<section id="sec-Exam2info" class="level2">
+<h2 class="anchored" data-anchor-id="sec-Exam2info">Exam 2 information</h2>
 <ul>
-<li>Exam 3 will be on Mon, Nov.&nbsp;24th</li>
-<li>Samples of <a href="https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_3_samples_4.3_5.1-5.4_8.1-8.4.pdf">past exam questions</a> and <a href="https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_3_samples_4.3_5.1-5.4_8.1-8.4_answers.pdf">answers</a> (on )
+<li>Exam 2 will be on Mon, Nov.&nbsp;23rd</li>
+<li><em>Sections 4.1-4.2:</em> samples of <a href="https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_2_samples_Ch3.1-3.4_4.1-4.2.pdf">past exam questions</a> and <a href="https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_2_samples_Ch3.1-3.4_4.1-4.2_answers.pdf">answers</a> (on Brightspace)</li>
+<li><em>Sections 4.3, 5.1-5.4, 8.1-8.4:</em> samples of <a href="https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_3_samples_4.3_5.1-5.4_8.1-8.4.pdf">past exam questions</a> and <a href="https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_3_samples_4.3_5.1-5.4_8.1-8.4_answers.pdf">answers</a> (on Brightspace)
 <ul>
 <li><em>Note: I still need to add the answers for the Fall 2024 exam.</em></li>
 </ul></li>
-<li>Material will cover <strong>Days 10-13</strong>,
+<li>Material will cover <strong>Days 8-13</strong>,
 <ul>
-<li>which is approximately <strong>Sections 4.3, 5.1-5.4, and 8.1-8.4</strong> from the textbook, plus supplementary material.</li>
+<li>which is approximately <strong>Sections 4.1-4.3, 5.1-5.4, and 8.1-8.4</strong> from the textbook, plus supplementary material.</li>
 </ul></li>
 <li>The exam will be in-class and handwritten. <em>Bring a calculator.</em></li>
 <li>You may bring one page of notes on an 8.5” x 11” sheet of paper.

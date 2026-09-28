@@ -2,7 +2,7 @@
 title: "Week 3"
 description: "Bayes' Rule & EDA"
 pagetitle: "Week 3 BSTA 511/611"
-date: "10/13/2025"
+date: "10/12/2026"
 date-modified: "today"
 categories: [""]
 format: 
@@ -12,6 +12,8 @@ format:
 editor_options: 
   chunk_output_type: console
 ---
+
+## [Page not yet updated]{style="color:darkorange"}
 
 ## Overview of Week 3
 
@@ -62,11 +64,13 @@ As I mentioned in the recording, the various options in more complex figures I u
 | Day | Topic | Slides (F23): html | Slides: pdf | Slides: web-page | Slides with notes | Recording Link (F23) | Duration | Code: qmd | Code: html |
 |--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
 | 4 | Bayes' Rule (Book section 2.2.5) | [Day 5: slides 1-2](../slides/Day05_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../LaTeX_slides/Day05_bsta511.pdf) |  | [{{< iconify pepicons-pop pen-circle-filled size=20px >}}](../slides_notes/Day05_bsta511_notes.pdf) | [Day 5 Part 1](https://echo360.org/lesson/4dd3a9b8-33be-4eda-a704-262bdcf473c4/classroom) | 22 min |  |  |
-|  | Bayes' Rule (Book section 2.2.5) | [Day 5: slides 3-6](../slides/Day05_bsta511.qmd) | same |  | same | [Day 5 Part 2](https://echo360.org/lesson/ff6bb379-f025-43eb-b3b7-0a3d884635ee/classroom) | 22 min |  |  |
-|  | R packages | [Day 2: slides 47-54](https://niederhausen.github.io/BSTA_511_F25/slides/Day02_bsta511.html#/r-packages---day-4-in-f25) | same | [{{< iconify streamline web size=20px >}}](../slides_md/Day02_bsta511_md.qmd#r-packages---day-4-in-f25) |  | [Day 2 Part 4](https://echo360.org/lesson/ceb44e22-dde1-472b-b8a9-6dfd93212054/classroom) | 30 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day02_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day02_bsta511_code.qmd#r-packages---day-4-in-f25) |
-| 5 | Exploratory Data Analysis | [Day 3: slides 1-59](../slides/Day03_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day03_bsta511_md.qmd) |  | [Day 3](https://echo360.org/lesson/05b9c600-887b-41a3-9fb0-3eecfc6de8eb/classroom) | 1 hr 18 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day03_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code.qmd) |
-|  | Extra EDA slides | [Day 3 Part 2 slides](../slides/Day03_bsta511_part2.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511_part2.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day03_bsta511_md_part2.qmd) |  |  |  | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day03_bsta511_code_part2.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code.qmd) |
-|  | \*Extra data wrangling code |  | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511_part3_data_wrangling.pdf) |  |  |  |  | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) |
+|  | Bayes' Rule (Book section 2.2.5) | [Day 5: slides 3-6](../slides/Day05_bsta511.qmd) |  |  |  | [Day 5 Part 2](https://echo360.org/lesson/ff6bb379-f025-43eb-b3b7-0a3d884635ee/classroom) | 22 min |  |  |
+| []{.slide-divider} |  |  |  |  |  |  |  |  |  |
+|  | R packages | [Day 2: slides 47-54](https://niederhausen.github.io/BSTA_511_F26/slides/Day02_bsta511.html#/r-packages---day-4-in-f26) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day02_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day02_bsta511_md.qmd#r-packages---day-4-in-f26) |  | [Day 2 Part 4](https://echo360.org/lesson/ceb44e22-dde1-472b-b8a9-6dfd93212054/classroom) | 30 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day02_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day02_bsta511_code.qmd#r-packages---day-4-in-f26) |
+| []{.day-divider} |  |  |  |  |  |  |  |  |  |
+| 5 | Exploratory Data Analysis | [Day 3: slides 1-59](../slides/Day03_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day03_bsta511_md.qmd) |  | [Day 3](https://echo360.org/lesson/05b9c600-887b-41a3-9fb0-3eecfc6de8eb/classroom) | 1 hr 18 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day03_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code.qmd) |
+|  | Extra EDA slides | [Day 3 Part 2 slides](../slides/Day03_bsta511_part2.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511_part2.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day03_bsta511_md_part2.qmd) |  |  |  | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day03_bsta511_code_part2.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code.qmd) |
+|  | \*Extra data wrangling code |  | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511_part3_data_wrangling.pdf) |  |  |  |  | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) |
 
 : {.striped .hover tbl-colwidths="\[3, 10, 8, 5, 5, 5, 6, 6, 5, 5\]"}
 
@@ -116,7 +120,7 @@ During class you will be working in groups discussing the following:
 
 <!-- * [webpage](../slides_md/Day03_bsta511_md_part2.qmd) -->
 
-<!-- * Code file: [qmd](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day03_bsta511_code_part2.qmd), [html](../slides_code/Day03_bsta511_code_part2.qmd) -->
+<!-- * Code file: [qmd](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day03_bsta511_code_part2.qmd), [html](../slides_code/Day03_bsta511_code_part2.qmd) -->
 
 <!-- ### Part 3 slides: Data Wrangling -->
 
@@ -126,34 +130,18 @@ During class you will be working in groups discussing the following:
 
 <!-- * [pdf](https://drive.google.com/file/d/1IfubP0ei-5jTIVs33dyoEqjMIY-Q8qBe/view?usp=sharing) -->
 
-<!-- * Code file: [qmd](https://github.com/niederhausen/BSTA_511_F25/blob/main/slides_code/Day03_bsta511_code_part3_data_wrangling.qmd), [html](../slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) -->
+<!-- * Code file: [qmd](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day03_bsta511_code_part3_data_wrangling.qmd), [html](../slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) -->
 
 ## Homework
 
--   [HW 2](../homework/HW_2_F25_bsta511.qmd) due on Sat, 10/18
+-   [HW 2](../homework/HW_2_F26_bsta511_v2.qmd) covers Days 4-5 and is due on Sat, 10/17
     -   See [extra data wrangling code](../slides_pdf/Day03_bsta511_part3_data_wrangling.pdf) (both pdf and code) in table above with slides & recording links.
-
-
-## Exam 1 information {#sec-Exam1info}
-
--   Exam 1 will be on Wed, Oct. 22nd
--   Samples of [past exam questions](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_1_samples_Ch1-2.pdf) and [answers](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/Exam_samples/Exam_1_samples_Ch1-2%20answers.pdf) (on )
--   Material will cover **Days 1-5**,
-    -   which is approximately **Chapters 1 & 2** from the textbook.
--   The exam will be in-class and handwritten. *Bring a calculator.*
--   You may bring one page of notes on an 8.5” x 11” sheet of paper.
-    -   You may use both sides.
-    -   You may type your notes.
-    -   You may **not** use screenshots of the notes or textbook
-    -   You will be turning in the page of notes with the exam, so please add your name to the sheet.
-
-
 
 
 ## International Day of Women in Statistics and Data Science
 
 -   Join the virtual & free conference for the [International Day of Women in Statistics and Data Science](http://www.idwsds.org/)
--   Tuesday, October 14, 2025
-    -   12 am - 11:59 pm UTC (5pm 10/13 to 4:59 pm 10/14 here)
+-   Tuesday, October 13, 2026
+    -   12 am - 11:59 pm UTC (5pm 10/12 to 4:59 pm 10/13 here)
 
 ![](/img_slides/IDWSDS-logo-large.png){fig-align="center" height="150"}

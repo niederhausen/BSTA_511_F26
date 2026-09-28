@@ -47,3 +47,36 @@ $link-color: #5388f2;
   --bs-table-accent-bg: #{$navbar-bg};
   padding: 0.2rem;
 }
+
+/* Dark text in navbar dropdown menus */
+.navbar .dropdown-menu .dropdown-item,
+.navbar .dropdown-menu .dropdown-item * {
+  color: $body-color !important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:hover * {
+  color: $navbar-bg !important;
+}
+
+
+
+/* Green dividers in weekly-page tables */
+tbody tr:has(.day-divider) td,
+tbody tr:has(.slide-divider) td {
+  background-color: $navbar-bg !important;
+  --bs-table-accent-bg: #{$navbar-bg};
+  box-shadow: none !important;
+  border: 0;
+}
+
+tbody tr:has(.day-divider) td {
+  padding: 0.2rem !important;
+}
+
+tbody tr:has(.slide-divider) td {
+  padding: 0 !important;
+  height: 3px;
+  line-height: 0;
+  font-size: 0;
+}
