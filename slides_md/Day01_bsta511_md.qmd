@@ -25,6 +25,7 @@ editor_options:
 ---
 
 
+
 ```{r}
 #| label: "setup" 
 #| include: false
@@ -39,6 +40,20 @@ library(here)
 # terminal: for icons
 # quarto install extension quarto-ext/fontawesome
 ```
+
+
+## 💥 How are these slides different from the PUBH 523 slides?
+
+-   For Day 1:
+    -   Please have R & RStudio installed for class
+    -   Complete [Intro to R (PUBH 523) lessons](https://nwakim.github.io/PUBH_523_26F/schedule.html) below before class:
+        -   Lesson 1: Welcome
+        -   Lesson 3: Download + Intro to R & RStudio
+        -   Lesson 4: Basics
+        -   Lesson 6: Quarto and .qmd’s
+
+-   Pages in this slide deck with content not in the PUBH 523 slides are marked with 💥 in the header
+
 
 
 # Introduction to R
@@ -106,12 +121,12 @@ RStudio is an integrated development environment (IDE)
 Read more about RStudio's layout in Section 3.4 of "[Getting Used to R, RStudio, and R Markdown](https://rbasics.netlify.com/3-rstudiobasics.html#rstudio-layout)" (Ismay and Kennedy 2016) 
 
 
-# Let's code! R Basics {.smaller}
+# 💥 Let's code! R Basics {.smaller}
 
 ![[Artwork by @allison_horst](https://allisonhorst.com/everything-else)](/img_slides/horst_timeline_Rlearning.png){fig-align="center"}
 
 
-## Coding in the console  {.smaller}
+## 💥 Coding in the console  {.smaller}
  
 ::: columns
 ::: {.column width="50%"}
@@ -158,7 +173,7 @@ The equation above is computed as $$4^3 − (2 \cdot 7) + \frac{9}{2}$$
 :::
 
 
-## Variables (saved R objects) 
+## 💥 Variables (saved R objects) 
 
 Variables are used to store data, figures, model output, etc.
 
@@ -199,7 +214,7 @@ b
 :::
 
 
-## Doing math with variables
+## 💥 Doing math with variables
 
 ::: columns
 ::: {.column width="50%"}
@@ -229,7 +244,7 @@ a*a
 :::
 :::
 
-## Variables can include text (characters)
+## 💥 Variables can include text (characters)
 
 ```{r}
 hi <- "hello"
@@ -240,7 +255,7 @@ greetings
 ```
 
 
-## Using functions
+## 💥 Using functions
 
 * `mean()` is an example of a function
 * functions have "arguments" that can be specified within the `()`
@@ -274,7 +289,7 @@ seq(1, 12, 3)
 :::
 
 
-## Common console errors (1/2)
+## 💥 Common console errors (1/2)
  
 __Incomplete commands__ 
 
@@ -300,7 +315,7 @@ Example:
 :::
 
 
-## Common console errors (2/2)
+## 💥 Common console errors (2/2)
 
 __Object is not found__
 
@@ -453,7 +468,7 @@ html output
 
 ![[Illustration by Alison Hill and Allison Horst, for RStudio.](https://allisonhorst.com/horst-hill-collaborations)](/img_slides/horst_hedgehog_text_code.png){fig-align="center"}
 
-## Formatting text  {.smaller}
+## 💥 Formatting text  {.smaller}
 
 * __bold__, _italics_, super^scripts^ & sub~scripts~, ~~strikethrough~~, `verbatim`, etc. \
 \
@@ -470,14 +485,14 @@ html output
 
 [^1]: From Quarto's Markdown Basics webpage, https://quarto.org/docs/authoring/markdown-basics.html
 
-## Formatting text: `Visual editor`  {.smaller}
+## 💥 Formatting text: `Visual editor`  {.smaller}
 
 * Using the `Visual editor` is similar to using a wordprocessor, such as Word
 * Keyboard shortcuts usually work as well (_shown for Mac below_)
 
 ![](/img_slides/visual_editor_options_expanded_quarto.png){fig-align="center"}
 
-## Practice {.smaller}
+## 💥 Practice {.smaller}
 
 1.  Part 1
     1.  Using the visual editor, practice formatting text in your qmd file, such as making text **bold**, *italicized*, and in `code` format.
@@ -495,7 +510,7 @@ html output
 2.  What hurdles did you encounter?
 
 
-## Formatting text: `Markdown` 
+## 💥 Formatting text: `Markdown` 
 
 +---------------------------------------------------+---------------------------------------------------+
 | Markdown:                                         | Output:                                           |
@@ -529,7 +544,7 @@ html output
 <!-- : {tbl-colwidths="\[50,50\]"} -->
 
 
-## Headers {.smaller}
+## 💥 Headers {.smaller}
 
 * Organize your documents using headers to create sections and subsections
 * Use `#` at the beginning of the line to create headers
@@ -570,7 +585,7 @@ in order for the header to work properly.
 
 
 
-## RStudio tip
+## 💥 RStudio tip
 
 
 You can easily navigate through your .qmd file if you use headers to outline your text
@@ -683,7 +698,7 @@ Note that a code chunks start with ` ```{r} ` and ends with ` ``` `.  Make sure 
 :::
 
 
-## Useful keyboard shortcuts {.smaller}
+## 💥 Useful keyboard shortcuts {.smaller}
 
 [Full list of keyboard shortcuts](https://support.posit.co/hc/en-us/articles/200711853-Keyboard-Shortcuts)\
 \ 
@@ -771,7 +786,7 @@ Output:
 :::
 
 
-## Change the output file type {.smaller}
+## 💥 Change the output file type {.smaller}
 
 ::: columns
 ::: {.column width="35%"}
@@ -828,7 +843,7 @@ editor: visual
 ![[Artwork by @allison_horst](https://allisonhorst.com/)](/img_slides/horst_r_first_then.png){fig-align="center"}
 
 
-## You WILL get frustrated while learning R! {.smaller}
+## 💥 You WILL get frustrated while learning R! {.smaller}
 
 From Garrett Grolemund's Prologue of his book _Hands-On Programming with R_[^3]:
 
@@ -839,7 +854,7 @@ From Garrett Grolemund's Prologue of his book _Hands-On Programming with R_[^3]:
 [^3]: Grolemund, Garrett. 2014. Hands-on Programming with R. O’Reilly. [https://rstudio-education.github.io/hopr/](https://rstudio-education.github.io/hopr/)
 
 
-## Resources {.smaller}
+## 💥 Resources {.smaller}
 
 - [Official Quarto guide:](https://quarto.org/docs/guide/) https://quarto.org/docs/guide/
     - [Markdown basics:](https://quarto.org/docs/authoring/markdown-basics.html) https://quarto.org/docs/authoring/markdown-basics.html

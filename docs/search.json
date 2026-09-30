@@ -4469,8 +4469,8 @@
     "objectID": "slides/Day01_bsta511.html#coding-in-the-console",
     "href": "slides/Day01_bsta511.html#coding-in-the-console",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Coding in the console",
-    "text": "Coding in the console\n\n\nWhen you first open R, the console should be empty.\n\n\n\n\n\n\nTyping and executing code in the console \n\nType code in the console (blue text)\nPress return to execute the code\nOutput shown below in black"
+    "section": "💥 Coding in the console",
+    "text": "💥 Coding in the console\n\n\nWhen you first open R, the console should be empty.\n\n\n\n\n\n\nTyping and executing code in the console \n\nType code in the console (blue text)\nPress return to execute the code\nOutput shown below in black"
   },
   {
     "objectID": "slides/Day01_bsta511.html#math-calculations-using-r",
@@ -4483,43 +4483,43 @@
     "objectID": "slides/Day01_bsta511.html#variables-saved-r-objects",
     "href": "slides/Day01_bsta511.html#variables-saved-r-objects",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Variables (saved R objects)",
-    "text": "Variables (saved R objects)\nVariables are used to store data, figures, model output, etc.\n\n\n\nCan assign a variable using either = or &lt;-\n\nUsing &lt;- is preferable\n\n\nAssign just one value:\n\nx = 5\nx\n\n[1] 5\n\nx &lt;- 5\nx\n\n[1] 5\n\n\n\n\n\nAssign a vector of values\n\nConsecutive integers using :\n\n\na &lt;- 3:10\na\n\n[1]  3  4  5  6  7  8  9 10\n\n\n\nConcatenate a string of numbers\n\n\nb &lt;- c(5, 12, 2, 100, 8)\nb\n\n[1]   5  12   2 100   8"
+    "section": "💥 Variables (saved R objects)",
+    "text": "💥 Variables (saved R objects)\nVariables are used to store data, figures, model output, etc.\n\n\n\nCan assign a variable using either = or &lt;-\n\nUsing &lt;- is preferable\n\n\nAssign just one value:\n\nx = 5\nx\n\n[1] 5\n\nx &lt;- 5\nx\n\n[1] 5\n\n\n\n\n\nAssign a vector of values\n\nConsecutive integers using :\n\n\na &lt;- 3:10\na\n\n[1]  3  4  5  6  7  8  9 10\n\n\n\nConcatenate a string of numbers\n\n\nb &lt;- c(5, 12, 2, 100, 8)\nb\n\n[1]   5  12   2 100   8"
   },
   {
     "objectID": "slides/Day01_bsta511.html#doing-math-with-variables",
     "href": "slides/Day01_bsta511.html#doing-math-with-variables",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Doing math with variables",
-    "text": "Doing math with variables\n\n\nMath using variables with just one value\n\nx &lt;- 5\nx\n\n[1] 5\n\nx + 3\n\n[1] 8\n\ny &lt;- x^2\ny\n\n[1] 25\n\n\n\nMath on vectors of values:\nelement-wise computation\n\na &lt;- 3:6\na\n\n[1] 3 4 5 6\n\na+2; a*3\n\n[1] 5 6 7 8\n\n\n[1]  9 12 15 18\n\na*a\n\n[1]  9 16 25 36"
+    "section": "💥 Doing math with variables",
+    "text": "💥 Doing math with variables\n\n\nMath using variables with just one value\n\nx &lt;- 5\nx\n\n[1] 5\n\nx + 3\n\n[1] 8\n\ny &lt;- x^2\ny\n\n[1] 25\n\n\n\nMath on vectors of values:\nelement-wise computation\n\na &lt;- 3:6\na\n\n[1] 3 4 5 6\n\na+2; a*3\n\n[1] 5 6 7 8\n\n\n[1]  9 12 15 18\n\na*a\n\n[1]  9 16 25 36"
   },
   {
     "objectID": "slides/Day01_bsta511.html#variables-can-include-text-characters",
     "href": "slides/Day01_bsta511.html#variables-can-include-text-characters",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Variables can include text (characters)",
-    "text": "Variables can include text (characters)\n\nhi &lt;- \"hello\"\nhi\n\n[1] \"hello\"\n\ngreetings &lt;- c(\"Guten Tag\", \"Hola\", hi)\ngreetings\n\n[1] \"Guten Tag\" \"Hola\"      \"hello\""
+    "section": "💥 Variables can include text (characters)",
+    "text": "💥 Variables can include text (characters)\n\nhi &lt;- \"hello\"\nhi\n\n[1] \"hello\"\n\ngreetings &lt;- c(\"Guten Tag\", \"Hola\", hi)\ngreetings\n\n[1] \"Guten Tag\" \"Hola\"      \"hello\""
   },
   {
     "objectID": "slides/Day01_bsta511.html#using-functions",
     "href": "slides/Day01_bsta511.html#using-functions",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Using functions",
-    "text": "Using functions\n\nmean() is an example of a function\nfunctions have “arguments” that can be specified within the ()\n?mean in console will show help file for mean()\n\n\n\nFunction arguments specified by name:\n\nmean(x = 1:4)\n\n[1] 2.5\n\n\n\nseq(from = 1, to = 12, by = 3)\n\n[1]  1  4  7 10\n\nseq(by = 3, to = 12, from = 1)\n\n[1]  1  4  7 10\n\n\n\nFunction arguments not specified, but listed in order:\n\nmean(1:4)\n\n[1] 2.5\n\n\n\nseq(1, 12, 3)\n\n[1]  1  4  7 10"
+    "section": "💥 Using functions",
+    "text": "💥 Using functions\n\nmean() is an example of a function\nfunctions have “arguments” that can be specified within the ()\n?mean in console will show help file for mean()\n\n\n\nFunction arguments specified by name:\n\nmean(x = 1:4)\n\n[1] 2.5\n\n\n\nseq(from = 1, to = 12, by = 3)\n\n[1]  1  4  7 10\n\nseq(by = 3, to = 12, from = 1)\n\n[1]  1  4  7 10\n\n\n\nFunction arguments not specified, but listed in order:\n\nmean(1:4)\n\n[1] 2.5\n\n\n\nseq(1, 12, 3)\n\n[1]  1  4  7 10"
   },
   {
     "objectID": "slides/Day01_bsta511.html#common-console-errors-12",
     "href": "slides/Day01_bsta511.html#common-console-errors-12",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Common console errors (1/2)",
-    "text": "Common console errors (1/2)\nIncomplete commands\n\n\n\nWhen the console is waiting for a new command, the prompt line begins with &gt;\n\nIf the console prompt is +, then a previous command is incomplete\nYou can finish typing the command in the console window\n\n\n\nExample:\n\n&gt; 3 + (2*6\n+ )\n\n[1] 15"
+    "section": "💥 Common console errors (1/2)",
+    "text": "💥 Common console errors (1/2)\nIncomplete commands\n\n\n\nWhen the console is waiting for a new command, the prompt line begins with &gt;\n\nIf the console prompt is +, then a previous command is incomplete\nYou can finish typing the command in the console window\n\n\n\nExample:\n\n&gt; 3 + (2*6\n+ )\n\n[1] 15"
   },
   {
     "objectID": "slides/Day01_bsta511.html#common-console-errors-22",
     "href": "slides/Day01_bsta511.html#common-console-errors-22",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Common console errors (2/2)",
-    "text": "Common console errors (2/2)\nObject is not found\n\nThis happens when text is entered for a non-existent variable (object)\n\nExample:\n\nhello\n\nError:\n! object 'hello' not found\n\n\n\nCan be due to missing quotes\n\n\ninstall.packages(dplyr) \n\nError:\n! object 'dplyr' not found\n\n# correct code is: install.packages(\"dplyr\")"
+    "section": "💥 Common console errors (2/2)",
+    "text": "💥 Common console errors (2/2)\nObject is not found\n\nThis happens when text is entered for a non-existent variable (object)\n\nExample:\n\nhello\n\nError:\n! object 'hello' not found\n\n\n\nCan be due to missing quotes\n\n\ninstall.packages(dplyr) \n\nError:\n! object 'dplyr' not found\n\n# correct code is: install.packages(\"dplyr\")"
   },
   {
     "objectID": "slides/Day01_bsta511.html#example-creating-an-html-file",
@@ -4574,43 +4574,43 @@
     "objectID": "slides/Day01_bsta511.html#formatting-text",
     "href": "slides/Day01_bsta511.html#formatting-text",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Formatting text",
-    "text": "Formatting text\n\nbold, italics, superscripts & subscripts, strikethrough, verbatim, etc.\n\n\nText is formatted through a markup language called Markdown (Wikipedia)\n\nOther markup languages include html (webapges) and LaTeX (math)\nAll text formatting is specified via code\n“Markdown is a plain text format that is designed to be easy to write, and, even more importantly, easy to read” 1\n\nNewer versions of RStudio include a Visual editor as well that makes formatting text similar to using a word processor.\n\n\n\n\n\n\nFrom Quarto’s Markdown Basics webpage, https://quarto.org/docs/authoring/markdown-basics.html"
+    "section": "💥 Formatting text",
+    "text": "💥 Formatting text\n\nbold, italics, superscripts & subscripts, strikethrough, verbatim, etc.\n\n\nText is formatted through a markup language called Markdown (Wikipedia)\n\nOther markup languages include html (webapges) and LaTeX (math)\nAll text formatting is specified via code\n“Markdown is a plain text format that is designed to be easy to write, and, even more importantly, easy to read” 1\n\nNewer versions of RStudio include a Visual editor as well that makes formatting text similar to using a word processor.\n\n\n\n\n\n\nFrom Quarto’s Markdown Basics webpage, https://quarto.org/docs/authoring/markdown-basics.html"
   },
   {
     "objectID": "slides/Day01_bsta511.html#formatting-text-visual-editor",
     "href": "slides/Day01_bsta511.html#formatting-text-visual-editor",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Formatting text: Visual editor",
-    "text": "Formatting text: Visual editor\n\nUsing the Visual editor is similar to using a wordprocessor, such as Word\nKeyboard shortcuts usually work as well (shown for Mac below)"
+    "section": "💥 Formatting text: Visual editor",
+    "text": "💥 Formatting text: Visual editor\n\nUsing the Visual editor is similar to using a wordprocessor, such as Word\nKeyboard shortcuts usually work as well (shown for Mac below)"
   },
   {
     "objectID": "slides/Day01_bsta511.html#practice",
     "href": "slides/Day01_bsta511.html#practice",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Practice",
-    "text": "Practice\n\nPart 1\n\nUsing the visual editor, practice formatting text in your qmd file, such as making text bold, italicized, and in code format.\nAdd 1st, 2nd, and 3rd level headers\nAdd a list with a\n\nsub-list (bullet and/or numbered)\n\nAdd a table\nAdd whatever else you are interested in!\n\nPart 2\n\nSwitch back to the Source editor and examine the markdown code that was used for the formatting.\n\n\nQuestions:\n\nWhat went smoothly?\nWhat hurdles did you encounter?"
+    "section": "💥 Practice",
+    "text": "💥 Practice\n\nPart 1\n\nUsing the visual editor, practice formatting text in your qmd file, such as making text bold, italicized, and in code format.\nAdd 1st, 2nd, and 3rd level headers\nAdd a list with a\n\nsub-list (bullet and/or numbered)\n\nAdd a table\nAdd whatever else you are interested in!\n\nPart 2\n\nSwitch back to the Source editor and examine the markdown code that was used for the formatting.\n\n\nQuestions:\n\nWhat went smoothly?\nWhat hurdles did you encounter?"
   },
   {
     "objectID": "slides/Day01_bsta511.html#formatting-text-markdown",
     "href": "slides/Day01_bsta511.html#formatting-text-markdown",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Formatting text: Markdown",
-    "text": "Formatting text: Markdown\n\n\n\n\n\n\n\nMarkdown:\nOutput:\n\n\n\n\n*This text is in italics*, but _so is this text_.\nThis text is in italics, but so is this text.\n\n\n**Bold** also has __2 options__\nBold also has 2 options\n\n\n~~Should this be deleted?~~\nShould this be deleted?\n\n\nNeed^super^ or~sub~ scripts?\nNeedsuper orsub scripts?\n\n\n`Code is often formatted as verbatim`\nCode is often formatted as verbatim\n\n\n&gt;This is a block quote.\n\nThis is a block quote."
+    "section": "💥 Formatting text: Markdown",
+    "text": "💥 Formatting text: Markdown\n\n\n\n\n\n\n\nMarkdown:\nOutput:\n\n\n\n\n*This text is in italics*, but _so is this text_.\nThis text is in italics, but so is this text.\n\n\n**Bold** also has __2 options__\nBold also has 2 options\n\n\n~~Should this be deleted?~~\nShould this be deleted?\n\n\nNeed^super^ or~sub~ scripts?\nNeedsuper orsub scripts?\n\n\n`Code is often formatted as verbatim`\nCode is often formatted as verbatim\n\n\n&gt;This is a block quote.\n\nThis is a block quote."
   },
   {
     "objectID": "slides/Day01_bsta511.html#headers",
     "href": "slides/Day01_bsta511.html#headers",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Headers",
-    "text": "Headers\n\nOrganize your documents using headers to create sections and subsections\nUse # at the beginning of the line to create headers\n\n\n\nText in editor:\n\n\n\n\n\n\nOutput:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nMake sure there is no space before the #, and there IS a space after the # in order for the header to work properly."
+    "section": "💥 Headers",
+    "text": "💥 Headers\n\nOrganize your documents using headers to create sections and subsections\nUse # at the beginning of the line to create headers\n\n\n\nText in editor:\n\n\n\n\n\n\nOutput:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nMake sure there is no space before the #, and there IS a space after the # in order for the header to work properly."
   },
   {
     "objectID": "slides/Day01_bsta511.html#rstudio-tip",
     "href": "slides/Day01_bsta511.html#rstudio-tip",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "RStudio tip",
-    "text": "RStudio tip\nYou can easily navigate through your .qmd file if you use headers to outline your text"
+    "section": "💥 RStudio tip",
+    "text": "💥 RStudio tip\nYou can easily navigate through your .qmd file if you use headers to outline your text"
   },
   {
     "objectID": "slides/Day01_bsta511.html#code-chunks",
@@ -4651,8 +4651,8 @@
     "objectID": "slides/Day01_bsta511.html#useful-keyboard-shortcuts",
     "href": "slides/Day01_bsta511.html#useful-keyboard-shortcuts",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Useful keyboard shortcuts",
-    "text": "Useful keyboard shortcuts\nFull list of keyboard shortcuts\n \n\n\n\n\n\n\n\n\naction\nmac\nwindows/linux\n\n\n\n\nRun code in qmd (or script)\ncmd + enter\nctrl + enter\n\n\n&lt;-\noption + -\nalt + -\n\n\ninterrupt currently running command\nesc\nesc\n\n\nin console, retrieve previously run code\nup/down\nup/down\n\n\nkeyboard shortcut help\noption + shift + k\nalt + shift + k\n\n\n\n\n\nPractice\nTry typing code below in your qmd (with shortcut) and evaluating it:\n\ny &lt;- 5\ny"
+    "section": "💥 Useful keyboard shortcuts",
+    "text": "💥 Useful keyboard shortcuts\nFull list of keyboard shortcuts\n \n\n\n\n\n\n\n\n\naction\nmac\nwindows/linux\n\n\n\n\nRun code in qmd (or script)\ncmd + enter\nctrl + enter\n\n\n&lt;-\noption + -\nalt + -\n\n\ninterrupt currently running command\nesc\nesc\n\n\nin console, retrieve previously run code\nup/down\nup/down\n\n\nkeyboard shortcut help\noption + shift + k\nalt + shift + k\n\n\n\n\n\nPractice\nTry typing code below in your qmd (with shortcut) and evaluating it:\n\ny &lt;- 5\ny"
   },
   {
     "objectID": "slides/Day01_bsta511.html#yaml-metadata",
@@ -4672,8 +4672,8 @@
     "objectID": "slides/Day01_bsta511.html#change-the-output-file-type",
     "href": "slides/Day01_bsta511.html#change-the-output-file-type",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Change the output file type",
-    "text": "Change the output file type\n\n\n\nThe YAML specifies the format of the output file:\n\nhtml, Word, pdf, slides, website, book, etc.\n\nThis is done by changing the format: option\n\n\n\n\n\nIllustration by Alison Hill and Allison Horst, for RStudio.\n\n\n\n\n\n\n---\ntitle: \"My first Quarto file\"\nauthor: \"Meike\"\ndate: \"9/25/2023\"\nformat: html\neditor: visual\n---\n\n\n\n\n\n\n\n\n\nOutput format\nYAML\n\n\n\n\nhtml\nformat: html\n\n\nWord\nformat: docx\n\n\npdf1\nformat: pdf\n\n\nhtml slides\nformat: revealjs\n\n\nPPT slides\nformat: pptx\n\n\n\n\nrequires LaTeX installation"
+    "section": "💥 Change the output file type",
+    "text": "💥 Change the output file type\n\n\n\nThe YAML specifies the format of the output file:\n\nhtml, Word, pdf, slides, website, book, etc.\n\nThis is done by changing the format: option\n\n\n\n\n\nIllustration by Alison Hill and Allison Horst, for RStudio.\n\n\n\n\n\n\n---\ntitle: \"My first Quarto file\"\nauthor: \"Meike\"\ndate: \"9/25/2023\"\nformat: html\neditor: visual\n---\n\n\n\n\n\n\n\n\n\nOutput format\nYAML\n\n\n\n\nhtml\nformat: html\n\n\nWord\nformat: docx\n\n\npdf1\nformat: pdf\n\n\nhtml slides\nformat: revealjs\n\n\nPPT slides\nformat: pptx\n\n\n\n\nrequires LaTeX installation"
   },
   {
     "objectID": "slides/Day01_bsta511.html#section",
@@ -4686,15 +4686,15 @@
     "objectID": "slides/Day01_bsta511.html#you-will-get-frustrated-while-learning-r",
     "href": "slides/Day01_bsta511.html#you-will-get-frustrated-while-learning-r",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "You WILL get frustrated while learning R!",
-    "text": "You WILL get frustrated while learning R!\nFrom Garrett Grolemund’s Prologue of his book Hands-On Programming with R1:\n\nAs you learn to program, you are going to get frustrated. You are learning a new language, and it will take time to become fluent. But frustration is not just natural, it’s actually a positive sign that you should watch for. Frustration is your brain’s way of being lazy; it’s trying to get you to quit and go do something easy or fun. If you want to get physically fitter, you need to push your body even though it complains. If you want to get better at programming, you’ll need to push your brain. Recognize when you get frustrated and see it as a good thing: you’re now stretching yourself. Push yourself a little further every day, and you’ll soon be a confident programmer.\n\nGrolemund, Garrett. 2014. Hands-on Programming with R. O’Reilly. https://rstudio-education.github.io/hopr/"
+    "section": "💥 You WILL get frustrated while learning R!",
+    "text": "💥 You WILL get frustrated while learning R!\nFrom Garrett Grolemund’s Prologue of his book Hands-On Programming with R1:\n\nAs you learn to program, you are going to get frustrated. You are learning a new language, and it will take time to become fluent. But frustration is not just natural, it’s actually a positive sign that you should watch for. Frustration is your brain’s way of being lazy; it’s trying to get you to quit and go do something easy or fun. If you want to get physically fitter, you need to push your body even though it complains. If you want to get better at programming, you’ll need to push your brain. Recognize when you get frustrated and see it as a good thing: you’re now stretching yourself. Push yourself a little further every day, and you’ll soon be a confident programmer.\n\nGrolemund, Garrett. 2014. Hands-on Programming with R. O’Reilly. https://rstudio-education.github.io/hopr/"
   },
   {
     "objectID": "slides/Day01_bsta511.html#resources",
     "href": "slides/Day01_bsta511.html#resources",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Resources",
-    "text": "Resources\n\nOfficial Quarto guide: https://quarto.org/docs/guide/\n\nMarkdown basics: https://quarto.org/docs/authoring/markdown-basics.html\n\nText formatting, headings, linnks, images, lists, tables, equations, diagrams, page breaks, keyboard shortcuts, and more!\n\nCode blocks: https://quarto.org/docs/computations/r.html#code-blocks\n\nChunk options: https://quarto.org/docs/computations/r.html#chunk-options\n\n\nMine Çetinkaya-Rundel’s Quarto tip a day: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/\n\nHadley Wickham’s R for Data Science: https://r4ds.hadley.nz/ _ See Chapter 29 for Quarto"
+    "section": "💥 Resources",
+    "text": "💥 Resources\n\nOfficial Quarto guide: https://quarto.org/docs/guide/\n\nMarkdown basics: https://quarto.org/docs/authoring/markdown-basics.html\n\nText formatting, headings, linnks, images, lists, tables, equations, diagrams, page breaks, keyboard shortcuts, and more!\n\nCode blocks: https://quarto.org/docs/computations/r.html#code-blocks\n\nChunk options: https://quarto.org/docs/computations/r.html#chunk-options\n\n\nMine Çetinkaya-Rundel’s Quarto tip a day: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/\n\nHadley Wickham’s R for Data Science: https://r4ds.hadley.nz/ _ See Chapter 29 for Quarto"
   },
   {
     "objectID": "slides/Day14_bsta511.html#where-are-we",
@@ -7536,42 +7536,42 @@
     "href": "slides_md/Day01_bsta511_md.html",
     "title": "Day 1: Intro to R & Rstudio",
     "section": "",
-    "text": "Artwork by @allison_horst\n\n\n\n\n\n\n\nA programming language\nFocus on statistical modeling and data analysis\n\nimport data, manipulate data, run statistics, make plots\n\nUseful for data science\nGreat visualizations\nAlso useful for most anything else you’d want to tell a computer to do\nInterfaces with other languages i.e. python, C++, bash\n\n\n\n\n\nFor the history and details: Wikipedia\n\nan interpreted language (run it through a command line)\nprocedural programming with functions\nWhy “R”?? Scheme inspired S (invented at Bell Labs in 1976) which inspired R since 1st letters of original authors (free and open source! in 2000)\n\n\n\n\n\n\nR is a programming language\n\nRStudio is an integrated development environment (IDE)\n= an interface to use R (with perks!)\n\n\n\n\n\nModern Dive\n\n\n\n\n\n\n\n\nModern Dive\n\n\n\n\n\n\n\n\nEmma Rand\n\n\nRead more about RStudio’s layout in Section 3.4 of “Getting Used to R, RStudio, and R Markdown” (Ismay and Kennedy 2016)"
+    "text": "For Day 1:\n\nPlease have R & RStudio installed for class\nComplete Intro to R (PUBH 523) lessons below before class:\n\nLesson 1: Welcome\nLesson 3: Download + Intro to R & RStudio\nLesson 4: Basics\nLesson 6: Quarto and .qmd’s\n\n\nPages in this slide deck with content not in the PUBH 523 slides are marked with 💥 in the header"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#what-is-r",
     "href": "slides_md/Day01_bsta511_md.html#what-is-r",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "",
-    "text": "A programming language\nFocus on statistical modeling and data analysis\n\nimport data, manipulate data, run statistics, make plots\n\nUseful for data science\nGreat visualizations\nAlso useful for most anything else you’d want to tell a computer to do\nInterfaces with other languages i.e. python, C++, bash\n\n\n\n\n\nFor the history and details: Wikipedia\n\nan interpreted language (run it through a command line)\nprocedural programming with functions\nWhy “R”?? Scheme inspired S (invented at Bell Labs in 1976) which inspired R since 1st letters of original authors (free and open source! in 2000)"
+    "section": "What is R?",
+    "text": "What is R?\n\n\n\nA programming language\nFocus on statistical modeling and data analysis\n\nimport data, manipulate data, run statistics, make plots\n\nUseful for data science\nGreat visualizations\nAlso useful for most anything else you’d want to tell a computer to do\nInterfaces with other languages i.e. python, C++, bash\n\n\n\n\n\nFor the history and details: Wikipedia\n\nan interpreted language (run it through a command line)\nprocedural programming with functions\nWhy “R”?? Scheme inspired S (invented at Bell Labs in 1976) which inspired R since 1st letters of original authors (free and open source! in 2000)"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#what-is-rstudio",
     "href": "slides_md/Day01_bsta511_md.html#what-is-rstudio",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "",
-    "text": "R is a programming language\n\nRStudio is an integrated development environment (IDE)\n= an interface to use R (with perks!)\n\n\n\n\n\nModern Dive"
+    "section": "What is RStudio?",
+    "text": "What is RStudio?\n\n\nR is a programming language\n\nRStudio is an integrated development environment (IDE)\n= an interface to use R (with perks!)\n\n\n\n\n\nModern Dive"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#open-rstudio-on-your-computer-not-r",
     "href": "slides_md/Day01_bsta511_md.html#open-rstudio-on-your-computer-not-r",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "",
-    "text": "Modern Dive"
+    "section": "Open RStudio on your computer (not R!)",
+    "text": "Open RStudio on your computer (not R!)\n\n\n\nModern Dive"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#rstudio-anatomy",
     "href": "slides_md/Day01_bsta511_md.html#rstudio-anatomy",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "",
-    "text": "Emma Rand\n\n\nRead more about RStudio’s layout in Section 3.4 of “Getting Used to R, RStudio, and R Markdown” (Ismay and Kennedy 2016)"
+    "section": "RStudio anatomy",
+    "text": "RStudio anatomy\n\n\n\nEmma Rand\n\n\nRead more about RStudio’s layout in Section 3.4 of “Getting Used to R, RStudio, and R Markdown” (Ismay and Kennedy 2016)"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#coding-in-the-console",
     "href": "slides_md/Day01_bsta511_md.html#coding-in-the-console",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Coding in the console",
-    "text": "Coding in the console\n\n\nWhen you first open R, the console should be empty.\n\n\n\n\n\n\nTyping and executing code in the console \n\nType code in the console (blue text)\nPress return to execute the code\nOutput shown below in black"
+    "section": "💥 Coding in the console",
+    "text": "💥 Coding in the console\n\n\nWhen you first open R, the console should be empty.\n\n\n\n\n\n\nTyping and executing code in the console \n\nType code in the console (blue text)\nPress return to execute the code\nOutput shown below in black"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#math-calculations-using-r",
@@ -7584,43 +7584,43 @@
     "objectID": "slides_md/Day01_bsta511_md.html#variables-saved-r-objects",
     "href": "slides_md/Day01_bsta511_md.html#variables-saved-r-objects",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Variables (saved R objects)",
-    "text": "Variables (saved R objects)\nVariables are used to store data, figures, model output, etc.\n\n\n\nCan assign a variable using either = or &lt;-\n\nUsing &lt;- is preferable\n\n\nAssign just one value:\n\nx = 5\nx\n\n[1] 5\n\nx &lt;- 5\nx\n\n[1] 5\n\n\n\n\n\nAssign a vector of values\n\nConsecutive integers using :\n\n\na &lt;- 3:10\na\n\n[1]  3  4  5  6  7  8  9 10\n\n\n\nConcatenate a string of numbers\n\n\nb &lt;- c(5, 12, 2, 100, 8)\nb\n\n[1]   5  12   2 100   8"
+    "section": "💥 Variables (saved R objects)",
+    "text": "💥 Variables (saved R objects)\nVariables are used to store data, figures, model output, etc.\n\n\n\nCan assign a variable using either = or &lt;-\n\nUsing &lt;- is preferable\n\n\nAssign just one value:\n\nx = 5\nx\n\n[1] 5\n\nx &lt;- 5\nx\n\n[1] 5\n\n\n\n\n\nAssign a vector of values\n\nConsecutive integers using :\n\n\na &lt;- 3:10\na\n\n[1]  3  4  5  6  7  8  9 10\n\n\n\nConcatenate a string of numbers\n\n\nb &lt;- c(5, 12, 2, 100, 8)\nb\n\n[1]   5  12   2 100   8"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#doing-math-with-variables",
     "href": "slides_md/Day01_bsta511_md.html#doing-math-with-variables",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Doing math with variables",
-    "text": "Doing math with variables\n\n\nMath using variables with just one value\n\nx &lt;- 5\nx\n\n[1] 5\n\nx + 3\n\n[1] 8\n\ny &lt;- x^2\ny\n\n[1] 25\n\n\n\nMath on vectors of values:\nelement-wise computation\n\na &lt;- 3:6\na\n\n[1] 3 4 5 6\n\na+2; a*3\n\n[1] 5 6 7 8\n\n\n[1]  9 12 15 18\n\na*a\n\n[1]  9 16 25 36"
+    "section": "💥 Doing math with variables",
+    "text": "💥 Doing math with variables\n\n\nMath using variables with just one value\n\nx &lt;- 5\nx\n\n[1] 5\n\nx + 3\n\n[1] 8\n\ny &lt;- x^2\ny\n\n[1] 25\n\n\n\nMath on vectors of values:\nelement-wise computation\n\na &lt;- 3:6\na\n\n[1] 3 4 5 6\n\na+2; a*3\n\n[1] 5 6 7 8\n\n\n[1]  9 12 15 18\n\na*a\n\n[1]  9 16 25 36"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#variables-can-include-text-characters",
     "href": "slides_md/Day01_bsta511_md.html#variables-can-include-text-characters",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Variables can include text (characters)",
-    "text": "Variables can include text (characters)\n\nhi &lt;- \"hello\"\nhi\n\n[1] \"hello\"\n\ngreetings &lt;- c(\"Guten Tag\", \"Hola\", hi)\ngreetings\n\n[1] \"Guten Tag\" \"Hola\"      \"hello\""
+    "section": "💥 Variables can include text (characters)",
+    "text": "💥 Variables can include text (characters)\n\nhi &lt;- \"hello\"\nhi\n\n[1] \"hello\"\n\ngreetings &lt;- c(\"Guten Tag\", \"Hola\", hi)\ngreetings\n\n[1] \"Guten Tag\" \"Hola\"      \"hello\""
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#using-functions",
     "href": "slides_md/Day01_bsta511_md.html#using-functions",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Using functions",
-    "text": "Using functions\n\nmean() is an example of a function\nfunctions have “arguments” that can be specified within the ()\n?mean in console will show help file for mean()\n\n\n\nFunction arguments specified by name:\n\nmean(x = 1:4)\n\n[1] 2.5\n\n\n\nseq(from = 1, to = 12, by = 3)\n\n[1]  1  4  7 10\n\nseq(by = 3, to = 12, from = 1)\n\n[1]  1  4  7 10\n\n\n\nFunction arguments not specified, but listed in order:\n\nmean(1:4)\n\n[1] 2.5\n\n\n\nseq(1, 12, 3)\n\n[1]  1  4  7 10"
+    "section": "💥 Using functions",
+    "text": "💥 Using functions\n\nmean() is an example of a function\nfunctions have “arguments” that can be specified within the ()\n?mean in console will show help file for mean()\n\n\n\nFunction arguments specified by name:\n\nmean(x = 1:4)\n\n[1] 2.5\n\n\n\nseq(from = 1, to = 12, by = 3)\n\n[1]  1  4  7 10\n\nseq(by = 3, to = 12, from = 1)\n\n[1]  1  4  7 10\n\n\n\nFunction arguments not specified, but listed in order:\n\nmean(1:4)\n\n[1] 2.5\n\n\n\nseq(1, 12, 3)\n\n[1]  1  4  7 10"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#common-console-errors-12",
     "href": "slides_md/Day01_bsta511_md.html#common-console-errors-12",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Common console errors (1/2)",
-    "text": "Common console errors (1/2)\nIncomplete commands\n\n\n\nWhen the console is waiting for a new command, the prompt line begins with &gt;\n\nIf the console prompt is +, then a previous command is incomplete\nYou can finish typing the command in the console window\n\n\n\nExample:\n\n&gt; 3 + (2*6\n+ )\n\n[1] 15"
+    "section": "💥 Common console errors (1/2)",
+    "text": "💥 Common console errors (1/2)\nIncomplete commands\n\n\n\nWhen the console is waiting for a new command, the prompt line begins with &gt;\n\nIf the console prompt is +, then a previous command is incomplete\nYou can finish typing the command in the console window\n\n\n\nExample:\n\n&gt; 3 + (2*6\n+ )\n\n[1] 15"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#common-console-errors-22",
     "href": "slides_md/Day01_bsta511_md.html#common-console-errors-22",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Common console errors (2/2)",
-    "text": "Common console errors (2/2)\nObject is not found\n\nThis happens when text is entered for a non-existent variable (object)\n\nExample:\n\nhello\n\nError:\n! object 'hello' not found\n\n\n\nCan be due to missing quotes\n\n\ninstall.packages(dplyr) \n\nError:\n! object 'dplyr' not found\n\n# correct code is: install.packages(\"dplyr\")"
+    "section": "💥 Common console errors (2/2)",
+    "text": "💥 Common console errors (2/2)\nObject is not found\n\nThis happens when text is entered for a non-existent variable (object)\n\nExample:\n\nhello\n\nError:\n! object 'hello' not found\n\n\n\nCan be due to missing quotes\n\n\ninstall.packages(dplyr) \n\nError:\n! object 'dplyr' not found\n\n# correct code is: install.packages(\"dplyr\")"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#example-creating-an-html-file",
@@ -7675,43 +7675,43 @@
     "objectID": "slides_md/Day01_bsta511_md.html#formatting-text",
     "href": "slides_md/Day01_bsta511_md.html#formatting-text",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Formatting text",
-    "text": "Formatting text\n\nbold, italics, superscripts & subscripts, strikethrough, verbatim, etc.\n\n\nText is formatted through a markup language called Markdown (Wikipedia)\n\nOther markup languages include html (webapges) and LaTeX (math)\nAll text formatting is specified via code\n“Markdown is a plain text format that is designed to be easy to write, and, even more importantly, easy to read” 1\n\nNewer versions of RStudio include a Visual editor as well that makes formatting text similar to using a word processor."
+    "section": "💥 Formatting text",
+    "text": "💥 Formatting text\n\nbold, italics, superscripts & subscripts, strikethrough, verbatim, etc.\n\n\nText is formatted through a markup language called Markdown (Wikipedia)\n\nOther markup languages include html (webapges) and LaTeX (math)\nAll text formatting is specified via code\n“Markdown is a plain text format that is designed to be easy to write, and, even more importantly, easy to read” 1\n\nNewer versions of RStudio include a Visual editor as well that makes formatting text similar to using a word processor."
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#formatting-text-visual-editor",
     "href": "slides_md/Day01_bsta511_md.html#formatting-text-visual-editor",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Formatting text: Visual editor",
-    "text": "Formatting text: Visual editor\n\nUsing the Visual editor is similar to using a wordprocessor, such as Word\nKeyboard shortcuts usually work as well (shown for Mac below)"
+    "section": "💥 Formatting text: Visual editor",
+    "text": "💥 Formatting text: Visual editor\n\nUsing the Visual editor is similar to using a wordprocessor, such as Word\nKeyboard shortcuts usually work as well (shown for Mac below)"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#practice",
     "href": "slides_md/Day01_bsta511_md.html#practice",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Practice",
-    "text": "Practice\n\nPart 1\n\nUsing the visual editor, practice formatting text in your qmd file, such as making text bold, italicized, and in code format.\nAdd 1st, 2nd, and 3rd level headers\nAdd a list with a\n\nsub-list (bullet and/or numbered)\n\nAdd a table\nAdd whatever else you are interested in!\n\nPart 2\n\nSwitch back to the Source editor and examine the markdown code that was used for the formatting.\n\n\nQuestions:\n\nWhat went smoothly?\nWhat hurdles did you encounter?"
+    "section": "💥 Practice",
+    "text": "💥 Practice\n\nPart 1\n\nUsing the visual editor, practice formatting text in your qmd file, such as making text bold, italicized, and in code format.\nAdd 1st, 2nd, and 3rd level headers\nAdd a list with a\n\nsub-list (bullet and/or numbered)\n\nAdd a table\nAdd whatever else you are interested in!\n\nPart 2\n\nSwitch back to the Source editor and examine the markdown code that was used for the formatting.\n\n\nQuestions:\n\nWhat went smoothly?\nWhat hurdles did you encounter?"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#formatting-text-markdown",
     "href": "slides_md/Day01_bsta511_md.html#formatting-text-markdown",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Formatting text: Markdown",
-    "text": "Formatting text: Markdown\n\n\n\n\n\n\n\nMarkdown:\nOutput:\n\n\n\n\n*This text is in italics*, but _so is this text_.\nThis text is in italics, but so is this text.\n\n\n**Bold** also has __2 options__\nBold also has 2 options\n\n\n~~Should this be deleted?~~\nShould this be deleted?\n\n\nNeed^super^ or~sub~ scripts?\nNeedsuper orsub scripts?\n\n\n`Code is often formatted as verbatim`\nCode is often formatted as verbatim\n\n\n&gt;This is a block quote.\n\nThis is a block quote."
+    "section": "💥 Formatting text: Markdown",
+    "text": "💥 Formatting text: Markdown\n\n\n\n\n\n\n\nMarkdown:\nOutput:\n\n\n\n\n*This text is in italics*, but _so is this text_.\nThis text is in italics, but so is this text.\n\n\n**Bold** also has __2 options__\nBold also has 2 options\n\n\n~~Should this be deleted?~~\nShould this be deleted?\n\n\nNeed^super^ or~sub~ scripts?\nNeedsuper orsub scripts?\n\n\n`Code is often formatted as verbatim`\nCode is often formatted as verbatim\n\n\n&gt;This is a block quote.\n\nThis is a block quote."
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#headers",
     "href": "slides_md/Day01_bsta511_md.html#headers",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Headers",
-    "text": "Headers\n\nOrganize your documents using headers to create sections and subsections\nUse # at the beginning of the line to create headers\n\n\n\nText in editor:\n\n\n\n\n\n\nOutput:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nMake sure there is no space before the #, and there IS a space after the # in order for the header to work properly."
+    "section": "💥 Headers",
+    "text": "💥 Headers\n\nOrganize your documents using headers to create sections and subsections\nUse # at the beginning of the line to create headers\n\n\n\nText in editor:\n\n\n\n\n\n\nOutput:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nMake sure there is no space before the #, and there IS a space after the # in order for the header to work properly."
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#rstudio-tip",
     "href": "slides_md/Day01_bsta511_md.html#rstudio-tip",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "RStudio tip",
-    "text": "RStudio tip\nYou can easily navigate through your .qmd file if you use headers to outline your text"
+    "section": "💥 RStudio tip",
+    "text": "💥 RStudio tip\nYou can easily navigate through your .qmd file if you use headers to outline your text"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#code-chunks",
@@ -7752,8 +7752,8 @@
     "objectID": "slides_md/Day01_bsta511_md.html#useful-keyboard-shortcuts",
     "href": "slides_md/Day01_bsta511_md.html#useful-keyboard-shortcuts",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Useful keyboard shortcuts",
-    "text": "Useful keyboard shortcuts\nFull list of keyboard shortcuts\n \n\n\n\n\n\n\n\n\naction\nmac\nwindows/linux\n\n\n\n\nRun code in qmd (or script)\ncmd + enter\nctrl + enter\n\n\n&lt;-\noption + -\nalt + -\n\n\ninterrupt currently running command\nesc\nesc\n\n\nin console, retrieve previously run code\nup/down\nup/down\n\n\nkeyboard shortcut help\noption + shift + k\nalt + shift + k\n\n\n\n\n\n\nPractice\nTry typing code below in your qmd (with shortcut) and evaluating it:\n\ny &lt;- 5\ny"
+    "section": "💥 Useful keyboard shortcuts",
+    "text": "💥 Useful keyboard shortcuts\nFull list of keyboard shortcuts\n \n\n\n\n\n\n\n\n\naction\nmac\nwindows/linux\n\n\n\n\nRun code in qmd (or script)\ncmd + enter\nctrl + enter\n\n\n&lt;-\noption + -\nalt + -\n\n\ninterrupt currently running command\nesc\nesc\n\n\nin console, retrieve previously run code\nup/down\nup/down\n\n\nkeyboard shortcut help\noption + shift + k\nalt + shift + k\n\n\n\n\n\n\nPractice\nTry typing code below in your qmd (with shortcut) and evaluating it:\n\ny &lt;- 5\ny"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#yaml-metadata",
@@ -7773,8 +7773,8 @@
     "objectID": "slides_md/Day01_bsta511_md.html#change-the-output-file-type",
     "href": "slides_md/Day01_bsta511_md.html#change-the-output-file-type",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Change the output file type",
-    "text": "Change the output file type\n\n\n\nThe YAML specifies the format of the output file:\n\nhtml, Word, pdf, slides, website, book, etc.\n\nThis is done by changing the format: option\n\n\n\n\n\nIllustration by Alison Hill and Allison Horst, for RStudio.\n\n\n\n\n\n\n\n---\ntitle: \"My first Quarto file\"\nauthor: \"Meike\"\ndate: \"9/25/2023\"\nformat: html\neditor: visual\n---\n\n\n\n\n\n\n\n\n\nOutput format\nYAML\n\n\n\n\nhtml\nformat: html\n\n\nWord\nformat: docx\n\n\npdf2\nformat: pdf\n\n\nhtml slides\nformat: revealjs\n\n\nPPT slides\nformat: pptx"
+    "section": "💥 Change the output file type",
+    "text": "💥 Change the output file type\n\n\n\nThe YAML specifies the format of the output file:\n\nhtml, Word, pdf, slides, website, book, etc.\n\nThis is done by changing the format: option\n\n\n\n\n\nIllustration by Alison Hill and Allison Horst, for RStudio.\n\n\n\n\n\n\n\n---\ntitle: \"My first Quarto file\"\nauthor: \"Meike\"\ndate: \"9/25/2023\"\nformat: html\neditor: visual\n---\n\n\n\n\n\n\n\n\n\nOutput format\nYAML\n\n\n\n\nhtml\nformat: html\n\n\nWord\nformat: docx\n\n\npdf2\nformat: pdf\n\n\nhtml slides\nformat: revealjs\n\n\nPPT slides\nformat: pptx"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#section",
@@ -7787,15 +7787,15 @@
     "objectID": "slides_md/Day01_bsta511_md.html#you-will-get-frustrated-while-learning-r",
     "href": "slides_md/Day01_bsta511_md.html#you-will-get-frustrated-while-learning-r",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "You WILL get frustrated while learning R!",
-    "text": "You WILL get frustrated while learning R!\nFrom Garrett Grolemund’s Prologue of his book Hands-On Programming with R3:\n\nAs you learn to program, you are going to get frustrated. You are learning a new language, and it will take time to become fluent. But frustration is not just natural, it’s actually a positive sign that you should watch for. Frustration is your brain’s way of being lazy; it’s trying to get you to quit and go do something easy or fun. If you want to get physically fitter, you need to push your body even though it complains. If you want to get better at programming, you’ll need to push your brain. Recognize when you get frustrated and see it as a good thing: you’re now stretching yourself. Push yourself a little further every day, and you’ll soon be a confident programmer."
+    "section": "💥 You WILL get frustrated while learning R!",
+    "text": "💥 You WILL get frustrated while learning R!\nFrom Garrett Grolemund’s Prologue of his book Hands-On Programming with R3:\n\nAs you learn to program, you are going to get frustrated. You are learning a new language, and it will take time to become fluent. But frustration is not just natural, it’s actually a positive sign that you should watch for. Frustration is your brain’s way of being lazy; it’s trying to get you to quit and go do something easy or fun. If you want to get physically fitter, you need to push your body even though it complains. If you want to get better at programming, you’ll need to push your brain. Recognize when you get frustrated and see it as a good thing: you’re now stretching yourself. Push yourself a little further every day, and you’ll soon be a confident programmer."
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#resources",
     "href": "slides_md/Day01_bsta511_md.html#resources",
     "title": "Day 1: Intro to R & Rstudio",
-    "section": "Resources",
-    "text": "Resources\n\nOfficial Quarto guide: https://quarto.org/docs/guide/\n\nMarkdown basics: https://quarto.org/docs/authoring/markdown-basics.html\n\nText formatting, headings, linnks, images, lists, tables, equations, diagrams, page breaks, keyboard shortcuts, and more!\n\nCode blocks: https://quarto.org/docs/computations/r.html#code-blocks\n\nChunk options: https://quarto.org/docs/computations/r.html#chunk-options\n\n\nMine Çetinkaya-Rundel’s Quarto tip a day: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/\n\nHadley Wickham’s R for Data Science: https://r4ds.hadley.nz/ _ See Chapter 29 for Quarto"
+    "section": "💥 Resources",
+    "text": "💥 Resources\n\nOfficial Quarto guide: https://quarto.org/docs/guide/\n\nMarkdown basics: https://quarto.org/docs/authoring/markdown-basics.html\n\nText formatting, headings, linnks, images, lists, tables, equations, diagrams, page breaks, keyboard shortcuts, and more!\n\nCode blocks: https://quarto.org/docs/computations/r.html#code-blocks\n\nChunk options: https://quarto.org/docs/computations/r.html#chunk-options\n\n\nMine Çetinkaya-Rundel’s Quarto tip a day: https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/\n\nHadley Wickham’s R for Data Science: https://r4ds.hadley.nz/ _ See Chapter 29 for Quarto"
   },
   {
     "objectID": "slides_md/Day01_bsta511_md.html#footnotes",
@@ -10057,5 +10057,19 @@
     "title": "Day 11: Inference for difference in means from two independent samples and Power (Sections 5.3, 5.4)",
     "section": "More software for power and sample size calculations: PASS",
     "text": "More software for power and sample size calculations: PASS\n\nPASS is a very powerful (& expensive) software that does power and sample size calculations for many advanced statistical modeling techniques.\n\nEven if you don’t have access to PASS, their documentation is very good and free online.\nDocumentation includes formulas and references.\nPASS documentation for powering means\n\nOne mean, paired means, two independent means\n\n\nOne-sample t-test documentation: https://www.ncss.com/wp-content/themes/ncss/pdf/Procedures/PASS/One-Sample_T-Tests.pdf"
+  },
+  {
+    "objectID": "slides/Day01_bsta511.html#how-are-these-slides-different-from-the-pubh-523-slides",
+    "href": "slides/Day01_bsta511.html#how-are-these-slides-different-from-the-pubh-523-slides",
+    "title": "Day 1: Intro to R & Rstudio",
+    "section": "💥 How are these slides different from the PUBH 523 slides?",
+    "text": "💥 How are these slides different from the PUBH 523 slides?\n\nFor Day 1:\n\nPlease have R & RStudio installed for class\nComplete Intro to R (PUBH 523) lessons below before class:\n\nLesson 1: Welcome\nLesson 3: Download + Intro to R & RStudio\nLesson 4: Basics\nLesson 6: Quarto and .qmd’s\n\n\nPages in this slide deck with content not in the PUBH 523 slides are marked with 💥 in the header"
+  },
+  {
+    "objectID": "slides_md/Day01_bsta511_md.html#how-are-these-slides-different-from-the-pubh-523-slides",
+    "href": "slides_md/Day01_bsta511_md.html#how-are-these-slides-different-from-the-pubh-523-slides",
+    "title": "Day 1: Intro to R & Rstudio",
+    "section": "",
+    "text": "For Day 1:\n\nPlease have R & RStudio installed for class\nComplete Intro to R (PUBH 523) lessons below before class:\n\nLesson 1: Welcome\nLesson 3: Download + Intro to R & RStudio\nLesson 4: Basics\nLesson 6: Quarto and .qmd’s\n\n\nPages in this slide deck with content not in the PUBH 523 slides are marked with 💥 in the header"
   }
 ]
