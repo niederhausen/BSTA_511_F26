@@ -5197,8 +5197,8 @@
     "objectID": "weeks/week_02.html#overview-of-week-2",
     "href": "weeks/week_02.html#overview-of-week-2",
     "title": "Week 2",
-    "section": "Overview of Week 2",
-    "text": "Overview of Week 2\n\n\nDay 2\n\nData Collection Principles & Intro to Data (Fall 2023: Day 2)\n\nBook sections 1.1-1.3\n\nPractice Problems\n\nTextbook: 1.8 (p. 77), 1.20 (p. 80)\n\n\n\n\nDay 3\n\nSummarizing Numerical Data (Fall 2023: Day 2)\n\nBook section 1.4\n\nProbability (Fall 2023: Day 4)\n\nSections 2.1 - 2.2.4\n\nPractice Problems\n\nFill in robust estimate table on slide 46 of Summarizing Numerical Data (Fall 2023: Day 2 slides)\nDo Example 2.6 parts (1)-(4) on pg 8 of Probability (Fall 2023: Day 4) slides"
+    "section": "",
+    "text": "Data Collection Principles & Intro to Data (Fall 2023: Day 2)\n\nBook sections 1.1-1.3\n\nDay 2 Practice Problems\n\nSee PP section below.\n\n\n\n\n\n\nSummarizing Numerical Data (Fall 2023: Day 2)\n\nBook section 1.4\n\nProbability (Fall 2023: Day 4)\n\nSections 2.1 - 2.2.4\n\nDay 3 Practice Problems\n\nSee PP section below."
   },
   {
     "objectID": "weeks/week_02.html#slides-recordings",
@@ -5212,14 +5212,14 @@
     "href": "weeks/week_02.html#class-discussion",
     "title": "Week 2",
     "section": "Class discussion",
-    "text": "Class discussion\n\nDay02\nDuring class you will be working in groups discussing the following:\n\nPractice Problems\n\nTextbook: 1.8 (p. 77), 1.20 (p. 80)\n\nFrom HW 1\n\nNon-book exercise NBE 2: Tylenol during pregnancy?\nTextbook: 1.12\nR2: BRFSS - parts a)-b)\n\n\n\n\nDay03\n\nPractice Problems\n\nSummarizing Numerical Data (Fall 2023: Day 2 slides)\n\nFill in robust estimate table on slide 46\n\nProbability (Fall 2023: Day 4)\n\nExample 2.6 parts (1)-(4) on pg 8 of slides\n\n\nSummarizing Numerical Data (Fall 2023: Day 2)\n\nFrom HW 1\n\nBook problem: 1.31\nR2: BRFSS - parts c)-f)\n\n\nProbability (Fall 2023: Day 4)\n\nExample 2.3 on pg 4 of slides\nExample 2.6 parts (5)-(7) on pg 9 of slides\nFrom HW 1\n\nBook problems: 2.6,2.14\n\n\nAnswers to Examples 2.3 & 2.6 (added after class; link to file on Brightspace)"
+    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay02\n\nPractice Problems listed above\nFrom HW 1\n\nNon-book exercise NBE 2: Tylenol during pregnancy?\nTextbook: 1.12\nR2: BRFSS - parts a)-b)\n\n\n\n\nDay03\n\nPractice Problems listed above\nSummarizing Numerical Data (Fall 2023: Day 2)\n\nFrom HW 1\n\nBook problem: 1.31\nR2: BRFSS - parts c)-f)\n\n\nProbability (Fall 2023: Day 4)\n\nExample 2.3 on pg 4 of slides\nExample 2.6 parts (5)-(7) on pg 9 of slides\nFrom HW 1\n\nBook problems: 2.6,2.14"
   },
   {
     "objectID": "weeks/week_02.html#homework",
     "href": "weeks/week_02.html#homework",
     "title": "Week 2",
     "section": "Homework",
-    "text": "Homework\n\nHW 1 due on Sat, 10/10\n\nCovers Days 1-3"
+    "text": "Homework\n\nHW 1 link coming soon! due on Sat, 10/10\n\nCovers Days 1-3"
   },
   {
     "objectID": "homework_solutions.html",
@@ -5232,8 +5232,8 @@
     "objectID": "weeks/week_01.html#general-info",
     "href": "weeks/week_01.html#general-info",
     "title": "Week 1",
-    "section": "General info",
-    "text": "General info\n\nSyllabus on Brightspace\nWeek 1 info on Brightspace\n\nIncludes link to background survey"
+    "section": "",
+    "text": "Syllabus on Brightspace\nWeek 1 info on Brightspace\n\nIncludes link to background survey"
   },
   {
     "objectID": "weeks/week_01.html#overview-of-week-1",
@@ -5254,7 +5254,7 @@
     "href": "weeks/week_01.html#homework",
     "title": "Week 1",
     "section": "Homework",
-    "text": "Homework\n\nHW 1 due on Sat, 10/10\n\nCovers Days 1-3"
+    "text": "Homework\n\nHW 1 link coming soon! due on Sat, 10/10\n\nCovers Days 1-3"
   },
   {
     "objectID": "weeks/week_01.html#recordings",
@@ -10071,5 +10071,26 @@
     "title": "Day 1: Intro to R & Rstudio",
     "section": "",
     "text": "For Day 1:\n\nPlease have R & RStudio installed for class\nComplete Intro to R (PUBH 523) lessons below before class:\n\nLesson 1: Welcome\nLesson 3: Download + Intro to R & RStudio\nLesson 4: Basics\nLesson 6: Quarto and .qmd’s\n\n\nPages in this slide deck with content not in the PUBH 523 slides are marked with 💥 in the header"
+  },
+  {
+    "objectID": "weeks/week_01.html",
+    "href": "weeks/week_01.html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Syllabus on Brightspace\nWeek 1 info on Brightspace\n\nIncludes link to background survey"
+  },
+  {
+    "objectID": "weeks/week_02.html#practice-problems",
+    "href": "weeks/week_02.html#practice-problems",
+    "title": "Week 2",
+    "section": "Practice Problems",
+    "text": "Practice Problems\n\nDay 2 PP\n\nIn order to practice using Quarto, write up your answers in a Quarto file, render it, and turn in both the qmd and html files.\n\nInclude headers for each of the questions so that they can be easily found.\n\nTextbook:\n\n1.8 (p. 77)\n1.20 (p. 80)\n\n\n\n\nDay 3 PP\n\nFill in robust estimate table on slide 46 of Summarizing Numerical Data (Fall 2023: Day 2 slides)\nDo Example 2.6 parts (1)-(4) on pg 8 of Probability (Fall 2023: Day 4) slides"
+  },
+  {
+    "objectID": "weeks/week_02.html",
+    "href": "weeks/week_02.html",
+    "title": "Week 2",
+    "section": "",
+    "text": "Data Collection Principles & Intro to Data (Fall 2023: Day 2)\n\nBook sections 1.1-1.3\n\nDay 2 Practice Problems\n\nSee PP section below.\n\n\n\n\n\n\nSummarizing Numerical Data (Fall 2023: Day 2)\n\nBook section 1.4\n\nProbability (Fall 2023: Day 4)\n\nSections 2.1 - 2.2.4\n\nDay 3 Practice Problems\n\nSee PP section below."
   }
 ]

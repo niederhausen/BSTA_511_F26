@@ -13,7 +13,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-## [Page not yet updated]{style="color:darkorange"}
+<!-- ## [Page not yet updated]{style="color:darkorange"} -->
 
 ## Overview of Week 2
 
@@ -23,8 +23,9 @@ editor_options:
 
 -   Data Collection Principles & Intro to Data (**Fall 2023: Day 2**)
     -   Book sections 1.1-1.3
--   **Practice Problems**
-    -   Textbook: 1.8 (p. 77), 1.20 (p. 80)
+-   [**Day 2 Practice Problems**]{style="color:darkorange"}
+    -   See [PP section](#day2-pp) below.
+
 :::
 
 ::: g-col-6
@@ -34,9 +35,9 @@ editor_options:
     -   Book section 1.4
 -   Probability (**Fall 2023: Day 4**)
     -   Sections 2.1 - 2.2.4
--   **Practice Problems**
-    - Fill in [robust estimate table](https://niederhausen.github.io/BSTA_511_F26/slides/Day02_bsta511.html#/robust-estimates) on slide 46 of Summarizing Numerical Data (Fall 2023: Day 2 slides)
-    - Do Example 2.6 parts (1)-(4) on pg 8 of [Probability](https://niederhausen.github.io/BSTA_511_F26/LaTeX_slides/Day04_bsta511.pdf) (**Fall 2023: Day 4**) slides
+-   [**Day 3 Practice Problems**]{style="color:darkorange"}
+    -   See [PP section](#day3-pp) below.
+
 :::
 :::::
 
@@ -57,14 +58,30 @@ editor_options:
 : {.striped .hover tbl-colwidths="\[3, 10, 8, 5, 5, 5, 6, 6, 5, 5\]"}
 
 
-## Class discussion
+## Practice Problems
 
-### Day02
+### [Day 2 PP]{style="color:darkorange"} {#day2-pp}
+
+-   In order to practice using Quarto, write up your answers in a Quarto file, render it, and turn in both the qmd and html files.
+    -   Include headers for each of the questions so that they can be easily found. 
+-   Textbook: 
+    -   1.8 (p. 77)
+    -   1.20 (p. 80)
+
+
+### [Day 3 PP]{style="color:darkorange"} {#day3-pp}
+
+- Fill in [robust estimate table](https://niederhausen.github.io/BSTA_511_F26/slides/Day02_bsta511.html#/robust-estimates) on slide 46 of Summarizing Numerical Data (Fall 2023: Day 2 slides)
+- Do Example 2.6 parts (1)-(4) on pg 8 of [Probability](https://niederhausen.github.io/BSTA_511_F26/LaTeX_slides/Day04_bsta511.pdf) (**Fall 2023: Day 4**) slides
+
+
+## Class discussion
 
 During class you will be working in groups discussing the following:
 
--   Practice Problems
-    -   Textbook: 1.8 (p. 77), 1.20 (p. 80)
+### Day02
+
+-   Practice Problems listed above
 -   From HW 1
     -   Non-book exercise NBE 2: Tylenol during pregnancy?
     -   Textbook: 1.12
@@ -72,11 +89,7 @@ During class you will be working in groups discussing the following:
 
 ### Day03
 
--   Practice Problems
-    - Summarizing Numerical Data (**Fall 2023: Day 2 slides**)
-        - Fill in [robust estimate table](https://niederhausen.github.io/BSTA_511_F26/slides/Day02_bsta511.html#/robust-estimates) on slide 46 
-    - [Probability](https://niederhausen.github.io/BSTA_511_F26/LaTeX_slides/Day04_bsta511.pdf) (**Fall 2023: Day 4**)
-        - Example 2.6 parts (1)-(4) on pg 8 of slides
+-   Practice Problems listed above
 -   Summarizing Numerical Data (**Fall 2023: Day 2**)
     -   From HW 1
         -   Book problem: 1.31
@@ -86,9 +99,10 @@ During class you will be working in groups discussing the following:
     -   Example 2.6 parts (5)-(7) on pg 9 of slides
     -   From HW 1
         -   Book problems: 2.6,2.14
--   [Answers to Examples 2.3 & 2.6](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/Day04_bsta511_notes_examples_answers.pdf) (added after class; link to file on Brightspace)
+
+<!-- -   [Answers to Examples 2.3 & 2.6](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/Day04_bsta511_notes_examples_answers.pdf) (added after class; link to file on Brightspace) -->
 
 ## Homework
 
--   [HW 1](../homework/HW_1_F26_bsta511_v2.qmd) due on Sat, 10/10
+-   [HW 1 link coming soon!](../homework/HW_1_F26_bsta511.qmd) due on Sat, 10/10
     -   Covers Days 1-3
