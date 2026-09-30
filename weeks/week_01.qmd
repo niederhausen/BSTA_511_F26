@@ -57,6 +57,15 @@ editor_options:
 
 : {.striped .hover tbl-colwidths="\[3, 10, 8, 5, 5, 5\]"}
 
+### Practice working in R
+
+-   The PUBH 523 website has interactive R [Practice Tutorials](https://nwakim.github.io/R-practice-tutorials/)
+-   If you are new to R, I recommend working through the ones below for some extra practice:
+    -   [Warming up: R as a calculator](https://nwakim.github.io/R-practice-tutorials/practice/practice_01.html#warming-up-r-as-a-calculator)
+    -   [Relational operators](https://nwakim.github.io/R-practice-tutorials/practice/practice_01.html#relational-operators)
+    -   [Putting it together: weekly flu case counts](https://nwakim.github.io/R-practice-tutorials/practice/practice_01.html#putting-it-together-weekly-flu-case-counts)
+    
+
 ## Homework
 
 -   [HW 1 link coming soon!](../homework/HW_1_F26_bsta511.qmd) due on Sat, 10/10

@@ -5247,7 +5247,7 @@
     "href": "weeks/week_01.html#slides",
     "title": "Week 1",
     "section": "Slides",
-    "text": "Slides\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides (F23): html\nSlides: pdf\nSlides: web-page\nCode: qmd\n\n\n\n\n1\nIntro to R & RStudio\nDay 1"
+    "text": "Slides\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides (F23): html\nSlides: pdf\nSlides: web-page\nCode: qmd\n\n\n\n\n1\nIntro to R & RStudio\nDay 1\n\n\n\n\n\n\n\nPractice working in R\n\nThe PUBH 523 website has interactive R Practice Tutorials\nIf you are new to R, I recommend working through the ones below for some extra practice:\n\nWarming up: R as a calculator\nRelational operators\nPutting it together: weekly flu case counts"
   },
   {
     "objectID": "weeks/week_01.html#homework",
