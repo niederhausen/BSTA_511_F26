@@ -1,5 +1,25 @@
 [
   {
+    "listing": "/weeks.html",
+    "items": [
+      "/weeks/week_01.html",
+      "/weeks/week_02.html",
+      "/weeks/week_03.html",
+      "/weeks/week_04.html",
+      "/weeks/week_05.html",
+      "/weeks/week_06.html",
+      "/weeks/week_07.html",
+      "/weeks/week_08.html",
+      "/weeks/week_09.html",
+      "/weeks/week_10.html",
+      "/weeks/week_11.html"
+    ]
+  },
+  {
+    "listing": "/homework.html",
+    "items": []
+  },
+  {
     "listing": "/class_slides.html",
     "items": [
       "/slides/Day06_bsta511.html",
@@ -21,28 +41,6 @@
       "/slides/Day05_bsta511.html",
       "/slides/Day03_bsta511_part2.html",
       "/slides/Day03_bsta511.html"
-    ]
-  },
-  {
-    "listing": "/homework.html",
-    "items": [
-      "/homework/HW_1_F25_bsta511.html"
-    ]
-  },
-  {
-    "listing": "/weeks.html",
-    "items": [
-      "/weeks/week_01.html",
-      "/weeks/week_02.html",
-      "/weeks/week_03.html",
-      "/weeks/week_04.html",
-      "/weeks/week_05.html",
-      "/weeks/week_06.html",
-      "/weeks/week_07.html",
-      "/weeks/week_08.html",
-      "/weeks/week_09.html",
-      "/weeks/week_10.html",
-      "/weeks/week_11.html"
     ]
   }
 ]
