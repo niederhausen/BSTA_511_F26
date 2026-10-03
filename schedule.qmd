@@ -20,7 +20,7 @@ editor_options:
 |  |  |  |  |  |
 | [2](weeks/week_02.qmd) | M 10/5 | **2** | Intro to Data, Data collection | 1.1-1.3 |
 |  | W 10/7 | **3** | Summarizing numerical data, <br> Probability | 1.4, 2.1-2.2.4 |
-|  | Sa 10/10 |  | [*HW 1 Due (Days 1 - 3)*]{style="color:#5388f2"} |  |
+|  | Sa 10/10 |  | [[*HW 1*](homework/HW_1_F26_bsta511.qmd) *Due (Days 1 - 3)*]{style="color:#5388f2"} |  |
 |  |  |  |  |  |
 | [3](weeks/week_03.qmd) | M 10/12 | **4** | Bayes' Theorem, R Packages | 2.2.5, extra |
 |  | W 10/14 | **5** | Data visualization, <br> exploratory data analysis (EDA), <br> and summarizing categorical data | 1.5-1.7, extra |
