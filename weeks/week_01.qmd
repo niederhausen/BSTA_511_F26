@@ -35,6 +35,7 @@ editor_options:
 ::: g-col-6
 ### Wed - Day 1
 
+-   In class PowerPoint [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/463399) (on Brightspace)
 -   Intro to R & RStudio
 -   Please have R & RStudio installed for class
 -   Complete [Intro to R (PUBH 523) lessons](https://nwakim.github.io/PUBH_523_26F/schedule.html) below before class:

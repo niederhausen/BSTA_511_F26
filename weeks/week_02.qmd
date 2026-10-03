@@ -17,6 +17,8 @@ editor_options:
 
 ## Overview of Week 2
 
+-   In class [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/463399) from Day 1 were added to Brightspace
+
 ::::: grid
 ::: g-col-6
 ### Day 2
