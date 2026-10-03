@@ -3952,7 +3952,7 @@
     "href": "homework.html",
     "title": "Assignments",
     "section": "",
-    "text": "Note\n\n\n\n\nBelow are links to homework assignments.\nThe dates in the Date column are due dates.\nSee the Grading rubric tab to the left for a description of how assignments will be graded.\n\n\n\n\nCheck out this spreadsheet for textbook typos.\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\nDate\nTitle\n\n\n\n\n\nNo matching items"
+    "text": "Note\n\n\n\n\nBelow are links to homework assignments.\nThe dates in the Date column are due dates.\nSee the Grading rubric tab to the left for a description of how assignments will be graded.\n\n\n\n\nCheck out this spreadsheet for textbook typos.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n10/10/26\n\n\nHW 1: BSTA 511/611 F26\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "weeks/week_09.html#overview-of-week-9",
@@ -4169,7 +4169,7 @@
     "href": "weeks/week_01.html#homework",
     "title": "Week 1",
     "section": "Homework",
-    "text": "Homework\n\nHW 1 link coming soon! due on Sat, 10/10\n\nCovers Days 1-3"
+    "text": "Homework\n\nHW 1 due on Sat, 10/10\n\nCovers Days 1-3"
   },
   {
     "objectID": "weeks/week_01.html#recordings",
@@ -4225,7 +4225,7 @@
     "href": "weeks/week_02.html#homework",
     "title": "Week 2",
     "section": "Homework",
-    "text": "Homework\n\nHW 1 link coming soon! due on Sat, 10/10\n\nCovers Days 1-3"
+    "text": "Homework\n\nHW 1 due on Sat, 10/10\n\nCovers Days 1-3"
   },
   {
     "objectID": "weeks/week_07.html#overview-of-week-7",
@@ -9931,5 +9931,166 @@
     "title": "Day 11: Inference for difference in means from two independent samples and Power (Sections 5.3, 5.4)",
     "section": "More software for power and sample size calculations: PASS",
     "text": "More software for power and sample size calculations: PASS\n\nPASS is a very powerful (& expensive) software that does power and sample size calculations for many advanced statistical modeling techniques.\n\nEven if you don’t have access to PASS, their documentation is very good and free online.\nDocumentation includes formulas and references.\nPASS documentation for powering means\n\nOne mean, paired means, two independent means\n\n\nOne-sample t-test documentation: https://www.ncss.com/wp-content/themes/ncss/pdf/Procedures/PASS/One-Sample_T-Tests.pdf"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html",
+    "href": "homework/HW_1_F26_bsta511.html",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "",
+    "text": "Due 10/10/26 at 11 pm\nDownload the .qmd file for this assignment from https://github.com/niederhausen/BSTA_511_F26/blob/main/homework/HW_1_F26_bsta511.qmd"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#graded-exercises",
+    "href": "homework/HW_1_F26_bsta511.html#graded-exercises",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "🍁 Graded exercises",
+    "text": "🍁 Graded exercises\nThe exercises listed below will be graded for this assignment. You are strongly encouraged to complete the entire assignment. You will receive feedback on exercises you turn in that are not being graded.\n\nNon-Book exercises\n\nNBE 2: Tylenol during pregnancy?\n\nBook exercises\n\n1.12, 1.31, 2.6, 2.14\n\nR exercises\n\nR2: BRFSS"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#directions",
+    "href": "homework/HW_1_F26_bsta511.html#directions",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "Directions",
+    "text": "Directions\n\n\n\n\n\n\nImportant\n\n\n\n\n* Starred exercises in the section Book exercises may be completed by hand (such as on paper or using a tablet) instead of using Quarto.\nIf you complete this part of the assignment not using Quarto, you will be uploading 3 files on Sakai for this HW: qmd & html files for your R work, and a pdf with your written work.\nIf you are completing the homework on paper, you can use a scanning app, such as Adobe Scan, to create a pdf of your assignment.\n\n\n\n\nPlease upload your homework to Brightspace. Upload both your .qmd code file and the rendered .html file.\n\nUse the assignment .qmd file linked to above as a template for your own assignment.\n\nFor each question, make sure to show all of your work. This includes all code and resulting output in the html file to support your answers for exercises requiring work done in R (including any arithmetic calculations).\nFor each question, include a sentence summarizing the answer for that question in the context of the research question.\n\n\n\n\n\n\n\nTip\n\n\n\nIt is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly."
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#nbe-1",
+    "href": "homework/HW_1_F26_bsta511.html#nbe-1",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "NBE 1",
+    "text": "NBE 1\n\na) Upload a photo using Sakai submission\nTo help me learn your names and faces, please upload a photo of yourself on Sakai. You will find the Upload Photo “assignment” in the Assignments section of Sakai. These photos will only be seen by me and the TA.\n\n\nb) Background survey\n\nPlease fill out the background survey at https://docs.google.com/forms/d/e/1FAIpQLSdwgcVn9ocS8iIo18wVVONAlRk6T7qZvtodg-Tyjg-3HE7OXA/viewform.\n\nNo work to be shown here."
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#nbe-2-tylenol-during-pregnancy",
+    "href": "homework/HW_1_F26_bsta511.html#nbe-2-tylenol-during-pregnancy",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "🍁 NBE 2: Tylenol during pregnancy?",
+    "text": "🍁 NBE 2: Tylenol during pregnancy?\nOn Monday, September 22, 2025, President Trump and Health Secretary Robert F. Kennedy Jr. claimed that taking acetaminophen (the active ingredient in the pain reliever Tylenol) during pregnancy was a cause autism in the child. This led to an extensive debate on the topic, much of which has focused on a systemic review of observational studies researching the association between prenatal acetaminophen use and autism spectrum disorder (Evaluation of the evidence on acetaminophen use and neurodevelopmental disorders using the Navigation Guide methodology; link to pdf on Brightspace). There were many news reports that discussed this issue, one of which is from the New York Times, “Debate Flares Over an Unproven Link Between Tylenol and Autism” (link to pdf on Brightspace)\n\na) Causation?\nCan causation be deduced based on the observational studies in the systemic review linked to above? Explain why or why not.\n\n\nb) Experiment?\nWould it be ethical to conduct an experiment to study the effects of prenatal acetaminophen use on the development of autism spectrum disorder\n\n\nc) Sampling: stratified\nDescribe a stratified sampling method that could be used to study this topic in a hypothetical study.\n\n\nd) Sampling: cluster\nDescribe a cluster sampling method that could be used to study this topic in a hypothetical study.\n\n\ne) Sampling: Multistage sample\nDescribe a multistage sample sampling method that could be used to study this topic in a hypothetical study.\n\n\nf) Sampling method type?\nOne of the studies included in the systematic review included “All Singleton live born children in Sweden with linkable personal identifiers with follow-up until Dec 31,2021.” What type of sampling method did they use?"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#sinusitis-and-antibiotics-part-i.",
+    "href": "homework/HW_1_F26_bsta511.html#sinusitis-and-antibiotics-part-i.",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "1.2 Sinusitis and antibiotics, Part I.",
+    "text": "1.2 Sinusitis and antibiotics, Part I.\n\nShow the work of your calculations using R code within a code chunk. Make sure that both your code and output are visible in the rendered html file.\nWrite your answers in complete sentences as if communicating the results to a collaborator.\nIf you are having difficulty with exercise 1.2, take a look at exercise 1.1, whose answers are at the back of the book."
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#buteyko-method-study-components",
+    "href": "homework/HW_1_F26_bsta511.html#buteyko-method-study-components",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "1.4 Buteyko method, study components",
+    "text": "1.4 Buteyko method, study components"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#herbal-remedies",
+    "href": "homework/HW_1_F26_bsta511.html#herbal-remedies",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "🍁 1.12 Herbal remedies",
+    "text": "🍁 1.12 Herbal remedies"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#income-at-the-coffee-shop",
+    "href": "homework/HW_1_F26_bsta511.html#income-at-the-coffee-shop",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "🍁 1.31 Income at the coffee shop",
+    "text": "🍁 1.31 Income at the coffee shop"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#midrange",
+    "href": "homework/HW_1_F26_bsta511.html#midrange",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "1.32 Midrange",
+    "text": "1.32 Midrange"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#smoking-and-stenosis",
+    "href": "homework/HW_1_F26_bsta511.html#smoking-and-stenosis",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "1.38 Smoking and stenosis",
+    "text": "1.38 Smoking and stenosis\nSee Section 1.6.2 for more on how the relative risk is calculated."
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#poverty-and-language",
+    "href": "homework/HW_1_F26_bsta511.html#poverty-and-language",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "* 🍁 2.6 Poverty and language",
+    "text": "* 🍁 2.6 Poverty and language\nPart (b) asks you to create a Venn Diagram. If you are submitting this question in R, you do not need to turn this part in. If you want an R challenge though, you can use the VennDiagram or other package to create one. See https://www.geeksforgeeks.org/how-to-create-a-venn-diagram-in-r/ for some examples."
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#school-absences",
+    "href": "homework/HW_1_F26_bsta511.html#school-absences",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "* 2.8 School absences",
+    "text": "* 2.8 School absences\nPart (b) asks you to create a Venn Diagram. If you are submitting this question in R, you do not need to turn this part in. If you want an R challenge though, you can use the VennDiagram or other package to create one. See https://www.geeksforgeeks.org/how-to-create-a-venn-diagram-in-r/ for some examples."
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#health-coverage-frequencies",
+    "href": "homework/HW_1_F26_bsta511.html#health-coverage-frequencies",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "* 2.10 Health coverage, frequencies",
+    "text": "* 2.10 Health coverage, frequencies"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#health-coverage-relative-frequencies",
+    "href": "homework/HW_1_F26_bsta511.html#health-coverage-relative-frequencies",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "* 🍁 2.14 Health coverage, relative frequencies",
+    "text": "* 🍁 2.14 Health coverage, relative frequencies"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#r1-formatting-text-practice",
+    "href": "homework/HW_1_F26_bsta511.html#r1-formatting-text-practice",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "R1: Formatting text practice",
+    "text": "R1: Formatting text practice\nWrite a sentence (or a few) using all the different types of formatting text shown in slide 29 of the Day 1 slides. Your choice of text does not matter or even need to make sense. Although the TA will appreciate it if you make them laugh."
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#r2-brfss",
+    "href": "homework/HW_1_F26_bsta511.html#r2-brfss",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "🍁 R2: BRFSS",
+    "text": "🍁 R2: BRFSS\n\nThe Behavioral Risk Factor Surveillance System (BRFSS) is an annual telephone survey of 350,000 people in the United States. The BRFSS is designed to identify risk factors in the adult population and report emerging health trends. For example, respondents are asked about their diet, weekly exercise, possible tobacco use, and health care coverage.\n\n\nThe dataset cdc is a sample of 20,000 people from the survey conducted in 2000, and contains responses from a subset of the questions asked on the survey.\n\n\nLoad the cdc dataset from the web using the source() command below:\n\n\nsource(\"http://www.openintro.org/stat/data/cdc.R\")\n\n\nAnswer the questions below about the cdc dataset.\nPlease do not delete the statements of the questions so that they remained numbered in the correct order.\nShow the work of your calculations using R code within a code chunk. Make sure that both your code and output are visible in the knitted html file.\nWrite your answers in complete sentences as if communicating the results to a collaborator."
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#a-how-many-rows-and-columns-are-in-the-dataset",
+    "href": "homework/HW_1_F26_bsta511.html#a-how-many-rows-and-columns-are-in-the-dataset",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "a) How many rows and columns are in the dataset?",
+    "text": "a) How many rows and columns are in the dataset?"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#b-variable-types",
+    "href": "homework/HW_1_F26_bsta511.html#b-variable-types",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "b) Variable types",
+    "text": "b) Variable types\nFor each variable, what identify both its “statistical” variable type (numerical (discrete, continuous) or categorical (nominal, ordinal) and its R variable type.\nFill in your answers in the table I created below. I recommend using the Visual editor in RStudio for filling in the table. \n\n\n\nvariable name\nR type\nvariable type\n\n\n\n\ngenhlth\nfill in\nfill in\n\n\nexerany\netc.\n\n\n\nhlthplan\n\n\n\n\nsmoke100\n\n\n\n\nheight\n\n\n\n\nweight\n\n\n\n\nwtdesire\n\n\n\n\nage\n\n\n\n\ngender"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#c-average-weight-vs.-desired-weight",
+    "href": "homework/HW_1_F26_bsta511.html#c-average-weight-vs.-desired-weight",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "c) Average weight vs. desired weight",
+    "text": "c) Average weight vs. desired weight\nWhat is the difference between the average weight and the average desired weight?"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#d-compare-variability",
+    "href": "homework/HW_1_F26_bsta511.html#d-compare-variability",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "d) Compare variability",
+    "text": "d) Compare variability\nWhich of the height, weight, and desired weight variables has the most variability? Which has the least variability?"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#e-coefficient-of-variation",
+    "href": "homework/HW_1_F26_bsta511.html#e-coefficient-of-variation",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "e) Coefficient of variation",
+    "text": "e) Coefficient of variation\nThe coefficient of variation (CV) divides the standard deviation by the mean so that we have a measure of variation relative to the mean. This makes it easier to compare variability of measures that are on very different scales or even units since the CV is unitless. Calculate the CV for the height, weight, and desired weight variables. Which has the most and which has the least variability? Are these answers consistent with part d)?"
+  },
+  {
+    "objectID": "homework/HW_1_F26_bsta511.html#f-mean-of-the-hlthplan",
+    "href": "homework/HW_1_F26_bsta511.html#f-mean-of-the-hlthplan",
+    "title": "HW 1: BSTA 511/611 F26",
+    "section": "f) Mean of the hlthplan",
+    "text": "f) Mean of the hlthplan\nCalculate the mean of the hlthplan variable. How do we interpret this mean? In other words, what does this mean measure?"
   }
 ]

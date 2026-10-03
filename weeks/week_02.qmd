@@ -104,5 +104,5 @@ During class you will be working in groups discussing the following:
 
 ## Homework
 
--   [HW 1 link coming soon!](../homework/HW_1_F26_bsta511.qmd) due on Sat, 10/10
+-   [HW 1](../homework/HW_1_F26_bsta511.qmd) due on Sat, 10/10
     -   Covers Days 1-3
