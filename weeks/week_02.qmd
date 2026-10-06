@@ -27,7 +27,7 @@ editor_options:
     -   Book sections 1.1-1.3
 -   [**Day 2 Practice Problems**]{style="color:darkorange"}
     -   See [PP section](#day2-pp) below.
-
+-   In class PowerPoint [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/463763) (on Brightspace)
 :::
 
 ::: g-col-6
