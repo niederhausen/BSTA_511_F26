@@ -39,6 +39,9 @@ editor_options:
     -   Sections 2.1 - 2.2.4
 -   [**Day 3 Practice Problems**]{style="color:darkorange"}
     -   See [PP section](#day3-pp) below.
+-   In class PowerPoint [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/464509) (on Brightspace)
+
+
 
 :::
 :::::
