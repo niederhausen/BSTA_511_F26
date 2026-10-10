@@ -25,12 +25,12 @@ editor_options:
     -   Section 2.2.5
 -   R Packages (**Fall 2023: Day 2**)
 -   [**Day 4 Practice Problems**]{style="color:darkorange"}
-    -   Textbook: 2.18 *Predisposition for thrombosis*
+    -   See [PP section](#day4-pp) below.
 -   RStudio & Quarto: 
-    -   [Preview in Viewer Pane](https://docs.posit.co/ide/user/2023.03.1/ide/guide/documents/quarto-project.html#render-and-preview)
+    -   Options for [viewing rendered qmd](https://docs.posit.co/ide/user/ide/guide/documents/quarto-project.html#render-and-preview)
     -   Insert images
-    -   LaTeX
-        -   [Equations](https://quarto.org/docs/get-started/authoring/rstudio.html#equations)
+    -   Use LaTeX to insert equations in Quarto documents
+        -   [Inserting equations](https://quarto.org/docs/get-started/authoring/rstudio.html#equations)
         -   Visual editor: *[Insert anything](https://quarto.org/docs/visual-editor/#insert-anything)*
         -   [LaTeX guide](https://nwakim.github.io/S2024_BSTA_513/extra_resources/Latex_qmd_formatting.html)
  
@@ -47,9 +47,7 @@ editor_options:
         -   [Examples](https://berd-r-intro2024.netlify.app/slides_r_berd_2024#/barplots) on dealing with overlapping labels in figures (Slides 65, 66, & 68 from BERD R intro workshop)
         -   Check out Ted Laderas's [Better Plots](https://better-plots.netlify.app/) presentation
 -   [**Day 5 Practice Problems**]{style="color:darkorange"}
-    -   Textbook:
-        -   1.28 *Mix-and-match*
-        -   1.36 *Associations*
+    -   See [PP section](#day5-pp) below.
 :::
 :::::
 
@@ -78,15 +76,30 @@ As I mentioned in the recording, the various options in more complex figures I u
 
 \* These are slides with extra data wrangling code, and I refer to some of the slides in the homework assignment. You are welcome to go through all of the slides to learn some data wrangling techniques, *but are not required to do so*. We will be covering topics from these slides as needed throughout the quarter.
 
+
+## Practice Problems
+
+### [Day 4 PP]{style="color:darkorange"} {#day4-pp}
+
+-   Textbook: 
+    -   2.18 *Predisposition for thrombosis*
+
+        <!-- - Solution typed up using LaTeX: [qmd](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/PP_Day4.qmd), [html](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/464923) -->
+
+### [Day 5 PP]{style="color:darkorange"} {#day5-pp}
+
+-   Textbook:
+    -   1.28 *Mix-and-match*
+    -   1.36 *Associations*
+
+
 ## Class discussion
 
 During class you will be working in groups discussing the following:
 
 ### Day 04
 
--   **Practice Problems**
-    -   Textbook: 2.18 *Predisposition for thrombosis*
-        - Solution typed up using LaTeX: [qmd](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/PP_Day4.qmd), [html](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/PP_Day4.html)
+-   Practice Problems listed above
 -   R Packages (**Fall 2023: Day 2**)
     -   R packages: *Please let me know if you had any difficulty installing packages.*
 -   Bayes' Rule (**Fall 2023: Day 5**)
@@ -99,10 +112,7 @@ During class you will be working in groups discussing the following:
 
 ### Day 05
 
--   **Practice Problems**
-    -   Textbook:
-        -   1.28 *Mix-and-match*
-        -   1.36 *Associations*
+-   Practice Problems listed above
 -   [Slide 30](../slides/Day03_bsta511.html#/side-by-side-boxplots-with-data-points): Can distribution shape and sample size be determined from a boxplot?
 -   [Slide 58](../slides/Day03_bsta511.html#/case-study-discrimination-in-developmental-disability-support-1.7.1): Is there evidence of ethnicity (Hispanic vs. White non-Hispanic) discrimination in DDS expenditures? Why or why not?
 -   From HW 2
@@ -138,10 +148,4 @@ During class you will be working in groups discussing the following:
     -   See [extra data wrangling code](../slides_pdf/Day03_bsta511_part3_data_wrangling.pdf) (both pdf and code) in table above with slides & recording links.
 
 
-## International Day of Women in Statistics and Data Science
 
--   Join the virtual & free conference for the [International Day of Women in Statistics and Data Science](http://www.idwsds.org/)
--   Tuesday, October 13, 2026
-    -   12 am - 11:59 pm UTC (5pm 10/12 to 4:59 pm 10/13 here)
-
-![](/img_slides/IDWSDS-logo-large.png){fig-align="center" height="150"}

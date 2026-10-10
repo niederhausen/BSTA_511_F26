@@ -4106,7 +4106,7 @@
     "href": "weeks/week_03.html#overview-of-week-3",
     "title": "Week 3",
     "section": "Overview of Week 3",
-    "text": "Overview of Week 3\n\n\nDay 4\n\nBayes’ Rule (Fall 2023: Day 5)\n\nSection 2.2.5\n\nR Packages (Fall 2023: Day 2)\nDay 4 Practice Problems\n\nTextbook: 2.18 Predisposition for thrombosis\n\nRStudio & Quarto:\n\nPreview in Viewer Pane\nInsert images\nLaTeX\n\nEquations\nVisual editor: Insert anything\nLaTeX guide\n\n\n\n\n\nDay 5\n\n(Fall 2023: Day 3)\nData visualization, exploratory data analysis (EDA), and summarizing categorical data\n\nSections 1.5-1.7 & supplementary material\nBonus:\n\nExamples on dealing with overlapping labels in figures (Slides 65, 66, & 68 from BERD R intro workshop)\nCheck out Ted Laderas’s Better Plots presentation\n\n\nDay 5 Practice Problems\n\nTextbook:\n\n1.28 Mix-and-match\n1.36 Associations\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nAs I mentioned in the recording, the various options in more complex figures I usually look up how to implement when I need them. I show them so that you are aware of some of the functionality and options one has in creating figures using the ggplot2 package. At the end of the slides, we cover how to create tables summarizing data, especially categorical data. This part has some very useful code and data wrangling in it."
+    "text": "Overview of Week 3\n\n\nDay 4\n\nBayes’ Rule (Fall 2023: Day 5)\n\nSection 2.2.5\n\nR Packages (Fall 2023: Day 2)\nDay 4 Practice Problems\n\nSee PP section below.\n\nRStudio & Quarto:\n\nOptions for viewing rendered qmd\nInsert images\nUse LaTeX to insert equations in Quarto documents\n\nInserting equations\nVisual editor: Insert anything\nLaTeX guide\n\n\n\n\n\nDay 5\n\n(Fall 2023: Day 3)\nData visualization, exploratory data analysis (EDA), and summarizing categorical data\n\nSections 1.5-1.7 & supplementary material\nBonus:\n\nExamples on dealing with overlapping labels in figures (Slides 65, 66, & 68 from BERD R intro workshop)\nCheck out Ted Laderas’s Better Plots presentation\n\n\nDay 5 Practice Problems\n\nSee PP section below.\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nAs I mentioned in the recording, the various options in more complex figures I usually look up how to implement when I need them. I show them so that you are aware of some of the functionality and options one has in creating figures using the ggplot2 package. At the end of the slides, we cover how to create tables summarizing data, especially categorical data. This part has some very useful code and data wrangling in it."
   },
   {
     "objectID": "weeks/week_03.html#slides-recordings",
@@ -4120,7 +4120,7 @@
     "href": "weeks/week_03.html#class-discussion",
     "title": "Week 3",
     "section": "Class discussion",
-    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 04\n\nPractice Problems\n\nTextbook: 2.18 Predisposition for thrombosis\n\nSolution typed up using LaTeX: qmd, html\n\n\nR Packages (Fall 2023: Day 2)\n\nR packages: Please let me know if you had any difficulty installing packages.\n\nBayes’ Rule (Fall 2023: Day 5)\n\nExample 2.10 on pg 6 of slides\n\nSolution to Ex 2.10\n\n\nFrom HW 2\n\nNon-book exercise (this is an old exam question)\nBook exercises\n\n2.24\n\n\n\n\n\nDay 05\n\nPractice Problems\n\nTextbook:\n\n1.28 Mix-and-match\n1.36 Associations\n\n\nSlide 30: Can distribution shape and sample size be determined from a boxplot?\nSlide 58: Is there evidence of ethnicity (Hispanic vs. White non-Hispanic) discrimination in DDS expenditures? Why or why not?\nFrom HW 2\n\nR1 & R2: NHANES - parts 1 & 2"
+    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 04\n\nPractice Problems listed above\nR Packages (Fall 2023: Day 2)\n\nR packages: Please let me know if you had any difficulty installing packages.\n\nBayes’ Rule (Fall 2023: Day 5)\n\nExample 2.10 on pg 6 of slides\n\nSolution to Ex 2.10\n\n\nFrom HW 2\n\nNon-book exercise (this is an old exam question)\nBook exercises\n\n2.24\n\n\n\n\n\nDay 05\n\nPractice Problems listed above\nSlide 30: Can distribution shape and sample size be determined from a boxplot?\nSlide 58: Is there evidence of ethnicity (Hispanic vs. White non-Hispanic) discrimination in DDS expenditures? Why or why not?\nFrom HW 2\n\nR1 & R2: NHANES - parts 1 & 2"
   },
   {
     "objectID": "weeks/week_03.html#homework",
@@ -10092,5 +10092,12 @@
     "title": "HW 1: BSTA 511/611 F26",
     "section": "f) Mean of the hlthplan",
     "text": "f) Mean of the hlthplan\nCalculate the mean of the hlthplan variable. How do we interpret this mean? In other words, what does this mean measure?"
+  },
+  {
+    "objectID": "weeks/week_03.html#practice-problems",
+    "href": "weeks/week_03.html#practice-problems",
+    "title": "Week 3",
+    "section": "Practice Problems",
+    "text": "Practice Problems\n\nDay 4 PP\n\nTextbook:\n\n2.18 Predisposition for thrombosis\n\n\n\n\n\nDay 5 PP\n\nTextbook:\n\n1.28 Mix-and-match\n1.36 Associations"
   }
 ]
