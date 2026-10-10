@@ -13,7 +13,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-## [Page not yet updated]{style="color:darkorange"}
+## [Almost done updating; HW 2 is posted!]{style="color:darkorange"}
 
 ## Overview of Week 3
 
@@ -144,7 +144,7 @@ During class you will be working in groups discussing the following:
 
 ## Homework
 
--   [HW 2](../homework/HW_2_F26_bsta511_v2.qmd) covers Days 4-5 and is due on Sat, 10/17
+-   [HW 2](../homework/HW_2_F26_bsta511.qmd) covers Days 4-5 and is due on Sat, 10/17
     -   See [extra data wrangling code](../slides_pdf/Day03_bsta511_part3_data_wrangling.pdf) (both pdf and code) in table above with slides & recording links.
 
 

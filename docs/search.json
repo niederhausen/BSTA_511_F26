@@ -3952,7 +3952,7 @@
     "href": "homework.html",
     "title": "Assignments",
     "section": "",
-    "text": "Note\n\n\n\n\nBelow are links to homework assignments.\nThe dates in the Date column are due dates.\nSee the Grading rubric tab to the left for a description of how assignments will be graded.\n\n\n\n\nCheck out this spreadsheet for textbook typos.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n10/10/26\n\n\nHW 1: BSTA 511/611 F26\n\n\n\n\n\n\nNo matching items"
+    "text": "Note\n\n\n\n\nBelow are links to homework assignments.\nThe dates in the Date column are due dates.\nSee the Grading rubric tab to the left for a description of how assignments will be graded.\n\n\n\n\nCheck out this spreadsheet for textbook typos.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n10/10/26\n\n\nHW 1: BSTA 511/611 F26\n\n\n\n\n\n\n10/17/26\n\n\nHW 2: BSTA 511/611 F26\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "weeks/week_09.html#overview-of-week-9",
@@ -10099,5 +10099,124 @@
     "title": "Week 3",
     "section": "Practice Problems",
     "text": "Practice Problems\n\nDay 4 PP\n\nTextbook:\n\n2.18 Predisposition for thrombosis\n\n\n\n\n\nDay 5 PP\n\nTextbook:\n\n1.28 Mix-and-match\n1.36 Associations"
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html",
+    "href": "homework/HW_2_F26_bsta511.html",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "",
+    "text": "Due 10/17/26\nDownload the .qmd file for this assignment from https://github.com/niederhausen/BSTA_511_F26/blob/main/homework/HW_2_F26_bsta511.qmd"
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#graded-exercises",
+    "href": "homework/HW_2_F26_bsta511.html#graded-exercises",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "🍄 Graded exercises",
+    "text": "🍄 Graded exercises\nThe exercises listed below will be graded for this assignment. You are strongly encouraged to complete the entire assignment. You will receive feedback on exercises you turn in that are not being graded.\n\nBook exercises\n\n2.24\n\nNon-book exercise\nR exercises\n\nR1: NHANES - part 1\nR2: NHANES - part 2"
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#directions",
+    "href": "homework/HW_2_F26_bsta511.html#directions",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "Directions",
+    "text": "Directions\n\n\n\n\n\n\nImportant\n\n\n\n\n* Starred exercises in the section Book exercises may be completed by hand (such as on paper or using a tablet) instead of using Quarto.\nIf you complete part of the assignment not using Quarto, you will be uploading 3 files on Sakai for this HW: qmd & html files for your R work, and a pdf with your written work.\nIf you are completing the homework on paper, you can use a scanning app, such as Adobe Scan, to create a pdf of your assignment.\nIf you decided to type the solutions to these exercises in this Quarto file, I highly recommend using LaTeX to format the equations.\n\nFor instructions on creating equations in the Visual editor, check out https://quarto.org/docs/get-started/authoring/rstudio.html#equations.\nYou can see examples of LaTeX formatting in the solutions to HW 1.\nAlso check out examples of LaTeX formatting for statistics created by recent biostats alumn Ariel Weingarten.\nIf you have difficulty rendering the LaTeX equations, I recommend installing and running the R package tinytex. See this website for instructions.\n\n\n\n\n\nPlease upload your homework to Brightspace. Upload both your .qmd code file and the rendered .html file.\n\nUse the assignment .qmd file linked to above as a template for your own assignment.\n\nFor each question, make sure to show all of your work. This includes all code and resulting output in the html file to support your answers for exercises requiring work done in R (including any arithmetic calculations).\nFor each question, include a sentence summarizing the answer for that question in the context of the research question.\n\n\n\n\n\n\n\nTip\n\n\n\nIt is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly."
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#income-and-education-in-us-counties",
+    "href": "homework/HW_2_F26_bsta511.html#income-and-education-in-us-counties",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "1.24 Income and education in US counties",
+    "text": "1.24 Income and education in US counties"
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#breast-cancer-and-age",
+    "href": "homework/HW_2_F26_bsta511.html#breast-cancer-and-age",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "* 🍄 2.24 Breast cancer and age",
+    "text": "* 🍄 2.24 Breast cancer and age"
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#load-all-the-packages-you-need-below-here.",
+    "href": "homework/HW_2_F26_bsta511.html#load-all-the-packages-you-need-below-here.",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "!!! Load all the packages you need below here.",
+    "text": "!!! Load all the packages you need below here."
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#a-dimensions-and-columns",
+    "href": "homework/HW_2_F26_bsta511.html#a-dimensions-and-columns",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "a) Dimensions and columns",
+    "text": "a) Dimensions and columns\nWhat are the dimensions and column names of the dataset?"
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#b-unique-id-identifiers",
+    "href": "homework/HW_2_F26_bsta511.html#b-unique-id-identifiers",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "b) Unique ID identifiers",
+    "text": "b) Unique ID identifiers\nHow many unique ID identifiers are in the dataset? Compare this to the number of rows in the dataset. What is the explanation for these two different numbers?"
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#c-age-distributions",
+    "href": "homework/HW_2_F26_bsta511.html#c-age-distributions",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "c) Age distributions",
+    "text": "c) Age distributions\nUsing numerical and graphical summaries, describe the distribution of ages among study participants."
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#d-height-distributions",
+    "href": "homework/HW_2_F26_bsta511.html#d-height-distributions",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "d) Height distributions",
+    "text": "d) Height distributions\nUsing numerical and graphical summaries, describe the distribution of heights among study participants."
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#e-adult-height-age",
+    "href": "homework/HW_2_F26_bsta511.html#e-adult-height-age",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "e) Adult height age",
+    "text": "e) Adult height age\nInvestigate at which age people generally reach their adult height. Is it possible to do the same for weight; why or why not?\nUse whatever EDA tools you think are appropriate to answer this question."
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#f-poverty-variable",
+    "href": "homework/HW_2_F26_bsta511.html#f-poverty-variable",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "f) Poverty variable",
+    "text": "f) Poverty variable\nCalculate the median and interquartile range of the distribution of the variable Poverty. Write a sentence explaining the median and IQR in the context of these data."
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#a-heights-in-inches",
+    "href": "homework/HW_2_F26_bsta511.html#a-heights-in-inches",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "a) Heights in inches",
+    "text": "a) Heights in inches\nUse the mutate() command explained on Slide 23 (pdf pg 22) of the Day 3 Part 3 notes to create a new column (variable) in the NHANES dataset for the heights in inches. Then find the mean and standard deviation of the heights in inches. Note that 1 centimeter is approximately 0.3937 inches.\n\n\n\n\n\n\nTipTips\n\n\n\n\nColumn names cannot start with a number or symbol\nNames are case sensitive\nIt’s easier to work with column names that don’t have spaces in them. I usually use _ or . instead of spaces."
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#b-college-graduates",
+    "href": "homework/HW_2_F26_bsta511.html#b-college-graduates",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "b) College graduates",
+    "text": "b) College graduates\nWhat proportion of Americans at least 25 years of age are college graduates? Hint: First create a new dataset that is restricted to Americans at least 25 years old."
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#c-college-graduates-v2",
+    "href": "homework/HW_2_F26_bsta511.html#c-college-graduates-v2",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "c) College graduates v2",
+    "text": "c) College graduates v2\nWhat proportion of Americans at least 25 years of age with a high school degree are college graduates?"
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#d-two-way-table",
+    "href": "homework/HW_2_F26_bsta511.html#d-two-way-table",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "d) Two-way table",
+    "text": "d) Two-way table\nConstruct a two-way table (contingency table), with PhysActive as the row variable and Diabetes as the column variable. Among participants who are not physically active, what proportion have diabetes? What proportion of physically active participants have diabetes?"
+  },
+  {
+    "objectID": "homework/HW_2_F26_bsta511.html#e-relative-risk",
+    "href": "homework/HW_2_F26_bsta511.html#e-relative-risk",
+    "title": "HW 2: BSTA 511/611 F26",
+    "section": "e) Relative Risk",
+    "text": "e) Relative Risk\nIn this context, relative risk is the ratio of the proportion of participants who have diabetes among those who are not physically active to the proportion of participants with diabetes among those physically active. Relative risks greater than 1 indicate that people who are not physically active seem to be at a higher risk for diabetes than physically active people. Calculate the relative risk of diabetes for the participants. From these calculations, is it possible to conclude that being physically active reduces one’s chance of becoming diabetic?"
   }
 ]
