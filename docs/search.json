@@ -4203,8 +4203,8 @@
     "objectID": "weeks/week_03.html#overview-of-week-3",
     "href": "weeks/week_03.html#overview-of-week-3",
     "title": "Week 3",
-    "section": "Overview of Week 3",
-    "text": "Overview of Week 3\n\n\nDay 4\n\nBayes’ Rule (Fall 2023: Day 5)\n\nSection 2.2.5\n\nR Packages (Fall 2023: Day 2)\nDay 4 Practice Problems\n\nSee PP section below.\n\nRStudio & Quarto:\n\nOptions for viewing rendered qmd\nInsert images\nUse LaTeX to insert equations in Quarto documents\n\nInserting equations\nVisual editor: Insert anything\nLaTeX guide\n\n\n\n\n\nDay 5\n\n(Fall 2023: Day 3)\nData visualization, exploratory data analysis (EDA), and summarizing categorical data\n\nSections 1.5-1.7 & supplementary material\nBonus:\n\nExamples on dealing with overlapping labels in figures (Slides 65, 66, & 68 from BERD R intro workshop)\nCheck out Ted Laderas’s Better Plots presentation\n\n\nDay 5 Practice Problems\n\nSee PP section below.\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nAs I mentioned in the recording, the various options in more complex figures I usually look up how to implement when I need them. I show them so that you are aware of some of the functionality and options one has in creating figures using the ggplot2 package. At the end of the slides, we cover how to create tables summarizing data, especially categorical data. This part has some very useful code and data wrangling in it."
+    "section": "",
+    "text": "Bayes’ Rule (Fall 2023: Day 5)\n\nSection 2.2.5\n\nR Packages (Fall 2023: Day 2)\nDay 4 Practice Problems\n\nSee PP section below.\n\nRStudio & Quarto:\n\nOptions for viewing rendered qmd\nInsert images\nUse LaTeX to insert equations in Quarto documents\n\nInserting equations\nVisual editor: Insert anything\nLaTeX guide\n\n\n\n\n\n\n\n(Fall 2023: Day 3)\nData visualization, exploratory data analysis (EDA), and summarizing categorical data\n\nSections 1.5-1.7 & supplementary material\nBonus:\n\nExamples on dealing with overlapping labels in figures (Slides 65, 66, & 68 from BERD R intro workshop)\nCheck out Ted Laderas’s Better Plots presentation\n\n\nDay 5 Practice Problems\n\nSee PP section below.\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nAs I mentioned in the recording, the various options in more complex figures I usually look up how to implement when I need them. I show them so that you are aware of some of the functionality and options one has in creating figures using the ggplot2 package. At the end of the slides, we cover how to create tables summarizing data, especially categorical data. This part has some very useful code and data wrangling in it."
   },
   {
     "objectID": "weeks/week_03.html#slides-recordings",
@@ -10155,5 +10155,12 @@
     "title": "Day 11: Inference for difference in means from two independent samples and Power (Sections 5.3, 5.4)",
     "section": "More software for power and sample size calculations: PASS",
     "text": "More software for power and sample size calculations: PASS\n\nPASS is a very powerful (& expensive) software that does power and sample size calculations for many advanced statistical modeling techniques.\n\nEven if you don’t have access to PASS, their documentation is very good and free online.\nDocumentation includes formulas and references.\nPASS documentation for powering means\n\nOne mean, paired means, two independent means\n\n\nOne-sample t-test documentation: https://www.ncss.com/wp-content/themes/ncss/pdf/Procedures/PASS/One-Sample_T-Tests.pdf"
+  },
+  {
+    "objectID": "weeks/week_03.html",
+    "href": "weeks/week_03.html",
+    "title": "Week 3",
+    "section": "",
+    "text": "Bayes’ Rule (Fall 2023: Day 5)\n\nSection 2.2.5\n\nR Packages (Fall 2023: Day 2)\nDay 4 Practice Problems\n\nSee PP section below.\n\nRStudio & Quarto:\n\nOptions for viewing rendered qmd\nInsert images\nUse LaTeX to insert equations in Quarto documents\n\nInserting equations\nVisual editor: Insert anything\nLaTeX guide\n\n\n\n\n\n\n\n(Fall 2023: Day 3)\nData visualization, exploratory data analysis (EDA), and summarizing categorical data\n\nSections 1.5-1.7 & supplementary material\nBonus:\n\nExamples on dealing with overlapping labels in figures (Slides 65, 66, & 68 from BERD R intro workshop)\nCheck out Ted Laderas’s Better Plots presentation\n\n\nDay 5 Practice Problems\n\nSee PP section below.\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nAs I mentioned in the recording, the various options in more complex figures I usually look up how to implement when I need them. I show them so that you are aware of some of the functionality and options one has in creating figures using the ggplot2 package. At the end of the slides, we cover how to create tables summarizing data, especially categorical data. This part has some very useful code and data wrangling in it."
   }
 ]

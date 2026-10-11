@@ -13,7 +13,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-## [Almost done updating; HW 2 is posted!]{style="color:darkorange"}
+<!-- ## [Almost done updating; HW 2 is posted!]{style="color:darkorange"} -->
 
 ## Overview of Week 3
 
