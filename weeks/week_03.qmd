@@ -64,18 +64,18 @@ As I mentioned in the recording, the various options in more complex figures I u
 | 4 | Bayes' Rule (Book section 2.2.5) | [Day 5: slides 1-2](../slides/Day05_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../LaTeX_slides/Day05_bsta511.pdf) |  | [{{< iconify pepicons-pop pen-circle-filled size=20px >}}](../slides_notes/Day05_bsta511_notes.pdf) | [Day 5 Part 1](https://echo360.org/lesson/4dd3a9b8-33be-4eda-a704-262bdcf473c4/classroom) | 22 min |  |  |
 |  | Bayes' Rule (Book section 2.2.5) | [Day 5: slides 3-6](../slides/Day05_bsta511.qmd) |  |  |  | [Day 5 Part 2](https://echo360.org/lesson/ff6bb379-f025-43eb-b3b7-0a3d884635ee/classroom) | 22 min |  |  |
 | []{.slide-divider} |  |  |  |  |  |  |  |  |  |
-|  | R packages | [Day 2: slides 47-54](https://niederhausen.github.io/BSTA_511_F26/slides/Day02_bsta511.html#/r-packages---day-4-in-f26) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day02_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day02_bsta511_md.qmd#r-packages---day-4-in-f26) |  | [Day 2 Part 4](https://echo360.org/lesson/ceb44e22-dde1-472b-b8a9-6dfd93212054/classroom) | 30 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day02_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day02_bsta511_code.qmd#r-packages---day-4-in-f26) |
+|  | \* R packages | [Day 2: slides 47-54](https://niederhausen.github.io/BSTA_511_F26/slides/Day02_bsta511.html#/r-packages---day-4-in-f26) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day02_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day02_bsta511_md.qmd#r-packages---day-4-in-f26) |  | [Day 2 Part 4](https://echo360.org/lesson/ceb44e22-dde1-472b-b8a9-6dfd93212054/classroom) | 30 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day02_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day02_bsta511_code.qmd#r-packages---day-4-in-f26) |
 | []{.day-divider} |  |  |  |  |  |  |  |  |  |
 | 5 | Exploratory Data Analysis | [Day 3: slides 1-59](../slides/Day03_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day03_bsta511_md.qmd) |  | [Day 3](https://echo360.org/lesson/05b9c600-887b-41a3-9fb0-3eecfc6de8eb/classroom) | 1 hr 18 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day03_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code.qmd) |
-|  | \*Optional: Extra data wrangling code |  | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511_part3_data_wrangling.pdf) |  |  |  |  | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) |
+|  | \*\*Optional: Extra data wrangling code |  | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511_part3_data_wrangling.pdf) |  |  |  |  | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) |
 
 : {.striped .hover tbl-colwidths="\[3, 10, 8, 5, 5, 5, 6, 6, 5, 5\]"}
 
 
 <!-- |  | Extra EDA slides | [Day 3 Part 2 slides](../slides/Day03_bsta511_part2.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511_part2.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day03_bsta511_md_part2.qmd) |  |  |  | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day03_bsta511_code_part2.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code.qmd) | -->
 
-
-\* These are slides with extra data wrangling code, and I refer to some of the slides in the homework assignment. You are welcome to go through all of the slides to learn some data wrangling techniques, *but are not required to do so*. We will be covering topics from these slides as needed throughout the quarter.
+\*   Optional: check out the R lab (PUBH 523) [Lesson 11 on packages](https://nwakim.github.io/PUBH_523_26F/schedule.html).  
+\*\* These are slides with extra data wrangling code, and I refer to some of the slides in the homework assignment. You are welcome to go through all of the slides to learn some data wrangling techniques, *but are not required to do so*. We will be covering topics from these slides as needed throughout the quarter.
 
 
 ## Practice Problems
@@ -105,11 +105,13 @@ During class you will be working in groups discussing the following:
     -   R packages: *Please let me know if you had any difficulty installing packages.*
 -   Bayes' Rule (**Fall 2023: Day 5**)
     -   Example 2.10 on pg 6 of slides
-        - [Solution to Ex 2.10](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/Day05_Ex2.10_bsta511-notes.pdf) 
 -   From HW 2
     -   Non-book exercise (*this is an old exam question*)
     -   Book exercises
         -   2.24
+
+        <!-- - [Solution to Ex 2.10](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/Day05_Ex2.10_bsta511-notes.pdf)  -->
+
 
 ### Day 05
 

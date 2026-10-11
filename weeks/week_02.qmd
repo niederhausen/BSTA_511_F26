@@ -102,10 +102,11 @@ During class you will be working in groups discussing the following:
 -   Probability (**Fall 2023: Day 4**)
     -   Example 2.3 on pg 4 of slides
     -   Example 2.6 parts (5)-(7) on pg 9 of slides
+    -   [Solutions to Examples 2.3 & 2.6](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/464945) (added after class; link to file on Brightspace)
     -   From HW 1
         -   Book problems: 2.6,2.14
 
-<!-- -   [Answers to Examples 2.3 & 2.6](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/Day04_bsta511_notes_examples_answers.pdf) (added after class; link to file on Brightspace) -->
+
 
 ## Homework
 

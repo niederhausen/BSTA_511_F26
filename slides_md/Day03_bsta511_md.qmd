@@ -68,28 +68,6 @@ theme_set(theme_bw(base_size = 22))
 :::
 
 
-
-## Mimi's tip of the day: sending messages in Slack {.smaller}
-
-::: columns
-::: {.column width="70%"}
-
-Are you frustrated that Slack sends a message when you press Enter? You can change that! 
-
-::: {layout-ncol=2}
-![](/img_slides/Slack_preferences.png){width=255}
-
-![](/img_slides/Slack_preferences_startnewline.png){width=515}
-:::  
-
-:::
-
-::: {.column width="30%"}
-![](/img_slides/mimi_IMG_4498.png){fig-align="center"}
-:::
-:::
-
-
 ## Recap of last time {.smaller}
 
 * (1.3) __Data collection principles__
