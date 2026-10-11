@@ -129,7 +129,7 @@ filter data based on rows
 ```{r}
 # Note: the output from the command below is not being saved 
 # since it's not being assigned to a variable using <-
-dds.discr %>% filter(age > 90)   
+dds.discr |> filter(age > 90)   
 ```
 
 
@@ -139,20 +139,20 @@ What do these commands do? Try them out:
 
 ```{r}
 #| eval: false
-dds.discr %>% filter(age < 5)
-dds.discr %>% filter(age/expenditures < 0.5)    # can do math within filter command
-dds.discr %>% filter((age < 15) | (age > 50))
+dds.discr |> filter(age < 5)
+dds.discr |> filter(age/expenditures < 0.5)    # can do math within filter command
+dds.discr |> filter((age < 15) | (age > 50))
 
 # simultaneously filter on multiple variables
-dds.discr %>% filter(age < 20, expenditures > 1000, gender == "Male") 
+dds.discr |> filter(age < 20, expenditures > 1000, gender == "Male") 
 
-dds.discr %>% filter(id == 10210) # note the use of == instead of just =
-dds.discr %>% filter(gender == "Female")
-dds.discr %>% filter(!(age.cohort == "51+"))
-dds.discr %>% filter(age.cohort %in% c("0-5", "6-12"))
+dds.discr |> filter(id == 10210) # note the use of == instead of just =
+dds.discr |> filter(gender == "Female")
+dds.discr |> filter(!(age.cohort == "51+"))
+dds.discr |> filter(age.cohort %in% c("0-5", "6-12"))
 
-dds.discr %>% filter(is.na(age))
-dds.discr %>% filter(!is.na(age))
+dds.discr |> filter(is.na(age))
+dds.discr |> filter(!is.na(age))
 ```
 
 
@@ -168,7 +168,7 @@ dds.discr %>% filter(!is.na(age))
 - uses special syntax that is flexible and has many options
 
 ```{r}
-dds.discr %>% select(id, expenditures, ethnicity)
+dds.discr |> select(id, expenditures, ethnicity)
 ```
 
 ### Column selection syntax options
@@ -197,15 +197,15 @@ First guess and then try them out.
 
 ```{r}
 #| eval: false
-dds.discr %>% select(id:gender)
-dds.discr %>% select(one_of(c("age","expenditures", "notindata")))
+dds.discr |> select(id:gender)
+dds.discr |> select(one_of(c("age","expenditures", "notindata")))
 
-dds.discr %>% select(-age.cohort,-gender)
-dds.discr %>% select(-(id:gender))
+dds.discr |> select(-age.cohort,-gender)
+dds.discr |> select(-(id:gender))
 
-dds.discr %>% select(contains("age"))
-dds.discr %>% select(starts_with("a"))
-dds.discr %>% select(-contains("a"))
+dds.discr |> select(contains("age"))
+dds.discr |> select(starts_with("a"))
+dds.discr |> select(-contains("a"))
 ```
 
 
@@ -224,7 +224,7 @@ dds.discr %>% select(-contains("a"))
   - plus special ones such as `.before` and `.after`
 
 ```{r}
-dds.discr %>% relocate(age.cohort, ethnicity)
+dds.discr |> relocate(age.cohort, ethnicity)
 ```
 
 
@@ -236,17 +236,17 @@ First guess and then try them out.
 
 ```{r}
 #| eval: false
-dds.discr %>% relocate(age:ethnicity)
+dds.discr |> relocate(age:ethnicity)
 
-dds.discr %>% relocate(where(is.numeric))
-dds.discr %>% relocate(where(is.factor))
+dds.discr |> relocate(where(is.numeric))
+dds.discr |> relocate(where(is.factor))
 # note: the next command doesn't do anything 
 # since there are no character type variables in the dataset
-dds.discr %>% relocate(where(is.character))
+dds.discr |> relocate(where(is.character))
 
-dds.discr %>% relocate(age,.before = ethnicity)
-dds.discr %>% relocate(ethnicity, .after = age.cohort)
-dds.discr %>% relocate(age, .after = last_col())
+dds.discr |> relocate(age,.before = ethnicity)
+dds.discr |> relocate(ethnicity, .after = age.cohort)
+dds.discr |> relocate(age, .after = last_col())
 ```
 
 
@@ -257,7 +257,7 @@ dds.discr %>% relocate(age, .after = last_col())
 - renames column variables
 
 ```{r}
-dds.discr %>% rename(IDnumber = id)   # order: new_name = old_name
+dds.discr |> rename(IDnumber = id)   # order: new_name = old_name
 ```
 
 
@@ -274,13 +274,13 @@ Use `mutate()` to add new columns to a tibble
 
 ```{r}
 # use = to define new a variable within mutate (not <- or ==) 
-newdata <- dds.discr %>% 
+newdata <- dds.discr |> 
   mutate(
     log_expenditures = log(expenditures),
     expend_per_yearage = expenditures / age)   
 
 
-newdata %>% select(id, age, expenditures, log_expenditures, expend_per_yearage)
+newdata |> select(id, age, expenditures, log_expenditures, expend_per_yearage)
 ```
 
 
@@ -291,10 +291,10 @@ First guess and then try them out.
 
 ```{r}
 #| eval: false
-dds.discr %>% mutate(age_young = (age < 18))
+dds.discr |> mutate(age_young = (age < 18))
 
-dds.discr %>% mutate(male = (gender == "Male"))
-dds.discr %>% mutate(male = 1 * (gender == "Male"))
+dds.discr |> mutate(male = (gender == "Male"))
+dds.discr |> mutate(male = 1 * (gender == "Male"))
 ```
 
 
@@ -303,7 +303,7 @@ dds.discr %>% mutate(male = 1 * (gender == "Male"))
 
 - Example: create age groups based off of the `age` variable
 ```{r}
-dds.discr2 <- dds.discr %>%
+dds.discr2 <- dds.discr |>
   mutate(
     age_group = case_when(
       age < 6 ~ "0 to 5",               # condition ~ new_value
@@ -314,8 +314,8 @@ dds.discr2 <- dds.discr %>%
       age >= 51 ~ "51 plus")
     )
 
-dds.discr2 %>% select(age, age_group) %>% head()
-dds.discr2 %>% tabyl(age.cohort, age_group)
+dds.discr2 |> select(age, age_group) |> head()
+dds.discr2 |> tabyl(age.cohort, age_group)
 ```
 
 
@@ -327,9 +327,9 @@ dds.discr2 %>% tabyl(age.cohort, age_group)
   
 
 ```{r}
-dds.discr %>% arrange(age, expenditures) %>% head(n=3)
+dds.discr |> arrange(age, expenditures) |> head(n=3)
 
-dds.discr %>% arrange(desc(age), expenditures) %>% head(n=3)
+dds.discr |> arrange(desc(age), expenditures) |> head(n=3)
 ```
 
 
@@ -383,7 +383,7 @@ For `pivot_longer` we need to __specify__:
 
 
 ```{r}
-SBP_long <- SBP_wide %>% 
+SBP_long <- SBP_wide |> 
   pivot_longer(
     cols=c(SBP_v1,SBP_v2,SBP_v3), 
     names_to = "visit", 
@@ -406,7 +406,7 @@ For `pivot_wider` we need to __specify__:
 - __values_from__: which column contains the values that will fill in the _cell values_
     
 ```{r}
-SBP_wide2 <- SBP_long %>% 
+SBP_wide2 <- SBP_long |> 
   pivot_wider(names_from = "visit", 
               values_from = "SBP")
 SBP_wide2
@@ -438,7 +438,7 @@ SBP_long
 **Method #1:** tidy the `visit` column *after* making the data long
 
 ```{r}
-SBP_long2 <- SBP_long %>% 
+SBP_long2 <- SBP_long |> 
   mutate(
     visit = str_replace(
       visit,
@@ -471,7 +471,7 @@ SBP_long2
 **Method #2:** tidy the `visit` column *while* making the data long
 
 ```{r}
-SBP_long3 <- SBP_wide %>% 
+SBP_long3 <- SBP_wide |> 
  pivot_longer(cols = c(SBP_v1, SBP_v2,SBP_v3), 
               names_to = "visit", 
               names_prefix = "SBP_", #<<
@@ -500,7 +500,7 @@ https://tidyr.tidyverse.org/articles/pivot.html
 In the example creating `SBP_long`, the columns to make the tibble longer by were explicitly listed using `cols=c(SBP_v1,SBP_v2,SBP_v3)`.
 
 ```{r}
-SBP_long <- SBP_wide %>% 
+SBP_long <- SBP_wide |> 
  pivot_longer(cols = c(SBP_v1, SBP_v2,SBP_v3), #<<
               names_to = "visit", 
               values_to = "SBP")
@@ -543,7 +543,7 @@ However, we can specify the columns in many different ways, just like with `sele
 
 command | purpose
 --|-
- `%>%` | join (pipe) together commands
+ `|>` | join (pipe) together commands
 `filter()` | subset rows
 `arrange()` | sort rows
 `select()` | select or rearrange columns

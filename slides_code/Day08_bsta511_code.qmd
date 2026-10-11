@@ -102,8 +102,8 @@ glimpse(yrbss)  # from tidyverse package (dplyr)
 ## Height & weight variables
 
 ```{r}
-yrbss %>% 
-  select(height, weight) %>% 
+yrbss |> 
+  select(height, weight) |> 
   summary()
 ```
 
@@ -119,13 +119,13 @@ ggplot(data = yrbss,
 
 Also, drop missing values and add a column of id values
 ```{r}
-yrbss2 <- yrbss %>%                 # save new dataset with new name
+yrbss2 <- yrbss |>                 # save new dataset with new name
   mutate(                           # add variables for 
     height.ft = 3.28084*height,     #     height in feet
     weight.lb = 2.20462*weight      #     weight in pounds
-  ) %>% 
-  drop_na(height.ft, weight.lb) %>% # drop rows w/ missing height/weight values
-  mutate(id = 1:nrow(.)) %>%        # add id column
+  ) |> 
+  drop_na(height.ft, weight.lb) |> # drop rows w/ missing height/weight values
+  mutate(id = 1:n()) |>        # add id column
   select(id, height.ft, weight.lb)  # restrict dataset to columns of interest
 
 head(yrbss2)  
@@ -144,8 +144,8 @@ summary(yrbss2)
 Another summary:
 
 ```{r}
-yrbss2 %>% 
-  get_summary_stats(type = "mean_sd") %>% 
+yrbss2 |> 
+  get_summary_stats(type = "mean_sd") |> 
   kable()
 ```
 
@@ -156,7 +156,7 @@ Take a random sample of size n = 5 from `yrbss2`:
 
 ```{r}
 library(moderndive)
-samp_n5_rep1 <- yrbss2 %>%
+samp_n5_rep1 <- yrbss2 |>
   rep_sample_n(size = 5, 
                reps = 1,
                replace = FALSE)
@@ -166,7 +166,7 @@ samp_n5_rep1
 Calculate the mean of the random sample:
 ```{r}
 means_hght_samp_n5_rep1 <- 
-  samp_n5_rep1 %>% 
+  samp_n5_rep1 |> 
   summarise(mean_height = mean(height.ft))
 
 means_hght_samp_n5_rep1
@@ -182,7 +182,7 @@ means_hght_samp_n5_rep1
 
 Take a 2nd random sample of size n = 5 from `yrbss2`:
 ```{r}
-samp_n5_rep1 <- yrbss2 %>%
+samp_n5_rep1 <- yrbss2 |>
   rep_sample_n(size = 5, 
                reps = 1,
                replace = FALSE)
@@ -192,7 +192,7 @@ samp_n5_rep1
 Calculate the mean of the 2nd random sample:
 ```{r}
 means_hght_samp_n5_rep1 <- 
-  samp_n5_rep1 %>% 
+  samp_n5_rep1 |> 
   summarise(mean_height = mean(height.ft))
 
 means_hght_samp_n5_rep1
@@ -205,7 +205,7 @@ means_hght_samp_n5_rep1
 
 Take 100 random samples of size n = 5 from `yrbss2`:
 ```{r}
-samp_n5_rep100 <- yrbss2 %>%
+samp_n5_rep100 <- yrbss2 |>
   rep_sample_n(size = 5, 
                reps = 100,
                replace = FALSE)
@@ -215,8 +215,8 @@ samp_n5_rep100
 Calculate the mean for each of the 100 random samples:
 ```{r}
 means_hght_samp_n5_rep100 <- 
-  samp_n5_rep100 %>% 
-  group_by(replicate) %>% 
+  samp_n5_rep100 |> 
+  group_by(replicate) |> 
   summarise(mean_height = mean(height.ft))
 
 means_hght_samp_n5_rep100
@@ -237,7 +237,7 @@ ggplot(
 Calculate the mean and SD of the 100 mean heights from the 100 samples:
 ```{r}
 stats_means_hght_samp_n5_rep100 <- 
-  means_hght_samp_n5_rep100 %>% 
+  means_hght_samp_n5_rep100 |> 
   summarise(
    mean_mean_height = mean(mean_height),
    sd_mean_height = sd(mean_height)
@@ -253,7 +253,7 @@ stats_means_hght_samp_n5_rep100
 Take 10,000 random samples of size  
 n = 5 from `yrbss2`:
 ```{r}
-samp_n5_rep10000 <- yrbss2 %>%
+samp_n5_rep10000 <- yrbss2 |>
   rep_sample_n(size = 5, 
                reps = 10000,
                replace = FALSE)
@@ -263,8 +263,8 @@ samp_n5_rep10000
 Calculate the mean for each of the 10,000 random samples:
 ```{r}
 means_hght_samp_n5_rep10000 <- 
-  samp_n5_rep10000 %>% 
-  group_by(replicate) %>% 
+  samp_n5_rep10000 |> 
+  group_by(replicate) |> 
   summarise(mean_height = 
             mean(height.ft))
 
@@ -287,7 +287,7 @@ ggplot(
 Calculate the mean and SD of the 10,000 mean heights from the 10,000 samples:
 ```{r}
 stats_means_hght_samp_n5_rep10000 <- 
-  means_hght_samp_n5_rep10000 %>% 
+  means_hght_samp_n5_rep10000 |> 
   summarise(
    mean_mean_height=mean(mean_height),
    sd_mean_height = sd(mean_height)
@@ -303,7 +303,7 @@ stats_means_hght_samp_n5_rep10000
 Take 10,000 random samples of size  
 n = 30 from `yrbss2`:
 ```{r}
-samp_n30_rep10000 <- yrbss2 %>%
+samp_n30_rep10000 <- yrbss2 |>
   rep_sample_n(size = 30, 
                reps = 10000,
                replace = FALSE)
@@ -313,8 +313,8 @@ samp_n30_rep10000
 Calculate the mean for each of the 10,000 random samples:
 ```{r}
 means_hght_samp_n30_rep10000 <- 
-  samp_n30_rep10000 %>% 
-  group_by(replicate) %>% 
+  samp_n30_rep10000 |> 
+  group_by(replicate) |> 
   summarise(mean_height = 
             mean(height.ft))
 
@@ -337,7 +337,7 @@ ggplot(
 Calculate the mean and SD of the 10,000 mean heights from the 10,000 samples:
 ```{r}
 stats_means_hght_samp_n30_rep10000<- 
-  means_hght_samp_n30_rep10000 %>% 
+  means_hght_samp_n30_rep10000 |> 
   summarise(
    mean_mean_height=mean(mean_height),
    sd_mean_height = sd(mean_height)
@@ -385,8 +385,8 @@ A
 ```{r}
 #| echo: false
 means_wght_samp_n30_rep10000 <- 
-  samp_n30_rep10000 %>% 
-  group_by(replicate) %>% 
+  samp_n30_rep10000 |> 
+  group_by(replicate) |> 
   summarise(mean_weight = 
             mean(weight.lb))
 
@@ -403,8 +403,8 @@ B
 ```{r}
 #| echo: false
 means_wght_samp_n5_rep10000 <- 
-  samp_n5_rep10000 %>% 
-  group_by(replicate) %>% 
+  samp_n5_rep10000 |> 
+  group_by(replicate) |> 
   summarise(mean_weight = 
             mean(weight.lb))
 
@@ -543,7 +543,7 @@ sd_height.ft/sqrt(30)
 
 ```{r}
 stats_means_hght_samp_n30_rep10000<- 
-  means_hght_samp_n30_rep10000 %>% 
+  means_hght_samp_n30_rep10000 |> 
   summarise(
    mean_mean_height=mean(mean_height),
    sd_mean_height = sd(mean_height)

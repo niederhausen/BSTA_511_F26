@@ -112,7 +112,7 @@ employ <- read_delim(
 
 ```{r}
 summary(employ)
-employ %>% tabyl(disability)
+employ |> tabyl(disability)
 ```
 
 
@@ -129,7 +129,7 @@ summary(employ)
 Make `disability` a factor variable:
 
 ```{r}
-employ <- employ %>% 
+employ <- employ |> 
   mutate(disability = factor(disability))
 ```
 
@@ -152,7 +152,7 @@ levels(employ$disability)
 [What changes are being made below?]{style="color:green"}
 
 ```{r}
-employ <- employ %>% 
+employ <- employ |> 
   mutate(
     # make "none" the first level
     # by only listing the level none, all other levels will be in original order
@@ -261,9 +261,9 @@ __[Questions:]{style="color:green"}__
     * `lm` = linear model; will be using frequently in BSTA 512
 
 ```{r}
-lm(score ~ disability, data = employ) %>% anova()
+lm(score ~ disability, data = employ) |> anova()
 
-aov(score ~ disability, data = employ) %>% summary()
+aov(score ~ disability, data = employ) |> summary()
 ```
 
 Hypotheses:
@@ -353,7 +353,7 @@ $$SST = \sum_{i = 1}^k \sum_{j = 1}^{n_i}(x_{ij} -\bar{x})^2 = (N-1)s^2$$
 
 Total sample size $N$:
 ```{r}
-(Ns <- employ %>% group_by(disability) %>% count())
+(Ns <- employ |> group_by(disability) |> count())
 ```
 
 $SST$: 
@@ -407,8 +407,8 @@ ggplot(employ, aes(x = disability, y=score,
 Calculate means $\bar{x}_i$ for each group:
 
 ```{r}
-xbar_groups <- employ %>% 
-  group_by(disability) %>% 
+xbar_groups <- employ |> 
+  group_by(disability) |> 
   summarise(mean = mean(score))
 xbar_groups
 ```
@@ -467,8 +467,8 @@ ggplot(employ, aes(x = disability, y=score,
 
 Calculate sd's $s_i$ for each group:
 ```{r}
-sd_groups <- employ %>% 
-  group_by(disability) %>% 
+sd_groups <- employ |> 
+  group_by(disability) |> 
   summarise(SD = sd(score))
 sd_groups
 ```
@@ -522,11 +522,11 @@ $$F = \frac{MSG}{MSE}$$
 # Note that I'm saving the tidy anova table
 # Will be pulling p-value from this on future slide
 
-empl_lm <- lm(score ~ disability, data = employ) %>% 
-  anova() %>% 
+empl_lm <- lm(score ~ disability, data = employ) |> 
+  anova() |> 
   tidy()
 
-empl_lm %>% gt()
+empl_lm |> gt()
 ```
 
 Hypotheses:
@@ -561,9 +561,9 @@ round(empl_lm$p.value[1],2)
 Pull the p-value using tidyverse:
 
 ```{r}
-empl_lm %>% 
-  filter(term == "disability") %>% 
-  pull(p.value) %>% 
+empl_lm |> 
+  filter(term == "disability") |> 
+  pull(p.value) |> 
   round(2)
 ```
 
@@ -648,7 +648,7 @@ ggplot(data.frame(x = c(0, 6)), aes(x = x)) + # set x-axis bounds from 0 to 6
 
 
 ```{r}
-empl_lm %>% gt()
+empl_lm |> gt()
 
 # p-value using F-distribution
 
@@ -872,7 +872,7 @@ H_0 &: \mu_1 = \mu_2 = ... = \mu_k\\
 * ANOVA table in R:
 
 ```{r}
-lm(score ~ disability, data = employ) %>% anova()
+lm(score ~ disability, data = employ) |> anova()
 ```
 
 * ANOVA table

@@ -886,25 +886,25 @@ ggplot(data = dds.discr,
 * the output is a long tibble, and not a "nice" table
 :::
 ```{r}
-dds.discr %>% count(ethnicity)
+dds.discr |> count(ethnicity)
 ```
 :::
 ::: {.column width="50%"}
 ```{r}
-dds.discr %>% 
+dds.discr |> 
   count(ethnicity, age.cohort)
 ```
 :::
 :::
 
-## How to use the pipe `%>%`
+## How to use the pipe `|>`
 
 ::: {style="font-size: 80%;"}
-The pipe operator `%>%` strings together commands to be performed sequentially
+The pipe operator `|>` strings together commands to be performed sequentially
 :::
 
 ```{r}
-dds.discr %>% head(n=3)      # pronounce %>% as "then"
+dds.discr |> head(n=3)      # pronounce |> as "then"
 ```
 
 ::: {style="font-size: 80%;"}
@@ -914,7 +914,7 @@ dds.discr %>% head(n=3)      # pronounce %>% as "then"
 :::
 ```{r}
 #| eval: false
-dds.discr %>% head(n=3) %>% summary()
+dds.discr |> head(n=3) |> summary()
 ```
 
 ## Frequency tables: `janitor` package's `tabyl` function 
@@ -925,7 +925,7 @@ dds.discr %>% head(n=3) %>% summary()
 ```{r}
 #| code-line-numbers: "3"
 # default table
-dds.discr %>% 
+dds.discr |> 
   tabyl(ethnicity)  
 ```
 
@@ -935,9 +935,9 @@ dds.discr %>%
 `adorn_` your table!
 ```{r}
 #| code-line-numbers: "3-4"
-dds.discr %>% 
-  tabyl(ethnicity) %>%
-  adorn_totals("row") %>% 
+dds.discr |> 
+  tabyl(ethnicity) |>
+  adorn_totals("row") |> 
   adorn_pct_formatting(digits=2)  
 ```
 
@@ -961,10 +961,10 @@ dds.discr %>%
 
 ```{r}
 #| code-line-numbers: "4-5"
-dds.discr %>% 
-  tabyl(ethnicity) %>%
-  adorn_totals("row") %>% 
-  adorn_pct_formatting(digits=2) %>%   
+dds.discr |> 
+  tabyl(ethnicity) |>
+  adorn_totals("row") |> 
+  adorn_pct_formatting(digits=2) |>   
   select(-n) 
 ```
 
@@ -991,8 +991,8 @@ are sometimes called **marginal totals**
 
 ```{r}
 #| code-line-numbers: "2-3"
-dds.discr %>% 
-  tabyl(ethnicity, gender) %>%    
+dds.discr |> 
+  tabyl(ethnicity, gender) |>    
   adorn_totals(c("row", "col"))    
 ```
 
@@ -1003,11 +1003,11 @@ dds.discr %>%
 
 ```{r}
 #| code-line-numbers: "4-6"
-dds.discr %>% 
-  tabyl(ethnicity, age.cohort) %>%
-  adorn_totals(c("row")) %>%
-  adorn_percentages("row") %>%   
-  adorn_pct_formatting(digits=0) %>%    
+dds.discr |> 
+  tabyl(ethnicity, age.cohort) |>
+  adorn_totals(c("row")) |>
+  adorn_percentages("row") |>   
+  adorn_pct_formatting(digits=0) |>    
   adorn_ns()    
 ```
 
@@ -1022,7 +1022,7 @@ dds.discr %>%
 ```{r}
 mean(dds.discr$expenditures)
 
-dds.discr %>% 
+dds.discr |> 
   summarize(
     ave = mean(expenditures),
     SD = sd(expenditures),
@@ -1033,8 +1033,8 @@ dds.discr %>%
 ::: {.column width="55%"}
 ```{r}
 #| code-line-numbers: "2"
-dds.discr %>% 
-  group_by(ethnicity) %>% 
+dds.discr |> 
+  group_by(ethnicity) |> 
   summarize(
     ave = mean(expenditures),
     SD = sd(expenditures),
@@ -1047,10 +1047,10 @@ dds.discr %>%
 ## `get_summary_stats()` from `rstatix` package
 
 ```{r}
-dds.discr %>% get_summary_stats()
+dds.discr |> get_summary_stats()
 
-dds.discr %>% 
-  group_by(ethnicity) %>%
+dds.discr |> 
+  group_by(ethnicity) |>
   get_summary_stats(expenditures, type = "common")
 ```
 
@@ -1059,7 +1059,7 @@ dds.discr %>%
 Use `kable()` from the `knitr` package.
 
 ```{r}
-dds.discr %>% get_summary_stats() %>% kable()
+dds.discr |> get_summary_stats() |> kable()
 ```
 
 ## How to force all output to be shown? `knitr` (2/2) {.smaller}
@@ -1067,9 +1067,9 @@ dds.discr %>% get_summary_stats() %>% kable()
 Use `kable()` from the `knitr` package.
 
 ```{r}
-dds.discr %>% 
-  group_by(ethnicity) %>%
-  get_summary_stats(expenditures, type = "common") %>% 
+dds.discr |> 
+  group_by(ethnicity) |>
+  get_summary_stats(expenditures, type = "common") |> 
   kable()
 ```
 

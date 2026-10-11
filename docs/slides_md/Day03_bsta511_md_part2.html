@@ -417,8 +417,8 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <p>Plot on previous slide</p>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-label="1"></a>dds.discr_Hips_WhnH <span class="ot">&lt;-</span> dds.discr <span class="sc">%&gt;%</span>  </span>
-<span id="cb4-2"><a href="#cb4-2" aria-label="2"></a>  <span class="fu">filter</span>(ethnicity <span class="sc">==</span> <span class="st">"White not Hispanic"</span> <span class="sc">|</span> ethnicity <span class="sc">==</span> <span class="st">"Hispanic"</span> ) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-label="1"></a>dds.discr_Hips_WhnH <span class="ot">&lt;-</span> dds.discr <span class="sc">|&gt;</span>  </span>
+<span id="cb4-2"><a href="#cb4-2" aria-label="2"></a>  <span class="fu">filter</span>(ethnicity <span class="sc">==</span> <span class="st">"White not Hispanic"</span> <span class="sc">|</span> ethnicity <span class="sc">==</span> <span class="st">"Hispanic"</span> ) <span class="sc">|&gt;</span> </span>
 <span id="cb4-3"><a href="#cb4-3" aria-label="3"></a>  <span class="fu">droplevels</span>()   <span class="co"># remove empty factor levels</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-label="4"></a></span>
 <span id="cb4-5"><a href="#cb4-5" aria-label="5"></a><span class="fu">ggplot</span>(<span class="at">data =</span> dds.discr_Hips_WhnH,   </span>
@@ -442,9 +442,9 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <div class="column" style="width:45%;">
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-label="1"></a>mean_expend <span class="ot">&lt;-</span> </span>
-<span id="cb5-2"><a href="#cb5-2" aria-label="2"></a>  dds.discr_Hips_WhnH <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-label="2"></a>  dds.discr_Hips_WhnH <span class="sc">|&gt;</span> </span>
 <span id="cb5-3"><a href="#cb5-3" aria-label="3"></a>  <span class="fu">group_by</span>(</span>
-<span id="cb5-4"><a href="#cb5-4" aria-label="4"></a>    ethnicity, age.cohort)<span class="sc">%&gt;%</span> </span>
+<span id="cb5-4"><a href="#cb5-4" aria-label="4"></a>    ethnicity, age.cohort)<span class="sc">|&gt;</span> </span>
 <span id="cb5-5"><a href="#cb5-5" aria-label="5"></a>  <span class="fu">summarize</span>(</span>
 <span id="cb5-6"><a href="#cb5-6" aria-label="6"></a>    <span class="at">ave =</span> <span class="fu">mean</span>(expenditures))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
@@ -487,7 +487,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <div class="column" style="width:40%;">
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-label="1"></a>mean_expend_wide <span class="ot">&lt;-</span> </span>
-<span id="cb9-2"><a href="#cb9-2" aria-label="2"></a>  mean_expend <span class="sc">%&gt;%</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-label="2"></a>  mean_expend <span class="sc">|&gt;</span> </span>
 <span id="cb9-3"><a href="#cb9-3" aria-label="3"></a>  <span class="fu">pivot_wider</span>(</span>
 <span id="cb9-4"><a href="#cb9-4" aria-label="4"></a>    <span class="at">names_from =</span> ethnicity,</span>
 <span id="cb9-5"><a href="#cb9-5" aria-label="5"></a>    <span class="at">values_from =</span> ave)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -513,7 +513,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <section id="differences-in-mean-annual-dds-expenditures-by-age-cohort-and-raceethnicity" class="level2">
 <h2 class="anchored" data-anchor-id="differences-in-mean-annual-dds-expenditures-by-age-cohort-and-raceethnicity">Differences in mean annual DDS expenditures by age cohort and race/ethnicity</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-label="1"></a>mean_expend_wide <span class="ot">&lt;-</span> mean_expend_wide <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-label="1"></a>mean_expend_wide <span class="ot">&lt;-</span> mean_expend_wide <span class="sc">|&gt;</span> </span>
 <span id="cb12-2"><a href="#cb12-2" aria-label="2"></a>  <span class="fu">mutate</span>(<span class="at">diff_mean =</span> <span class="st">`</span><span class="at">White not Hispanic</span><span class="st">`</span> <span class="sc">-</span> Hispanic)</span>
 <span id="cb12-3"><a href="#cb12-3" aria-label="3"></a></span>
 <span id="cb12-4"><a href="#cb12-4" aria-label="4"></a>mean_expend_wide</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -580,7 +580,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <ul>
 <li>we string together commands</li>
 <li>to be performed sequentially</li>
-<li>using pipes <code>%&gt;%</code></li>
+<li>using pipes <code>|&gt;</code></li>
 </ul></li>
 </ul>
 </div>
@@ -589,7 +589,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <h2 class="anchored" data-anchor-id="summary-of-data-wrangling-so-far">Summary of data wrangling so far</h2>
 <div style="font-size: 80%;">
 <ul>
-<li>The pipe <code>%&gt;%</code> to string together commands in sequence</li>
+<li>The pipe <code>|&gt;</code> to string together commands in sequence</li>
 <li><code>mutate()</code> to add a new variable to a dataset</li>
 <li><code>select()</code> to select columns (or deselect columns with -variable)</li>
 <li><code>filter()</code> to select specific rows</li>

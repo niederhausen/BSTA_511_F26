@@ -142,8 +142,8 @@ ethnicity, age, and expenditures (code on next slide)
 #| fig.width: 12
 #| fig.height: 7
 #| code-line-numbers: "1-2, 5,9"
-dds.discr_Hips_WhnH <- dds.discr %>%  
-  filter(ethnicity == "White not Hispanic" | ethnicity == "Hispanic" ) %>% 
+dds.discr_Hips_WhnH <- dds.discr |>  
+  filter(ethnicity == "White not Hispanic" | ethnicity == "Hispanic" ) |> 
   droplevels() 
 
 ggplot(data = dds.discr_Hips_WhnH,   
@@ -174,8 +174,8 @@ Plot on previous slide
 ```{r}
 #| eval: false
 #| code-line-numbers: "1-2,5,9"
-dds.discr_Hips_WhnH <- dds.discr %>%  
-  filter(ethnicity == "White not Hispanic" | ethnicity == "Hispanic" ) %>% 
+dds.discr_Hips_WhnH <- dds.discr |>  
+  filter(ethnicity == "White not Hispanic" | ethnicity == "Hispanic" ) |> 
   droplevels()   # remove empty factor levels
 
 ggplot(data = dds.discr_Hips_WhnH,   
@@ -201,9 +201,9 @@ ggplot(data = dds.discr_Hips_WhnH,
 ```{r}
 #| code-line-numbers: "3,5"
 mean_expend <- 
-  dds.discr_Hips_WhnH %>% 
+  dds.discr_Hips_WhnH |> 
   group_by(
-    ethnicity, age.cohort)%>% 
+    ethnicity, age.cohort)|> 
   summarize(
     ave = mean(expenditures))
 ```
@@ -223,7 +223,7 @@ mean_expend
 ```{r}
 #| code-line-numbers: "3-5"
 mean_expend_wide <- 
-  mean_expend %>% 
+  mean_expend |> 
   pivot_wider(
     names_from = ethnicity,
     values_from = ave)
@@ -242,7 +242,7 @@ mean_expend_wide
 
 ```{r}
 #| code-line-numbers: "2"
-mean_expend_wide <- mean_expend_wide %>% 
+mean_expend_wide <- mean_expend_wide |> 
   mutate(diff_mean = `White not Hispanic` - Hispanic)
 
 mean_expend_wide
@@ -286,14 +286,14 @@ __Question__: Are the data sufficient evidence of ethnic discrimination in DDS e
 - There are often many steps to tidy data
     + we string together commands 
     + to be performed sequentially 
-    + using pipes `%>%`
+    + using pipes `|>`
 :::
 
 
 ## Summary of data wrangling so far
 
 ::: {style="font-size: 80%;"}
-* The pipe `%>%` to string together commands in sequence
+* The pipe `|>` to string together commands in sequence
 * `mutate()` to add a new variable to a dataset
 * `select()` to select columns (or deselect columns with -variable)
 * `filter()` to select specific rows

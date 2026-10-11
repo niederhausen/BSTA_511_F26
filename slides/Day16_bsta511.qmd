@@ -122,7 +122,7 @@ glimpse(gapm_original)
 Note the missing values for our variables of interest
 
 ```{r}
-gapm_original %>% select(life_expectancy_years_2011, female_literacy_rate_2011) %>% 
+gapm_original |> select(life_expectancy_years_2011, female_literacy_rate_2011) |> 
   get_summary_stats()
 ```
 
@@ -134,7 +134,7 @@ gapm_original %>% select(life_expectancy_years_2011, female_literacy_rate_2011) 
 Remove rows with missing data for life expectancy and female literacy rate
 
 ```{r}
-gapm <- gapm_original %>% 
+gapm <- gapm_original |> 
   drop_na(life_expectancy_years_2011, female_literacy_rate_2011)
 
 glimpse(gapm)
@@ -144,7 +144,7 @@ glimpse(gapm)
 No missing values now for our variables of interest
 
 ```{r}
-gapm %>% select(life_expectancy_years_2011, female_literacy_rate_2011) %>% 
+gapm |> select(life_expectancy_years_2011, female_literacy_rate_2011) |> 
   get_summary_stats()
 ```
 
@@ -204,7 +204,7 @@ model1 <- lm(life_expectancy_years_2011 ~ female_literacy_rate_2011,
                  data = gapm)
 summary(model1)
 
-tidy(model1) %>% gt()
+tidy(model1) |> gt()
 ```
 
 Regression equation for our model:
@@ -908,7 +908,7 @@ r^2
 model1 <- lm(life_expectancy_years_2011 ~ female_literacy_rate_2011,
                  data = gapm)
 # Get regression table:
-tidy(model1, conf.int = TRUE) %>% gt() # conf.int = TRUE part is new! 
+tidy(model1, conf.int = TRUE) |> gt() # conf.int = TRUE part is new! 
 ```
 
 
@@ -1057,14 +1057,14 @@ where $t^*$ is the $t$-distribution critical value with $df = n -2$.
 :::
 
 ```{r}
-tidy(model1, conf.int = TRUE) %>% gt()
+tidy(model1, conf.int = TRUE) |> gt()
 ```
 
 Save regression output for the row with the slope's information: 
 
 ```{r}
-model1_b1 <-tidy(model1) %>% filter(term == "female_literacy_rate_2011")
-model1_b1 %>% gt()
+model1_b1 <-tidy(model1) |> filter(term == "female_literacy_rate_2011")
+model1_b1 |> gt()
 ```
 
 
@@ -1121,7 +1121,7 @@ when we assume $H_0: \beta_1 = 0$ is true.
 :::
 
 ```{r}
-tidy(model1, conf.int = TRUE) %>% gt()
+tidy(model1, conf.int = TRUE) |> gt()
 ```
 
 Calculate the test statistic using the values in the regression table:
@@ -1152,7 +1152,7 @@ Compare this test statistic value to the one from the regression table above
 Compare the $p$-value to the one from the regression table below
 
 ```{r}
-tidy(model1, conf.int = TRUE) %>% gt()  # compare p-value calculated above to p-value in table
+tidy(model1, conf.int = TRUE) |> gt()  # compare p-value calculated above to p-value in table
 ```
 
 # Prediction (& inference)
@@ -1164,7 +1164,7 @@ tidy(model1, conf.int = TRUE) %>% gt()  # compare p-value calculated above to p-
 
 ```{r}
 #| echo: false
-tidy(model1) %>% gt()
+tidy(model1) |> gt()
 ```
 
 $$\widehat{\textrm{life expectancy}} = 50.9 + 0.232 \cdot \textrm{female literacy rate} $$
@@ -1494,9 +1494,9 @@ model1_pred_bands <- augment(model1, interval = "prediction")
 names(model1_pred_bands) 
 
 # glimpse of select variables of interest:
-model1_pred_bands %>% 
+model1_pred_bands |> 
   select(life_expectancy_years_2011, female_literacy_rate_2011, 
-         .fitted:.upper) %>% 
+         .fitted:.upper) |> 
   glimpse()
 ```
 

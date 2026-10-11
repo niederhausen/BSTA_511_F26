@@ -650,7 +650,7 @@ Note that the test output also gives the 95% CI using the t-distribution.
 * Combined with the `gt()` function from the `gt` package, we get a nice table 
 
 ```{r}
-tidy(temps_ttest) %>% 
+tidy(temps_ttest) |> 
   gt()
 ```
 
@@ -670,10 +670,10 @@ Advantage: quick and easy
 ::: {.column width="50%"}
 Or the `tidyverse` way: using `pull()` from `dplyr` package 
 ```{r}
-tidy(temps_ttest) %>% pull(p.value)
+tidy(temps_ttest) |> pull(p.value)
 ```
 
-Advantage: can use together with piping (`%>%`) other functions
+Advantage: can use together with piping (`|>`) other functions
 :::
 :::
 

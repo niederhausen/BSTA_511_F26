@@ -434,7 +434,7 @@ DepPA <- tibble(
 
 Summary table of data:
 ```{r}
-DepPA %>% tabyl(Depression, PA) 
+DepPA |> tabyl(Depression, PA) 
 
 # base R:
 table(DepPA)
@@ -462,24 +462,24 @@ If have [>2 columns]{style="color:green"} in the dataset, we need to specify whi
 The tidyverse way (fewer parentheses)
 
 ```{r}
-table(DepPA$Depression, DepPA$PA) %>% 
+table(DepPA$Depression, DepPA$PA) |> 
   chisq.test() 
 ```
 
 `tidy()` the output (from `broom` package):
 
 ```{r}
-table(DepPA$Depression, DepPA$PA) %>% 
-  chisq.test() %>% 
-  tidy() %>% gt()
+table(DepPA$Depression, DepPA$PA) |> 
+  chisq.test() |> 
+  tidy() |> gt()
 ```
 
 Pull _p_-value
 
 ```{r}
-table(DepPA$Depression, DepPA$PA) %>% 
-  chisq.test() %>% 
-  tidy() %>% pull(p.value)
+table(DepPA$Depression, DepPA$PA) |> 
+  chisq.test() |> 
+  tidy() |> pull(p.value)
 ```
 
 
@@ -656,8 +656,8 @@ SportsBet_table
 
 
 ```{r}
-chisq.test(SportsBet_table) %>% tidy() %>% gt()
-prop.test(SportsBet_table) %>% tidy() %>% gt()
+chisq.test(SportsBet_table) |> tidy() |> gt()
+prop.test(SportsBet_table) |> tidy() |> gt()
 
 2*pnorm(sqrt(0.0199), lower.tail=F) # p-value
 ```

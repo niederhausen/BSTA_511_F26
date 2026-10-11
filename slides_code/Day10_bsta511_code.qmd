@@ -649,7 +649,7 @@ Note that the test output also gives the 95% CI using the t-distribution.
 * Combined with the `gt()` function from the `gt` package, we get a nice table 
 
 ```{r}
-tidy(temps_ttest) %>% 
+tidy(temps_ttest) |> 
   gt()
 ```
 
@@ -669,10 +669,10 @@ Advantage: quick and easy
 ::: {.column width="50%"}
 Or the `tidyverse` way: using `pull()` from `dplyr` package 
 ```{r}
-tidy(temps_ttest) %>% pull(p.value)
+tidy(temps_ttest) |> pull(p.value)
 ```
 
-Advantage: can use together with piping (`%>%`) other functions
+Advantage: can use together with piping (`|>`) other functions
 :::
 :::
 
@@ -834,7 +834,7 @@ $$
 ```{r}
 chol <- read_csv("data/chol213.csv")
 glimpse(chol)
-chol %>% get_summary_stats(type = "common") %>% gt()
+chol |> get_summary_stats(type = "common") |> gt()
 ```
 
 
@@ -862,15 +862,15 @@ ggplot(chol, aes(x=After)) +
 
 ```{r}
 #| fig.height: 4
-chol_long <- chol %>% 
+chol_long <- chol |> 
   # need an ID column for the plot
   # make it factor so that coloring is not on continuous scale
-  mutate(ID = factor(1:n())) %>% 
+  mutate(ID = factor(1:n())) |> 
   # make data long for plot: 
   pivot_longer(
     cols = Before:After,
     names_to = "Time",  # need a column for Before & After on x-axis
-    values_to = "Cholesterol") %>% # need a column of all cholesterol values for y-axis
+    values_to = "Cholesterol") |> # need a column of all cholesterol values for y-axis
   mutate(
     # change Time a factor variable so that can reorder
     # levels so that Before is before After
@@ -890,15 +890,15 @@ ggplot(chol_long,
 
 
 ```{r }
-chol <- chol %>% 
+chol <- chol |> 
   mutate(DiffChol = After-Before) 
 head(chol, 12)
 
 ```
 
 ```{r }
-chol %>% 
-  get_summary_stats(type = "common") %>% 
+chol |> 
+  get_summary_stats(type = "common") |> 
   gt()
 ```
 
@@ -964,7 +964,7 @@ H_A: \delta   \\$$
 ## Step 3: Test statistic 
 
 ```{r}
-chol %>% select(DiffChol) %>% get_summary_stats(type = "common") %>% gt()
+chol |> select(DiffChol) |> get_summary_stats(type = "common") |> gt()
 ```
 
 $$
@@ -1058,7 +1058,7 @@ __Conclusion statement__:
 # 95% CI for the mean difference in cholesterol levels
 
 ```{r}
-chol %>% select(DiffChol) %>% get_summary_stats(type = "common") %>% gt()
+chol |> select(DiffChol) |> get_summary_stats(type = "common") |> gt()
 ```
 
 CI for $\mu_d$ (or $\delta$):
@@ -1114,24 +1114,24 @@ t.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE)
 
 
 
-## R option 3: Run a 2-sample `t.test` with `paired = TRUE` option, but using the long data and a "formula"
+<!-- ## R option 3: Run a 2-sample `t.test` with `paired = TRUE` option, but using the long data and a "formula" -->
 
 
-* Use the usual `t.test`
-* What's different is that 
-    * instead of specifying the variables with `x=` and `y=`, 
-    * we give a __formula__ of the form `y ~ x` using _just the variable names_,
-    * and then specify the name of the dataset using `data =`
-* This method is often used in practice, and more similar to the coding style of running a regression model (BSTA 512 & 513)
+<!-- * Use the usual `t.test` -->
+<!-- * What's different is that  -->
+<!--     * instead of specifying the variables with `x=` and `y=`,  -->
+<!--     * we give a __formula__ of the form `y ~ x` using _just the variable names_, -->
+<!--     * and then specify the name of the dataset using `data =` -->
+<!-- * This method is often used in practice, and more similar to the coding style of running a regression model (BSTA 512 & 513) -->
 
 
 
-```{r}
-# using long data with columns Cholesterol & Time:
-t.test(Cholesterol ~ Time, 
-       paired = TRUE, 
-       data = chol_long)
-```
+<!-- ```{r} -->
+<!-- # using long data with columns Cholesterol & Time: -->
+<!-- t.test(Cholesterol ~ Time,  -->
+<!--        paired = TRUE,  -->
+<!--        data = chol_long) -->
+<!-- ``` -->
 
 
 
@@ -1140,11 +1140,11 @@ t.test(Cholesterol ~ Time,
 
 ```{r}
 # option 1
-t.test(x = chol$DiffChol, mu = 0) %>% tidy() %>% gt() # tidy from broom package
+t.test(x = chol$DiffChol, mu = 0) |> tidy() |> gt() # tidy from broom package
 # option 2
-t.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE) %>% tidy() %>% gt()
-# option 3
-t.test(Cholesterol ~ Time, paired = TRUE, data = chol_long) %>% tidy() %>% gt()
+t.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE) |> tidy() |> gt()
+# # option 3
+# t.test(Cholesterol ~ Time, paired = TRUE, data = chol_long) |> tidy() |> gt()
 ```
 
 
@@ -1170,7 +1170,7 @@ How are the steps different?
 
 ```{r}
 # alternative = c("two.sided", "less", "greater")
-t.test(x = chol$DiffChol, mu = 0, alternative = "less") %>% tidy() %>% gt()
+t.test(x = chol$DiffChol, mu = 0, alternative = "less") |> tidy() |> gt()
 ```
 
 

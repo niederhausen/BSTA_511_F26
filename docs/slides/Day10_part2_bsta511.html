@@ -441,8 +441,8 @@ Columns: 2
 $ Before &lt;dbl&gt; 195, 145, 205, 159, 244, 166, 250, 236, 192, 224, 238, 197, 169…
 $ After  &lt;dbl&gt; 146, 155, 178, 146, 208, 147, 202, 215, 184, 208, 206, 169, 182…</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-label="1"></a>chol <span class="sc">%&gt;%</span> </span>
-<span id="cb3-2"><a aria-label="2"></a>  <span class="fu">get_summary_stats</span>(<span class="at">type =</span> <span class="st">"common"</span>) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-label="1"></a>chol <span class="sc">|&gt;</span> </span>
+<span id="cb3-2"><a aria-label="2"></a>  <span class="fu">get_summary_stats</span>(<span class="at">type =</span> <span class="st">"common"</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb3-3"><a aria-label="3"></a>  <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div id="mecfuynzio" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
@@ -954,7 +954,7 @@ $ After  &lt;dbl&gt; 146, 155, 178, 146, 208, 147, 202, 215, 184, 208, 206, 169,
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
+<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -963,7 +963,7 @@ $ After  &lt;dbl&gt; 146, 155, 178, 146, 208, 147, 202, 215, 184, 208, 206, 169,
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-3-2.png" width="960"></p>
+<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-2-2.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -975,7 +975,7 @@ $ After  &lt;dbl&gt; 146, 155, 178, 146, 208, 147, 202, 215, 184, 208, 206, 169,
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
+<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -984,7 +984,7 @@ $ After  &lt;dbl&gt; 146, 155, 178, 146, 208, 147, 202, 215, 184, 208, 206, 169,
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-4-2.png" width="960"></p>
+<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-3-2.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -998,7 +998,7 @@ $ After  &lt;dbl&gt; 146, 155, 178, 146, 208, 147, 202, 215, 184, 208, 206, 169,
 </ul>
 <p><span style="color:darkorange"><em>What does this figure tell us?</em></span></p>
 
-<img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"><ul>
+<img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"><ul>
 <li>See code file for how to wrangle the data and create the figure - <em>you will not be expected to do this yourself</em>.</li>
 </ul>
 </section>
@@ -1006,7 +1006,7 @@ $ After  &lt;dbl&gt; 146, 155, 178, 146, 208, 147, 202, 215, 184, 208, 206, 169,
 <h2>EDA: Differences in cholesterol levels: After - Before diet</h2>
 <p><span style="color:darkorange"><em>What is this code doing?</em></span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-label="1"></a>chol <span class="ot">&lt;-</span> chol <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-label="1"></a>chol <span class="ot">&lt;-</span> chol <span class="sc">|&gt;</span> </span>
 <span id="cb8-2"><a aria-label="2"></a>  <span class="fu">mutate</span>(<span class="at">DiffChol =</span> After<span class="sc">-</span>Before) </span>
 <span id="cb8-3"><a aria-label="3"></a><span class="fu">head</span>(chol, <span class="dv">8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -1025,8 +1025,8 @@ $ After  &lt;dbl&gt; 146, 155, 178, 146, 208, 147, 202, 215, 184, 208, 206, 169,
 </div>
 <p><span style="color:darkorange"><em>Is the mean of DiffChol the same as the difference in means of After - Before? Should it be? Why or why not?</em></span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a aria-label="1"></a>chol <span class="sc">%&gt;%</span> </span>
-<span id="cb10-2"><a aria-label="2"></a>  <span class="fu">get_summary_stats</span>(<span class="at">type =</span> <span class="st">"common"</span>) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a aria-label="1"></a>chol <span class="sc">|&gt;</span> </span>
+<span id="cb10-2"><a aria-label="2"></a>  <span class="fu">get_summary_stats</span>(<span class="at">type =</span> <span class="st">"common"</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb10-3"><a aria-label="3"></a>  <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div id="zskwhnmeto" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
@@ -1550,7 +1550,7 @@ $ After  &lt;dbl&gt; 146, 155, 178, 146, 208, 147, 202, 215, 184, 208, 206, 169,
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-8-1.png" width="960"></p>
+<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-7-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -1559,7 +1559,7 @@ $ After  &lt;dbl&gt; 146, 155, 178, 146, 208, 147, 202, 215, 184, 208, 206, 169,
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-8-2.png" width="960"></p>
+<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-7-2.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -1572,7 +1572,7 @@ $ After  &lt;dbl&gt; 146, 155, 178, 146, 208, 147, 202, 215, 184, 208, 206, 169,
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
+<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-8-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -1581,7 +1581,7 @@ $ After  &lt;dbl&gt; 146, 155, 178, 146, 208, 147, 202, 215, 184, 208, 206, 169,
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-9-2.png" width="960"></p>
+<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-8-2.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -1632,7 +1632,7 @@ H_A:&amp; \delta \\
 <section id="step-3-test-statistic" class="slide level2">
 <h2>Step 3: Test statistic</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a aria-label="1"></a>chol <span class="sc">%&gt;%</span> <span class="fu">select</span>(DiffChol) <span class="sc">%&gt;%</span> <span class="fu">get_summary_stats</span>(<span class="at">type =</span> <span class="st">"common"</span>) <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a aria-label="1"></a>chol <span class="sc">|&gt;</span> <span class="fu">select</span>(DiffChol) <span class="sc">|&gt;</span> <span class="fu">get_summary_stats</span>(<span class="at">type =</span> <span class="st">"common"</span>) <span class="sc">|&gt;</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div id="yqfheibtzd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>#yqfheibtzd table {
@@ -2142,7 +2142,7 @@ t_{\bar{x}_d} = \frac{\bar{x}_d - \delta_0}{\frac{s_d}{\sqrt{n}}}
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-12-1.png" width="960"></p>
+<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -2151,7 +2151,7 @@ t_{\bar{x}_d} = \frac{\bar{x}_d - \delta_0}{\frac{s_d}{\sqrt{n}}}
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-13-1.png" width="960"></p>
+<p><img data-src="Day10_part2_bsta511_files/figure-revealjs/unnamed-chunk-12-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -2186,9 +2186,9 @@ H_A:&amp; \delta \neq 0 \\
 <section id="ci-for-the-mean-difference-in-cholesterol-levels" class="slide level2">
 <h2>95% CI for the mean difference in cholesterol levels</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a aria-label="1"></a>chol <span class="sc">%&gt;%</span> </span>
-<span id="cb16-2"><a aria-label="2"></a>  <span class="fu">select</span>(DiffChol) <span class="sc">%&gt;%</span> </span>
-<span id="cb16-3"><a aria-label="3"></a>  <span class="fu">get_summary_stats</span>(<span class="at">type =</span> <span class="st">"common"</span>) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a aria-label="1"></a>chol <span class="sc">|&gt;</span> </span>
+<span id="cb16-2"><a aria-label="2"></a>  <span class="fu">select</span>(DiffChol) <span class="sc">|&gt;</span> </span>
+<span id="cb16-3"><a aria-label="3"></a>  <span class="fu">get_summary_stats</span>(<span class="at">type =</span> <span class="st">"common"</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb16-4"><a aria-label="4"></a>  <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div id="jajxyktkxb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
@@ -2743,99 +2743,55 @@ mean difference
 </div>
 </div>
 <p><span style="color:darkorange"><em>What is different in the output compared to option 1?</em></span></p>
+<!-- ## R option 3: Run a 2-sample `t.test` with `paired = TRUE` option, but using the long data and a "formula" (1/2) -->
+<!-- ::: columns -->
+<!-- ::: {.column width="60%"} -->
+<!-- * The data have to be in a `long` format for option 3, where each person has 2 rows: one for Before and one for After. -->
+<!--     * The long dataset `chol_long` was created for the slide "EDA: Spaghetti plot of cholesterol levels before & after diet".  -->
+<!--     * See the code to create it there. -->
+<!-- * [*What information is being stored in each of the columns?*]{style="color:darkorange"} -->
+<!-- ::: -->
+<!-- ::: {.column width="40%"} -->
+<!-- ```{r} -->
+<!-- # first 16 rows of long data: -->
+<!-- head(chol_long, 16) -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- ::: -->
+<!-- ## R option 3: Run a 2-sample `t.test` with `paired = TRUE` option, but using the long data and a "formula" (2/2) -->
+<!-- ::: columns -->
+<!-- ::: {.column width="40%"} -->
+<!-- ::: {style="font-size: 90%;"} -->
+<!-- * Use the usual `t.test` -->
+<!-- * What's different is that  -->
+<!--     * instead of specifying the variables with `x=` and `y=`,  -->
+<!--     * we give a __formula__ of the form `y ~ x` using _just the variable names_, -->
+<!--     * and then specify the name of the dataset using `data =` -->
+<!-- * This method is often used in practice, and more similar to the coding style of running a regression model (BSTA 512 & 513) -->
+<!-- ::: -->
+<!-- ::: -->
+<!-- ::: {.column width="60%"} -->
+<!-- ```{r} -->
+<!-- # using long data  -->
+<!-- # with columns Cholesterol & Time -->
+<!-- t.test(Cholesterol ~ Time,  -->
+<!--        paired = TRUE,  -->
+<!--        data = chol_long) -->
+<!-- ``` -->
+<!-- * [*What is different in the output compared to option 1?*]{style="color:darkorange"} -->
+<!-- * [*Rerun the test using `Time ~ Cholesterol` (switch the variables). What do you get?*]{style="color:darkorange"} -->
+<!-- ::: -->
+<!-- ::: -->
 </section>
-<section id="r-option-3-run-a-2-sample-t.test-with-paired-true-option-but-using-the-long-data-and-a-formula-12" class="slide level2">
-<h2>R option 3: Run a 2-sample <code>t.test</code> with <code>paired = TRUE</code> option, but using the long data and a “formula” (1/2)</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
+<section id="compare-the-2-options" class="slide level2">
+<h2>Compare the 2 options</h2>
 <ul>
-<li>The data have to be in a <code>long</code> format for option 3, where each person has 2 rows: one for Before and one for After.
-<ul>
-<li>The long dataset <code>chol_long</code> was created for the slide “EDA: Spaghetti plot of cholesterol levels before &amp; after diet”.</li>
-<li>See the code to create it there.</li>
-</ul></li>
-<li><span style="color:darkorange"><em>What information is being stored in each of the columns?</em></span></li>
-</ul>
-</div><div class="column" style="width:40%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a aria-label="1"></a><span class="co"># first 16 rows of long data:</span></span>
-<span id="cb21-2"><a aria-label="2"></a><span class="fu">head</span>(chol_long, <span class="dv">16</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 16 × 3
-   ID    Time   Cholesterol
-   &lt;fct&gt; &lt;fct&gt;        &lt;dbl&gt;
- 1 1     Before         195
- 2 1     After          146
- 3 2     Before         145
- 4 2     After          155
- 5 3     Before         205
- 6 3     After          178
- 7 4     Before         159
- 8 4     After          146
- 9 5     Before         244
-10 5     After          208
-11 6     Before         166
-12 6     After          147
-13 7     Before         250
-14 7     After          202
-15 8     Before         236
-16 8     After          215</code></pre>
-</div>
-</div>
-</div></div>
-</section>
-<section id="r-option-3-run-a-2-sample-t.test-with-paired-true-option-but-using-the-long-data-and-a-formula-22" class="slide level2">
-<h2>R option 3: Run a 2-sample <code>t.test</code> with <code>paired = TRUE</code> option, but using the long data and a “formula” (2/2)</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div style="font-size: 90%;">
-<ul>
-<li>Use the usual <code>t.test</code></li>
-<li>What’s different is that
-<ul>
-<li>instead of specifying the variables with <code>x=</code> and <code>y=</code>,</li>
-<li>we give a <strong>formula</strong> of the form <code>y ~ x</code> using <em>just the variable names</em>,</li>
-<li>and then specify the name of the dataset using <code>data =</code></li>
-</ul></li>
-<li>This method is often used in practice, and more similar to the coding style of running a regression model (BSTA 512 &amp; 513)</li>
-</ul>
-</div>
-</div><div class="column" style="width:60%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a aria-label="1"></a><span class="co"># using long data </span></span>
-<span id="cb23-2"><a aria-label="2"></a><span class="co"># with columns Cholesterol &amp; Time</span></span>
-<span id="cb23-3"><a aria-label="3"></a><span class="fu">t.test</span>(Cholesterol <span class="sc">~</span> Time, </span>
-<span id="cb23-4"><a aria-label="4"></a>       <span class="at">paired =</span> <span class="cn">TRUE</span>, </span>
-<span id="cb23-5"><a aria-label="5"></a>       <span class="at">data =</span> chol_long)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-    Paired t-test
-
-data:  Cholesterol by Time
-t = 5.6965, df = 23, p-value = 8.435e-06
-alternative hypothesis: true mean difference is not equal to 0
-95 percent confidence interval:
- 12.44522 26.63811
-sample estimates:
-mean difference 
-       19.54167 </code></pre>
-</div>
-</div>
-<ul>
-<li><span style="color:darkorange"><em>What is different in the output compared to option 1?</em></span></li>
-<li><span style="color:darkorange"><em>Rerun the test using <code>Time ~ Cholesterol</code> (switch the variables). What do you get?</em></span></li>
-</ul>
-</div></div>
-</section>
-<section id="compare-the-3-options" class="slide level2">
-<h2>Compare the 3 options</h2>
-<ul>
-<li><span style="color:darkorange"><em>How is the code similar and different for the 3 options?</em></span></li>
-<li><span style="color:darkorange"><em>Given a dataset, how would you choose which of the 3 options to use?</em></span></li>
+<li><span style="color:darkorange"><em>How is the code similar and different for the 2 options?</em></span></li>
+<li><span style="color:darkorange"><em>Given a dataset, how would you choose which of the 2 options to use?</em></span></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a aria-label="1"></a><span class="co"># option 1</span></span>
-<span id="cb25-2"><a aria-label="2"></a><span class="fu">t.test</span>(<span class="at">x =</span> chol<span class="sc">$</span>DiffChol, <span class="at">mu =</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">gt</span>() <span class="co"># tidy from broom package</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a aria-label="1"></a><span class="co"># option 1</span></span>
+<span id="cb21-2"><a aria-label="2"></a><span class="fu">t.test</span>(<span class="at">x =</span> chol<span class="sc">$</span>DiffChol, <span class="at">mu =</span> <span class="dv">0</span>) <span class="sc">|&gt;</span> <span class="fu">tidy</span>() <span class="sc">|&gt;</span> <span class="fu">gt</span>() <span class="co"># tidy from broom package</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div id="fkcopadtpi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>#fkcopadtpi table {
@@ -3316,8 +3272,8 @@ mean difference
 
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a aria-label="1"></a><span class="co"># option 2</span></span>
-<span id="cb26-2"><a aria-label="2"></a><span class="fu">t.test</span>(<span class="at">x =</span> chol<span class="sc">$</span>Before, <span class="at">y =</span> chol<span class="sc">$</span>After, <span class="at">mu =</span> <span class="dv">0</span>, <span class="at">paired =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a aria-label="1"></a><span class="co"># option 2</span></span>
+<span id="cb22-2"><a aria-label="2"></a><span class="fu">t.test</span>(<span class="at">x =</span> chol<span class="sc">$</span>Before, <span class="at">y =</span> chol<span class="sc">$</span>After, <span class="at">mu =</span> <span class="dv">0</span>, <span class="at">paired =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> <span class="fu">tidy</span>() <span class="sc">|&gt;</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div id="ybwppxvyco" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>#ybwppxvyco table {
@@ -3798,8 +3754,41 @@ mean difference
 
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a aria-label="1"></a><span class="co"># option 3</span></span>
-<span id="cb27-2"><a aria-label="2"></a><span class="fu">t.test</span>(Cholesterol <span class="sc">~</span> Time, <span class="at">paired =</span> <span class="cn">TRUE</span>, <span class="at">data =</span> chol_long) <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a aria-label="1"></a><span class="co"># # option 3</span></span>
+<span id="cb23-2"><a aria-label="2"></a><span class="co"># t.test(Cholesterol ~ Time, paired = TRUE, data = chol_long) |&gt; tidy() |&gt; gt()</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="what-if-we-wanted-to-test-whether-the-diet-decreased-cholesterol-levels" class="slide level2 scrollable">
+<h2>What if we wanted to test whether the diet <em>decreased</em> cholesterol levels?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span style="color:darkorange">What changes in each of the steps?</span></p>
+<ol type="1">
+<li><p>Set the <strong><span style="color:darkorange">level of significance</span></strong> <span class="math inline">\(\alpha\)</span></p></li>
+<li><p>Specify the <strong><span style="color:darkorange">hypotheses</span></strong> <span class="math inline">\(H_0\)</span> and <span class="math inline">\(H_A\)</span></p>
+<ul>
+<li>Alternative: one- or two-sided?</li>
+</ul></li>
+<li><p>Calculate the <strong><span style="color:darkorange">test statistic</span></strong>.</p></li>
+<li><p>Calculate the <strong><span style="color:darkorange">p-value</span></strong> based on the observed test statistic and its sampling distribution</p></li>
+<li><p>Write a <strong><span style="color:darkorange">conclusion</span></strong> to the hypothesis test</p></li>
+</ol>
+</div><div class="column" style="width:50%;">
+
+</div></div>
+</section>
+<section id="r-what-if-we-wanted-to-test-whether-the-diet-decreased-cholesterol-levels" class="slide level2">
+<h2>R: What if we wanted to test whether the diet <em>decreased</em> cholesterol levels?</h2>
+<ul>
+<li><span style="color:darkorange"><em>Which of the 3 options to run a paired t-test in R is being used below?</em></span></li>
+<li><span style="color:darkorange"><em>How did the code change to account for testing a decrease in cholesterol levels?</em></span></li>
+<li><span style="color:darkorange"><em>Which values in the output changed compared to testing for a change in cholesterol levels? How did they change?</em></span></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a aria-label="1"></a><span class="co"># alternative = c("two.sided", "less", "greater")</span></span>
+<span id="cb24-2"><a aria-label="2"></a><span class="fu">t.test</span>(<span class="at">x =</span> chol<span class="sc">$</span>DiffChol, <span class="at">mu =</span> <span class="dv">0</span>, <span class="at">alternative =</span> <span class="st">"less"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb24-3"><a aria-label="3"></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb24-4"><a aria-label="4"></a>  <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div id="zcwalwlqbq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>#zcwalwlqbq table {
@@ -4247,519 +4236,6 @@ mean difference
 }
 
 #zcwalwlqbq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table caption-top" data-quarto-bootstrap="false">
-<thead>
-<tr class="gt_col_headings header">
-<th id="estimate" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">estimate</th>
-<th id="statistic" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">statistic</th>
-<th id="p.value" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">p.value</th>
-<th id="parameter" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">parameter</th>
-<th id="conf.low" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">conf.low</th>
-<th id="conf.high" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">conf.high</th>
-<th id="method" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">method</th>
-<th id="alternative" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">alternative</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_right" headers="estimate">19.54167</td>
-<td class="gt_row gt_right" headers="statistic">5.696519</td>
-<td class="gt_row gt_right" headers="p.value">8.434775e-06</td>
-<td class="gt_row gt_right" headers="parameter">23</td>
-<td class="gt_row gt_right" headers="conf.low">12.44522</td>
-<td class="gt_row gt_right" headers="conf.high">26.63811</td>
-<td class="gt_row gt_left" headers="method">Paired t-test</td>
-<td class="gt_row gt_left" headers="alternative">two.sided</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</section>
-<section id="what-if-we-wanted-to-test-whether-the-diet-decreased-cholesterol-levels" class="slide level2 scrollable">
-<h2>What if we wanted to test whether the diet <em>decreased</em> cholesterol levels?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><span style="color:darkorange">What changes in each of the steps?</span></p>
-<ol type="1">
-<li><p>Set the <strong><span style="color:darkorange">level of significance</span></strong> <span class="math inline">\(\alpha\)</span></p></li>
-<li><p>Specify the <strong><span style="color:darkorange">hypotheses</span></strong> <span class="math inline">\(H_0\)</span> and <span class="math inline">\(H_A\)</span></p>
-<ul>
-<li>Alternative: one- or two-sided?</li>
-</ul></li>
-<li><p>Calculate the <strong><span style="color:darkorange">test statistic</span></strong>.</p></li>
-<li><p>Calculate the <strong><span style="color:darkorange">p-value</span></strong> based on the observed test statistic and its sampling distribution</p></li>
-<li><p>Write a <strong><span style="color:darkorange">conclusion</span></strong> to the hypothesis test</p></li>
-</ol>
-</div><div class="column" style="width:50%;">
-
-</div></div>
-</section>
-<section id="r-what-if-we-wanted-to-test-whether-the-diet-decreased-cholesterol-levels" class="slide level2">
-<h2>R: What if we wanted to test whether the diet <em>decreased</em> cholesterol levels?</h2>
-<ul>
-<li><span style="color:darkorange"><em>Which of the 3 options to run a paired t-test in R is being used below?</em></span></li>
-<li><span style="color:darkorange"><em>How did the code change to account for testing a decrease in cholesterol levels?</em></span></li>
-<li><span style="color:darkorange"><em>Which values in the output changed compared to testing for a change in cholesterol levels? How did they change?</em></span></li>
-</ul>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a aria-label="1"></a><span class="co"># alternative = c("two.sided", "less", "greater")</span></span>
-<span id="cb28-2"><a aria-label="2"></a><span class="fu">t.test</span>(<span class="at">x =</span> chol<span class="sc">$</span>DiffChol, <span class="at">mu =</span> <span class="dv">0</span>, <span class="at">alternative =</span> <span class="st">"less"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb28-3"><a aria-label="3"></a>  <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb28-4"><a aria-label="4"></a>  <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div id="endsoyqvje" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#endsoyqvje table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#endsoyqvje thead, #endsoyqvje tbody, #endsoyqvje tfoot, #endsoyqvje tr, #endsoyqvje td, #endsoyqvje th {
-  border-style: none;
-}
-
-#endsoyqvje p {
-  margin: 0;
-  padding: 0;
-}
-
-#endsoyqvje .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#endsoyqvje .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#endsoyqvje .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#endsoyqvje .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#endsoyqvje .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#endsoyqvje .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#endsoyqvje .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#endsoyqvje .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#endsoyqvje .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#endsoyqvje .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#endsoyqvje .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#endsoyqvje .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#endsoyqvje .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#endsoyqvje .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#endsoyqvje .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#endsoyqvje .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#endsoyqvje .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#endsoyqvje .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#endsoyqvje .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#endsoyqvje .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#endsoyqvje .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#endsoyqvje .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#endsoyqvje .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#endsoyqvje .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#endsoyqvje .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#endsoyqvje .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#endsoyqvje .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#endsoyqvje .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#endsoyqvje .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#endsoyqvje .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#endsoyqvje .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#endsoyqvje .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#endsoyqvje .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#endsoyqvje .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#endsoyqvje .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#endsoyqvje .gt_left {
-  text-align: left;
-}
-
-#endsoyqvje .gt_center {
-  text-align: center;
-}
-
-#endsoyqvje .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#endsoyqvje .gt_font_normal {
-  font-weight: normal;
-}
-
-#endsoyqvje .gt_font_bold {
-  font-weight: bold;
-}
-
-#endsoyqvje .gt_font_italic {
-  font-style: italic;
-}
-
-#endsoyqvje .gt_super {
-  font-size: 65%;
-}
-
-#endsoyqvje .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#endsoyqvje .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#endsoyqvje .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#endsoyqvje .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#endsoyqvje .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#endsoyqvje .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#endsoyqvje .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#endsoyqvje .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#endsoyqvje div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

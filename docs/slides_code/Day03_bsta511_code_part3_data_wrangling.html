@@ -436,7 +436,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note: the output from the command below is not being saved </span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># since it's not being assigned to a variable using &lt;-</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(age <span class="sc">&gt;</span> <span class="dv">90</span>)   </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">filter</span>(age <span class="sc">&gt;</span> <span class="dv">90</span>)   </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 6
      id age.cohort   age gender expenditures ethnicity
@@ -452,20 +452,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="filter-practice"><code>filter()</code> practice</h3>
 <p>What do these commands do? Try them out:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(age <span class="sc">&lt;</span> <span class="dv">5</span>)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(age<span class="sc">/</span>expenditures <span class="sc">&lt;</span> <span class="fl">0.5</span>)    <span class="co"># can do math within filter command</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">filter</span>((age <span class="sc">&lt;</span> <span class="dv">15</span>) <span class="sc">|</span> (age <span class="sc">&gt;</span> <span class="dv">50</span>))</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">filter</span>(age <span class="sc">&lt;</span> <span class="dv">5</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">filter</span>(age<span class="sc">/</span>expenditures <span class="sc">&lt;</span> <span class="fl">0.5</span>)    <span class="co"># can do math within filter command</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">filter</span>((age <span class="sc">&lt;</span> <span class="dv">15</span>) <span class="sc">|</span> (age <span class="sc">&gt;</span> <span class="dv">50</span>))</span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co"># simultaneously filter on multiple variables</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(age <span class="sc">&lt;</span> <span class="dv">20</span>, expenditures <span class="sc">&gt;</span> <span class="dv">1000</span>, gender <span class="sc">==</span> <span class="st">"Male"</span>) </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">filter</span>(age <span class="sc">&lt;</span> <span class="dv">20</span>, expenditures <span class="sc">&gt;</span> <span class="dv">1000</span>, gender <span class="sc">==</span> <span class="st">"Male"</span>) </span>
 <span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(id <span class="sc">==</span> <span class="dv">10210</span>) <span class="co"># note the use of == instead of just =</span></span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(gender <span class="sc">==</span> <span class="st">"Female"</span>)</span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span>(age.cohort <span class="sc">==</span> <span class="st">"51+"</span>))</span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(age.cohort <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"0-5"</span>, <span class="st">"6-12"</span>))</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">filter</span>(id <span class="sc">==</span> <span class="dv">10210</span>) <span class="co"># note the use of == instead of just =</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">filter</span>(gender <span class="sc">==</span> <span class="st">"Female"</span>)</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">filter</span>(<span class="sc">!</span>(age.cohort <span class="sc">==</span> <span class="st">"51+"</span>))</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">filter</span>(age.cohort <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"0-5"</span>, <span class="st">"6-12"</span>))</span>
 <span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="fu">is.na</span>(age))</span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(age))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">filter</span>(<span class="fu">is.na</span>(age))</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(age))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 </section>
@@ -480,7 +480,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>uses special syntax that is flexible and has many options</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">select</span>(id, expenditures, ethnicity)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">select</span>(id, expenditures, ethnicity)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,000 × 3
       id expenditures ethnicity         
@@ -523,15 +523,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Which columns are selected &amp; in what order using these commands?<br>
 First guess and then try them out.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">select</span>(id<span class="sc">:</span>gender)</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">one_of</span>(<span class="fu">c</span>(<span class="st">"age"</span>,<span class="st">"expenditures"</span>, <span class="st">"notindata"</span>)))</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">select</span>(id<span class="sc">:</span>gender)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">select</span>(<span class="fu">one_of</span>(<span class="fu">c</span>(<span class="st">"age"</span>,<span class="st">"expenditures"</span>, <span class="st">"notindata"</span>)))</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="sc">-</span>age.cohort,<span class="sc">-</span>gender)</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="sc">-</span>(id<span class="sc">:</span>gender))</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">select</span>(<span class="sc">-</span>age.cohort,<span class="sc">-</span>gender)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">select</span>(<span class="sc">-</span>(id<span class="sc">:</span>gender))</span>
 <span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">contains</span>(<span class="st">"age"</span>))</span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="fu">starts_with</span>(<span class="st">"a"</span>))</span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">select</span>(<span class="sc">-</span><span class="fu">contains</span>(<span class="st">"a"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">select</span>(<span class="fu">contains</span>(<span class="st">"age"</span>))</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">select</span>(<span class="fu">starts_with</span>(<span class="st">"a"</span>))</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">select</span>(<span class="sc">-</span><span class="fu">contains</span>(<span class="st">"a"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 </section>
@@ -553,7 +553,7 @@ First guess and then try them out.</p>
 </ul></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">relocate</span>(age.cohort, ethnicity)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">relocate</span>(age.cohort, ethnicity)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,000 × 6
    age.cohort ethnicity             id   age gender expenditures
@@ -577,17 +577,17 @@ First guess and then try them out.</p>
 <p>What order are the columns in using these commands?<br>
 First guess and then try them out.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">relocate</span>(age<span class="sc">:</span>ethnicity)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">relocate</span>(age<span class="sc">:</span>ethnicity)</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">relocate</span>(<span class="fu">where</span>(is.numeric))</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">relocate</span>(<span class="fu">where</span>(is.factor))</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">relocate</span>(<span class="fu">where</span>(is.numeric))</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">relocate</span>(<span class="fu">where</span>(is.factor))</span>
 <span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="co"># note: the next command doesn't do anything </span></span>
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co"># since there are no character type variables in the dataset</span></span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">relocate</span>(<span class="fu">where</span>(is.character))</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">relocate</span>(<span class="fu">where</span>(is.character))</span>
 <span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">relocate</span>(age,<span class="at">.before =</span> ethnicity)</span>
-<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">relocate</span>(ethnicity, <span class="at">.after =</span> age.cohort)</span>
-<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">relocate</span>(age, <span class="at">.after =</span> <span class="fu">last_col</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">relocate</span>(age,<span class="at">.before =</span> ethnicity)</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">relocate</span>(ethnicity, <span class="at">.after =</span> age.cohort)</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">relocate</span>(age, <span class="at">.after =</span> <span class="fu">last_col</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 </section>
@@ -597,7 +597,7 @@ First guess and then try them out.</p>
 <li>renames column variables</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">rename</span>(<span class="at">IDnumber =</span> id)   <span class="co"># order: new_name = old_name</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">rename</span>(<span class="at">IDnumber =</span> id)   <span class="co"># order: new_name = old_name</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,000 × 6
    IDnumber age.cohort   age gender expenditures ethnicity         
@@ -623,13 +623,13 @@ First guess and then try them out.</p>
 <p>Use <code>mutate()</code> to add new columns to a tibble * Many options in how to define new column of data</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># use = to define new a variable within mutate (not &lt;- or ==) </span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>newdata <span class="ot">&lt;-</span> dds.discr <span class="sc">%&gt;%</span> </span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>newdata <span class="ot">&lt;-</span> dds.discr <span class="sc">|&gt;</span> </span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">log_expenditures =</span> <span class="fu">log</span>(expenditures),</span>
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">expend_per_yearage =</span> expenditures <span class="sc">/</span> age)   </span>
 <span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>newdata <span class="sc">%&gt;%</span> <span class="fu">select</span>(id, age, expenditures, log_expenditures, expend_per_yearage)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>newdata <span class="sc">|&gt;</span> <span class="fu">select</span>(id, age, expenditures, log_expenditures, expend_per_yearage)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1,000 × 5
       id   age expenditures log_expenditures expend_per_yearage
@@ -652,10 +652,10 @@ First guess and then try them out.</p>
 <p>What do the following commands do?<br>
 First guess and then try them out.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">age_young =</span> (age <span class="sc">&lt;</span> <span class="dv">18</span>))</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">age_young =</span> (age <span class="sc">&lt;</span> <span class="dv">18</span>))</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">male =</span> (gender <span class="sc">==</span> <span class="st">"Male"</span>))</span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">male =</span> <span class="dv">1</span> <span class="sc">*</span> (gender <span class="sc">==</span> <span class="st">"Male"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">male =</span> (gender <span class="sc">==</span> <span class="st">"Male"</span>))</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">male =</span> <span class="dv">1</span> <span class="sc">*</span> (gender <span class="sc">==</span> <span class="st">"Male"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 </section>
@@ -665,7 +665,7 @@ First guess and then try them out.</p>
 <li>Example: create age groups based off of the <code>age</code> variable</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>dds.discr2 <span class="ot">&lt;-</span> dds.discr <span class="sc">%&gt;%</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>dds.discr2 <span class="ot">&lt;-</span> dds.discr <span class="sc">|&gt;</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">age_group =</span> <span class="fu">case_when</span>(</span>
 <span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>      age <span class="sc">&lt;</span> <span class="dv">6</span> <span class="sc">~</span> <span class="st">"0 to 5"</span>,               <span class="co"># condition ~ new_value</span></span>
@@ -676,7 +676,7 @@ First guess and then try them out.</p>
 <span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>      age <span class="sc">&gt;=</span> <span class="dv">51</span> <span class="sc">~</span> <span class="st">"51 plus"</span>)</span>
 <span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>    )</span>
 <span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>dds.discr2 <span class="sc">%&gt;%</span> <span class="fu">select</span>(age, age_group) <span class="sc">%&gt;%</span> <span class="fu">head</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>dds.discr2 <span class="sc">|&gt;</span> <span class="fu">select</span>(age, age_group) <span class="sc">|&gt;</span> <span class="fu">head</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 2
     age age_group
@@ -688,7 +688,7 @@ First guess and then try them out.</p>
 5    13 13 to 17 
 6    15 13 to 17 </code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>dds.discr2 <span class="sc">%&gt;%</span> <span class="fu">tabyl</span>(age.cohort, age_group)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>dds.discr2 <span class="sc">|&gt;</span> <span class="fu">tabyl</span>(age.cohort, age_group)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> age.cohort 0 to 5 13 to 17 18 to 21 22 to 50 51 plus 6 to 12
         0-5     82        0        0        0       0       0
@@ -707,7 +707,7 @@ First guess and then try them out.</p>
 <li>Use <code>arrange()</code> to order the rows by the values in specified columns</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(age, expenditures) <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="at">n=</span><span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">arrange</span>(age, expenditures) <span class="sc">|&gt;</span> <span class="fu">head</span>(<span class="at">n=</span><span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 6
      id age.cohort   age gender expenditures ethnicity         
@@ -716,7 +716,7 @@ First guess and then try them out.</p>
 2 25613 0-5            0 Male            741 Hispanic          
 3 19917 0-5            0 Male            904 White not Hispanic</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(<span class="fu">desc</span>(age), expenditures) <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="at">n=</span><span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">arrange</span>(<span class="fu">desc</span>(age), expenditures) <span class="sc">|&gt;</span> <span class="fu">head</span>(<span class="at">n=</span><span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 6
      id age.cohort   age gender expenditures ethnicity
@@ -788,7 +788,7 @@ First guess and then try them out.</p>
 </div>
 <p>For <code>pivot_longer</code> we need to <strong>specify</strong>: - <strong>cols</strong>: which columns to make long - <strong>names_to</strong>: the name of the variable that will be created from the data stored in the <em>column names</em> - <strong>values_to</strong>: the name of the variable that will be created from the data stored in the <em>cell values</em></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>SBP_long <span class="ot">&lt;-</span> SBP_wide <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>SBP_long <span class="ot">&lt;-</span> SBP_wide <span class="sc">|&gt;</span> </span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(</span>
 <span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols=</span><span class="fu">c</span>(SBP_v1,SBP_v2,SBP_v3), </span>
 <span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_to =</span> <span class="st">"visit"</span>, </span>
@@ -837,7 +837,7 @@ First guess and then try them out.</p>
 </div>
 <p>For <code>pivot_wider</code> we need to <strong>specify</strong>: - <strong>names_from</strong>: which column contains the names for the <em>new columns</em> - <strong>values_from</strong>: which column contains the values that will fill in the <em>cell values</em></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>SBP_wide2 <span class="ot">&lt;-</span> SBP_long <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>SBP_wide2 <span class="ot">&lt;-</span> SBP_long <span class="sc">|&gt;</span> </span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> <span class="st">"visit"</span>, </span>
 <span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>              <span class="at">values_from =</span> <span class="st">"SBP"</span>)</span>
 <span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>SBP_wide2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -881,7 +881,7 @@ First guess and then try them out.</p>
 <h3 class="anchored" data-anchor-id="clean-up-visit-column-in-the-long-data-23">Clean up <code>visit</code> column in the long data (2/3)</h3>
 <p><strong>Method #1:</strong> tidy the <code>visit</code> column <em>after</em> making the data long</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>SBP_long2 <span class="ot">&lt;-</span> SBP_long <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>SBP_long2 <span class="ot">&lt;-</span> SBP_long <span class="sc">|&gt;</span> </span>
 <span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">visit =</span> <span class="fu">str_replace</span>(</span>
 <span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>      visit,</span>
@@ -919,7 +919,7 @@ First guess and then try them out.</p>
 <h3 class="anchored" data-anchor-id="clean-up-visit-column-in-the-long-data-33">Clean up <code>visit</code> column in the long data (3/3)</h3>
 <p><strong>Method #2:</strong> tidy the <code>visit</code> column <em>while</em> making the data long</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>SBP_long3 <span class="ot">&lt;-</span> SBP_wide <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>SBP_long3 <span class="ot">&lt;-</span> SBP_wide <span class="sc">|&gt;</span> </span>
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(SBP_v1, SBP_v2,SBP_v3), </span>
 <span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>              <span class="at">names_to =</span> <span class="st">"visit"</span>, </span>
 <span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>              <span class="at">names_prefix =</span> <span class="st">"SBP_"</span>, <span class="co">#&lt;&lt;</span></span>
@@ -955,7 +955,7 @@ First guess and then try them out.</p>
 <h2 class="anchored" data-anchor-id="specifying-cols-in-pivot_longer">Specifying <code>cols</code> in <code>pivot_longer</code></h2>
 <p>In the example creating <code>SBP_long</code>, the columns to make the tibble longer by were explicitly listed using <code>cols=c(SBP_v1,SBP_v2,SBP_v3)</code>.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>SBP_long <span class="ot">&lt;-</span> SBP_wide <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>SBP_long <span class="ot">&lt;-</span> SBP_wide <span class="sc">|&gt;</span> </span>
 <span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(SBP_v1, SBP_v2,SBP_v3), <span class="co">#&lt;&lt;</span></span>
 <span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>              <span class="at">names_to =</span> <span class="st">"visit"</span>, </span>
 <span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>              <span class="at">values_to =</span> <span class="st">"SBP"</span>)</span>
@@ -1018,7 +1018,7 @@ First guess and then try them out.</p>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>%&gt;%</code></td>
+<td><code>|&gt;</code></td>
 <td>join (pipe) together commands</td>
 </tr>
 <tr class="even">

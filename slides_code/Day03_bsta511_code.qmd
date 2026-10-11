@@ -426,22 +426,22 @@ ggplot(data = dds.discr,
 * `count` is from the `dplyr` package
 * the output is a long tibble, and not a "nice" table
 ```{r}
-dds.discr %>% count(ethnicity)
+dds.discr |> count(ethnicity)
 ```
 
 
 ```{r}
-dds.discr %>% 
+dds.discr |> 
   count(ethnicity, age.cohort)
 ```
 
 
-## How to use the pipe `%>%`
+## How to use the pipe `|>`
 
-The pipe operator `%>%` strings together commands to be performed sequentially
+The pipe operator `|>` strings together commands to be performed sequentially
 
 ```{r}
-dds.discr %>% head(n=3)      # pronounce %>% as "then"
+dds.discr |> head(n=3)      # pronounce |> as "then"
 ```
 
 - Always _first list the tibble_ that the commands are being applied to
@@ -449,7 +449,7 @@ dds.discr %>% head(n=3)      # pronounce %>% as "then"
     + What does the following code do?
 
 ```{r}
-dds.discr %>% head(n=3) %>% summary()
+dds.discr |> head(n=3) |> summary()
 ```
 
 
@@ -457,16 +457,16 @@ dds.discr %>% head(n=3) %>% summary()
 
 ```{r}
 # default table
-dds.discr %>% 
+dds.discr |> 
   tabyl(ethnicity)  
 ```
 
 
 `adorn_` your table!
 ```{r}
-dds.discr %>% 
-  tabyl(ethnicity) %>%
-  adorn_totals("row") %>% 
+dds.discr |> 
+  tabyl(ethnicity) |>
+  adorn_totals("row") |> 
   adorn_pct_formatting(digits=2)  
 ```
 
@@ -478,10 +478,10 @@ dds.discr %>%
 * Below I removed (deselected) the counts column (`n`) to create a relative frequency table 
 
 ```{r}
-dds.discr %>% 
-  tabyl(ethnicity) %>%
-  adorn_totals("row") %>% 
-  adorn_pct_formatting(digits=2) %>%   
+dds.discr |> 
+  tabyl(ethnicity) |>
+  adorn_totals("row") |> 
+  adorn_pct_formatting(digits=2) |>   
   select(-n) # remove column with variable name n
 ```
 
@@ -496,19 +496,19 @@ dds.discr %>%
 are sometimes called **marginal totals** 
 
 ```{r}
-dds.discr %>% 
-  tabyl(ethnicity, gender) %>%    
+dds.discr |> 
+  tabyl(ethnicity, gender) |>    
   adorn_totals(c("row", "col"))    
 ```
 
 ### Contingency tables with percentages
 
 ```{r}
-dds.discr %>% 
-  tabyl(ethnicity, age.cohort) %>%
-  adorn_totals(c("row")) %>%
-  adorn_percentages("row") %>%   
-  adorn_pct_formatting(digits=0) %>%    
+dds.discr |> 
+  tabyl(ethnicity, age.cohort) |>
+  adorn_totals(c("row")) |>
+  adorn_percentages("row") |>   
+  adorn_pct_formatting(digits=0) |>    
   adorn_ns()    
 ```
 
@@ -522,7 +522,7 @@ dds.discr %>%
 ```{r}
 mean(dds.discr$expenditures)
 
-dds.discr %>% 
+dds.discr |> 
   summarize(
     ave = mean(expenditures),
     SD = sd(expenditures),
@@ -530,8 +530,8 @@ dds.discr %>%
 ```
 
 ```{r}
-dds.discr %>% 
-  group_by(ethnicity) %>% 
+dds.discr |> 
+  group_by(ethnicity) |> 
   summarize(
     ave = mean(expenditures),
     SD = sd(expenditures),
@@ -542,10 +542,10 @@ dds.discr %>%
 ## `get_summary_stats()` from `rstatix` package
 
 ```{r}
-dds.discr %>% get_summary_stats()
+dds.discr |> get_summary_stats()
 
-dds.discr %>% 
-  group_by(ethnicity) %>%
+dds.discr |> 
+  group_by(ethnicity) |>
   get_summary_stats(expenditures, type = "common")
 ```
 
@@ -554,13 +554,13 @@ dds.discr %>%
 Use `kable()` from the `knitr` package.
 
 ```{r}
-dds.discr %>% get_summary_stats() %>% kable()
+dds.discr |> get_summary_stats() |> kable()
 ```
 
 ```{r}
-dds.discr %>% 
-  group_by(ethnicity) %>%
-  get_summary_stats(expenditures, type = "common") %>% 
+dds.discr |> 
+  group_by(ethnicity) |>
+  get_summary_stats(expenditures, type = "common") |> 
   kable()
 ```
 

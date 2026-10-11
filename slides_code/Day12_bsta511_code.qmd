@@ -657,8 +657,8 @@ prop.test(x = 94, n = 269,              # x = # successes & n = sample size
 
 Can `tidy()` test output:
 ```{r}
-prop.test(x = 94, n = 269, p = 0.36, alternative = "two.sided", correct = FALSE) %>% 
-  tidy() %>% gt()
+prop.test(x = 94, n = 269, p = 0.36, alternative = "two.sided", correct = FALSE) |> 
+  tidy() |> gt()
 ```
 
 
@@ -678,7 +678,7 @@ SportsBet1 <- tibble(
 
 glimpse(SportsBet1)
 
-SportsBet1 %>% tabyl(Coll)
+SportsBet1 |> tabyl(Coll)
 ```
 
 
@@ -709,8 +709,8 @@ Compare output with summary stats method:
 prop.test(x = 94, n = 269,              # x = # successes & n = sample size
           p = 0.36,                     # null value p0
           alternative = "two.sided",    # 2-sided alternative
-          correct = FALSE)  %>%         # no continuity correction
-  tidy() %>% gt()
+          correct = FALSE)  |>         # no continuity correction
+  tidy() |> gt()
 ```
 
 
@@ -728,8 +728,8 @@ prop.test(x = 94, n = 269,              # x = # successes & n = sample size
 prop.test(x = table(SportsBet1$Coll), 
           alternative = "two.sided",
           p = 0.36, 
-          correct = FALSE) %>% 
-  tidy() %>% gt()
+          correct = FALSE) |> 
+  tidy() |> gt()
 ```
 
 
@@ -737,8 +737,8 @@ prop.test(x = table(SportsBet1$Coll),
 prop.test(x = table(SportsBet1$Coll), 
           alternative = "two.sided",
           p = 0.36, 
-          correct = TRUE) %>% 
-  tidy() %>% gt()
+          correct = TRUE) |> 
+  tidy() |> gt()
 ```
 
 
@@ -790,7 +790,7 @@ SportsBet2 <- tibble(
 )
 glimpse(SportsBet2)
 
-SportsBet2 %>% tabyl(Group, Bet)
+SportsBet2 |> tabyl(Group, Bet)
 ```
 
 R code for proportions test requires input as a base R `table`:
@@ -818,8 +818,8 @@ Compare output with summary stats method:
 prop.test(x = NmbrBet,                  # x is # of successes in each group 
           n = TotalNmbr,                # n is sample size in each group
           alternative = "two.sided",    # 2-sided alternative
-          correct = FALSE) %>%          # no continuity correction
-  tidy() %>% gt()
+          correct = FALSE) |>          # no continuity correction
+  tidy() |> gt()
 ```
 
 
@@ -834,16 +834,16 @@ prop.test(x = NmbrBet,                  # x is # of successes in each group
 ```{r}
 prop.test(x = table(SportsBet2$Group, SportsBet2$Bet),
           alternative = "two.sided", 
-          correct = FALSE) %>% 
-  tidy() %>% gt()
+          correct = FALSE) |> 
+  tidy() |> gt()
 ```
 
 
 ```{r}
 prop.test(x = table(SportsBet2$Group, SportsBet2$Bet),
           alternative = "two.sided", 
-          correct = TRUE) %>% 
-  tidy() %>% gt()
+          correct = TRUE) |> 
+  tidy() |> gt()
 ```
 
 Differences are small when sample sizes are large.

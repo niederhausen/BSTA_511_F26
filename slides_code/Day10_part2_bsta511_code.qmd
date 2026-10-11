@@ -186,8 +186,8 @@ $$
 ```{r}
 chol <- read_csv(here::here("data", "chol213.csv"))
 glimpse(chol)
-chol %>% 
-  get_summary_stats(type = "common") %>% 
+chol |> 
+  get_summary_stats(type = "common") |> 
   gt()
 ```
 
@@ -222,15 +222,15 @@ ggplot(chol, aes(x=After)) +
 
 ```{r}
 #| fig.height: 4
-chol_long <- chol %>% 
+chol_long <- chol |> 
   # need an ID column for the plot
   # make it factor so that coloring is not on continuous scale
-  mutate(ID = factor(1:n())) %>% 
+  mutate(ID = factor(1:n())) |> 
   # make data long for plot: 
   pivot_longer(
     cols = Before:After,
     names_to = "Time",  # need a column for Before & After on x-axis
-    values_to = "Cholesterol") %>% # need a column of all cholesterol values for y-axis
+    values_to = "Cholesterol") |> # need a column of all cholesterol values for y-axis
   mutate(
     # change Time a factor variable so that can reorder
     # levels so that Before is before After
@@ -252,7 +252,7 @@ ggplot(chol_long,
 [*What is this code doing?*]{style="color:darkorange"}
 
 ```{r }
-chol <- chol %>% 
+chol <- chol |> 
   mutate(DiffChol = After-Before) 
 head(chol, 8)
 
@@ -261,8 +261,8 @@ head(chol, 8)
 [*Is the mean of DiffChol the same as the difference in means of After - Before? Should it be? Why or why not?*]{style="color:darkorange"}
 
 ```{r }
-chol %>% 
-  get_summary_stats(type = "common") %>% 
+chol |> 
+  get_summary_stats(type = "common") |> 
   gt()
 ```
 
@@ -335,7 +335,7 @@ H_A: \delta   \\$$
 ## Step 3: Test statistic 
 
 ```{r}
-chol %>% select(DiffChol) %>% get_summary_stats(type = "common") %>% gt()
+chol |> select(DiffChol) |> get_summary_stats(type = "common") |> gt()
 ```
 
 $$
@@ -432,7 +432,7 @@ __Conclusion statement__:
 # 95% CI for the mean difference in cholesterol levels
 
 ```{r}
-chol %>% select(DiffChol) %>% get_summary_stats(type = "common") %>% gt()
+chol |> select(DiffChol) |> get_summary_stats(type = "common") |> gt()
 ```
 
 CI for $\mu_d$ (or $\delta$):
@@ -492,50 +492,49 @@ t.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE)
 [*What is different in the output compared to option 1?*]{style="color:darkorange"}
 
 
-## R option 3: Run a 2-sample `t.test` with `paired = TRUE` option, but using the long data and a "formula"
+<!-- ## R option 3: Run a 2-sample `t.test` with `paired = TRUE` option, but using the long data and a "formula" -->
 
-* The data have to be in a `long` format for option 3, where each person has 2 rows: one for Before and one for After.
-    * The long dataset `chol_long` was created for the slide "EDA: Spaghetti plot of cholesterol levels before & after diet". 
-    * See the code to create it there.
-* [*What information is being stored in each of the columns?*]{style="color:darkorange"}
-
-
-```{r}
-# first 16 rows of long data:
-head(chol_long, 16)
-```
-
-* Use the usual `t.test`
-* What's different is that 
-    * instead of specifying the variables with `x=` and `y=`, 
-    * we give a __formula__ of the form `y ~ x` using _just the variable names_,
-    * and then specify the name of the dataset using `data =`
-* This method is often used in practice, and more similar to the coding style of running a regression model (BSTA 512 & 513)
-
-```{r}
-# using long data 
-# with columns Cholesterol & Time
-t.test(Cholesterol ~ Time, 
-       paired = TRUE, 
-       data = chol_long)
-```
-
-* [*What is different in the output compared to option 1?*]{style="color:darkorange"}
-* [*Rerun the test using `Time ~ Cholesterol` (switch the variables). What do you get?*]{style="color:darkorange"}
+<!-- * The data have to be in a `long` format for option 3, where each person has 2 rows: one for Before and one for After. -->
+<!--     * The long dataset `chol_long` was created for the slide "EDA: Spaghetti plot of cholesterol levels before & after diet".  -->
+<!--     * See the code to create it there. -->
+<!-- * [*What information is being stored in each of the columns?*]{style="color:darkorange"} -->
 
 
-## Compare the 3 options
+<!-- ```{r} -->
+<!-- # first 16 rows of long data: -->
+<!-- head(chol_long, 16) -->
+<!-- ``` -->
 
-* [*How is the code similar and different for the 3 options?*]{style="color:darkorange"}
-* [*Given a dataset, how would you choose which of the 3 options to use?*]{style="color:darkorange"}
+<!-- * Use the usual `t.test` -->
+<!-- * What's different is that  -->
+<!--     * instead of specifying the variables with `x=` and `y=`,  -->
+<!--     * we give a __formula__ of the form `y ~ x` using _just the variable names_, -->
+<!--     * and then specify the name of the dataset using `data =` -->
+<!-- * This method is often used in practice, and more similar to the coding style of running a regression model (BSTA 512 & 513) -->
+
+<!-- ```{r} -->
+<!-- # using long data  -->
+<!-- # with columns Cholesterol & Time -->
+<!-- t.test(Cholesterol ~ Time,  -->
+<!--        paired = TRUE,  -->
+<!--        data = chol_long) -->
+<!-- ``` -->
+
+<!-- * [*What is different in the output compared to option 1?*]{style="color:darkorange"} -->
+<!-- * [*Rerun the test using `Time ~ Cholesterol` (switch the variables). What do you get?*]{style="color:darkorange"} -->
+
+## Compare the 2 options
+
+* [*How is the code similar and different for the 2 options?*]{style="color:darkorange"}
+* [*Given a dataset, how would you choose which of the 2 options to use?*]{style="color:darkorange"}
 
 ```{r}
 # option 1
-t.test(x = chol$DiffChol, mu = 0) %>% tidy() %>% gt() # tidy from broom package
+t.test(x = chol$DiffChol, mu = 0) |> tidy() |> gt() # tidy from broom package
 # option 2
-t.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE) %>% tidy() %>% gt()
-# option 3
-t.test(Cholesterol ~ Time, paired = TRUE, data = chol_long) %>% tidy() %>% gt()
+t.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE) |> tidy() |> gt()
+# # option 3
+# t.test(Cholesterol ~ Time, paired = TRUE, data = chol_long) |> tidy() |> gt()
 ```
 
 
@@ -565,7 +564,7 @@ t.test(Cholesterol ~ Time, paired = TRUE, data = chol_long) %>% tidy() %>% gt()
 
 ```{r}
 # alternative = c("two.sided", "less", "greater")
-t.test(x = chol$DiffChol, mu = 0, alternative = "less") %>% tidy() %>% gt()
+t.test(x = chol$DiffChol, mu = 0, alternative = "less") |> tidy() |> gt()
 ```
 
 

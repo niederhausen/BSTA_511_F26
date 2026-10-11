@@ -105,8 +105,8 @@ ggplot(data = dds.discr,
 ```{r}
 #| fig.height: 8
 #| fig.width: 10
-dds.discr_Hips_WhnH <- dds.discr %>%  
-  filter(ethnicity == "White not Hispanic" | ethnicity == "Hispanic" ) %>% 
+dds.discr_Hips_WhnH <- dds.discr |>  
+  filter(ethnicity == "White not Hispanic" | ethnicity == "Hispanic" ) |> 
   droplevels()   # remove empty factor levels
   
 
@@ -131,8 +131,8 @@ ggplot(data = dds.discr_Hips_WhnH,
 ### default long format
 
 ```{r}
-mean_expend <- dds.discr_Hips_WhnH %>% 
-  group_by(ethnicity, age.cohort)%>% 
+mean_expend <- dds.discr_Hips_WhnH |> 
+  group_by(ethnicity, age.cohort)|> 
   summarize(ave = mean(expenditures))
 
 mean_expend
@@ -141,7 +141,7 @@ mean_expend
 ### wide format
 
 ```{r}
-mean_expend_wide <- mean_expend %>% 
+mean_expend_wide <- mean_expend |> 
   pivot_wider(names_from = ethnicity,
               values_from = ave)
 
@@ -152,7 +152,7 @@ mean_expend_wide
 ## Differences in mean annual DDS expenditures by age cohort and race/ethnicity
 
 ```{r}
-mean_expend_wide <- mean_expend_wide %>% 
+mean_expend_wide <- mean_expend_wide |> 
   mutate(diff_mean = `White not Hispanic` - Hispanic)
 
 mean_expend_wide
@@ -163,7 +163,7 @@ __Question__: Are the data sufficient evidence of ethnic discrimination in DDS e
 
 # Summary of data wrangling so far
 
-* The pipe `%>%` to string together commands in sequence
+* The pipe `|>` to string together commands in sequence
 * `mutate()` to add a new variable to a dataset
 * `select()` to select columns (or deselect columns with -variable)
 * `filter()` to select specific rows

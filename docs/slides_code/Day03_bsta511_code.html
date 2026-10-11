@@ -298,7 +298,7 @@ window.Quarto = {
   <li><a href="#summarizing-categorical-data-and-some-data-wrangling" id="toc-summarizing-categorical-data-and-some-data-wrangling" class="nav-link" data-scroll-target="#summarizing-categorical-data-and-some-data-wrangling">Summarizing categorical data and some data wrangling</a>
   <ul class="collapse">
   <li><a href="#frequency-tables-count" id="toc-frequency-tables-count" class="nav-link" data-scroll-target="#frequency-tables-count">Frequency tables: <code>count()</code></a></li>
-  <li><a href="#how-to-use-the-pipe" id="toc-how-to-use-the-pipe" class="nav-link" data-scroll-target="#how-to-use-the-pipe">How to use the pipe <code>%&gt;%</code></a></li>
+  <li><a href="#how-to-use-the-pipe" id="toc-how-to-use-the-pipe" class="nav-link" data-scroll-target="#how-to-use-the-pipe">How to use the pipe <code>|&gt;</code></a></li>
   <li><a href="#frequency-tables-janitor-packages-tabyl-function" id="toc-frequency-tables-janitor-packages-tabyl-function" class="nav-link" data-scroll-target="#frequency-tables-janitor-packages-tabyl-function">Frequency tables: <code>janitor</code> package’s <code>tabyl</code> function</a>
   <ul class="collapse">
   <li><a href="#relative-frequency-table" id="toc-relative-frequency-table" class="nav-link" data-scroll-target="#relative-frequency-table">Relative frequency table</a></li>
@@ -524,23 +524,23 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># library(gtsummary)</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl_summary</span>(dds.discr)  <span class="co"># from package gtsummary</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="gvrjewulci" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#gvrjewulci table {
+<div id="jbfbtwxvnh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jbfbtwxvnh table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#gvrjewulci thead, #gvrjewulci tbody, #gvrjewulci tfoot, #gvrjewulci tr, #gvrjewulci td, #gvrjewulci th {
+#jbfbtwxvnh thead, #jbfbtwxvnh tbody, #jbfbtwxvnh tfoot, #jbfbtwxvnh tr, #jbfbtwxvnh td, #jbfbtwxvnh th {
   border-style: none;
 }
 
-#gvrjewulci p {
+#jbfbtwxvnh p {
   margin: 0;
   padding: 0;
 }
 
-#gvrjewulci .gt_table {
+#jbfbtwxvnh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -566,12 +566,12 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   border-left-color: #D3D3D3;
 }
 
-#gvrjewulci .gt_caption {
+#jbfbtwxvnh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#gvrjewulci .gt_title {
+#jbfbtwxvnh .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -583,7 +583,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   border-bottom-width: 0;
 }
 
-#gvrjewulci .gt_subtitle {
+#jbfbtwxvnh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -595,7 +595,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   border-top-width: 0;
 }
 
-#gvrjewulci .gt_heading {
+#jbfbtwxvnh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -607,13 +607,13 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   border-right-color: #D3D3D3;
 }
 
-#gvrjewulci .gt_bottom_border {
+#jbfbtwxvnh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#gvrjewulci .gt_col_headings {
+#jbfbtwxvnh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -628,7 +628,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   border-right-color: #D3D3D3;
 }
 
-#gvrjewulci .gt_col_heading {
+#jbfbtwxvnh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -648,7 +648,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   overflow-x: hidden;
 }
 
-#gvrjewulci .gt_column_spanner_outer {
+#jbfbtwxvnh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -660,15 +660,15 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   padding-right: 4px;
 }
 
-#gvrjewulci .gt_column_spanner_outer:first-child {
+#jbfbtwxvnh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#gvrjewulci .gt_column_spanner_outer:last-child {
+#jbfbtwxvnh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#gvrjewulci .gt_column_spanner {
+#jbfbtwxvnh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -680,11 +680,11 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   width: 100%;
 }
 
-#gvrjewulci .gt_spanner_row {
+#jbfbtwxvnh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#gvrjewulci .gt_group_heading {
+#jbfbtwxvnh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -710,7 +710,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   text-align: left;
 }
 
-#gvrjewulci .gt_empty_group_heading {
+#jbfbtwxvnh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -725,15 +725,15 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   vertical-align: middle;
 }
 
-#gvrjewulci .gt_from_md > :first-child {
+#jbfbtwxvnh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#gvrjewulci .gt_from_md > :last-child {
+#jbfbtwxvnh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#gvrjewulci .gt_row {
+#jbfbtwxvnh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -752,7 +752,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   overflow-x: hidden;
 }
 
-#gvrjewulci .gt_stub {
+#jbfbtwxvnh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -765,7 +765,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   padding-right: 5px;
 }
 
-#gvrjewulci .gt_stub_row_group {
+#jbfbtwxvnh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -779,15 +779,15 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   vertical-align: top;
 }
 
-#gvrjewulci .gt_row_group_first td {
+#jbfbtwxvnh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#gvrjewulci .gt_row_group_first th {
+#jbfbtwxvnh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#gvrjewulci .gt_summary_row {
+#jbfbtwxvnh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -797,16 +797,16 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   padding-right: 5px;
 }
 
-#gvrjewulci .gt_first_summary_row {
+#jbfbtwxvnh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#gvrjewulci .gt_first_summary_row.thick {
+#jbfbtwxvnh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#gvrjewulci .gt_last_summary_row {
+#jbfbtwxvnh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -816,7 +816,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   border-bottom-color: #D3D3D3;
 }
 
-#gvrjewulci .gt_grand_summary_row {
+#jbfbtwxvnh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -826,7 +826,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   padding-right: 5px;
 }
 
-#gvrjewulci .gt_first_grand_summary_row {
+#jbfbtwxvnh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -836,7 +836,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   border-top-color: #D3D3D3;
 }
 
-#gvrjewulci .gt_last_grand_summary_row_top {
+#jbfbtwxvnh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -846,11 +846,11 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   border-bottom-color: #D3D3D3;
 }
 
-#gvrjewulci .gt_striped {
+#jbfbtwxvnh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#gvrjewulci .gt_table_body {
+#jbfbtwxvnh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -859,7 +859,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   border-bottom-color: #D3D3D3;
 }
 
-#gvrjewulci .gt_footnotes {
+#jbfbtwxvnh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -873,7 +873,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   border-right-color: #D3D3D3;
 }
 
-#gvrjewulci .gt_footnote {
+#jbfbtwxvnh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -882,7 +882,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   padding-right: 5px;
 }
 
-#gvrjewulci .gt_sourcenotes {
+#jbfbtwxvnh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -896,7 +896,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   border-right-color: #D3D3D3;
 }
 
-#gvrjewulci .gt_sourcenote {
+#jbfbtwxvnh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -904,72 +904,72 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
   padding-right: 5px;
 }
 
-#gvrjewulci .gt_left {
+#jbfbtwxvnh .gt_left {
   text-align: left;
 }
 
-#gvrjewulci .gt_center {
+#jbfbtwxvnh .gt_center {
   text-align: center;
 }
 
-#gvrjewulci .gt_right {
+#jbfbtwxvnh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#gvrjewulci .gt_font_normal {
+#jbfbtwxvnh .gt_font_normal {
   font-weight: normal;
 }
 
-#gvrjewulci .gt_font_bold {
+#jbfbtwxvnh .gt_font_bold {
   font-weight: bold;
 }
 
-#gvrjewulci .gt_font_italic {
+#jbfbtwxvnh .gt_font_italic {
   font-style: italic;
 }
 
-#gvrjewulci .gt_super {
+#jbfbtwxvnh .gt_super {
   font-size: 65%;
 }
 
-#gvrjewulci .gt_footnote_marks {
+#jbfbtwxvnh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#gvrjewulci .gt_asterisk {
+#jbfbtwxvnh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#gvrjewulci .gt_indent_1 {
+#jbfbtwxvnh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#gvrjewulci .gt_indent_2 {
+#jbfbtwxvnh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#gvrjewulci .gt_indent_3 {
+#jbfbtwxvnh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#gvrjewulci .gt_indent_4 {
+#jbfbtwxvnh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#gvrjewulci .gt_indent_5 {
+#jbfbtwxvnh .gt_indent_5 {
   text-indent: 25px;
 }
 
-#gvrjewulci .katex-display {
+#jbfbtwxvnh .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#gvrjewulci div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jbfbtwxvnh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1488,7 +1488,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <li>the output is a long tibble, and not a “nice” table</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">count</span>(ethnicity)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">count</span>(ethnicity)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 2
   ethnicity              n
@@ -1504,7 +1504,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> </span>
 <span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(ethnicity, age.cohort)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 35 × 3
@@ -1525,10 +1525,10 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 </div>
 </section>
 <section id="how-to-use-the-pipe" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-use-the-pipe">How to use the pipe <code>%&gt;%</code></h2>
-<p>The pipe operator <code>%&gt;%</code> strings together commands to be performed sequentially</p>
+<h2 class="anchored" data-anchor-id="how-to-use-the-pipe">How to use the pipe <code>|&gt;</code></h2>
+<p>The pipe operator <code>|&gt;</code> strings together commands to be performed sequentially</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="at">n=</span><span class="dv">3</span>)      <span class="co"># pronounce %&gt;% as "then"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">head</span>(<span class="at">n=</span><span class="dv">3</span>)      <span class="co"># pronounce |&gt; as "then"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 6
      id age.cohort   age gender expenditures ethnicity         
@@ -1546,7 +1546,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 </ul></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="at">n=</span><span class="dv">3</span>) <span class="sc">%&gt;%</span> <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">head</span>(<span class="at">n=</span><span class="dv">3</span>) <span class="sc">|&gt;</span> <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>       id        age.cohort      age        gender   expenditures  
  Min.   :10210   0-5  :1    Min.   : 3   Female:1   Min.   : 1454  
@@ -1571,7 +1571,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <h2 class="anchored" data-anchor-id="frequency-tables-janitor-packages-tabyl-function">Frequency tables: <code>janitor</code> package’s <code>tabyl</code> function</h2>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># default table</span></span>
-<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> </span>
 <span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabyl</span>(ethnicity)  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          ethnicity   n percent
@@ -1587,9 +1587,9 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 </div>
 <p><code>adorn_</code> your table!</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
-<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabyl</span>(ethnicity) <span class="sc">%&gt;%</span></span>
-<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_totals</span>(<span class="st">"row"</span>) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> </span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabyl</span>(ethnicity) <span class="sc">|&gt;</span></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_totals</span>(<span class="st">"row"</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_pct_formatting</span>(<span class="at">digits=</span><span class="dv">2</span>)  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          ethnicity    n percent
@@ -1611,10 +1611,10 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <li><p>Below I removed (deselected) the counts column (<code>n</code>) to create a relative frequency table</p></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
-<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabyl</span>(ethnicity) <span class="sc">%&gt;%</span></span>
-<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_totals</span>(<span class="st">"row"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_pct_formatting</span>(<span class="at">digits=</span><span class="dv">2</span>) <span class="sc">%&gt;%</span>   </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> </span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabyl</span>(ethnicity) <span class="sc">|&gt;</span></span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_totals</span>(<span class="st">"row"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_pct_formatting</span>(<span class="at">digits=</span><span class="dv">2</span>) <span class="sc">|&gt;</span>   </span>
 <span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>n) <span class="co"># remove column with variable name n</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          ethnicity percent
@@ -1643,8 +1643,8 @@ a particular combination of outcomes occurs</li>
 are sometimes called <strong>marginal totals</strong></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
-<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabyl</span>(ethnicity, gender) <span class="sc">%&gt;%</span>    </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> </span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabyl</span>(ethnicity, gender) <span class="sc">|&gt;</span>    </span>
 <span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_totals</span>(<span class="fu">c</span>(<span class="st">"row"</span>, <span class="st">"col"</span>))    </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          ethnicity Female Male Total
@@ -1662,11 +1662,11 @@ are sometimes called <strong>marginal totals</strong></li>
 <section id="contingency-tables-with-percentages" class="level3">
 <h3 class="anchored" data-anchor-id="contingency-tables-with-percentages">Contingency tables with percentages</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
-<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabyl</span>(ethnicity, age.cohort) <span class="sc">%&gt;%</span></span>
-<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_totals</span>(<span class="fu">c</span>(<span class="st">"row"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_percentages</span>(<span class="st">"row"</span>) <span class="sc">%&gt;%</span>   </span>
-<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_pct_formatting</span>(<span class="at">digits=</span><span class="dv">0</span>) <span class="sc">%&gt;%</span>    </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> </span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabyl</span>(ethnicity, age.cohort) <span class="sc">|&gt;</span></span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_totals</span>(<span class="fu">c</span>(<span class="st">"row"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_percentages</span>(<span class="st">"row"</span>) <span class="sc">|&gt;</span>   </span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_pct_formatting</span>(<span class="at">digits=</span><span class="dv">0</span>) <span class="sc">|&gt;</span>    </span>
 <span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_ns</span>()    </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          ethnicity      0-5      6-12      13-17     18-21     22-50       51+
@@ -1693,7 +1693,7 @@ are sometimes called <strong>marginal totals</strong></li>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 18065.79</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> </span>
 <span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
 <span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">ave =</span> <span class="fu">mean</span>(expenditures),</span>
 <span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">SD =</span> <span class="fu">sd</span>(expenditures),</span>
@@ -1706,8 +1706,8 @@ are sometimes called <strong>marginal totals</strong></li>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
-<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ethnicity) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> </span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ethnicity) <span class="sc">|&gt;</span> </span>
 <span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
 <span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">ave =</span> <span class="fu">mean</span>(expenditures),</span>
 <span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">SD =</span> <span class="fu">sd</span>(expenditures),</span>
@@ -1730,7 +1730,7 @@ are sometimes called <strong>marginal totals</strong></li>
 <section id="get_summary_stats-from-rstatix-package" class="level2">
 <h2 class="anchored" data-anchor-id="get_summary_stats-from-rstatix-package"><code>get_summary_stats()</code> from <code>rstatix</code> package</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">get_summary_stats</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">get_summary_stats</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 13
   variable         n   min   max median     q1     q3   iqr    mad   mean     sd
@@ -1740,8 +1740,8 @@ are sometimes called <strong>marginal totals</strong></li>
 3 expenditures  1000   222 75098  7026   2899. 37713. 34814 7.76e3 1.81e4 1.95e4
 # ℹ 2 more variables: se &lt;dbl&gt;, ci &lt;dbl&gt;</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
-<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ethnicity) <span class="sc">%&gt;%</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> </span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ethnicity) <span class="sc">|&gt;</span></span>
 <span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">get_summary_stats</span>(expenditures, <span class="at">type =</span> <span class="st">"common"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 11
@@ -1762,7 +1762,7 @@ are sometimes called <strong>marginal totals</strong></li>
 <h2 class="anchored" data-anchor-id="how-to-force-all-output-to-be-shown">How to force all output to be shown?</h2>
 <p>Use <code>kable()</code> from the <code>knitr</code> package.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb72"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">get_summary_stats</span>() <span class="sc">%&gt;%</span> <span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb72"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">get_summary_stats</span>() <span class="sc">|&gt;</span> <span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
@@ -1848,9 +1848,9 @@ are sometimes called <strong>marginal totals</strong></li>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
-<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ethnicity) <span class="sc">%&gt;%</span></span>
-<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">get_summary_stats</span>(expenditures, <span class="at">type =</span> <span class="st">"common"</span>) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>dds.discr <span class="sc">|&gt;</span> </span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ethnicity) <span class="sc">|&gt;</span></span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">get_summary_stats</span>(expenditures, <span class="at">type =</span> <span class="st">"common"</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb73-4"><a href="#cb73-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">

@@ -1175,7 +1175,7 @@ percentages (right)</p>
 </ul>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a aria-label="1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">count</span>(ethnicity)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a aria-label="1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">count</span>(ethnicity)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 2
   ethnicity              n
@@ -1192,7 +1192,7 @@ percentages (right)</p>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a aria-label="1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a aria-label="1"></a>dds.discr <span class="sc">|&gt;</span> </span>
 <span id="cb45-2"><a aria-label="2"></a>  <span class="fu">count</span>(ethnicity, age.cohort)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 35 × 3
@@ -1214,12 +1214,12 @@ percentages (right)</p>
 </div></div>
 </section>
 <section id="how-to-use-the-pipe" class="slide level2">
-<h2>How to use the pipe <code>%&gt;%</code></h2>
+<h2>How to use the pipe <code>|&gt;</code></h2>
 <div style="font-size: 80%;">
-<p>The pipe operator <code>%&gt;%</code> strings together commands to be performed sequentially</p>
+<p>The pipe operator <code>|&gt;</code> strings together commands to be performed sequentially</p>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a aria-label="1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="at">n=</span><span class="dv">3</span>)      <span class="co"># pronounce %&gt;% as "then"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a aria-label="1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">head</span>(<span class="at">n=</span><span class="dv">3</span>)      <span class="co"># pronounce |&gt; as "then"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 6
      id age.cohort   age gender expenditures ethnicity         
@@ -1239,7 +1239,7 @@ percentages (right)</p>
 </ul>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a aria-label="1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">head</span>(<span class="at">n=</span><span class="dv">3</span>) <span class="sc">%&gt;%</span> <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a aria-label="1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">head</span>(<span class="at">n=</span><span class="dv">3</span>) <span class="sc">|&gt;</span> <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="frequency-tables-janitor-packages-tabyl-function" class="slide level2">
@@ -1248,7 +1248,7 @@ percentages (right)</p>
 <div class="column" style="width:50%;">
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a aria-label="1"></a><span class="co"># default table</span></span>
-<span id="cb50-2"><a aria-label="2"></a>dds.discr <span class="sc">%&gt;%</span> </span>
+<span id="cb50-2"><a aria-label="2"></a>dds.discr <span class="sc">|&gt;</span> </span>
 <span id="cb50-3"><a aria-label="3"></a>  <span class="fu">tabyl</span>(ethnicity)  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          ethnicity   n percent
@@ -1265,9 +1265,9 @@ percentages (right)</p>
 </div><div class="column" style="width:50%;">
 <p><code>adorn_</code> your table!</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a aria-label="1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
-<span id="cb52-2"><a aria-label="2"></a>  <span class="fu">tabyl</span>(ethnicity) <span class="sc">%&gt;%</span></span>
-<span id="cb52-3"><a aria-label="3"></a>  <span class="fu">adorn_totals</span>(<span class="st">"row"</span>) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52" data-code-line-numbers="3-4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a aria-label="1"></a>dds.discr <span class="sc">|&gt;</span> </span>
+<span id="cb52-2"><a aria-label="2"></a>  <span class="fu">tabyl</span>(ethnicity) <span class="sc">|&gt;</span></span>
+<span id="cb52-3"><a aria-label="3"></a>  <span class="fu">adorn_totals</span>(<span class="st">"row"</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb52-4"><a aria-label="4"></a>  <span class="fu">adorn_pct_formatting</span>(<span class="at">digits=</span><span class="dv">2</span>)  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          ethnicity    n percent
@@ -1296,10 +1296,10 @@ percentages (right)</p>
 </div>
 </div><div class="column" style="width:60%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54" data-code-line-numbers="4-5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a aria-label="1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
-<span id="cb54-2"><a aria-label="2"></a>  <span class="fu">tabyl</span>(ethnicity) <span class="sc">%&gt;%</span></span>
-<span id="cb54-3"><a aria-label="3"></a>  <span class="fu">adorn_totals</span>(<span class="st">"row"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb54-4"><a aria-label="4"></a>  <span class="fu">adorn_pct_formatting</span>(<span class="at">digits=</span><span class="dv">2</span>) <span class="sc">%&gt;%</span>   </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54" data-code-line-numbers="4-5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a aria-label="1"></a>dds.discr <span class="sc">|&gt;</span> </span>
+<span id="cb54-2"><a aria-label="2"></a>  <span class="fu">tabyl</span>(ethnicity) <span class="sc">|&gt;</span></span>
+<span id="cb54-3"><a aria-label="3"></a>  <span class="fu">adorn_totals</span>(<span class="st">"row"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb54-4"><a aria-label="4"></a>  <span class="fu">adorn_pct_formatting</span>(<span class="at">digits=</span><span class="dv">2</span>) <span class="sc">|&gt;</span>   </span>
 <span id="cb54-5"><a aria-label="5"></a>  <span class="fu">select</span>(<span class="sc">-</span>n) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          ethnicity percent
@@ -1333,8 +1333,8 @@ are sometimes called <strong>marginal totals</strong></li>
 </div>
 </div><div class="column" style="width:60%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56" data-code-line-numbers="2-3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a aria-label="1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
-<span id="cb56-2"><a aria-label="2"></a>  <span class="fu">tabyl</span>(ethnicity, gender) <span class="sc">%&gt;%</span>    </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56" data-code-line-numbers="2-3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a aria-label="1"></a>dds.discr <span class="sc">|&gt;</span> </span>
+<span id="cb56-2"><a aria-label="2"></a>  <span class="fu">tabyl</span>(ethnicity, gender) <span class="sc">|&gt;</span>    </span>
 <span id="cb56-3"><a aria-label="3"></a>  <span class="fu">adorn_totals</span>(<span class="fu">c</span>(<span class="st">"row"</span>, <span class="st">"col"</span>))    </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          ethnicity Female Male Total
@@ -1354,11 +1354,11 @@ are sometimes called <strong>marginal totals</strong></li>
 <section id="contingency-tables-with-percentages" class="slide level2">
 <h2>Contingency tables with percentages</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58" data-code-line-numbers="4-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a aria-label="1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
-<span id="cb58-2"><a aria-label="2"></a>  <span class="fu">tabyl</span>(ethnicity, age.cohort) <span class="sc">%&gt;%</span></span>
-<span id="cb58-3"><a aria-label="3"></a>  <span class="fu">adorn_totals</span>(<span class="fu">c</span>(<span class="st">"row"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb58-4"><a aria-label="4"></a>  <span class="fu">adorn_percentages</span>(<span class="st">"row"</span>) <span class="sc">%&gt;%</span>   </span>
-<span id="cb58-5"><a aria-label="5"></a>  <span class="fu">adorn_pct_formatting</span>(<span class="at">digits=</span><span class="dv">0</span>) <span class="sc">%&gt;%</span>    </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58" data-code-line-numbers="4-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a aria-label="1"></a>dds.discr <span class="sc">|&gt;</span> </span>
+<span id="cb58-2"><a aria-label="2"></a>  <span class="fu">tabyl</span>(ethnicity, age.cohort) <span class="sc">|&gt;</span></span>
+<span id="cb58-3"><a aria-label="3"></a>  <span class="fu">adorn_totals</span>(<span class="fu">c</span>(<span class="st">"row"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb58-4"><a aria-label="4"></a>  <span class="fu">adorn_percentages</span>(<span class="st">"row"</span>) <span class="sc">|&gt;</span>   </span>
+<span id="cb58-5"><a aria-label="5"></a>  <span class="fu">adorn_pct_formatting</span>(<span class="at">digits=</span><span class="dv">0</span>) <span class="sc">|&gt;</span>    </span>
 <span id="cb58-6"><a aria-label="6"></a>  <span class="fu">adorn_ns</span>()    </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          ethnicity      0-5      6-12      13-17     18-21     22-50       51+
@@ -1388,7 +1388,7 @@ are sometimes called <strong>marginal totals</strong></li>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 18065.79</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a aria-label="1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb62"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a aria-label="1"></a>dds.discr <span class="sc">|&gt;</span> </span>
 <span id="cb62-2"><a aria-label="2"></a>  <span class="fu">summarize</span>(</span>
 <span id="cb62-3"><a aria-label="3"></a>    <span class="at">ave =</span> <span class="fu">mean</span>(expenditures),</span>
 <span id="cb62-4"><a aria-label="4"></a>    <span class="at">SD =</span> <span class="fu">sd</span>(expenditures),</span>
@@ -1402,8 +1402,8 @@ are sometimes called <strong>marginal totals</strong></li>
 </div>
 </div><div class="column" style="width:55%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64" data-code-line-numbers="2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a aria-label="1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
-<span id="cb64-2"><a aria-label="2"></a>  <span class="fu">group_by</span>(ethnicity) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64" data-code-line-numbers="2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a aria-label="1"></a>dds.discr <span class="sc">|&gt;</span> </span>
+<span id="cb64-2"><a aria-label="2"></a>  <span class="fu">group_by</span>(ethnicity) <span class="sc">|&gt;</span> </span>
 <span id="cb64-3"><a aria-label="3"></a>  <span class="fu">summarize</span>(</span>
 <span id="cb64-4"><a aria-label="4"></a>    <span class="at">ave =</span> <span class="fu">mean</span>(expenditures),</span>
 <span id="cb64-5"><a aria-label="5"></a>    <span class="at">SD =</span> <span class="fu">sd</span>(expenditures),</span>
@@ -1427,7 +1427,7 @@ are sometimes called <strong>marginal totals</strong></li>
 <section id="get_summary_stats-from-rstatix-package" class="slide level2">
 <h2><code>get_summary_stats()</code> from <code>rstatix</code> package</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb66"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a aria-label="1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">get_summary_stats</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb66"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a aria-label="1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">get_summary_stats</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 13
   variable         n   min   max median     q1     q3   iqr    mad   mean     sd
@@ -1437,8 +1437,8 @@ are sometimes called <strong>marginal totals</strong></li>
 3 expenditures  1000   222 75098  7026   2899. 37713. 34814 7.76e3 1.81e4 1.95e4
 # ℹ 2 more variables: se &lt;dbl&gt;, ci &lt;dbl&gt;</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb68"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a aria-label="1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
-<span id="cb68-2"><a aria-label="2"></a>  <span class="fu">group_by</span>(ethnicity) <span class="sc">%&gt;%</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb68"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a aria-label="1"></a>dds.discr <span class="sc">|&gt;</span> </span>
+<span id="cb68-2"><a aria-label="2"></a>  <span class="fu">group_by</span>(ethnicity) <span class="sc">|&gt;</span></span>
 <span id="cb68-3"><a aria-label="3"></a>  <span class="fu">get_summary_stats</span>(expenditures, <span class="at">type =</span> <span class="st">"common"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 8 × 11
@@ -1459,7 +1459,7 @@ are sometimes called <strong>marginal totals</strong></li>
 <h2>How to force all output to be shown? (1/2)</h2>
 <p>Use <code>kable()</code> from the <code>knitr</code> package.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb70"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a aria-label="1"></a>dds.discr <span class="sc">%&gt;%</span> <span class="fu">get_summary_stats</span>() <span class="sc">%&gt;%</span> <span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb70"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a aria-label="1"></a>dds.discr <span class="sc">|&gt;</span> <span class="fu">get_summary_stats</span>() <span class="sc">|&gt;</span> <span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="caption-top">
 <colgroup>
@@ -1549,9 +1549,9 @@ are sometimes called <strong>marginal totals</strong></li>
 <h2>How to force all output to be shown? <code>knitr</code> (2/2)</h2>
 <p>Use <code>kable()</code> from the <code>knitr</code> package.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb71"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a aria-label="1"></a>dds.discr <span class="sc">%&gt;%</span> </span>
-<span id="cb71-2"><a aria-label="2"></a>  <span class="fu">group_by</span>(ethnicity) <span class="sc">%&gt;%</span></span>
-<span id="cb71-3"><a aria-label="3"></a>  <span class="fu">get_summary_stats</span>(expenditures, <span class="at">type =</span> <span class="st">"common"</span>) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb71"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a aria-label="1"></a>dds.discr <span class="sc">|&gt;</span> </span>
+<span id="cb71-2"><a aria-label="2"></a>  <span class="fu">group_by</span>(ethnicity) <span class="sc">|&gt;</span></span>
+<span id="cb71-3"><a aria-label="3"></a>  <span class="fu">get_summary_stats</span>(expenditures, <span class="at">type =</span> <span class="st">"common"</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb71-4"><a aria-label="4"></a>  <span class="fu">kable</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="caption-top">

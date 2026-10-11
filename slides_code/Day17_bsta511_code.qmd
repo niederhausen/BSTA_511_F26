@@ -146,7 +146,7 @@ IOP_table <- tibble(
   Patient = 1:7,
   Adren = c(3.5, 2.6, 3, 1.9, 2.9, 2.4, 2),
   Synth = c(3.2, 3.1, 3.3, 2.4, 2.9, 2.8, 2.6)
-  ) %>% 
+  ) |> 
   mutate(
     d = Synth - Adren,
     Sign = case_when(
@@ -154,7 +154,7 @@ IOP_table <- tibble(
       d > 0 ~ "+"
       )
     )
-IOP_table %>% gt()
+IOP_table |> gt()
 
 ```
 
@@ -208,7 +208,7 @@ What are $D^+$ and $D^-$ for our example?
 
 
 ```{r}
-IOP_table %>% gt()
+IOP_table |> gt()
 ```
 
 
@@ -288,13 +288,13 @@ IOP <- tibble(
   Patient = 1:7,
   Adren = c(3.5, 2.6, 3, 1.9, 2.9, 2.4, 2),
   Synth = c(3.2, 3.1, 3.3, 2.4, 2.9, 2.8, 2.6)
-  ) %>% 
+  ) |> 
   mutate(d = Synth - Adren,
     Sign = case_when(
       d < 0 ~ "-",
       d > 0 ~ "+"))
 
-IOP %>% gt()
+IOP |> gt()
 ```
 
 Recall we're testing the population median.  
@@ -421,7 +421,7 @@ $H_a:$ the population is __not symmetric around some value__ $\tilde{\mu}_0$
 * Then calculate the signed ranks as +/- the rank depending on whether the sign is +/-
 
 ```{r}
-IOP_ranks <- IOP %>% 
+IOP_ranks <- IOP |> 
   mutate(
     Rank = c(1.5, 4.5, 1.5, 4.5, NA, 3, 6),
     Signed_rank = case_when(
@@ -429,7 +429,7 @@ IOP_ranks <- IOP %>%
       d > 0 ~ Rank
       )
     )
-IOP_ranks %>% gt()
+IOP_ranks |> gt()
 ```
 
 
@@ -441,8 +441,8 @@ IOP_ranks %>% gt()
 * In the output below, I called this column `Rank_R`.
 
 ```{r}
-IOP_Ranks_R <- IOP_ranks %>% 
-  filter(d != 0) %>% 
+IOP_Ranks_R <- IOP_ranks |> 
+  filter(d != 0) |> 
   mutate(
     # create column with absolute values of differences
     # it's the absolute values that get ranked
@@ -456,7 +456,7 @@ IOP_Ranks_R <- IOP_ranks %>%
       )
     ) 
 
-IOP_Ranks_R %>% gt()
+IOP_Ranks_R |> gt()
 
 ```
 
@@ -491,7 +491,7 @@ Thus, any of the following can be used as a test statistic and will lead to the 
 ## Example: calculate sums of signed ranks
 
 ```{r}
-IOP_Ranks_R %>% gt()
+IOP_Ranks_R |> gt()
 ```
 
 * Sum of the positive ranks 
@@ -506,15 +506,15 @@ IOP_Ranks_R %>% gt()
 
 In R:
 ```{r}
-Tplus <- IOP_Ranks_R %>% 
-  filter(d > 0) %>% 
-  select(Signed_Rank_R) %>% 
+Tplus <- IOP_Ranks_R |> 
+  filter(d > 0) |> 
+  select(Signed_Rank_R) |> 
   sum()
 Tplus
 
-Tminus <- IOP_Ranks_R %>% 
-  filter(d < 0) %>% 
-  select(Signed_Rank_R) %>% 
+Tminus <- IOP_Ranks_R |> 
+  filter(d < 0) |> 
+  select(Signed_Rank_R) |> 
   sum()
 Tminus
 
@@ -683,9 +683,9 @@ CPZdata <- tibble(
   cap_CPZ = c(426, 232, 130, 94, 75, 55)
   ) 
 
-CPZdata %>% gt()
+CPZdata |> gt()
 
-CPZdata %>% get_summary_stats(type = "median") %>% gt()
+CPZdata |> get_summary_stats(type = "median") |> gt()
 ```
 
 
@@ -744,14 +744,14 @@ $$W_{CPZ}=1+2+3+6+7+8 = 27$$
 $$W_{control}=4+5+9+10+11+12 = 51$$
 
 ```{r}
-CPZdata_long <- CPZdata %>% 
+CPZdata_long <- CPZdata |> 
   pivot_longer(cols = c(control,cap_CPZ), 
                names_to = "Group",
-               values_to = "Current") %>% 
-  arrange(Current) %>% 
+               values_to = "Current") |> 
+  arrange(Current) |> 
   mutate(Rank = 1:12)
 
-CPZdata_long %>% gt()
+CPZdata_long |> gt()
 ```
 
 
@@ -762,14 +762,14 @@ CPZdata_long %>% gt()
 * In the output below, I called this column `Rank_R`.
 
 ```{r}
-CPZdata_long <- CPZdata_long %>% 
+CPZdata_long <- CPZdata_long |> 
   mutate(
     # create column with ranks that accounts for ties using R's rank() function
     # you don't need to first sort the data to use this command
     Rank_R = rank(Current, ties.method = "average")
     ) 
 
-CPZdata_long %>% gt()
+CPZdata_long |> gt()
 
 ```    
  
@@ -853,7 +853,7 @@ Normal approximation p-value without CC
 ```{r}
 wilcox.test(x = CPZdata$cap_CPZ, y = CPZdata$control, 
 	alternative = c("two.sided"), mu = 0, 
-	exact = FALSE, correct = FALSE) %>% tidy() %>% gt()
+	exact = FALSE, correct = FALSE) |> tidy() |> gt()
 ```
 
 Normal approximation p-value with CC
@@ -861,7 +861,7 @@ Normal approximation p-value with CC
 ```{r}
 wilcox.test(x = CPZdata$cap_CPZ, y = CPZdata$control, 
 	alternative = c("two.sided"), mu = 0, 
-	exact = FALSE, correct = TRUE) %>% tidy() %>% gt()
+	exact = FALSE, correct = TRUE) |> tidy() |> gt()
 ```
 
 
@@ -872,7 +872,7 @@ wilcox.test(x = CPZdata$cap_CPZ, y = CPZdata$control,
 Make data long (if it's not already long):
 
 ```{r}
-CPZdata_long <- CPZdata %>% 
+CPZdata_long <- CPZdata |> 
   pivot_longer(cols = c(control,cap_CPZ), 
                names_to = "Group",
                values_to = "Current")
@@ -890,8 +890,8 @@ wilcox.test(Current ~ Group,
             data = CPZdata_long, 
             alternative = c("two.sided"), 
             mu = 0, 
-            exact = TRUE) %>% 
-  tidy() %>% gt() 
+            exact = TRUE) |> 
+  tidy() |> gt() 
 ```
 
 
@@ -985,11 +985,11 @@ glimpse(airquality)
 
 
 ```{r}
-Oz_mnth <- airquality %>% 
-  group_by(Month) %>% 
+Oz_mnth <- airquality |> 
+  group_by(Month) |> 
   get_summary_stats(Ozone, 
     show = c("n", "mean", "median", "sd"))
-Oz_mnth %>% gt()
+Oz_mnth |> gt()
 
 max(Oz_mnth$sd) / min(Oz_mnth$sd)
 ```
@@ -1007,15 +1007,15 @@ ggplot(airquality,
 ## Example: calculate ranks (fyi) 
 
 ```{r}
-ranks_Oz_mnth <- airquality %>% 
+ranks_Oz_mnth <- airquality |> 
   select(Ozone, Month) 
 
 summary(ranks_Oz_mnth)
 
-ranks_Oz_mnth <- ranks_Oz_mnth %>% 
-  drop_na(Ozone) %>% 
-  arrange(Ozone) %>% 
-  mutate(Rank = 1:nrow(.))
+ranks_Oz_mnth <- ranks_Oz_mnth |> 
+  drop_na(Ozone) |> 
+  arrange(Ozone) |> 
+  mutate(Rank = 1:n())
 ```
 
 Ranks below do not take into account ties!!
@@ -1028,8 +1028,8 @@ head(ranks_Oz_mnth, 20)
 Sum of ranks for each group: (not taking into account ties!!)
 
 ```{r}
-ranks_Oz_mnth %>% 
-  group_by(Month) %>% 
+ranks_Oz_mnth |> 
+  group_by(Month) |> 
   summarise(sumRank = sum(Rank))
 ```
 
@@ -1042,7 +1042,7 @@ ranks_Oz_mnth %>%
 * In the output below, I called this column `Rank_R`.
 
 ```{r}
-ranks_Oz_mnth <- ranks_Oz_mnth %>% 
+ranks_Oz_mnth <- ranks_Oz_mnth |> 
   mutate(
     # create column with ranks that accounts for ties using R's rank() function
     # you don't need to first sort the data to use this command
@@ -1060,7 +1060,7 @@ head(ranks_Oz_mnth, 20)
 ```{r}
 kruskal.test(Ozone ~ Month, data = airquality)
 
-kruskal.test(Ozone ~ Month, data = airquality) %>% tidy() %>% gt()
+kruskal.test(Ozone ~ Month, data = airquality) |> tidy() |> gt()
 ```
 
 There is sufficient evidence that the median ozone levels are different in at least two months from May - September, 1973 in New York City (p < 0.001; Kruskal-Wallis test).

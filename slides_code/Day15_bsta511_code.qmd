@@ -152,7 +152,7 @@ ggplot(gapm, aes(x = female_literacy_rate_2011,
 * This can be used within summarize.
 
 ```{r}
-gapm %>% 
+gapm |> 
   summarize(correlation = cor(life_expectancy_years_2011, 
                               female_literacy_rate_2011,
                               use =  "complete.obs"))
@@ -336,7 +336,7 @@ summary(model1)
 ## `tidy()` model
 
 ```{r}
-tidy(model1) %>% gt()
+tidy(model1) |> gt()
 ```
 
 
@@ -345,7 +345,7 @@ tidy(model1) %>% gt()
 The values in the `estimate` column are the intercept and slope of the regression model.
 
 ```{r}
-tidy(model1) %>% gt()
+tidy(model1) |> gt()
 ```
 
 Generic regression equation:

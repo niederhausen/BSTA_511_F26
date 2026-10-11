@@ -486,7 +486,7 @@ median(c(df$age, 67))
 #| fig.height: 4
 #| fig.width: 14
 
-iris_long <- iris %>% pivot_longer(Sepal.Length:Petal.Width, names_to = "msr")
+iris_long <- iris |> pivot_longer(Sepal.Length:Petal.Width, names_to = "msr")
 
 ggplot(iris_long, aes(x= value)) +
   facet_grid(cols = vars(msr)) +
@@ -535,7 +535,7 @@ sim_diff_sd <- data.frame(
   sd3 = rnorm(1000, mean = 0, sd = 50)
 )
 
-sim_diff_sd_long <- sim_diff_sd %>%
+sim_diff_sd_long <- sim_diff_sd |>
   pivot_longer(sd1:sd3, names_to = "sd")
 
 ggplot(sim_diff_sd_long, aes(x= value)) +

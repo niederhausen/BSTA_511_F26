@@ -308,18 +308,18 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a><span class="fu">summary</span>(employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>  disability            score      
- Length:70          Min.   :1.400  
- Class :character   1st Qu.:3.700  
- Mode  :character   Median :5.050  
-                    Mean   :4.929  
-                    3rd Qu.:6.100  
-                    Max.   :8.500  </code></pre>
+<pre><code>     disability     score      
+ Length   :70   Min.   :1.400  
+ N.unique : 5   1st Qu.:3.700  
+ N.blank  : 0   Median :5.050  
+ Min.nchar: 4   Mean   :4.929  
+ Max.nchar:10   3rd Qu.:6.100  
+                Max.   :8.500  </code></pre>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a>employ <span class="sc">%&gt;%</span> <span class="fu">tabyl</span>(disability)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a>employ <span class="sc">|&gt;</span> <span class="fu">tabyl</span>(disability)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> disability  n percent
     amputee 14     0.2
@@ -364,19 +364,19 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a aria-label="1"></a><span class="fu">summary</span>(employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>  disability            score      
- Length:70          Min.   :1.400  
- Class :character   1st Qu.:3.700  
- Mode  :character   Median :5.050  
-                    Mean   :4.929  
-                    3rd Qu.:6.100  
-                    Max.   :8.500  </code></pre>
+<pre><code>     disability     score      
+ Length   :70   Min.   :1.400  
+ N.unique : 5   1st Qu.:3.700  
+ N.blank  : 0   Median :5.050  
+ Min.nchar: 4   Mean   :4.929  
+ Max.nchar:10   3rd Qu.:6.100  
+                Max.   :8.500  </code></pre>
 </div>
 </div>
 </div></div>
 <p>Make <code>disability</code> a factor variable:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a aria-label="1"></a>employ <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a aria-label="1"></a>employ <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> </span>
 <span id="cb12-2"><a aria-label="2"></a>  <span class="fu">mutate</span>(<span class="at">disability =</span> <span class="fu">factor</span>(disability))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p><br></p>
@@ -418,7 +418,7 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 </div>
 <p><span style="color:green">What changes are being made below?</span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a aria-label="1"></a>employ <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a aria-label="1"></a>employ <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> </span>
 <span id="cb19-2"><a aria-label="2"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb19-3"><a aria-label="3"></a>    <span class="co"># make "none" the first level</span></span>
 <span id="cb19-4"><a aria-label="4"></a>    <span class="co"># by only listing the level none, all other levels will be in original order</span></span>
@@ -454,7 +454,7 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-14-1.png" width="672"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-13-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -471,7 +471,7 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-15-1.png" width="672"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-14-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -498,7 +498,7 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-16-1.png" width="672"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-15-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -519,7 +519,7 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-17-1.png" width="720"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-16-1.png" width="720"></p>
 </figure>
 </div>
 </div>
@@ -562,7 +562,7 @@ In which set (A or B) do you believe the evidence will be stronger that at least
 </ul></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a aria-label="1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">%&gt;%</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a aria-label="1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">|&gt;</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Variance Table
 
@@ -573,7 +573,7 @@ Residuals  65 173.321  2.6665
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a aria-label="1"></a><span class="fu">aov</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">%&gt;%</span> <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a aria-label="1"></a><span class="fu">aov</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">|&gt;</span> <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>            Df Sum Sq Mean Sq F value Pr(&gt;F)  
 disability   4  30.52   7.630   2.862 0.0301 *
@@ -594,7 +594,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 <p>Disability example ANOVA table from R:</p>
 <div style="font-size: 90%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a aria-label="1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">%&gt;%</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a aria-label="1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">|&gt;</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Variance Table
 
@@ -761,7 +761,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-20-1.png" width="672"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-19-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -796,7 +796,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div><div class="column" style="width:65%;">
 <p>Total sample size <span class="math inline">\(N\)</span>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a aria-label="1"></a>(Ns <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(disability) <span class="sc">%&gt;%</span> <span class="fu">count</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a aria-label="1"></a>(Ns <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> <span class="fu">group_by</span>(disability) <span class="sc">|&gt;</span> <span class="fu">count</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 2
 # Groups:   disability [5]
@@ -836,7 +836,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-23-1.png" width="672"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-22-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -860,7 +860,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-24-1.png" width="672"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-23-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -868,8 +868,8 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div><div class="column" style="width:60%;">
 <p>Calculate means <span class="math inline">\(\bar{x}_i\)</span> for each group:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a aria-label="1"></a>xbar_groups <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> </span>
-<span id="cb36-2"><a aria-label="2"></a>  <span class="fu">group_by</span>(disability) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a aria-label="1"></a>xbar_groups <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> </span>
+<span id="cb36-2"><a aria-label="2"></a>  <span class="fu">group_by</span>(disability) <span class="sc">|&gt;</span> </span>
 <span id="cb36-3"><a aria-label="3"></a>  <span class="fu">summarise</span>(<span class="at">mean =</span> <span class="fu">mean</span>(score))</span>
 <span id="cb36-4"><a aria-label="4"></a>xbar_groups</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -911,7 +911,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-27-1.png" width="672"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-26-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -935,7 +935,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-28-1.png" width="672"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-27-1.png" width="672"></p>
 </figure>
 </div>
 </div>
@@ -943,8 +943,8 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div><div class="column" style="width:50%;">
 <p>Calculate sd’s <span class="math inline">\(s_i\)</span> for each group:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a aria-label="1"></a>sd_groups <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> </span>
-<span id="cb40-2"><a aria-label="2"></a>  <span class="fu">group_by</span>(disability) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a aria-label="1"></a>sd_groups <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> </span>
+<span id="cb40-2"><a aria-label="2"></a>  <span class="fu">group_by</span>(disability) <span class="sc">|&gt;</span> </span>
 <span id="cb40-3"><a aria-label="3"></a>  <span class="fu">summarise</span>(<span class="at">SD =</span> <span class="fu">sd</span>(score))</span>
 <span id="cb40-4"><a aria-label="4"></a>sd_groups</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -1054,29 +1054,29 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a aria-label="1"></a><span class="co"># Note that I'm saving the tidy anova table</span></span>
 <span id="cb48-2"><a aria-label="2"></a><span class="co"># Will be pulling p-value from this on future slide</span></span>
 <span id="cb48-3"><a aria-label="3"></a></span>
-<span id="cb48-4"><a aria-label="4"></a>empl_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">%&gt;%</span> </span>
-<span id="cb48-5"><a aria-label="5"></a>  <span class="fu">anova</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb48-4"><a aria-label="4"></a>empl_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">|&gt;</span> </span>
+<span id="cb48-5"><a aria-label="5"></a>  <span class="fu">anova</span>() <span class="sc">|&gt;</span> </span>
 <span id="cb48-6"><a aria-label="6"></a>  <span class="fu">tidy</span>()</span>
 <span id="cb48-7"><a aria-label="7"></a></span>
-<span id="cb48-8"><a aria-label="8"></a>empl_lm <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb48-8"><a aria-label="8"></a>empl_lm <span class="sc">|&gt;</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="qknhssmsar" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#qknhssmsar table {
+<div id="fpnsbmdkhh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#fpnsbmdkhh table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#qknhssmsar thead, #qknhssmsar tbody, #qknhssmsar tfoot, #qknhssmsar tr, #qknhssmsar td, #qknhssmsar th {
+#fpnsbmdkhh thead, #fpnsbmdkhh tbody, #fpnsbmdkhh tfoot, #fpnsbmdkhh tr, #fpnsbmdkhh td, #fpnsbmdkhh th {
   border-style: none;
 }
 
-#qknhssmsar p {
+#fpnsbmdkhh p {
   margin: 0;
   padding: 0;
 }
 
-#qknhssmsar .gt_table {
+#fpnsbmdkhh .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1102,12 +1102,12 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#qknhssmsar .gt_caption {
+#fpnsbmdkhh .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#qknhssmsar .gt_title {
+#fpnsbmdkhh .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1119,7 +1119,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-bottom-width: 0;
 }
 
-#qknhssmsar .gt_subtitle {
+#fpnsbmdkhh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1131,7 +1131,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-top-width: 0;
 }
 
-#qknhssmsar .gt_heading {
+#fpnsbmdkhh .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1143,13 +1143,13 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#qknhssmsar .gt_bottom_border {
+#fpnsbmdkhh .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qknhssmsar .gt_col_headings {
+#fpnsbmdkhh .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1164,7 +1164,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#qknhssmsar .gt_col_heading {
+#fpnsbmdkhh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1184,7 +1184,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   overflow-x: hidden;
 }
 
-#qknhssmsar .gt_column_spanner_outer {
+#fpnsbmdkhh .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1196,15 +1196,15 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   padding-right: 4px;
 }
 
-#qknhssmsar .gt_column_spanner_outer:first-child {
+#fpnsbmdkhh .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qknhssmsar .gt_column_spanner_outer:last-child {
+#fpnsbmdkhh .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qknhssmsar .gt_column_spanner {
+#fpnsbmdkhh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1216,11 +1216,11 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   width: 100%;
 }
 
-#qknhssmsar .gt_spanner_row {
+#fpnsbmdkhh .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#qknhssmsar .gt_group_heading {
+#fpnsbmdkhh .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1246,7 +1246,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   text-align: left;
 }
 
-#qknhssmsar .gt_empty_group_heading {
+#fpnsbmdkhh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1261,15 +1261,15 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   vertical-align: middle;
 }
 
-#qknhssmsar .gt_from_md > :first-child {
+#fpnsbmdkhh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qknhssmsar .gt_from_md > :last-child {
+#fpnsbmdkhh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qknhssmsar .gt_row {
+#fpnsbmdkhh .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1288,7 +1288,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   overflow-x: hidden;
 }
 
-#qknhssmsar .gt_stub {
+#fpnsbmdkhh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1301,7 +1301,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   padding-right: 5px;
 }
 
-#qknhssmsar .gt_stub_row_group {
+#fpnsbmdkhh .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1315,15 +1315,15 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   vertical-align: top;
 }
 
-#qknhssmsar .gt_row_group_first td {
+#fpnsbmdkhh .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#qknhssmsar .gt_row_group_first th {
+#fpnsbmdkhh .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#qknhssmsar .gt_summary_row {
+#fpnsbmdkhh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1333,16 +1333,16 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   padding-right: 5px;
 }
 
-#qknhssmsar .gt_first_summary_row {
+#fpnsbmdkhh .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#qknhssmsar .gt_first_summary_row.thick {
+#fpnsbmdkhh .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#qknhssmsar .gt_last_summary_row {
+#fpnsbmdkhh .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1352,7 +1352,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#qknhssmsar .gt_grand_summary_row {
+#fpnsbmdkhh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1362,7 +1362,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   padding-right: 5px;
 }
 
-#qknhssmsar .gt_first_grand_summary_row {
+#fpnsbmdkhh .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1372,7 +1372,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#qknhssmsar .gt_last_grand_summary_row_top {
+#fpnsbmdkhh .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1382,11 +1382,11 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#qknhssmsar .gt_striped {
+#fpnsbmdkhh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qknhssmsar .gt_table_body {
+#fpnsbmdkhh .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1395,7 +1395,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#qknhssmsar .gt_footnotes {
+#fpnsbmdkhh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1409,7 +1409,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#qknhssmsar .gt_footnote {
+#fpnsbmdkhh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1418,7 +1418,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   padding-right: 5px;
 }
 
-#qknhssmsar .gt_sourcenotes {
+#fpnsbmdkhh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1432,7 +1432,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#qknhssmsar .gt_sourcenote {
+#fpnsbmdkhh .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1440,72 +1440,72 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   padding-right: 5px;
 }
 
-#qknhssmsar .gt_left {
+#fpnsbmdkhh .gt_left {
   text-align: left;
 }
 
-#qknhssmsar .gt_center {
+#fpnsbmdkhh .gt_center {
   text-align: center;
 }
 
-#qknhssmsar .gt_right {
+#fpnsbmdkhh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qknhssmsar .gt_font_normal {
+#fpnsbmdkhh .gt_font_normal {
   font-weight: normal;
 }
 
-#qknhssmsar .gt_font_bold {
+#fpnsbmdkhh .gt_font_bold {
   font-weight: bold;
 }
 
-#qknhssmsar .gt_font_italic {
+#fpnsbmdkhh .gt_font_italic {
   font-style: italic;
 }
 
-#qknhssmsar .gt_super {
+#fpnsbmdkhh .gt_super {
   font-size: 65%;
 }
 
-#qknhssmsar .gt_footnote_marks {
+#fpnsbmdkhh .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#qknhssmsar .gt_asterisk {
+#fpnsbmdkhh .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#qknhssmsar .gt_indent_1 {
+#fpnsbmdkhh .gt_indent_1 {
   text-indent: 5px;
 }
 
-#qknhssmsar .gt_indent_2 {
+#fpnsbmdkhh .gt_indent_2 {
   text-indent: 10px;
 }
 
-#qknhssmsar .gt_indent_3 {
+#fpnsbmdkhh .gt_indent_3 {
   text-indent: 15px;
 }
 
-#qknhssmsar .gt_indent_4 {
+#fpnsbmdkhh .gt_indent_4 {
   text-indent: 20px;
 }
 
-#qknhssmsar .gt_indent_5 {
+#fpnsbmdkhh .gt_indent_5 {
   text-indent: 25px;
 }
 
-#qknhssmsar .katex-display {
+#fpnsbmdkhh .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#qknhssmsar div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#fpnsbmdkhh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1583,9 +1583,9 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 </div>
 <p>Pull the p-value using tidyverse:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a aria-label="1"></a>empl_lm <span class="sc">%&gt;%</span> </span>
-<span id="cb55-2"><a aria-label="2"></a>  <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">"disability"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb55-3"><a aria-label="3"></a>  <span class="fu">pull</span>(p.value) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a aria-label="1"></a>empl_lm <span class="sc">|&gt;</span> </span>
+<span id="cb55-2"><a aria-label="2"></a>  <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">"disability"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb55-3"><a aria-label="3"></a>  <span class="fu">pull</span>(p.value) <span class="sc">|&gt;</span> </span>
 <span id="cb55-4"><a aria-label="4"></a>  <span class="fu">round</span>(<span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.03</code></pre>
@@ -1714,32 +1714,32 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-39-1.png" width="480"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-38-1.png" width="480"></p>
 </figure>
 </div>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a aria-label="1"></a>empl_lm <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a aria-label="1"></a>empl_lm <span class="sc">|&gt;</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="wcrzzgcney" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#wcrzzgcney table {
+<div id="nrrgesskrf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nrrgesskrf table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#wcrzzgcney thead, #wcrzzgcney tbody, #wcrzzgcney tfoot, #wcrzzgcney tr, #wcrzzgcney td, #wcrzzgcney th {
+#nrrgesskrf thead, #nrrgesskrf tbody, #nrrgesskrf tfoot, #nrrgesskrf tr, #nrrgesskrf td, #nrrgesskrf th {
   border-style: none;
 }
 
-#wcrzzgcney p {
+#nrrgesskrf p {
   margin: 0;
   padding: 0;
 }
 
-#wcrzzgcney .gt_table {
+#nrrgesskrf .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1765,12 +1765,12 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#wcrzzgcney .gt_caption {
+#nrrgesskrf .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#wcrzzgcney .gt_title {
+#nrrgesskrf .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1782,7 +1782,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   border-bottom-width: 0;
 }
 
-#wcrzzgcney .gt_subtitle {
+#nrrgesskrf .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1794,7 +1794,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   border-top-width: 0;
 }
 
-#wcrzzgcney .gt_heading {
+#nrrgesskrf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1806,13 +1806,13 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wcrzzgcney .gt_bottom_border {
+#nrrgesskrf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#wcrzzgcney .gt_col_headings {
+#nrrgesskrf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1827,7 +1827,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wcrzzgcney .gt_col_heading {
+#nrrgesskrf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1847,7 +1847,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   overflow-x: hidden;
 }
 
-#wcrzzgcney .gt_column_spanner_outer {
+#nrrgesskrf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1859,15 +1859,15 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   padding-right: 4px;
 }
 
-#wcrzzgcney .gt_column_spanner_outer:first-child {
+#nrrgesskrf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wcrzzgcney .gt_column_spanner_outer:last-child {
+#nrrgesskrf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wcrzzgcney .gt_column_spanner {
+#nrrgesskrf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1879,11 +1879,11 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   width: 100%;
 }
 
-#wcrzzgcney .gt_spanner_row {
+#nrrgesskrf .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#wcrzzgcney .gt_group_heading {
+#nrrgesskrf .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1909,7 +1909,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   text-align: left;
 }
 
-#wcrzzgcney .gt_empty_group_heading {
+#nrrgesskrf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1924,15 +1924,15 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   vertical-align: middle;
 }
 
-#wcrzzgcney .gt_from_md > :first-child {
+#nrrgesskrf .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wcrzzgcney .gt_from_md > :last-child {
+#nrrgesskrf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wcrzzgcney .gt_row {
+#nrrgesskrf .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1951,7 +1951,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   overflow-x: hidden;
 }
 
-#wcrzzgcney .gt_stub {
+#nrrgesskrf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1964,7 +1964,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   padding-right: 5px;
 }
 
-#wcrzzgcney .gt_stub_row_group {
+#nrrgesskrf .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1978,15 +1978,15 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   vertical-align: top;
 }
 
-#wcrzzgcney .gt_row_group_first td {
+#nrrgesskrf .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#wcrzzgcney .gt_row_group_first th {
+#nrrgesskrf .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#wcrzzgcney .gt_summary_row {
+#nrrgesskrf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1996,16 +1996,16 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   padding-right: 5px;
 }
 
-#wcrzzgcney .gt_first_summary_row {
+#nrrgesskrf .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#wcrzzgcney .gt_first_summary_row.thick {
+#nrrgesskrf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#wcrzzgcney .gt_last_summary_row {
+#nrrgesskrf .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2015,7 +2015,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#wcrzzgcney .gt_grand_summary_row {
+#nrrgesskrf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2025,7 +2025,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   padding-right: 5px;
 }
 
-#wcrzzgcney .gt_first_grand_summary_row {
+#nrrgesskrf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2035,7 +2035,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#wcrzzgcney .gt_last_grand_summary_row_top {
+#nrrgesskrf .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2045,11 +2045,11 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#wcrzzgcney .gt_striped {
+#nrrgesskrf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#wcrzzgcney .gt_table_body {
+#nrrgesskrf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2058,7 +2058,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#wcrzzgcney .gt_footnotes {
+#nrrgesskrf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2072,7 +2072,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wcrzzgcney .gt_footnote {
+#nrrgesskrf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2081,7 +2081,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   padding-right: 5px;
 }
 
-#wcrzzgcney .gt_sourcenotes {
+#nrrgesskrf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2095,7 +2095,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wcrzzgcney .gt_sourcenote {
+#nrrgesskrf .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2103,72 +2103,72 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
   padding-right: 5px;
 }
 
-#wcrzzgcney .gt_left {
+#nrrgesskrf .gt_left {
   text-align: left;
 }
 
-#wcrzzgcney .gt_center {
+#nrrgesskrf .gt_center {
   text-align: center;
 }
 
-#wcrzzgcney .gt_right {
+#nrrgesskrf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wcrzzgcney .gt_font_normal {
+#nrrgesskrf .gt_font_normal {
   font-weight: normal;
 }
 
-#wcrzzgcney .gt_font_bold {
+#nrrgesskrf .gt_font_bold {
   font-weight: bold;
 }
 
-#wcrzzgcney .gt_font_italic {
+#nrrgesskrf .gt_font_italic {
   font-style: italic;
 }
 
-#wcrzzgcney .gt_super {
+#nrrgesskrf .gt_super {
   font-size: 65%;
 }
 
-#wcrzzgcney .gt_footnote_marks {
+#nrrgesskrf .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#wcrzzgcney .gt_asterisk {
+#nrrgesskrf .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#wcrzzgcney .gt_indent_1 {
+#nrrgesskrf .gt_indent_1 {
   text-indent: 5px;
 }
 
-#wcrzzgcney .gt_indent_2 {
+#nrrgesskrf .gt_indent_2 {
   text-indent: 10px;
 }
 
-#wcrzzgcney .gt_indent_3 {
+#nrrgesskrf .gt_indent_3 {
   text-indent: 15px;
 }
 
-#wcrzzgcney .gt_indent_4 {
+#nrrgesskrf .gt_indent_4 {
   text-indent: 20px;
 }
 
-#wcrzzgcney .gt_indent_5 {
+#nrrgesskrf .gt_indent_5 {
   text-indent: 25px;
 }
 
-#wcrzzgcney .katex-display {
+#nrrgesskrf .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#wcrzzgcney div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#nrrgesskrf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2236,7 +2236,7 @@ Bartlett's K-squared = 0.7016, df = 4, p-value = 0.9511</code></pre>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-41-1.png" width="768"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-40-1.png" width="768"></p>
 </figure>
 </div>
 </div>
@@ -2276,7 +2276,7 @@ P(\text{making at least 1 error in m tests}) = &amp; 1-(1-\alpha)^m
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-42-1.png" width="960"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-41-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -2307,7 +2307,7 @@ P(\text{making at least 1 error in m tests}) = &amp; 1-(1-\alpha)^m
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-43-1.png" width="960"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-42-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -2409,7 +2409,7 @@ wheelchair-hearing     1.2928571 -0.4388756  3.0245899 0.2348141</code></pre>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-48-1.png" width="960"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-47-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -2507,7 +2507,7 @@ P(\text{making at least 1 error in m tests}) = &amp; 1-(1-\alpha)^m
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-51-1.png" width="960"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-50-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -2525,7 +2525,7 @@ H_0 &amp;: \mu_1 = \mu_2 = ... = \mu_k\\
 <p>ANOVA table in R:</p>
 <div style="font-size: 90%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb77"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a aria-label="1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">%&gt;%</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb77"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a aria-label="1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">|&gt;</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Variance Table
 
@@ -2553,7 +2553,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-53-1.png" width="480"></p>
+<p><img data-src="Day14_bsta511_files/figure-revealjs/unnamed-chunk-52-1.png" width="480"></p>
 </figure>
 </div>
 </div>

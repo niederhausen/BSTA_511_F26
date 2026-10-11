@@ -459,18 +459,18 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>  disability            score      
- Length:70          Min.   :1.400  
- Class :character   1st Qu.:3.700  
- Mode  :character   Median :5.050  
-                    Mean   :4.929  
-                    3rd Qu.:6.100  
-                    Max.   :8.500  </code></pre>
+<pre><code>     disability     score      
+ Length   :70   Min.   :1.400  
+ N.unique : 5   1st Qu.:3.700  
+ N.blank  : 0   Median :5.050  
+ Min.nchar: 4   Mean   :4.929  
+ Max.nchar:10   3rd Qu.:6.100  
+                Max.   :8.500  </code></pre>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>employ <span class="sc">%&gt;%</span> <span class="fu">tabyl</span>(disability)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>employ <span class="sc">|&gt;</span> <span class="fu">tabyl</span>(disability)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> disability  n percent
     amputee 14     0.2
@@ -517,20 +517,20 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>  disability            score      
- Length:70          Min.   :1.400  
- Class :character   1st Qu.:3.700  
- Mode  :character   Median :5.050  
-                    Mean   :4.929  
-                    3rd Qu.:6.100  
-                    Max.   :8.500  </code></pre>
+<pre><code>     disability     score      
+ Length   :70   Min.   :1.400  
+ N.unique : 5   1st Qu.:3.700  
+ N.blank  : 0   Median :5.050  
+ Min.nchar: 4   Mean   :4.929  
+ Max.nchar:10   3rd Qu.:6.100  
+                Max.   :8.500  </code></pre>
 </div>
 </div>
 </div>
 </div>
 <p>Make <code>disability</code> a factor variable:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>employ <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>employ <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> </span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">disability =</span> <span class="fu">factor</span>(disability))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p><br></p>
@@ -573,7 +573,7 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 </div>
 <p><span style="color:green">What changes are being made below?</span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>employ <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>employ <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> </span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># make "none" the first level</span></span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># by only listing the level none, all other levels will be in original order</span></span>
@@ -609,7 +609,7 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -629,7 +629,7 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -657,7 +657,7 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -682,7 +682,7 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="720"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="720"></p>
 </figure>
 </div>
 </div>
@@ -730,7 +730,7 @@ In which set (A or B) do you believe the evidence will be stronger that at least
 </ul></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">%&gt;%</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">|&gt;</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Variance Table
 
@@ -741,7 +741,7 @@ Residuals  65 173.321  2.6665
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">aov</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">%&gt;%</span> <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">aov</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">|&gt;</span> <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>            Df Sum Sq Mean Sq F value Pr(&gt;F)  
 disability   4  30.52   7.630   2.862 0.0301 *
@@ -762,7 +762,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 <p>Disability example ANOVA table from R:</p>
 <div style="font-size: 90%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">%&gt;%</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">|&gt;</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Variance Table
 
@@ -934,7 +934,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -970,7 +970,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div><div class="column" style="width:65%;">
 <p>Total sample size <span class="math inline">\(N\)</span>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>(Ns <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(disability) <span class="sc">%&gt;%</span> <span class="fu">count</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>(Ns <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> <span class="fu">group_by</span>(disability) <span class="sc">|&gt;</span> <span class="fu">count</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 2
 # Groups:   disability [5]
@@ -1015,7 +1015,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-22-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1044,7 +1044,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1052,8 +1052,8 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div><div class="column" style="width:60%;">
 <p>Calculate means <span class="math inline">\(\bar{x}_i\)</span> for each group:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>xbar_groups <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> </span>
-<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(disability) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>xbar_groups <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> </span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(disability) <span class="sc">|&gt;</span> </span>
 <span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean =</span> <span class="fu">mean</span>(score))</span>
 <span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>xbar_groups</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -1100,7 +1100,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-26-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1129,7 +1129,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-28-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -1137,8 +1137,8 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div><div class="column" style="width:50%;">
 <p>Calculate sd’s <span class="math inline">\(s_i\)</span> for each group:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>sd_groups <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> </span>
-<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(disability) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>sd_groups <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> </span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(disability) <span class="sc">|&gt;</span> </span>
 <span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">SD =</span> <span class="fu">sd</span>(score))</span>
 <span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>sd_groups</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -1253,29 +1253,29 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that I'm saving the tidy anova table</span></span>
 <span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Will be pulling p-value from this on future slide</span></span>
 <span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">%&gt;%</span> </span>
-<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">anova</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">|&gt;</span> </span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">anova</span>() <span class="sc">|&gt;</span> </span>
 <span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>()</span>
 <span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb56-8"><a href="#cb56-8" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb56-8"><a href="#cb56-8" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="sc">|&gt;</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="asydvtzwth" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#asydvtzwth table {
+<div id="jbcqmachxk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jbcqmachxk table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#asydvtzwth thead, #asydvtzwth tbody, #asydvtzwth tfoot, #asydvtzwth tr, #asydvtzwth td, #asydvtzwth th {
+#jbcqmachxk thead, #jbcqmachxk tbody, #jbcqmachxk tfoot, #jbcqmachxk tr, #jbcqmachxk td, #jbcqmachxk th {
   border-style: none;
 }
 
-#asydvtzwth p {
+#jbcqmachxk p {
   margin: 0;
   padding: 0;
 }
 
-#asydvtzwth .gt_table {
+#jbcqmachxk .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1301,12 +1301,12 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#asydvtzwth .gt_caption {
+#jbcqmachxk .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#asydvtzwth .gt_title {
+#jbcqmachxk .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1318,7 +1318,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-bottom-width: 0;
 }
 
-#asydvtzwth .gt_subtitle {
+#jbcqmachxk .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1330,7 +1330,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-top-width: 0;
 }
 
-#asydvtzwth .gt_heading {
+#jbcqmachxk .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1342,13 +1342,13 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#asydvtzwth .gt_bottom_border {
+#jbcqmachxk .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#asydvtzwth .gt_col_headings {
+#jbcqmachxk .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1363,7 +1363,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#asydvtzwth .gt_col_heading {
+#jbcqmachxk .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1383,7 +1383,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   overflow-x: hidden;
 }
 
-#asydvtzwth .gt_column_spanner_outer {
+#jbcqmachxk .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1395,15 +1395,15 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   padding-right: 4px;
 }
 
-#asydvtzwth .gt_column_spanner_outer:first-child {
+#jbcqmachxk .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#asydvtzwth .gt_column_spanner_outer:last-child {
+#jbcqmachxk .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#asydvtzwth .gt_column_spanner {
+#jbcqmachxk .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1415,11 +1415,11 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   width: 100%;
 }
 
-#asydvtzwth .gt_spanner_row {
+#jbcqmachxk .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#asydvtzwth .gt_group_heading {
+#jbcqmachxk .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1445,7 +1445,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   text-align: left;
 }
 
-#asydvtzwth .gt_empty_group_heading {
+#jbcqmachxk .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1460,15 +1460,15 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   vertical-align: middle;
 }
 
-#asydvtzwth .gt_from_md > :first-child {
+#jbcqmachxk .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#asydvtzwth .gt_from_md > :last-child {
+#jbcqmachxk .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#asydvtzwth .gt_row {
+#jbcqmachxk .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1487,7 +1487,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   overflow-x: hidden;
 }
 
-#asydvtzwth .gt_stub {
+#jbcqmachxk .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1500,7 +1500,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   padding-right: 5px;
 }
 
-#asydvtzwth .gt_stub_row_group {
+#jbcqmachxk .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1514,15 +1514,15 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   vertical-align: top;
 }
 
-#asydvtzwth .gt_row_group_first td {
+#jbcqmachxk .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#asydvtzwth .gt_row_group_first th {
+#jbcqmachxk .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#asydvtzwth .gt_summary_row {
+#jbcqmachxk .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1532,16 +1532,16 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   padding-right: 5px;
 }
 
-#asydvtzwth .gt_first_summary_row {
+#jbcqmachxk .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#asydvtzwth .gt_first_summary_row.thick {
+#jbcqmachxk .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#asydvtzwth .gt_last_summary_row {
+#jbcqmachxk .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1551,7 +1551,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#asydvtzwth .gt_grand_summary_row {
+#jbcqmachxk .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1561,7 +1561,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   padding-right: 5px;
 }
 
-#asydvtzwth .gt_first_grand_summary_row {
+#jbcqmachxk .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1571,7 +1571,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#asydvtzwth .gt_last_grand_summary_row_top {
+#jbcqmachxk .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1581,11 +1581,11 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#asydvtzwth .gt_striped {
+#jbcqmachxk .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#asydvtzwth .gt_table_body {
+#jbcqmachxk .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1594,7 +1594,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#asydvtzwth .gt_footnotes {
+#jbcqmachxk .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1608,7 +1608,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#asydvtzwth .gt_footnote {
+#jbcqmachxk .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1617,7 +1617,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   padding-right: 5px;
 }
 
-#asydvtzwth .gt_sourcenotes {
+#jbcqmachxk .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1631,7 +1631,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#asydvtzwth .gt_sourcenote {
+#jbcqmachxk .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1639,72 +1639,72 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
   padding-right: 5px;
 }
 
-#asydvtzwth .gt_left {
+#jbcqmachxk .gt_left {
   text-align: left;
 }
 
-#asydvtzwth .gt_center {
+#jbcqmachxk .gt_center {
   text-align: center;
 }
 
-#asydvtzwth .gt_right {
+#jbcqmachxk .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#asydvtzwth .gt_font_normal {
+#jbcqmachxk .gt_font_normal {
   font-weight: normal;
 }
 
-#asydvtzwth .gt_font_bold {
+#jbcqmachxk .gt_font_bold {
   font-weight: bold;
 }
 
-#asydvtzwth .gt_font_italic {
+#jbcqmachxk .gt_font_italic {
   font-style: italic;
 }
 
-#asydvtzwth .gt_super {
+#jbcqmachxk .gt_super {
   font-size: 65%;
 }
 
-#asydvtzwth .gt_footnote_marks {
+#jbcqmachxk .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#asydvtzwth .gt_asterisk {
+#jbcqmachxk .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#asydvtzwth .gt_indent_1 {
+#jbcqmachxk .gt_indent_1 {
   text-indent: 5px;
 }
 
-#asydvtzwth .gt_indent_2 {
+#jbcqmachxk .gt_indent_2 {
   text-indent: 10px;
 }
 
-#asydvtzwth .gt_indent_3 {
+#jbcqmachxk .gt_indent_3 {
   text-indent: 15px;
 }
 
-#asydvtzwth .gt_indent_4 {
+#jbcqmachxk .gt_indent_4 {
   text-indent: 20px;
 }
 
-#asydvtzwth .gt_indent_5 {
+#jbcqmachxk .gt_indent_5 {
   text-indent: 25px;
 }
 
-#asydvtzwth .katex-display {
+#jbcqmachxk .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#asydvtzwth div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jbcqmachxk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1782,9 +1782,9 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 </div>
 <p>Pull the p-value using tidyverse:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="sc">%&gt;%</span> </span>
-<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">"disability"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(p.value) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="sc">|&gt;</span> </span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">"disability"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(p.value) <span class="sc">|&gt;</span> </span>
 <span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.03</code></pre>
@@ -1915,32 +1915,32 @@ Tip
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-39-1.png" class="img-fluid figure-img" width="480"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-38-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="sc">|&gt;</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="xeawmhdeil" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#xeawmhdeil table {
+<div id="jehyizjqsz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jehyizjqsz table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#xeawmhdeil thead, #xeawmhdeil tbody, #xeawmhdeil tfoot, #xeawmhdeil tr, #xeawmhdeil td, #xeawmhdeil th {
+#jehyizjqsz thead, #jehyizjqsz tbody, #jehyizjqsz tfoot, #jehyizjqsz tr, #jehyizjqsz td, #jehyizjqsz th {
   border-style: none;
 }
 
-#xeawmhdeil p {
+#jehyizjqsz p {
   margin: 0;
   padding: 0;
 }
 
-#xeawmhdeil .gt_table {
+#jehyizjqsz .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1966,12 +1966,12 @@ Tip
   border-left-color: #D3D3D3;
 }
 
-#xeawmhdeil .gt_caption {
+#jehyizjqsz .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#xeawmhdeil .gt_title {
+#jehyizjqsz .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1983,7 +1983,7 @@ Tip
   border-bottom-width: 0;
 }
 
-#xeawmhdeil .gt_subtitle {
+#jehyizjqsz .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1995,7 +1995,7 @@ Tip
   border-top-width: 0;
 }
 
-#xeawmhdeil .gt_heading {
+#jehyizjqsz .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2007,13 +2007,13 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#xeawmhdeil .gt_bottom_border {
+#jehyizjqsz .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#xeawmhdeil .gt_col_headings {
+#jehyizjqsz .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2028,7 +2028,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#xeawmhdeil .gt_col_heading {
+#jehyizjqsz .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2048,7 +2048,7 @@ Tip
   overflow-x: hidden;
 }
 
-#xeawmhdeil .gt_column_spanner_outer {
+#jehyizjqsz .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2060,15 +2060,15 @@ Tip
   padding-right: 4px;
 }
 
-#xeawmhdeil .gt_column_spanner_outer:first-child {
+#jehyizjqsz .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#xeawmhdeil .gt_column_spanner_outer:last-child {
+#jehyizjqsz .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#xeawmhdeil .gt_column_spanner {
+#jehyizjqsz .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2080,11 +2080,11 @@ Tip
   width: 100%;
 }
 
-#xeawmhdeil .gt_spanner_row {
+#jehyizjqsz .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#xeawmhdeil .gt_group_heading {
+#jehyizjqsz .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2110,7 +2110,7 @@ Tip
   text-align: left;
 }
 
-#xeawmhdeil .gt_empty_group_heading {
+#jehyizjqsz .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2125,15 +2125,15 @@ Tip
   vertical-align: middle;
 }
 
-#xeawmhdeil .gt_from_md > :first-child {
+#jehyizjqsz .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xeawmhdeil .gt_from_md > :last-child {
+#jehyizjqsz .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xeawmhdeil .gt_row {
+#jehyizjqsz .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2152,7 +2152,7 @@ Tip
   overflow-x: hidden;
 }
 
-#xeawmhdeil .gt_stub {
+#jehyizjqsz .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2165,7 +2165,7 @@ Tip
   padding-right: 5px;
 }
 
-#xeawmhdeil .gt_stub_row_group {
+#jehyizjqsz .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2179,15 +2179,15 @@ Tip
   vertical-align: top;
 }
 
-#xeawmhdeil .gt_row_group_first td {
+#jehyizjqsz .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#xeawmhdeil .gt_row_group_first th {
+#jehyizjqsz .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#xeawmhdeil .gt_summary_row {
+#jehyizjqsz .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2197,16 +2197,16 @@ Tip
   padding-right: 5px;
 }
 
-#xeawmhdeil .gt_first_summary_row {
+#jehyizjqsz .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#xeawmhdeil .gt_first_summary_row.thick {
+#jehyizjqsz .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#xeawmhdeil .gt_last_summary_row {
+#jehyizjqsz .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2216,7 +2216,7 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#xeawmhdeil .gt_grand_summary_row {
+#jehyizjqsz .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2226,7 +2226,7 @@ Tip
   padding-right: 5px;
 }
 
-#xeawmhdeil .gt_first_grand_summary_row {
+#jehyizjqsz .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2236,7 +2236,7 @@ Tip
   border-top-color: #D3D3D3;
 }
 
-#xeawmhdeil .gt_last_grand_summary_row_top {
+#jehyizjqsz .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2246,11 +2246,11 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#xeawmhdeil .gt_striped {
+#jehyizjqsz .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#xeawmhdeil .gt_table_body {
+#jehyizjqsz .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2259,7 +2259,7 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#xeawmhdeil .gt_footnotes {
+#jehyizjqsz .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2273,7 +2273,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#xeawmhdeil .gt_footnote {
+#jehyizjqsz .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2282,7 +2282,7 @@ Tip
   padding-right: 5px;
 }
 
-#xeawmhdeil .gt_sourcenotes {
+#jehyizjqsz .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2296,7 +2296,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#xeawmhdeil .gt_sourcenote {
+#jehyizjqsz .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2304,72 +2304,72 @@ Tip
   padding-right: 5px;
 }
 
-#xeawmhdeil .gt_left {
+#jehyizjqsz .gt_left {
   text-align: left;
 }
 
-#xeawmhdeil .gt_center {
+#jehyizjqsz .gt_center {
   text-align: center;
 }
 
-#xeawmhdeil .gt_right {
+#jehyizjqsz .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xeawmhdeil .gt_font_normal {
+#jehyizjqsz .gt_font_normal {
   font-weight: normal;
 }
 
-#xeawmhdeil .gt_font_bold {
+#jehyizjqsz .gt_font_bold {
   font-weight: bold;
 }
 
-#xeawmhdeil .gt_font_italic {
+#jehyizjqsz .gt_font_italic {
   font-style: italic;
 }
 
-#xeawmhdeil .gt_super {
+#jehyizjqsz .gt_super {
   font-size: 65%;
 }
 
-#xeawmhdeil .gt_footnote_marks {
+#jehyizjqsz .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#xeawmhdeil .gt_asterisk {
+#jehyizjqsz .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#xeawmhdeil .gt_indent_1 {
+#jehyizjqsz .gt_indent_1 {
   text-indent: 5px;
 }
 
-#xeawmhdeil .gt_indent_2 {
+#jehyizjqsz .gt_indent_2 {
   text-indent: 10px;
 }
 
-#xeawmhdeil .gt_indent_3 {
+#jehyizjqsz .gt_indent_3 {
   text-indent: 15px;
 }
 
-#xeawmhdeil .gt_indent_4 {
+#jehyizjqsz .gt_indent_4 {
   text-indent: 20px;
 }
 
-#xeawmhdeil .gt_indent_5 {
+#jehyizjqsz .gt_indent_5 {
   text-indent: 25px;
 }
 
-#xeawmhdeil .katex-display {
+#jehyizjqsz .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#xeawmhdeil div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jehyizjqsz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2442,7 +2442,7 @@ Tip
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-41-1.png" class="img-fluid figure-img" width="768"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-40-1.png" class="img-fluid figure-img" width="768"></p>
 </figure>
 </div>
 </div>
@@ -2481,7 +2481,7 @@ P(\text{making at least 1 error in m tests}) = &amp; 1-(1-\alpha)^m
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-42-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-41-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -2513,7 +2513,7 @@ P(\text{making at least 1 error in m tests}) = &amp; 1-(1-\alpha)^m
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-43-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-42-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -2617,7 +2617,7 @@ wheelchair-hearing     1.2928571 -0.4388756  3.0245899 0.2348141</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-48-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-47-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -2720,7 +2720,7 @@ P(\text{making at least 1 error in m tests}) = &amp; 1-(1-\alpha)^m
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-51-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-50-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -2739,7 +2739,7 @@ H_0 &amp;: \mu_1 = \mu_2 = ... = \mu_k\\
 <p>ANOVA table in R:</p>
 <div style="font-size: 90%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb86"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">%&gt;%</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb86"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">|&gt;</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Variance Table
 
@@ -2767,7 +2767,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-53-1.png" class="img-fluid figure-img" width="480"></p>
+<p><img src="Day14_bsta511_md_files/figure-html/unnamed-chunk-52-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>

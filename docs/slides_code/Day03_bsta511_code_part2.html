@@ -377,8 +377,8 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <section id="visualize-in-more-detail-ethnicity-age-and-expenditures" class="level2">
 <h2 class="anchored" data-anchor-id="visualize-in-more-detail-ethnicity-age-and-expenditures">Visualize in more detail: ethnicity, age, and expenditures</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>dds.discr_Hips_WhnH <span class="ot">&lt;-</span> dds.discr <span class="sc">%&gt;%</span>  </span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(ethnicity <span class="sc">==</span> <span class="st">"White not Hispanic"</span> <span class="sc">|</span> ethnicity <span class="sc">==</span> <span class="st">"Hispanic"</span> ) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>dds.discr_Hips_WhnH <span class="ot">&lt;-</span> dds.discr <span class="sc">|&gt;</span>  </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(ethnicity <span class="sc">==</span> <span class="st">"White not Hispanic"</span> <span class="sc">|</span> ethnicity <span class="sc">==</span> <span class="st">"Hispanic"</span> ) <span class="sc">|&gt;</span> </span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">droplevels</span>()   <span class="co"># remove empty factor levels</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
@@ -409,8 +409,8 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <section id="default-long-format" class="level3">
 <h3 class="anchored" data-anchor-id="default-long-format">default long format</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>mean_expend <span class="ot">&lt;-</span> dds.discr_Hips_WhnH <span class="sc">%&gt;%</span> </span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ethnicity, age.cohort)<span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>mean_expend <span class="ot">&lt;-</span> dds.discr_Hips_WhnH <span class="sc">|&gt;</span> </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(ethnicity, age.cohort)<span class="sc">|&gt;</span> </span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">ave =</span> <span class="fu">mean</span>(expenditures))</span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>mean_expend</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -437,7 +437,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <section id="wide-format" class="level3">
 <h3 class="anchored" data-anchor-id="wide-format">wide format</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>mean_expend_wide <span class="ot">&lt;-</span> mean_expend <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>mean_expend_wide <span class="ot">&lt;-</span> mean_expend <span class="sc">|&gt;</span> </span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> ethnicity,</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>              <span class="at">values_from =</span> ave)</span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -459,7 +459,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <section id="differences-in-mean-annual-dds-expenditures-by-age-cohort-and-raceethnicity" class="level2">
 <h2 class="anchored" data-anchor-id="differences-in-mean-annual-dds-expenditures-by-age-cohort-and-raceethnicity">Differences in mean annual DDS expenditures by age cohort and race/ethnicity</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>mean_expend_wide <span class="ot">&lt;-</span> mean_expend_wide <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>mean_expend_wide <span class="ot">&lt;-</span> mean_expend_wide <span class="sc">|&gt;</span> </span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">diff_mean =</span> <span class="st">`</span><span class="at">White not Hispanic</span><span class="st">`</span> <span class="sc">-</span> Hispanic)</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>mean_expend_wide</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -481,7 +481,7 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <section id="summary-of-data-wrangling-so-far" class="level1">
 <h1>Summary of data wrangling so far</h1>
 <ul>
-<li>The pipe <code>%&gt;%</code> to string together commands in sequence</li>
+<li>The pipe <code>|&gt;</code> to string together commands in sequence</li>
 <li><code>mutate()</code> to add a new variable to a dataset</li>
 <li><code>select()</code> to select columns (or deselect columns with -variable)</li>
 <li><code>filter()</code> to select specific rows</li>

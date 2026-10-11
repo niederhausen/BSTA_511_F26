@@ -363,13 +363,19 @@ window.Quarto = {
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(oibiostat)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rstatix)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gtsummary)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(moderndive)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom) </span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here) </span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pwr) <span class="co"># new-ish</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'knitr' was built under R version 4.6.1</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gtsummary)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(moderndive)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'moderndive' was built under R version 4.6.1</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom) </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here) </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pwr) <span class="co"># new-ish</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <ul>
 <li>You can check whether a package has been loaded or not
@@ -429,24 +435,24 @@ window.Quarto = {
 <li><code>read_delim</code> is from the <code>readr</code> package, just like <code>read_csv</code></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>employ <span class="ot">&lt;-</span> <span class="fu">read_delim</span>(</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"DisabilityEmployment.txt"</span>), </span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">delim =</span> <span class="st">"</span><span class="sc">\t</span><span class="st">"</span>,   <span class="co"># tab delimited</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">trim_ws =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>employ <span class="ot">&lt;-</span> <span class="fu">read_delim</span>(</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">file =</span> here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"DisabilityEmployment.txt"</span>), </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">delim =</span> <span class="st">"</span><span class="sc">\t</span><span class="st">"</span>,   <span class="co"># tab delimited</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">trim_ws =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p><code>trim_ws</code>: Should leading and trailing whitespace be trimmed from each field before parsing it?</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>  disability            score      
- Length:70          Min.   :1.400  
- Class :character   1st Qu.:3.700  
- Mode  :character   Median :5.050  
-                    Mean   :4.929  
-                    3rd Qu.:6.100  
-                    Max.   :8.500  </code></pre>
+<pre><code>     disability     score      
+ Length   :70   Min.   :1.400  
+ N.unique : 5   1st Qu.:3.700  
+ N.blank  : 0   Median :5.050  
+ Min.nchar: 4   Mean   :4.929  
+ Max.nchar:10   3rd Qu.:6.100  
+                Max.   :8.500  </code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>employ <span class="sc">%&gt;%</span> <span class="fu">tabyl</span>(disability)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>employ <span class="sc">|&gt;</span> <span class="fu">tabyl</span>(disability)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> disability  n percent
     amputee 14     0.2
@@ -460,39 +466,39 @@ window.Quarto = {
 <section id="factor-variable-make-disability-variable-a-factor-variable" class="level3">
 <h3 class="anchored" data-anchor-id="factor-variable-make-disability-variable-a-factor-variable">Factor variable: Make <code>disability</code> variable a factor variable</h3>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 70
 Columns: 2
 $ disability &lt;chr&gt; "none", "none", "none", "none", "none", "none", "none", "no…
 $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 6.7,…</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>  disability            score      
- Length:70          Min.   :1.400  
- Class :character   1st Qu.:3.700  
- Mode  :character   Median :5.050  
-                    Mean   :4.929  
-                    3rd Qu.:6.100  
-                    Max.   :8.500  </code></pre>
+<pre><code>     disability     score      
+ Length   :70   Min.   :1.400  
+ N.unique : 5   1st Qu.:3.700  
+ N.blank  : 0   Median :5.050  
+ Min.nchar: 4   Mean   :4.929  
+ Max.nchar:10   3rd Qu.:6.100  
+                Max.   :8.500  </code></pre>
 </div>
 </div>
 <p>Make <code>disability</code> a factor variable:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>employ <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> </span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">disability =</span> <span class="fu">factor</span>(disability))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>employ <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> </span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">disability =</span> <span class="fu">factor</span>(disability))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>What’s different now?</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 70
 Columns: 2
 $ disability &lt;fct&gt; none, none, none, none, none, none, none, none, none, none,…
 $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 6.7,…</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>      disability     score      
  amputee   :14   Min.   :1.400  
@@ -508,21 +514,21 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 <h3 class="anchored" data-anchor-id="factor-variable-change-order-name-of-disability-levels">Factor variable: Change order &amp; name of disability levels</h3>
 <p><span style="color:purple">What are the current level names and order?</span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(employ<span class="sc">$</span>disability)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(employ<span class="sc">$</span>disability)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "amputee"    "crutches"   "hearing"    "none"       "wheelchair"</code></pre>
 </div>
 </div>
 <p><span style="color:green">What changes are being made below?</span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>employ <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> </span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># make "none" the first level</span></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># by only listing the level none, all other levels will be in original order</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">disability =</span> <span class="fu">fct_relevel</span>(disability, <span class="st">"none"</span>),</span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># change the level name amputee to amputation</span></span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">disability =</span> <span class="fu">fct_recode</span>(disability, <span class="at">amputation =</span> <span class="st">"amputee"</span>)</span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>employ <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> </span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># make "none" the first level</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># by only listing the level none, all other levels will be in original order</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">disability =</span> <span class="fu">fct_relevel</span>(disability, <span class="st">"none"</span>),</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># change the level name amputee to amputation</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">disability =</span> <span class="fu">fct_recode</span>(disability, <span class="at">amputation =</span> <span class="st">"amputee"</span>)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <ul>
 <li><code>fct_relevel()</code> and <code>fct_recode()</code> are from the <code>forcats</code> package: <a href="https://forcats.tidyverse.org/index.html" class="uri">https://forcats.tidyverse.org/index.html</a>.</li>
@@ -530,7 +536,7 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 </ul>
 <p><span style="color:purple">New order &amp; names:</span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(employ<span class="sc">$</span>disability) <span class="co"># note the new order and new name</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(employ<span class="sc">$</span>disability) <span class="co"># note the new order and new name</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "none"       "amputation" "crutches"   "hearing"    "wheelchair"</code></pre>
 </div>
@@ -543,9 +549,25 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 <li>Any unusual values?</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x=</span>score)) <span class="sc">+</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>() <span class="sc">+</span></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> disability)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x=</span>score)) <span class="sc">+</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>() <span class="sc">+</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> disability)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggridges) </span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, </span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x=</span>score,</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> disability,</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">fill =</span> disability)) <span class="sc">+</span> </span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density_ridges</span>(<span class="at">alpha =</span> <span class="fl">0.4</span>) <span class="sc">+</span></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position=</span><span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -554,14 +576,16 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 </div>
 </div>
 </div>
+<ul>
+<li>Compare the <code>score</code> measures of <strong>center</strong> and <strong>spread</strong> between the groups</li>
+</ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggridges) </span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, </span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x=</span>score,</span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> disability,</span>
-<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">fill =</span> disability)) <span class="sc">+</span> </span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density_ridges</span>(<span class="at">alpha =</span> <span class="fl">0.4</span>) <span class="sc">+</span></span>
-<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position=</span><span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">y=</span>score, <span class="at">x =</span> disability,</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>                   <span class="at">fill =</span> disability)) <span class="sc">+</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span>.<span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span>.<span class="dv">1</span>, <span class="at">alpha =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -570,37 +594,19 @@ $ score      &lt;dbl&gt; 1.9, 2.5, 3.0, 3.6, 4.1, 4.2, 4.9, 5.1, 5.4, 5.9, 6.1, 
 </div>
 </div>
 </div>
-<ul>
-<li>Compare the <code>score</code> measures of <strong>center</strong> and <strong>spread</strong> between the groups</li>
-</ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">y=</span>score, <span class="at">x =</span> disability,</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>                   <span class="at">fill =</span> disability)) <span class="sc">+</span></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha =</span>.<span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span>.<span class="dv">1</span>, <span class="at">alpha =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x =</span> disability, <span class="at">y=</span>score, </span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill=</span>disability, <span class="at">color=</span>disability)) <span class="sc">+</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">"y"</span>, <span class="at">alpha =</span>.<span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept =</span> <span class="fu">mean</span>(score)), </span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">lty =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span><span class="st">"mean"</span>, <span class="at">geom=</span><span class="st">"point"</span>, </span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey33"</span>, <span class="at">alpha =</span><span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
 <p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid figure-img" width="480"></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x =</span> disability, <span class="at">y=</span>score, </span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill=</span>disability, <span class="at">color=</span>disability)) <span class="sc">+</span></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">"y"</span>, <span class="at">alpha =</span>.<span class="dv">5</span>) <span class="sc">+</span></span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept =</span> <span class="fu">mean</span>(score)), </span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">lty =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span><span class="st">"mean"</span>, <span class="at">geom=</span><span class="st">"point"</span>, </span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey33"</span>, <span class="at">alpha =</span><span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>
@@ -645,7 +651,7 @@ In which set (A or B) do you believe the evidence will be stronger that at least
 </ul></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">%&gt;%</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">|&gt;</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Variance Table
 
@@ -656,7 +662,7 @@ Residuals  65 173.321  2.6665
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">aov</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">%&gt;%</span> <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">aov</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">|&gt;</span> <span class="fu">summary</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>            Df Sum Sq Mean Sq F value Pr(&gt;F)  
 disability   4  30.52   7.630   2.862 0.0301 *
@@ -794,18 +800,18 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 <section id="total-sums-of-squares-visually" class="level2">
 <h2 class="anchored" data-anchor-id="total-sums-of-squares-visually">Total Sums of Squares Visually</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x =</span> disability, <span class="at">y=</span>score, </span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> disability, <span class="at">color =</span> disability)) <span class="sc">+</span></span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">"y"</span>, <span class="at">alpha =</span>.<span class="dv">9</span>) <span class="sc">+</span></span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept =</span> <span class="fu">mean</span>(score)), </span>
-<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">lty =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
-<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># stat_summary(fun = "mean", geom = "point", </span></span>
-<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>  <span class="co">#      size = 3, color = "grey33", alpha =1)  +</span></span>
-<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x =</span> disability, <span class="at">y=</span>score, </span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> disability, <span class="at">color =</span> disability)) <span class="sc">+</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">"y"</span>, <span class="at">alpha =</span>.<span class="dv">9</span>) <span class="sc">+</span></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept =</span> <span class="fu">mean</span>(score)), </span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">lty =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># stat_summary(fun = "mean", geom = "point", </span></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>  <span class="co">#      size = 3, color = "grey33", alpha =1)  +</span></span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="480"></p>
+<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>
@@ -835,7 +841,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 </ul>
 <p>Total sample size <span class="math inline">\(N\)</span>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>(Ns <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(disability) <span class="sc">%&gt;%</span> <span class="fu">count</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>(Ns <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> <span class="fu">group_by</span>(disability) <span class="sc">|&gt;</span> <span class="fu">count</span>())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 2
 # Groups:   disability [5]
@@ -850,7 +856,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 </div>
 <p><span class="math inline">\(SST\)</span>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>(SST <span class="ot">&lt;-</span> (<span class="fu">sum</span>(Ns<span class="sc">$</span>n) <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> <span class="fu">sd</span>(employ<span class="sc">$</span>score)<span class="sc">^</span><span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>(SST <span class="ot">&lt;-</span> (<span class="fu">sum</span>(Ns<span class="sc">$</span>n) <span class="sc">-</span> <span class="dv">1</span>) <span class="sc">*</span> <span class="fu">sd</span>(employ<span class="sc">$</span>score)<span class="sc">^</span><span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 203.8429</code></pre>
 </div>
@@ -859,18 +865,18 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 <section id="sums-of-squares-due-to-groups-visually-between-groups" class="level2">
 <h2 class="anchored" data-anchor-id="sums-of-squares-due-to-groups-visually-between-groups">Sums of Squares due to Groups Visually (“between” groups)</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x =</span> disability, <span class="at">y=</span>score, </span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> disability, <span class="at">color =</span> disability)) <span class="sc">+</span></span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">"y"</span>, <span class="at">alpha =</span>.<span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept =</span> <span class="fu">mean</span>(score)), </span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">lty =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> <span class="st">"mean"</span>, <span class="at">geom =</span> <span class="st">"point"</span>, </span>
-<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey33"</span>, <span class="at">alpha =</span><span class="dv">1</span>)  <span class="sc">+</span></span>
-<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x =</span> disability, <span class="at">y=</span>score, </span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> disability, <span class="at">color =</span> disability)) <span class="sc">+</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">"y"</span>, <span class="at">alpha =</span>.<span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept =</span> <span class="fu">mean</span>(score)), </span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">lty =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> <span class="st">"mean"</span>, <span class="at">geom =</span> <span class="st">"point"</span>, </span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey33"</span>, <span class="at">alpha =</span><span class="dv">1</span>)  <span class="sc">+</span></span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="480"></p>
+<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>
@@ -887,28 +893,28 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 <h2 class="anchored" data-anchor-id="calculate-sums-of-squares-due-to-groups-between-groups">Calculate Sums of Squares due to Groups (“between” groups)</h2>
 <p><span class="math display">\[SSG = \sum_{i = 1}^k n_i(\bar{x}_{i}-\bar{x})^2\]</span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x =</span> disability, <span class="at">y=</span>score, </span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> disability, <span class="at">color =</span> disability)) <span class="sc">+</span></span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">"y"</span>, <span class="at">alpha =</span>.<span class="dv">2</span>) <span class="sc">+</span></span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept =</span> <span class="fu">mean</span>(score)), </span>
-<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">lty =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
-<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> <span class="st">"mean"</span>, <span class="at">geom =</span> <span class="st">"point"</span>, </span>
-<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey33"</span>, <span class="at">alpha =</span><span class="dv">1</span>)  <span class="sc">+</span></span>
-<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x =</span> disability, <span class="at">y=</span>score, </span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> disability, <span class="at">color =</span> disability)) <span class="sc">+</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">"y"</span>, <span class="at">alpha =</span>.<span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept =</span> <span class="fu">mean</span>(score)), </span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">lty =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> <span class="st">"mean"</span>, <span class="at">geom =</span> <span class="st">"point"</span>, </span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey33"</span>, <span class="at">alpha =</span><span class="dv">1</span>)  <span class="sc">+</span></span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid figure-img" width="480"></p>
+<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>Calculate means <span class="math inline">\(\bar{x}_i\)</span> for each group:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>xbar_groups <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> </span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(disability) <span class="sc">%&gt;%</span> </span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean =</span> <span class="fu">mean</span>(score))</span>
-<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>xbar_groups</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>xbar_groups <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> </span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(disability) <span class="sc">|&gt;</span> </span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean =</span> <span class="fu">mean</span>(score))</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>xbar_groups</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 2
   disability  mean
@@ -922,8 +928,8 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 </div>
 <p>Calculate <span class="math inline">\(SSG\)</span>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>(SSG <span class="ot">&lt;-</span> <span class="fu">sum</span>(Ns<span class="sc">$</span>n <span class="sc">*</span></span>
-<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>  (xbar_groups<span class="sc">$</span>mean <span class="sc">-</span> <span class="fu">mean</span>(employ<span class="sc">$</span>score))<span class="sc">^</span><span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>(SSG <span class="ot">&lt;-</span> <span class="fu">sum</span>(Ns<span class="sc">$</span>n <span class="sc">*</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>  (xbar_groups<span class="sc">$</span>mean <span class="sc">-</span> <span class="fu">mean</span>(employ<span class="sc">$</span>score))<span class="sc">^</span><span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 30.52143</code></pre>
 </div>
@@ -932,18 +938,18 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 <section id="sums-of-squares-error-visually-within-groups" class="level2">
 <h2 class="anchored" data-anchor-id="sums-of-squares-error-visually-within-groups">Sums of Squares Error Visually (within groups)</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x =</span> disability, <span class="at">y=</span>score, </span>
-<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> disability, <span class="at">color =</span> disability)) <span class="sc">+</span></span>
-<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">"y"</span>, <span class="at">alpha =</span>.<span class="dv">5</span>) <span class="sc">+</span></span>
-<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># geom_hline(aes(yintercept = mean(score)), </span></span>
-<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>             <span class="co"># lty = "dashed") +</span></span>
-<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> <span class="st">"mean"</span>, <span class="at">geom =</span> <span class="st">"point"</span>, </span>
-<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey33"</span>, <span class="at">alpha =</span><span class="dv">1</span>)  <span class="sc">+</span></span>
-<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x =</span> disability, <span class="at">y=</span>score, </span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> disability, <span class="at">color =</span> disability)) <span class="sc">+</span></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">"y"</span>, <span class="at">alpha =</span>.<span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># geom_hline(aes(yintercept = mean(score)), </span></span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>             <span class="co"># lty = "dashed") +</span></span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> <span class="st">"mean"</span>, <span class="at">geom =</span> <span class="st">"point"</span>, </span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey33"</span>, <span class="at">alpha =</span><span class="dv">1</span>)  <span class="sc">+</span></span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid figure-img" width="480"></p>
+<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-22-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>
@@ -960,28 +966,28 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 <h2 class="anchored" data-anchor-id="calculate-sums-of-squares-error-within-groups">Calculate Sums of Squares Error (within groups)</h2>
 <p><span class="math display">\[SSE = \sum_{i = 1}^k\sum_{j = 1}^{n_i}(x_{ij}-\bar{x}_{i})^2 = \sum_{i = 1}^k(n_i-1)s_{i}^2\]</span> where <span class="math inline">\(s_{i}\)</span> is the standard deviation of the <span class="math inline">\(i^{th}\)</span> group</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x =</span> disability, <span class="at">y=</span>score, </span>
-<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> disability, <span class="at">color =</span> disability)) <span class="sc">+</span></span>
-<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">"y"</span>, <span class="at">alpha =</span>.<span class="dv">5</span>) <span class="sc">+</span></span>
-<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># geom_hline(aes(yintercept = mean(score)), </span></span>
-<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>             <span class="co"># lty = "dashed") +</span></span>
-<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> <span class="st">"mean"</span>, <span class="at">geom =</span> <span class="st">"point"</span>, </span>
-<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey33"</span>, <span class="at">alpha =</span><span class="dv">1</span>)  <span class="sc">+</span></span>
-<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x =</span> disability, <span class="at">y=</span>score, </span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> disability, <span class="at">color =</span> disability)) <span class="sc">+</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">"y"</span>, <span class="at">alpha =</span>.<span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># geom_hline(aes(yintercept = mean(score)), </span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>             <span class="co"># lty = "dashed") +</span></span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> <span class="st">"mean"</span>, <span class="at">geom =</span> <span class="st">"point"</span>, </span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey33"</span>, <span class="at">alpha =</span><span class="dv">1</span>)  <span class="sc">+</span></span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid figure-img" width="480"></p>
+<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>Calculate sd’s <span class="math inline">\(s_i\)</span> for each group:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>sd_groups <span class="ot">&lt;-</span> employ <span class="sc">%&gt;%</span> </span>
-<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(disability) <span class="sc">%&gt;%</span> </span>
-<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">SD =</span> <span class="fu">sd</span>(score))</span>
-<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>sd_groups</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>sd_groups <span class="ot">&lt;-</span> employ <span class="sc">|&gt;</span> </span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(disability) <span class="sc">|&gt;</span> </span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">SD =</span> <span class="fu">sd</span>(score))</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>sd_groups</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 2
   disability    SD
@@ -995,8 +1001,8 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 </div>
 <p>Calculate <span class="math inline">\(SSE\)</span>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>(SSE <span class="ot">&lt;-</span> <span class="fu">sum</span>(</span>
-<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  (Ns<span class="sc">$</span>n<span class="dv">-1</span>)<span class="sc">*</span>sd_groups<span class="sc">$</span>SD<span class="sc">^</span><span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>(SSE <span class="ot">&lt;-</span> <span class="fu">sum</span>(</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>  (Ns<span class="sc">$</span>n<span class="dv">-1</span>)<span class="sc">*</span>sd_groups<span class="sc">$</span>SD<span class="sc">^</span><span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 173.3214</code></pre>
 </div>
@@ -1011,11 +1017,11 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 = \ \sum_{i = 1}^k n_i(\bar{x}_{i}-\bar{x})^2 \ \
 + \ \ \sum_{i = 1}^k(n_i-1)s_{i}^2\]</span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>SST</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>SST</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 203.8429</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>SSG <span class="sc">+</span> SSE</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>SSG <span class="sc">+</span> SSE</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 203.8429</code></pre>
 </div>
@@ -1039,32 +1045,32 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 <section id="anova-in-base-r-1" class="level1">
 <h1>ANOVA in base R</h1>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that I'm saving the tidy anova table</span></span>
-<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Will be pulling p-value from this on future slide</span></span>
-<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">%&gt;%</span> </span>
-<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">anova</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>()</span>
-<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that I'm saving the tidy anova table</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Will be pulling p-value from this on future slide</span></span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">|&gt;</span> </span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">anova</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>()</span>
+<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-8"><a href="#cb54-8" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="sc">|&gt;</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="jswgwtkdhn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jswgwtkdhn table {
+<div id="wzthvmxrgx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#wzthvmxrgx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jswgwtkdhn thead, #jswgwtkdhn tbody, #jswgwtkdhn tfoot, #jswgwtkdhn tr, #jswgwtkdhn td, #jswgwtkdhn th {
+#wzthvmxrgx thead, #wzthvmxrgx tbody, #wzthvmxrgx tfoot, #wzthvmxrgx tr, #wzthvmxrgx td, #wzthvmxrgx th {
   border-style: none;
 }
 
-#jswgwtkdhn p {
+#wzthvmxrgx p {
   margin: 0;
   padding: 0;
 }
 
-#jswgwtkdhn .gt_table {
+#wzthvmxrgx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1090,12 +1096,12 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   border-left-color: #D3D3D3;
 }
 
-#jswgwtkdhn .gt_caption {
+#wzthvmxrgx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jswgwtkdhn .gt_title {
+#wzthvmxrgx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1107,7 +1113,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   border-bottom-width: 0;
 }
 
-#jswgwtkdhn .gt_subtitle {
+#wzthvmxrgx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1119,7 +1125,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   border-top-width: 0;
 }
 
-#jswgwtkdhn .gt_heading {
+#wzthvmxrgx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1131,13 +1137,13 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   border-right-color: #D3D3D3;
 }
 
-#jswgwtkdhn .gt_bottom_border {
+#wzthvmxrgx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jswgwtkdhn .gt_col_headings {
+#wzthvmxrgx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1152,7 +1158,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   border-right-color: #D3D3D3;
 }
 
-#jswgwtkdhn .gt_col_heading {
+#wzthvmxrgx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1172,7 +1178,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   overflow-x: hidden;
 }
 
-#jswgwtkdhn .gt_column_spanner_outer {
+#wzthvmxrgx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1184,15 +1190,15 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   padding-right: 4px;
 }
 
-#jswgwtkdhn .gt_column_spanner_outer:first-child {
+#wzthvmxrgx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jswgwtkdhn .gt_column_spanner_outer:last-child {
+#wzthvmxrgx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jswgwtkdhn .gt_column_spanner {
+#wzthvmxrgx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1204,11 +1210,11 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   width: 100%;
 }
 
-#jswgwtkdhn .gt_spanner_row {
+#wzthvmxrgx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jswgwtkdhn .gt_group_heading {
+#wzthvmxrgx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1234,7 +1240,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   text-align: left;
 }
 
-#jswgwtkdhn .gt_empty_group_heading {
+#wzthvmxrgx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1249,15 +1255,15 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   vertical-align: middle;
 }
 
-#jswgwtkdhn .gt_from_md > :first-child {
+#wzthvmxrgx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jswgwtkdhn .gt_from_md > :last-child {
+#wzthvmxrgx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jswgwtkdhn .gt_row {
+#wzthvmxrgx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1276,7 +1282,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   overflow-x: hidden;
 }
 
-#jswgwtkdhn .gt_stub {
+#wzthvmxrgx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1289,7 +1295,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   padding-right: 5px;
 }
 
-#jswgwtkdhn .gt_stub_row_group {
+#wzthvmxrgx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1303,15 +1309,15 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   vertical-align: top;
 }
 
-#jswgwtkdhn .gt_row_group_first td {
+#wzthvmxrgx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jswgwtkdhn .gt_row_group_first th {
+#wzthvmxrgx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jswgwtkdhn .gt_summary_row {
+#wzthvmxrgx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1321,16 +1327,16 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   padding-right: 5px;
 }
 
-#jswgwtkdhn .gt_first_summary_row {
+#wzthvmxrgx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jswgwtkdhn .gt_first_summary_row.thick {
+#wzthvmxrgx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jswgwtkdhn .gt_last_summary_row {
+#wzthvmxrgx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1340,7 +1346,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   border-bottom-color: #D3D3D3;
 }
 
-#jswgwtkdhn .gt_grand_summary_row {
+#wzthvmxrgx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1350,7 +1356,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   padding-right: 5px;
 }
 
-#jswgwtkdhn .gt_first_grand_summary_row {
+#wzthvmxrgx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1360,7 +1366,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   border-top-color: #D3D3D3;
 }
 
-#jswgwtkdhn .gt_last_grand_summary_row_top {
+#wzthvmxrgx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1370,11 +1376,11 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   border-bottom-color: #D3D3D3;
 }
 
-#jswgwtkdhn .gt_striped {
+#wzthvmxrgx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jswgwtkdhn .gt_table_body {
+#wzthvmxrgx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1383,7 +1389,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   border-bottom-color: #D3D3D3;
 }
 
-#jswgwtkdhn .gt_footnotes {
+#wzthvmxrgx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1397,7 +1403,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   border-right-color: #D3D3D3;
 }
 
-#jswgwtkdhn .gt_footnote {
+#wzthvmxrgx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1406,7 +1412,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   padding-right: 5px;
 }
 
-#jswgwtkdhn .gt_sourcenotes {
+#wzthvmxrgx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1420,7 +1426,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   border-right-color: #D3D3D3;
 }
 
-#jswgwtkdhn .gt_sourcenote {
+#wzthvmxrgx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1428,72 +1434,72 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
   padding-right: 5px;
 }
 
-#jswgwtkdhn .gt_left {
+#wzthvmxrgx .gt_left {
   text-align: left;
 }
 
-#jswgwtkdhn .gt_center {
+#wzthvmxrgx .gt_center {
   text-align: center;
 }
 
-#jswgwtkdhn .gt_right {
+#wzthvmxrgx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jswgwtkdhn .gt_font_normal {
+#wzthvmxrgx .gt_font_normal {
   font-weight: normal;
 }
 
-#jswgwtkdhn .gt_font_bold {
+#wzthvmxrgx .gt_font_bold {
   font-weight: bold;
 }
 
-#jswgwtkdhn .gt_font_italic {
+#wzthvmxrgx .gt_font_italic {
   font-style: italic;
 }
 
-#jswgwtkdhn .gt_super {
+#wzthvmxrgx .gt_super {
   font-size: 65%;
 }
 
-#jswgwtkdhn .gt_footnote_marks {
+#wzthvmxrgx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jswgwtkdhn .gt_asterisk {
+#wzthvmxrgx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jswgwtkdhn .gt_indent_1 {
+#wzthvmxrgx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jswgwtkdhn .gt_indent_2 {
+#wzthvmxrgx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jswgwtkdhn .gt_indent_3 {
+#wzthvmxrgx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jswgwtkdhn .gt_indent_4 {
+#wzthvmxrgx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jswgwtkdhn .gt_indent_5 {
+#wzthvmxrgx .gt_indent_5 {
   text-indent: 25px;
 }
 
-#jswgwtkdhn .katex-display {
+#wzthvmxrgx .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#jswgwtkdhn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#wzthvmxrgx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1546,7 +1552,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 \text{vs. } H_A&amp;: \text{At least one pair } \mu_i \neq \mu_j
 \end{align}\]</span></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>empl_lm  <span class="co"># tidy anova output</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>empl_lm  <span class="co"># tidy anova output</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 6
   term          df sumsq meansq statistic p.value
@@ -1557,17 +1563,17 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 </div>
 <p>Pull the p-value using base R:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(empl_lm<span class="sc">$</span>p.value[<span class="dv">1</span>],<span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(empl_lm<span class="sc">$</span>p.value[<span class="dv">1</span>],<span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.03</code></pre>
 </div>
 </div>
 <p>Pull the p-value using tidyverse:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="sc">%&gt;%</span> </span>
-<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">"disability"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(p.value) <span class="sc">%&gt;%</span> </span>
-<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="sc">|&gt;</span> </span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(term <span class="sc">==</span> <span class="st">"disability"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(p.value) <span class="sc">|&gt;</span> </span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.03</code></pre>
 </div>
@@ -1600,7 +1606,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 <strong>F-statistic</strong> is an <strong>F-distribution</strong></span></p>
 <p>Checking the <strong>equal variance</strong> condition:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>sd_groups <span class="co"># previously defined</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>sd_groups <span class="co"># previously defined</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 2
   disability    SD
@@ -1611,7 +1617,7 @@ H_0 &amp;: \mu_{none} = \mu_{amputation} = \mu_{crutches} = \mu_{hearing} =  \mu
 4 hearing     1.53
 5 wheelchair  1.75</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(sd_groups<span class="sc">$</span>SD) <span class="sc">/</span> <span class="fu">min</span>(sd_groups<span class="sc">$</span>SD)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(sd_groups<span class="sc">$</span>SD) <span class="sc">/</span> <span class="fu">min</span>(sd_groups<span class="sc">$</span>SD)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1.210425</code></pre>
 </div>
@@ -1641,7 +1647,7 @@ Caution
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bartlett.test</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bartlett.test</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Bartlett test of homogeneity of variances
@@ -1681,42 +1687,42 @@ Tip
 </ul></li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>F_stat <span class="ot">&lt;-</span> <span class="fl">2.86158</span></span>
-<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">6</span>)), <span class="fu">aes</span>(<span class="at">x =</span> x)) <span class="sc">+</span> <span class="co"># set x-axis bounds from 0 to 6</span></span>
-<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> F_stat, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
-<span id="cb63-5"><a href="#cb63-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># fun = df is specifying (d)ensity of (f) distribution</span></span>
-<span id="cb63-6"><a href="#cb63-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun =</span> df, <span class="at">args =</span> <span class="fu">list</span>(<span class="at">df1=</span><span class="dv">4</span>, <span class="at">df2=</span><span class="dv">65</span>), <span class="at">color =</span> <span class="st">"cornflowerblue"</span>) <span class="sc">+</span></span>
-<span id="cb63-7"><a href="#cb63-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_area</span>(<span class="at">stat =</span> <span class="st">"function"</span>, <span class="at">fun =</span> df, <span class="at">args =</span> <span class="fu">list</span>(<span class="at">df1=</span><span class="dv">4</span>, <span class="at">df2=</span><span class="dv">65</span>), <span class="at">fill =</span> <span class="st">"red"</span>, <span class="at">alpha =</span><span class="fl">0.3</span>, <span class="at">xlim =</span> <span class="fu">c</span>(F_stat, <span class="dv">5</span>)) <span class="sc">+</span></span>
-<span id="cb63-8"><a href="#cb63-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fl">3.5</span>, <span class="at">y =</span> .<span class="dv">1</span>, <span class="at">label =</span> <span class="st">"p-value"</span>, <span class="at">size=</span><span class="dv">6</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>F_stat <span class="ot">&lt;-</span> <span class="fl">2.86158</span></span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">6</span>)), <span class="fu">aes</span>(<span class="at">x =</span> x)) <span class="sc">+</span> <span class="co"># set x-axis bounds from 0 to 6</span></span>
+<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> F_stat, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># fun = df is specifying (d)ensity of (f) distribution</span></span>
+<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun =</span> df, <span class="at">args =</span> <span class="fu">list</span>(<span class="at">df1=</span><span class="dv">4</span>, <span class="at">df2=</span><span class="dv">65</span>), <span class="at">color =</span> <span class="st">"cornflowerblue"</span>) <span class="sc">+</span></span>
+<span id="cb67-7"><a href="#cb67-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_area</span>(<span class="at">stat =</span> <span class="st">"function"</span>, <span class="at">fun =</span> df, <span class="at">args =</span> <span class="fu">list</span>(<span class="at">df1=</span><span class="dv">4</span>, <span class="at">df2=</span><span class="dv">65</span>), <span class="at">fill =</span> <span class="st">"red"</span>, <span class="at">alpha =</span><span class="fl">0.3</span>, <span class="at">xlim =</span> <span class="fu">c</span>(F_stat, <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb67-8"><a href="#cb67-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fl">3.5</span>, <span class="at">y =</span> .<span class="dv">1</span>, <span class="at">label =</span> <span class="st">"p-value"</span>, <span class="at">size=</span><span class="dv">6</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-34-1.png" class="img-fluid figure-img" width="480"></p>
+<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-33-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a>empl_lm <span class="sc">|&gt;</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="hfzzmmumce" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#hfzzmmumce table {
+<div id="oonrlpsszc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#oonrlpsszc table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#hfzzmmumce thead, #hfzzmmumce tbody, #hfzzmmumce tfoot, #hfzzmmumce tr, #hfzzmmumce td, #hfzzmmumce th {
+#oonrlpsszc thead, #oonrlpsszc tbody, #oonrlpsszc tfoot, #oonrlpsszc tr, #oonrlpsszc td, #oonrlpsszc th {
   border-style: none;
 }
 
-#hfzzmmumce p {
+#oonrlpsszc p {
   margin: 0;
   padding: 0;
 }
 
-#hfzzmmumce .gt_table {
+#oonrlpsszc .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1742,12 +1748,12 @@ Tip
   border-left-color: #D3D3D3;
 }
 
-#hfzzmmumce .gt_caption {
+#oonrlpsszc .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#hfzzmmumce .gt_title {
+#oonrlpsszc .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1759,7 +1765,7 @@ Tip
   border-bottom-width: 0;
 }
 
-#hfzzmmumce .gt_subtitle {
+#oonrlpsszc .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1771,7 +1777,7 @@ Tip
   border-top-width: 0;
 }
 
-#hfzzmmumce .gt_heading {
+#oonrlpsszc .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1783,13 +1789,13 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#hfzzmmumce .gt_bottom_border {
+#oonrlpsszc .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#hfzzmmumce .gt_col_headings {
+#oonrlpsszc .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1804,7 +1810,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#hfzzmmumce .gt_col_heading {
+#oonrlpsszc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1824,7 +1830,7 @@ Tip
   overflow-x: hidden;
 }
 
-#hfzzmmumce .gt_column_spanner_outer {
+#oonrlpsszc .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1836,15 +1842,15 @@ Tip
   padding-right: 4px;
 }
 
-#hfzzmmumce .gt_column_spanner_outer:first-child {
+#oonrlpsszc .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#hfzzmmumce .gt_column_spanner_outer:last-child {
+#oonrlpsszc .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#hfzzmmumce .gt_column_spanner {
+#oonrlpsszc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1856,11 +1862,11 @@ Tip
   width: 100%;
 }
 
-#hfzzmmumce .gt_spanner_row {
+#oonrlpsszc .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#hfzzmmumce .gt_group_heading {
+#oonrlpsszc .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1886,7 +1892,7 @@ Tip
   text-align: left;
 }
 
-#hfzzmmumce .gt_empty_group_heading {
+#oonrlpsszc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1901,15 +1907,15 @@ Tip
   vertical-align: middle;
 }
 
-#hfzzmmumce .gt_from_md > :first-child {
+#oonrlpsszc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hfzzmmumce .gt_from_md > :last-child {
+#oonrlpsszc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hfzzmmumce .gt_row {
+#oonrlpsszc .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1928,7 +1934,7 @@ Tip
   overflow-x: hidden;
 }
 
-#hfzzmmumce .gt_stub {
+#oonrlpsszc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1941,7 +1947,7 @@ Tip
   padding-right: 5px;
 }
 
-#hfzzmmumce .gt_stub_row_group {
+#oonrlpsszc .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1955,15 +1961,15 @@ Tip
   vertical-align: top;
 }
 
-#hfzzmmumce .gt_row_group_first td {
+#oonrlpsszc .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#hfzzmmumce .gt_row_group_first th {
+#oonrlpsszc .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#hfzzmmumce .gt_summary_row {
+#oonrlpsszc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1973,16 +1979,16 @@ Tip
   padding-right: 5px;
 }
 
-#hfzzmmumce .gt_first_summary_row {
+#oonrlpsszc .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#hfzzmmumce .gt_first_summary_row.thick {
+#oonrlpsszc .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#hfzzmmumce .gt_last_summary_row {
+#oonrlpsszc .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1992,7 +1998,7 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#hfzzmmumce .gt_grand_summary_row {
+#oonrlpsszc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2002,7 +2008,7 @@ Tip
   padding-right: 5px;
 }
 
-#hfzzmmumce .gt_first_grand_summary_row {
+#oonrlpsszc .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2012,7 +2018,7 @@ Tip
   border-top-color: #D3D3D3;
 }
 
-#hfzzmmumce .gt_last_grand_summary_row_top {
+#oonrlpsszc .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2022,11 +2028,11 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#hfzzmmumce .gt_striped {
+#oonrlpsszc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#hfzzmmumce .gt_table_body {
+#oonrlpsszc .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2035,7 +2041,7 @@ Tip
   border-bottom-color: #D3D3D3;
 }
 
-#hfzzmmumce .gt_footnotes {
+#oonrlpsszc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2049,7 +2055,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#hfzzmmumce .gt_footnote {
+#oonrlpsszc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2058,7 +2064,7 @@ Tip
   padding-right: 5px;
 }
 
-#hfzzmmumce .gt_sourcenotes {
+#oonrlpsszc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2072,7 +2078,7 @@ Tip
   border-right-color: #D3D3D3;
 }
 
-#hfzzmmumce .gt_sourcenote {
+#oonrlpsszc .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2080,72 +2086,72 @@ Tip
   padding-right: 5px;
 }
 
-#hfzzmmumce .gt_left {
+#oonrlpsszc .gt_left {
   text-align: left;
 }
 
-#hfzzmmumce .gt_center {
+#oonrlpsszc .gt_center {
   text-align: center;
 }
 
-#hfzzmmumce .gt_right {
+#oonrlpsszc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hfzzmmumce .gt_font_normal {
+#oonrlpsszc .gt_font_normal {
   font-weight: normal;
 }
 
-#hfzzmmumce .gt_font_bold {
+#oonrlpsszc .gt_font_bold {
   font-weight: bold;
 }
 
-#hfzzmmumce .gt_font_italic {
+#oonrlpsszc .gt_font_italic {
   font-style: italic;
 }
 
-#hfzzmmumce .gt_super {
+#oonrlpsszc .gt_super {
   font-size: 65%;
 }
 
-#hfzzmmumce .gt_footnote_marks {
+#oonrlpsszc .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#hfzzmmumce .gt_asterisk {
+#oonrlpsszc .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#hfzzmmumce .gt_indent_1 {
+#oonrlpsszc .gt_indent_1 {
   text-indent: 5px;
 }
 
-#hfzzmmumce .gt_indent_2 {
+#oonrlpsszc .gt_indent_2 {
   text-indent: 10px;
 }
 
-#hfzzmmumce .gt_indent_3 {
+#oonrlpsszc .gt_indent_3 {
   text-indent: 15px;
 }
 
-#hfzzmmumce .gt_indent_4 {
+#oonrlpsszc .gt_indent_4 {
   text-indent: 20px;
 }
 
-#hfzzmmumce .gt_indent_5 {
+#oonrlpsszc .gt_indent_5 {
   text-indent: 25px;
 }
 
-#hfzzmmumce .katex-display {
+#oonrlpsszc .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#hfzzmmumce div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#oonrlpsszc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2183,10 +2189,10 @@ Tip
 
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># p-value using F-distribution</span></span>
-<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a><span class="fu">pf</span>(<span class="fl">2.86158</span>, <span class="at">df1=</span><span class="dv">5-1</span>, <span class="at">df2=</span><span class="dv">70-5</span>, </span>
-<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a>   <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="co"># p-value using F-distribution</span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="fu">pf</span>(<span class="fl">2.86158</span>, <span class="at">df1=</span><span class="dv">5-1</span>, <span class="at">df2=</span><span class="dv">70-5</span>, </span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a>   <span class="at">lower.tail =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.03012688</code></pre>
 </div>
@@ -2202,18 +2208,18 @@ Tip
 <li>What’s your guess?</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x =</span> disability, <span class="at">y=</span>score, </span>
-<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> disability, <span class="at">color =</span> disability)) <span class="sc">+</span></span>
-<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">"y"</span>, <span class="at">alpha =</span>.<span class="dv">5</span>) <span class="sc">+</span></span>
-<span id="cb67-4"><a href="#cb67-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept =</span> <span class="fu">mean</span>(score)), </span>
-<span id="cb67-5"><a href="#cb67-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">lty =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
-<span id="cb67-6"><a href="#cb67-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> <span class="st">"mean"</span>, <span class="at">geom =</span> <span class="st">"point"</span>, </span>
-<span id="cb67-7"><a href="#cb67-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey33"</span>, <span class="at">alpha =</span><span class="dv">1</span>)  <span class="sc">+</span></span>
-<span id="cb67-8"><a href="#cb67-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employ, <span class="fu">aes</span>(<span class="at">x =</span> disability, <span class="at">y=</span>score, </span>
+<span id="cb71-2"><a href="#cb71-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> disability, <span class="at">color =</span> disability)) <span class="sc">+</span></span>
+<span id="cb71-3"><a href="#cb71-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_dotplot</span>(<span class="at">binaxis =</span> <span class="st">"y"</span>, <span class="at">alpha =</span>.<span class="dv">5</span>) <span class="sc">+</span></span>
+<span id="cb71-4"><a href="#cb71-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept =</span> <span class="fu">mean</span>(score)), </span>
+<span id="cb71-5"><a href="#cb71-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">lty =</span> <span class="st">"dashed"</span>) <span class="sc">+</span></span>
+<span id="cb71-6"><a href="#cb71-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> <span class="st">"mean"</span>, <span class="at">geom =</span> <span class="st">"point"</span>, </span>
+<span id="cb71-7"><a href="#cb71-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"grey33"</span>, <span class="at">alpha =</span><span class="dv">1</span>)  <span class="sc">+</span></span>
+<span id="cb71-8"><a href="#cb71-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-36-1.png" class="img-fluid figure-img" width="480"></p>
+<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-35-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>
@@ -2243,7 +2249,7 @@ P(\text{making at least 1 error in m tests}) = &amp; 1-(1-\alpha)^m
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-37-1.png" class="img-fluid figure-img" width="480"></p>
+<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-36-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>
@@ -2270,7 +2276,7 @@ P(\text{making at least 1 error in m tests}) = &amp; 1-(1-\alpha)^m
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-38-1.png" class="img-fluid figure-img" width="480"></p>
+<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-37-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>
@@ -2280,9 +2286,9 @@ P(\text{making at least 1 error in m tests}) = &amp; 1-(1-\alpha)^m
 <h2 class="anchored" data-anchor-id="the-bonferroni-correction-22">The Bonferroni Correction (2/2)</h2>
 <p>Pairwise t-tests without any <em>p</em>-value adjustments:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pairwise.t.test</span>(employ<span class="sc">$</span>score, </span>
-<span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>                employ<span class="sc">$</span>disability, </span>
-<span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">p.adj=</span><span class="st">"none"</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb72"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pairwise.t.test</span>(employ<span class="sc">$</span>score, </span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>                employ<span class="sc">$</span>disability, </span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">p.adj=</span><span class="st">"none"</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pairwise comparisons using t tests with pooled SD 
@@ -2300,9 +2306,9 @@ P value adjustment method: none </code></pre>
 </div>
 <p>Pairwise t-tests <strong><span style="color:green">with Bonferroni <em>p</em>-value adjustments</span></strong>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pairwise.t.test</span>(employ<span class="sc">$</span>score,  </span>
-<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>                employ<span class="sc">$</span>disability, </span>
-<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">p.adj=</span><span class="st">"bonferroni"</span>)  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb74"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pairwise.t.test</span>(employ<span class="sc">$</span>score,  </span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a>                employ<span class="sc">$</span>disability, </span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">p.adj=</span><span class="st">"bonferroni"</span>)  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pairwise comparisons using t tests with pooled SD 
@@ -2334,10 +2340,10 @@ P value adjustment method: bonferroni </code></pre>
 <li>The function <code>TukeyHSD()</code> creates a <strong>set of confidence intervals</strong> of the differences between means with the specified <strong>family-wise probability of coverage</strong>.</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb72"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="co"># need to run the model using `aov` instead of `lm`</span></span>
-<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>empl_aov <span class="ot">&lt;-</span> <span class="fu">aov</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) </span>
-<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a><span class="fu">TukeyHSD</span>(<span class="at">x=</span>empl_aov, <span class="at">conf.level =</span> <span class="fl">0.95</span>)  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb76"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="co"># need to run the model using `aov` instead of `lm`</span></span>
+<span id="cb76-2"><a href="#cb76-2" aria-hidden="true" tabindex="-1"></a>empl_aov <span class="ot">&lt;-</span> <span class="fu">aov</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) </span>
+<span id="cb76-3"><a href="#cb76-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb76-4"><a href="#cb76-4" aria-hidden="true" tabindex="-1"></a><span class="fu">TukeyHSD</span>(<span class="at">x=</span>empl_aov, <span class="at">conf.level =</span> <span class="fl">0.95</span>)  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  Tukey multiple comparisons of means
     95% family-wise confidence level
@@ -2357,11 +2363,11 @@ hearing-crutches      -1.8714286 -3.6031613 -0.1396958 0.0277842
 wheelchair-crutches   -0.5785714 -2.3103042  1.1531613 0.8812293
 wheelchair-hearing     1.2928571 -0.4388756  3.0245899 0.2348141</code></pre>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb74"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">TukeyHSD</span>(<span class="at">x=</span>empl_aov, <span class="at">conf.level =</span> <span class="fl">0.95</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb78"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">TukeyHSD</span>(<span class="at">x=</span>empl_aov, <span class="at">conf.level =</span> <span class="fl">0.95</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-41-1.png" class="img-fluid figure-img" width="480"></p>
+<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-40-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>
@@ -2380,9 +2386,9 @@ wheelchair-hearing     1.2928571 -0.4388756  3.0245899 0.2348141</code></pre>
 <li>Code below used Holm’s adjustment</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="co"># default is Holm's adjustments</span></span>
-<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pairwise.t.test</span>(employ<span class="sc">$</span>score, </span>
-<span id="cb75-3"><a href="#cb75-3" aria-hidden="true" tabindex="-1"></a>                employ<span class="sc">$</span>disability) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="co"># default is Holm's adjustments</span></span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pairwise.t.test</span>(employ<span class="sc">$</span>score, </span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a>                employ<span class="sc">$</span>disability) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pairwise comparisons using t tests with pooled SD 
@@ -2402,9 +2408,9 @@ P value adjustment method: holm </code></pre>
 <li><strong>False discovery rate (fdr)</strong> <em>p</em>-value adjustments are popular in omics, or whenever there are <em>many</em> tests being run:</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pairwise.t.test</span>(employ<span class="sc">$</span>score, </span>
-<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>                employ<span class="sc">$</span>disability, </span>
-<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">p.adj=</span><span class="st">"fdr"</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="fu">pairwise.t.test</span>(employ<span class="sc">$</span>score, </span>
+<span id="cb81-2"><a href="#cb81-2" aria-hidden="true" tabindex="-1"></a>                employ<span class="sc">$</span>disability, </span>
+<span id="cb81-3"><a href="#cb81-3" aria-hidden="true" tabindex="-1"></a>                <span class="at">p.adj=</span><span class="st">"fdr"</span>) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pairwise comparisons using t tests with pooled SD 
@@ -2447,7 +2453,7 @@ P(\text{making at least 1 error in m tests}) = &amp; 1-(1-\alpha)^m
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-44-1.png" class="img-fluid figure-img" width="480"></p>
+<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-43-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>
@@ -2463,7 +2469,7 @@ H_0 &amp;: \mu_1 = \mu_2 = ... = \mu_k\\
 <li>ANOVA table in R:</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">%&gt;%</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lm</span>(score <span class="sc">~</span> disability, <span class="at">data =</span> employ) <span class="sc">|&gt;</span> <span class="fu">anova</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Analysis of Variance Table
 
@@ -2483,7 +2489,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-46-1.png" class="img-fluid figure-img" width="480"></p>
+<p><img src="Day14_bsta511_code_files/figure-html/unnamed-chunk-45-1.png" class="img-fluid figure-img" width="480"></p>
 </figure>
 </div>
 </div>

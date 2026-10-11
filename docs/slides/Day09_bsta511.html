@@ -302,13 +302,13 @@ Meike Niederhausen, PhD
 <h2>Transform height &amp; weight from metric to to standard</h2>
 <p>Also, drop missing values and add a column of id values</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a>yrbss2 <span class="ot">&lt;-</span> yrbss <span class="sc">%&gt;%</span>                 <span class="co"># save new dataset with new name</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a>yrbss2 <span class="ot">&lt;-</span> yrbss <span class="sc">|&gt;</span>                 <span class="co"># save new dataset with new name</span></span>
 <span id="cb6-2"><a aria-label="2"></a>  <span class="fu">mutate</span>(                           <span class="co"># add variables for </span></span>
 <span id="cb6-3"><a aria-label="3"></a>    <span class="at">height.ft =</span> <span class="fl">3.28084</span><span class="sc">*</span>height,     <span class="co">#     height in feet</span></span>
 <span id="cb6-4"><a aria-label="4"></a>    <span class="at">weight.lb =</span> <span class="fl">2.20462</span><span class="sc">*</span>weight      <span class="co">#     weight in pounds</span></span>
-<span id="cb6-5"><a aria-label="5"></a>  ) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-6"><a aria-label="6"></a>  <span class="fu">drop_na</span>(height.ft, weight.lb) <span class="sc">%&gt;%</span> <span class="co"># drop rows w/ missing height/weight values</span></span>
-<span id="cb6-7"><a aria-label="7"></a>  <span class="fu">mutate</span>(<span class="at">id =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(.)) <span class="sc">%&gt;%</span>        <span class="co"># add id column</span></span>
+<span id="cb6-5"><a aria-label="5"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb6-6"><a aria-label="6"></a>  <span class="fu">drop_na</span>(height.ft, weight.lb) <span class="sc">|&gt;</span> <span class="co"># drop rows w/ missing height/weight values</span></span>
+<span id="cb6-7"><a aria-label="7"></a>  <span class="fu">mutate</span>(<span class="at">id =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">n</span>()) <span class="sc">|&gt;</span>        <span class="co"># add id column</span></span>
 <span id="cb6-8"><a aria-label="8"></a>  <span class="fu">select</span>(id, height.ft, weight.lb)  <span class="co"># restrict dataset to columns of interest</span></span>
 <span id="cb6-9"><a aria-label="9"></a></span>
 <span id="cb6-10"><a aria-label="10"></a><span class="fu">head</span>(yrbss2)  </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -362,7 +362,7 @@ Meike Niederhausen, PhD
 <p>Take 10,000 random samples of size<br>
 n = 30 from <code>yrbss2</code>:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a aria-label="1"></a>samp_n30_rep10000 <span class="ot">&lt;-</span> yrbss2 <span class="sc">%&gt;%</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a aria-label="1"></a>samp_n30_rep10000 <span class="ot">&lt;-</span> yrbss2 <span class="sc">|&gt;</span></span>
 <span id="cb18-2"><a aria-label="2"></a>  <span class="fu">rep_sample_n</span>(<span class="at">size =</span> <span class="dv">30</span>, </span>
 <span id="cb18-3"><a aria-label="3"></a>               <span class="at">reps =</span> <span class="dv">10000</span>,</span>
 <span id="cb18-4"><a aria-label="4"></a>               <span class="at">replace =</span> <span class="cn">FALSE</span>)</span>
@@ -389,8 +389,8 @@ n = 30 from <code>yrbss2</code>:</p>
 <p>Calculate the mean for each of the 10,000 random samples:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a aria-label="1"></a>means_hght_samp_n30_rep10000 <span class="ot">&lt;-</span> </span>
-<span id="cb20-2"><a aria-label="2"></a>  samp_n30_rep10000 <span class="sc">%&gt;%</span> </span>
-<span id="cb20-3"><a aria-label="3"></a>  <span class="fu">group_by</span>(replicate) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-2"><a aria-label="2"></a>  samp_n30_rep10000 <span class="sc">|&gt;</span> </span>
+<span id="cb20-3"><a aria-label="3"></a>  <span class="fu">group_by</span>(replicate) <span class="sc">|&gt;</span> </span>
 <span id="cb20-4"><a aria-label="4"></a>  <span class="fu">summarise</span>(<span class="at">mean_height =</span> </span>
 <span id="cb20-5"><a aria-label="5"></a>            <span class="fu">mean</span>(height.ft))</span>
 <span id="cb20-6"><a aria-label="6"></a></span>

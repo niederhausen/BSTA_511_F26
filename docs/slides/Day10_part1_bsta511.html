@@ -429,7 +429,7 @@ We are 95% confident that the (population) mean body temperature is between 98.1
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day10_part1_bsta511_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
+<p><img data-src="Day10_part1_bsta511_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -578,7 +578,7 @@ H_0 &amp;: \mu = 98.6\\
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day10_part1_bsta511_files/figure-revealjs/unnamed-chunk-6-1.png" width="960"></p>
+<p><img data-src="Day10_part1_bsta511_files/figure-revealjs/unnamed-chunk-5-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -605,7 +605,7 @@ H_0 &amp;: \mu = 98.6\\
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="Day10_part1_bsta511_files/figure-revealjs/unnamed-chunk-7-1.png" width="960"></p>
+<p><img data-src="Day10_part1_bsta511_files/figure-revealjs/unnamed-chunk-6-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -625,7 +625,7 @@ H_0 &amp;: \mu = 98.6\\
 </div>
 </div>
 
-<img data-src="Day10_part1_bsta511_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"></section>
+<img data-src="Day10_part1_bsta511_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
 <section id="step-4-p-value-estimation-using-t-table" class="slide level2">
 <h2>Step 4: p-value estimation using <span class="math inline">\(t\)</span>-table</h2>
 <ul>
@@ -746,7 +746,7 @@ H_0 &amp;: \mu = 98.6\\
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-label="1"></a><span class="fu">getwd</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "/Users/niederha/Library/CloudStorage/OneDrive-OregonHealth&amp;ScienceUniversity/teaching/BSTA 511/F25/0_web_511_F25/BSTA_511_F25"</code></pre>
+<pre><code>[1] "/Users/niederha/Library/CloudStorage/Dropbox-OHSU/Meike Niederhausen/Teaching/BSTA_511/F26/github/BSTA_511_F26"</code></pre>
 </div>
 </div>
 <ul>
@@ -894,7 +894,7 @@ mean of x
 <li>Combined with the <code>gt()</code> function from the <code>gt</code> package, we get a nice table</li>
 </ul>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a aria-label="1"></a><span class="fu">tidy</span>(temps_ttest) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a aria-label="1"></a><span class="fu">tidy</span>(temps_ttest) <span class="sc">|&gt;</span> </span>
 <span id="cb11-2"><a aria-label="2"></a>  <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div id="mecfuynzio" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
@@ -1393,12 +1393,12 @@ mean of x
 </div><div class="column" style="width:50%;">
 <p>Or the <code>tidyverse</code> way: using <code>pull()</code> from <code>dplyr</code> package</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a aria-label="1"></a><span class="fu">tidy</span>(temps_ttest) <span class="sc">%&gt;%</span> <span class="fu">pull</span>(p.value)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a aria-label="1"></a><span class="fu">tidy</span>(temps_ttest) <span class="sc">|&gt;</span> <span class="fu">pull</span>(p.value)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2.410632e-07</code></pre>
 </div>
 </div>
-<p>Advantage: can use together with piping (<code>%&gt;%</code>) other functions</p>
+<p>Advantage: can use together with piping (<code>|&gt;</code>) other functions</p>
 </div></div>
 </section>
 <section id="whats-next" class="slide level2">

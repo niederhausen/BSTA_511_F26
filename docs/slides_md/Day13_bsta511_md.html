@@ -360,7 +360,7 @@ window.Quarto = {
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day13_bsta511_md_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="Day13_bsta511_md_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -677,7 +677,7 @@ P(Most~and~No) &amp;= \frac{28}{400}\cdot\frac{174}{400}
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="Day13_bsta511_md_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="768"></p>
+<p><img src="Day13_bsta511_md_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="768"></p>
 </figure>
 </div>
 </div>
@@ -773,7 +773,7 @@ Warning
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>DepPA <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>DepPA <span class="sc">|&gt;</span> </span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tabyl</span>(Depression, PA)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> Depression  No Yes
@@ -829,39 +829,39 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
 </div><div class="column" style="width:50%;">
 <p>The tidyverse way (fewer parentheses)</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(DepPA<span class="sc">$</span>Depression, DepPA<span class="sc">$</span>PA) <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(DepPA<span class="sc">$</span>Depression, DepPA<span class="sc">$</span>PA) <span class="sc">|&gt;</span> </span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">chisq.test</span>() </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pearson's Chi-squared test
 
-data:  .
+data:  table(DepPA$Depression, DepPA$PA)
 X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
 </div>
 </div>
 <p><code>tidy()</code> the output (from <code>broom</code> package):</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(DepPA<span class="sc">$</span>Depression, DepPA<span class="sc">$</span>PA) <span class="sc">%&gt;%</span> </span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">chisq.test</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(DepPA<span class="sc">$</span>Depression, DepPA<span class="sc">$</span>PA) <span class="sc">|&gt;</span> </span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">chisq.test</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
-<div id="rljnzixstr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rljnzixstr table {
+<div id="nasfpntnzv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nasfpntnzv table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rljnzixstr thead, #rljnzixstr tbody, #rljnzixstr tfoot, #rljnzixstr tr, #rljnzixstr td, #rljnzixstr th {
+#nasfpntnzv thead, #nasfpntnzv tbody, #nasfpntnzv tfoot, #nasfpntnzv tr, #nasfpntnzv td, #nasfpntnzv th {
   border-style: none;
 }
 
-#rljnzixstr p {
+#nasfpntnzv p {
   margin: 0;
   padding: 0;
 }
 
-#rljnzixstr .gt_table {
+#nasfpntnzv .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -887,12 +887,12 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#rljnzixstr .gt_caption {
+#nasfpntnzv .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rljnzixstr .gt_title {
+#nasfpntnzv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -904,7 +904,7 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   border-bottom-width: 0;
 }
 
-#rljnzixstr .gt_subtitle {
+#nasfpntnzv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -916,7 +916,7 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   border-top-width: 0;
 }
 
-#rljnzixstr .gt_heading {
+#nasfpntnzv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -928,13 +928,13 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#rljnzixstr .gt_bottom_border {
+#nasfpntnzv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rljnzixstr .gt_col_headings {
+#nasfpntnzv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -949,7 +949,7 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#rljnzixstr .gt_col_heading {
+#nasfpntnzv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -969,7 +969,7 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   overflow-x: hidden;
 }
 
-#rljnzixstr .gt_column_spanner_outer {
+#nasfpntnzv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -981,15 +981,15 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   padding-right: 4px;
 }
 
-#rljnzixstr .gt_column_spanner_outer:first-child {
+#nasfpntnzv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rljnzixstr .gt_column_spanner_outer:last-child {
+#nasfpntnzv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rljnzixstr .gt_column_spanner {
+#nasfpntnzv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1001,11 +1001,11 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   width: 100%;
 }
 
-#rljnzixstr .gt_spanner_row {
+#nasfpntnzv .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rljnzixstr .gt_group_heading {
+#nasfpntnzv .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1031,7 +1031,7 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   text-align: left;
 }
 
-#rljnzixstr .gt_empty_group_heading {
+#nasfpntnzv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1046,15 +1046,15 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   vertical-align: middle;
 }
 
-#rljnzixstr .gt_from_md > :first-child {
+#nasfpntnzv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rljnzixstr .gt_from_md > :last-child {
+#nasfpntnzv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rljnzixstr .gt_row {
+#nasfpntnzv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1073,7 +1073,7 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   overflow-x: hidden;
 }
 
-#rljnzixstr .gt_stub {
+#nasfpntnzv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1086,7 +1086,7 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   padding-right: 5px;
 }
 
-#rljnzixstr .gt_stub_row_group {
+#nasfpntnzv .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1100,15 +1100,15 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   vertical-align: top;
 }
 
-#rljnzixstr .gt_row_group_first td {
+#nasfpntnzv .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rljnzixstr .gt_row_group_first th {
+#nasfpntnzv .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rljnzixstr .gt_summary_row {
+#nasfpntnzv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1118,16 +1118,16 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   padding-right: 5px;
 }
 
-#rljnzixstr .gt_first_summary_row {
+#nasfpntnzv .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rljnzixstr .gt_first_summary_row.thick {
+#nasfpntnzv .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rljnzixstr .gt_last_summary_row {
+#nasfpntnzv .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1137,7 +1137,7 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#rljnzixstr .gt_grand_summary_row {
+#nasfpntnzv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1147,7 +1147,7 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   padding-right: 5px;
 }
 
-#rljnzixstr .gt_first_grand_summary_row {
+#nasfpntnzv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1157,7 +1157,7 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#rljnzixstr .gt_last_grand_summary_row_top {
+#nasfpntnzv .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1167,11 +1167,11 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#rljnzixstr .gt_striped {
+#nasfpntnzv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rljnzixstr .gt_table_body {
+#nasfpntnzv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1180,7 +1180,7 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#rljnzixstr .gt_footnotes {
+#nasfpntnzv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1194,7 +1194,7 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#rljnzixstr .gt_footnote {
+#nasfpntnzv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1203,7 +1203,7 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   padding-right: 5px;
 }
 
-#rljnzixstr .gt_sourcenotes {
+#nasfpntnzv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1217,7 +1217,7 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#rljnzixstr .gt_sourcenote {
+#nasfpntnzv .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1225,72 +1225,72 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
   padding-right: 5px;
 }
 
-#rljnzixstr .gt_left {
+#nasfpntnzv .gt_left {
   text-align: left;
 }
 
-#rljnzixstr .gt_center {
+#nasfpntnzv .gt_center {
   text-align: center;
 }
 
-#rljnzixstr .gt_right {
+#nasfpntnzv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rljnzixstr .gt_font_normal {
+#nasfpntnzv .gt_font_normal {
   font-weight: normal;
 }
 
-#rljnzixstr .gt_font_bold {
+#nasfpntnzv .gt_font_bold {
   font-weight: bold;
 }
 
-#rljnzixstr .gt_font_italic {
+#nasfpntnzv .gt_font_italic {
   font-style: italic;
 }
 
-#rljnzixstr .gt_super {
+#nasfpntnzv .gt_super {
   font-size: 65%;
 }
 
-#rljnzixstr .gt_footnote_marks {
+#nasfpntnzv .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rljnzixstr .gt_asterisk {
+#nasfpntnzv .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rljnzixstr .gt_indent_1 {
+#nasfpntnzv .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rljnzixstr .gt_indent_2 {
+#nasfpntnzv .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rljnzixstr .gt_indent_3 {
+#nasfpntnzv .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rljnzixstr .gt_indent_4 {
+#nasfpntnzv .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rljnzixstr .gt_indent_5 {
+#nasfpntnzv .gt_indent_5 {
   text-indent: 25px;
 }
 
-#rljnzixstr .katex-display {
+#nasfpntnzv .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#rljnzixstr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#nasfpntnzv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1319,9 +1319,9 @@ X-squared = 41.171, df = 2, p-value = 1.148e-09</code></pre>
 </div>
 <p>Pull <em>p</em>-value</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(DepPA<span class="sc">$</span>Depression, DepPA<span class="sc">$</span>PA) <span class="sc">%&gt;%</span> </span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">chisq.test</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">pull</span>(p.value)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(DepPA<span class="sc">$</span>Depression, DepPA<span class="sc">$</span>PA) <span class="sc">|&gt;</span> </span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">chisq.test</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">|&gt;</span> <span class="fu">pull</span>(p.value)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1.147897e-09</code></pre>
 </div>
@@ -1635,7 +1635,7 @@ Group         No Yes
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(SportsBet_table) <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(SportsBet_table) <span class="sc">|&gt;</span> <span class="fu">tidy</span>() <span class="sc">|&gt;</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div id="leuevwphzv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>#leuevwphzv table {
@@ -2108,7 +2108,7 @@ Group         No Yes
 
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(SportsBet_table) <span class="sc">%&gt;%</span> <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(SportsBet_table) <span class="sc">|&gt;</span> <span class="fu">tidy</span>() <span class="sc">|&gt;</span> <span class="fu">gt</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div id="sfxoygwdrw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>#sfxoygwdrw table {

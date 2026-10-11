@@ -194,10 +194,10 @@ Summary statistics stratified by group
 
 ```{r}
 # get_summary_stats() from rstatix package
-sumstats <- CaffTaps %>% 
-  group_by(Group) %>% 
+sumstats <- CaffTaps |> 
+  group_by(Group) |> 
   get_summary_stats(type = "mean_sd") 
-sumstats %>% gt()
+sumstats |> gt()
 diff(sumstats$mean)
 ```
 
@@ -297,7 +297,7 @@ __Assumptions__:
 
 ```{r}
 #| echo: false
-CaffTaps %>% group_by(Group) %>% get_summary_stats(type = "mean_sd") %>% gt()
+CaffTaps |> group_by(Group) |> get_summary_stats(type = "mean_sd") |> gt()
 ```
 
 $$
@@ -420,7 +420,7 @@ __Conclusion statement__:
 
 ```{r}
 #| echo: false
-CaffTaps %>% group_by(Group) %>% get_summary_stats(type = "mean_sd") %>% gt()
+CaffTaps |> group_by(Group) |> get_summary_stats(type = "mean_sd") |> gt()
 ```
 
 ```{r}
@@ -484,7 +484,7 @@ We are 95% confident that the (population) difference in mean finger taps/min be
 
 ```{r}
 # use tidy command from broom package for briefer output that's a tibble
-tidy(Taps_2ttest) %>% gt()
+tidy(Taps_2ttest) |> gt()
 ```
 
 * Pull the p-value:
@@ -500,14 +500,14 @@ tidy(Taps_2ttest)$p.value  # we can pull specific values from the tidy output
 ```{r}
 # make CaffTaps data wide: pivot_wider needs an ID column so that it 
 # knows how to "match" values from the Caffeine and NoCaffeine groups
-CaffTaps_wide <- CaffTaps %>% 
-  mutate(id = rep(1:10, 2)) %>% #  "fake" IDs for pivot_wider step
+CaffTaps_wide <- CaffTaps |> 
+  mutate(id = rep(1:10, 2)) |> #  "fake" IDs for pivot_wider step
   pivot_wider(names_from = "Group",
               values_from = "Taps")
 glimpse(CaffTaps_wide)
 
-t.test(x = CaffTaps_wide$Caffeine, y = CaffTaps_wide$NoCaffeine, alternative = "greater") %>% 
-  tidy() %>% gt()
+t.test(x = CaffTaps_wide$Caffeine, y = CaffTaps_wide$NoCaffeine, alternative = "greater") |> 
+  tidy() |> gt()
 ```
 
 
@@ -573,12 +573,12 @@ $$df = (n_1 - 1) + (n_2 - 1) = n_1 + n_2 - 2.$$
 # t-test with pooled SD
 t.test(formula = Taps ~ Group, alternative = "greater", 
        var.equal = TRUE,  # pooled SD 
-       data = CaffTaps) %>% tidy() %>% gt()
+       data = CaffTaps) |> tidy() |> gt()
 
 # t-test without pooled SD
 t.test(formula = Taps ~ Group, alternative = "greater", 
        var.equal = FALSE,  # default, NOT pooled SD 
-       data = CaffTaps) %>% tidy() %>% gt()
+       data = CaffTaps) |> tidy() |> gt()
 ```
 
 Similar output in this case - why??

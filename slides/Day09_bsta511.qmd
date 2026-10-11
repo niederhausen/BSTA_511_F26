@@ -131,13 +131,13 @@ names(yrbss)
 
 Also, drop missing values and add a column of id values
 ```{r}
-yrbss2 <- yrbss %>%                 # save new dataset with new name
+yrbss2 <- yrbss |>                 # save new dataset with new name
   mutate(                           # add variables for 
     height.ft = 3.28084*height,     #     height in feet
     weight.lb = 2.20462*weight      #     weight in pounds
-  ) %>% 
-  drop_na(height.ft, weight.lb) %>% # drop rows w/ missing height/weight values
-  mutate(id = 1:nrow(.)) %>%        # add id column
+  ) |> 
+  drop_na(height.ft, weight.lb) |> # drop rows w/ missing height/weight values
+  mutate(id = 1:n()) |>        # add id column
   select(id, height.ft, weight.lb)  # restrict dataset to columns of interest
 
 head(yrbss2)  
@@ -166,7 +166,7 @@ summary(yrbss2)
 Take 10,000 random samples of size  
 n = 30 from `yrbss2`:
 ```{r}
-samp_n30_rep10000 <- yrbss2 %>%
+samp_n30_rep10000 <- yrbss2 |>
   rep_sample_n(size = 30, 
                reps = 10000,
                replace = FALSE)
@@ -178,8 +178,8 @@ samp_n30_rep10000
 Calculate the mean for each of the 10,000 random samples:
 ```{r}
 means_hght_samp_n30_rep10000 <- 
-  samp_n30_rep10000 %>% 
-  group_by(replicate) %>% 
+  samp_n30_rep10000 |> 
+  group_by(replicate) |> 
   summarise(mean_height = 
             mean(height.ft))
 
