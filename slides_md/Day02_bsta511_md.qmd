@@ -48,22 +48,22 @@ theme_set(theme_bw(base_size = 22))
 
 # Goals for today {.smaller}
 
-* (1.3) __Data collection principles__  - [Day 2 in F25]{style="color:darkorange"}
+* (1.3) __Data collection principles__  - [Day 2 in F26]{style="color:darkorange"}
   - Population vs. sample
   - Sampling methods
   - Experiments vs. Observational studies
 
-* (1.2) __Intro to Data__  - [Day 2 in F25]{style="color:darkorange"}
+* (1.2) __Intro to Data__  - [Day 2 in F26]{style="color:darkorange"}
   - Data types
   - How are data stored in R?
   - Working with data in R
   
-* (1.4) __Summarizing numerical data__   - [Day 3 in F25]{style="color:darkorange"}
+* (1.4) __Summarizing numerical data__   - [Day 3 in F26]{style="color:darkorange"}
   - Mean, median, mode, SD, IQR, range, 5 number summary
   - Empirical Rule
   - robust statistics
 
-* __R packages__  - [Day 4 in F25]{style="color:darkorange"} -> __[install for Day 5!!!]{style="color:darkorange"}__
+* __R packages__  - [Day 4 in F26]{style="color:darkorange"} -> __[install for Day 5!!!]{style="color:darkorange"}__
 
 
 
@@ -156,7 +156,7 @@ Customize your RStudio interface!
 
 
 
-# (1.3) Data collection principles - Day 2 in F25
+# (1.3) Data collection principles - Day 2 in F26
 
 *  Population vs. sample
 * Sampling methods
@@ -346,7 +346,7 @@ The project is funded by the US Department of Veterans Affairs: Office of Rural 
 :::
 
 
-# (1.2) Intro to Data - Day 2 in F25
+# (1.2) Intro to Data - Day 2 in F26
 
 ![[Artwork by @allison_horst](https://allisonhorst.com/r-packages-functions)](/img_slides/horst_data_cowboy.png){fig-align="center"}
 
@@ -607,7 +607,7 @@ The mean petal width for all 3 species combined is `r round(mean(iris$Petal.Widt
 :::
 
 
-# (1.4) Summarizing numerical data - Day 3 in F25 
+# (1.4) Summarizing numerical data - Day 3 in F26 
 
 ::: columns
 ::: {.column width="30%"}
@@ -936,7 +936,7 @@ range |
 
 
 
-# R Packages - Day 4 in F25
+# R Packages - Day 4 in F26
 
 <!-- background-image: url(img/tidyverse_celestial.jpg) -->
 <!-- background-size: cover -->

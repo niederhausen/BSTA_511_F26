@@ -31,22 +31,22 @@ library(here)
 
 # Goals for today 
 
-* (1.3) __Data collection principles__  - [Day 2 in F25]{style="color:darkorange"}
+* (1.3) __Data collection principles__  - [Day 2 in F26]{style="color:darkorange"}
   - Population vs. sample
   - Sampling methods
   - Experiments vs. Observational studies
 
-* (1.2) __Intro to Data__  - [Day 2 in F25]{style="color:darkorange"}
+* (1.2) __Intro to Data__  - [Day 2 in F26]{style="color:darkorange"}
   - Data types
   - How are data stored in R?
   - Working with data in R
   
-* (1.4) __Summarizing numerical data__   - [Day 3 in F25]{style="color:darkorange"}
+* (1.4) __Summarizing numerical data__   - [Day 3 in F26]{style="color:darkorange"}
   - Mean, median, mode, SD, IQR, range, 5 number summary
   - Empirical Rule
   - robust statistics
 
-* __R packages__  - [Day 4 in F25]{style="color:darkorange"} -> __[install for Day 5!!!]{style="color:darkorange"}__
+* __R packages__  - [Day 4 in F26]{style="color:darkorange"} -> __[install for Day 5!!!]{style="color:darkorange"}__
 
 
 # Recap of last time 
@@ -104,7 +104,7 @@ Customize your RStudio interface!
 [https://www.pipinghotdata.com/posts/2020-09-07-introducing-the-rstudio-ide-and-r-markdown/#background](https://www.pipinghotdata.com/posts/2020-09-07-introducing-the-rstudio-ide-and-r-markdown/#background)
 
 
-# (1.3) Data collection principles - Day 2 in F25
+# (1.3) Data collection principles - Day 2 in F26
 
 *  Population vs. sample
 * Sampling methods
@@ -242,7 +242,7 @@ STEM is a collaborative project between the US Department of Veterans Affairs an
 The project is funded by the US Department of Veterans Affairs: Office of Rural Health.
 
 
-# (1.2) Intro to Data - Day 2 in F25
+# (1.2) Intro to Data - Day 2 in F26
 
 ## How are data stored, how do we use them? 
 
@@ -415,7 +415,7 @@ The mean petal width for all 3 species combined is `r round(mean(iris$Petal.Widt
 - For example, if this were for an abstract and a year later you are wondering where the numbers came from, your R code will tell you exactly which dataset was used to calculate the values.
 
 
-# (1.4) Summarizing numerical data - Day 3 in F25
+# (1.4) Summarizing numerical data - Day 3 in F26
 
 
 Measures of center &  spread
@@ -653,7 +653,7 @@ IQR |
 range |
 
 
-# R Packages - Day 4 in F25
+# R Packages - Day 4 in F26
 
 A good analogy for R packages is that they   
 are like apps you can download onto a mobile phone:

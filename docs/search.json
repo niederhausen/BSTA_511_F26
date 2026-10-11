@@ -2440,7 +2440,7 @@
     "href": "slides_md/Day02_bsta511_md.html",
     "title": "Day 2: Data collection & numerical summaries",
     "section": "",
-    "text": "(1.3) Data collection principles - Day 2 in F25\n\nPopulation vs. sample\nSampling methods\nExperiments vs. Observational studies\n\n(1.2) Intro to Data - Day 2 in F25\n\nData types\nHow are data stored in R?\nWorking with data in R\n\n(1.4) Summarizing numerical data - Day 3 in F25\n\nMean, median, mode, SD, IQR, range, 5 number summary\nEmpirical Rule\nrobust statistics\n\nR packages - Day 4 in F25 -&gt; install for Day 5!!!"
+    "text": "(1.3) Data collection principles - Day 2 in F26\n\nPopulation vs. sample\nSampling methods\nExperiments vs. Observational studies\n\n(1.2) Intro to Data - Day 2 in F26\n\nData types\nHow are data stored in R?\nWorking with data in R\n\n(1.4) Summarizing numerical data - Day 3 in F26\n\nMean, median, mode, SD, IQR, range, 5 number summary\nEmpirical Rule\nrobust statistics\n\nR packages - Day 4 in F26 -&gt; install for Day 5!!!"
   },
   {
     "objectID": "slides_md/Day02_bsta511_md.html#useful-keyboard-shortcuts",
@@ -8446,7 +8446,7 @@
     "href": "slides_code/Day02_bsta511_code.html",
     "title": "Day 2: Data collection & numerical summaries",
     "section": "",
-    "text": "(1.3) Data collection principles - Day 2 in F25\n\nPopulation vs. sample\nSampling methods\nExperiments vs. Observational studies\n\n(1.2) Intro to Data - Day 2 in F25\n\nData types\nHow are data stored in R?\nWorking with data in R\n\n(1.4) Summarizing numerical data - Day 3 in F25\n\nMean, median, mode, SD, IQR, range, 5 number summary\nEmpirical Rule\nrobust statistics\n\nR packages - Day 4 in F25 -&gt; install for Day 5!!!"
+    "text": "(1.3) Data collection principles - Day 2 in F26\n\nPopulation vs. sample\nSampling methods\nExperiments vs. Observational studies\n\n(1.2) Intro to Data - Day 2 in F26\n\nData types\nHow are data stored in R?\nWorking with data in R\n\n(1.4) Summarizing numerical data - Day 3 in F26\n\nMean, median, mode, SD, IQR, range, 5 number summary\nEmpirical Rule\nrobust statistics\n\nR packages - Day 4 in F26 -&gt; install for Day 5!!!"
   },
   {
     "objectID": "slides_code/Day02_bsta511_code.html#useful-keyboard-shortcuts",
