@@ -135,7 +135,7 @@ Continue using the same NHANES data as for the previous problem.
 
 ## a) Heights in inches
 
-**Use the `mutate()` command explained on Slide 23 (pdf pg 22) of the Day 3 Part 3 notes to create a new column (variable) in the NHANES dataset for the heights in inches. Then find the mean and standard deviation of the heights in inches. Note that 1 centimeter is approximately 0.3937 inches.**
+**Use the `mutate()` command from the [Day 3 Extra data wrangling code](https://niederhausen.github.io/BSTA_511_F26/slides_code/Day03_bsta511_code_data_wrangling.html#mutate) to create a new column (variable) in the NHANES dataset for the heights in inches. Then find the mean and standard deviation of the heights in inches. Note that 1 centimeter is approximately 0.3937 inches.**
 
 ::: callout-tip
 ## Tips

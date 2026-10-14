@@ -2832,7 +2832,7 @@
     "href": "homework/HW_2_F26_bsta511.html#a-heights-in-inches",
     "title": "HW 2: BSTA 511/611 F26",
     "section": "a) Heights in inches",
-    "text": "a) Heights in inches\nUse the mutate() command explained on Slide 23 (pdf pg 22) of the Day 3 Part 3 notes to create a new column (variable) in the NHANES dataset for the heights in inches. Then find the mean and standard deviation of the heights in inches. Note that 1 centimeter is approximately 0.3937 inches.\n\n\n\n\n\n\nTipTips\n\n\n\n\nColumn names cannot start with a number or symbol\nNames are case sensitive\nIt’s easier to work with column names that don’t have spaces in them. I usually use _ or . instead of spaces."
+    "text": "a) Heights in inches\nUse the mutate() command from the Day 3 Extra data wrangling code to create a new column (variable) in the NHANES dataset for the heights in inches. Then find the mean and standard deviation of the heights in inches. Note that 1 centimeter is approximately 0.3937 inches.\n\n\n\n\n\n\nTipTips\n\n\n\n\nColumn names cannot start with a number or symbol\nNames are case sensitive\nIt’s easier to work with column names that don’t have spaces in them. I usually use _ or . instead of spaces."
   },
   {
     "objectID": "homework/HW_2_F26_bsta511.html#b-college-graduates",
@@ -4211,7 +4211,7 @@
     "href": "weeks/week_03.html#slides-recordings",
     "title": "Week 3",
     "section": "Slides & Recordings",
-    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides (F23): html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link (F23)\nDuration\nCode: qmd\nCode: html\n\n\n\n\n4\nBayes’ Rule (Book section 2.2.5)\nDay 5: slides 1-2\n\n\n\nDay 5 Part 1\n22 min\n\n\n\n\n\nBayes’ Rule (Book section 2.2.5)\nDay 5: slides 3-6\n\n\n\nDay 5 Part 2\n22 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n* R packages\nDay 2: slides 47-54\n\n\n\nDay 2 Part 4\n30 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n** Exploratory Data Analysis\nDay 3: slides 1-59\n\n\n\nDay 3\n1 hr 18 min\n\n\n\n\n\n\n* Optional: check out the R lab (PUBH 523) Lesson 11 on packages.\n** Starting on slide 45 a “pipe” |&gt; is used to string together commands. Slide 46 explains how the “pipe” |&gt; works. The slides in the recordings use the classic “pipe” %&gt;%. The newer “pipe” |&gt; was recently changed to be the default pipe in RStudio and so I updated the class materials (other than the recordings) to reflect that. Both versions of the “pipe” |&gt; and %&gt;% work. If you want to learn more about the differences, check out this slide from an Intro to R workshop I gave."
+    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides (F23): html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link (F23)\nDuration\nCode: qmd\nCode: html\n\n\n\n\n4\nBayes’ Rule (Book section 2.2.5)\nDay 5: slides 1-2\n\n\n\nDay 5 Part 1\n22 min\n\n\n\n\n\nBayes’ Rule (Book section 2.2.5)\nDay 5: slides 3-6\n\n\n\nDay 5 Part 2\n22 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n* R packages\nDay 2: slides 47-54\n\n\n\nDay 2 Part 4\n30 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n** Exploratory Data Analysis\nDay 3: slides 1-59\n\n\n\nDay 3\n1 hr 18 min\n\n\n\n\n\nExtra data wrangling code\nDay 3 data wrangling\n\n\n\n\n\n\n\n\n\n\n\n* Optional: check out the R lab (PUBH 523) Lesson 11 on packages.\n** Starting on slide 45 a “pipe” |&gt; is used to string together commands. Slide 46 explains how the “pipe” |&gt; works. The slides in the recordings use the classic “pipe” %&gt;%. The newer “pipe” |&gt; was recently changed to be the default pipe in RStudio and so I updated the class materials (other than the recordings) to reflect that. Both versions of the “pipe” |&gt; and %&gt;% work. If you want to learn more about the differences, check out this slide from an Intro to R workshop I gave."
   },
   {
     "objectID": "weeks/week_03.html#practice-problems",
@@ -4232,7 +4232,7 @@
     "href": "weeks/week_03.html#homework",
     "title": "Week 3",
     "section": "Homework",
-    "text": "Homework\n\nHW 2 covers Days 4-5 and is due on Sat, 10/17\n\nSee extra data wrangling code (both pdf and code) in table above with slides & recording links."
+    "text": "Homework\n\nHW 2 covers Days 4-5 and is due on Sat, 10/17\n\nSee extra data wrangling code in table above with slides & recording links."
   },
   {
     "objectID": "weeks/week_01.html",
@@ -6591,7 +6591,7 @@
     "href": "class_slides.html",
     "title": "Class Slides",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nCategories\n\n\n\n\n\n\n\n\n10/20/25\n\n\nDay 6: Random variables and Binomial distribution\n\n\nWeek 4\n\n\n\n\n\n\n10/27/25\n\n\nDay 7: Normal and Poisson distributions\n\n\nWeek 5\n\n\n\n\n\n\n10/29/25\n\n\nDay 8: Variability in estimates\n\n\nWeek 5\n\n\n\n\n\n\n10/29/25\n\n\nDay 9: Confidence intervals (4.2)\n\n\nWeek 5\n\n\n\n\n\n\n11/3/25\n\n\nDay 10 Part 1: Hypothesis testing for mean from one-sample (Sections 4.3, 5.1)\n\n\nWeek 6\n\n\n\n\n\n\n11/3/25\n\n\nDay 10 Part 2: Inference for mean difference from two-sample dependent/paired data (Section 5.2)\n\n\nWeek 6\n\n\n\n\n\n\n11/10/25\n\n\nDay 11: Inference for difference in means from two independent samples and Power (Sections 5.3, 5.4)\n\n\nWeek 7\n\n\n\n\n\n\n11/12/25\n\n\nDay 12: Inference for a single proportion or difference of two (independent) proportions (Sections 8.1-8.2)\n\n\nWeek 7\n\n\n\n\n\n\n11/17/25\n\n\nDay 13: Chi-squared tests (Sections 8.3-8.4)\n\n\nWeek 8\n\n\n\n\n\n\n11/19/25\n\n\nDay 14: Comparing Means with ANOVA (Section 5.5)\n\n\nWeek 8\n\n\n\n\n\n\n11/26/25\n\n\nDay 15: Simple Linear Regression (Sections 6.1-6.2)\n\n\nWeek 9\n\n\n\n\n\n\n12/1/25\n\n\nDay 16: Simple Linear Regression Part 2 (Sections 6.3-6.4)\n\n\nWeek 10\n\n\n\n\n\n\n12/3/25\n\n\nDay 17: Nonparametric tests - Supplemental material\n\n\nWeek 10\n\n\n\n\n\n\n9/30/26\n\n\nDay 1: Intro to R & Rstudio\n\n\nWeek 1\n\n\n\n\n\n\n10/5/26\n\n\nDay 2: Data collection & numerical summaries\n\n\nWeek 2\n\n\n\n\n\n\n10/7/26\n\n\nDay 3 (F23 Day 4): Probability Part 1\n\n\nWeek 2\n\n\n\n\n\n\n10/12/26\n\n\nDay 4 (F23 Day 5): Probability Part 2 - Bayes’ Rule\n\n\nWeek 3\n\n\n\n\n\n\n10/14/26\n\n\nDay 3: Data visualization - Part 2\n\n\nWeek 3\n\n\n\n\n\n\n10/14/26\n\n\nDay 3: Data visualization\n\n\nWeek 3\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nCategories\n\n\n\n\n\n\n\n\n10/20/25\n\n\nDay 6: Random variables and Binomial distribution\n\n\nWeek 4\n\n\n\n\n\n\n10/27/25\n\n\nDay 7: Normal and Poisson distributions\n\n\nWeek 5\n\n\n\n\n\n\n10/29/25\n\n\nDay 8: Variability in estimates\n\n\nWeek 5\n\n\n\n\n\n\n10/29/25\n\n\nDay 9: Confidence intervals (4.2)\n\n\nWeek 5\n\n\n\n\n\n\n11/3/25\n\n\nDay 10 Part 1: Hypothesis testing for mean from one-sample (Sections 4.3, 5.1)\n\n\nWeek 6\n\n\n\n\n\n\n11/3/25\n\n\nDay 10 Part 2: Inference for mean difference from two-sample dependent/paired data (Section 5.2)\n\n\nWeek 6\n\n\n\n\n\n\n11/10/25\n\n\nDay 11: Inference for difference in means from two independent samples and Power (Sections 5.3, 5.4)\n\n\nWeek 7\n\n\n\n\n\n\n11/12/25\n\n\nDay 12: Inference for a single proportion or difference of two (independent) proportions (Sections 8.1-8.2)\n\n\nWeek 7\n\n\n\n\n\n\n11/17/25\n\n\nDay 13: Chi-squared tests (Sections 8.3-8.4)\n\n\nWeek 8\n\n\n\n\n\n\n11/19/25\n\n\nDay 14: Comparing Means with ANOVA (Section 5.5)\n\n\nWeek 8\n\n\n\n\n\n\n11/26/25\n\n\nDay 15: Simple Linear Regression (Sections 6.1-6.2)\n\n\nWeek 9\n\n\n\n\n\n\n12/1/25\n\n\nDay 16: Simple Linear Regression Part 2 (Sections 6.3-6.4)\n\n\nWeek 10\n\n\n\n\n\n\n12/3/25\n\n\nDay 17: Nonparametric tests - Supplemental material\n\n\nWeek 10\n\n\n\n\n\n\n9/30/26\n\n\nDay 1: Intro to R & Rstudio\n\n\nWeek 1\n\n\n\n\n\n\n10/5/26\n\n\nDay 2: Data collection & numerical summaries\n\n\nWeek 2\n\n\n\n\n\n\n10/7/26\n\n\nDay 3 (F23 Day 4): Probability Part 1\n\n\nWeek 2\n\n\n\n\n\n\n10/12/26\n\n\nDay 4 (F23 Day 5): Probability Part 2 - Bayes’ Rule\n\n\nWeek 3\n\n\n\n\n\n\n10/14/26\n\n\nDay 3: Data visualization - Part 2\n\n\nWeek 3\n\n\n\n\n\n\n10/14/26\n\n\nDay 3 (actually Day 5): Data wrangling - extra code\n\n\nWeek 3\n\n\n\n\n\n\n10/14/26\n\n\nDay 3: Data visualization\n\n\nWeek 3\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "homework/HW_1_F26_bsta511.html",
@@ -10162,5 +10162,138 @@
     "title": "Week 3",
     "section": "",
     "text": "Bayes’ Rule (Fall 2023: Day 5)\n\nSection 2.2.5\n\nR Packages (Fall 2023: Day 2)\nDay 4 Practice Problems\n\nSee PP section below.\n\nRStudio & Quarto:\n\nOptions for viewing rendered qmd\nInsert images\nUse LaTeX to insert equations in Quarto documents\n\nInserting equations\nVisual editor: Insert anything\nLaTeX guide\n\n\n\n\n\n\n\n(Fall 2023: Day 3)\nData visualization, exploratory data analysis (EDA), and summarizing categorical data\n\nSections 1.5-1.7 & supplementary material\nBonus:\n\nExamples on dealing with overlapping labels in figures (Slides 65, 66, & 68 from BERD R intro workshop)\nCheck out Ted Laderas’s Better Plots presentation\n\n\nDay 5 Practice Problems\n\nSee PP section below.\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nAs I mentioned in the recording, the various options in more complex figures I usually look up how to implement when I need them. I show them so that you are aware of some of the functionality and options one has in creating figures using the ggplot2 package. At the end of the slides, we cover how to create tables summarizing data, especially categorical data. This part has some very useful code and data wrangling in it."
+  },
+  {
+    "objectID": "slides_code/Day03_bsta511_code_data_wrangling.html",
+    "href": "slides_code/Day03_bsta511_code_data_wrangling.html",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(janitor)"
+  },
+  {
+    "objectID": "slides_code/Day03_bsta511_code_data_wrangling.html#load-dataset-dds.discr-from-package-oibiostat",
+    "href": "slides_code/Day03_bsta511_code_data_wrangling.html#load-dataset-dds.discr-from-package-oibiostat",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "Load dataset dds.discr from package oibiostat",
+    "text": "Load dataset dds.discr from package oibiostat\n\nThe textbook’s datasets are in the R package oibiostat\nIf you haven’t already installed the package oibiostat, then first do so using directions in previous slide.\nLoad the oibiostat package and the dataset dds.discr\n\nthe code below needs to be run every time you restart R or knit an Rmd file\n\n\n\nlibrary(oibiostat)\ndata(\"dds.discr\")\n\n\nAfter loading the dataset dds.discr using data(\"dds.discr\"), you will see dds.discr in the Data list of the Environment window."
+  },
+  {
+    "objectID": "slides_code/Day03_bsta511_code_data_wrangling.html#getting-to-know-the-dataset",
+    "href": "slides_code/Day03_bsta511_code_data_wrangling.html#getting-to-know-the-dataset",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "Getting to know the dataset",
+    "text": "Getting to know the dataset\n\ndim(dds.discr)\n\n[1] 1000    6\n\nnames(dds.discr)\n\n[1] \"id\"           \"age.cohort\"   \"age\"          \"gender\"       \"expenditures\"\n[6] \"ethnicity\"   \n\n# How many unique id's are there?\nlength(unique(dds.discr$id)) \n\n[1] 1000\n\nn_distinct(dds.discr$id)\n\n[1] 1000"
+  },
+  {
+    "objectID": "slides_code/Day03_bsta511_code_data_wrangling.html#filter-rows-that-satisfy-specified-conditions",
+    "href": "slides_code/Day03_bsta511_code_data_wrangling.html#filter-rows-that-satisfy-specified-conditions",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "filter() rows that satisfy specified conditions",
+    "text": "filter() rows that satisfy specified conditions\n\nfilter() to select rows\nfilter data based on rows\n\nmath: &gt;, &lt;, &gt;=, &lt;=\ndouble = for “is equal to”: ==\n!= (not equal)\n& (and)\n| (or)\nis.na() to filter based on missing values\n%in% to filter based on group membership\n! in front negates the statement, as in\n\n!is.na(age)\n!(ethnicity %in% c(\"Asian\",\"Black\"))\n\n\n\n# Note that I am saving the new smaller dataset below \n\ndds.discr_over90 &lt;- dds.discr |&gt; filter(age &gt; 90)   \ndds.discr_over90\n\n# A tibble: 4 × 6\n     id age.cohort   age gender expenditures ethnicity\n  &lt;int&gt; &lt;fct&gt;      &lt;int&gt; &lt;fct&gt;         &lt;int&gt; &lt;fct&gt;    \n1 19250 51+           94 Female        60871 Hispanic \n2 46726 51+           95 Male          55187 Hispanic \n3 55056 51+           95 Female        54680 Black    \n4 87737 51+           91 Male          54481 Asian    \n\n\n\n\nfilter() practice\nWhat do these commands do? Try them out:\n\nNote that in the examples below the subsetted datasets are not being saved\n\n\ndds.discr |&gt; filter(age &lt; 5)\ndds.discr |&gt; filter(age/expenditures &lt; 0.5)    # can do math within filter command\ndds.discr |&gt; filter((age &lt; 15) | (age &gt; 50))\n\n# simultaneously filter on multiple variables\ndds.discr |&gt; filter(age &lt; 20, expenditures &gt; 1000, gender == \"Male\") \n\ndds.discr |&gt; filter(id == 10210) # note the use of == instead of just =\ndds.discr |&gt; filter(gender == \"Female\")\ndds.discr |&gt; filter(!(age.cohort == \"51+\"))\ndds.discr |&gt; filter(age.cohort %in% c(\"0-5\", \"6-12\"))\n\ndds.discr |&gt; filter(is.na(age))\ndds.discr |&gt; filter(!is.na(age))"
+  },
+  {
+    "objectID": "slides_code/Day03_bsta511_code_data_wrangling.html#subset-by-columns",
+    "href": "slides_code/Day03_bsta511_code_data_wrangling.html#subset-by-columns",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "Subset by columns",
+    "text": "Subset by columns\n\nselect() to choose columns\n\nselect columns (variables)\nno quotes needed around variable names\ncan be used to rearrange columns\nuses special syntax that is flexible and has many options\n\n\ndds.discr |&gt; select(id, expenditures, ethnicity)\n\n# A tibble: 1,000 × 3\n      id expenditures ethnicity         \n   &lt;int&gt;        &lt;int&gt; &lt;fct&gt;             \n 1 10210         2113 White not Hispanic\n 2 10409        41924 White not Hispanic\n 3 10486         1454 Hispanic          \n 4 10538         6400 Hispanic          \n 5 10568         4412 White not Hispanic\n 6 10690         4566 Hispanic          \n 7 10711         3915 White not Hispanic\n 8 10778         3873 Black             \n 9 10820         5021 White not Hispanic\n10 10823         2887 Hispanic          \n# ℹ 990 more rows\n\n\n\n\nColumn selection syntax options\nThere are many ways to select a set of variable names (columns):\n\nvar1:var20: all columns from var1 to var20\nRemoving columns\n\n-var1: remove the columnvar1\n-(var1:var20): remove all columns from var1 to var20\n\n\n\n\nselect() practice\nWhich columns are selected & in what order using these commands?\nFirst guess and then try them out.\n\ndds.discr |&gt; select(id:gender)\n\ndds.discr |&gt; select(-age.cohort,-gender)\ndds.discr |&gt; select(-(id:gender))"
+  },
+  {
+    "objectID": "slides_code/Day03_bsta511_code_data_wrangling.html#mutate",
+    "href": "slides_code/Day03_bsta511_code_data_wrangling.html#mutate",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "mutate()",
+    "text": "mutate()\nUse mutate() to add new columns to a tibble * Many options in how to define new column of data - Make sure to save the new dataset with the additional variables with assignment operator &lt;- - Below I save it with the same dataset name (overwrite it) - since I am adding data and not removing data. - When removing data, I usually call the modified dataset by a new name so that I don’t lose the removed data.\n\n# use = to define new a variable within mutate (not &lt;- or ==) \ndds.discr &lt;- dds.discr |&gt; \n  mutate(\n    log_expenditures = log(expenditures),\n    expend_per_yearage = expenditures / age)   \n\n\ndds.discr |&gt; select(id, age, expenditures, log_expenditures, expend_per_yearage)\n\n# A tibble: 1,000 × 5\n      id   age expenditures log_expenditures expend_per_yearage\n   &lt;int&gt; &lt;int&gt;        &lt;int&gt;            &lt;dbl&gt;              &lt;dbl&gt;\n 1 10210    17         2113             7.66               124.\n 2 10409    37        41924            10.6               1133.\n 3 10486     3         1454             7.28               485.\n 4 10538    19         6400             8.76               337.\n 5 10568    13         4412             8.39               339.\n 6 10690    15         4566             8.43               304.\n 7 10711    13         3915             8.27               301.\n 8 10778    17         3873             8.26               228.\n 9 10820    14         5021             8.52               359.\n10 10823    13         2887             7.97               222.\n# ℹ 990 more rows\n\n\n\nmutate() practice\nWhat do the following commands do?\nFirst guess and then try them out.\n\ndds.discr &lt;- dds.discr |&gt; mutate(age_young = (age &lt; 18))\ndds.discr &lt;- dds.discr |&gt; mutate(male = (gender == \"Male\"))\ndds.discr &lt;- dds.discr |&gt; mutate(male2 = 1 * (gender == \"Male\"))\n\n# look at the modified dataset to see what changes were made:\nglimpse(dds.discr)\nsummary(dds.discr)"
+  },
+  {
+    "objectID": "slides/Day03_bsta511_data_wrangling.html#load-dataset-dds.discr-from-package-oibiostat",
+    "href": "slides/Day03_bsta511_data_wrangling.html#load-dataset-dds.discr-from-package-oibiostat",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "Load dataset dds.discr from package oibiostat",
+    "text": "Load dataset dds.discr from package oibiostat\n\nThe textbook’s datasets are in the R package oibiostat\nIf you haven’t already installed the package oibiostat, then first do so using directions in previous slide.\nLoad the oibiostat package and the dataset dds.discr\n\nthe code below needs to be run every time you restart R or knit an Rmd file\n\n\n\nlibrary(oibiostat)\ndata(\"dds.discr\")\n\n\nAfter loading the dataset dds.discr using data(\"dds.discr\"), you will see dds.discr in the Data list of the Environment window."
+  },
+  {
+    "objectID": "slides/Day03_bsta511_data_wrangling.html#getting-to-know-the-dataset",
+    "href": "slides/Day03_bsta511_data_wrangling.html#getting-to-know-the-dataset",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "Getting to know the dataset",
+    "text": "Getting to know the dataset\n\ndim(dds.discr)\n\n[1] 1000    6\n\nnames(dds.discr)\n\n[1] \"id\"           \"age.cohort\"   \"age\"          \"gender\"       \"expenditures\"\n[6] \"ethnicity\"   \n\n# How many unique id's are there?\nlength(unique(dds.discr$id)) \n\n[1] 1000\n\nn_distinct(dds.discr$id)\n\n[1] 1000"
+  },
+  {
+    "objectID": "slides/Day03_bsta511_data_wrangling.html#filter-rows-that-satisfy-specified-conditions",
+    "href": "slides/Day03_bsta511_data_wrangling.html#filter-rows-that-satisfy-specified-conditions",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "filter() rows that satisfy specified conditions",
+    "text": "filter() rows that satisfy specified conditions\nfilter() to select rows\nfilter data based on rows\n\nmath: &gt;, &lt;, &gt;=, &lt;=\ndouble = for “is equal to”: ==\n!= (not equal)\n& (and)\n| (or)\nis.na() to filter based on missing values\n%in% to filter based on group membership\n! in front negates the statement, as in\n\n!is.na(age)\n!(ethnicity %in% c(\"Asian\",\"Black\"))\n\n\n\n# Note that I am saving the new smaller dataset below \n\ndds.discr_over90 &lt;- dds.discr |&gt; filter(age &gt; 90)   \ndds.discr_over90\n\n# A tibble: 4 × 6\n     id age.cohort   age gender expenditures ethnicity\n  &lt;int&gt; &lt;fct&gt;      &lt;int&gt; &lt;fct&gt;         &lt;int&gt; &lt;fct&gt;    \n1 19250 51+           94 Female        60871 Hispanic \n2 46726 51+           95 Male          55187 Hispanic \n3 55056 51+           95 Female        54680 Black    \n4 87737 51+           91 Male          54481 Asian    \n\n\nfilter() practice\nWhat do these commands do? Try them out:\n\nNote that in the examples below the subsetted datasets are not being saved\n\n\ndds.discr |&gt; filter(age &lt; 5)\ndds.discr |&gt; filter(age/expenditures &lt; 0.5)    # can do math within filter command\ndds.discr |&gt; filter((age &lt; 15) | (age &gt; 50))\n\n# simultaneously filter on multiple variables\ndds.discr |&gt; filter(age &lt; 20, expenditures &gt; 1000, gender == \"Male\") \n\ndds.discr |&gt; filter(id == 10210) # note the use of == instead of just =\ndds.discr |&gt; filter(gender == \"Female\")\ndds.discr |&gt; filter(!(age.cohort == \"51+\"))\ndds.discr |&gt; filter(age.cohort %in% c(\"0-5\", \"6-12\"))\n\ndds.discr |&gt; filter(is.na(age))\ndds.discr |&gt; filter(!is.na(age))"
+  },
+  {
+    "objectID": "slides/Day03_bsta511_data_wrangling.html#subset-by-columns",
+    "href": "slides/Day03_bsta511_data_wrangling.html#subset-by-columns",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "Subset by columns",
+    "text": "Subset by columns\nselect() to choose columns\n\nselect columns (variables)\nno quotes needed around variable names\ncan be used to rearrange columns\nuses special syntax that is flexible and has many options\n\n\ndds.discr |&gt; select(id, expenditures, ethnicity)\n\n# A tibble: 1,000 × 3\n      id expenditures ethnicity         \n   &lt;int&gt;        &lt;int&gt; &lt;fct&gt;             \n 1 10210         2113 White not Hispanic\n 2 10409        41924 White not Hispanic\n 3 10486         1454 Hispanic          \n 4 10538         6400 Hispanic          \n 5 10568         4412 White not Hispanic\n 6 10690         4566 Hispanic          \n 7 10711         3915 White not Hispanic\n 8 10778         3873 Black             \n 9 10820         5021 White not Hispanic\n10 10823         2887 Hispanic          \n# ℹ 990 more rows\n\n\nColumn selection syntax options\nThere are many ways to select a set of variable names (columns):\n\nvar1:var20: all columns from var1 to var20\nRemoving columns\n\n-var1: remove the columnvar1\n-(var1:var20): remove all columns from var1 to var20\n\n\nselect() practice\nWhich columns are selected & in what order using these commands?\nFirst guess and then try them out.\n\ndds.discr |&gt; select(id:gender)\n\ndds.discr |&gt; select(-age.cohort,-gender)\ndds.discr |&gt; select(-(id:gender))"
+  },
+  {
+    "objectID": "slides/Day03_bsta511_data_wrangling.html#mutate",
+    "href": "slides/Day03_bsta511_data_wrangling.html#mutate",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "mutate()",
+    "text": "mutate()\nUse mutate() to add new columns to a tibble\n\nMany options in how to define new column of data\nMake sure to save the new dataset with the additional variables with assignment operator &lt;-\n\nBelow I save it with the same dataset name (overwrite it)\nsince I am adding data and not removing data.\nWhen removing data, I usually call the modified dataset by a new name so that I don’t lose the removed data.\n\n\n\n# use = to define new a variable within mutate (not &lt;- or ==) \ndds.discr &lt;- dds.discr |&gt; \n  mutate(\n    log_expenditures = log(expenditures),\n    expend_per_yearage = expenditures / age)   \n\n\ndds.discr |&gt; select(id, age, expenditures, log_expenditures, expend_per_yearage)\n\n# A tibble: 1,000 × 5\n      id   age expenditures log_expenditures expend_per_yearage\n   &lt;int&gt; &lt;int&gt;        &lt;int&gt;            &lt;dbl&gt;              &lt;dbl&gt;\n 1 10210    17         2113             7.66               124.\n 2 10409    37        41924            10.6               1133.\n 3 10486     3         1454             7.28               485.\n 4 10538    19         6400             8.76               337.\n 5 10568    13         4412             8.39               339.\n 6 10690    15         4566             8.43               304.\n 7 10711    13         3915             8.27               301.\n 8 10778    17         3873             8.26               228.\n 9 10820    14         5021             8.52               359.\n10 10823    13         2887             7.97               222.\n# ℹ 990 more rows"
+  },
+  {
+    "objectID": "slides/Day03_bsta511_data_wrangling.html#case-study-discrimination-in-developmental-disability-support-1.7.1-1",
+    "href": "slides/Day03_bsta511_data_wrangling.html#case-study-discrimination-in-developmental-disability-support-1.7.1-1",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "Case study: discrimination in developmental disability support (1.7.1)",
+    "text": "Case study: discrimination in developmental disability support (1.7.1)\n\nIn the US, individuals with developmental disabilities typically receive services and support from state governments.\n\nCalifornia allocates funds to developmentally disabled residents through the Department of Developmental Services (DDS)\nRecipients of DDS funds are referred to as “consumers.”\n\nDataset dds.discr\n\nsample of 1,000 DDS consumers (out of a total of ~ 250,000)\nage, gender, race/ethnicity, and DDS annual financial support per consumer\n\nPrevious research\n\nResearchers examined expenditures on consumers by ethnicity\nFound that the mean annual expenditures on Hispanics was less than that on White non-Hispanics.\n\nResult: an allegation of ethnic discrimination was brought against the California DDS.\nQuestion: Are the data sufficient evidence of ethnic discrimination?\nSee Section 1.7.1 for more details"
+  },
+  {
+    "objectID": "slides/Day03_bsta511_data_wrangling.html#filter-to-select-rows",
+    "href": "slides/Day03_bsta511_data_wrangling.html#filter-to-select-rows",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "filter() to select rows",
+    "text": "filter() to select rows\nfilter data based on rows\n\nmath: &gt;, &lt;, &gt;=, &lt;=\ndouble = for “is equal to”: ==\n!= (not equal)\n& (and)\n| (or)\nis.na() to filter based on missing values\n%in% to filter based on group membership\n! in front negates the statement, as in\n\n!is.na(age)\n!(ethnicity %in% c(\"Asian\",\"Black\"))\n\n\n\n# Note that I am saving the new smaller dataset below \n\ndds.discr_over90 &lt;- dds.discr |&gt; filter(age &gt; 90)   \ndds.discr_over90\n\n# A tibble: 4 × 6\n     id age.cohort   age gender expenditures ethnicity\n  &lt;int&gt; &lt;fct&gt;      &lt;int&gt; &lt;fct&gt;         &lt;int&gt; &lt;fct&gt;    \n1 19250 51+           94 Female        60871 Hispanic \n2 46726 51+           95 Male          55187 Hispanic \n3 55056 51+           95 Female        54680 Black    \n4 87737 51+           91 Male          54481 Asian"
+  },
+  {
+    "objectID": "slides/Day03_bsta511_data_wrangling.html#filter-practice",
+    "href": "slides/Day03_bsta511_data_wrangling.html#filter-practice",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "filter() practice",
+    "text": "filter() practice\nWhat do these commands do? Try them out:\n\nNote that in the examples below the subsetted datasets are not being saved\n\n\ndds.discr |&gt; filter(age &lt; 5)\ndds.discr |&gt; filter(age/expenditures &lt; 0.5)    # can do math within filter command\ndds.discr |&gt; filter((age &lt; 15) | (age &gt; 50))\n\n# simultaneously filter on multiple variables\ndds.discr |&gt; filter(age &lt; 20, expenditures &gt; 1000, gender == \"Male\") \n\ndds.discr |&gt; filter(id == 10210) # note the use of == instead of just =\ndds.discr |&gt; filter(gender == \"Female\")\ndds.discr |&gt; filter(!(age.cohort == \"51+\"))\ndds.discr |&gt; filter(age.cohort %in% c(\"0-5\", \"6-12\"))\n\ndds.discr |&gt; filter(is.na(age))\ndds.discr |&gt; filter(!is.na(age))"
+  },
+  {
+    "objectID": "slides/Day03_bsta511_data_wrangling.html#select-to-choose-columns",
+    "href": "slides/Day03_bsta511_data_wrangling.html#select-to-choose-columns",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "select() to choose columns",
+    "text": "select() to choose columns\n\nselect columns (variables)\nno quotes needed around variable names\ncan be used to rearrange columns\nuses special syntax that is flexible and has many options\n\n\ndds.discr |&gt; select(id, expenditures, ethnicity)\n\n# A tibble: 1,000 × 3\n      id expenditures ethnicity         \n   &lt;int&gt;        &lt;int&gt; &lt;fct&gt;             \n 1 10210         2113 White not Hispanic\n 2 10409        41924 White not Hispanic\n 3 10486         1454 Hispanic          \n 4 10538         6400 Hispanic          \n 5 10568         4412 White not Hispanic\n 6 10690         4566 Hispanic          \n 7 10711         3915 White not Hispanic\n 8 10778         3873 Black             \n 9 10820         5021 White not Hispanic\n10 10823         2887 Hispanic          \n# ℹ 990 more rows"
+  },
+  {
+    "objectID": "slides/Day03_bsta511_data_wrangling.html#column-selection-syntax-options",
+    "href": "slides/Day03_bsta511_data_wrangling.html#column-selection-syntax-options",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "Column selection syntax options",
+    "text": "Column selection syntax options\nThere are many ways to select a set of variable names (columns):\n\nvar1:var20: all columns from var1 to var20\nRemoving columns\n\n-var1: remove the columnvar1\n-(var1:var20): remove all columns from var1 to var20"
+  },
+  {
+    "objectID": "slides/Day03_bsta511_data_wrangling.html#select-practice",
+    "href": "slides/Day03_bsta511_data_wrangling.html#select-practice",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "select() practice",
+    "text": "select() practice\nWhich columns are selected & in what order using these commands?\nFirst guess and then try them out.\n\ndds.discr |&gt; select(id:gender)\n\ndds.discr |&gt; select(-age.cohort,-gender)\ndds.discr |&gt; select(-(id:gender))"
+  },
+  {
+    "objectID": "slides/Day03_bsta511_data_wrangling.html#mutate-practice",
+    "href": "slides/Day03_bsta511_data_wrangling.html#mutate-practice",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "mutate() practice",
+    "text": "mutate() practice\nWhat do the following commands do?\nFirst guess and then try them out.\n\ndds.discr &lt;- dds.discr |&gt; mutate(age_young = (age &lt; 18))\ndds.discr &lt;- dds.discr |&gt; mutate(male = (gender == \"Male\"))\ndds.discr &lt;- dds.discr |&gt; mutate(male2 = 1 * (gender == \"Male\"))\n\n# look at the modified dataset to see what changes were made:\nglimpse(dds.discr)\nsummary(dds.discr)"
+  },
+  {
+    "objectID": "slides/Day03_bsta511_data_wrangling.html#summary-of-data-wrangling-commands",
+    "href": "slides/Day03_bsta511_data_wrangling.html#summary-of-data-wrangling-commands",
+    "title": "Day 3 (actually Day 5): Data wrangling - extra code",
+    "section": "Summary of data wrangling commands",
+    "text": "Summary of data wrangling commands\n\n\n\n\n\n\n\ncommand\npurpose\n\n\n\n\n|&gt;\njoin (pipe) together commands\n\n\nfilter()\nsubset rows\n\n\nselect()\nselect or rearrange columns\n\n\nmutate()\ncreate new columns\n\n\ntabyl()\nsummarize categorical data\n\n\nsummarize()\nsummarize data; for both categorical and numerical data\n\n\ngroup_by()\ngroup data by a categorical variable"
   }
 ]

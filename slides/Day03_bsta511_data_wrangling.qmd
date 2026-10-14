@@ -1,0 +1,260 @@
+---
+title: "Day 3 (actually Day 5): Data wrangling - extra code"
+subtitle: "BSTA 511/611 Fall 2026 Day 5, OHSU"
+pagetitle: "Day 3 BSTA 511/611"
+author: "Meike Niederhausen, PhD"
+date: "10/14/2026"
+categories: ["Week 3"]
+format: 
+  revealjs:
+      incremental: false
+      scrollable: true
+      chalkboard: true
+      theme: sky
+      width:  1100 #1200 # 1050 #default 1050; ipad 3:4, 1600
+      height: 825 #900 #800 #default 700; 788 for 3:4, 1200
+      slide-number: true
+      html-math-method: mathjax
+  # html:
+  #   link-external-newwindow: true
+  #   toc: true
+execute:
+  echo: true
+# editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(janitor)
+
+# terminal: for icons
+# quarto install extension quarto-ext/fontawesome
+
+# set ggplot theme for slides 
+theme_set(theme_bw(base_size = 22))
+# theme_update(text = element_text(size=20))  # set global text size for ggplots
+```
+
+
+# Goals for today
+
+More data wrangling examples and tools
+
+
+* Subsetting data
+  * `filter`ing rows
+  * `select`ing columns
+
+* Creating new variables
+  * `mutate`
+
+
+# Case study: discrimination in developmental disability support (1.7.1)
+
+## Case study: discrimination in developmental disability support (1.7.1)
+
+* In the US, individuals with developmental disabilities typically receive services and support from state governments. 
+  * California allocates funds to developmentally disabled residents through the Department of Developmental Services (DDS)
+  * Recipients of DDS funds are referred to as "consumers." 
+* Dataset `dds.discr` 
+  * sample of 1,000 DDS consumers (out of a total of ~ 250,000)
+  * <span style="color:green">age, gender, race/ethnicity, and DDS annual financial support per consumer</span>
+* __Previous research__
+  * Researchers examined expenditures on consumers by ethnicity
+  * Found that the mean annual expenditures on Hispanics was less than that on White non-Hispanics. 
+* Result: an allegation of ethnic discrimination was brought against the California DDS.
+* __Question: Are the data sufficient evidence of ethnic discrimination?__
+
+* See Section 1.7.1 for more details
+
+
+## Load dataset `dds.discr` from package `oibiostat`
+
+* The textbook's datasets are in the R package `oibiostat`
+* If you haven't already installed the package `oibiostat`, then first do so using directions in previous slide.
+
+* Load the `oibiostat` package and the dataset `dds.discr`
+  * <span style="color:darkorange">the code below needs to be run _every time_ you restart R or knit an Rmd file</span>
+```{r}
+library(oibiostat)
+data("dds.discr")
+```
+
+* After loading the dataset `dds.discr` using `data("dds.discr")`, you will see `dds.discr` in the Data list of the Environment window.
+
+
+
+## Getting to know the dataset
+
+```{r}
+dim(dds.discr)
+names(dds.discr)
+# How many unique id's are there?
+length(unique(dds.discr$id)) 
+n_distinct(dds.discr$id)
+```
+
+
+
+# Subsetting data
+
+# `filter()` rows that satisfy specified conditions
+
+## `filter()` to select rows
+
+filter data based on rows
+
+- math: `>`,  `<`,  `>=`,  `<=`
+-  double = for "is equal to":  `==`
+- != (not equal)
+-  `&` (and) 
+-  `|` (or)
+
+
+- `is.na()` to filter based on missing values
+- `%in%` to filter based on group membership
+- `!` in front negates the statement, as in 
+    + `!is.na(age)` 
+    + `!(ethnicity %in% c("Asian","Black"))`
+
+
+
+```{r}
+# Note that I am saving the new smaller dataset below 
+
+dds.discr_over90 <- dds.discr |> filter(age > 90)   
+dds.discr_over90
+```
+
+
+## `filter()` practice
+
+What do these commands do? Try them out:
+
+-   *Note that in the examples below the subsetted datasets are not being saved*
+
+```{r}
+#| eval: false
+dds.discr |> filter(age < 5)
+dds.discr |> filter(age/expenditures < 0.5)    # can do math within filter command
+dds.discr |> filter((age < 15) | (age > 50))
+
+# simultaneously filter on multiple variables
+dds.discr |> filter(age < 20, expenditures > 1000, gender == "Male") 
+
+dds.discr |> filter(id == 10210) # note the use of == instead of just =
+dds.discr |> filter(gender == "Female")
+dds.discr |> filter(!(age.cohort == "51+"))
+dds.discr |> filter(age.cohort %in% c("0-5", "6-12"))
+
+dds.discr |> filter(is.na(age))
+dds.discr |> filter(!is.na(age))
+```
+
+
+# Subset by columns
+
+## `select()` to choose columns
+
+- select columns (variables)
+- no quotes needed around variable names
+- can be used to rearrange columns
+- uses special syntax that is flexible and has many options
+
+```{r}
+dds.discr |> select(id, expenditures, ethnicity)
+```
+
+## Column selection syntax options
+
+There are many ways to select a set of variable names (columns):
+
+- `var1:var20`: all columns from `var1` to `var20`
+
+- __Removing columns__
+    + `-var1`: remove the column`var1`
+    + `-(var1:var20)`: remove all columns from `var1` to `var20`
+
+
+
+## `select()` practice
+
+Which columns are selected & in what order using these commands?  
+First guess and then try them out.
+
+```{r}
+#| eval: false
+dds.discr |> select(id:gender)
+
+dds.discr |> select(-age.cohort,-gender)
+dds.discr |> select(-(id:gender))
+
+```
+
+
+
+# Make new variables
+
+## `mutate()`
+
+Use `mutate()` to add new columns to a tibble
+
+* Many options in how to define new column of data
+-   Make sure to save the new dataset with the additional variables with assignment operator `<-`
+    -   Below I save it with the same dataset name (overwrite it) 
+    -   since I am adding data and not removing data.
+    -   When removing data, I usually call the modified dataset by a new name so that I don't lose the removed data.
+    
+
+```{r}
+# use = to define new a variable within mutate (not <- or ==) 
+dds.discr <- dds.discr |> 
+  mutate(
+    log_expenditures = log(expenditures),
+    expend_per_yearage = expenditures / age)   
+
+
+dds.discr |> select(id, age, expenditures, log_expenditures, expend_per_yearage)
+```
+
+
+## `mutate()` practice 
+
+What do the following commands do?  
+First guess and then try them out.
+
+```{r}
+#| eval: false
+dds.discr <- dds.discr |> mutate(age_young = (age < 18))
+dds.discr <- dds.discr |> mutate(male = (gender == "Male"))
+dds.discr <- dds.discr |> mutate(male2 = 1 * (gender == "Male"))
+
+# look at the modified dataset to see what changes were made:
+glimpse(dds.discr)
+summary(dds.discr)
+```
+
+
+
+## Summary of data wrangling commands
+
+command | purpose
+--|-
+ `|>` | join (pipe) together commands
+`filter()` | subset rows
+`select()` | select or rearrange columns
+`mutate()` | create new columns
+`tabyl()` | summarize categorical data
+`summarize()` | summarize data; for both categorical and numerical data
+`group_by()` | group data by a categorical variable
+
+
+

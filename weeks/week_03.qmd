@@ -67,6 +67,7 @@ As I mentioned in the recording, the various options in more complex figures I u
 |  | \* R packages | [Day 2: slides 47-54](https://niederhausen.github.io/BSTA_511_F26/slides/Day02_bsta511.html#/r-packages---day-4-in-f26) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day02_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day02_bsta511_md.qmd#r-packages---day-4-in-f26) |  | [Day 2 Part 4](https://echo360.org/lesson/ceb44e22-dde1-472b-b8a9-6dfd93212054/classroom) | 30 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day02_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day02_bsta511_code.qmd#r-packages---day-4-in-f26) |
 | []{.day-divider} |  |  |  |  |  |  |  |  |  |
 | 5 | \*\* Exploratory Data Analysis | [Day 3: slides 1-59](../slides/Day03_bsta511.qmd) | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511.pdf) | [{{< iconify streamline web size=20px >}}](../slides_md/Day03_bsta511_md.qmd) |  | [Day 3](https://echo360.org/lesson/05b9c600-887b-41a3-9fb0-3eecfc6de8eb/classroom) | 1 hr 18 min | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day03_bsta511_code.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code.qmd) |
+|  | Extra data wrangling code | [Day 3 data wrangling](../slides/Day03_bsta511_data_wrangling.qmd) |  |  |  |  |  | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day03_bsta511_code_data_wrangling.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code_data_wrangling.qmd) |
 
 : {.striped .hover tbl-colwidths="\[3, 10, 8, 5, 5, 5, 6, 6, 5, 5\]"}
 
@@ -77,7 +78,6 @@ As I mentioned in the recording, the various options in more complex figures I u
 \*\* Starting on [slide 45](../slides/Day03_bsta511.html#/frequency-tables-count) a "pipe" `|>` is used to string together commands. [Slide 46](../slides/Day03_bsta511.html#/how-to-use-the-pipe) explains how the "pipe" `|>` works. The slides in the recordings use the classic "pipe" `%>%`. The newer "pipe" `|>` was recently changed to be the default pipe in RStudio and so I updated the class materials (other than the recordings) to reflect that. Both versions of the "pipe" `|>` and `%>%` work. If you want to learn more about the differences, check out this [slide](https://ohsu-octri-berd.github.io/R_Intro_BERD_2026_04/slides_R_berd_2026.html#/two-pipes-in-r-vs) from an Intro to R workshop I gave.
 
 
-<!-- |  | \*\*Optional: Extra data wrangling code |  | [{{< iconify bi file-earmark-pdf-fill size=20px >}}](../slides_pdf/Day03_bsta511_part3_data_wrangling.pdf) |  |  |  |  | [{{< iconify simple-icons:quarto >}}](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) | [{{< iconify ph file-html-light size=25px >}}](../slides_code/Day03_bsta511_code_part3_data_wrangling.qmd) | -->
 
 
 <!-- \*\* These are slides with extra data wrangling code, and I refer to some of the slides in the homework assignment. You are welcome to go through all of the slides to learn some data wrangling techniques, *but are not required to do so*. We will be covering topics from these slides as needed throughout the quarter. -->
@@ -157,7 +157,7 @@ During class you will be working in groups discussing the following:
 ## Homework
 
 -   [HW 2](../homework/HW_2_F26_bsta511.qmd) covers Days 4-5 and is due on Sat, 10/17
-    -   See [extra data wrangling code](../slides_pdf/Day03_bsta511_part3_data_wrangling.pdf) (both pdf and code) in table above with slides & recording links.
+    -   See [extra data wrangling code](../slides_code/Day03_bsta511_code_data_wrangling.qmd) in table above with slides & recording links.
 
 
 
