@@ -91,6 +91,7 @@ As I mentioned in the recording, the various options in more complex figures I u
 
 -   Textbook: 
     -   2.18 *Predisposition for thrombosis*
+        -   Solutions to 2.18: [html](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/464922), [qmd](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/464923) (added after class; link to file on Brightspace)
 
         <!-- - Solution typed up using LaTeX: [qmd](https://sakai.ohsu.edu/access/content/group/BSTA-511-1-AA-F25/misc/PP_Day4.qmd), [html](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/464923) -->
 
@@ -112,6 +113,7 @@ During class you will be working in groups discussing the following:
     -   R packages: *Please let me know if you had any difficulty installing packages.*
 -   Bayes' Rule (**Fall 2023: Day 5**)
     -   Example 2.10 on pg 6 of slides
+        -   [Solution to Example 2.10](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/466426) (added after class; link to file on Brightspace)
 -   From HW 2
     -   Non-book exercise (*this is an old exam question*)
     -   Book exercises
