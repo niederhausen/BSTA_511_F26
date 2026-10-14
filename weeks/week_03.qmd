@@ -125,8 +125,8 @@ During class you will be working in groups discussing the following:
 ### Day 05
 
 -   Practice Problems listed above
--   [Slide 30](../slides/Day03_bsta511.html#/side-by-side-boxplots-with-data-points): Can distribution shape and sample size be determined from a boxplot?
--   [Slide 58](../slides/Day03_bsta511.html#/case-study-discrimination-in-developmental-disability-support-1.7.1): Is there evidence of ethnicity (Hispanic vs. White non-Hispanic) discrimination in DDS expenditures? Why or why not?
+-   [Slide 28](../slides/Day03_bsta511.html#/side-by-side-boxplots): Can distribution shape and sample size be determined from a boxplot?
+-   [Slide 57](../slides/Day03_bsta511.html#/case-study-discrimination-in-developmental-disability-support-1.7.1): Is there evidence of ethnicity (Hispanic vs. White non-Hispanic) discrimination in DDS expenditures? Why or why not?
 -   From HW 2
     -   R1 & R2: NHANES - parts 1 & 2
 
