@@ -166,31 +166,31 @@ ggplot(data = dds.discr_Hips_WhnH,
 ```
 
 
-## Code for Visualize in more detail: ethnicity, age, and expenditures
+## fyi: Code for Visualize in more detail: ethnicity, age, and expenditures
 
 ::: {style="font-size: 80%;"}
 Plot on previous slide
 :::
 ```{r}
 #| eval: false
-#| code-line-numbers: "1-2,5,9"
+#| code-line-numbers: "1-3,6,10"
 dds.discr_Hips_WhnH <- dds.discr |>  
+  # restrict to just "White not Hispanic" and "Hispanic":
   filter(ethnicity == "White not Hispanic" | ethnicity == "Hispanic" ) |> 
   droplevels()   # remove empty factor levels
 
-ggplot(data = dds.discr_Hips_WhnH,   
+ggplot(data = dds.discr_Hips_WhnH,   # using filtered dataset created above
        aes(x = expenditures,
            y = age.cohort)) + 
   geom_boxplot(color="darkgrey") + 
-  facet_grid(rows = "ethnicity") +   
+  facet_grid(rows = "ethnicity") +   # create panels for ethnicity
   labs(x = "Annual Expenditures ($)",
        y = "Race and ethnicity") +
   geom_jitter(     
     aes(color = ethnicity),      
     alpha = 0.3,      
     show.legend = FALSE,      
-    position = position_jitter(     
-      height = 0.4))      
+    position = position_jitter(height = 0.4))      
 ```
 
 
@@ -220,6 +220,14 @@ mean_expend
 
 ::: columns
 ::: {.column width="40%"}
+
+*Note: this code uses the function `pivot_wider()` to transform a "long" dataset into a "wide" format.*  
+*We have not covered `pivot_wider()` yet and you will not need this on the upcoming homework assignment.*
+
+
+:::
+
+::: {.column width="60%"}
 ```{r}
 #| code-line-numbers: "3-5"
 mean_expend_wide <- 
@@ -228,9 +236,6 @@ mean_expend_wide <-
     names_from = ethnicity,
     values_from = ave)
 ```
-:::
-
-::: {.column width="60%"}
 ```{r}
 mean_expend_wide
 ```
@@ -264,69 +269,4 @@ __Question__: Are the data sufficient evidence of ethnic discrimination in DDS e
 
 ![](/img_slides/ddsConfounding.png){fig-align="center"}
 
-# The tidyverse
-
-![[Artwork by @allison_horst](https://allisonhorst.com/)](/img_slides/tidyverse_celestial.png){fig-align="center"}
-
-
-## Tools for wrangling data
-
-::: {style="font-size: 70%;"}
-- `tidyverse` functions
-    + `tidyverse` is a [suite of packages](https://www.tidyverse.org/packages/) that implement `tidy` methods for data importing, cleaning, wrangling, and visualizing
-    + load the `tidyverse` packages by running the code `library(tidyverse)` 
-        * Don't forget to first install `tidyverse`!
-
-- Functions to easily work with rows and columns, such as
-    + subset rows/columns
-    + add new rows/columns
-    + join together different data sets
-    + make data _long_ or _wide_
-
-- There are often many steps to tidy data
-    + we string together commands 
-    + to be performed sequentially 
-    + using pipes `|>`
-:::
-
-
-## Summary of data wrangling so far
-
-::: {style="font-size: 80%;"}
-* The pipe `|>` to string together commands in sequence
-* `mutate()` to add a new variable to a dataset
-* `select()` to select columns (or deselect columns with -variable)
-* `filter()` to select specific rows
-* `pivot_wider()` to reshape a dataset from a long to a wide format
-
-__Summarizing data__
-
-* `tabyl()` from `janitor` package to make frequency tables of categorical variables
-* `summarize()` to get summary statistics of variables
-* `group_by()` to group data by categorical variables before finding summaries
-:::
-
-## What packages are included in the `tidyverse`? {.smaller}
-
-::: columns
-::: {.column width="35%"}
-__Core packages__  
-These automatically load when loading the tidyverse package
-
-![[https://www.tidyverse.org/](https://www.tidyverse.org/)](/img_slides/tidyverse_core.png){fig-align="center"}
-:::
-
-::: {.column width="65%"}
-
-List of all packages:
-
-```{r}
-tidyverse_packages(include_self = TRUE)
-```
-
-* Packages not a part of the core get installed with the tidyverse suite, but need to be loaded separately.  
-* See [https://www.tidyverse.org/packages/](https://www.tidyverse.org/packages/) for more info.
-
-:::
-:::
 

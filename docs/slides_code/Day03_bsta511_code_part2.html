@@ -111,6 +111,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -241,8 +270,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#wide-format" id="toc-wide-format" class="nav-link" data-scroll-target="#wide-format">wide format</a></li>
   </ul></li>
   <li><a href="#differences-in-mean-annual-dds-expenditures-by-age-cohort-and-raceethnicity" id="toc-differences-in-mean-annual-dds-expenditures-by-age-cohort-and-raceethnicity" class="nav-link" data-scroll-target="#differences-in-mean-annual-dds-expenditures-by-age-cohort-and-raceethnicity">Differences in mean annual DDS expenditures by age cohort and race/ethnicity</a></li>
+  <li><a href="#simpsons-paradox" id="toc-simpsons-paradox" class="nav-link" data-scroll-target="#simpsons-paradox">Simpson’s paradox</a></li>
   </ul></li>
-  <li><a href="#summary-of-data-wrangling-so-far" id="toc-summary-of-data-wrangling-so-far" class="nav-link" data-scroll-target="#summary-of-data-wrangling-so-far">Summary of data wrangling so far</a></li>
   </ul>
 </nav>
     </div>
@@ -378,23 +407,22 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 <h2 class="anchored" data-anchor-id="visualize-in-more-detail-ethnicity-age-and-expenditures">Visualize in more detail: ethnicity, age, and expenditures</h2>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>dds.discr_Hips_WhnH <span class="ot">&lt;-</span> dds.discr <span class="sc">|&gt;</span>  </span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(ethnicity <span class="sc">==</span> <span class="st">"White not Hispanic"</span> <span class="sc">|</span> ethnicity <span class="sc">==</span> <span class="st">"Hispanic"</span> ) <span class="sc">|&gt;</span> </span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">droplevels</span>()   <span class="co"># remove empty factor levels</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># restrict to just "White not Hispanic" and "Hispanic":</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(ethnicity <span class="sc">==</span> <span class="st">"White not Hispanic"</span> <span class="sc">|</span> ethnicity <span class="sc">==</span> <span class="st">"Hispanic"</span> ) <span class="sc">|&gt;</span> </span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">droplevels</span>()   <span class="co"># remove empty factor levels</span></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> dds.discr_Hips_WhnH,   </span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> dds.discr_Hips_WhnH,   <span class="co"># using filtered dataset created above</span></span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> expenditures,</span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> age.cohort)) <span class="sc">+</span> </span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">color=</span><span class="st">"darkgrey"</span>) <span class="sc">+</span> </span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">rows =</span> <span class="st">"ethnicity"</span>) <span class="sc">+</span>   </span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">rows =</span> <span class="st">"ethnicity"</span>) <span class="sc">+</span>   <span class="co"># create panels for ethnicity</span></span>
 <span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Annual Expenditures ($)"</span>,</span>
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Race and ethnicity"</span>) <span class="sc">+</span></span>
 <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(     </span>
 <span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">color =</span> ethnicity),      </span>
 <span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.3</span>,      </span>
 <span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">show.legend =</span> <span class="cn">FALSE</span>,      </span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">position =</span> <span class="fu">position_jitter</span>(     </span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>      <span class="at">height =</span> <span class="fl">0.4</span>))      </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">position =</span> <span class="fu">position_jitter</span>(<span class="at">height =</span> <span class="fl">0.4</span>))          </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -436,6 +464,8 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 </section>
 <section id="wide-format" class="level3">
 <h3 class="anchored" data-anchor-id="wide-format">wide format</h3>
+<p><em>Note: this code uses the function <code>pivot_wider()</code> to transform a “long” dataset into a “wide” format.</em><br>
+<em>We have not covered <code>pivot_wider()</code> yet and you will not need this on the upcoming homework assignment.</em></p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>mean_expend_wide <span class="ot">&lt;-</span> mean_expend <span class="sc">|&gt;</span> </span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> ethnicity,</span>
@@ -477,24 +507,16 @@ $ ethnicity    &lt;fct&gt; White not Hispanic, White not Hispanic, Hispanic, His
 </div>
 <p><strong>Question</strong>: Are the data sufficient evidence of ethnic discrimination in DDS expenditures when comparing Hispanics with White non-Hispanics?</p>
 </section>
+<section id="simpsons-paradox" class="level2">
+<h2 class="anchored" data-anchor-id="simpsons-paradox">Simpson’s paradox</h2>
+<ul>
+<li><p>This case study is an example of <strong>confounding</strong> known as Simpson’s paradox</p></li>
+<li><p><strong>Simpson’s paradox</strong> happens when an association observed in several groups disappears or reverses direction when the groups are combined.</p></li>
+<li><p>In other words, an association between two variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> may disappear or reverse direction once data are partitioned into subpopulations based on a third variable <span class="math inline">\(Z\)</span> (i.e., a confounding variable).</p></li>
+</ul>
+
+
 </section>
-<section id="summary-of-data-wrangling-so-far" class="level1">
-<h1>Summary of data wrangling so far</h1>
-<ul>
-<li>The pipe <code>|&gt;</code> to string together commands in sequence</li>
-<li><code>mutate()</code> to add a new variable to a dataset</li>
-<li><code>select()</code> to select columns (or deselect columns with -variable)</li>
-<li><code>filter()</code> to select specific rows</li>
-<li><code>pivot_wider()</code> to reshape a dataset from a long to a wide format</li>
-</ul>
-<p><strong>Summarizing data</strong></p>
-<ul>
-<li><code>tabyl()</code> from <code>janitor</code> package to make frequency tables of categorical variables</li>
-<li><code>summarize()</code> to get summary statistics of variables</li>
-<li><code>group_by()</code> to group data by categorical variables before finding summaries</li>
-</ul>
-
-
 </section>
 
 </main> <!-- /main -->

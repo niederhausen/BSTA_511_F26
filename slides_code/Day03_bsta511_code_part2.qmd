@@ -106,23 +106,22 @@ ggplot(data = dds.discr,
 #| fig.height: 8
 #| fig.width: 10
 dds.discr_Hips_WhnH <- dds.discr |>  
+  # restrict to just "White not Hispanic" and "Hispanic":
   filter(ethnicity == "White not Hispanic" | ethnicity == "Hispanic" ) |> 
   droplevels()   # remove empty factor levels
-  
 
-ggplot(data = dds.discr_Hips_WhnH,   
+ggplot(data = dds.discr_Hips_WhnH,   # using filtered dataset created above
        aes(x = expenditures,
            y = age.cohort)) + 
   geom_boxplot(color="darkgrey") + 
-  facet_grid(rows = "ethnicity") +   
+  facet_grid(rows = "ethnicity") +   # create panels for ethnicity
   labs(x = "Annual Expenditures ($)",
        y = "Race and ethnicity") +
   geom_jitter(     
     aes(color = ethnicity),      
     alpha = 0.3,      
     show.legend = FALSE,      
-    position = position_jitter(     
-      height = 0.4))      
+    position = position_jitter(height = 0.4))          
 ```
 
 
@@ -139,6 +138,9 @@ mean_expend
 ```
 
 ### wide format
+
+*Note: this code uses the function `pivot_wider()` to transform a "long" dataset into a "wide" format.*  
+*We have not covered `pivot_wider()` yet and you will not need this on the upcoming homework assignment.*
 
 ```{r}
 mean_expend_wide <- mean_expend |> 
@@ -161,18 +163,11 @@ mean_expend_wide
 __Question__: Are the data sufficient evidence of ethnic discrimination in DDS expenditures when comparing Hispanics with White non-Hispanics?
 
 
-# Summary of data wrangling so far
+## Simpson’s paradox
 
-* The pipe `|>` to string together commands in sequence
-* `mutate()` to add a new variable to a dataset
-* `select()` to select columns (or deselect columns with -variable)
-* `filter()` to select specific rows
-* `pivot_wider()` to reshape a dataset from a long to a wide format
+* This case study is an example of __confounding__ known as Simpson’s paradox
 
-__Summarizing data__
+* __Simpson’s paradox__ happens when an association observed in several groups disappears or reverses direction when the groups are combined. 
 
-* `tabyl()` from `janitor` package to make frequency tables of categorical variables
-* `summarize()` to get summary statistics of variables
-* `group_by()` to group data by categorical variables before finding summaries
-
+* In other words, an association between two variables $X$ and $Y$ may disappear or reverse direction once data are partitioned into subpopulations based on a third variable $Z$ (i.e., a confounding variable).
 
