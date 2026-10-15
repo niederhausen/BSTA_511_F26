@@ -33,7 +33,7 @@ editor_options:
         -   [Inserting equations](https://quarto.org/docs/get-started/authoring/rstudio.html#equations)
         -   Visual editor: *[Insert anything](https://quarto.org/docs/visual-editor/#insert-anything)*
         -   [LaTeX guide](https://nwakim.github.io/S2024_BSTA_513/extra_resources/Latex_qmd_formatting.html)
- 
+-   In class PowerPoint [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/465133) (on Brightspace) 
 
 :::
 
@@ -48,6 +48,7 @@ editor_options:
         -   Check out Ted Laderas's [Better Plots](https://better-plots.netlify.app/) presentation
 -   [**Day 5 Practice Problems**]{style="color:darkorange"}
     -   See [PP section](#day5-pp) below.
+-   In class PowerPoint [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/467909) (on Brightspace)
 :::
 :::::
 
