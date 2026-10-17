@@ -1,0 +1,165 @@
+---
+title: "HW 3: BSTA 511/611 F26"
+pagetitle: "HW 3"
+author: "Your name here - update this!!!!"
+date: "Due 10/24/26"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    toc_float:
+      collapsed: false
+    number-sections: false
+    number-depth: 4
+    theme: lumen
+    embed-resources: true
+    html-math-method: mathjax
+---
+
+```{r}
+#| label: "setup"
+#| include: false
+knitr::opts_chunk$set(echo = TRUE, fig.height = 2, fig.width = 4)
+```
+
+**Due 10/24/26**
+
+Download the .qmd file for this assignment from <https://github.com/niederhausen/BSTA_511_F26/blob/main/homework/HW_3_F26_bsta511.qmd>
+
+## 🎃 Graded exercises
+
+The exercises listed below will be graded for this assignment. You are **strongly** encouraged to complete the entire assignment. You will receive feedback on exercises you turn in that are not being graded.
+
+-   **Book exercises**
+    -   3.4, 3.8, 3.22, 3.32, 3.40
+-   **Non-book exercise**
+    -   NB 1 *- I recommend completing this problem after completing book questions 3.4-3.6.*
+
+
+
+## ⚠️ Directions
+
+::: callout-important
+-   `*` Starred exercises may be completed by hand (such as on paper or using a tablet) instead of using Quarto. [__*In this assignment all of the questions are starred.*__]{style="color:darkorange"}
+    -   *Some of these exercises require some R code.* 
+        -   *If you do these exercises by hand, make sure to include the R code written out by hand as well as the output from R (as done in the class notes), so that the TA only needs to grade one file for those exercises.*   
+-   Make sure to check out the calculating probabilities in R code file: [qmd](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Probability_distributions_in_R_bsta511.qmd), [html](../slides_code/Probability_distributions_in_R_bsta511.qmd)
+-   If you decide to use Quarto:
+    -   Use LaTeX to format the equations.
+        -   For instructions on creating equations in the Visual editor, check out <https://quarto.org/docs/get-started/authoring/rstudio.html#equations>.
+        -   You can see examples of LaTeX formatting in the calculating probabilities in R code file: [qmd](https://github.com/niederhausen/BSTA_511_F26/blob/main/slides_code/Probability_distributions_in_R_bsta511.qmd), [html](../slides_code/Probability_distributions_in_R_bsta511.qmd)
+        -   Also check out examples of [LaTeX formatting for statistics](https://nwakim.github.io/S2024_BSTA_513/extra_resources/Latex_qmd_formatting.html) created by recent biostats alum Ariel Weingarten.
+        -   If you have difficulty rendering the LaTeX equations, I recommend installing and running the R package `tinytex`. See this [website](https://evalsp20.classes.andrewheiss.com/reference/install/#install-tinytex-1) for instructions.
+
+:::
+
+-   Please upload your homework to [Brightspace](https://brightspace.ohsu.edu/d2l/lms/dropbox/admin/folders_manage.d2l?ou=16063).
+    -   If you are using Quarto, *upload both your .qmd code file and the rendered .html file* (plus a pdf if completing part of the assignment by hand).
+        -   Use the assignment .qmd file linked to at the top of the this file as a template for your own assignment.
+    -   If you did the entire assignment without Quarto, then only upload a pdf file.
+-   For each question, make sure to **show all of your work**.
+    -   This includes all code and resulting output in the html file to support your answers for exercises requiring work done in R (including any arithmetic calculations). 
+        -   *This also applies to questions you do by hand.*
+    -   For non-calculation questions, this includes an explanation of your answer (*why did you choose your answer?*).
+-   For each question, include a **sentence summarizing the answer** for that question in the context of the research question.
+
+::: callout-tip
+It is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly.
+:::
+
+# Book exercises
+
+## ⚠️!!! Instructions for exercises 3.4-3.6 and NB 1 !!!
+
+::: callout-important
+Additional Instructions - IMPORTANT!!!
+
+-   Make sure to show your work algebraically. You can do the arithmetic in R to get the final answer, but the more important part is showing how you derived the expected value, variance, and standard deviation.
+-   First, define every random variable you use. 
+-   Second, write out the mathematical model for the situation using the random variables you defined. 
+    -   Think of the model as how you would calculate the outcome if you were given the individual data points that the random variables are representing. 
+    -   *This step does not involve any means or expected values!!!*
+-   Then proceed to derive the expected value and variance of the model. 
+-   *See examples 3.14 and 3.16 in the notes for examples following these steps.*
+:::
+
+
+## * 🎃 3.4 Baggage fees
+
+-   *Note: Part (a) asks you to "build a probability model." See Figure 3.2 on the bottom of pg. 140 in the textbook for an example of a probability model.* 
+
+## *3.5 Gull clutch size
+
+[Review the solution in the back of the book for exercise 3.5.]{style="color:green"}
+
+### (a)
+
+[For part (a), the answer is correct, but there is an error in the work and the notation is sloppy. Correct the error and rewrite the solution with proper notation.]{style="color:green"}
+
+### (b)
+
+[For part (b), the answer is *not* correct, as a result of the error in the work with sloppy notation. Give a correct solution with proper notation.]{style="color:green"}
+
+## *3.6 Scooping ice cream
+
+## * 🎃 3.8 Chickenpox, Part I.
+
+[For #3.8, calculate the binomial probabilities two ways:\
+(1) using the formula (can use R to calculate factorials or the choose function) and\
+(2) using R functions for binomial distribution probabilities.]{style="color:green"}
+
+## *3.10 Chickenpox, Part II.
+
+[For #3.10, you can use R functions to calculate the binomial probabilities instead of directly using the formula. However, include the mathematical formulas that would be used to calculate the probabilities.]{style="color:green"}
+
+
+
+## ⚠️!!! Instructions for Normal probability exercises 3.20 - 3.40 !!!
+
+::: callout-important
+Additional Instructions - IMPORTANT!!!
+
+-   For **ALL** normal distribution exercises:
+    -   Make a sketch of the normal distribution curve with the mean and 1 sd away from the mean clearly labeled, and the area representing probability of interest shaded in.
+        - If you are using R for these questions, see the [example](https://niederhausen.github.io/BSTA_511_F26/slides_code/Probability_distributions_in_R_bsta511.html#normal-curve-figure-with-region-shaded-in) of how to create a normal curve with a specified area shaded in from the Probability distributions in R file.
+    -   Calculate probabilities using **both**
+        -   z-table
+        -   R
+:::
+
+## *3.20 Area under the curve, Part II
+
+## * 🎃 3.22 Triathlon times
+
+## *3.28 Arsenic poisoning
+
+## *3.30 Find the SD
+
+## * 🎃 3.32 Chickenpox, Part III
+
+## *3.38 Stenographer’s typos
+
+## * 🎃 3.40 Osteosarcoma in NYC
+
+
+
+
+
+# Non-book exercise
+
+## ⚠️!!!See special instructions for NB 1 listed before book exercise 3.4!!!
+
+
+## * 🎃 NB 1: Clinician time with patients
+
+**Suppose a clinician schedules 20 minutes to spend with each of their patients. However, they sometimes run over or end earlier. Based on past data, the mean "extra" time they spend with a patient is 3 minutes with a standard deviation of 2 minutes. Suppose they see 13 patients today and the extra times they spend with patients are independent from patient to patient.**
+
+### (a) Expected total time
+
+**Find the expected total time they will spend with all of their patients today.**
+
+### (b) SD of total time
+
+**Find the standard deviation of the total time they will spend with all of their patients today.**
+
+

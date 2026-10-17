@@ -1074,15 +1074,15 @@
     "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#probability-calculations-pxx",
     "href": "slides_code/Probability_distributions_in_R_bsta511.html#probability-calculations-pxx",
     "title": "Probability distributions in R for BSTA 511/611",
-    "section": "1.1 Probability calculations: \\(P(X=x)\\)",
-    "text": "1.1 Probability calculations: \\(P(X=x)\\)\n\n1.1.1 Using formula\nCalculate \\(P(X=4)\\) for a Bin(n=10, p=0.25) distribution.\nIn general, for a binomial random variable, \\[P(X=x) = \\binom{n}{x}p^x q^{n-x}\\] Thus \\(P(X=4)\\) for a Bin(n=10, p=0.25) random variable, \\[P(X=4) = \\binom{10}{4}0.25^4 0.75^{10-4} = \\frac{10!}{4!(10-4)!}0.25^4 0.75^{10-4}\\] Calculate “directly” in R:\n\nchoose(10,4) * 0.25^4 * 0.75^6\n\n[1] 0.145998\n\n# using factorials instead of the choose function:\nfactorial(10)/(factorial(4)*factorial(6)) * 0.25^4 * 0.75^6\n\n[1] 0.145998\n\n\n\n\n1.1.2 Using dbinom()\nCalculate \\(P(X=4)\\) for a Bin(n=10, p=0.25) distribution.\n\n# P(X = 4) for Bin(n=10, p=0.25) random variable\ndbinom(x = 4, size = 10, prob = 0.25) \n\n[1] 0.145998\n\n\nCalculate \\(P(X=x)\\) for all possible values \\(x\\) for a Bin(n=10, p=0.25) distribution.\n\n# Entire probability distribution:\n# P(X = x) for all x=0,1,2,...,10 for Bin(n=10, p=0.25) random variable\ndbinom(x = 0:10, size = 10, prob = 0.25) \n\n [1] 5.631351e-02 1.877117e-01 2.815676e-01 2.502823e-01 1.459980e-01\n [6] 5.839920e-02 1.622200e-02 3.089905e-03 3.862381e-04 2.861023e-05\n[11] 9.536743e-07\n\n\nIn the next section we visualize these probability distribution values."
+    "section": "2.2 Probability calculations: \\(P(X=x)\\)",
+    "text": "2.2 Probability calculations: \\(P(X=x)\\)\n\n2.2.1 Using formula\nCalculate \\(P(X=4)\\) for a Bin(n=10, p=0.25) distribution.\nIn general, for a binomial random variable, \\[P(X=x) = \\binom{n}{x}p^x q^{n-x}\\] Thus \\(P(X=4)\\) for a Bin(n=10, p=0.25) random variable, \\[P(X=4) = \\binom{10}{4}0.25^4 0.75^{10-4} = \\frac{10!}{4!(10-4)!}0.25^4 0.75^{10-4}\\] Calculate “directly” in R:\n\nchoose(10,4) * 0.25^4 * 0.75^6\n\n[1] 0.145998\n\n# using factorials instead of the choose function:\nfactorial(10)/(factorial(4)*factorial(6)) * 0.25^4 * 0.75^6\n\n[1] 0.145998\n\n\n\n\n2.2.2 Using dbinom()\nCalculate \\(P(X=4)\\) for a Bin(n=10, p=0.25) distribution.\n\n# P(X = 4) for Bin(n=10, p=0.25) random variable\ndbinom(x = 4, size = 10, prob = 0.25) \n\n[1] 0.145998\n\n\nCalculate \\(P(X=x)\\) for all possible values \\(x\\) for a Bin(n=10, p=0.25) distribution.\n\n# Entire probability distribution:\n# P(X = x) for all x=0,1,2,...,10 for Bin(n=10, p=0.25) random variable\ndbinom(x = 0:10, size = 10, prob = 0.25) \n\n [1] 5.631351e-02 1.877117e-01 2.815676e-01 2.502823e-01 1.459980e-01\n [6] 5.839920e-02 1.622200e-02 3.089905e-03 3.862381e-04 2.861023e-05\n[11] 9.536743e-07\n\n\nIn the next section we visualize these probability distribution values."
   },
   {
     "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#histogram-of-probability-distribution",
     "href": "slides_code/Probability_distributions_in_R_bsta511.html#histogram-of-probability-distribution",
     "title": "Probability distributions in R for BSTA 511/611",
-    "section": "1.2 Histogram of probability distribution",
-    "text": "1.2 Histogram of probability distribution\n\nFirst, create a data frame of the distribution’s possible x values and their respective probabilities:\n\n\n# Bin(n=10, p=0.25) random variable\n\nbinom_probs &lt;- data.frame(x_values = 0:10, \n                          px = dbinom(x = 0:10, size = 10, prob = 0.25)) \nbinom_probs\n\n   x_values           px\n1         0 5.631351e-02\n2         1 1.877117e-01\n3         2 2.815676e-01\n4         3 2.502823e-01\n5         4 1.459980e-01\n6         5 5.839920e-02\n7         6 1.622200e-02\n8         7 3.089905e-03\n9         8 3.862381e-04\n10        9 2.861023e-05\n11       10 9.536743e-07\n\n\n\n1.2.1 Histogram\nThe histogram below is actually created as a bar plot in ggplot:\n\nggplot(binom_probs, \n       aes(x = x_values, y = px))  + \n  geom_col(fill =\"cornflowerblue\") +\n  labs(x = \"x, number of successes\",\n       y = \"P(X=x)\") +\n  scale_x_continuous(breaks=0:10) +\n  labs(title = \"Bin(n = 10, p = 0.25) distribution\")"
+    "section": "4.2 Histogram of probability distribution",
+    "text": "4.2 Histogram of probability distribution\n\nFirst, create a data frame of the distribution’s possible x values and their respective probabilities:\n\n\n# Pois(lambda = 5) random variable\n\nPoisson_probs &lt;- data.frame(x_values = 0:20, \n                          px = dpois(x = 0:20, lambda = 5)) \nPoisson_probs\n\n   x_values           px\n1         0 6.737947e-03\n2         1 3.368973e-02\n3         2 8.422434e-02\n4         3 1.403739e-01\n5         4 1.754674e-01\n6         5 1.754674e-01\n7         6 1.462228e-01\n8         7 1.044449e-01\n9         8 6.527804e-02\n10        9 3.626558e-02\n11       10 1.813279e-02\n12       11 8.242177e-03\n13       12 3.434240e-03\n14       13 1.320862e-03\n15       14 4.717363e-04\n16       15 1.572454e-04\n17       16 4.913920e-05\n18       17 1.445271e-05\n19       18 4.014640e-06\n20       19 1.056484e-06\n21       20 2.641211e-07\n\n\n\n4.2.1 Histogram\nThe histogram below is actually created as a bar plot in ggplot:\n\nggplot(Poisson_probs, \n       aes(x = x_values, y = px))  + \n  geom_col(fill =\"cornflowerblue\") +\n  labs(x = \"x, number of successes\",\n       y = \"P(X=x)\") +\n  scale_x_continuous(breaks=0:20) +  # chose 20 since prob's are already tiny for this distribution\n  labs(title = \"Pois(lambda = 5) distribution\")"
   },
   {
     "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#probability-calculations-px-leq-x",
@@ -1116,8 +1116,8 @@
     "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#normal-curve-figure-with-region-shaded-in",
     "href": "slides_code/Probability_distributions_in_R_bsta511.html#normal-curve-figure-with-region-shaded-in",
     "title": "Probability distributions in R for BSTA 511/611",
-    "section": "2.3 Normal curve figure with region shaded in",
-    "text": "2.3 Normal curve figure with region shaded in\n\nR code to create a figure of the normal distribution curve with the probability region of interest shaded in.\n\nShade in the region representing \\(P(X&gt;10)\\), for \\(X \\sim N(\\mu = 8, \\sigma = 2)\\).\n\n# This code shades in the probability P(X &gt; 10) \n# for X ~ N(mu = 8, sigma = 2)\n# Note that I set the upper and lower bounds of the normal curve to be from mu - 4*sigma to mu + 4*sigma since these bounds include almost 100% of the area under the normal curve\n\nmu &lt;- 8   # specify the mean of the normal distribution\nstd &lt;- 2  # specify the standard deviation of the normal distribution\n\n# specify upper and lower bounds of shaded region below\nggplot(data.frame(x = c(mu-4*std, mu+4*std)), aes(x = x)) + \n  stat_function(fun = dnorm, \n                args = list(mean = mu, sd = std)) + \n  stat_function(fun = dnorm, \n                args = list(mean = mu, sd = std), \n          # specify the upper and lower bounds of the shaded region:\n                xlim = c(10, mu+4*std),             \n                geom = \"area\", fill = \"darkblue\") +\n  # the breaks values below might need to be adjusted \n  # if there are too many values showing on the x-axis\n  scale_x_continuous(breaks= seq(from = mu-4*std, to = mu+4*std, by= std)) +\n  labs(y = \"\") +\n  labs(title = \"P(X &gt;10) for a N(mu=8, sigma=2) distribution\")"
+    "section": "3.3 Normal curve figure with region shaded in",
+    "text": "3.3 Normal curve figure with region shaded in\n\nR code to create a figure of the normal distribution curve with the probability region of interest shaded in.\n\nShade in the region representing \\(P(X&gt;10)\\), for \\(X \\sim N(\\mu = 8, \\sigma = 2)\\).\n\n# This code shades in the probability P(X &gt; 10) \n# for X ~ N(mu = 8, sigma = 2)\n# Note that I set the upper and lower bounds of the normal curve to be from mu - 4*sigma to mu + 4*sigma since these bounds include almost 100% of the area under the normal curve\n\nmu &lt;- 8   # specify the mean of the normal distribution\nstd &lt;- 2  # specify the standard deviation of the normal distribution\n\n# specify upper and lower bounds of shaded region below\nggplot(data.frame(x = c(mu-4*std, mu+4*std)), aes(x = x)) + \n  stat_function(fun = dnorm, \n                args = list(mean = mu, sd = std)) + \n  stat_function(fun = dnorm, \n                args = list(mean = mu, sd = std), \n          # specify the upper and lower bounds of the shaded region:\n                xlim = c(10, mu+4*std),             \n                geom = \"area\", fill = \"darkblue\") +\n  # the breaks values below might need to be adjusted \n  # if there are too many values showing on the x-axis\n  scale_x_continuous(breaks= seq(from = mu-4*std, to = mu+4*std, by= std)) +\n  labs(y = \"\") +\n  labs(title = \"P(X &gt;10) for a N(mu=8, sigma=2) distribution\")"
   },
   {
     "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#probability-calculations-pxx-1",
@@ -1130,8 +1130,8 @@
     "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#histogram-of-probability-distribution-1",
     "href": "slides_code/Probability_distributions_in_R_bsta511.html#histogram-of-probability-distribution-1",
     "title": "Probability distributions in R for BSTA 511/611",
-    "section": "3.2 Histogram of probability distribution",
-    "text": "3.2 Histogram of probability distribution\n\nFirst, create a data frame of the distribution’s possible x values and their respective probabilities:\n\n\n# Pois(lambda = 5) random variable\n\nPoisson_probs &lt;- data.frame(x_values = 0:20, \n                          px = dpois(x = 0:20, lambda = 5)) \nPoisson_probs\n\n   x_values           px\n1         0 6.737947e-03\n2         1 3.368973e-02\n3         2 8.422434e-02\n4         3 1.403739e-01\n5         4 1.754674e-01\n6         5 1.754674e-01\n7         6 1.462228e-01\n8         7 1.044449e-01\n9         8 6.527804e-02\n10        9 3.626558e-02\n11       10 1.813279e-02\n12       11 8.242177e-03\n13       12 3.434240e-03\n14       13 1.320862e-03\n15       14 4.717363e-04\n16       15 1.572454e-04\n17       16 4.913920e-05\n18       17 1.445271e-05\n19       18 4.014640e-06\n20       19 1.056484e-06\n21       20 2.641211e-07\n\n\n\n3.2.1 Histogram\nThe histogram below is actually created as a bar plot in ggplot:\n\nggplot(Poisson_probs, \n       aes(x = x_values, y = px))  + \n  geom_col(fill =\"cornflowerblue\") +\n  labs(x = \"x, number of successes\",\n       y = \"P(X=x)\") +\n  scale_x_continuous(breaks=0:20) +  # chose 20 since prob's are already tiny for this distribution\n  labs(title = \"Pois(lambda = 5) distribution\")"
+    "section": "4.2 Histogram of probability distribution",
+    "text": "4.2 Histogram of probability distribution\n\nFirst, create a data frame of the distribution’s possible x values and their respective probabilities:\n\n\n# Pois(lambda = 5) random variable\n\nPoisson_probs &lt;- data.frame(x_values = 0:20, \n                          px = dpois(x = 0:20, lambda = 5)) \nPoisson_probs\n\n   x_values           px\n1         0 6.737947e-03\n2         1 3.368973e-02\n3         2 8.422434e-02\n4         3 1.403739e-01\n5         4 1.754674e-01\n6         5 1.754674e-01\n7         6 1.462228e-01\n8         7 1.044449e-01\n9         8 6.527804e-02\n10        9 3.626558e-02\n11       10 1.813279e-02\n12       11 8.242177e-03\n13       12 3.434240e-03\n14       13 1.320862e-03\n15       14 4.717363e-04\n16       15 1.572454e-04\n17       16 4.913920e-05\n18       17 1.445271e-05\n19       18 4.014640e-06\n20       19 1.056484e-06\n21       20 2.641211e-07\n\n\n\n4.2.1 Histogram\nThe histogram below is actually created as a bar plot in ggplot:\n\nggplot(Poisson_probs, \n       aes(x = x_values, y = px))  + \n  geom_col(fill =\"cornflowerblue\") +\n  labs(x = \"x, number of successes\",\n       y = \"P(X=x)\") +\n  scale_x_continuous(breaks=0:20) +  # chose 20 since prob's are already tiny for this distribution\n  labs(title = \"Pois(lambda = 5) distribution\")"
   },
   {
     "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#probability-calculations-px-leq-x-1",
@@ -4050,7 +4050,7 @@
     "href": "homework.html",
     "title": "Assignments",
     "section": "",
-    "text": "Note\n\n\n\n\nBelow are links to homework assignments.\nThe dates in the Date column are due dates.\nSee the Grading rubric tab to the left for a description of how assignments will be graded.\n\n\n\n\nCheck out this spreadsheet for textbook typos.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n10/10/26\n\n\nHW 1: BSTA 511/611 F26\n\n\n\n\n\n\n10/17/26\n\n\nHW 2: BSTA 511/611 F26\n\n\n\n\n\n\nNo matching items"
+    "text": "Note\n\n\n\n\nBelow are links to homework assignments.\nThe dates in the Date column are due dates.\nSee the Grading rubric tab to the left for a description of how assignments will be graded.\n\n\n\n\nCheck out this spreadsheet for textbook typos.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n10/10/26\n\n\nHW 1: BSTA 511/611 F26\n\n\n\n\n\n\n10/17/26\n\n\nHW 2: BSTA 511/611 F26\n\n\n\n\n\n\n10/24/26\n\n\nHW 3: BSTA 511/611 F26\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "weeks/week_09.html#overview-of-week-9",
@@ -4119,8 +4119,8 @@
     "objectID": "weeks/week_04.html#overview-of-week-4",
     "href": "weeks/week_04.html#overview-of-week-4",
     "title": "Week 4",
-    "section": "Overview of Week 4",
-    "text": "Overview of Week 4\n\n\nMon: Day 6\n\nRandom variables: Section 3.1\nBinomial distribution: Section 3.2\nDay 6 Practice Problems\n\nSee PP section below\n\n\n\n\nWed: Day 7\n\nNormal distribution: Section 3.3\nPoisson distribution: Section 3.4\nDay 7 Practice Problems\n\nSee PP section below\n\n\n\n\n\nSee the Exam 1 information section below for information about next week’s exam."
+    "section": "",
+    "text": "Random variables: Section 3.1\nBinomial distribution: Section 3.2\nDay 6 Practice Problems\n\nSee PP section below\n\n\n\n\n\n\nNormal distribution: Section 3.3\nPoisson distribution: Section 3.4\nDay 7 Practice Problems\n\nSee PP section below\n\n\n\n\n\nSee the Exam 1 information section below for information about next week’s exam."
   },
   {
     "objectID": "weeks/week_04.html#slides-recordings",
@@ -4141,7 +4141,7 @@
     "href": "weeks/week_04.html#class-discussion",
     "title": "Week 4",
     "section": "Class discussion",
-    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay06\n\nPractice Problems listed above\nPart (4) of Example 3.17 on pg 10 of slides\nFrom HW 3\n\nBook exercises\n\n3.4, 3.8\n\nNon-book exercise\n\nNB 1\n\n\nIf you want some R practice, try the following:\n\nExample 3.3 on pg 2 of slides\n\nWrite R code to calculate the expected value by defining vectors in R with the relevant values and then doing the appropriate calculations with the vectors.\nHint: start with x &lt;- 1:6.\n\nExample 3.10 on pg 5 of slides\n\nWrite R code to calculate the variance and standard deviation by defining vectors in R with the relevant values and then doing the appropriate calculations with the vectors.\n\n\n\n\n\nDay 7\n\nPractice Problems listed above\nFrom HW 3:\n\nBook exercises\n\n3.22, 3.32, 3.40"
+    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay06\n\nPractice Problems listed above\nPart (4) of Example 3.17 on pg 10 of slides\nFrom HW 3\n\nBook exercises\n\n3.4, 3.8\n\nNon-book exercise\n\nNB 1\n\n\nOptional: If you want some R practice, try the following:\n\nExample 3.3 on pg 2 of slides\n\nWrite R code to calculate the expected value by defining vectors in R with the relevant values and then doing the appropriate calculations with the vectors.\nHint: start with x &lt;- 1:6.\n\nExample 3.10 on pg 5 of slides\n\nWrite R code to calculate the variance and standard deviation by defining vectors in R with the relevant values and then doing the appropriate calculations with the vectors.\n\n\n\n\n\nDay 7\n\nPractice Problems listed above\nFrom HW 3:\n\nBook exercises\n\n3.22, 3.32, 3.40"
   },
   {
     "objectID": "weeks/week_04.html#homework",
@@ -4155,7 +4155,7 @@
     "href": "weeks/week_04.html#sec-Exam1info",
     "title": "Week 4",
     "section": "Exam 1 information",
-    "text": "Exam 1 information\n\nExam 1 will be on Wed, Oct. 28th\nChapters 1-2: samples of past exam questions and answers (on Brightspace)\nSections 3.1-3.4: samples of past exam questions and answers (on Brightspace)\n\nQuestions on Sections 4.1-4.2 in this file are not on Exam 1.\n\nMaterial will cover Days 1-7,\n\nwhich is approximately Chapters 1, 2, and Sections 3.1-3.4 from the textbook.\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet."
+    "text": "Exam 1 information\n\nExam 1 will be on Wed, Oct. 28th\nSamples of past exams will be posted here. Coming soon!\n\n\n\n\n\nMaterial will cover Days 1-7,\n\nwhich is approximately Chapters 1, 2, and Sections 3.1-3.4 from the textbook.\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet."
   },
   {
     "objectID": "weeks/week_06.html#overview-of-week-6",
@@ -10316,5 +10316,222 @@
     "title": "Day 3 code - Part 2: Data visualization",
     "section": "",
     "text": "This case study is an example of confounding known as Simpson’s paradox\nSimpson’s paradox happens when an association observed in several groups disappears or reverses direction when the groups are combined.\nIn other words, an association between two variables \\(X\\) and \\(Y\\) may disappear or reverse direction once data are partitioned into subpopulations based on a third variable \\(Z\\) (i.e., a confounding variable)."
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html",
+    "href": "homework/HW_3_F26_bsta511.html",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "",
+    "text": "Due 10/24/26\nDownload the .qmd file for this assignment from https://github.com/niederhausen/BSTA_511_F26/blob/main/homework/HW_3_F26_bsta511.qmd"
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#graded-exercises",
+    "href": "homework/HW_3_F26_bsta511.html#graded-exercises",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "🎃 Graded exercises",
+    "text": "🎃 Graded exercises\nThe exercises listed below will be graded for this assignment. You are strongly encouraged to complete the entire assignment. You will receive feedback on exercises you turn in that are not being graded.\n\nBook exercises\n\n3.4, 3.8, 3.22, 3.32, 3.40\n\nNon-book exercise\n\nNB 1 - I recommend completing this problem after completing book questions 3.4-3.6."
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#directions",
+    "href": "homework/HW_3_F26_bsta511.html#directions",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "⚠️ Directions",
+    "text": "⚠️ Directions\n\n\n\n\n\n\nImportant\n\n\n\n\n* Starred exercises may be completed by hand (such as on paper or using a tablet) instead of using Quarto. In this assignment all of the questions are starred.\n\nSome of these exercises require some R code.\n\nIf you do these exercises by hand, make sure to include the R code written out by hand as well as the output from R (as done in the class notes), so that the TA only needs to grade one file for those exercises.\n\n\n\nMake sure to check out the calculating probabilities in R code file: qmd, html\nIf you decide to use Quarto:\n\nUse LaTeX to format the equations.\n\nFor instructions on creating equations in the Visual editor, check out https://quarto.org/docs/get-started/authoring/rstudio.html#equations.\nYou can see examples of LaTeX formatting in the calculating probabilities in R code file: qmd, html\nAlso check out examples of LaTeX formatting for statistics created by recent biostats alum Ariel Weingarten.\nIf you have difficulty rendering the LaTeX equations, I recommend installing and running the R package tinytex. See this website for instructions.\n\n\n\n\n\n\nPlease upload your homework to Brightspace.\n\nIf you are using Quarto, upload both your .qmd code file and the rendered .html file (plus a pdf if completing part of the assignment by hand).\n\nUse the assignment .qmd file linked to at the top of the this file as a template for your own assignment.\n\nIf you did the entire assignment without Quarto, then only upload a pdf file.\n\nFor each question, make sure to show all of your work.\n\nThis includes all code and resulting output in the html file to support your answers for exercises requiring work done in R (including any arithmetic calculations).\n\nThis also applies to questions you do by hand.\n\nFor non-calculation questions, this includes an explanation of your answer (why did you choose your answer?).\n\nFor each question, include a sentence summarizing the answer for that question in the context of the research question.\n\n\n\n\n\n\n\nTip\n\n\n\nIt is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly."
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#instructions-for-exercises-3.4-3.6-and-nb-1",
+    "href": "homework/HW_3_F26_bsta511.html#instructions-for-exercises-3.4-3.6-and-nb-1",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "⚠️!!! Instructions for exercises 3.4-3.6 and NB 1 !!!",
+    "text": "⚠️!!! Instructions for exercises 3.4-3.6 and NB 1 !!!\n\n\n\n\n\n\nImportant\n\n\n\nAdditional Instructions - IMPORTANT!!!\n\nMake sure to show your work algebraically. You can do the arithmetic in R to get the final answer, but the more important part is showing how you derived the expected value, variance, and standard deviation.\nFirst, define every random variable you use.\nSecond, write out the mathematical model for the situation using the random variables you defined.\n\nThink of the model as how you would calculate the outcome if you were given the individual data points that the random variables are representing.\nThis step does not involve any means or expected values!!!\n\nThen proceed to derive the expected value and variance of the model.\nSee examples 3.14 and 3.16 in the notes for examples following these steps."
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#baggage-fees",
+    "href": "homework/HW_3_F26_bsta511.html#baggage-fees",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "* 🎃 3.4 Baggage fees",
+    "text": "* 🎃 3.4 Baggage fees\n\nNote: Part (a) asks you to “build a probability model.” See Figure 3.2 on the bottom of pg. 140 in the textbook for an example of a probability model."
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#gull-clutch-size",
+    "href": "homework/HW_3_F26_bsta511.html#gull-clutch-size",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "*3.5 Gull clutch size",
+    "text": "*3.5 Gull clutch size\nReview the solution in the back of the book for exercise 3.5.\n\n(a)\nFor part (a), the answer is correct, but there is an error in the work and the notation is sloppy. Correct the error and rewrite the solution with proper notation.\n\n\n(b)\nFor part (b), the answer is not correct, as a result of the error in the work with sloppy notation. Give a correct solution with proper notation."
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#scooping-ice-cream",
+    "href": "homework/HW_3_F26_bsta511.html#scooping-ice-cream",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "*3.6 Scooping ice cream",
+    "text": "*3.6 Scooping ice cream"
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#chickenpox-part-i.",
+    "href": "homework/HW_3_F26_bsta511.html#chickenpox-part-i.",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "* 🎃 3.8 Chickenpox, Part I.",
+    "text": "* 🎃 3.8 Chickenpox, Part I.\nFor #3.8, calculate the binomial probabilities two ways:\n(1) using the formula (can use R to calculate factorials or the choose function) and\n(2) using R functions for binomial distribution probabilities."
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#chickenpox-part-ii.",
+    "href": "homework/HW_3_F26_bsta511.html#chickenpox-part-ii.",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "*3.10 Chickenpox, Part II.",
+    "text": "*3.10 Chickenpox, Part II.\nFor #3.10, you can use R functions to calculate the binomial probabilities instead of directly using the formula. However, include the mathematical formulas that would be used to calculate the probabilities."
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#instructions-for-normal-probability-exercises-3.20---3.40",
+    "href": "homework/HW_3_F26_bsta511.html#instructions-for-normal-probability-exercises-3.20---3.40",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "⚠️!!! Instructions for Normal probability exercises 3.20 - 3.40 !!!",
+    "text": "⚠️!!! Instructions for Normal probability exercises 3.20 - 3.40 !!!\n\n\n\n\n\n\nImportant\n\n\n\nAdditional Instructions - IMPORTANT!!!\n\nFor ALL normal distribution exercises:\n\nMake a sketch of the normal distribution curve with the mean and 1 sd away from the mean clearly labeled, and the area representing probability of interest shaded in.\n\nIf you are using R for these questions, see the example of how to create a normal curve with a specified area shaded in from the Probability distributions in R file.\n\nCalculate probabilities using both\n\nz-table\nR"
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#area-under-the-curve-part-ii",
+    "href": "homework/HW_3_F26_bsta511.html#area-under-the-curve-part-ii",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "*3.20 Area under the curve, Part II",
+    "text": "*3.20 Area under the curve, Part II"
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#triathlon-times",
+    "href": "homework/HW_3_F26_bsta511.html#triathlon-times",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "* 🎃 3.22 Triathlon times",
+    "text": "* 🎃 3.22 Triathlon times"
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#arsenic-poisoning",
+    "href": "homework/HW_3_F26_bsta511.html#arsenic-poisoning",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "*3.28 Arsenic poisoning",
+    "text": "*3.28 Arsenic poisoning"
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#find-the-sd",
+    "href": "homework/HW_3_F26_bsta511.html#find-the-sd",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "*3.30 Find the SD",
+    "text": "*3.30 Find the SD"
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#chickenpox-part-iii",
+    "href": "homework/HW_3_F26_bsta511.html#chickenpox-part-iii",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "* 🎃 3.32 Chickenpox, Part III",
+    "text": "* 🎃 3.32 Chickenpox, Part III"
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#stenographers-typos",
+    "href": "homework/HW_3_F26_bsta511.html#stenographers-typos",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "*3.38 Stenographer’s typos",
+    "text": "*3.38 Stenographer’s typos"
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#osteosarcoma-in-nyc",
+    "href": "homework/HW_3_F26_bsta511.html#osteosarcoma-in-nyc",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "* 🎃 3.40 Osteosarcoma in NYC",
+    "text": "* 🎃 3.40 Osteosarcoma in NYC"
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#see-special-instructions-for-nb-1-listed-before-book-exercise-3.4",
+    "href": "homework/HW_3_F26_bsta511.html#see-special-instructions-for-nb-1-listed-before-book-exercise-3.4",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "⚠️!!!See special instructions for NB 1 listed before book exercise 3.4!!!",
+    "text": "⚠️!!!See special instructions for NB 1 listed before book exercise 3.4!!!"
+  },
+  {
+    "objectID": "homework/HW_3_F26_bsta511.html#nb-1-clinician-time-with-patients",
+    "href": "homework/HW_3_F26_bsta511.html#nb-1-clinician-time-with-patients",
+    "title": "HW 3: BSTA 511/611 F26",
+    "section": "* 🎃 NB 1: Clinician time with patients",
+    "text": "* 🎃 NB 1: Clinician time with patients\nSuppose a clinician schedules 20 minutes to spend with each of their patients. However, they sometimes run over or end earlier. Based on past data, the mean “extra” time they spend with a patient is 3 minutes with a standard deviation of 2 minutes. Suppose they see 13 patients today and the extra times they spend with patients are independent from patient to patient.\n\n(a) Expected total time\nFind the expected total time they will spend with all of their patients today.\n\n\n(b) SD of total time\nFind the standard deviation of the total time they will spend with all of their patients today."
+  },
+  {
+    "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#px-leq-x",
+    "href": "slides_code/Probability_distributions_in_R_bsta511.html#px-leq-x",
+    "title": "Probability distributions in R for BSTA 511/611",
+    "section": "2.3 \\(P(X \\leq x)\\)",
+    "text": "2.3 \\(P(X \\leq x)\\)\n\\[P(X\\leq k) = \\sum_{x=0}^{k}\\binom{n}{x}p^xq^{n-x}\\]\n\n2.3.1 Using formula\nCalculate \\(P(X \\leq 3)\\) for a Bin(n=10, p=0.25) distribution:\n\\[P(X\\leq 3) = \\sum_{x=0}^{3}\\binom{10}{x}0.2.5^x 0.75^{10-x}\\] Calculate “directly” in R:\n\n# vector of x values whose probabilities need to be added\nx &lt;- 0:3  \n# vector of respective binomial prob's of x values\n(binom_prob_0_3 &lt;- choose(10,x) * 0.25^x * 0.75^(10-x))\n\n[1] 0.05631351 0.18771172 0.28156757 0.25028229\n\n# add up the probabilities\nsum(binom_prob_0_3)\n\n[1] 0.7758751\n\n\n\n\n2.3.2 Using pbinom()\n\n\\(P(X\\leq k)\\) = pbinom(q = k, size = n, prob = p, lower.tail = TRUE)\n\nCalculate \\(P(X \\leq 3)\\) for a Bin(n=10, p=0.25) distribution.\n\n# P(X &lt;= 3) for Bin(n=10, p=0.25) random variable\npbinom(q = 3, size = 10, prob = 0.25, lower.tail = TRUE)\n\n[1] 0.7758751\n\n# Note: setting TRUE for the lower.tail option is the default value\n# This means that if we do not specify this option, \n# it will give the same result as above:\npbinom(q = 3, size = 10, prob = 0.25) \n\n[1] 0.7758751"
+  },
+  {
+    "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#px-geq-x",
+    "href": "slides_code/Probability_distributions_in_R_bsta511.html#px-geq-x",
+    "title": "Probability distributions in R for BSTA 511/611",
+    "section": "2.4 \\(P(X \\geq x)\\)",
+    "text": "2.4 \\(P(X \\geq x)\\)\n\\[P(X\\geq k) = \\sum_{x=k}^{n}\\binom{n}{x}p^xq^{n-x}\\]\n\n2.4.1 Using formula\nCalculate \\(P(X \\geq 5)\\) for a Bin(n=10, p=0.25) distribution:\n\\[P(X \\geq 5) = \\sum_{x=5}^{10}\\binom{10}{x}0.2.5^x 0.75^{10-x}\\] Calculate “directly” in R:\n\n# vector of x values whose probabilities need to be added\nx &lt;- 5:10  \n# vector of respective binomial prob's of x values\n(binom_prob_5_10 &lt;- choose(10,x) * 0.25^x * 0.75^(10-x))\n\n[1] 5.839920e-02 1.622200e-02 3.089905e-03 3.862381e-04 2.861023e-05\n[6] 9.536743e-07\n\n# add up the probabilities\nsum(binom_prob_5_10)\n\n[1] 0.07812691\n\n\n\n\n2.4.2 Using pbinom() with lower.tail = TRUE\nCalculate \\(P(X \\geq 5)\\) for a Bin(n=10, p=0.25) distribution.\n\\[P(X \\geq 5) = 1 - P(X \\leq 4) =1 - \\sum_{x=0}^{4}\\binom{10}{x}0.2.5^x 0.75^{10-x}\\]\n\n# P(X &gt;= 5) for Bin(n=10, p=0.25) random variable\n# P(X &gt;= 5) = 1 - P(X &lt;= 4)\n1 - pbinom(q = 4, size = 10, prob = 0.25, lower.tail = TRUE)\n\n[1] 0.07812691\n\n\n\n\n2.4.3 Using pbinom() with lower.tail = FALSE\n\n\\(P(X \\geq k) = P(X &gt; k)\\) = pbinom(q = k, size = n, prob = p, lower.tail = FALSE)\n\nCalculate \\(P(X \\geq 5)\\) for a Bin(n=10, p=0.25) distribution.\n\\[P(X \\geq 5) = P(X &gt; 4)\\]\n\n# P(X &gt;= 5) for Bin(n=10, p=0.25) random variable\n# P(X &gt;= 5) = P(X &gt; 4)\npbinom(q = 4, size = 10, prob = 0.25, lower.tail = FALSE)\n\n[1] 0.07812691"
+  },
+  {
+    "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#px-x",
+    "href": "slides_code/Probability_distributions_in_R_bsta511.html#px-x",
+    "title": "Probability distributions in R for BSTA 511/611",
+    "section": "3.2 \\(P(X < x)\\)",
+    "text": "3.2 \\(P(X &lt; x)\\)\n\\[\nP(X &lt; x) = P\\Big(Z &lt; \\frac{x-\\mu}{\\sigma}\\Big)\n\\] Calculate \\(P(X &lt; 10)\\), for \\(X \\sim N(\\mu = 8, \\sigma = 2)\\).\n\\[\nP(X &lt; 10) = P\\Big(Z &lt; \\frac{10-8}{2}\\Big) = P\\Big(Z &lt; 1\\Big)\n\\]\n\n# P(X &lt; 10) without using z-scores\npnorm(q = 10, mean = 8, sd = 2, lower.tail = TRUE)\n\n[1] 0.8413447\n\n# P(X &lt; 10) = P(Z &lt; 1) using z-scores\npnorm(q = 1, mean = 0, sd = 1, lower.tail = TRUE)\n\n[1] 0.8413447\n\n# this works too for a standard normal distribution:\npnorm(1)\n\n[1] 0.8413447\n\n\n\n3.2.1 Normal curve figure with region shaded in\n\nR code to create a figure of the normal distribution curve with the probability region of interest shaded in.\n\nShade in the region representing \\(P(X&lt;10)\\), for \\(X \\sim N(\\mu = 8, \\sigma = 2)\\).\n\n# gf_dist is from the ggformula package\n\ngf_dist(\"norm\", mean = 8, sd = 2, \n        # specify the region to shade in:\n        fill = ~ (x &lt; 10), geom = \"area\") |&gt;\n  # add a title describing what is being shown in the figure\n  gf_labs(title = \"P(X &lt; 10) for X ~ N(8, 2)\", y = \"\")"
+  },
+  {
+    "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#px-x-1",
+    "href": "slides_code/Probability_distributions_in_R_bsta511.html#px-x-1",
+    "title": "Probability distributions in R for BSTA 511/611",
+    "section": "3.3 \\(P(X > x)\\)",
+    "text": "3.3 \\(P(X &gt; x)\\)\n\\[\nP(X &gt; x) = P\\Big(Z &gt; \\frac{x-\\mu}{\\sigma}\\Big) = 1-P\\Big(Z \\leq  \\frac{x-\\mu}{\\sigma}\\Big)\n\\] Calculate \\(P(X &gt; 10)\\), for \\(X \\sim N(\\mu = 8, \\sigma = 2)\\).\n\\[\nP(X &gt; 10) = P\\Big(Z &gt; \\frac{10-8}{2}\\Big) = 1 - P\\Big(Z \\leq 1\\Big)\n\\]\n\n# P(X &gt; 10) without using z-scores\n1 - pnorm(q = 10, mean = 8, sd = 2, lower.tail = TRUE)\n\n[1] 0.1586553\n\n# using lower.tail = FALSE:\npnorm(q = 10, mean = 8, sd = 2, lower.tail = FALSE)\n\n[1] 0.1586553\n\n# P(X &gt; 10) = P(Z &gt; 1) using z-scores\n1 - pnorm(q = 1, mean = 0, sd = 1, lower.tail = TRUE)\n\n[1] 0.1586553\n\n# using lower.tail = FALSE:\npnorm(q = 1, mean = 0, sd = 1, lower.tail = FALSE)\n\n[1] 0.1586553\n\n# this works too for a standard normal distribution:\npnorm(1, lower.tail = FALSE)\n\n[1] 0.1586553\n\n\n\n3.3.1 Normal curve figure with region shaded in\n\nR code to create a figure of the normal distribution curve with the probability region of interest shaded in.\n\nShade in the region representing \\(P(X&gt;10)\\), for \\(X \\sim N(\\mu = 8, \\sigma = 2)\\).\n\n# gf_dist is from the ggformula package\n\ngf_dist(\"norm\", mean = 8, sd = 2, \n        # specify the region to shade in:\n        fill = ~ (x &gt; 10), geom = \"area\") |&gt;\n  # add a title describing what is being shown in the figure\n  gf_labs(title = \"P(X &gt; 10) for X ~ N(8, 2)\", y = \"\")"
+  },
+  {
+    "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#pxx",
+    "href": "slides_code/Probability_distributions_in_R_bsta511.html#pxx",
+    "title": "Probability distributions in R for BSTA 511/611",
+    "section": "2.2 \\(P(X=x)\\)",
+    "text": "2.2 \\(P(X=x)\\)\n\n2.2.1 Using formula\nCalculate \\(P(X=4)\\) for a Bin(n=10, p=0.25) distribution.\nIn general, for a binomial random variable, \\[P(X=x) = \\binom{n}{x}p^x q^{n-x}\\] Thus \\(P(X=4)\\) for a Bin(n=10, p=0.25) random variable, \\[P(X=4) = \\binom{10}{4}0.25^4 0.75^{10-4} = \\frac{10!}{4!(10-4)!}0.25^4 0.75^{10-4}\\] Calculate “directly” in R:\n\nchoose(10,4) * 0.25^4 * 0.75^6\n\n[1] 0.145998\n\n# using factorials instead of the choose function:\nfactorial(10)/(factorial(4)*factorial(6)) * 0.25^4 * 0.75^6\n\n[1] 0.145998\n\n\n\n\n2.2.2 Using dbinom()\nCalculate \\(P(X=4)\\) for a Bin(n=10, p=0.25) distribution.\n\n# P(X = 4) for Bin(n=10, p=0.25) random variable\ndbinom(x = 4, size = 10, prob = 0.25) \n\n[1] 0.145998\n\n\nCalculate \\(P(X=x)\\) for all possible values \\(x\\) for a Bin(n=10, p=0.25) distribution.\n\n# Entire probability distribution:\n# P(X = x) for all x=0,1,2,...,10 for Bin(n=10, p=0.25) random variable\ndbinom(x = 0:10, size = 10, prob = 0.25) \n\n [1] 5.631351e-02 1.877117e-01 2.815676e-01 2.502823e-01 1.459980e-01\n [6] 5.839920e-02 1.622200e-02 3.089905e-03 3.862381e-04 2.861023e-05\n[11] 9.536743e-07\n\n\nIn the next section we visualize these probability distribution values."
+  },
+  {
+    "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#px-leq-x-1",
+    "href": "slides_code/Probability_distributions_in_R_bsta511.html#px-leq-x-1",
+    "title": "Probability distributions in R for BSTA 511/611",
+    "section": "4.3 \\(P(X \\leq x)\\)",
+    "text": "4.3 \\(P(X \\leq x)\\)\n\\[P(X\\leq k) = \\sum_{x=0}^{k}\\frac{e^{-\\lambda}\\lambda^x}{x!}\\]\n\n4.3.1 Using formula\nCalculate \\(P(X \\leq 12)\\) for a \\(Pois(\\lambda = 5)\\) distribution:\n\\[P(X\\leq 12) = \\sum_{x=0}^{12} \\frac{e^{-5}5^x}{x!}\\]\nCalculate “directly” in R:\n\n# vector of x values whose probabilities need to be added\nx &lt;- 0:12  \n# vector of respective Poisson prob's of x values\n(Poisson_prob_0_12 &lt;- exp(-5)*(5^x)/factorial(x))\n\n [1] 0.006737947 0.033689735 0.084224337 0.140373896 0.175467370 0.175467370\n [7] 0.146222808 0.104444863 0.065278039 0.036265577 0.018132789 0.008242177\n[13] 0.003434240\n\n# add up the probabilities\nsum(Poisson_prob_0_12)\n\n[1] 0.9979811\n\n\n\n\n4.3.2 Using ppois()\n\n\\(P(X\\leq k)\\) = ppois(q = k, lambda = , lower.tail = TRUE)\n\nCalculate \\(P(X \\leq 12)\\) for a \\(Pois(\\lambda = 5)\\) distribution.\n\n# P(X &lt;= 3) for Pois(lambda = 5) random variable\nppois(q = 12, lambda = 5, lower.tail = TRUE)\n\n[1] 0.9979811\n\n# Note: setting TRUE for the lower.tail option is the default value\n# This means that if we do not specify this option, \n# it will give the same result as above:\nppois(q = 12, lambda = 5) \n\n[1] 0.9979811"
+  },
+  {
+    "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#px-geq-x-1",
+    "href": "slides_code/Probability_distributions_in_R_bsta511.html#px-geq-x-1",
+    "title": "Probability distributions in R for BSTA 511/611",
+    "section": "4.4 \\(P(X \\geq x)\\)",
+    "text": "4.4 \\(P(X \\geq x)\\)\n\\[P(X\\geq k) = \\sum_{x=k}^{\\infty} \\frac{e^{-\\lambda}\\lambda^x}{x!}\\]\n\n4.4.1 Using formula\nCalculate \\(P(X \\geq 13)\\) for a \\(Pois(\\lambda = 5)\\) distribution:\n\\[P(X \\geq 13) = \\sum_{x=13}^{\\infty} \\frac{e^{-5}5^x}{x!}\\] Calculate “directly” in R:\n\n# vector of x values whose probabilities need to be added\nx &lt;- 13:100 # choose a big number; big enough so that the probabilities for the high x values below are tiny\n# vector of respective Poisson prob's of x values\n(Poisson_prob_13_100 &lt;- exp(-5)*(5^x)/factorial(x))\n\n [1] 1.320862e-03 4.717363e-04 1.572454e-04 4.913920e-05 1.445271e-05\n [6] 4.014640e-06 1.056484e-06 2.641211e-07 6.288597e-08 1.429227e-08\n[11] 3.107014e-09 6.472947e-10 1.294589e-10 2.489595e-11 4.610361e-12\n[16] 8.232787e-13 1.419446e-13 2.365743e-14 3.815715e-15 5.962055e-16\n[21] 9.033417e-17 1.328444e-17 1.897777e-18 2.635801e-19 3.561893e-20\n[26] 4.686701e-21 6.008592e-22 7.510739e-23 9.159438e-24 1.090409e-24\n[31] 1.267918e-25 1.440816e-26 1.600906e-27 1.740116e-28 1.851187e-29\n[36] 1.928320e-30 1.967673e-31 1.967673e-32 1.929091e-33 1.854895e-34\n[41] 1.749901e-35 1.620279e-36 1.472981e-37 1.315162e-38 1.153650e-39\n[46] 9.945263e-41 8.428189e-42 7.023491e-43 5.756959e-44 4.642709e-45\n[51] 3.684690e-46 2.878664e-47 2.214357e-48 1.677543e-49 1.251898e-50\n[56] 9.205131e-52 6.670385e-53 4.764561e-54 3.355324e-55 2.330086e-56\n[61] 1.595950e-57 1.078344e-58 7.188962e-60 4.729580e-61 3.071156e-62\n[66] 1.968690e-63 1.246006e-64 7.787539e-66 4.807123e-67 2.931172e-68\n[71] 1.765766e-69 1.051051e-70 6.182656e-72 3.594567e-73 2.065843e-74\n[76] 1.173775e-75 6.594239e-77 3.663466e-78 2.012894e-79 1.093964e-80\n[81] 5.881526e-82 3.128471e-83 1.646564e-84 8.575854e-86 4.420543e-87\n[86] 2.255379e-88 1.139080e-89 5.695402e-91\n\n# add up the probabilities\nsum(Poisson_prob_13_100)\n\n[1] 0.002018852\n\n\n\n\n4.4.2 Using ppois() with lower.tail = TRUE\nCalculate \\(P(X \\geq 13)\\) for a \\(Pois(\\lambda = 5)\\) distribution.\n\\[P(X \\geq 13) = 1 - P(X \\leq 12) =1 - \\sum_{x=0}^{12} \\frac{e^{-5}5^x}{x!}\\]\n\n# P(X &gt;= 13) for Pois(lambda = 5) random variable\n# P(X &gt;= 13) = 1 - P(X &lt;= 12)\n1 - ppois(q = 12, lambda = 5, lower.tail = TRUE)\n\n[1] 0.002018852\n\n\n\n\n4.4.3 Using ppois() with lower.tail = FALSE\n\n\\(P(X \\geq k) = P(X &gt; k)\\) = ppois(q = k, size = n, prob = p, lower.tail = FALSE)\n\nCalculate \\(P(X \\geq 13)\\) for a \\(Pois(\\lambda = 5)\\) distribution.\n\\[P(X \\geq 13) = P(X &gt; 12)\\]\n\n# P(X &gt;= 13) for Pois(lambda = 5) random variable\n# P(X &gt;= 13) = P(X &gt; 12)\nppois(q = 12, lambda = 5, lower.tail = FALSE)\n\n[1] 0.002018852"
+  },
+  {
+    "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#visualize-the-probability-distribution",
+    "href": "slides_code/Probability_distributions_in_R_bsta511.html#visualize-the-probability-distribution",
+    "title": "Probability distributions in R for BSTA 511/611",
+    "section": "2.1 Visualize the probability distribution",
+    "text": "2.1 Visualize the probability distribution\n\n2.1.1 Easy way - but incomplete\n\nBelow is what the probability distribution of a binomial random variable with \\(n=10\\) and probability of success \\(p=0.25\\) (Bin(n=10, p=0.25)) looks like.\nThe heights of the bars are the probabilities of the values on the x-axis.\nThe problem with this figure is that the x-axis doesn’t include bars for values of x with very small probabilities. In this example the bars for x=9 and x=10 were dropped.\n\n\n# gf_dist is from the ggformula package\ngf_dist(\"binom\", size = 10, prob = 0.25)\n\n\n\n\n\n\n\n\n\n\n2.1.2 Longer way - but correct\n\nFirst, create a data frame of the distribution’s possible x values and their respective probabilities:\n\n\n# Bin(n=10, p=0.25) random variable\n\nbinom_probs &lt;- data.frame(x_values = 0:10, \n                          px = dbinom(x = 0:10, size = 10, prob = 0.25)) \nbinom_probs\n\n   x_values           px\n1         0 5.631351e-02\n2         1 1.877117e-01\n3         2 2.815676e-01\n4         3 2.502823e-01\n5         4 1.459980e-01\n6         5 5.839920e-02\n7         6 1.622200e-02\n8         7 3.089905e-03\n9         8 3.862381e-04\n10        9 2.861023e-05\n11       10 9.536743e-07\n\n\nThe histogram below is actually created as a bar plot in ggplot using geom_col:\n\nggplot(binom_probs, \n       aes(x = x_values, y = px))  + \n  geom_col(fill =\"cornflowerblue\") +\n  labs(x = \"x, number of successes\",\n       y = \"P(X=x)\") +\n  scale_x_continuous(breaks=0:10) +\n  labs(title = \"Bin(n = 10, p = 0.25) distribution\")"
+  },
+  {
+    "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#pxx-1",
+    "href": "slides_code/Probability_distributions_in_R_bsta511.html#pxx-1",
+    "title": "Probability distributions in R for BSTA 511/611",
+    "section": "4.2 \\(P(X=x)\\)",
+    "text": "4.2 \\(P(X=x)\\)\n\n4.2.1 Using formula\nCalculate \\(P(X=3)\\) for a \\(Pois(\\lambda = 5)\\) distribution.\nIn general, for a Poisson random variable, \\[P(X=x) = \\frac{e^{-\\lambda}\\lambda^x}{x!}\\] Thus the \\(P(X=3)\\) for a \\(Pois(\\lambda = 5)\\) random variable is \\[P(X=3) = \\frac{e^{-5}5^3}{3!}\\] Calculate “directly” in R:\n\nexp(-5)*(5^3)/factorial(3)\n\n[1] 0.1403739\n\n\n\n\n4.2.2 Using dpois()\nCalculate \\(P(X=3)\\) for a \\(Pois(\\lambda = 5)\\) distribution.\n\n# P(X = 3) for Pois(lambda = 5) random variable\ndpois(x = 3, lambda = 5) \n\n[1] 0.1403739\n\n\n\nCalculate \\(P(X=x)\\) for many possible values \\(x\\) for a \\(Pois(\\lambda = 5)\\) distribution.\nThe possible values of \\(x\\) for a Poisson distribution are \\(x=0, 1, 2, \\ldots\\), i.e., \\(x\\) can be infinitely large.\nBelow we look at probabilities just for \\(x=0, 1, 2, \\ldots, 20\\).\n\n\n# P(X = x) for x=0,1,2,...,100 for Pois(\\lambda = 5) random variable\ndpois(x = 0:20, lambda = 5) \n\n [1] 6.737947e-03 3.368973e-02 8.422434e-02 1.403739e-01 1.754674e-01\n [6] 1.754674e-01 1.462228e-01 1.044449e-01 6.527804e-02 3.626558e-02\n[11] 1.813279e-02 8.242177e-03 3.434240e-03 1.320862e-03 4.717363e-04\n[16] 1.572454e-04 4.913920e-05 1.445271e-05 4.014640e-06 1.056484e-06\n[21] 2.641211e-07\n\n# although we didn't calculate the probabilities for all possible values of x, \n# below we see that the probabilities for the first 21 values almost add up to 1\nsum(dpois(x = 0:20, lambda = 5) )\n\n[1] 0.9999999"
+  },
+  {
+    "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#visualize-the-probability-distribution-1",
+    "href": "slides_code/Probability_distributions_in_R_bsta511.html#visualize-the-probability-distribution-1",
+    "title": "Probability distributions in R for BSTA 511/611",
+    "section": "3.1 Visualize the probability distribution",
+    "text": "3.1 Visualize the probability distribution\n\nBelow is what the probability distribution of a Normal random variable with mean 8 and standard deviation 2 looks like.\n\n\n# gf_dist is from the ggformula package\ngf_dist(\"norm\", mean = 8, sd = 2)"
+  },
+  {
+    "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#visualize-the-probability-distribution-2",
+    "href": "slides_code/Probability_distributions_in_R_bsta511.html#visualize-the-probability-distribution-2",
+    "title": "Probability distributions in R for BSTA 511/611",
+    "section": "4.1 Visualize the probability distribution",
+    "text": "4.1 Visualize the probability distribution\n\nBelow I include both the “easy” way using gf_dist is from the ggformula package and the longer way to create a visualization of a Poisson distribution.\nIn this case (unlike with the Binomial distribution) either option works fine.\n\n\n4.1.1 Easy way\n\nBelow is what the probability distribution of a Poisson random variable with lambda = 5 (\\(Pois(\\lambda = 5)\\)) looks like.\nThe heights of the bars are the probabilities of the values on the x-axis.\n\n\n# gf_dist is from the ggformula package\ngf_dist(\"pois\", lambda = 5)\n\n\n\n\n\n\n\n\n\n\n4.1.2 Longer way\n\nFirst, create a data frame of the distribution’s possible x values and their respective probabilities:\n\n\n# Pois(lambda = 5) random variable\n\n# 20 was chosen since the probabilities are negligible at this point\nPoisson_probs &lt;- data.frame(x_values = 0:20, \n                          px = dpois(x = 0:20, lambda = 5)) \nPoisson_probs\n\n   x_values           px\n1         0 6.737947e-03\n2         1 3.368973e-02\n3         2 8.422434e-02\n4         3 1.403739e-01\n5         4 1.754674e-01\n6         5 1.754674e-01\n7         6 1.462228e-01\n8         7 1.044449e-01\n9         8 6.527804e-02\n10        9 3.626558e-02\n11       10 1.813279e-02\n12       11 8.242177e-03\n13       12 3.434240e-03\n14       13 1.320862e-03\n15       14 4.717363e-04\n16       15 1.572454e-04\n17       16 4.913920e-05\n18       17 1.445271e-05\n19       18 4.014640e-06\n20       19 1.056484e-06\n21       20 2.641211e-07\n\n\nThe histogram below is actually created as a bar plot in ggplot using geom_col:\n\nggplot(Poisson_probs, \n       aes(x = x_values, y = px))  + \n  geom_col(fill =\"cornflowerblue\") +\n  labs(x = \"x, number of successes\",\n       y = \"P(X=x)\") +\n  scale_x_continuous(breaks=0:20) +  # chose 20 since prob's are already tiny for this distribution\n  labs(title = \"Pois(lambda = 5) distribution\")"
+  },
+  {
+    "objectID": "weeks/week_04.html",
+    "href": "weeks/week_04.html",
+    "title": "Week 4",
+    "section": "",
+    "text": "Random variables: Section 3.1\nBinomial distribution: Section 3.2\nDay 6 Practice Problems\n\nSee PP section below\n\n\n\n\n\n\nNormal distribution: Section 3.3\nPoisson distribution: Section 3.4\nDay 7 Practice Problems\n\nSee PP section below\n\n\n\n\n\nSee the Exam 1 information section below for information about next week’s exam."
   }
 ]

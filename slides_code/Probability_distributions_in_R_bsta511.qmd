@@ -13,6 +13,8 @@ format:
     theme: lumen
     self-contained: true
     html-math-method: mathjax
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -21,11 +23,71 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 
+
 * I recommend installing the `tinytex` R package to help with rendering LaTeX equations if you do not have a LaTeX program installed on your computer. 
 
-# Binomial distribution
+# Install & load `ggformula` package to create probability distribution figures below
 
-## Probability calculations: $P(X=x)$
+```{r eval=FALSE}
+install.packages("ggformula")
+```
+
+Load `ggformula` package:
+
+```{r message=FALSE, warning=FALSE}
+library(ggformula)
+```
+
+
+# Binomial distribution (Day 6)
+
+
+## Visualize the probability distribution
+
+### Easy way - but incomplete
+
+-   Below is what the probability distribution of a binomial random variable with $n=10$ and probability of success $p=0.25$ (Bin(n=10, p=0.25)) looks like.
+-   The heights of the bars are the probabilities of the values on the x-axis.
+-   *The problem with this figure is that the x-axis doesn't include bars for values of x with very small probabilities. In this example the bars for x=9 and x=10 were dropped.*
+
+```{r}
+#| fig.height: 3
+#| fig.width: 5
+#| 
+# gf_dist is from the ggformula package
+gf_dist("binom", size = 10, prob = 0.25)
+```
+
+### Longer way - but correct
+
+* First, create a data frame of the distribution's possible x values and their respective probabilities:
+
+```{r}
+# Bin(n=10, p=0.25) random variable
+
+binom_probs <- data.frame(x_values = 0:10, 
+                          px = dbinom(x = 0:10, size = 10, prob = 0.25)) 
+binom_probs
+```
+
+The histogram below is actually created as a bar plot in ggplot using `geom_col`:
+
+```{r}
+#| fig.height: 3
+#| fig.width: 5
+
+ggplot(binom_probs, 
+       aes(x = x_values, y = px))  + 
+  geom_col(fill ="cornflowerblue") +
+  labs(x = "x, number of successes",
+       y = "P(X=x)") +
+  scale_x_continuous(breaks=0:10) +
+  labs(title = "Bin(n = 10, p = 0.25) distribution")
+```
+
+
+
+## $P(X=x)$
 
 ### Using formula
 
@@ -63,36 +125,10 @@ dbinom(x = 0:10, size = 10, prob = 0.25)
 
 In the next section we visualize these probability distribution values.
 
-## Histogram of probability distribution
 
-* First, create a data frame of the distribution's possible x values and their respective probabilities:
 
-```{r}
-# Bin(n=10, p=0.25) random variable
 
-binom_probs <- data.frame(x_values = 0:10, 
-                          px = dbinom(x = 0:10, size = 10, prob = 0.25)) 
-binom_probs
-```
-
-### Histogram 
-
-The histogram below is actually created as a bar plot in ggplot:
-
-```{r}
-#| fig.height: 3
-#| fig.width: 5
-
-ggplot(binom_probs, 
-       aes(x = x_values, y = px))  + 
-  geom_col(fill ="cornflowerblue") +
-  labs(x = "x, number of successes",
-       y = "P(X=x)") +
-  scale_x_continuous(breaks=0:10) +
-  labs(title = "Bin(n = 10, p = 0.25) distribution")
-```
-
-## Probability calculations: $P(X \leq x)$
+## $P(X \leq x)$
 
 $$P(X\leq k) = \sum_{x=0}^{k}\binom{n}{x}p^xq^{n-x}$$
 
@@ -129,7 +165,8 @@ pbinom(q = 3, size = 10, prob = 0.25)
 ```
 
 
-## Probability calculations: $P(X \geq x)$
+
+## $P(X \geq x)$
 
 $$P(X\geq k) = \sum_{x=k}^{n}\binom{n}{x}p^xq^{n-x}$$
 
@@ -178,9 +215,22 @@ pbinom(q = 4, size = 10, prob = 0.25, lower.tail = FALSE)
 ```
 
 
-# Normal distribution
+# Normal distribution (Day 7)
 
-## Probability calculations: $P(X < x)$
+## Visualize the probability distribution
+
+-   Below is what the probability distribution of a Normal random variable with mean 8 and standard deviation 2 looks like.
+
+```{r}
+#| fig.height: 3
+#| fig.width: 5
+
+# gf_dist is from the ggformula package
+gf_dist("norm", mean = 8, sd = 2)
+```
+
+
+## $P(X < x)$
 
 $$
 P(X < x) = P\Big(Z < \frac{x-\mu}{\sigma}\Big)
@@ -201,8 +251,27 @@ pnorm(q = 1, mean = 0, sd = 1, lower.tail = TRUE)
 pnorm(1)
 ```
 
+### Normal curve figure with region shaded in
 
-## Probability calculations: $P(X > x)$
+* R code to create a figure of the normal distribution curve with the probability region of interest shaded in. 
+
+Shade in the region representing $P(X<10)$, for $X \sim N(\mu = 8, \sigma = 2)$.
+
+```{r}
+#| fig.height: 3
+#| fig.width: 5
+
+# gf_dist is from the ggformula package
+
+gf_dist("norm", mean = 8, sd = 2, 
+        # specify the region to shade in:
+        fill = ~ (x < 10), geom = "area") |>
+  # add a title describing what is being shown in the figure
+  gf_labs(title = "P(X < 10) for X ~ N(8, 2)", y = "")
+```
+
+
+## $P(X > x)$
 
 $$
 P(X > x) = P\Big(Z > \frac{x-\mu}{\sigma}\Big) = 1-P\Big(Z \leq  \frac{x-\mu}{\sigma}\Big)
@@ -228,7 +297,7 @@ pnorm(1, lower.tail = FALSE)
 ```
 
 
-## Normal curve figure with region shaded in
+### Normal curve figure with region shaded in
 
 * R code to create a figure of the normal distribution curve with the probability region of interest shaded in. 
 
@@ -238,34 +307,70 @@ Shade in the region representing $P(X>10)$, for $X \sim N(\mu = 8, \sigma = 2)$.
 #| fig.height: 3
 #| fig.width: 5
 
-# This code shades in the probability P(X > 10) 
-# for X ~ N(mu = 8, sigma = 2)
-# Note that I set the upper and lower bounds of the normal curve to be from mu - 4*sigma to mu + 4*sigma since these bounds include almost 100% of the area under the normal curve
+# gf_dist is from the ggformula package
 
-mu <- 8   # specify the mean of the normal distribution
-std <- 2  # specify the standard deviation of the normal distribution
-
-# specify upper and lower bounds of shaded region below
-ggplot(data.frame(x = c(mu-4*std, mu+4*std)), aes(x = x)) + 
-  stat_function(fun = dnorm, 
-                args = list(mean = mu, sd = std)) + 
-  stat_function(fun = dnorm, 
-                args = list(mean = mu, sd = std), 
-          # specify the upper and lower bounds of the shaded region:
-                xlim = c(10, mu+4*std),             
-                geom = "area", fill = "darkblue") +
-  # the breaks values below might need to be adjusted 
-  # if there are too many values showing on the x-axis
-  scale_x_continuous(breaks= seq(from = mu-4*std, to = mu+4*std, by= std)) +
-  labs(y = "") +
-  labs(title = "P(X >10) for a N(mu=8, sigma=2) distribution")
+gf_dist("norm", mean = 8, sd = 2, 
+        # specify the region to shade in:
+        fill = ~ (x > 10), geom = "area") |>
+  # add a title describing what is being shown in the figure
+  gf_labs(title = "P(X > 10) for X ~ N(8, 2)", y = "")
 ```
 
 
 
-# Poisson distribution
+# Poisson distribution (Day 7)
 
-## Probability calculations: $P(X=x)$
+## Visualize the probability distribution
+
+-   Below I include both the "easy" way using `gf_dist` is from the ggformula package and the longer way to create a visualization of a Poisson distribution.
+-   In this case (unlike with the Binomial distribution) either option works fine.
+
+
+### Easy way
+
+-   Below is what the probability distribution of a Poisson random variable with lambda = 5 ($Pois(\lambda = 5)$) looks like.
+-   The heights of the bars are the probabilities of the values on the x-axis.
+
+```{r}
+#| fig.height: 3
+#| fig.width: 5
+#| 
+# gf_dist is from the ggformula package
+gf_dist("pois", lambda = 5)
+```
+
+### Longer way
+
+* First, create a data frame of the distribution's possible x values and their respective probabilities:
+
+```{r}
+# Pois(lambda = 5) random variable
+
+# 20 was chosen since the probabilities are negligible at this point
+Poisson_probs <- data.frame(x_values = 0:20, 
+                          px = dpois(x = 0:20, lambda = 5)) 
+Poisson_probs
+```
+
+
+The histogram below is actually created as a bar plot in ggplot using `geom_col`:
+
+
+```{r}
+#| fig.height: 3
+#| fig.width: 5
+
+ggplot(Poisson_probs, 
+       aes(x = x_values, y = px))  + 
+  geom_col(fill ="cornflowerblue") +
+  labs(x = "x, number of successes",
+       y = "P(X=x)") +
+  scale_x_continuous(breaks=0:20) +  # chose 20 since prob's are already tiny for this distribution
+  labs(title = "Pois(lambda = 5) distribution")
+```
+
+
+## $P(X=x)$
 
 ### Using formula
 
@@ -304,38 +409,9 @@ dpois(x = 0:20, lambda = 5)
 sum(dpois(x = 0:20, lambda = 5) )
 ```
 
-In the next section we visualize these probability distribution values.
 
-## Histogram of probability distribution
 
-* First, create a data frame of the distribution's possible x values and their respective probabilities:
-
-```{r}
-# Pois(lambda = 5) random variable
-
-Poisson_probs <- data.frame(x_values = 0:20, 
-                          px = dpois(x = 0:20, lambda = 5)) 
-Poisson_probs
-```
-
-### Histogram 
-
-The histogram below is actually created as a bar plot in ggplot:
-
-```{r}
-#| fig.height: 3
-#| fig.width: 5
-
-ggplot(Poisson_probs, 
-       aes(x = x_values, y = px))  + 
-  geom_col(fill ="cornflowerblue") +
-  labs(x = "x, number of successes",
-       y = "P(X=x)") +
-  scale_x_continuous(breaks=0:20) +  # chose 20 since prob's are already tiny for this distribution
-  labs(title = "Pois(lambda = 5) distribution")
-```
-
-## Probability calculations: $P(X \leq x)$
+## $P(X \leq x)$
 
 $$P(X\leq k) = \sum_{x=0}^{k}\frac{e^{-\lambda}\lambda^x}{x!}$$
 
@@ -373,7 +449,7 @@ ppois(q = 12, lambda = 5)
 ```
 
 
-## Probability calculations: $P(X \geq x)$
+## $P(X \geq x)$
 
 $$P(X\geq k) = \sum_{x=k}^{\infty} \frac{e^{-\lambda}\lambda^x}{x!}$$
 
