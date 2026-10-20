@@ -87,6 +87,7 @@ Additional Instructions - IMPORTANT!!!
 ## * 🎃 3.4 Baggage fees
 
 -   *Note: Part (a) asks you to "build a probability model." See Figure 3.2 on the bottom of pg. 140 in the textbook for an example of a probability model.* 
+-   Note that the cost of two bags is 25 + 35 = 60 dollars. 
 
 ## *3.5 Gull clutch size
 
