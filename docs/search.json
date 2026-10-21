@@ -10533,5 +10533,12 @@
     "title": "Week 4",
     "section": "",
     "text": "Random variables: Section 3.1\nBinomial distribution: Section 3.2\nDay 6 Practice Problems\n\nSee PP section below\n\nIn class PowerPoint slides (on Brightspace)\n\n\n\n\n\nNormal distribution: Section 3.3\nPoisson distribution: Section 3.4\nDay 7 Practice Problems\n\nSee PP section below\n\n\n\n\n\n\nMake sure to check out the calculating probabilities in R code file: qmd, html\nSee the Exam 1 information section below for information about next week’s exam."
+  },
+  {
+    "objectID": "slides_code/Probability_distributions_in_R_bsta511.html#px_1-x-x_2",
+    "href": "slides_code/Probability_distributions_in_R_bsta511.html#px_1-x-x_2",
+    "title": "Probability distributions in R for BSTA 511/611",
+    "section": "3.4 \\(P(x_1 < X < x_2)\\)",
+    "text": "3.4 \\(P(x_1 &lt; X &lt; x_2)\\)\n\\[\nP(x_1 &lt; X &lt; x_2) = P(X &lt; x_2) - P(X &lt; x_1)\n\\] \\[\n= P\\Big(Z &lt; \\frac{x_2-\\mu}{\\sigma}\\Big) - P\\Big(Z &lt; \\frac{x_1-\\mu}{\\sigma}\\Big)\n\\] Calculate \\(P(8 &lt; X &lt; 10)\\), for \\(X \\sim N(\\mu = 8, \\sigma = 2)\\).\n\\[\nP(8 &lt; X &lt; 10) = P(X &lt; 10) - P(X &lt; 8)\n\\] \\[\n= P\\Big(Z &lt; \\frac{10-8}{2}\\Big) - P\\Big(Z &lt; \\frac{8-8}{2}\\Big) = P\\Big(Z &lt; 1\\Big) - P\\Big(Z &lt; 0\\Big)\n\\]\n\n# P(8 &lt; X &lt; 10) without using z-scores\npnorm(q = 10, mean = 8, sd = 2, lower.tail = TRUE) - \n  pnorm(q = 8, mean = 8, sd = 2, lower.tail = TRUE)\n\n[1] 0.3413447\n\n# P(8 &lt; X &lt; 10) = P(Z &lt; 1) - P(Z &lt; 0) using z-scores\npnorm(q = 1, mean = 0, sd = 1, lower.tail = TRUE) - \n  pnorm(q = 0, mean = 0, sd = 1, lower.tail = TRUE)\n\n[1] 0.3413447\n\n# this works too for a standard normal distribution:\npnorm(1) - pnorm(0)\n\n[1] 0.3413447\n\n\n\n3.4.1 Normal curve figure with region shaded in\n\nR code to create a figure of the normal distribution curve with the probability region of interest shaded in.\n\nShade in the region representing \\(P(8 &lt; X&lt; 10)\\), for \\(X \\sim N(\\mu = 8, \\sigma = 2)\\).\n\n# gf_dist is from the ggformula package\n\ngf_dist(\"norm\", mean = 8, sd = 2, \n        # specify the region to shade in:\n        fill = ~ (x &gt; 8 & x &lt; 10), geom = \"area\") |&gt;\n  # add a title describing what is being shown in the figure\n  gf_labs(title = \"P(8 &lt; X &lt; 10) for X ~ N(8, 2)\", y = \"\")"
   }
 ]

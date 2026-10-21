@@ -318,6 +318,61 @@ gf_dist("norm", mean = 8, sd = 2,
 
 
 
+## $P(x_1 < X < x_2)$
+
+$$
+P(x_1 < X < x_2) = P(X < x_2) - P(X < x_1) 
+$$
+$$
+= P\Big(Z < \frac{x_2-\mu}{\sigma}\Big) - P\Big(Z < \frac{x_1-\mu}{\sigma}\Big)
+$$
+Calculate $P(8 < X < 10)$, for $X \sim N(\mu = 8, \sigma = 2)$.
+
+$$
+P(8 < X < 10) = P(X < 10) - P(X < 8) 
+$$
+$$
+= P\Big(Z < \frac{10-8}{2}\Big) - P\Big(Z < \frac{8-8}{2}\Big) = P\Big(Z < 1\Big) - P\Big(Z < 0\Big)
+$$
+
+```{r}
+# P(8 < X < 10) without using z-scores
+pnorm(q = 10, mean = 8, sd = 2, lower.tail = TRUE) - 
+  pnorm(q = 8, mean = 8, sd = 2, lower.tail = TRUE)
+
+# P(8 < X < 10) = P(Z < 1) - P(Z < 0) using z-scores
+pnorm(q = 1, mean = 0, sd = 1, lower.tail = TRUE) - 
+  pnorm(q = 0, mean = 0, sd = 1, lower.tail = TRUE)
+
+# this works too for a standard normal distribution:
+pnorm(1) - pnorm(0)
+```
+
+
+### Normal curve figure with region shaded in
+
+* R code to create a figure of the normal distribution curve with the probability region of interest shaded in. 
+
+Shade in the region representing $P(8 < X< 10)$, for $X \sim N(\mu = 8, \sigma = 2)$.
+
+```{r}
+#| fig.height: 3
+#| fig.width: 5
+
+# gf_dist is from the ggformula package
+
+gf_dist("norm", mean = 8, sd = 2, 
+        # specify the region to shade in:
+        fill = ~ (x > 8 & x < 10), geom = "area") |>
+  # add a title describing what is being shown in the figure
+  gf_labs(title = "P(8 < X < 10) for X ~ N(8, 2)", y = "")
+```
+
+
+
+
+
+
 # Poisson distribution (Day 7)
 
 ## Visualize the probability distribution
