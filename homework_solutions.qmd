@@ -15,4 +15,7 @@ editor_options:
 
 :::
 
-*Link coming soon!*
+[Link to HW solutions](https://brightspace.ohsu.edu/d2l/le/lessons/16063/lessons/453679) on Brightspace. 
+
+-   Make sure to uncollapse the HW solutions tab to see the individual assignments. 
+-   You will need to download the qmd files to see them.
