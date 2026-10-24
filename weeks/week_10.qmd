@@ -25,6 +25,8 @@ editor_options:
 
 -   Simple Linear Regression Part 2
 -   Sections 6.3-6.4
+
+<!-- -   In class PowerPoint [slides]() (on Brightspace) -->
 :::
 
 ::: g-col-6
@@ -33,6 +35,8 @@ editor_options:
 -   Nonparametric tests
 -   This material is not in our textbook. Please see Chapter 13: Nonparametric tests of Pagano’s *Principles of Biostatistics*, 2022 edition as a supplementary resource.
     -   This chapter can be downloaded from the OHSU library’s eBook at <https://ebookcentral.proquest.com/lib/ohsu/detail.action?docID=6950388&pq-origsite=primo>
+
+<!-- -   In class PowerPoint [slides]() (on Brightspace) -->
 :::
 :::::
 

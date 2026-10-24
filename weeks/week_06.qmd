@@ -26,6 +26,8 @@ editor_options:
 -   Confidence intervals for one mean (single-sample):
     -   Sections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)
 -   Student’s t-distribution
+
+<!-- -   In class PowerPoint [slides]() (on Brightspace) -->
 :::
 
 ::: g-col-6
@@ -37,6 +39,8 @@ editor_options:
 -   **R projects**, `here::here()`, and loading data into R from a file
     -   **See [Projects in RStudio](../resources/Projects_in_R.qmd) file for more information**
 -   Running a `t.test` in R
+
+<!-- -   In class PowerPoint [slides]() (on Brightspace) -->
 :::
 :::::
 

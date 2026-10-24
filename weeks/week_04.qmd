@@ -36,8 +36,7 @@ editor_options:
 -   Poisson distribution: Section 3.4
 -   [**Day 7 Practice Problems**]{style="color:darkorange"}
     -   See PP section below
-
-<!-- -   In class PowerPoint [slides]() (on Brightspace)  -->
+-   In class PowerPoint [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/469582) (on Brightspace)
 :::
 :::::
 

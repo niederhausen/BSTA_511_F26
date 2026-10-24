@@ -3,7 +3,7 @@ title: "Day 15: Simple Linear Regression (part 1) (Sections 6.1-6.2)"
 subtitle: "BSTA 511/611"
 author: "Meike Niederhausen, PhD"
 institute: "OHSU-PSU School of Public Health"
-date: "11/26/2025"
+date: "11/25/2026"
 categories: ["Week 9"]
 format: 
   html:

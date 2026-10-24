@@ -27,6 +27,8 @@ editor_options:
 -   Chi-squared tests of association and homogeneity
 -   Fisher’s exact test
 -   Sections 8.3-8.4
+
+<!-- -   In class PowerPoint [slides]() (on Brightspace) -->
 :::
 
 ::: g-col-6
@@ -35,6 +37,8 @@ editor_options:
 -   ANOVA = Analysis of Variance
 -   Comparing more than 2 means
 -   Section 5.5
+
+<!-- -   In class PowerPoint [slides]() (on Brightspace) -->
 :::
 :::::
 

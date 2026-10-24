@@ -29,6 +29,8 @@ editor_options:
 
 -   Simple Linear Regression (part 1)
 -   Sections 6.1, 6.2
+
+<!-- -   In class PowerPoint [slides]() (on Brightspace) -->
 :::
 :::::
 

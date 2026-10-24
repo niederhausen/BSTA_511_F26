@@ -4,7 +4,7 @@ subtitle: "BSTA 511/611"
 pagetitle: "Day 11 BSTA 511/611"
 author: "Meike Niederhausen, PhD"
 institute: "OHSU-PSU School of Public Health"
-date: "11/10/2025"
+date: "11/9/2026"
 categories: ["Week 7"]
 format: 
   # revealjs:
