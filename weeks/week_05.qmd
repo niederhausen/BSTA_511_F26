@@ -71,9 +71,7 @@ During class you will be working in groups discussing the following:
 
 ## Homework
 
-*HW 4 link coming soon!*
-
-<!-- -   [HW 4](../homework/HW_4_F26_bsta511.qmd) covers Days 8-10 and is due on Sat, 11/7 -->
+-   [HW 4](../homework/HW_4_F26_bsta511.qmd) covers Days 8-10 and is due on Sat, 11/7
 
 -   Check out this [spreadsheet](https://docs.google.com/spreadsheets/d/1k_NivXZftdlRgRyTT3fUZCndW4eoXCzAs-DEIml6K3Y/edit?gid=0#gid=0) for typos in book.
 

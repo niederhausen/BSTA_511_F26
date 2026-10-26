@@ -5177,7 +5177,7 @@
     "href": "weeks/week_05.html#homework",
     "title": "Week 5",
     "section": "Homework",
-    "text": "Homework\nHW 4 link coming soon!\n\n\nCheck out this spreadsheet for typos in book."
+    "text": "Homework\n\nHW 4 covers Days 8-10 and is due on Sat, 11/7\nCheck out this spreadsheet for typos in book."
   },
   {
     "objectID": "weeks/week_05.html#sec-Exam1info",
@@ -5562,7 +5562,7 @@
     "href": "homework.html",
     "title": "Assignments",
     "section": "",
-    "text": "Note\n\n\n\n\nBelow are links to homework assignments.\nThe dates in the Date column are due dates.\nSee the Grading rubric tab to the left for a description of how assignments will be graded.\n\n\n\n\nCheck out this spreadsheet for textbook typos.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n10/10/26\n\n\nHW 1: BSTA 511/611 F26\n\n\n\n\n\n\n10/17/26\n\n\nHW 2: BSTA 511/611 F26\n\n\n\n\n\n\n10/24/26\n\n\nHW 3: BSTA 511/611 F26\n\n\n\n\n\n\nNo matching items"
+    "text": "Note\n\n\n\n\nBelow are links to homework assignments.\nThe dates in the Date column are due dates.\nSee the Grading rubric tab to the left for a description of how assignments will be graded.\n\n\n\n\nCheck out this spreadsheet for textbook typos.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n10/10/26\n\n\nHW 1: BSTA 511/611 F26\n\n\n\n\n\n\n10/17/26\n\n\nHW 2: BSTA 511/611 F26\n\n\n\n\n\n\n10/24/26\n\n\nHW 3: BSTA 511/611 F26\n\n\n\n\n\n\n11/7/26\n\n\nHW 4: BSTA 511/611 F26\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -10400,5 +10400,117 @@
     "title": "Day 11: Inference for difference in means from two independent samples and Power (Sections 5.3, 5.4)",
     "section": "More software for power and sample size calculations: PASS",
     "text": "More software for power and sample size calculations: PASS\n\nPASS is a very powerful (& expensive) software that does power and sample size calculations for many advanced statistical modeling techniques.\n\nEven if you don’t have access to PASS, their documentation is very good and free online.\nDocumentation includes formulas and references.\nPASS documentation for powering means\n\nOne mean, paired means, two independent means\n\n\nOne-sample t-test documentation: https://www.ncss.com/wp-content/themes/ncss/pdf/Procedures/PASS/One-Sample_T-Tests.pdf"
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html",
+    "href": "homework/HW_4_F26_bsta511.html",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "",
+    "text": "Due 11/7/26\nDownload the .qmd file for this assignment from https://github.com/niederhausen/BSTA_511_F26/blob/main/homework/HW_4_F26_bsta511.qmd"
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#graded-exercises",
+    "href": "homework/HW_4_F26_bsta511.html#graded-exercises",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "👻 Graded exercises",
+    "text": "👻 Graded exercises\nThe exercises listed below will be graded for this assignment. You are strongly encouraged to complete the entire assignment. You will receive feedback on exercises you turn in that are not being graded.\n\nBook exercises\n\n5.6, 5.22\n\nNon-book exercise\n\nNB 1: The Ethan Allen\n\nR exercises\n\nR1: Youth weights - Part 1\nR2: Youth weights - Part 2\nR3: Swim times"
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#directions",
+    "href": "homework/HW_4_F26_bsta511.html#directions",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "⚠️ Directions",
+    "text": "⚠️ Directions\n\n\n\n\n\n\nImportant\n\n\n\n\n* Starred exercises may be completed by hand (such as on paper or using a tablet) instead of using Quarto.\n\nSome of these exercises require some R code.\nIf you do these exercises by hand, make sure to include the R code written out by hand as well as the output from R (as done in the class notes), so that the TA only needs to grade one file for those exercises.\n\n\nFor questions you are submitting in Quarto:\n\nUse LaTeX to format the equations.\n\nFor instructions on creating equations in the Visual editor, check out https://quarto.org/docs/get-started/authoring/rstudio.html#equations.\nYou can see examples of LaTeX formatting in the calculating probabilities in R code file: qmd, html\nAlso check out examples of LaTeX formatting for statistics created by recent biostats alum Ariel Weingarten.\nIf you have difficulty rendering the LaTeX equations, I recommend installing and running the R package tinytex. See this website for instructions.\n\n\n\n\n\n\nPlease upload your homework to Brightspace.\n\nUpload both your .qmd code file and the rendered .html file\n\n(plus a pdf if completing part of the assignment by hand).\n\nUse the assignment .qmd file linked to at the top of the this file as a template for your own assignment.\n\nFor each question, make sure to show all of your work.\n\nThis includes all code and resulting output in the html file to support your answers for exercises requiring work done in R (including any arithmetic calculations).\nFor non-calculation questions, this includes an explanation of your answer (why did you choose your answer?).\n\nFor each question, include a sentence summarizing the answer for that question in the context of the research question.\n\n\n\n\n\n\n\nTip\n\n\n\nIt is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly."
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#hypothesis-test-ci-instructions",
+    "href": "homework/HW_4_F26_bsta511.html#hypothesis-test-ci-instructions",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "⚠️ Hypothesis test & CI instructions",
+    "text": "⚠️ Hypothesis test & CI instructions\n\n\n\n\n\n\nImportant\n\n\n\n\nFor book exercises, make sure to include all steps in a hypothesis test (where applicable) as outlined in the class notes.\nDo not forget to include a discussion on whether you think the test (or CI) assumptions have been satisfied. Are there assumptions you need to make in order for them to be satisfied? Whether you believe they are satisfied or not, continue to run the hypothesis test (or CI) as instructed."
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#mental-health-part-i",
+    "href": "homework/HW_4_F26_bsta511.html#mental-health-part-i",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "*4.4 Mental health, Part I",
+    "text": "*4.4 Mental health, Part I"
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#thanksgiving-spending-part-i",
+    "href": "homework/HW_4_F26_bsta511.html#thanksgiving-spending-part-i",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "*4.6 Thanksgiving spending, Part I",
+    "text": "*4.6 Thanksgiving spending, Part I"
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#age-at-first-marriage-part-i",
+    "href": "homework/HW_4_F26_bsta511.html#age-at-first-marriage-part-i",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "*4.8 Age at first marriage, Part I",
+    "text": "*4.8 Age at first marriage, Part I"
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#working-backwards-part-ii",
+    "href": "homework/HW_4_F26_bsta511.html#working-backwards-part-ii",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "* 👻 5.6 Working backwards, Part II",
+    "text": "* 👻 5.6 Working backwards, Part II"
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#t-vs.-z",
+    "href": "homework/HW_4_F26_bsta511.html#t-vs.-z",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "*5.10 t⋆ vs. z⋆",
+    "text": "*5.10 t⋆ vs. z⋆"
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#paired-or-not-part-ii",
+    "href": "homework/HW_4_F26_bsta511.html#paired-or-not-part-ii",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "5.16 Paired or not, Part II",
+    "text": "5.16 Paired or not, Part II"
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#ddt-exposure",
+    "href": "homework/HW_4_F26_bsta511.html#ddt-exposure",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "👻 5.22 DDT exposure",
+    "text": "👻 5.22 DDT exposure"
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#nb-1-the-ethan-allen",
+    "href": "homework/HW_4_F26_bsta511.html#nb-1-the-ethan-allen",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "* 👻 NB 1: The Ethan Allen",
+    "text": "* 👻 NB 1: The Ethan Allen\nOn October 5, 2005, a tour boat named the Ethan Allen capsized on Lake George in New York with 47 passengers aboard. In the inquiries that followed, it was suggested that the tour operators should have realized that the combined weight of so many passengers was likely to exceed the weight capacity of the boat. Could they have predicted this?\n\nThe maximum weight capacity of passengers that the Ethan Allen could accommodate was estimated to be 7500 pounds.\nData from the Centers for Disease Control and Prevention indicate that weights of American adults in 2005 had a mean of 167 pounds and a standard deviation of 35 pounds.\n\nIf the tour boat company consistently accepted 47 passengers, what we want to know is the probability that the combined weight of the 47 passengers would exceed this capacity.\n\n(a) Maximum average weight\nWith 47 passengers on board, what is the maximum average weight that the Ethan Allen could accommodate?\n\n\n(b) Probability of an individual\nAssuming that the weights of American adults in 2005 can be modeled with a normal distribution, find the probability that an individual weighs more than the maximum average weight the Ethan Allen can accommodate.\n\n\n(c) Probability a random sample\nCalculate the probability that a random sample of 47 American adults has an average weight greater than the maximum average weight the Ethan Allen can accommodate.\n\n\n(d) Theorem used?\nWhat theorem did you use in the previous part, and why were you able to apply it to this problem?\n\n\n(e) Could this have been predicted?\nCould the tour operators have predicted that the combined weight of so many passengers was likely to exceed the weight capacity of the Ethan Allen?"
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#load-packages",
+    "href": "homework/HW_4_F26_bsta511.html#load-packages",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "Load packages",
+    "text": "Load packages\nLoad all the packages you need in the first code chunk of the file that starts with #| label: \"setup\"."
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#r1-youth-weights---part-1",
+    "href": "homework/HW_4_F26_bsta511.html#r1-youth-weights---part-1",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "👻 R1: Youth weights - Part 1",
+    "text": "👻 R1: Youth weights - Part 1\nIn this exercise you will use the YRBSS dataset we used in class on Day 8, to simulate the distribution of mean weights from repeated samples. Use the code from class where we simulated mean heights, and apply it to the weights (in pounds) as directed below.\n\n\n\n\n\n\nImportant\n\n\n\nYou will need to install and load the moderndive R package to use the rep_sample_n() command from the class notes.\n\n\n\n(a) set.seed()\nUse the set.seed() command to set a randomization seed. Use whatever number you want for the seed.\n\n\n(b) 1000 random samples of size 10\nTake 1000 random samples of size 10 and save the tibble with the random samples. Show the first 20 lines of this tibble.\n\n\n(c) Mean weights from the 1000 random samples\nCreate a tibble with mean weights from the 1000 random samples. Show the first 10 rows of this tibble.\n\n\n(d) Histogram of the 1000 mean weights\nMake a histogram of the 1000 mean weights. What do we call this distribution? Describe the shape of the distribution.\n\n\n(e) Mean and standard deviation of the 1000 sample mean weights\nCalculate the mean and standard deviation of the 1000 sample mean weights. What is another name for this standard deviation?\n\n\n(f) Theoretical values for mean and standard deviation\nWhat are the theoretical values for mean and standard deviation of the sampling distribution from the CLT, and how do your simulated values compare to the theoretical values?"
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#r2-youth-weights---part-2",
+    "href": "homework/HW_4_F26_bsta511.html#r2-youth-weights---part-2",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "👻 R2: Youth weights - Part 2",
+    "text": "👻 R2: Youth weights - Part 2\nIn this exercise you will use the YRBSS dataset again that we used in class on Days 8-9, to simulate the distribution of mean weights from repeated samples.\n\n(a) CI\nSuppose you took a random sample of size 50 from the YRBSS data, that has mean weight 130 pounds. Calculate and interpret a 90% confidence interval using the standard deviation of weights from the YRBSS “population.”\n\n\n(b) Another CI\nCalculate and interpret a 90% confidence interval assuming the standard deviation of weights from the random sample is 40."
+  },
+  {
+    "objectID": "homework/HW_4_F26_bsta511.html#r3-swim-times",
+    "href": "homework/HW_4_F26_bsta511.html#r3-swim-times",
+    "title": "HW 4: BSTA 511/611 F26",
+    "section": "👻 R3: Swim times",
+    "text": "👻 R3: Swim times\n\nIn these exercises you will use R to work through the swim times example from Section 5.2 in the textbook.\nThe data are in the oibiostats package and called swim.\n\n\n(a) Mean & SD of differences\nCalculate the mean and standard deviation for the differences in swim times, and compare them to the ones in the book. Which order were the differences calculated, wet suit - swim suit or the opposite? Were all the differences positive?\n\n\n(b) Dot plot of differences\nCreate a dot plot of the differences in swim times and comment on the distribution shape.\n\n\n(c) Hypothesis test\nRun the appropriate statistical test in R as both a one-sample t-test and a paired t-test to verify the test statistic, p-value, and CI in the text. Use inline R code to pull these values from the test output when writing up your comparison of these values to the book’s values."
   }
 ]
