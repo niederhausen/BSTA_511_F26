@@ -5407,8 +5407,8 @@
     "objectID": "weeks/week_06.html#overview-of-week-6",
     "href": "weeks/week_06.html#overview-of-week-6",
     "title": "Week 6",
-    "section": "Overview of Week 6",
-    "text": "Overview of Week 6\n\n\nMon: Day 9\n\nConfidence intervals for one mean (single-sample):\n\nSections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)\n\nStudent’s t-distribution\n\n\n\n\nWed: Day 10\n\nHypothesis testing for one mean (single-sample): Section 4.3, 5.1\nCIs vs. hypothesis tests\nInference for two-sample paired data: Section 5.2\nR projects, here::here(), and loading data into R from a file\n\nSee Projects in RStudio file for more information\n\nRunning a t.test in R"
+    "section": "",
+    "text": "Confidence intervals for one mean (single-sample):\n\nSections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)\n\nStudent’s t-distribution\nDay 9 Practice Problems\n\n\n\n\n\n\nHypothesis testing for one mean (single-sample): Section 4.3, 5.1\nCIs vs. hypothesis tests\nInference for two-sample paired data: Section 5.2\nR projects, here::here(), and loading data into R from a file\n\nSee Projects in RStudio file for more information\n\nMore on projects will be added soon\n\nRunning a t.test in R\nDay 10 Practice Problems"
   },
   {
     "objectID": "weeks/week_06.html#slides-recordings",
@@ -10512,5 +10512,19 @@
     "title": "HW 4: BSTA 511/611 F26",
     "section": "👻 R3: Swim times",
     "text": "👻 R3: Swim times\n\nIn these exercises you will use R to work through the swim times example from Section 5.2 in the textbook.\nThe data are in the oibiostats package and called swim.\n\n\n(a) Mean & SD of differences\nCalculate the mean and standard deviation for the differences in swim times, and compare them to the ones in the book. Which order were the differences calculated, wet suit - swim suit or the opposite? Were all the differences positive?\n\n\n(b) Dot plot of differences\nCreate a dot plot of the differences in swim times and comment on the distribution shape.\n\n\n(c) Hypothesis test\nRun the appropriate statistical test in R as both a one-sample t-test and a paired t-test to verify the test statistic, p-value, and CI in the text. Use inline R code to pull these values from the test output when writing up your comparison of these values to the book’s values."
+  },
+  {
+    "objectID": "weeks/week_06.html",
+    "href": "weeks/week_06.html",
+    "title": "Week 6",
+    "section": "",
+    "text": "Confidence intervals for one mean (single-sample):\n\nSections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)\n\nStudent’s t-distribution\nDay 9 Practice Problems\n\n\n\n\n\n\nHypothesis testing for one mean (single-sample): Section 4.3, 5.1\nCIs vs. hypothesis tests\nInference for two-sample paired data: Section 5.2\nR projects, here::here(), and loading data into R from a file\n\nSee Projects in RStudio file for more information\n\nMore on projects will be added soon\n\nRunning a t.test in R\nDay 10 Practice Problems"
+  },
+  {
+    "objectID": "weeks/week_06.html#sec-PP",
+    "href": "weeks/week_06.html#sec-PP",
+    "title": "Week 6",
+    "section": "Practice Problems",
+    "text": "Practice Problems\n\nDay 9 PP\n\nFrom Day 9 slides:\n\nSlide 15: What percent CI was being simulated in this figure?\nSlide 22: Calculate CI\n\n\n\n\nDay 10 PP\n\nBook exercise: 5.12"
   }
 ]

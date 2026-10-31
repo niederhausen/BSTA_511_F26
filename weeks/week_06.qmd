@@ -13,7 +13,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-## [Page not yet updated]{style="color:darkorange"}
+<!-- ## [Page not yet updated]{style="color:darkorange"} -->
 
 
 
@@ -26,6 +26,7 @@ editor_options:
 -   Confidence intervals for one mean (single-sample):
     -   Sections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)
 -   Student’s t-distribution
+-   [**Day 9 Practice Problems**](#sec-PP)
 
 <!-- -   In class PowerPoint [slides]() (on Brightspace) -->
 :::
@@ -37,8 +38,10 @@ editor_options:
 -   CIs vs. hypothesis tests
 -   Inference for two-sample paired data: Section 5.2
 -   **R projects**, `here::here()`, and loading data into R from a file
-    -   **See [Projects in RStudio](../resources/Projects_in_R.qmd) file for more information**
+    -   **See [Projects in RStudio](../resources/Projects_in_R.qmd) file for more information**  
+    -   *More on projects will be added soon*
 -   Running a `t.test` in R
+-   [**Day 10 Practice Problems**](#sec-PP)
 
 <!-- -   In class PowerPoint [slides]() (on Brightspace) -->
 :::
@@ -68,15 +71,16 @@ All datasets can be found on [GitHub](https://github.com/niederhausen/BSTA_511_F
 -   [BodyTemperatures.csv](/data/BodyTemperatures.csv)
 -   [chol213.csv](/data/chol213.csv)
 
-## Practice Problems
+## Practice Problems {#sec-PP}
 
-### [Day 9 PP]{style="color:darkorange"}
+### Day 9 PP
 
 -   From Day 9 slides: 
     -   Slide 15: What percent CI was being simulated in this figure?
     -   Slide 22: Calculate CI
 
-### [Day 10 PP]{style="color:darkorange"}
+
+### Day 10 PP
 
 -   Book exercise: 5.12
 
@@ -105,5 +109,6 @@ During class you will be working in groups discussing the following:
 
 ## Homework
 
--   [HW 4](../homework/HW_4_F26_bsta511_v2.qmd) covers Days 8-10 and is due on Sat, 11/7
+-   [HW 4](../homework/HW_4_F26_bsta511.qmd) covers Days 8-10 and is due on Sat, 11/7
+
 -   Check out this [spreadsheet](https://docs.google.com/spreadsheets/d/1k_NivXZftdlRgRyTT3fUZCndW4eoXCzAs-DEIml6K3Y/edit?gid=0#gid=0) for typos in book.
