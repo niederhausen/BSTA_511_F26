@@ -27,8 +27,7 @@ editor_options:
     -   Sections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)
 -   Student’s t-distribution
 -   [**Day 9 Practice Problems**](#sec-PP)
-
-<!-- -   In class PowerPoint [slides]() (on Brightspace) -->
+-   In class PowerPoint [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/470699) (on Brightspace)
 :::
 
 ::: g-col-6

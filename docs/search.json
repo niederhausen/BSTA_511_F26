@@ -5408,7 +5408,7 @@
     "href": "weeks/week_06.html#overview-of-week-6",
     "title": "Week 6",
     "section": "",
-    "text": "Confidence intervals for one mean (single-sample):\n\nSections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)\n\nStudent’s t-distribution\nDay 9 Practice Problems\n\n\n\n\n\n\nHypothesis testing for one mean (single-sample): Section 4.3, 5.1\nCIs vs. hypothesis tests\nInference for two-sample paired data: Section 5.2\nR projects, here::here(), and loading data into R from a file\n\nSee Projects in RStudio file for more information\n\nMore on projects will be added soon\n\nRunning a t.test in R\nDay 10 Practice Problems"
+    "text": "Confidence intervals for one mean (single-sample):\n\nSections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)\n\nStudent’s t-distribution\nDay 9 Practice Problems\nIn class PowerPoint slides (on Brightspace)\n\n\n\n\n\nHypothesis testing for one mean (single-sample): Section 4.3, 5.1\nCIs vs. hypothesis tests\nInference for two-sample paired data: Section 5.2\nR projects, here::here(), and loading data into R from a file\n\nSee Projects in RStudio file for more information\n\nMore on projects will be added soon\n\nRunning a t.test in R\nDay 10 Practice Problems"
   },
   {
     "objectID": "weeks/week_06.html#slides-recordings",
@@ -10518,7 +10518,7 @@
     "href": "weeks/week_06.html",
     "title": "Week 6",
     "section": "",
-    "text": "Confidence intervals for one mean (single-sample):\n\nSections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)\n\nStudent’s t-distribution\nDay 9 Practice Problems\n\n\n\n\n\n\nHypothesis testing for one mean (single-sample): Section 4.3, 5.1\nCIs vs. hypothesis tests\nInference for two-sample paired data: Section 5.2\nR projects, here::here(), and loading data into R from a file\n\nSee Projects in RStudio file for more information\n\nMore on projects will be added soon\n\nRunning a t.test in R\nDay 10 Practice Problems"
+    "text": "Confidence intervals for one mean (single-sample):\n\nSections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)\n\nStudent’s t-distribution\nDay 9 Practice Problems\nIn class PowerPoint slides (on Brightspace)\n\n\n\n\n\nHypothesis testing for one mean (single-sample): Section 4.3, 5.1\nCIs vs. hypothesis tests\nInference for two-sample paired data: Section 5.2\nR projects, here::here(), and loading data into R from a file\n\nSee Projects in RStudio file for more information\n\nMore on projects will be added soon\n\nRunning a t.test in R\nDay 10 Practice Problems"
   },
   {
     "objectID": "weeks/week_06.html#sec-PP",
