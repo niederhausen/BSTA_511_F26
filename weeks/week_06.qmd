@@ -41,8 +41,8 @@ editor_options:
     -   *More on projects will be added soon*
 -   Running a `t.test` in R
 -   [**Day 10 Practice Problems**](#sec-PP)
+-   In class PowerPoint [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/470837) (on Brightspace)
 
-<!-- -   In class PowerPoint [slides]() (on Brightspace) -->
 :::
 :::::
 
@@ -81,7 +81,7 @@ All datasets can be found on [GitHub](https://github.com/niederhausen/BSTA_511_F
 
 ### Day 10 PP
 
--   Book exercise: 5.12
+-   Book exercise: 5.12 (a)-(d)
 
 ## Class discussion
 
