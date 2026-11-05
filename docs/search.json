@@ -2146,7 +2146,7 @@
     "href": "slides_md/Day10_part2_bsta511_md.html#compare-the-2-options",
     "title": "Day 10 Part 2: Inference for mean difference from two-sample dependent/paired data (Section 5.2)",
     "section": "Compare the 2 options",
-    "text": "Compare the 2 options\n\nHow is the code similar and different for the 2 options?\nGiven a dataset, how would you choose which of the 2 options to use?\n\n\n# option 1\nt.test(x = chol$DiffChol, mu = 0) |&gt; tidy() |&gt; gt() # tidy from broom package\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-19.54167\n-5.696519\n8.434775e-06\n23\n-26.63811\n-12.44522\nOne Sample t-test\ntwo.sided\n\n\n\n\n\n\n# option 2\nt.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE) |&gt; tidy() |&gt; gt()\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n19.54167\n5.696519\n8.434775e-06\n23\n12.44522\n26.63811\nPaired t-test\ntwo.sided\n\n\n\n\n\n\n# # option 3\n# t.test(Cholesterol ~ Time, paired = TRUE, data = chol_long) |&gt; tidy() |&gt; gt()"
+    "text": "Compare the 2 options\n\nHow is the code similar and different for the 2 options?\nGiven a dataset, how would you choose which of the 2 options to use?\n\n\n# option 1\nt.test(x = chol$DiffChol, mu = 0) |&gt; tidy() |&gt; gt() # tidy from broom package\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-19.54167\n-5.696519\n8.434775e-06\n23\n-26.63811\n-12.44522\nOne Sample t-test\ntwo.sided\n\n\n\n\n\n\n# option 2\nt.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE) |&gt; tidy() |&gt; gt()\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n19.54167\n5.696519\n8.434775e-06\n23\n12.44522\n26.63811\nPaired t-test\ntwo.sided\n\n\n\n\n\n\n# original slides include this option 3 that no longer works\n# t.test(Cholesterol ~ Time, paired = TRUE, data = chol_long) |&gt; tidy() |&gt; gt()"
   },
   {
     "objectID": "slides_md/Day10_part2_bsta511_md.html#what-if-we-wanted-to-test-whether-the-diet-decreased-cholesterol-levels",
@@ -2160,7 +2160,7 @@
     "href": "slides_md/Day10_part2_bsta511_md.html#r-what-if-we-wanted-to-test-whether-the-diet-decreased-cholesterol-levels",
     "title": "Day 10 Part 2: Inference for mean difference from two-sample dependent/paired data (Section 5.2)",
     "section": "R: What if we wanted to test whether the diet decreased cholesterol levels?",
-    "text": "R: What if we wanted to test whether the diet decreased cholesterol levels?\n\nWhich of the 3 options to run a paired t-test in R is being used below?\nHow did the code change to account for testing a decrease in cholesterol levels?\nWhich values in the output changed compared to testing for a change in cholesterol levels? How did they change?\n\n\n# alternative = c(\"two.sided\", \"less\", \"greater\")\nt.test(x = chol$DiffChol, mu = 0, alternative = \"less\") |&gt; \n  tidy() |&gt; \n  gt()\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-19.54167\n-5.696519\n4.217387e-06\n23\n-Inf\n-13.6623\nOne Sample t-test\nless"
+    "text": "R: What if we wanted to test whether the diet decreased cholesterol levels?\n\nWhich of the 2 options to run a paired t-test in R is being used below?\nHow did the code change to account for testing a decrease in cholesterol levels?\nWhich values in the output changed compared to testing for a change in cholesterol levels? How did they change?\n\n\n# alternative = c(\"two.sided\", \"less\", \"greater\")\nt.test(x = chol$DiffChol, mu = 0, alternative = \"less\") |&gt; \n  tidy() |&gt; \n  gt()\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-19.54167\n-5.696519\n4.217387e-06\n23\n-Inf\n-13.6623\nOne Sample t-test\nless"
   },
   {
     "objectID": "slides_md/Day10_part2_bsta511_md.html#one-sided-confidence-intervals",
@@ -5415,7 +5415,7 @@
     "href": "weeks/week_06.html#slides-recordings",
     "title": "Week 6",
     "section": "Slides & Recordings",
-    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n9\nCI’s for 1 mean: 4.2\nDay 9: slides 1-12\n\n\n\nDay 9 Part 1\n17 min\n\n\n\n\n\n4.2 con’td\nDay 9: slides 13-19\n\n\n\nDay 9 Part 2\n17 min\n\n\n\n\n\n4.2 con’td, 5.1.1, 5.1.2 (pgs. 238-242)\nDay 9: slides 20-23\n\n\n\nDay 9 Part 3\n14 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10 part 1\nHyp test 1 mean intro\nDay 10 Part 1: slides 1-13\n\n\n\nDay 10 Part 1\n26 min\n\n\n\n\n\nHyp test steps: 4.3, 5.1\nDay 10 Part 1: slides 14-25\n\n\n\nDay 10 Part 2\n36 min\n\n\n\n\n\nR demo\nDay 10 Part 1: slides 26-34\n\n\n\nDay 10 Part 3\n25 min\n\n\n\n\n10 part 2\n\nDay 10 Part 2\n\n\n\nNo recording"
+    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n9\nCI’s for 1 mean: 4.2\nDay 9: slides 1-12\n\n\n\nDay 9 Part 1\n17 min\n\n\n\n\n\n4.2 con’td\nDay 9: slides 13-19\n\n\n\nDay 9 Part 2\n17 min\n\n\n\n\n\n4.2 con’td, 5.1.1, 5.1.2 (pgs. 238-242)\nDay 9: slides 20-23\n\n\n\nDay 9 Part 3\n14 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10 part 1\nHyp test 1 mean intro\nDay 10 Part 1: slides 1-13\n\n\n\nDay 10 Part 1\n26 min\n\n\n\n\n\nHyp test steps: 4.3, 5.1\nDay 10 Part 1: slides 14-25\n\n\n\nDay 10 Part 2\n36 min\n\n\n\n\n\nR demo\nDay 10 Part 1: slides 26-34\n\n\n\nDay 10 Part 3\n25 min\n\n\n\n\n10 part 2\n\nDay 10 Part 2\n\n\npartial solutions\nNo recording"
   },
   {
     "objectID": "weeks/week_06.html#datasets",
@@ -7053,7 +7053,7 @@
     "href": "slides/Day10_part2_bsta511.html#compare-the-2-options",
     "title": "Day 10 Part 2: Inference for mean difference from two-sample dependent/paired data (Section 5.2)",
     "section": "Compare the 2 options",
-    "text": "Compare the 2 options\n\nHow is the code similar and different for the 2 options?\nGiven a dataset, how would you choose which of the 2 options to use?\n\n\n# option 1\nt.test(x = chol$DiffChol, mu = 0) |&gt; tidy() |&gt; gt() # tidy from broom package\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-19.54167\n-5.696519\n8.434775e-06\n23\n-26.63811\n-12.44522\nOne Sample t-test\ntwo.sided\n\n\n\n\n\n\n# option 2\nt.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE) |&gt; tidy() |&gt; gt()\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n19.54167\n5.696519\n8.434775e-06\n23\n12.44522\n26.63811\nPaired t-test\ntwo.sided\n\n\n\n\n\n\n# # option 3\n# t.test(Cholesterol ~ Time, paired = TRUE, data = chol_long) |&gt; tidy() |&gt; gt()"
+    "text": "Compare the 2 options\n\nHow is the code similar and different for the 2 options?\nGiven a dataset, how would you choose which of the 2 options to use?\n\n\n# option 1\nt.test(x = chol$DiffChol, mu = 0) |&gt; tidy() |&gt; gt() # tidy from broom package\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-19.54167\n-5.696519\n8.434775e-06\n23\n-26.63811\n-12.44522\nOne Sample t-test\ntwo.sided\n\n\n\n\n\n\n# option 2\nt.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE) |&gt; tidy() |&gt; gt()\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n19.54167\n5.696519\n8.434775e-06\n23\n12.44522\n26.63811\nPaired t-test\ntwo.sided\n\n\n\n\n\n\n# original slides include this option 3 that no longer works\n# t.test(Cholesterol ~ Time, paired = TRUE, data = chol_long) |&gt; tidy() |&gt; gt()"
   },
   {
     "objectID": "slides/Day10_part2_bsta511.html#what-if-we-wanted-to-test-whether-the-diet-decreased-cholesterol-levels",
@@ -7067,7 +7067,7 @@
     "href": "slides/Day10_part2_bsta511.html#r-what-if-we-wanted-to-test-whether-the-diet-decreased-cholesterol-levels",
     "title": "Day 10 Part 2: Inference for mean difference from two-sample dependent/paired data (Section 5.2)",
     "section": "R: What if we wanted to test whether the diet decreased cholesterol levels?",
-    "text": "R: What if we wanted to test whether the diet decreased cholesterol levels?\n\nWhich of the 3 options to run a paired t-test in R is being used below?\nHow did the code change to account for testing a decrease in cholesterol levels?\nWhich values in the output changed compared to testing for a change in cholesterol levels? How did they change?\n\n\n# alternative = c(\"two.sided\", \"less\", \"greater\")\nt.test(x = chol$DiffChol, mu = 0, alternative = \"less\") |&gt; \n  tidy() |&gt; \n  gt()\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-19.54167\n-5.696519\n4.217387e-06\n23\n-Inf\n-13.6623\nOne Sample t-test\nless"
+    "text": "R: What if we wanted to test whether the diet decreased cholesterol levels?\n\nWhich of the 2 options to run a paired t-test in R is being used below?\nHow did the code change to account for testing a decrease in cholesterol levels?\nWhich values in the output changed compared to testing for a change in cholesterol levels? How did they change?\n\n\n# alternative = c(\"two.sided\", \"less\", \"greater\")\nt.test(x = chol$DiffChol, mu = 0, alternative = \"less\") |&gt; \n  tidy() |&gt; \n  gt()\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-19.54167\n-5.696519\n4.217387e-06\n23\n-Inf\n-13.6623\nOne Sample t-test\nless"
   },
   {
     "objectID": "slides/Day10_part2_bsta511.html#one-sided-confidence-intervals",
@@ -9279,14 +9279,14 @@
     "href": "slides_code/Day10_part2_bsta511_code.html#compare-the-2-options",
     "title": "Day 10 Part 2: Inference for mean difference from two-sample dependent/paired data (Section 5.2)",
     "section": "Compare the 2 options",
-    "text": "Compare the 2 options\n\nHow is the code similar and different for the 2 options?\nGiven a dataset, how would you choose which of the 2 options to use?\n\n\n# option 1\nt.test(x = chol$DiffChol, mu = 0) |&gt; tidy() |&gt; gt() # tidy from broom package\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-19.54167\n-5.696519\n8.434775e-06\n23\n-26.63811\n-12.44522\nOne Sample t-test\ntwo.sided\n\n\n\n\n\n\n# option 2\nt.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE) |&gt; tidy() |&gt; gt()\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n19.54167\n5.696519\n8.434775e-06\n23\n12.44522\n26.63811\nPaired t-test\ntwo.sided\n\n\n\n\n\n\n# # option 3\n# t.test(Cholesterol ~ Time, paired = TRUE, data = chol_long) |&gt; tidy() |&gt; gt()"
+    "text": "Compare the 2 options\n\nHow is the code similar and different for the 2 options?\nGiven a dataset, how would you choose which of the 2 options to use?\n\n\n# option 1\nt.test(x = chol$DiffChol, mu = 0) |&gt; tidy() |&gt; gt() # tidy from broom package\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-19.54167\n-5.696519\n8.434775e-06\n23\n-26.63811\n-12.44522\nOne Sample t-test\ntwo.sided\n\n\n\n\n\n\n# option 2\nt.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE) |&gt; tidy() |&gt; gt()\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n19.54167\n5.696519\n8.434775e-06\n23\n12.44522\n26.63811\nPaired t-test\ntwo.sided\n\n\n\n\n\n\n# original slides include this option 3 that no longer works\n# t.test(Cholesterol ~ Time, paired = TRUE, data = chol_long) |&gt; tidy() |&gt; gt()"
   },
   {
     "objectID": "slides_code/Day10_part2_bsta511_code.html#r-what-if-we-wanted-to-test-whether-the-diet-decreased-cholesterol-levels",
     "href": "slides_code/Day10_part2_bsta511_code.html#r-what-if-we-wanted-to-test-whether-the-diet-decreased-cholesterol-levels",
     "title": "Day 10 Part 2: Inference for mean difference from two-sample dependent/paired data (Section 5.2)",
     "section": "R: What if we wanted to test whether the diet decreased cholesterol levels?",
-    "text": "R: What if we wanted to test whether the diet decreased cholesterol levels?\n\nWhich of the 3 options to run a paired t-test in R is being used below?\nHow did the code change to account for testing a decrease in cholesterol levels?\nWhich values in the output changed compared to testing for a change in cholesterol levels? How did they change?\n\n\n# alternative = c(\"two.sided\", \"less\", \"greater\")\nt.test(x = chol$DiffChol, mu = 0, alternative = \"less\") |&gt; tidy() |&gt; gt()\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-19.54167\n-5.696519\n4.217387e-06\n23\n-Inf\n-13.6623\nOne Sample t-test\nless"
+    "text": "R: What if we wanted to test whether the diet decreased cholesterol levels?\n\nWhich of the 2 options to run a paired t-test in R is being used below?\nHow did the code change to account for testing a decrease in cholesterol levels?\nWhich values in the output changed compared to testing for a change in cholesterol levels? How did they change?\n\n\n# alternative = c(\"two.sided\", \"less\", \"greater\")\nt.test(x = chol$DiffChol, mu = 0, alternative = \"less\") |&gt; tidy() |&gt; gt()\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-19.54167\n-5.696519\n4.217387e-06\n23\n-Inf\n-13.6623\nOne Sample t-test\nless"
   },
   {
     "objectID": "slides_code/Day17_bsta511_code.html",
@@ -10526,5 +10526,19 @@
     "title": "Week 6",
     "section": "Practice Problems",
     "text": "Practice Problems\n\nDay 9 PP\n\nFrom Day 9 slides:\n\nSlide 15: What percent CI was being simulated in this figure?\nSlide 22: Calculate CI\n\n\n\n\nDay 10 PP\n\nBook exercise: 5.12 (a)-(d)"
+  },
+  {
+    "objectID": "slides/Day10_part2_bsta511.html#r-option-3-run-a-2-sample-t.test-with-paired-true-option-but-using-the-long-data-and-a-formula",
+    "href": "slides/Day10_part2_bsta511.html#r-option-3-run-a-2-sample-t.test-with-paired-true-option-but-using-the-long-data-and-a-formula",
+    "title": "Day 10 Part 2: Inference for mean difference from two-sample dependent/paired data (Section 5.2)",
+    "section": "R option 3: Run a 2-sample t.test with paired = TRUE option, but using the long data and a “formula”",
+    "text": "R option 3: Run a 2-sample t.test with paired = TRUE option, but using the long data and a “formula”\n\nThis option no longer works. Skip the 2 slides relating to this in the recording."
+  },
+  {
+    "objectID": "slides_md/Day10_part2_bsta511_md.html#r-option-3-run-a-2-sample-t.test-with-paired-true-option-but-using-the-long-data-and-a-formula",
+    "href": "slides_md/Day10_part2_bsta511_md.html#r-option-3-run-a-2-sample-t.test-with-paired-true-option-but-using-the-long-data-and-a-formula",
+    "title": "Day 10 Part 2: Inference for mean difference from two-sample dependent/paired data (Section 5.2)",
+    "section": "R option 3: Run a 2-sample t.test with paired = TRUE option, but using the long data and a “formula”",
+    "text": "R option 3: Run a 2-sample t.test with paired = TRUE option, but using the long data and a “formula”\n\nThis option no longer works. Skip the 2 slides relating to this in the recording."
   }
 ]

@@ -588,55 +588,10 @@ t.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE)
 [*What is different in the output compared to option 1?*]{style="color:darkorange"}
 
 
-<!-- ## R option 3: Run a 2-sample `t.test` with `paired = TRUE` option, but using the long data and a "formula" (1/2) -->
+## R option 3: Run a 2-sample `t.test` with `paired = TRUE` option, but using the long data and a "formula"
 
-<!-- ::: columns -->
-<!-- ::: {.column width="60%"} -->
+-   This option no longer works. Skip the 2 slides relating to this in the recording.
 
-<!-- * The data have to be in a `long` format for option 3, where each person has 2 rows: one for Before and one for After. -->
-<!--     * The long dataset `chol_long` was created for the slide "EDA: Spaghetti plot of cholesterol levels before & after diet".  -->
-<!--     * See the code to create it there. -->
-<!-- * [*What information is being stored in each of the columns?*]{style="color:darkorange"} -->
-<!-- ::: -->
-
-<!-- ::: {.column width="40%"} -->
-<!-- ```{r} -->
-<!-- # first 16 rows of long data: -->
-<!-- head(chol_long, 16) -->
-<!-- ``` -->
-
-<!-- ::: -->
-<!-- ::: -->
-
-<!-- ## R option 3: Run a 2-sample `t.test` with `paired = TRUE` option, but using the long data and a "formula" (2/2) -->
-
-<!-- ::: columns -->
-<!-- ::: {.column width="40%"} -->
-<!-- ::: {style="font-size: 90%;"} -->
-
-<!-- * Use the usual `t.test` -->
-<!-- * What's different is that  -->
-<!--     * instead of specifying the variables with `x=` and `y=`,  -->
-<!--     * we give a __formula__ of the form `y ~ x` using _just the variable names_, -->
-<!--     * and then specify the name of the dataset using `data =` -->
-<!-- * This method is often used in practice, and more similar to the coding style of running a regression model (BSTA 512 & 513) -->
-<!-- ::: -->
-<!-- ::: -->
-
-<!-- ::: {.column width="60%"} -->
-<!-- ```{r} -->
-<!-- # using long data  -->
-<!-- # with columns Cholesterol & Time -->
-<!-- t.test(Cholesterol ~ Time,  -->
-<!--        paired = TRUE,  -->
-<!--        data = chol_long) -->
-<!-- ``` -->
-
-<!-- * [*What is different in the output compared to option 1?*]{style="color:darkorange"} -->
-<!-- * [*Rerun the test using `Time ~ Cholesterol` (switch the variables). What do you get?*]{style="color:darkorange"} -->
-
-<!-- ::: -->
-<!-- ::: -->
 
 
 ## Compare the 2 options
@@ -649,7 +604,8 @@ t.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE)
 t.test(x = chol$DiffChol, mu = 0) |> tidy() |> gt() # tidy from broom package
 # option 2
 t.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE) |> tidy() |> gt()
-# # option 3
+
+# original slides include this option 3 that no longer works
 # t.test(Cholesterol ~ Time, paired = TRUE, data = chol_long) |> tidy() |> gt()
 ```
 
@@ -681,7 +637,7 @@ t.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE) |> tidy() |> gt()
 
 ## R: What if we wanted to test whether the diet _decreased_ cholesterol levels?
 
-* [*Which of the 3 options to run a paired t-test in R is being used below?*]{style="color:darkorange"}
+* [*Which of the 2 options to run a paired t-test in R is being used below?*]{style="color:darkorange"}
 * [*How did the code change to account for testing a decrease in cholesterol levels?*]{style="color:darkorange"}
 * [*Which values in the output changed compared to testing for a change in cholesterol levels? How did they change?*]{style="color:darkorange"}
 
