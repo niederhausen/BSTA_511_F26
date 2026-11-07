@@ -93,13 +93,13 @@ During class you will be working in groups discussing the following:
 
 -   Practice Problems listed above
 -   Book 5.26 a-b
+-   R1: Verify your R project setup
 -   R2: DDS expenditures by ethnicity (parts A-L)
 -   PSS1: Book 4.24 - Power & sample size T/F questions
 -   PSS2: Power & sample size calculations
 
 ### Day 12
 
-Coming soon!
 
 -   Practice Problems listed above
 -   Book
@@ -108,5 +108,5 @@ Coming soon!
 
 ## Homework
 
--   HW 5 (link coming soon!) covers Days 11-12 and is due on Sat, 11/14
+-   [HW 5](../homework/HW_5_F26_bsta511.qmd) covers Days 11-12 and is due on Sat, 11/14
 -   Check out this [spreadsheet](https://docs.google.com/spreadsheets/d/1k_NivXZftdlRgRyTT3fUZCndW4eoXCzAs-DEIml6K3Y/edit?gid=0#gid=0) for typos in book.

@@ -1,0 +1,319 @@
+---
+title: "HW 5: BSTA 511/611 F26"
+pagetitle: "HW 5"
+author: "Your name here - update this!!!!"
+date: "Due 11/14/26"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    toc_float:
+      collapsed: false
+    number-sections: false
+    number-depth: 4
+    theme: lumen
+    self-contained: true
+    html-math-method: mathjax
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r}
+#| label: "setup"
+#| include: false
+knitr::opts_chunk$set(echo = TRUE, fig.height = 2, fig.width = 4)
+```
+
+**Due 11/14/26**
+
+Download the .qmd file for this assignment from <https://github.com/niederhausen/BSTA_511_F26/blob/main/homework/HW_5_F26_bsta511.qmd>
+
+## 🍂 Graded exercises
+
+The exercises listed below will be graded for this assignment. You are **strongly** encouraged to complete the entire assignment. You will receive feedback on exercises you turn in that are not being graded.
+
+-   **Book exercises**
+    -   5.26 (parts a-b), 8.8, 8.24
+-   **PSS**
+    -   PSS2
+-   **R exercises**
+    -   R1: Verify your R project setup
+    -   R2: DDS expenditures by ethnicity (parts A-L)
+
+## ⚠️ Directions
+
+::: callout-important
+-   Complete ALL exercises in this assignment using Quarto.
+-   I highly recommend using LaTeX to format equations.
+    -   See the .qmd files from class notes for LaTeX code to make it easier to show your work in computations.
+    -   For instructions on creating equations in the Visual editor, check out <https://quarto.org/docs/get-started/authoring/rstudio.html#equations>. [html](../slides_code/Probability_distributions_in_R_bsta511.qmd)
+    -   Also check out examples of [LaTeX formatting for statistics](https://nwakim.github.io/S2024_BSTA_513/extra_resources/Latex_qmd_formatting.html) created by recent biostats alum Ariel Weingarten.
+    -   If you have difficulty rendering the LaTeX equations, I recommend installing and running the R package `tinytex`. See this [website](https://evalsp20.classes.andrewheiss.com/reference/install/#install-tinytex-1) for instructions.
+:::
+
+-   Please upload your homework to [Brightspace](https://brightspace.ohsu.edu/d2l/lms/dropbox/user/folders_list.d2l?ou=16063&isprv=0).
+    -   **Upload both your .qmd code file and the rendered .html file** 
+        -   (plus a pdf if completing part of the assignment by hand).
+    -   Use the assignment .qmd file linked to at the top of the this file as a template for your own assignment.
+-   For each question, make sure to **show all of your work**.
+    -   This includes all code and resulting output in the html file to support your answers for exercises requiring work done in R (including any arithmetic calculations).
+    -   For non-calculation questions, this includes an explanation of your answer (*why did you choose your answer?*).
+-   For each question, include a **sentence summarizing the answer** for that question in the context of the research question.
+
+::: callout-tip
+It is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly.
+:::
+
+# Book exercises
+
+##  ⚠️ Hypothesis test & CI instructions
+
+::: callout-important
+-   For book exercises, make sure to include all steps in a hypothesis test (where applicable) as outlined in the class notes.
+
+-   Do not forget to include a discussion on whether you think the test (or CI) assumptions have been satisfied. Are there assumptions you need to make in order for them to be satisfied? Whether you believe they are satisfied or not, continue to run the hypothesis test (or CI) as instructed.
+:::
+
+## 🍂 5.26 Egg volume
+
+### (a)
+
+### (b)
+
+### (c)
+
+## 🍂 8.8 Legalization of marijuana, Part I
+
+⚠️ [Additional instructions:]{style="color:green"}
+
+-   [(b): Calculate the CI both using the formula and using the appropriate R statistical test.]{style="color:green"}
+-   [Add parts (e) & (f) as instructed below.]{style="color:green"}
+
+### (a)
+
+### (b)
+
+[**Calculate the CI both using the formula and using the appropriate R statistical test.**]{style="color:green"}
+
+
+### (c)
+
+### (d)
+
+### (e)
+
+[**Test whether the proportion of US residents who think marijuana should be made legal is different than 0.586. Do the test using both the formulas and running it in R (without a continuity correction).**]{style="color:green"}
+
+### (f)
+
+[**Are the results from CI and hypothesis test consistent? Why or why not?**]{style="color:green"}
+
+## 8.10 Legalize Marijuana, Part II
+
+## 8.14 2010 Healthcare Law
+
+### (a)
+
+### (b)
+
+### (c)
+
+### (d)
+
+## 🍂 8.24 Prenatal vitamins and Autism
+
+⚠️ [Additional instructions:]{style="color:green"}
+
+-   [(a): I updated the instructions for part (a).]{style="color:green"}
+-   [(b): Do the hypothesis test both using the formula and using the appropriate R statistical test.]{style="color:green"}
+-   [Add part (d) as instructed below.]{style="color:green"}
+
+### (a)
+
+[**State the appropriate hypotheses to test if there is a difference in the proportions of mothers who used prenatal vitamins between the groups of mothers of children with autism and the mothers of children with typical development.**]{style="color:green"}
+
+
+
+### (b)
+
+[**Do the hypothesis test both using the formula and using the appropriate R statistical test.**]{style="color:green"}
+
+
+
+### (c)
+
+### (d)
+
+[**Calculate and interpret the 95% confidence interval using the formula for the difference in the proportions of mothers who used prenatal vitamins between the groups of mothers of children with autism and the mothers of children with typical development. Is it consistent with CI from the R output of the hypothesis test?** ]{style="color:green"}
+
+## 8.26 An apple a day keeps the doctor away
+
+# PSS
+
+## PSS1: 4.24 True or false.
+
+Do exercise 4.24 from textbook.
+
+### (a)
+
+### (b)
+
+### (c)
+
+### (d)
+
+### (e)
+
+## 🍂 PSS2: Auto exhaust and lead exposure revisited.
+
+### (a) Power
+
+[**In exercise 5.12, we tested whether police officers appear to have been exposed to a higher concentration of lead than 35. Calculate the power for the hypothesis test and include an interpretation of the power in the context of the research question. Was it sufficiently powered?**]{style="color:green"}
+
+### (b) Sample size
+
+[**For the same test, what sample size would be needed for 80% power? How about 90% power? Would it be reasonable to conduct the study with these sample sizes? Why or why not?**]{style="color:green"}
+
+### (c) Effect size
+
+[**Suppose the study has resources to include 30 people. What minimum effect size would they be able to detect with 85% power assuming the same sample mean and standard deviation. Use** $\alpha$ = 0.05.]{style="color:green"}
+
+### (d) 2-sided vs. 1-sided
+
+[**Continuing with the previous question, what happens to the effect size they can detect if the test is two sided instead of one-sided?**]{style="color:green"}
+
+## PSS3: Legalize Marijuana, Part III.
+
+### (a) Power
+
+[**In exercise 8.8 (e), we tested whether the proportion of US residents who think marijuana should be made legal is different than 0.586. Calculate the power for the hypothesis test and include an interpretation of the power in the context of the research question. Was it sufficiently powered?**]{style="color:green"}
+
+### (b) Sample size
+
+[**For the same test, what sample size would be needed for 80% power? How about 90% power?**]{style="color:green"}
+
+### (c) Effect size
+
+[**If we increase the sample size, and keep the power and significance level the same, does the effect size increase or decrease? Why?**]{style="color:green"}
+
+# R exercises
+
+## Load packages
+
+Load all the packages you need in the first code chunk of the file that starts with `#| label: "setup"`.
+
+## 🍂 R1: Verify your R project setup
+
+Run the code chunk below **without changing it**. The output shows:
+
+1.    The file path of your project's root folder.
+2.    The name of the `.Rproj` file in that folder, which verifies that you created an R project.
+3.    The file path of this `.qmd` file. Note that the output is a `.qmd` file when running the code within RStudio but as a `.rmarkdown` file in the rendered html output of this file.
+
+**Points will be deducted if no `.Rproj` file is found in part 2.** If that happens, the output for part 2 will look like this:
+
+```
+character(0)
+```
+
+This means R did not find an `.Rproj` file, which usually means one of two things: you did not create an R project, or this `.qmd` file is not saved inside your project folder. Fix this before submitting, then run the chunk again.
+
+-   *AI note: Claude wrote the code below to verify your project setup. You do not need to know how to write the code below.*
+
+```{r}
+#  1. Project root
+here::here()
+
+# 2. .Rproj file at the project root
+list.files(here::here(), pattern = "\\.Rproj$")
+
+# 3. Full path of this .qmd file
+if (isTRUE(getOption("knitr.in.progress"))) {
+  knitr::current_input(dir = TRUE)                # when rendering
+} else {
+  rstudioapi::getSourceEditorContext()$path       # when running the chunk in RStudio
+}
+```
+
+
+
+## 🍂 R2: DDS expenditures by ethnicity
+
+-   In these exercises you will use R to work through the discrimination in developmental disability support example from Section 5.3.4 (pg. 253) in the textbook.
+-   The data are in the `oibiostats` package and called `dds.discr`.
+
+### 🍂 (a) New dataset
+
+**Create a new dataset that only includes the White (non Hispanic) and Hispanic ethnicities. Use this new dataset for the following questions.**
+
+### 🍂 (b) Data viz
+
+**Create density plots and box plots of the expenditures stratified by ethnicity. Comment on the distribution shapes. Are there any outliers?**
+
+### 🍂 (c) t-test conditions
+
+**Are the conditions for a t-test comparing the mean expenditures of the two ethnicities satisfied?**
+
+### 🍂 (d) Log-transformation
+
+**The book recommends log-transforming the expenditure values before testing. Create a new column in the dataset with the transformed values. The R command for the natural logarithm is `log()`.**
+
+### 🍂 (e) Data viz: log-transformed expenditures
+
+**Create density plots and box plots of the log-transformed expenditures stratified by ethnicity. Comment on the distribution shapes. Are there any outliers?**
+
+### 🍂 (f) t-test conditions: log-transformed expenditures
+
+**Are the conditions for a t-test comparing the mean log-transformed expenditures of the two ethnicities satisfied?**
+
+### 🍂 (g) Summary stats: log-transformed expenditures
+
+**Calculate the means, standard deviations, and sample sizes for the log-transformed expenditures stratified by ethnicity, and compare them to the ones in the book. Which group had a larger mean?**
+
+### 🍂 (h) Test
+
+**Run the appropriate statistical test in R to verify the test statistic in the text and get the actual p-value. In which order was the difference in means calculated, and is this same as in the book? Use inline R code to pull these values from the test output when writing up your comparison of these values to the book's values.**
+
+### 🍂 (i) df
+
+**How do the degrees of freedom (df) from the hypothesis test compare to the df used by the book? Why are they different? Which degrees df (book vs. test output) leads to a bigger p-value?**
+
+### 🍂 (j) CI
+
+**What is the 95% CI? Write an interpretation of the CI in the context of the research question.**
+
+### 🍂 (k) Test original expenditure values
+
+**Run the appropriate statistical test in R using the original expenditure values. What are the test statistic and p-value? Does the conclusion of the test change?**
+
+### 🍂 (l) CI using original expenditure values
+
+**What is the 95% CI? Write an interpretation of the CI in the context of the research question. Which of the CI's (log-transformed vs not) is easier to interpret?**
+
+### (m) Age groups
+
+**The book's example goes on to analyze the data stratified by age groups, since age is a confounder in expenditure amounts. Create two new datasets restricted to the age groups 13-17 and 22-50, respectively.**
+
+### (n) Data viz by age groups
+
+**Create density plots and box plots of the expenditures stratified by ethnicity for each of the age groups separately. Comment on the distribution shapes. Are there any outliers?**
+
+### (o) t-test conditions: age groups
+
+**Are the assumptions for a t-test comparing the mean expenditures of the two ethnicities satisfied for either or both of the age groups?**
+
+### (p) Summary stats: age groups
+
+**Calculate the means, standard deviations, and sample sizes for the expenditures stratified by ethnicity and the age groups, and compare them to the ones in the book. Which group had a larger mean?**
+
+### (q) t-test: age groups
+
+**Run the appropriate statistical tests for both age groups in R to verify the test statistics, df's, and p-values in the text. In which order were the differences in means calculated, and are they the same as in the book? Use inline R code to pull these values from the test output when writing up your comparison of these values to the book's values.**
+
+### (r) CI: age groups
+
+**What are the 95% CI's for each of the age groups? Write interpretations of the CI's in the context of the research question. Does they suggest there are differences in expenditures between the two ethnicities? Why or why not?**
+
+### (s) Discrimination in DDS expenditures?
+
+**Even though the p-values for the age-stratified tests were not significant, is it possible that there was discrimination in DDS expenditures?**
