@@ -5232,8 +5232,8 @@
     "objectID": "weeks/week_07.html#overview-of-week-7",
     "href": "weeks/week_07.html#overview-of-week-7",
     "title": "Week 7",
-    "section": "Overview of Week 7",
-    "text": "Overview of Week 7\n\n\nMon: Day 11\n\nInference for difference in means from two independent sample (2-sample t-test)\nPower and sample size calculations\nDownload Day 11 dataset\nDay 11 Practice Problems\n\n\n\n\nWed: Day 12\n\nInference for proportions\n\nCIs vs. hypothesis tests\nOne proportion from one sample\nDifference in proportions from two independent samples\n\nDay 12 Practice Problems"
+    "section": "",
+    "text": "Inference for difference in means from two independent sample (2-sample t-test)\nPower and sample size calculations\nDownload Day 11 dataset\nDay 11 Practice Problems\n\n\n\n\n\n\nInference for proportions\n\nCIs vs. hypothesis tests\nOne proportion from one sample\nDifference in proportions from two independent samples\n\nDay 12 Practice Problems"
   },
   {
     "objectID": "weeks/week_07.html#slides-recordings",
@@ -10561,5 +10561,12 @@
     "title": "Week 6",
     "section": "Datasets",
     "text": "Datasets\nAll datasets can be found on GitHub\n\nBodyTemperatures.csv\nchol213.csv"
+  },
+  {
+    "objectID": "weeks/week_07.html",
+    "href": "weeks/week_07.html",
+    "title": "Week 7",
+    "section": "",
+    "text": "Inference for difference in means from two independent sample (2-sample t-test)\nPower and sample size calculations\nDownload Day 11 dataset\nDay 11 Practice Problems\n\n\n\n\n\n\nInference for proportions\n\nCIs vs. hypothesis tests\nOne proportion from one sample\nDifference in proportions from two independent samples\n\nDay 12 Practice Problems"
   }
 ]

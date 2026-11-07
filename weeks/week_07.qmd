@@ -13,7 +13,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-## [Edits in progress...]{style="color:darkorange"}
+<!-- ## [Page not yet updated]{style="color:darkorange"} -->
 
 
 
