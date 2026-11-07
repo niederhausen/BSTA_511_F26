@@ -13,7 +13,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-## [Page not yet updated]{style="color:darkorange"}
+## [Edits in progress...]{style="color:darkorange"}
 
 
 
@@ -25,6 +25,8 @@ editor_options:
 
 -   Inference for difference in means from two independent sample (2-sample t-test)
 -   Power and sample size calculations
+-   Download Day 11 [dataset](#sec-data)
+-   [**Day 11 Practice Problems**](#sec-PP)
 
 <!-- -   In class PowerPoint [slides]() (on Brightspace) -->
 :::
@@ -36,7 +38,7 @@ editor_options:
     -   CIs vs. hypothesis tests
     -   One proportion from one sample
     -   Difference in proportions from two independent samples
-
+-   [**Day 12 Practice Problems**](#sec-PP)
 <!-- -   In class PowerPoint [slides]() (on Brightspace) -->
 :::
 :::::
@@ -59,21 +61,29 @@ editor_options:
 
 `*`*Note: page numbers in pdf files do not always align with those in the original html slides*
 
-## Datasets
+## Datasets {#sec-data}
 
 All datasets can be found on [GitHub](https://github.com/niederhausen/BSTA_511_F26/tree/main/data)
 
 -   Day 11: [CaffeineTaps.csv](/data/CaffeineTaps.csv)
 
-## Practice Problems
+## Practice Problems {#sec-PP}
 
+::::: grid
+::: g-col-6
 ### [Day 11 PP]{style="color:darkorange"}
 
 -   Book exercises: 5.34, 4.22  
+:::
 
+::: g-col-6
 ### [Day 12 PP]{style="color:darkorange"}
 
 -   Book exercise: 8.2
+:::
+:::::
+
+
 
 ## Class discussion
 
@@ -98,5 +108,5 @@ Coming soon!
 
 ## Homework
 
--   [HW 5](../homework/HW_5_F26_bsta511_v2.qmd) covers Days 11-12 and is due on Sat, 11/14
+-   HW 5 (link coming soon!) covers Days 11-12 and is due on Sat, 11/14
 -   Check out this [spreadsheet](https://docs.google.com/spreadsheets/d/1k_NivXZftdlRgRyTT3fUZCndW4eoXCzAs-DEIml6K3Y/edit?gid=0#gid=0) for typos in book.

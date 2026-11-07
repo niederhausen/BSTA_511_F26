@@ -5233,7 +5233,7 @@
     "href": "weeks/week_07.html#overview-of-week-7",
     "title": "Week 7",
     "section": "Overview of Week 7",
-    "text": "Overview of Week 7\n\n\nMon: Day 11\n\nInference for difference in means from two independent sample (2-sample t-test)\nPower and sample size calculations\n\n\n\n\nWed: Day 12\n\nInference for proportions\n\nCIs vs. hypothesis tests\nOne proportion from one sample\nDifference in proportions from two independent samples"
+    "text": "Overview of Week 7\n\n\nMon: Day 11\n\nInference for difference in means from two independent sample (2-sample t-test)\nPower and sample size calculations\nDownload Day 11 dataset\nDay 11 Practice Problems\n\n\n\n\nWed: Day 12\n\nInference for proportions\n\nCIs vs. hypothesis tests\nOne proportion from one sample\nDifference in proportions from two independent samples\n\nDay 12 Practice Problems"
   },
   {
     "objectID": "weeks/week_07.html#slides-recordings",
@@ -5254,7 +5254,7 @@
     "href": "weeks/week_07.html#practice-problems",
     "title": "Week 7",
     "section": "Practice Problems",
-    "text": "Practice Problems\n\nDay 11 PP\n\nBook exercises: 5.34, 4.22\n\n\n\nDay 12 PP\n\nBook exercise: 8.2"
+    "text": "Practice Problems\n\n\nDay 11 PP\n\nBook exercises: 5.34, 4.22\n\n\n\n\nDay 12 PP\n\nBook exercise: 8.2"
   },
   {
     "objectID": "weeks/week_07.html#class-discussion",
@@ -5268,7 +5268,7 @@
     "href": "weeks/week_07.html#homework",
     "title": "Week 7",
     "section": "Homework",
-    "text": "Homework\n\nHW 5 covers Days 11-12 and is due on Sat, 11/14\nCheck out this spreadsheet for typos in book."
+    "text": "Homework\n\nHW 5 (link coming soon!) covers Days 11-12 and is due on Sat, 11/14\nCheck out this spreadsheet for typos in book."
   },
   {
     "objectID": "weeks/week_02.html",
@@ -5408,7 +5408,7 @@
     "href": "weeks/week_06.html#overview-of-week-6",
     "title": "Week 6",
     "section": "",
-    "text": "Confidence intervals for one mean (single-sample):\n\nSections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)\n\nStudent’s t-distribution\nDay 9 Practice Problems\nIn class PowerPoint slides (on Brightspace)\n\n\n\n\n\nHypothesis testing for one mean (single-sample): Section 4.3, 5.1\nCIs vs. hypothesis tests\nInference for two-sample paired data: Section 5.2\nR projects, here::here(), and loading data into R from a file\n\nSee Projects in RStudio file for more information\n\nMore on projects will be added soon\n\nRunning a t.test in R\nDay 10 Practice Problems\nIn class PowerPoint slides (on Brightspace)"
+    "text": "Confidence intervals for one mean (single-sample):\n\nSections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)\n\nStudent’s t-distribution\nDownload Day 9 dataset\nDay 9 Practice Problems\nIn class PowerPoint slides (on Brightspace)\n\n\n\n\n\nHypothesis testing for one mean (single-sample): Section 4.3, 5.1\nCIs vs. hypothesis tests\nInference for two-sample paired data: Section 5.2\nR projects, here::here(), and loading data into R from a file\n\nSee Projects in RStudio file for more information\n\nMore on projects will be added soon\n\nRunning a t.test in R\nDownload Day 10 dataset\nDay 10 Practice Problems\nIn class PowerPoint slides (on Brightspace)"
   },
   {
     "objectID": "weeks/week_06.html#slides-recordings",
@@ -10518,7 +10518,7 @@
     "href": "weeks/week_06.html",
     "title": "Week 6",
     "section": "",
-    "text": "Confidence intervals for one mean (single-sample):\n\nSections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)\n\nStudent’s t-distribution\nDay 9 Practice Problems\nIn class PowerPoint slides (on Brightspace)\n\n\n\n\n\nHypothesis testing for one mean (single-sample): Section 4.3, 5.1\nCIs vs. hypothesis tests\nInference for two-sample paired data: Section 5.2\nR projects, here::here(), and loading data into R from a file\n\nSee Projects in RStudio file for more information\n\nMore on projects will be added soon\n\nRunning a t.test in R\nDay 10 Practice Problems\nIn class PowerPoint slides (on Brightspace)"
+    "text": "Confidence intervals for one mean (single-sample):\n\nSections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)\n\nStudent’s t-distribution\nDownload Day 9 dataset\nDay 9 Practice Problems\nIn class PowerPoint slides (on Brightspace)\n\n\n\n\n\nHypothesis testing for one mean (single-sample): Section 4.3, 5.1\nCIs vs. hypothesis tests\nInference for two-sample paired data: Section 5.2\nR projects, here::here(), and loading data into R from a file\n\nSee Projects in RStudio file for more information\n\nMore on projects will be added soon\n\nRunning a t.test in R\nDownload Day 10 dataset\nDay 10 Practice Problems\nIn class PowerPoint slides (on Brightspace)"
   },
   {
     "objectID": "weeks/week_06.html#sec-PP",
@@ -10540,5 +10540,26 @@
     "title": "Day 10 Part 2: Inference for mean difference from two-sample dependent/paired data (Section 5.2)",
     "section": "R option 3: Run a 2-sample t.test with paired = TRUE option, but using the long data and a “formula”",
     "text": "R option 3: Run a 2-sample t.test with paired = TRUE option, but using the long data and a “formula”\n\nThis option no longer works. Skip the 2 slides relating to this in the recording."
+  },
+  {
+    "objectID": "weeks/week_07.html#sec-data",
+    "href": "weeks/week_07.html#sec-data",
+    "title": "Week 7",
+    "section": "Datasets",
+    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 11: CaffeineTaps.csv"
+  },
+  {
+    "objectID": "weeks/week_07.html#sec-PP",
+    "href": "weeks/week_07.html#sec-PP",
+    "title": "Week 7",
+    "section": "Practice Problems",
+    "text": "Practice Problems\n\n\nDay 11 PP\n\nBook exercises: 5.34, 4.22\n\n\n\n\nDay 12 PP\n\nBook exercise: 8.2"
+  },
+  {
+    "objectID": "weeks/week_06.html#sec-data",
+    "href": "weeks/week_06.html#sec-data",
+    "title": "Week 6",
+    "section": "Datasets",
+    "text": "Datasets\nAll datasets can be found on GitHub\n\nBodyTemperatures.csv\nchol213.csv"
   }
 ]

@@ -26,6 +26,7 @@ editor_options:
 -   Confidence intervals for one mean (single-sample):
     -   Sections 4.2 and 5.1.1, 5.1.2 (pgs. 238-242)
 -   Student’s t-distribution
+-   Download Day 9 [dataset](#sec-data)
 -   [**Day 9 Practice Problems**](#sec-PP)
 -   In class PowerPoint [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/470699) (on Brightspace)
 :::
@@ -40,6 +41,7 @@ editor_options:
     -   **See [Projects in RStudio](../resources/Projects_in_R.qmd) file for more information**  
     -   *More on projects will be added soon*
 -   Running a `t.test` in R
+-   Download Day 10 [dataset](#sec-data)
 -   [**Day 10 Practice Problems**](#sec-PP)
 -   In class PowerPoint [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/470837) (on Brightspace)
 
@@ -63,7 +65,7 @@ editor_options:
 
 : {.striped .hover tbl-colwidths="\[3, 10, 8, 5, 5, 5, 6, 6, 5, 5\]"}
 
-## Datasets
+## Datasets {#sec-data}
 
 All datasets can be found on [GitHub](https://github.com/niederhausen/BSTA_511_F26/tree/main/data)
 
