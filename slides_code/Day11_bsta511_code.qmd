@@ -669,8 +669,63 @@ ggplot(NULL, aes(c(-3,3))) +
     * In this case the test statistic is in the __rejection region__.
     * Otherwise it's in the nonrejection region.
 
-* What do rejection regions look like for 2-sided vs. 1-sided tests?
+* The figure shows the rejection regions for a 2-sided test. What would it look like for a 1-sided test?
 
+```{r}
+#| fig.width: 6
+#| fig.height: 3.5
+#| echo: false
+# Code created by Claude
+# You will not be expected to create this figure.
+# ---- Settings -------------------------
+alpha_level <- 0.05
+z_crit      <- qnorm(1 - alpha_level / 2)
+tail_col    <- "#fc9732"
+center_col  <- "#2dbaac"
+fill_alpha  <- 0.6
+
+# ---- Density data (include the critical values exactly so areas meet) ------
+x  <- sort(unique(c(seq(-4, 4, length.out = 1000), -z_crit, z_crit)))
+df <- data.frame(x = x, y = dnorm(x))
+
+# ---- Plot -----------------------------
+ggplot(df, aes(x, y)) +
+  # shaded regions
+  geom_area(data = subset(df, x <= -z_crit), fill = tail_col,   alpha = fill_alpha) +
+  geom_area(data = subset(df, x >=  z_crit), fill = tail_col,   alpha = fill_alpha) +
+  geom_area(data = subset(df, abs(x) <= z_crit), fill = center_col, alpha = fill_alpha) +
+  # curve, baseline, critical value lines
+  geom_line(linewidth = 0.7) +
+  annotate("segment", x = -4, xend = 4, y = 0, yend = 0, linewidth = 0.5) +
+  annotate("segment", x = c(-z_crit, z_crit), xend = c(-z_crit, z_crit),
+           y = 0, yend = 0.5, linetype = "dashed") +
+  # region headers
+  annotate("text", x = c(-3.1, 0, 3.1), y = 0.47,
+           label = c("Reject~H[0]", "Do~not~reject~H[0]", "Reject~H[0]"),
+           parse = TRUE, size = 6) +
+  # critical value labels + arrows
+  annotate("text", x = c(-z_crit - 0.9, z_crit + 0.9), y = 0.27,
+           label = "Critical\nValue", size = 5, lineheight = 0.9) +
+  annotate("segment",
+           x    = c(-z_crit - 0.55, z_crit + 0.55), y    = 0.27,
+           xend = c(-z_crit - 0.03, z_crit + 0.03), yend = 0.27,
+           arrow = arrow(length = unit(0.25, "cm")), linewidth = 0.6) +
+  # 1 - alpha in the center
+  annotate("text", x = 0, y = 0.15, label = "1 - alpha", parse = TRUE, size = 8) +
+  # alpha/2 labels + arrows into the tails
+  annotate("text", x = c(-3.3, 3.3), y = 0.105,
+           label = "frac(alpha, 2)", parse = TRUE, size = 6) +
+  annotate("segment",
+           x    = c(-3.05, 3.05), y    = 0.08,
+           xend = c(-2.35, 2.35), yend = 0.02,
+           arrow = arrow(length = unit(0.25, "cm")), linewidth = 0.6) +
+  # region labels
+  annotate("text", x = c(-(4 + z_crit) / 2, 0, (4 + z_crit) / 2), y = -0.025,
+           label = c("Rejection region", "Nonrejection region", "Rejection region"),
+           size = 5) +
+  coord_cartesian(xlim = c(-4, 4), ylim = c(-0.035, 0.48), clip = "off") +
+  theme_void()
+```
 
 
 ## Hypothesis Testing "Errors" 

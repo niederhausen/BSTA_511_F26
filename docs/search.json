@@ -3021,7 +3021,7 @@
     "href": "slides_md/Day11_bsta511_md.html#rejection-region",
     "title": "Day 11: Inference for difference in means from two independent samples and Power (Sections 5.3, 5.4)",
     "section": "Rejection region",
-    "text": "Rejection region\n\nIf the absolute value of the test statistic is greater than the critical value, we reject \\(H_0\\)\n\nIn this case the test statistic is in the rejection region.\nOtherwise it’s in the nonrejection region.\n\n\n\n\n\n\n\nStats & Geospatial Analysis\n\n\n\n\nWhat do rejection regions look like for 1-sided tests?"
+    "text": "Rejection region\n\nIf the absolute value of the test statistic is greater than the critical value, we reject \\(H_0\\)\n\nIn this case the test statistic is in the rejection region.\nOtherwise it’s in the nonrejection region.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe figure shows the rejection regions for a 2-sided test. What would it look like for a 1-sided test?"
   },
   {
     "objectID": "slides_md/Day11_bsta511_md.html#justice-system-analogy",
@@ -6024,7 +6024,7 @@
     "href": "slides/Day11_bsta511.html#rejection-region",
     "title": "Day 11: Inference for difference in means from two independent samples and Power (Sections 5.3, 5.4)",
     "section": "Rejection region",
-    "text": "Rejection region\n\nIf the absolute value of the test statistic is greater than the critical value, we reject \\(H_0\\)\n\nIn this case the test statistic is in the rejection region.\nOtherwise it’s in the nonrejection region.\n\n\n\n\n\n\n\nStats & Geospatial Analysis\n\n\n\n\nWhat do rejection regions look like for 1-sided tests?"
+    "text": "Rejection region\n\nIf the absolute value of the test statistic is greater than the critical value, we reject \\(H_0\\)\n\nIn this case the test statistic is in the rejection region.\nOtherwise it’s in the nonrejection region.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe figure shows the rejection regions for a 2-sided test. What would it look like for a 1-sided test?"
   },
   {
     "objectID": "slides/Day11_bsta511.html#justice-system-analogy",
@@ -10315,7 +10315,7 @@
     "href": "slides_code/Day11_bsta511_code.html#rejection-region",
     "title": "Day 11: Inference for difference in means from two independent samples and Power (Sections 5.3, 5.4)",
     "section": "Rejection region",
-    "text": "Rejection region\n\nIf the absolute value of the test statistic is greater than the critical value, we reject \\(H_0\\)\n\nIn this case the test statistic is in the rejection region.\nOtherwise it’s in the nonrejection region.\n\nWhat do rejection regions look like for 2-sided vs. 1-sided tests?"
+    "text": "Rejection region\n\nIf the absolute value of the test statistic is greater than the critical value, we reject \\(H_0\\)\n\nIn this case the test statistic is in the rejection region.\nOtherwise it’s in the nonrejection region.\n\nThe figure shows the rejection regions for a 2-sided test. What would it look like for a 1-sided test?"
   },
   {
     "objectID": "slides_code/Day11_bsta511_code.html#hypothesis-testing-errors",
