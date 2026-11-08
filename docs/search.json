@@ -3483,7 +3483,7 @@
     "href": "weeks.html",
     "title": "Weekly Pages",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\n9/28/26\n\n\nWeek 1\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n10/5/26\n\n\nWeek 2\n\n\nData collection & Probability\n\n\n\n\n\n\n10/12/26\n\n\nWeek 3\n\n\nBayes’ Rule & EDA\n\n\n\n\n\n\n10/19/26\n\n\nWeek 4\n\n\nRandom variables; Binomial, Normal & Poisson distributions\n\n\n\n\n\n\n10/26/26\n\n\nWeek 5\n\n\nVariability in estimates & Exam 1\n\n\n\n\n\n\n11/2/26\n\n\nWeek 6\n\n\nConfidence intervals & Hypothesis testing\n\n\n\n\n\n\n11/9/26\n\n\nWeek 7\n\n\nInference for difference in means, one proportion, and difference in proportions, and power\n\n\n\n\n\n\n11/16/26\n\n\nWeek 8\n\n\nChi-squared tests and ANOVA\n\n\n\n\n\n\n11/23/26\n\n\nWeek 9\n\n\nExam 2 & Simple Linear Regression\n\n\n\n\n\n\n11/30/26\n\n\nWeek 10\n\n\nSimple Linear Regression (cont’d) and Nonparametric Tests\n\n\n\n\n\n\n12/7/26\n\n\nWeek 11\n\n\nFinals week\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\n9/28/26\n\n\nWeek 1\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n10/5/26\n\n\nWeek 2\n\n\nData collection & Probability\n\n\n\n\n\n\n10/12/26\n\n\nWeek 3\n\n\nBayes’ Rule & EDA\n\n\n\n\n\n\n10/19/26\n\n\nWeek 4\n\n\nRandom variables; Binomial, Normal & Poisson distributions\n\n\n\n\n\n\n10/26/26\n\n\nWeek 5\n\n\nVariability in estimates & Exam 1\n\n\n\n\n\n\n11/2/26\n\n\nWeek 6\n\n\nConfidence intervals & Hypothesis testing\n\n\n\n\n\n\n11/9/26\n\n\nWeek 7\n\n\nInference for difference in means, one proportion, and difference in proportions, and power\n\n\n\n\n\n\n11/9/26\n\n\nWeek 7\n\n\nInference for difference in means, one proportion, and difference in proportions, and power\n\n\n\n\n\n\n11/16/26\n\n\nWeek 8\n\n\nChi-squared tests and ANOVA\n\n\n\n\n\n\n11/23/26\n\n\nWeek 9\n\n\nExam 2 & Simple Linear Regression\n\n\n\n\n\n\n11/30/26\n\n\nWeek 10\n\n\nSimple Linear Regression (cont’d) and Nonparametric Tests\n\n\n\n\n\n\n12/7/26\n\n\nWeek 11\n\n\nFinals week\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -10680,5 +10680,82 @@
     "title": "HW 5: BSTA 511/611 F26",
     "section": "🍂 R2: DDS expenditures by ethnicity",
     "text": "🍂 R2: DDS expenditures by ethnicity\n\nIn these exercises you will use R to work through the discrimination in developmental disability support example from Section 5.3.4 (pg. 253) in the textbook.\nThe data are in the oibiostats package and called dds.discr.\n\n\n🍂 (a) New dataset\nCreate a new dataset that only includes the White (non Hispanic) and Hispanic ethnicities. Use this new dataset for the following questions.\n\n\n🍂 (b) Data viz\nCreate density plots and box plots of the expenditures stratified by ethnicity. Comment on the distribution shapes. Are there any outliers?\n\n\n🍂 (c) t-test conditions\nAre the conditions for a t-test comparing the mean expenditures of the two ethnicities satisfied?\n\n\n🍂 (d) Log-transformation\nThe book recommends log-transforming the expenditure values before testing. Create a new column in the dataset with the transformed values. The R command for the natural logarithm is log().\n\n\n🍂 (e) Data viz: log-transformed expenditures\nCreate density plots and box plots of the log-transformed expenditures stratified by ethnicity. Comment on the distribution shapes. Are there any outliers?\n\n\n🍂 (f) t-test conditions: log-transformed expenditures\nAre the conditions for a t-test comparing the mean log-transformed expenditures of the two ethnicities satisfied?\n\n\n🍂 (g) Summary stats: log-transformed expenditures\nCalculate the means, standard deviations, and sample sizes for the log-transformed expenditures stratified by ethnicity, and compare them to the ones in the book. Which group had a larger mean?\n\n\n🍂 (h) Test\nRun the appropriate statistical test in R to verify the test statistic in the text and get the actual p-value. In which order was the difference in means calculated, and is this same as in the book? Use inline R code to pull these values from the test output when writing up your comparison of these values to the book’s values.\n\n\n🍂 (i) df\nHow do the degrees of freedom (df) from the hypothesis test compare to the df used by the book? Why are they different? Which degrees df (book vs. test output) leads to a bigger p-value?\n\n\n🍂 (j) CI\nWhat is the 95% CI? Write an interpretation of the CI in the context of the research question.\n\n\n🍂 (k) Test original expenditure values\nRun the appropriate statistical test in R using the original expenditure values. What are the test statistic and p-value? Does the conclusion of the test change?\n\n\n🍂 (l) CI using original expenditure values\nWhat is the 95% CI? Write an interpretation of the CI in the context of the research question. Which of the CI’s (log-transformed vs not) is easier to interpret?\n\n\n(m) Age groups\nThe book’s example goes on to analyze the data stratified by age groups, since age is a confounder in expenditure amounts. Create two new datasets restricted to the age groups 13-17 and 22-50, respectively.\n\n\n(n) Data viz by age groups\nCreate density plots and box plots of the expenditures stratified by ethnicity for each of the age groups separately. Comment on the distribution shapes. Are there any outliers?\n\n\n(o) t-test conditions: age groups\nAre the assumptions for a t-test comparing the mean expenditures of the two ethnicities satisfied for either or both of the age groups?\n\n\n(p) Summary stats: age groups\nCalculate the means, standard deviations, and sample sizes for the expenditures stratified by ethnicity and the age groups, and compare them to the ones in the book. Which group had a larger mean?\n\n\n(q) t-test: age groups\nRun the appropriate statistical tests for both age groups in R to verify the test statistics, df’s, and p-values in the text. In which order were the differences in means calculated, and are they the same as in the book? Use inline R code to pull these values from the test output when writing up your comparison of these values to the book’s values.\n\n\n(r) CI: age groups\nWhat are the 95% CI’s for each of the age groups? Write interpretations of the CI’s in the context of the research question. Does they suggest there are differences in expenditures between the two ethnicities? Why or why not?\n\n\n(s) Discrimination in DDS expenditures?\nEven though the p-values for the age-stratified tests were not significant, is it possible that there was discrimination in DDS expenditures?"
+  },
+  {
+    "objectID": "weeks/week_07_original_format.html",
+    "href": "weeks/week_07_original_format.html",
+    "title": "Week 7",
+    "section": "",
+    "text": "Inference for difference in means from two independent sample (2-sample t-test)\nPower and sample size calculations\nDownload Day 11 dataset\nDay 11 Practice Problems\n\n\n\n\n\n\nInference for proportions\n\nCIs vs. hypothesis tests\nOne proportion from one sample\nDifference in proportions from two independent samples\n\nDay 12 Practice Problems"
+  },
+  {
+    "objectID": "weeks/week_07_original_format.html#overview-of-week-7",
+    "href": "weeks/week_07_original_format.html#overview-of-week-7",
+    "title": "Week 7",
+    "section": "",
+    "text": "Inference for difference in means from two independent sample (2-sample t-test)\nPower and sample size calculations\nDownload Day 11 dataset\nDay 11 Practice Problems\n\n\n\n\n\n\nInference for proportions\n\nCIs vs. hypothesis tests\nOne proportion from one sample\nDifference in proportions from two independent samples\n\nDay 12 Practice Problems"
+  },
+  {
+    "objectID": "weeks/week_07_original_format.html#slides-recordings",
+    "href": "weeks/week_07_original_format.html#slides-recordings",
+    "title": "Week 7",
+    "section": "Slides & Recordings",
+    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides: html\nSlides: pdf\nSlides: web-page\nSlides with notes\nRecording Link\nDuration\nCode: qmd\nCode: html\n\n\n\n\n11\n2-sample means test: 5.3.2\nDay 11: slides 1-17\n\n\n\nDay 11 Part 1\n36 min\n\n\n\n\n\n2-sample means CI; R; pooled SD: 5.3.1, 5.3.5\nDay 11: slides 18-26\n\n\n\nDay 11 Part 2\n26 min\n\n\n\n\n\nPower & sample size: 1 or 2 means: 5.4 & extra\nDay 11: slides 27-45\n\n\n\nDay 11 Part 3\n57 min\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n12\n1 & 2 proportions test & CI: 8.1.1, 8.2\nDay 12: slides 1-23\n *\n\n *\nDay 12 Part 1\n48 min\n\n\n\n\n\nR: 1 & 2 proportions test & CI\nDay 12: slides 24-34\n\n\n\nDay 12 Part 2\n26 min\n\n\n\n\n\nPower for 1- and 2- proportions\nDay 12: slides 35-43\n\n\n\nDay 12 Part 3\n25 min\n\n\n\n\n\n*Note: page numbers in pdf files do not always align with those in the original html slides"
+  },
+  {
+    "objectID": "weeks/week_07_original_format.html#sec-data",
+    "href": "weeks/week_07_original_format.html#sec-data",
+    "title": "Week 7",
+    "section": "Datasets",
+    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 11: CaffeineTaps.csv"
+  },
+  {
+    "objectID": "weeks/week_07_original_format.html#sec-PP",
+    "href": "weeks/week_07_original_format.html#sec-PP",
+    "title": "Week 7",
+    "section": "Practice Problems",
+    "text": "Practice Problems\n\n\nDay 11 PP\n\nBook exercises: 5.34, 4.22\n\n\n\n\nDay 12 PP\n\nBook exercise: 8.2"
+  },
+  {
+    "objectID": "weeks/week_07_original_format.html#class-discussion",
+    "href": "weeks/week_07_original_format.html#class-discussion",
+    "title": "Week 7",
+    "section": "Class discussion",
+    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 11\n\nPractice Problems listed above\nBook 5.26 a-b\nR1: Verify your R project setup\nR2: DDS expenditures by ethnicity (parts A-L)\nPSS1: Book 4.24 - Power & sample size T/F questions\nPSS2: Power & sample size calculations\n\n\n\nDay 12\n\nPractice Problems listed above\nBook\n\n8.8 (see instructions in HW),\n8.24 (see instructions in HW)"
+  },
+  {
+    "objectID": "weeks/week_07_original_format.html#homework",
+    "href": "weeks/week_07_original_format.html#homework",
+    "title": "Week 7",
+    "section": "Homework",
+    "text": "Homework\n\nHW 5 covers Days 11-12 and is due on Sat, 11/14\nCheck out this spreadsheet for typos in book."
+  },
+  {
+    "objectID": "weeks/week_07_new_format.html",
+    "href": "weeks/week_07_new_format.html",
+    "title": "Week 7",
+    "section": "",
+    "text": "Section\nMon: Day 11\nWed: Day 12\n\n\n\n\nTopics\n\nInference for difference in means from two independent samples (2-sample t-test)\nPower and sample size calculations\n\n\n\nInference for proportions\n\nCIs vs. hypothesis tests\nOne proportion from one sample\nDifference in proportions from two independent samples\n\n\n\n\n\nIn class PowerPoint slides\nLink posted after class\nLink posted after class\n\n\nDatasets1\n\nCaffeineTaps.csv\n\nNone\n\n\nPractice Problems\n\nBook exercises: 5.34, 4.22\n\n\nBook exercise: 8.2\n\n\n\nClass discussion\n\nBook 5.26 a-b\nR1: Verify your R project setup\nR2: DDS expenditures by ethnicity (parts A-L)\nPSS1: Book 4.24 - Power & sample size T/F questions\nPSS2: Power & sample size calculations\n\n\nBook\n\n8.8 (see instructions in HW)\n8.24 (see instructions in HW)\n\n\n\n\n\n1All datasets are on GitHub"
+  },
+  {
+    "objectID": "weeks/week_07_new_format.html#overview-of-week-7",
+    "href": "weeks/week_07_new_format.html#overview-of-week-7",
+    "title": "Week 7",
+    "section": "",
+    "text": "Section\nMon: Day 11\nWed: Day 12\n\n\n\n\nTopics\n\nInference for difference in means from two independent samples (2-sample t-test)\nPower and sample size calculations\n\n\n\nInference for proportions\n\nCIs vs. hypothesis tests\nOne proportion from one sample\nDifference in proportions from two independent samples\n\n\n\n\n\nIn class PowerPoint slides\nLink posted after class\nLink posted after class\n\n\nDatasets1\n\nCaffeineTaps.csv\n\nNone\n\n\nPractice Problems\n\nBook exercises: 5.34, 4.22\n\n\nBook exercise: 8.2\n\n\n\nClass discussion\n\nBook 5.26 a-b\nR1: Verify your R project setup\nR2: DDS expenditures by ethnicity (parts A-L)\nPSS1: Book 4.24 - Power & sample size T/F questions\nPSS2: Power & sample size calculations\n\n\nBook\n\n8.8 (see instructions in HW)\n8.24 (see instructions in HW)\n\n\n\n\n\n1All datasets are on GitHub"
+  },
+  {
+    "objectID": "weeks/week_07_new_format.html#slides-recordings",
+    "href": "weeks/week_07_new_format.html#slides-recordings",
+    "title": "Week 7",
+    "section": "Slides & Recordings",
+    "text": "Slides & Recordings\n\nPre-recorded lessons are on Echo Video.\n\n\nDay 11\n\nSlides\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nSlides\n\n\n\nCode\n\n\n\n\n\n\nSlide view\npdf\nAs webpage\nNotes\nqmd\nhtml\n\n\n11\n\n\n\n\n\n\n\n\n\n\n\nRecordings\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides pages\nRecording Link\nDuration\n\n\n\n\n11\n2-sample means test: 5.3.2\n1-17\nDay 11 Part 1\n36 min\n\n\n\n2-sample means CI; R; pooled SD: 5.3.1, 5.3.5\n18-26\nDay 11 Part 2\n26 min\n\n\n\nPower & sample size: 1 or 2 means: 5.4 & extra\n27-45\nDay 11 Part 3\n57 min\n\n\n\n\n\n\nDay 12\n\nSlides\n\n\n\n\n\n\n\n\n\n\n\n\nDay\nSlides\n\n\n\nCode\n\n\n\n\n\n\nSlide view\npdf\nAs webpage\nNotes\nqmd\nhtml\n\n\n12\n\n *\n\n *\n\n\n\n\n\n\n\nRecordings\n\n\n\n\n\n\n\n\n\n\nDay\nTopic\nSlides pages\nRecording Link\nDuration\n\n\n\n\n12\n1 & 2 proportions test & CI: 8.1.1, 8.2\n1-23\nDay 12 Part 1\n48 min\n\n\n\nR: 1 & 2 proportions test & CI\n24-34\nDay 12 Part 2\n26 min\n\n\n\nPower for 1- and 2- proportions\n35-43\nDay 12 Part 3\n25 min\n\n\n\n*Note: page numbers in pdf files do not always align with those in the original html slides"
+  },
+  {
+    "objectID": "weeks/week_07_new_format.html#homework",
+    "href": "weeks/week_07_new_format.html#homework",
+    "title": "Week 7",
+    "section": "Homework",
+    "text": "Homework\n\nHW 5 covers Days 11-12 and is due on Sat, 11/14\nCheck out this spreadsheet for typos in book."
   }
 ]
