@@ -27,8 +27,7 @@ editor_options:
 -   Power and sample size calculations
 -   Download Day 11 [dataset](#sec-data)
 -   [**Day 11 Practice Problems**](#sec-PP)
-
-<!-- -   In class PowerPoint [slides]() (on Brightspace) -->
+-   In class PowerPoint [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/519213) (on Brightspace)
 :::
 
 ::: g-col-6
@@ -39,7 +38,7 @@ editor_options:
     -   One proportion from one sample
     -   Difference in proportions from two independent samples
 -   [**Day 12 Practice Problems**](#sec-PP)
-<!-- -   In class PowerPoint [slides]() (on Brightspace) -->
+-   In class PowerPoint [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/519214) (on Brightspace)
 :::
 :::::
 
