@@ -43,11 +43,11 @@ editor_options:
 |  |  |  |  |  |
 | [8](weeks/week_08.qmd) | M 11/16 | **13** | Chi-squared tests, <br> Fishers exact test | 8.3-8.4 |
 |  | W 11/18 | **14** | Comparing Means with ANOVA. | 5.5, extra |
-|  | **Thurs 11/19** |  | [*HW 6 Due (Day 13)*]{style="color:#5388f2"} <br> [*Due Thursday!!*]{style="color:darkorange"} |  |
+|  | **Thurs 11/19** |  | [*HW 6 Due (Day 13)*]{style="color:#5388f2"} <br> [⚠️ *Due Thursday!!*]{style="color:darkorange"} |  |
 |  |  |  |  |  |
 | [9](weeks/week_09.qmd) | M 11/23 |  | [**Exam 2: Days 8-13**]{style="color:#409c3a"} | **Ch 4, 5.1-5.4;** <br> extra, 8.1-8.4 |
 |  | W 11/25 | **15** | Simple Linear Regression | 6.1-6.2 |
-|  | Su 11/29 |  | [*HW 7 Due (Day 14)*]{style="color:#5388f2"} |  |
+|  | Su 11/29 |  | [*HW 7 Due (Day 14)*]{style="color:#5388f2"} <br> [⚠️ *Due Sunday!!*]{style="color:darkorange"}  |  |
 |  |  |  |  |  |
 | [10](weeks/week_10.qmd) | M 11/30 | **16** | Simple Linear Regression | 6.3-6.4 |
 |  | W 12/2 | **17** | Non-parametric tests <br> (sign, signed-rank, rank-sum, <br> Kruskal-Wallis) | Extra |

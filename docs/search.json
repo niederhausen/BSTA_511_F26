@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Week\nDates\nDay\nTopics\nChapter sections\n\n\n\n\n1\nM 9/28\n\nNo class:  OHSU New Student Orientation\n\n\n\n\nW 9/30\n1\nIntroduction to R & RStudio\n\n\n\n\n\n\n\n\n\n\n2\nM 10/5\n2\nIntro to Data, Data collection\n1.1-1.3\n\n\n\nW 10/7\n3\nSummarizing numerical data,  Probability\n1.4, 2.1-2.2.4\n\n\n\nSa 10/10\n\nHW 1 Due (Days 1 - 3)\n\n\n\n\n\n\n\n\n\n\n3\nM 10/12\n4\nBayes’ Theorem, R Packages\n2.2.5, extra\n\n\n\nW 10/14\n5\nData visualization,  exploratory data analysis (EDA),  and summarizing categorical data\n1.5-1.7, extra\n\n\n\nSa 10/17\n\nHW 2 Due (Days 4 - 5)\n\n\n\n\n\n\n\n\n\n\n4\nM 10/19\n6\nRandom variables,  Binomial distribution\n3.1-3.2\n\n\n\nW 10/21\n7\nNormal and Poisson distributions\n3.3-3.4\n\n\n\nSa 10/24\n\nHW 3 Due (Days 6 - 7)\n\n\n\n\n\n\n\n\n\n\n5\nM 10/26\n8\nVariability in estimates\n4.1\n\n\n\nW 10/28\n\nExam 1: Days 1-7\nCh 1, 2, 3.1-3.4\n\n\n\n\n\n\n\n\n\n6\nM 11/2\n9\nConfidence Intervals\n4.2\n\n\n\nW 11/4\n10\nHypothesis Testing:  Single-sample with t-distribution  & Two-sample paired data\n4.3, 5.1, 5.2\n\n\n\nSa 11/7\n\nHW 4 Due (Days 8 - 10)\n\n\n\n\n\n\n\n\n\n\n7\nM 11/9\n11\nHypothesis Testing:  Two-sample independent data;  Power\n5.3-5.4, extra\n\n\n\nW 11/11\n12\nInference for a single proportion  or difference in proportions\n8.1-8.2\n\n\n\nSa 11/14\n\nHW 5 Due (Days 11 - 12)\n\n\n\n\n\n\n\n\n\n\n8\nM 11/16\n13\nChi-squared tests,  Fishers exact test\n8.3-8.4\n\n\n\nW 11/18\n14\nComparing Means with ANOVA.\n5.5, extra\n\n\n\nThurs 11/19\n\nHW 6 Due (Day 13)  Due Thursday!!\n\n\n\n\n\n\n\n\n\n\n9\nM 11/23\n\nExam 2: Days 8-13\nCh 4, 5.1-5.4;  extra, 8.1-8.4\n\n\n\nW 11/25\n15\nSimple Linear Regression\n6.1-6.2\n\n\n\nSu 11/29\n\nHW 7 Due (Day 14)\n\n\n\n\n\n\n\n\n\n\n10\nM 11/30\n16\nSimple Linear Regression\n6.3-6.4\n\n\n\nW 12/2\n17\nNon-parametric tests  (sign, signed-rank, rank-sum,  Kruskal-Wallis)\nExtra\n\n\n\nSa 12/5\n\nHW 8 Due (Days 15 - 17)\n\n\n\n\n\n\n\n\n\n\n11\nM 12/7\n\nReview - catch up\n\n\n\n\nW 12/9\n\nExam 3 due (take home):  Cumulative with a focus on Days 14-17\nCh 5.5, 6,  non-parametric"
+    "text": "Week\nDates\nDay\nTopics\nChapter sections\n\n\n\n\n1\nM 9/28\n\nNo class:  OHSU New Student Orientation\n\n\n\n\nW 9/30\n1\nIntroduction to R & RStudio\n\n\n\n\n\n\n\n\n\n\n2\nM 10/5\n2\nIntro to Data, Data collection\n1.1-1.3\n\n\n\nW 10/7\n3\nSummarizing numerical data,  Probability\n1.4, 2.1-2.2.4\n\n\n\nSa 10/10\n\nHW 1 Due (Days 1 - 3)\n\n\n\n\n\n\n\n\n\n\n3\nM 10/12\n4\nBayes’ Theorem, R Packages\n2.2.5, extra\n\n\n\nW 10/14\n5\nData visualization,  exploratory data analysis (EDA),  and summarizing categorical data\n1.5-1.7, extra\n\n\n\nSa 10/17\n\nHW 2 Due (Days 4 - 5)\n\n\n\n\n\n\n\n\n\n\n4\nM 10/19\n6\nRandom variables,  Binomial distribution\n3.1-3.2\n\n\n\nW 10/21\n7\nNormal and Poisson distributions\n3.3-3.4\n\n\n\nSa 10/24\n\nHW 3 Due (Days 6 - 7)\n\n\n\n\n\n\n\n\n\n\n5\nM 10/26\n8\nVariability in estimates\n4.1\n\n\n\nW 10/28\n\nExam 1: Days 1-7\nCh 1, 2, 3.1-3.4\n\n\n\n\n\n\n\n\n\n6\nM 11/2\n9\nConfidence Intervals\n4.2\n\n\n\nW 11/4\n10\nHypothesis Testing:  Single-sample with t-distribution  & Two-sample paired data\n4.3, 5.1, 5.2\n\n\n\nSa 11/7\n\nHW 4 Due (Days 8 - 10)\n\n\n\n\n\n\n\n\n\n\n7\nM 11/9\n11\nHypothesis Testing:  Two-sample independent data;  Power\n5.3-5.4, extra\n\n\n\nW 11/11\n12\nInference for a single proportion  or difference in proportions\n8.1-8.2\n\n\n\nSa 11/14\n\nHW 5 Due (Days 11 - 12)\n\n\n\n\n\n\n\n\n\n\n8\nM 11/16\n13\nChi-squared tests,  Fishers exact test\n8.3-8.4\n\n\n\nW 11/18\n14\nComparing Means with ANOVA.\n5.5, extra\n\n\n\nThurs 11/19\n\nHW 6 Due (Day 13)  ⚠️ Due Thursday!!\n\n\n\n\n\n\n\n\n\n\n9\nM 11/23\n\nExam 2: Days 8-13\nCh 4, 5.1-5.4;  extra, 8.1-8.4\n\n\n\nW 11/25\n15\nSimple Linear Regression\n6.1-6.2\n\n\n\nSu 11/29\n\nHW 7 Due (Day 14)  ⚠️ Due Sunday!!\n\n\n\n\n\n\n\n\n\n\n10\nM 11/30\n16\nSimple Linear Regression\n6.3-6.4\n\n\n\nW 12/2\n17\nNon-parametric tests  (sign, signed-rank, rank-sum,  Kruskal-Wallis)\nExtra\n\n\n\nSa 12/5\n\nHW 8 Due (Days 15 - 17)\n\n\n\n\n\n\n\n\n\n\n11\nM 12/7\n\nReview - catch up\n\n\n\n\nW 12/9\n\nExam 3 due (take home):  Cumulative with a focus on Days 14-17\nCh 5.5, 6,  non-parametric"
   },
   {
     "objectID": "slides_code/Day10_part1_bsta511_code.html",
@@ -5092,8 +5092,8 @@
     "objectID": "weeks/week_08.html#overview-of-week-8",
     "href": "weeks/week_08.html#overview-of-week-8",
     "title": "Week 8",
-    "section": "Overview of Week 8",
-    "text": "Overview of Week 8\nHW 6 covers Day 13 and is due on THURSDAY, 11/19\n\n\nMon: Day 13\n\nChi-squared tests of association and homogeneity\nFisher’s exact test\nSections 8.3-8.4\n\n\n\n\nWed: Day 14\n\nANOVA = Analysis of Variance\nComparing more than 2 means\nSection 5.5"
+    "section": "",
+    "text": "⚠️ HW 6 covers Day 13 and is due on THURSDAY, 11/19\n\n\n\n\nChi-squared tests of association and homogeneity\nFisher’s exact test\nSections 8.3-8.4\nDay 13 Practice Problems\n\n\n\n\n\n\nANOVA = Analysis of Variance\nComparing more than 2 means\nSection 5.5\nDay 14 Practice Problems"
   },
   {
     "objectID": "weeks/week_08.html#slides-recordings",
@@ -5107,7 +5107,7 @@
     "href": "weeks/week_08.html#datasets",
     "title": "Week 8",
     "section": "Datasets",
-    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 14: DisabilityEmployment.txt"
+    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 13: HW dataset will be added soon\nDay 14: DisabilityEmployment.txt"
   },
   {
     "objectID": "weeks/week_08.html#practice-problems",
@@ -5128,14 +5128,14 @@
     "href": "weeks/week_08.html#homework",
     "title": "Week 8",
     "section": "Homework",
-    "text": "Homework\n\nHW 6 covers Day 13 and is due on THURSDAY, 11/19\nHW 7 covers Day 14 and is due on Sun, 11/29\nCheck out this spreadsheet for typos in book."
+    "text": "Homework\n\nHW 6 covers Day 13 and is due on THURSDAY, 11/19\n\n☔️ Link coming soon!\n\nHW 7 covers Day 14 and is due on SUNDAY, 11/29\n\n🦃️ Link coming soon!\n\n\n\n\n\nCheck out this spreadsheet for typos in book."
   },
   {
     "objectID": "weeks/week_08.html#sec-Exam2info",
     "href": "weeks/week_08.html#sec-Exam2info",
     "title": "Week 8",
     "section": "Exam 2 information",
-    "text": "Exam 2 information\n\nExam 2 will be on Mon, Nov. 23rd\nSections 4.1-4.2: samples of past exam questions and answers (on Brightspace)\nSections 4.3, 5.1-5.4, 8.1-8.4: samples of past exam questions and answers (on Brightspace)\n\nNote: I still need to add the answers for the Fall 2024 exam.\n\nMaterial will cover Days 8-13,\n\nwhich is approximately Sections 4.1-4.3, 5.1-5.4, and 8.1-8.4 from the textbook, plus supplementary material.\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet."
+    "text": "Exam 2 information\n\nExam 2 will be on Mon, Nov. 23rd\nMaterial will cover Days 8-13,\n\nwhich is approximately Sections 4.1-4.3, 5.1-5.4, and 8.1-8.4 from the textbook, plus supplementary material.\n\nSamples of past exam questions covering same topics:\n\nLinks coming soon!\n\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet."
   },
   {
     "objectID": "weeks/week_05.html",
@@ -5555,7 +5555,7 @@
     "href": "weeks/week_09.html#sec-Exam2info",
     "title": "Week 9",
     "section": "Exam 2 information",
-    "text": "Exam 2 information\n\nExam 2 will be on Mon, Nov. 23rd\nSections 4.1-4.2: samples of past exam questions and answers (on Brightspace)\nSections 4.3, 5.1-5.4, 8.1-8.4: samples of past exam questions and answers (on Brightspace)\n\nNote: I still need to add the answers for the Fall 2024 exam.\n\nMaterial will cover Days 8-13,\n\nwhich is approximately Sections 4.1-4.3, 5.1-5.4, and 8.1-8.4 from the textbook, plus supplementary material.\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet."
+    "text": "Exam 2 information\n\nExam 2 will be on Mon, Nov. 23rd\nMaterial will cover Days 8-13,\n\nwhich is approximately Sections 4.1-4.3, 5.1-5.4, and 8.1-8.4 from the textbook, plus supplementary material.\n\nSamples of past exam questions covering same topics:\n\nLinks coming soon!\n\n\nThe exam will be in-class and handwritten. Bring a calculator.\nYou may bring one page of notes on an 8.5” x 11” sheet of paper.\n\nYou may use both sides.\nYou may type your notes.\nYou may not use screenshots of the notes or textbook\nYou will be turning in the page of notes with the exam, so please add your name to the sheet."
   },
   {
     "objectID": "homework.html",
@@ -10757,5 +10757,19 @@
     "title": "Week 7",
     "section": "Homework",
     "text": "Homework\n\nHW 5 covers Days 11-12 and is due on Sat, 11/14\nCheck out this spreadsheet for typos in book."
+  },
+  {
+    "objectID": "weeks/week_08.html#sec-PP",
+    "href": "weeks/week_08.html#sec-PP",
+    "title": "Week 8",
+    "section": "Practice Problems",
+    "text": "Practice Problems\n\n\nDay 13 PP\n\nBook exercises:\n\n8.28\n8.24 (a) & (b) as a test of independence (for HW 5 I had you test the difference in proportions)\n\n\n\n\nDay 14 PP\n\nSlide 12: “Hypothetical examples” question\nSlide 29 questions\nBook exercise: 5.48"
+  },
+  {
+    "objectID": "weeks/week_08.html",
+    "href": "weeks/week_08.html",
+    "title": "Week 8",
+    "section": "",
+    "text": "⚠️ HW 6 covers Day 13 and is due on THURSDAY, 11/19\n\n\n\n\nChi-squared tests of association and homogeneity\nFisher’s exact test\nSections 8.3-8.4\nDay 13 Practice Problems\n\n\n\n\n\n\nANOVA = Analysis of Variance\nComparing more than 2 means\nSection 5.5\nDay 14 Practice Problems"
   }
 ]
