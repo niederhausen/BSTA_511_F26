@@ -1,0 +1,134 @@
+---
+title: "☔️ HW 6: BSTA 511/611 F26"
+pagetitle: "☔️ HW 6"
+author: "Your name here - update this!!!!"
+date: "Due THURSDAY 11/19/26"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    toc_float:
+      collapsed: false
+    number-sections: false
+    number-depth: 4
+    theme: lumen
+    self-contained: true
+    html-math-method: mathjax
+---
+
+```{r}
+#| label: "setup"
+#| include: false
+knitr::opts_chunk$set(echo = TRUE, fig.height = 2, fig.width = 4)
+```
+
+**Due THURSDAY 11/19/26**
+
+Download the .qmd file for this assignment from <https://github.com/niederhausen/BSTA_511_F26/blob/main/homework/HW_6_F26_bsta511.qmd>
+
+## ☔️ Graded exercises
+
+The exercises listed below will be graded for this assignment. You are **strongly** encouraged to complete the entire assignment. You will receive feedback on exercises you turn in that are not being graded.
+
+-   **Book exercises**
+    -   8.32, 8.34, 8.38
+
+
+## ⚠️ Directions
+
+::: callout-important
+-   Complete ALL exercises in this assignment using Quarto.
+-   I highly recommend using LaTeX to format equations.
+    -   See the .qmd files from class notes for LaTeX code to make it easier to show your work in computations.
+    -   For instructions on creating equations in the Visual editor, check out <https://quarto.org/docs/get-started/authoring/rstudio.html#equations>. [html](../slides_code/Probability_distributions_in_R_bsta511.qmd)
+    -   Also check out examples of [LaTeX formatting for statistics](https://nwakim.github.io/S2024_BSTA_513/extra_resources/Latex_qmd_formatting.html) created by recent biostats alum Ariel Weingarten.
+    -   If you have difficulty rendering the LaTeX equations, I recommend installing and running the R package `tinytex`. See this [website](https://evalsp20.classes.andrewheiss.com/reference/install/#install-tinytex-1) for instructions.
+:::
+
+
+
+-   Please upload your homework to [Brightspace](https://brightspace.ohsu.edu/d2l/lms/dropbox/user/folders_list.d2l?ou=16063&isprv=0).
+    -   **Upload both your .qmd code file and the rendered .html file** 
+        -   (plus a pdf if completing part of the assignment by hand).
+    -   Use the assignment .qmd file linked to at the top of the this file as a template for your own assignment.
+-   For each question, make sure to **show all of your work**.
+    -   This includes all code and resulting output in the html file to support your answers for exercises requiring work done in R (including any arithmetic calculations).
+    -   For non-calculation questions, this includes an explanation of your answer (*why did you choose your answer?*).
+-   For each question, include a **sentence summarizing the answer** for that question in the context of the research question.
+
+::: callout-tip
+It is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly.
+:::
+
+
+
+# Book exercises (& R)
+
+##  ⚠️ Hypothesis test & CI instructions
+
+::: callout-important
+-   For book exercises, make sure to include all steps in a hypothesis test (where applicable) as outlined in the class notes.
+
+-   Do not forget to include a discussion on whether you think the test (or CI) assumptions have been satisfied. Are there assumptions you need to make in order for them to be satisfied? Whether you believe they are satisfied or not, continue to run the hypothesis test (or CI) as instructed.
+:::
+
+## ☔️ 8.32 Diabetes and unemployment
+
+### (a)
+
+### (b)
+
+### (c)
+
+[**In addition to answering the question in (c), run the 2 proportions test in R and calculate the "z" test statistic and p-value using the normal distribution based on the** $\chi^2$ **output in R's test.**]{style="color:green"}
+
+### (d) extra part
+
+[**Run the test as a** $\chi^2$ as well, and compare your results to those in (c).]{style="color:green"}
+
+## ☔️ 8.34 Coffee and Depression
+
+-   [**Do not create a dataset and run the test in R. Use just the information given in the problem.**]{style="color:green"}
+-   [**For (e), calculate the p-value "directly" (not using** $\chi^2$ test command in R). Also comment on whether you think the sample size condition would be met without computing the expected cell counts.]{style="color:green"}
+
+### (a)
+
+### (b)
+
+### (c)
+
+### (d)
+
+### (e)
+
+[**For (e), calculate the p-value "directly" (not using** $\chi^2$ test command in R). Also comment on whether you think the sample size condition would be met without computing the expected cell counts.]{style="color:green"}
+
+
+### (f)
+
+
+### (g)
+
+
+
+## ☔️ 8.38 (a) & (extra) Salt intake and CVD
+
+-   Do not do parts (b)-(c) in the book
+-   [**Load the dataset `SaltCVD.xlsx` using `read_excel()` from the `readxl` package and `here::here()` to answer this question.**]{style="color:green"} For an example of how to use `read_excel()`, see this [slide](https://nwakim.github.io/PUBH_523_26F/lessons/17_Import_Export/Import_Export.html#/lets-see-an-example-with-our-hrs-data) from PUBH 523. The dataset can be download from <https://github.com/niederhausen/BSTA_511_F26/blob/main/data/SaltCVD.xlsx>.
+
+```{r}
+# readxl package was installed when you installed the tidyverse package
+# It does not load when you load tidyverse though. You have to separately load it.
+library(readxl)
+```
+
+
+### (a)
+
+-   [**Make sure you saw the directions above regarding loading the dataset `SaltCVD.xlsx`.**]{style="color:green"}
+-   [**You can use the expected cell counts from R's chi-squared test (you do not need to compute them using the formula).**]{style="color:green"}
+-   [**Comment on whether the sample size condition is met or not for these data.**]{style="color:green"}
+
+### (extra)
+
+[**Run a Fisher's Exact test. Include the hypotheses and a conclusion in the context of the problem.**]{style="color:green"}

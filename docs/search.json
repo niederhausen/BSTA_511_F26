@@ -5107,7 +5107,7 @@
     "href": "weeks/week_08.html#datasets",
     "title": "Week 8",
     "section": "Datasets",
-    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 13: HW dataset will be added soon\nDay 14: DisabilityEmployment.txt"
+    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 13: SaltCVD.xlsx - used in HW 6\nDay 14: DisabilityEmployment.txt"
   },
   {
     "objectID": "weeks/week_08.html#practice-problems",
@@ -5128,7 +5128,7 @@
     "href": "weeks/week_08.html#homework",
     "title": "Week 8",
     "section": "Homework",
-    "text": "Homework\n\nHW 6 covers Day 13 and is due on THURSDAY, 11/19\n\n☔️ Link coming soon!\n\nHW 7 covers Day 14 and is due on SUNDAY, 11/29\n\n🦃️ Link coming soon!\n\n\n\n\n\nCheck out this spreadsheet for typos in book."
+    "text": "Homework\n\n☔️ HW 6 covers Day 13 and is due on THURSDAY, 11/19\n\nSee Datasets section above for dataset SaltCVD.xlsx\n\n🦃️ HW 7 covers Day 14 and is due on SUNDAY, 11/29\n\nLink coming soon!\n\n\n\n\nCheck out this spreadsheet for typos in book."
   },
   {
     "objectID": "weeks/week_08.html#sec-Exam2info",
@@ -5562,7 +5562,7 @@
     "href": "homework.html",
     "title": "Assignments",
     "section": "",
-    "text": "Note\n\n\n\n\nBelow are links to homework assignments.\nThe dates in the Date column are due dates.\nSee the Grading rubric tab to the left for a description of how assignments will be graded.\n\n\n\n\nCheck out this spreadsheet for textbook typos.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n10/10/26\n\n\nHW 1: BSTA 511/611 F26\n\n\n\n\n\n\n10/17/26\n\n\nHW 2: BSTA 511/611 F26\n\n\n\n\n\n\n10/24/26\n\n\nHW 3: BSTA 511/611 F26\n\n\n\n\n\n\n11/7/26\n\n\nHW 4: BSTA 511/611 F26\n\n\n\n\n\n\n11/14/26\n\n\nHW 5: BSTA 511/611 F26\n\n\n\n\n\n\nNo matching items"
+    "text": "Note\n\n\n\n\nBelow are links to homework assignments.\nThe dates in the Date column are due dates.\nSee the Grading rubric tab to the left for a description of how assignments will be graded.\n\n\n\n\nCheck out this spreadsheet for textbook typos.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\n\n\n\n\n\n10/10/26\n\n\nHW 1: BSTA 511/611 F26\n\n\n\n\n\n\n10/17/26\n\n\nHW 2: BSTA 511/611 F26\n\n\n\n\n\n\n10/24/26\n\n\nHW 3: BSTA 511/611 F26\n\n\n\n\n\n\n11/7/26\n\n\nHW 4: BSTA 511/611 F26\n\n\n\n\n\n\n11/14/26\n\n\nHW 5: BSTA 511/611 F26\n\n\n\n\n\n\n11/19/26\n\n\n☔️ HW 6: BSTA 511/611 F26\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -10771,5 +10771,61 @@
     "title": "Week 8",
     "section": "",
     "text": "⚠️ HW 6 covers Day 13 and is due on THURSDAY, 11/19\n\n\n\n\nChi-squared tests of association and homogeneity\nFisher’s exact test\nSections 8.3-8.4\nDay 13 Practice Problems\n\n\n\n\n\n\nANOVA = Analysis of Variance\nComparing more than 2 means\nSection 5.5\nDay 14 Practice Problems"
+  },
+  {
+    "objectID": "weeks/week_08.html#sec-data",
+    "href": "weeks/week_08.html#sec-data",
+    "title": "Week 8",
+    "section": "Datasets",
+    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 13: SaltCVD.xlsx - used in HW 6\nDay 14: DisabilityEmployment.txt"
+  },
+  {
+    "objectID": "homework/HW_6_F26_bsta511.html",
+    "href": "homework/HW_6_F26_bsta511.html",
+    "title": "☔️ HW 6: BSTA 511/611 F26",
+    "section": "",
+    "text": "Due THURSDAY 11/19/26\nDownload the .qmd file for this assignment from https://github.com/niederhausen/BSTA_511_F26/blob/main/homework/HW_6_F26_bsta511.qmd"
+  },
+  {
+    "objectID": "homework/HW_6_F26_bsta511.html#graded-exercises",
+    "href": "homework/HW_6_F26_bsta511.html#graded-exercises",
+    "title": "☔️ HW 6: BSTA 511/611 F26",
+    "section": "☔️ Graded exercises",
+    "text": "☔️ Graded exercises\nThe exercises listed below will be graded for this assignment. You are strongly encouraged to complete the entire assignment. You will receive feedback on exercises you turn in that are not being graded.\n\nBook exercises\n\n8.32, 8.34, 8.38"
+  },
+  {
+    "objectID": "homework/HW_6_F26_bsta511.html#directions",
+    "href": "homework/HW_6_F26_bsta511.html#directions",
+    "title": "☔️ HW 6: BSTA 511/611 F26",
+    "section": "⚠️ Directions",
+    "text": "⚠️ Directions\n\n\n\n\n\n\nImportant\n\n\n\n\nComplete ALL exercises in this assignment using Quarto.\nI highly recommend using LaTeX to format equations.\n\nSee the .qmd files from class notes for LaTeX code to make it easier to show your work in computations.\nFor instructions on creating equations in the Visual editor, check out https://quarto.org/docs/get-started/authoring/rstudio.html#equations. html\nAlso check out examples of LaTeX formatting for statistics created by recent biostats alum Ariel Weingarten.\nIf you have difficulty rendering the LaTeX equations, I recommend installing and running the R package tinytex. See this website for instructions.\n\n\n\n\n\nPlease upload your homework to Brightspace.\n\nUpload both your .qmd code file and the rendered .html file\n\n(plus a pdf if completing part of the assignment by hand).\n\nUse the assignment .qmd file linked to at the top of the this file as a template for your own assignment.\n\nFor each question, make sure to show all of your work.\n\nThis includes all code and resulting output in the html file to support your answers for exercises requiring work done in R (including any arithmetic calculations).\nFor non-calculation questions, this includes an explanation of your answer (why did you choose your answer?).\n\nFor each question, include a sentence summarizing the answer for that question in the context of the research question.\n\n\n\n\n\n\n\nTip\n\n\n\nIt is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly."
+  },
+  {
+    "objectID": "homework/HW_6_F26_bsta511.html#hypothesis-test-ci-instructions",
+    "href": "homework/HW_6_F26_bsta511.html#hypothesis-test-ci-instructions",
+    "title": "☔️ HW 6: BSTA 511/611 F26",
+    "section": "⚠️ Hypothesis test & CI instructions",
+    "text": "⚠️ Hypothesis test & CI instructions\n\n\n\n\n\n\nImportant\n\n\n\n\nFor book exercises, make sure to include all steps in a hypothesis test (where applicable) as outlined in the class notes.\nDo not forget to include a discussion on whether you think the test (or CI) assumptions have been satisfied. Are there assumptions you need to make in order for them to be satisfied? Whether you believe they are satisfied or not, continue to run the hypothesis test (or CI) as instructed."
+  },
+  {
+    "objectID": "homework/HW_6_F26_bsta511.html#diabetes-and-unemployment",
+    "href": "homework/HW_6_F26_bsta511.html#diabetes-and-unemployment",
+    "title": "☔️ HW 6: BSTA 511/611 F26",
+    "section": "☔️ 8.32 Diabetes and unemployment",
+    "text": "☔️ 8.32 Diabetes and unemployment\n\n(a)\n\n\n(b)\n\n\n(c)\nIn addition to answering the question in (c), run the 2 proportions test in R and calculate the “z” test statistic and p-value using the normal distribution based on the \\(\\chi^2\\) output in R’s test.\n\n\n(d) extra part\nRun the test as a \\(\\chi^2\\) as well, and compare your results to those in (c)."
+  },
+  {
+    "objectID": "homework/HW_6_F26_bsta511.html#coffee-and-depression",
+    "href": "homework/HW_6_F26_bsta511.html#coffee-and-depression",
+    "title": "☔️ HW 6: BSTA 511/611 F26",
+    "section": "☔️ 8.34 Coffee and Depression",
+    "text": "☔️ 8.34 Coffee and Depression\n\nDo not create a dataset and run the test in R. Use just the information given in the problem.\nFor (e), calculate the p-value “directly” (not using \\(\\chi^2\\) test command in R). Also comment on whether you think the sample size condition would be met without computing the expected cell counts.\n\n\n(a)\n\n\n(b)\n\n\n(c)\n\n\n(d)\n\n\n(e)\nFor (e), calculate the p-value “directly” (not using \\(\\chi^2\\) test command in R). Also comment on whether you think the sample size condition would be met without computing the expected cell counts.\n\n\n(f)\n\n\n(g)"
+  },
+  {
+    "objectID": "homework/HW_6_F26_bsta511.html#a-extra-salt-intake-and-cvd",
+    "href": "homework/HW_6_F26_bsta511.html#a-extra-salt-intake-and-cvd",
+    "title": "☔️ HW 6: BSTA 511/611 F26",
+    "section": "☔️ 8.38 (a) & (extra) Salt intake and CVD",
+    "text": "☔️ 8.38 (a) & (extra) Salt intake and CVD\n\nDo not do parts (b)-(c) in the book\nLoad the dataset SaltCVD.xlsx using read_excel() from the readxl package and here::here() to answer this question. For an example of how to use read_excel(), see this slide from PUBH 523. The dataset can be download from https://github.com/niederhausen/BSTA_511_F26/blob/main/data/SaltCVD.xlsx.\n\n\n# readxl package was installed when you installed the tidyverse package\n# It does not load when you load tidyverse though. You have to separately load it.\nlibrary(readxl)\n\n\n(a)\n\nMake sure you saw the directions above regarding loading the dataset SaltCVD.xlsx.\nYou can use the expected cell counts from R’s chi-squared test (you do not need to compute them using the formula).\nComment on whether the sample size condition is met or not for these data.\n\n\n\n(extra)\nRun a Fisher’s Exact test. Include the hypotheses and a conclusion in the context of the problem."
   }
 ]

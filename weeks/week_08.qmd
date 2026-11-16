@@ -60,11 +60,11 @@ editor_options:
 
 : {.striped .hover tbl-colwidths="\[3, 10, 8, 5, 5, 5, 6, 6, 5, 5\]"}
 
-## Datasets
+## Datasets {#sec-data}
 
 All datasets can be found on [GitHub](https://github.com/niederhausen/BSTA_511_F26/tree/main/data)
 
--   Day 13: *HW dataset will be added soon*
+-   Day 13: [SaltCVD.xlsx](/data/SaltCVD.xlsx)  - used in HW 6
 -   Day 14: [DisabilityEmployment.txt](/data/DisabilityEmployment.txt)
 
 ## Practice Problems {#sec-PP}
@@ -107,13 +107,13 @@ During class you will be working in groups discussing the following:
 
 ## Homework
 
--  HW 6 covers Day 13 and is due on [***THURSDAY***]{style="color:darkorange"}, 11/19
-    -   ☔️ *Link coming soon!*
--   HW 7 covers Day 14 and is due on [***SUNDAY***]{style="color:darkorange"}, 11/29
-    -   🦃️ *Link coming soon!*
+-  ☔️ [HW 6](../homework/HW_6_F26_bsta511.qmd) covers Day 13 and is due on [***THURSDAY***]{style="color:darkorange"}, 11/19
+    -   See [Datasets](#sec-data) section above for dataset `SaltCVD.xlsx`
+-   🦃️ HW 7 covers Day 14 and is due on [***SUNDAY***]{style="color:darkorange"}, 11/29
+    -    *Link coming soon!*
 
-<!-- [HW 6](../homework/HW_6_F26_bsta511_v2.qmd)  -->
-<!-- -   [HW 7](../homework/HW_7_F26_bsta511_v2.qmd) -->
+
+<!-- -   [HW 7](../homework/HW_7_F26_bsta511.qmd) -->
 
 -   Check out this [spreadsheet](https://docs.google.com/spreadsheets/d/1k_NivXZftdlRgRyTT3fUZCndW4eoXCzAs-DEIml6K3Y/edit?gid=0#gid=0) for typos in book.
 
