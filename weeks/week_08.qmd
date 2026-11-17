@@ -28,8 +28,7 @@ editor_options:
 -   Fisher’s exact test
 -   Sections 8.3-8.4
 -   [**Day 13 Practice Problems**](#sec-PP)
-
-<!-- -   In class PowerPoint [slides]() (on Brightspace) -->
+-   In class PowerPoint [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/522051) (on Brightspace)
 :::
 
 ::: g-col-6
