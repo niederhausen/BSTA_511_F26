@@ -1,0 +1,165 @@
+---
+title: "🦃 HW 7: BSTA 511/611 F26"
+pagetitle: "🦃 HW 7"
+author: "Your name here - update this!!!!"
+date: "Due SUNDAY 11/29/26"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    toc_float:
+      collapsed: false
+    number-sections: false
+    number-depth: 4
+    theme: lumen
+    self-contained: true
+    html-math-method: mathjax
+---
+
+```{r}
+#| label: "setup"
+#| include: false
+knitr::opts_chunk$set(echo = TRUE, fig.height = 2, fig.width = 4)
+```
+
+**Due SUNDAYhrs 11/29/26**
+
+Download the .qmd file for this assignment from <https://github.com/niederhausen/BSTA_511_F26/blob/main/homework/HW_7_F26_bsta511.qmd>
+
+## 🦃 Graded exercises
+
+The exercises listed below will be graded for this assignment. You are **strongly** encouraged to complete the entire assignment. You will receive feedback on exercises you turn in that are not being graded.
+
+-   **Book exercises**
+    -   5.44
+-   **R exercises**
+    -   R1: Palmer Penguins ANOVA
+    
+
+
+## ⚠️ Directions
+
+::: callout-important
+-   Complete ALL exercises in this assignment using Quarto.
+-   **Use LaTeX to format equations.** 
+    -   See the .qmd files from class notes for LaTeX code to make it easier to show your work in computations.
+    -   For instructions on creating equations in the Visual editor, check out <https://quarto.org/docs/get-started/authoring/rstudio.html#equations>. 
+    -   Also check out examples of [LaTeX formatting for statistics](https://nwakim.github.io/S2024_BSTA_513/extra_resources/Latex_qmd_formatting.html) created by recent biostats alum Ariel Weingarten.
+    -   If you have difficulty rendering the LaTeX equations, I recommend installing and running the R package `tinytex`. See this [website](https://evalsp20.classes.andrewheiss.com/reference/install/#install-tinytex-1) for instructions.
+:::
+
+
+-   Please upload your homework to [Brightspace](https://brightspace.ohsu.edu/d2l/lms/dropbox/user/folders_list.d2l?ou=16063&isprv=0).
+    -   **Upload both your .qmd code file and the rendered .html file** 
+        -   (plus a pdf if completing part of the assignment by hand).
+    -   Use the assignment .qmd file linked to at the top of the this file as a template for your own assignment.
+-   For each question, make sure to **show all of your work**.
+    -   This includes all code and resulting output in the html file to support your answers for exercises requiring work done in R (including any arithmetic calculations).
+    -   For non-calculation questions, this includes an explanation of your answer (*why did you choose your answer?*).
+-   For each question, include a **sentence summarizing the answer** for that question in the context of the research question.
+
+::: callout-tip
+It is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly.
+:::
+
+# Book exercises
+
+##  ⚠️ Hypothesis test & CI instructions
+
+::: callout-important
+-   For book exercises, make sure to include all steps in a hypothesis test (where applicable) as outlined in the class notes.
+
+-   Do not forget to include a discussion on whether you think the test (or CI) assumptions have been satisfied. Are there assumptions you need to make in order for them to be satisfied? Whether you believe they are satisfied or not, continue to run the hypothesis test (or CI) as instructed.
+:::
+
+## 🦃 5.44 Work hours and education
+
+
+
+
+# R exercises
+
+## Load packages
+
+Load all the packages you need in the first code chunk of the file that starts with `#| label: "setup"`.
+
+
+## 🦃 R1: Palmer Penguins ANOVA
+
+-   [**Load the dataset `penguins.xlsx` using `read_excel()` from the `readxl` package and `here::here()` to answer this question.**]{style="color:green"} For an example of how to use `read_excel()`, see this [slide](https://nwakim.github.io/PUBH_523_26F/lessons/17_Import_Export/Import_Export.html#/lets-see-an-example-with-our-hrs-data) from PUBH 523. The dataset can be download from <https://github.com/niederhausen/BSTA_511_F26/blob/main/data/penguins.xlsx>.
+-   *Note: I created `penguins.xlsx` using the `penguinds` dataset from the `palmerpenguins` package.*
+    -   *You can learn more about the Palmer penguins data at <https://allisonhorst.github.io/palmerpenguins/>*
+
+
+
+### (a) Dotplots
+
+**Make a dotplot of the penguins' bill depths stratified by species type. Include points for the mean of each species type as well as a horizontal dashed line for the overall mean.** *See example from class for the plot I'm describing.*
+
+### (b) Which groups significantly different?
+
+**Based on the figure, which pairs of species look like they have significantly different mean bill depths?**
+
+### (c) Hypotheses in words
+
+**Write out in words the null and alternative hypotheses.**
+
+### (d) Hypotheses in symbols
+
+**Write out in symbols the null and alternative hypotheses.**
+
+### (e) Run ANOVA in R
+
+**Using R, run the hypothesis test and display the output.**
+
+### (f) SST
+
+**Using the values from the ANOVA table, calculate the value of the SST (total sum of squares).**
+
+### (g) MSG & MSE
+
+**Using the values from the ANOVA table, verify (calculate) the values of the MSG (mean square groups) and MSE (mean square error).**
+
+### (h) F statistic
+
+**Using the values from the ANOVA table, verify (calculate) the value of the F statistic.**
+
+### (i) p-value
+
+**Using the values from the ANOVA table, verify (calculate) the p-value.**
+
+### (j) Decision?
+
+**Based on the p-value, will we reject or fail to reject the null hypothesis? Why?**
+
+### (k) Conclusion
+
+**Write a conclusion to the hypothesis test in the context of the problem.**
+
+### (l) Technical conditions
+
+**Investigate whether the technical conditions for using an ANOVA been satisfied.**
+
+### (m) Post-hoc pairwise t-tests: no correction
+
+**Run post-hoc pairwise t-tests using NO p-value correction. Which pairs of species have significantly different bill depths?**
+
+### (n) Post-hoc pairwise t-tests: Bonferroni correction
+
+**Run post-hoc pairwise t-tests using a Bonferroni correction. Which pairs of species have significantly different bill depths?**
+
+### (o) Hypothetical Bonferroni correction
+
+**If *hypothetically* the p-value comparing the mean bill depths of the Adelie and Chinstrap species were 0.03 without any p-value adjustment, what would the p-value be after running the post-hoc pairwise t-tests using a Bonferroni correction?**
+
+### (p) Post-hoc pairwise t-tests: Tukey's Honest Significance Test correction
+
+**Run post-hoc pairwise t-tests using Tukey's Honest Significance Test correction. Which pairs of species have significantly different bill depths?**
+
+### (q) Tukey confidence intervals
+
+**Make a plot showing the 95% family-wise Tukey confidence intervals. How does this plot visually confirm the which pairs of species have significantly different bill depths?**
+
+
+
+
