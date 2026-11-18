@@ -123,9 +123,10 @@ During class you will be working in groups discussing the following:
 -   Material will cover **Days 8-13**,
     -   which is approximately **Sections 4.1-4.3, 5.1-5.4, and 8.1-8.4** from the textbook, plus supplementary material.
 -   Samples of past exam questions covering same topics: 
-    -   *Links coming soon!*
-
-    <!-- -   [past exam questions]() and [answers]() (on Brightspace) -->
+    -   [past exam questions](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/522402) (on Brightspace)
+    -   *Answers coming soon!*
+    
+<!-- and [answers]()  -->
 
 -   The exam will be in-class and handwritten. *Bring a calculator.*
 -   You may bring one page of notes on an 8.5” x 11” sheet of paper.
