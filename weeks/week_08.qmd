@@ -38,8 +38,7 @@ editor_options:
 -   Comparing more than 2 means
 -   Section 5.5
 -   [**Day 14 Practice Problems**](#sec-PP)
-
-<!-- -   In class PowerPoint [slides]() (on Brightspace) -->
+-   In class PowerPoint [slides](https://brightspace.ohsu.edu/d2l/le/lessons/16063/topics/523352) (on Brightspace)
 :::
 :::::
 
