@@ -113,7 +113,7 @@ It is a good idea to try rendering your document from time to time as you go alo
 
 ## ☔️ 8.38 (a) & (extra) Salt intake and CVD
 
--   Do not do parts (b)-(c) in the book
+-   Do not do parts (b)-(d) in the book
 -   [**Load the dataset `SaltCVD.xlsx` using `read_excel()` from the `readxl` package and `here::here()` to answer this question.**]{style="color:green"} For an example of how to use `read_excel()`, see this [slide](https://nwakim.github.io/PUBH_523_26F/lessons/17_Import_Export/Import_Export.html#/lets-see-an-example-with-our-hrs-data) from PUBH 523. The dataset can be download from <https://github.com/niederhausen/BSTA_511_F26/blob/main/data/SaltCVD.xlsx>.
 
 ```{r}
