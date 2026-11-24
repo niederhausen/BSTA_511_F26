@@ -13,7 +13,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-## [Page not yet updated]{style="color:darkorange"}
+<!-- ## [Page not yet updated]{style="color:darkorange"} -->
 
 ## Overview of Week 9
 
@@ -29,6 +29,7 @@ editor_options:
 
 -   Simple Linear Regression (part 1)
 -   Sections 6.1, 6.2
+-   [**Day 15 Practice Problems**](#sec-PP)
 
 <!-- -   In class PowerPoint [slides]() (on Brightspace) -->
 :::
@@ -50,7 +51,7 @@ All datasets can be found on [GitHub](https://github.com/niederhausen/BSTA_511_F
 
 -   Day 15: [lifeexp_femlit_water_2011.csv](/data/lifeexp_femlit_water_2011.csv)
 
-## Practice Problems
+## Practice Problems {#sec-PP}
 
 ### [Day 15 PP]{style="color:darkorange"}
 
@@ -70,7 +71,7 @@ During class you will be working in groups discussing the following:
 
 ## Homework
 
--   [HW 7](../homework/HW_7_F26_bsta511.qmd) covers Day 14 and is due on SUNDAY, 11/29
+-   [HW 7](../homework/HW_7_F26_bsta511.qmd) covers Day 14 (from last week) and is due on SUNDAY, 11/29
 -   HW 8 covers Days 15-17 and is due on Sat, 12/5
 -   Check out this [spreadsheet](https://docs.google.com/spreadsheets/d/1k_NivXZftdlRgRyTT3fUZCndW4eoXCzAs-DEIml6K3Y/edit?gid=0#gid=0) for typos in book.
 

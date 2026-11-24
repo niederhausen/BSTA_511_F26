@@ -5512,8 +5512,8 @@
     "objectID": "weeks/week_09.html#overview-of-week-9",
     "href": "weeks/week_09.html#overview-of-week-9",
     "title": "Week 9",
-    "section": "Overview of Week 9",
-    "text": "Overview of Week 9\n\n\nMon: Exam 2\n\nSee the Exam 2 information section below for more information\n\n\n\nWed: Day 15\n\nSimple Linear Regression (part 1)\nSections 6.1, 6.2"
+    "section": "",
+    "text": "See the Exam 2 information section below for more information\n\n\n\n\n\nSimple Linear Regression (part 1)\nSections 6.1, 6.2\nDay 15 Practice Problems"
   },
   {
     "objectID": "weeks/week_09.html#slides-recordings",
@@ -5548,7 +5548,7 @@
     "href": "weeks/week_09.html#homework",
     "title": "Week 9",
     "section": "Homework",
-    "text": "Homework\n\nHW 7 covers Day 14 and is due on SUNDAY, 11/29\nHW 8 covers Days 15-17 and is due on Sat, 12/5\nCheck out this spreadsheet for typos in book."
+    "text": "Homework\n\nHW 7 covers Day 14 (from last week) and is due on SUNDAY, 11/29\nHW 8 covers Days 15-17 and is due on Sat, 12/5\nCheck out this spreadsheet for typos in book."
   },
   {
     "objectID": "weeks/week_09.html#sec-Exam2info",
@@ -10876,5 +10876,19 @@
     "title": "🦃 HW 7: BSTA 511/611 F26",
     "section": "🦃 R1: Palmer Penguins ANOVA",
     "text": "🦃 R1: Palmer Penguins ANOVA\n\nLoad the dataset penguins.xlsx using read_excel() from the readxl package and here::here() to answer this question. For an example of how to use read_excel(), see this slide from PUBH 523. The dataset can be download from https://github.com/niederhausen/BSTA_511_F26/blob/main/data/penguins.xlsx.\nNote: I created penguins.xlsx using the penguinds dataset from the palmerpenguins package.\n\nYou can learn more about the Palmer penguins data at https://allisonhorst.github.io/palmerpenguins/\n\n\n\n(a) Dotplots\nMake a dotplot of the penguins’ bill depths stratified by species type. Include points for the mean of each species type as well as a horizontal dashed line for the overall mean. See example from class for the plot I’m describing.\n\n\n(b) Which groups significantly different?\nBased on the figure, which pairs of species look like they have significantly different mean bill depths?\n\n\n(c) Hypotheses in words\nWrite out in words the null and alternative hypotheses.\n\n\n(d) Hypotheses in symbols\nWrite out in symbols the null and alternative hypotheses.\n\n\n(e) Run ANOVA in R\nUsing R, run the hypothesis test and display the output.\n\n\n(f) SST\nUsing the values from the ANOVA table, calculate the value of the SST (total sum of squares).\n\n\n(g) MSG & MSE\nUsing the values from the ANOVA table, verify (calculate) the values of the MSG (mean square groups) and MSE (mean square error).\n\n\n(h) F statistic\nUsing the values from the ANOVA table, verify (calculate) the value of the F statistic.\n\n\n(i) p-value\nUsing the values from the ANOVA table, verify (calculate) the p-value.\n\n\n(j) Decision?\nBased on the p-value, will we reject or fail to reject the null hypothesis? Why?\n\n\n(k) Conclusion\nWrite a conclusion to the hypothesis test in the context of the problem.\n\n\n(l) Technical conditions\nInvestigate whether the technical conditions for using an ANOVA been satisfied.\n\n\n(m) Post-hoc pairwise t-tests: no correction\nRun post-hoc pairwise t-tests using NO p-value correction. Which pairs of species have significantly different bill depths?\n\n\n(n) Post-hoc pairwise t-tests: Bonferroni correction\nRun post-hoc pairwise t-tests using a Bonferroni correction. Which pairs of species have significantly different bill depths?\n\n\n(o) Hypothetical Bonferroni correction\nIf hypothetically the p-value comparing the mean bill depths of the Adelie and Chinstrap species were 0.03 without any p-value adjustment, what would the p-value be after running the post-hoc pairwise t-tests using a Bonferroni correction?\n\n\n(p) Post-hoc pairwise t-tests: Tukey’s Honest Significance Test correction\nRun post-hoc pairwise t-tests using Tukey’s Honest Significance Test correction. Which pairs of species have significantly different bill depths?\n\n\n(q) Tukey confidence intervals\nMake a plot showing the 95% family-wise Tukey confidence intervals. How does this plot visually confirm the which pairs of species have significantly different bill depths?"
+  },
+  {
+    "objectID": "weeks/week_09.html",
+    "href": "weeks/week_09.html",
+    "title": "Week 9",
+    "section": "",
+    "text": "See the Exam 2 information section below for more information\n\n\n\n\n\nSimple Linear Regression (part 1)\nSections 6.1, 6.2\nDay 15 Practice Problems"
+  },
+  {
+    "objectID": "weeks/week_09.html#sec-PP",
+    "href": "weeks/week_09.html#sec-PP",
+    "title": "Week 9",
+    "section": "Practice Problems",
+    "text": "Practice Problems\n\nDay 15 PP\n\nBook exercises:\n\n6.2, 6.6"
   }
 ]
