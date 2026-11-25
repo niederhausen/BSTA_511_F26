@@ -240,7 +240,7 @@ if (isTRUE(getOption("knitr.in.progress"))) {
 ## 🍂 R2: DDS expenditures by ethnicity
 
 -   In these exercises you will use R to work through the discrimination in developmental disability support example from Section 5.3.4 (pg. 253) in the textbook.
--   The data are in the `oibiostats` package and called `dds.discr`.
+-   The data are in the `oibiostat` package and called `dds.discr`.
 
 ### 🍂 (a) New dataset
 

@@ -17,6 +17,8 @@ editor_options:
 
 ## Overview of Week 9
 
+-   *No office hours Thursday and Friday due to Thanksgiving Holiday.*
+
 ::::: grid
 ::: g-col-6
 ### Mon: Exam 2
