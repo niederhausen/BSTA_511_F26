@@ -5190,8 +5190,8 @@
     "objectID": "weeks/week_10.html#overview-of-week-10",
     "href": "weeks/week_10.html#overview-of-week-10",
     "title": "Week 10",
-    "section": "Overview of Week 10",
-    "text": "Overview of Week 10\n\nExam 3 (take home) is due on Wed, 12/9. See the Week 11 page for more information.\n\n\n\nMon: Day 16\n\nSimple Linear Regression Part 2\nSections 6.3-6.4\n\n\n\n\nWed: Day 17\n\nNonparametric tests\nThis material is not in our textbook. Please see Chapter 13: Nonparametric tests of Pagano’s Principles of Biostatistics, 2022 edition as a supplementary resource.\n\nThis chapter can be downloaded from the OHSU library’s eBook at https://ebookcentral.proquest.com/lib/ohsu/detail.action?docID=6950388&pq-origsite=primo"
+    "section": "",
+    "text": "Simple Linear Regression Part 2\nSections 6.3-6.4\nDay 16 Practice Problems\n\n\n\n\n\n\nNonparametric tests\nThis material is not in our textbook. Please see Chapter 13: Nonparametric tests of Pagano’s Principles of Biostatistics, 2022 edition as a supplementary resource.\n\nThis chapter can be downloaded from the OHSU library’s eBook at https://ebookcentral.proquest.com/lib/ohsu/detail.action?docID=6950388&pq-origsite=primo\n\nNo Practice Problems for Day 17"
   },
   {
     "objectID": "weeks/week_10.html#slides-recordings",
@@ -5219,14 +5219,14 @@
     "href": "weeks/week_10.html#class-discussion",
     "title": "Week 10",
     "section": "Class discussion",
-    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 16\n\nQuestions from HW 8\n\nBook\n\n6.28, 6.32\n\nR1 (a) - (j): Life expectancy vs. CO2 emissions\n\n\n\n\nDay 17\n\nQuestions from HW 8\n\nNonparametric Tests: NPT 1-3"
+    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 16\n\nQuestions from HW 8\n\nBook\n\n6.28, 6.32\n\nR2 (a) - (j): Life expectancy vs. CO2 emissions\n\n\n\n\nDay 17\n\nQuestions from HW 8\n\nNonparametric Tests: NPT 1-3"
   },
   {
     "objectID": "weeks/week_10.html#homework",
     "href": "weeks/week_10.html#homework",
     "title": "Week 10",
     "section": "Homework",
-    "text": "Homework\n\nHW 8 covers Days 15-17 and is due on Sat, 12/5\n\nDataset for question R1: Gapminder_2011_LifeExp_CO2.csv\n\nCheck out this spreadsheet for typos in book."
+    "text": "Homework\n\nHW 8 covers Days 15-17 and is due on Sat, 12/5\n\nSee Datasets section above for HW 8 datasets\n\nCheck out this spreadsheet for typos in book."
   },
   {
     "objectID": "weeks/week_07.html#overview-of-week-7",
@@ -5527,7 +5527,7 @@
     "href": "weeks/week_09.html#datasets",
     "title": "Week 9",
     "section": "Datasets",
-    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 15: lifeexp_femlit_water_2011.csv"
+    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 15: lifeexp_femlit_water_2011.csv\nHW 8:\n\npenguins.xlsx\nGapminder_2011_LifeExp_CO2.csv"
   },
   {
     "objectID": "weeks/week_09.html#practice-problems",
@@ -5541,14 +5541,14 @@
     "href": "weeks/week_09.html#class-discussion",
     "title": "Week 9",
     "section": "Class discussion",
-    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 15\n\nPractice Problems listed above\nQuestions from HW 8\n\nBook 6.10\n\nR2: Palmer Penguins SLR"
+    "text": "Class discussion\nDuring class you will be working in groups discussing the following:\n\nDay 15\n\nPractice Problems listed above\nQuestions from HW 8\n\nBook 6.10\n\nR1: Palmer Penguins SLR"
   },
   {
     "objectID": "weeks/week_09.html#homework",
     "href": "weeks/week_09.html#homework",
     "title": "Week 9",
     "section": "Homework",
-    "text": "Homework\n\nHW 7 covers Day 14 (from last week) and is due on SUNDAY, 11/29\nHW 8 covers Days 15-17 and is due on Sat, 12/5\nCheck out this spreadsheet for typos in book."
+    "text": "Homework\n\nHW 7 covers Day 14 (from last week) and is due on SUNDAY, 11/29\nHW 8 covers Days 15-17 and is due on Sat, 12/5\n\nSee Datasets section above for HW 8 datasets\n\nCheck out this spreadsheet for typos in book."
   },
   {
     "objectID": "weeks/week_09.html#sec-Exam2info",
@@ -10988,5 +10988,33 @@
     "title": "🌲 HW 8: BSTA 511/611 F26",
     "section": "🌲 NPT 3: Wilcoxon rank-sum test",
     "text": "🌲 NPT 3: Wilcoxon rank-sum test\nDoes caffeine increase finger taps/min?\nWhen covering 2-sample t-tests on Day 11, the class notes used the example of testing whether caffeine increases finger taps/min. The data are in the file CaffeineTaps.csv at https://niederhausen.github.io/BSTA_511_F23/data/CaffeineTaps.csv. In this exercise we will use a non-parametric test and compare the results to the paired t-test.\n\n(a) Condition\nWhat condition needs to be satisfied to apply the Wilcoxon rank-sum test and is it satisfied for these data?\nAnswer the following questions using the Wilcoxon rank-sum test whether you think the condition has been satisfied or not.\n\n\n(b) Why Wilcoxon rank-sum test?\nHow would we know to use the Wilcoxon rank-sum test instead of the sign test or (Wilcoxon) Signed-rank test?\n\n\n(c) Hypotheses\nWhat are the hypotheses for the Wilcoxon rank-sum test (1-sided) in the context of the problem? \n\n\n(d) Exact test in R\nRun the exact Wilcoxon rank-sum test in R. What warning(s) does it give you?\n\n\n(e) Normal approximation test in R\nRun the Wilcoxon rank-sum test in R with the normal approximation. Comment on whether it is appropriate to use the normal approximation or not in this case.\n\n\n(f) p-value\nWhat is the p-value and how does it compare to the p-value of the 2-sample t-test (check the class notes for this)?\n\n\n(g) Conclusion\nWrite a conclusion to the test in the context of the problem."
+  },
+  {
+    "objectID": "weeks/week_10.html",
+    "href": "weeks/week_10.html",
+    "title": "Week 10",
+    "section": "",
+    "text": "Simple Linear Regression Part 2\nSections 6.3-6.4\nDay 16 Practice Problems\n\n\n\n\n\n\nNonparametric tests\nThis material is not in our textbook. Please see Chapter 13: Nonparametric tests of Pagano’s Principles of Biostatistics, 2022 edition as a supplementary resource.\n\nThis chapter can be downloaded from the OHSU library’s eBook at https://ebookcentral.proquest.com/lib/ohsu/detail.action?docID=6950388&pq-origsite=primo\n\nNo Practice Problems for Day 17"
+  },
+  {
+    "objectID": "weeks/week_10.html#sec-data",
+    "href": "weeks/week_10.html#sec-data",
+    "title": "Week 10",
+    "section": "Datasets",
+    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 16: lifeexp_femlit_water_2011.csv\nHW 8:\n\npenguins.xlsx\nGapminder_2011_LifeExp_CO2.csv"
+  },
+  {
+    "objectID": "weeks/week_10.html#sec-PP",
+    "href": "weeks/week_10.html#sec-PP",
+    "title": "Week 10",
+    "section": "Practice Problems",
+    "text": "Practice Problems\n\nDay 16 PP\n\nBook exercises: 6.12, 6.20\n\n\n\nNo Day 17 PP\n\nNo PP. Start working on the homework questions."
+  },
+  {
+    "objectID": "weeks/week_09.html#sec-data",
+    "href": "weeks/week_09.html#sec-data",
+    "title": "Week 9",
+    "section": "Datasets",
+    "text": "Datasets\nAll datasets can be found on GitHub\n\nDay 15: lifeexp_femlit_water_2011.csv\nHW 8:\n\npenguins.xlsx\nGapminder_2011_LifeExp_CO2.csv"
   }
 ]
